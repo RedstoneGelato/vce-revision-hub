@@ -1,0 +1,889 @@
+{
+ "title": "Chemistry Units 1 & 2",
+ "aos": [
+  {
+   "name": "Unit 1 AoS 1 · How do the structures of materials explain their properties?",
+   "topics": [
+    {
+     "id": "atoms",
+     "title": "Atoms, isotopes and electron configuration",
+     "points": [
+      "Protons (+1, mass 1) and neutrons (0, mass 1) are in the nucleus; electrons (−1, almost no mass) are in shells.",
+      "Atomic number \\(Z\\) = protons. Mass number \\(A\\) = protons + neutrons, so neutrons \\(= A - Z\\).",
+      "Isotopes have the same number of protons but different numbers of neutrons.",
+      "Relative atomic mass is the weighted mean of an element’s isotopes on the carbon-12 = 12 scale.",
+      "Shell n holds up to 2n² electrons (2, 8, 18, 32). Subshells: s holds 2, p 6, d 10. Fill order 1s 2s 2p 3s 3p 4s 3d.",
+      "Exceptions: Cr is [Ar] 3d⁵ 4s¹ and Cu is [Ar] 3d¹⁰ 4s¹. Transition metals lose 4s electrons before 3d."
+     ],
+     "explain": "Explain why sodium-23 and sodium-24 are the same element but have different masses.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "How many neutrons are in an atom of \\({}^{37}\\mathrm{Cl}\\) (\\(Z = 17\\))?",
+       "o": [
+        "17",
+        "20",
+        "37",
+        "54"
+       ],
+       "a": 1,
+       "e": "Neutrons \\(= A - Z = 37 - 17 = 20\\)"
+      },
+      {
+       "t": "m",
+       "q": "Which is the subshell configuration of a sulfur atom (\\(Z = 16\\))?",
+       "o": [
+        "1s² 2s² 2p⁶ 3s² 3p⁴",
+        "1s² 2s² 2p⁶ 3s² 3p⁶",
+        "1s² 2s² 2p⁸ 3s² 3p²",
+        "1s² 2s² 2p⁶ 3p⁶"
+       ],
+       "a": 0,
+       "e": "16 electrons: 2 + 2 + 6 + 2 + 4."
+      },
+      {
+       "t": "c",
+       "q": "Chlorine is \\(75.8\\%\\) Cl-35 (\\(34.97\\)) and \\(24.2\\%\\) Cl-37 (\\(36.97\\)). Calculate its relative atomic mass.",
+       "a": "\\(A_r = 34.97 \\times 0.758 + 36.97 \\times 0.242 = 35.45\\)",
+       "e": "Multiply each isotopic mass by its fractional abundance and add."
+      },
+      {
+       "t": "m",
+       "q": "How many protons, neutrons and electrons are in \\({}^{39}\\mathrm{K}^{+}\\) (\\(Z = 19\\))?",
+       "o": [
+        "19, 20, 19",
+        "19, 20, 18",
+        "20, 19, 18",
+        "19, 39, 20"
+       ],
+       "a": 1,
+       "e": "A \\(+1\\) ion has lost one electron: \\(19 - 1 = 18\\) electrons."
+      },
+      {
+       "t": "c",
+       "q": "Why do elements produce line emission spectra?",
+       "a": "Electrons absorb energy and jump to higher energy levels. When they fall back they emit light with exact energies (the differences between levels), so only certain wavelengths appear.",
+       "e": "Each element has its own set of energy levels, so its spectrum is a fingerprint (flame tests)."
+      }
+     ]
+    },
+    {
+     "id": "periodic",
+     "title": "Periodic table trends",
+     "points": [
+      "Period = number of occupied shells. Group = same number of valence electrons, so similar chemistry.",
+      "\\(\\text{Core charge} = \\text{protons} - \\text{inner-shell electrons}\\). It increases across a period and stays the same down a group.",
+      "Across a period: atomic radius decreases, electronegativity and first ionisation energy increase, metallic character decreases.",
+      "Down a group: an extra shell, so radius increases, electronegativity and ionisation energy decrease, metallic character increases.",
+      "Metals get more reactive down a group; non-metals get less reactive down a group."
+     ],
+     "explain": "Use core charge to explain why fluorine is more electronegative than oxygen.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which has the largest atomic radius?",
+       "o": [
+        "Na",
+        "Mg",
+        "Cl",
+        "Ar"
+       ],
+       "a": 0,
+       "e": "Radius decreases across period 3 as core charge rises, so Na is largest."
+      },
+      {
+       "t": "m",
+       "q": "What is the core charge of a chlorine atom?",
+       "o": [
+        "+17",
+        "+8",
+        "+7",
+        "+1"
+       ],
+       "a": 2,
+       "e": "\\(17 - 10 = +7\\)"
+      },
+      {
+       "t": "c",
+       "q": "Explain why potassium is more reactive than sodium.",
+       "a": "Potassium’s valence electron is in a shell further from the nucleus (4th vs 3rd) with the same core charge, so it is held less strongly and lost more easily.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Going down group 17, electronegativity…",
+       "o": [
+        "increases",
+        "decreases",
+        "stays the same",
+        "increases then decreases"
+       ],
+       "a": 1,
+       "e": "Valence electrons are further from the nucleus, so bonding electrons are attracted less."
+      }
+     ]
+    },
+    {
+     "id": "covalent",
+     "title": "Covalent bonding, shapes and polarity",
+     "points": [
+      "A covalent bond is a shared pair of electrons between non-metal atoms. Double and triple bonds share 2 or 3 pairs.",
+      "Lewis structures: count valence electrons, put the least electronegative atom (never H) in the centre, add bonds, then lone pairs.",
+      "VSEPR: electron groups repel. 2 groups linear 180°; 3 trigonal planar 120°; 4 tetrahedral 109.5°; 4 with 1 lone pair pyramidal; 4 with 2 lone pairs V-shaped.",
+      "A polar bond joins atoms of different electronegativity. A molecule is polar only if its shape is uneven (H₂O, NH₃); symmetrical molecules cancel out (CO₂, CH₄).",
+      "Forces between molecules: dispersion (all molecules, grows with size) < dipole–dipole (polar) < hydrogen bonding (H on N, O or F).",
+      "Covalent network lattices: diamond (4 bonds each, very hard, no conduction), graphite (3 bonds each, delocalised electrons conduct, layers slide)."
+     ],
+     "explain": "Explain why water boils at 100 °C but methane boils at −162 °C.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "What is the shape of an ammonia (NH₃) molecule?",
+       "o": [
+        "Trigonal planar",
+        "Tetrahedral",
+        "Trigonal pyramidal",
+        "V-shaped"
+       ],
+       "a": 2,
+       "e": "4 electron groups, 1 lone pair: trigonal pyramidal, about 107°."
+      },
+      {
+       "t": "m",
+       "q": "Which molecule is non-polar even though it has polar bonds?",
+       "o": [
+        "H₂O",
+        "CO₂",
+        "HCl",
+        "NH₃"
+       ],
+       "a": 1,
+       "e": "CO₂ is linear, so the two C=O dipoles cancel."
+      },
+      {
+       "t": "m",
+       "q": "Which intermolecular force exists between all molecules?",
+       "o": [
+        "Hydrogen bonding",
+        "Dipole–dipole",
+        "Dispersion forces",
+        "Ionic bonding"
+       ],
+       "a": 2,
+       "e": "Temporary dipoles form in every molecule."
+      },
+      {
+       "t": "c",
+       "q": "Why does graphite conduct electricity but diamond does not?",
+       "a": "In graphite each carbon bonds to 3 others, leaving one delocalised electron per atom free to move. In diamond all 4 valence electrons are in bonds, so no charged particles can move.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "When water boils, what is broken: covalent bonds or hydrogen bonds?",
+       "a": "Hydrogen bonds between molecules. The O–H covalent bonds inside each molecule stay intact.",
+       "e": "A very common exam trap."
+      }
+     ]
+    },
+    {
+     "id": "metals",
+     "title": "Metals",
+     "points": [
+      "Metallic bonding: a lattice of cations in a sea of delocalised valence electrons, held by electrostatic attraction.",
+      "Properties: conduct (free electrons), malleable and ductile (layers slide, electrons still hold them), lustrous, high melting points.",
+      "Work hardening (cold) gives small crystals: harder, brittle. Annealing (heat, cool slowly): large crystals, softer. Quenching (cool fast): hard, brittle. Tempering reheats gently: tough.",
+      "Alloys: substitutional (similar-sized atoms, brass) or interstitial (small atoms such as C in steel). Both stop layers sliding.",
+      "Reactive metals: metal + water → hydroxide + H₂. Recycling metals saves energy and supports a circular economy."
+     ],
+     "explain": "Use the metallic bonding model to explain why metals bend instead of shattering.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which treatment makes a metal softer and more malleable?",
+       "o": [
+        "Quenching",
+        "Work hardening",
+        "Annealing",
+        "Adding carbon"
+       ],
+       "a": 2,
+       "e": "Slow cooling grows large crystals with fewer boundaries."
+      },
+      {
+       "t": "c",
+       "q": "Why does steel (iron with carbon) resist bending more than pure iron?",
+       "a": "Small carbon atoms sit in gaps between iron cations (interstitial alloy), disrupting the layers so they cannot slide easily.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Metals conduct electricity because…",
+       "o": [
+        "their ions move through the lattice",
+        "delocalised electrons move freely",
+        "they have strong covalent bonds",
+        "their atoms are close together"
+       ],
+       "a": 1,
+       "e": "Cations stay fixed; the electrons carry charge."
+      }
+     ]
+    },
+    {
+     "id": "ionic",
+     "title": "Ionic compounds and precipitation",
+     "points": [
+      "Metals lose electrons (cations), non-metals gain them (anions), reaching noble-gas configurations. Ions form a 3D crystal lattice.",
+      "Hard, high melting point, brittle (shifted layers put like charges together). Conduct only when molten or dissolved.",
+      "Formulas balance charge: Al³⁺ + O²⁻ → Al₂O₃. Roman numerals show variable charge: copper(II) sulfate.",
+      "Learn: NH₄⁺, OH⁻, NO₃⁻, HCO₃⁻, CH₃COO⁻, SO₄²⁻, CO₃²⁻, PO₄³⁻.",
+      "SNAPE ions (sodium, nitrate, ammonium, potassium, ethanoate) are always soluble. CHOPS (carbonate, hydroxide, oxide, phosphate, sulfide) are usually insoluble.",
+      "Ionic equations leave out spectator ions: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)."
+     ],
+     "explain": "Explain why solid salt does not conduct but salt water does.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "What is the formula of calcium nitrate?",
+       "o": [
+        "CaNO₃",
+        "Ca(NO₃)₂",
+        "Ca₂NO₃",
+        "Ca₃N₂"
+       ],
+       "a": 1,
+       "e": "Ca²⁺ needs two NO₃⁻."
+      },
+      {
+       "t": "m",
+       "q": "Which pair of solutions forms a precipitate when mixed?",
+       "o": [
+        "NaCl and KNO₃",
+        "AgNO₃ and NaCl",
+        "NH₄Cl and NaNO₃",
+        "KCl and NaNO₃"
+       ],
+       "a": 1,
+       "e": "AgCl is insoluble."
+      },
+      {
+       "t": "c",
+       "q": "Write the ionic equation for BaCl₂(aq) + Na₂SO₄(aq).",
+       "a": "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)",
+       "e": "Na⁺ and Cl⁻ are spectator ions."
+      },
+      {
+       "t": "m",
+       "q": "Ionic solids are brittle because…",
+       "o": [
+        "their bonds are weak",
+        "a shift lines up like charges, which repel",
+        "they have free electrons",
+        "they are made of molecules"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "What is the formula of iron(III) oxide?",
+       "o": [
+        "FeO",
+        "Fe₃O",
+        "Fe₂O₃",
+        "Fe₃O₂"
+       ],
+       "a": 2,
+       "e": "Fe³⁺ and O²⁻: swap and simplify, 2 : 3."
+      }
+     ]
+    },
+    {
+     "id": "chromatography",
+     "title": "Dissolving and chromatography",
+     "points": [
+      "Like dissolves like. Ionic solids dissolve in water through ion–dipole attractions; small polar molecules form hydrogen bonds with water.",
+      "Chromatography separates by competition between adsorbing to the stationary phase and dissolving in the mobile phase.",
+      "\\[R_f = \\frac{\\text{distance moved by component}}{\\text{distance moved by solvent front}}\\] It is always between \\(0\\) and \\(1\\).",
+      "Components that dissolve well in the mobile phase travel further; strongly adsorbed ones stay low.",
+      "Identify substances by comparing Rf values with standards under identical conditions. Baseline in pencil, above the solvent."
+     ],
+     "explain": "Explain why two dyes separate on a TLC plate.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "A spot moves \\(3.0\\ \\mathrm{cm}\\) while the solvent front moves \\(12.0\\ \\mathrm{cm}\\). Find \\(R_f\\).",
+       "a": "\\(R_f = \\dfrac{3.0}{12.0} = 0.25\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A component with a high Rf is…",
+       "o": [
+        "strongly adsorbed to the stationary phase",
+        "more attracted to the mobile phase",
+        "insoluble in the solvent",
+        "always the heaviest molecule"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Why is the baseline drawn in pencil?",
+       "o": [
+        "Pencil is easier to see",
+        "Ink would dissolve and run with the solvent",
+        "Pencil absorbs the solvent",
+        "Pencil marks the solvent front"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 1 AoS 2 · How are materials quantified and classified?",
+   "topics": [
+    {
+     "id": "mole",
+     "title": "The mole and formulas",
+     "points": [
+      "One mole \\(= 6.02 \\times 10^{23}\\) particles (Avogadro’s constant, \\(N_A\\)).",
+      "Molar mass \\(M\\) (\\(\\mathrm{g\\ mol^{-1}}\\)) equals the relative mass from the periodic table.",
+      "\\(n = \\dfrac{m}{M}\\) and \\(n = \\dfrac{N}{N_A}\\)",
+      "\\[\\%\\ \\text{by mass} = \\frac{\\text{mass of element in 1 mol}}{M} \\times 100\\]",
+      "Empirical formula: grams in 100 g → divide by M → divide by the smallest → whole-number ratio.",
+      "Molecular formula \\(=\\) empirical formula \\(\\times \\dfrac{M(\\text{compound})}{M(\\text{empirical formula})}\\)"
+     ],
+     "explain": "Explain the difference between an empirical and a molecular formula using glucose.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "How many moles are in \\(10.0\\ \\mathrm{g}\\) of NaOH (\\(M = 40.0\\ \\mathrm{g\\ mol^{-1}}\\))?",
+       "o": [
+        "0.250 mol",
+        "4.00 mol",
+        "400 mol",
+        "0.0250 mol"
+       ],
+       "a": 0,
+       "e": "\\(n = \\dfrac{10.0}{40.0} = 0.250\\ \\mathrm{mol}\\)"
+      },
+      {
+       "t": "c",
+       "q": "How many molecules are in 0.50 mol of water?",
+       "a": "\\(N = 0.50 \\times 6.02 \\times 10^{23} = 3.0 \\times 10^{23}\\) molecules",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A hydrocarbon is 85.7% C and 14.3% H. Find its empirical formula.",
+       "a": "\\(\\mathrm{C}: \\dfrac{85.7}{12.0} = 7.14\\); \\(\\mathrm{H}: \\dfrac{14.3}{1.0} = 14.3\\). Ratio \\(1 : 2\\), so \\(\\mathrm{CH_2}\\).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "What is the percentage by mass of hydrogen in water?",
+       "o": [
+        "5.6%",
+        "11.1%",
+        "33.3%",
+        "88.9%"
+       ],
+       "a": 1,
+       "e": "\\(\\dfrac{2.0}{18.0} \\times 100 = 11.1\\%\\)"
+      },
+      {
+       "t": "c",
+       "q": "A compound has empirical formula \\(\\mathrm{CH_2O}\\) and \\(M = 180\\ \\mathrm{g\\ mol^{-1}}\\). What is its molecular formula?",
+       "a": "\\(M(\\mathrm{CH_2O}) = 30.0\\); \\(\\dfrac{180}{30.0} = 6\\), so \\(\\mathrm{C_6H_{12}O_6}\\).",
+       "e": ""
+      }
+     ]
+    },
+    {
+     "id": "organics",
+     "title": "Organic compounds",
+     "points": [
+      "Alkanes CₙH₂ₙ₊₂ (-ane), alkenes CₙH₂ₙ (-ene, C=C), alkynes (-yne, C≡C), haloalkanes (chloro- etc.), alkanols (-ol, –OH), carboxylic acids (-oic acid, –COOH).",
+      "Prefixes: meth, eth, prop, but, pent, hex, hept, oct, non, dec.",
+      "Name from the longest chain; number from the end nearest the functional group; branches as prefixes (2-methylpropane, but-2-ene, propan-1-ol).",
+      "Structural isomers: same molecular formula, different structure.",
+      "Longer chains: higher boiling point and viscosity, lower volatility. –OH and –COOH hydrogen-bond, so they boil higher.",
+      "Alkenes undergo addition across C=C; alkanes undergo substitution with halogens in UV light."
+     ],
+     "explain": "Explain why ethanol boils much higher than propane even though their molar masses are similar.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "What is the name of CH₃CH(CH₃)CH₂CH₃?",
+       "o": [
+        "Pentane",
+        "2-methylbutane",
+        "3-methylbutane",
+        "2-ethylpropane"
+       ],
+       "a": 1,
+       "e": "Longest chain is 4 C with a methyl on carbon 2."
+      },
+      {
+       "t": "m",
+       "q": "Which general formula belongs to alkenes?",
+       "o": [
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙH₂ₙ₊₁OH"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What type of reaction occurs when ethene reacts with bromine?",
+       "a": "Addition: Br₂ adds across the double bond to form 1,2-dibromoethane.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Butane and 2-methylpropane are…",
+       "o": [
+        "the same compound",
+        "structural isomers",
+        "both alkenes",
+        "different homologous series"
+       ],
+       "a": 1,
+       "e": "Both are C₄H₁₀."
+      }
+     ]
+    },
+    {
+     "id": "polymers",
+     "title": "Polymers and plastics",
+     "points": [
+      "Addition polymers form from monomers with C=C (ethene → polyethene). No by-product.",
+      "Condensation polymers form from monomers with a functional group at each end, releasing a small molecule (usually water): polyesters, nylon, proteins.",
+      "LDPE: many branches, low density, soft. HDPE: few branches, chains pack closely, denser and more rigid.",
+      "Thermoplastics have no cross-links and soften on heating (recyclable). Thermosetting polymers have covalent cross-links and char instead of melting.",
+      "Isotactic polymers (side groups all on one side) pack best and have the highest melting points.",
+      "Sustainability: mechanical and chemical recycling, bioplastics, biodegradable plastics, circular economy."
+     ],
+     "explain": "Explain why a thermoplastic can be recycled by melting but a thermoset cannot.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which monomer can form an addition polymer?",
+       "o": [
+        "Ethane",
+        "Ethanol",
+        "Ethene",
+        "Ethanoic acid"
+       ],
+       "a": 2,
+       "e": "It needs a C=C double bond."
+      },
+      {
+       "t": "m",
+       "q": "HDPE is more rigid than LDPE because…",
+       "o": [
+        "it has more branching",
+        "its chains pack more closely, giving stronger dispersion forces",
+        "it has covalent cross-links",
+        "it is a condensation polymer"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What small molecule is usually released in condensation polymerisation?",
+       "a": "Water",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A polymer that chars instead of melting when heated is…",
+       "o": [
+        "a thermoplastic",
+        "LDPE",
+        "a thermosetting polymer",
+        "atactic"
+       ],
+       "a": 2,
+       "e": "Cross-links stop chains moving apart."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 2 AoS 1 · How do chemicals interact with water?",
+   "topics": [
+    {
+     "id": "water",
+     "title": "Properties of water",
+     "points": [
+      "Hydrogen bonding between water molecules explains its unusual properties.",
+      "High specific heat capacity (\\(4.18\\ \\mathrm{J\\ g^{-1}\\,{}^\\circ C^{-1}}\\)): oceans steady the climate. \\(q = mc\\Delta T\\)",
+      "High latent heat of vaporisation (\\(40.7\\ \\mathrm{kJ\\ mol^{-1}}\\)) and fusion (\\(6.0\\ \\mathrm{kJ\\ mol^{-1}}\\)). \\(q = nL\\)",
+      "Ice is less dense than water because hydrogen bonds hold molecules in an open hexagonal lattice.",
+      "Cohesion gives surface tension; adhesion gives capillary action and wetting."
+     ],
+     "explain": "Explain why lakes freeze from the top down and why that matters for fish.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "How much energy heats \\(250\\ \\mathrm{g}\\) of water from \\(20\\,{}^\\circ\\mathrm{C}\\) to \\(80\\,{}^\\circ\\mathrm{C}\\)?",
+       "a": "\\(q = mc\\Delta T = 250 \\times 4.18 \\times 60 = 62\\,700\\ \\mathrm{J} = 62.7\\ \\mathrm{kJ}\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How much energy boils \\(36.0\\ \\mathrm{g}\\) of water at \\(100\\,{}^\\circ\\mathrm{C}\\)?",
+       "a": "\\(n = \\dfrac{36.0}{18.0} = 2.00\\ \\mathrm{mol}\\); \\(q = nL = 2.00 \\times 40.7 = 81.4\\ \\mathrm{kJ}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Why does ice float?",
+       "o": [
+        "Air bubbles are trapped in it",
+        "Hydrogen bonds hold molecules further apart in a hexagonal lattice",
+        "Its covalent bonds are longer",
+        "It has a lower molar mass"
+       ],
+       "a": 1,
+       "e": "No air is involved."
+      },
+      {
+       "t": "m",
+       "q": "On a heating curve, the flat sections show…",
+       "o": [
+        "temperature rising",
+        "a change of state",
+        "the water cooling",
+        "chemical reaction"
+       ],
+       "a": 1,
+       "e": "Energy goes into breaking hydrogen bonds, not raising temperature."
+      }
+     ]
+    },
+    {
+     "id": "acids",
+     "title": "Acids, bases and pH",
+     "points": [
+      "Brønsted–Lowry: acids donate H⁺, bases accept H⁺. Conjugate pairs differ by one H⁺.",
+      "Amphiprotic species can do both: H₂O, HCO₃⁻, HSO₄⁻, H₂PO₄⁻.",
+      "Strong acids ionise completely (HCl, HNO₃, H₂SO₄); weak acids partly (CH₃COOH). Strength is not concentration.",
+      "Acid + metal → salt + H₂. Acid + hydroxide or oxide → salt + water. Acid + carbonate → salt + water + CO₂.",
+      "\\(\\mathrm{pH} = -\\log_{10}[\\mathrm{H_3O^+}]\\). \\(K_w = [\\mathrm{H_3O^+}][\\mathrm{OH^-}] = 1.00 \\times 10^{-14}\\) at \\(25\\,{}^\\circ\\mathrm{C}\\).",
+      "Each pH unit is a \\(10\\times\\) change in \\([\\mathrm{H_3O^+}]\\). Diluting a strong acid \\(10\\times\\) raises pH by \\(1\\)."
+     ],
+     "explain": "Explain the difference between a strong acid and a concentrated acid.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "What is the pH of \\(0.010\\ \\mathrm{M}\\) HCl?",
+       "o": [
+        "1",
+        "2",
+        "10",
+        "12"
+       ],
+       "a": 1,
+       "e": "\\(\\mathrm{pH} = -\\log_{10}(0.010) = 2\\)"
+      },
+      {
+       "t": "c",
+       "q": "Find the pH of \\(0.010\\ \\mathrm{M}\\) NaOH at \\(25\\,{}^\\circ\\mathrm{C}\\).",
+       "a": "\\([\\mathrm{H_3O^+}] = \\dfrac{1.00 \\times 10^{-14}}{0.010} = 1.0 \\times 10^{-12}\\ \\mathrm{M}\\), so \\(\\mathrm{pH} = 12.0\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "What is the conjugate base of HSO₄⁻?",
+       "o": [
+        "H₂SO₄",
+        "SO₄²⁻",
+        "HSO₃⁻",
+        "SO₃²⁻"
+       ],
+       "a": 1,
+       "e": "Remove one H⁺."
+      },
+      {
+       "t": "c",
+       "q": "Write the products of hydrochloric acid reacting with calcium carbonate.",
+       "a": "Calcium chloride, water and carbon dioxide: 2HCl + CaCO₃ → CaCl₂ + H₂O + CO₂",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which is amphiprotic?",
+       "o": [
+        "HCl",
+        "HCO₃⁻",
+        "Na⁺",
+        "Cl⁻"
+       ],
+       "a": 1,
+       "e": "It can donate (→ CO₃²⁻) or accept (→ H₂CO₃) a proton."
+      }
+     ]
+    },
+    {
+     "id": "redox",
+     "title": "Redox and galvanic cells",
+     "points": [
+      "OIL RIG: oxidation is loss of electrons, reduction is gain. Oxidising agents are reduced.",
+      "Oxidation numbers: elements 0, simple ions = charge, O usually −2, H usually +1, total = charge.",
+      "Balance half equations in acid: atoms, then O with H₂O, H with H⁺, charge with e⁻.",
+      "More reactive metals displace less reactive metal ions: Zn + Cu²⁺ → Zn²⁺ + Cu.",
+      "Galvanic cell: anode = oxidation (−), cathode = reduction (+). Electrons flow anode → cathode through the wire.",
+      "The salt bridge moves ions (anions to the anode, cations to the cathode), never electrons."
+     ],
+     "explain": "Explain what the salt bridge does and what would happen without it.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "What is the oxidation number of Cr in Cr₂O₇²⁻?",
+       "o": [
+        "+3",
+        "+6",
+        "+7",
+        "+12"
+       ],
+       "a": 1,
+       "e": "\\(2x + 7(-2) = -2\\), so \\(x = +6\\)"
+      },
+      {
+       "t": "m",
+       "q": "In a Zn | Cu galvanic cell, the anode is…",
+       "o": [
+        "copper, positive",
+        "zinc, negative",
+        "copper, negative",
+        "zinc, positive"
+       ],
+       "a": 1,
+       "e": "Zinc is oxidised."
+      },
+      {
+       "t": "c",
+       "q": "Balance: MnO₄⁻ → Mn²⁺ (acidic solution).",
+       "a": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+       "e": "Charge: \\(-1 + 8 - 5 = +2\\) on each side."
+      },
+      {
+       "t": "m",
+       "q": "What does the salt bridge carry?",
+       "o": [
+        "Electrons",
+        "Ions",
+        "Water",
+        "Protons only"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 2 AoS 2 · How are chemicals measured and analysed?",
+   "topics": [
+    {
+     "id": "concentration",
+     "title": "Solubility and concentration",
+     "points": [
+      "Solubility is the maximum mass dissolving in 100 g of water at a given temperature. Below the curve: unsaturated; on: saturated; above: supersaturated.",
+      "Most ionic solids are more soluble when hot; gases are less soluble when hot.",
+      "\\(c = \\dfrac{n}{V}\\) (\\(V\\) in litres). Other units: \\(\\mathrm{g\\ L^{-1}}\\), ppm (\\(\\mathrm{mg\\ L^{-1}}\\)), % (m/v).",
+      "Dilution: \\(c_1V_1 = c_2V_2\\)",
+      "1.0 M MgCl₂ contains 1.0 M Mg²⁺ and 2.0 M Cl⁻."
+     ],
+     "explain": "Explain why a fizzy drink goes flat faster when warm.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "\\(50.0\\ \\mathrm{mL}\\) of \\(2.00\\ \\mathrm{M}\\) HCl is diluted to \\(500.0\\ \\mathrm{mL}\\). Find the new concentration.",
+       "a": "\\(c_2 = \\dfrac{c_1V_1}{V_2} = \\dfrac{2.00 \\times 50.0}{500.0} = 0.200\\ \\mathrm{M}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "What is [Cl⁻] in 0.30 M CaCl₂?",
+       "o": [
+        "0.15 M",
+        "0.30 M",
+        "0.60 M",
+        "0.90 M"
+       ],
+       "a": 2,
+       "e": "Two chloride ions per formula."
+      },
+      {
+       "t": "c",
+       "q": "How many moles of NaCl are in \\(250\\ \\mathrm{mL}\\) of \\(0.40\\ \\mathrm{M}\\) solution?",
+       "a": "\\(n = cV = 0.40 \\times 0.250 = 0.10\\ \\mathrm{mol}\\)",
+       "e": ""
+      }
+     ]
+    },
+    {
+     "id": "titration",
+     "title": "Titrations and stoichiometry",
+     "points": [
+      "Stoichiometry: balanced equation → moles of known → mole ratio → convert to what is asked.",
+      "Limiting reagent: work out which reactant runs out first; it decides the amount of product.",
+      "Aliquot = pipette volume. Titre = burette volume. Concordant titres are within 0.10 mL.",
+      "Primary standard: pure, known formula, stable, does not absorb water.",
+      "Rinse burette and pipette with their own solution; rinse flasks with deionised water.",
+      "Burette rinsed with water → titre too large. Pipette rinsed with water → too few moles in aliquot."
+     ],
+     "explain": "Explain why rinsing the conical flask with water does not affect the result.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "\\(20.00\\ \\mathrm{mL}\\) of HCl needs \\(18.50\\ \\mathrm{mL}\\) of \\(0.100\\ \\mathrm{M}\\) NaOH. Find \\(c(\\mathrm{HCl})\\).",
+       "a": "\\(n(\\mathrm{NaOH}) = 0.100 \\times 0.01850 = 1.85 \\times 10^{-3}\\ \\mathrm{mol} = n(\\mathrm{HCl})\\); \\(c = \\dfrac{1.85 \\times 10^{-3}}{0.02000} = 0.0925\\ \\mathrm{M}\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What volume of H₂ forms at SLC from 2.43 g Mg? (Mg + 2HCl → MgCl₂ + H₂)",
+       "a": "\\(n(\\mathrm{Mg}) = \\dfrac{2.43}{24.3} = 0.100\\ \\mathrm{mol} \\Rightarrow n(\\mathrm{H_2}) = 0.100\\ \\mathrm{mol} \\Rightarrow V = nV_m = 0.100 \\times 24.8 = 2.48\\ \\mathrm{L}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "If the burette is last rinsed with water, the calculated concentration of the flask solution will be…",
+       "o": [
+        "too low",
+        "too high",
+        "unchanged",
+        "impossible to calculate"
+       ],
+       "a": 1,
+       "e": "The titrant is diluted, so a larger titre is needed."
+      },
+      {
+       "t": "m",
+       "q": "4.0 g CH₄ reacts with 10.0 g O₂ (CH₄ + 2O₂ → CO₂ + 2H₂O). Which is limiting?",
+       "o": [
+        "CH₄",
+        "O₂",
+        "Neither",
+        "Both"
+       ],
+       "a": 1,
+       "e": "0.25 mol CH₄ needs 0.50 mol O₂ but only 0.3125 mol is present."
+      }
+     ]
+    },
+    {
+     "id": "gases",
+     "title": "Gases",
+     "points": [
+      "Kinetic theory: gas particles move randomly, are far apart, have no forces between them and collide with the walls (pressure).",
+      "\\(1\\ \\mathrm{atm} = 101.3\\ \\mathrm{kPa} = 760\\ \\mathrm{mmHg}\\). \\(T(\\mathrm{K}) = T(^\\circ\\mathrm{C}) + 273\\)",
+      "Boyle \\(p_1V_1 = p_2V_2\\); Charles \\(\\dfrac{V_1}{T_1} = \\dfrac{V_2}{T_2}\\); combined \\(\\dfrac{p_1V_1}{T_1} = \\dfrac{p_2V_2}{T_2}\\) (kelvin only).",
+      "\\(pV = nRT\\) with \\(p\\) in kPa, \\(V\\) in L, \\(R = 8.31\\ \\mathrm{J\\ K^{-1}\\ mol^{-1}}\\).",
+      "\\(n = \\dfrac{V}{V_m}\\), where \\(V_m = 24.8\\ \\mathrm{L\\ mol^{-1}}\\) at SLC (\\(25\\,{}^\\circ\\mathrm{C}\\), \\(100\\ \\mathrm{kPa}\\)).",
+      "Greenhouse gases (CO₂, CH₄, H₂O, N₂O) absorb and re-emit infrared radiation."
+     ],
+     "explain": "Use kinetic theory to explain why heating a sealed can raises the pressure.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "A gas is \\(3.00\\ \\mathrm{L}\\) at \\(27\\,{}^\\circ\\mathrm{C}\\) and \\(100\\ \\mathrm{kPa}\\). Find its volume at \\(127\\,{}^\\circ\\mathrm{C}\\) and \\(200\\ \\mathrm{kPa}\\).",
+       "a": "\\(V_2 = \\dfrac{p_1V_1T_2}{T_1p_2} = \\dfrac{100 \\times 3.00 \\times 400}{300 \\times 200} = 2.00\\ \\mathrm{L}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "What volume does 0.200 mol of gas occupy at SLC?",
+       "o": [
+        "4.54 L",
+        "4.96 L",
+        "24.8 L",
+        "0.124 L"
+       ],
+       "a": 1,
+       "e": "\\(V = nV_m = 0.200 \\times 24.8 = 4.96\\ \\mathrm{L}\\)"
+      },
+      {
+       "t": "m",
+       "q": "At constant temperature, halving the volume of a gas will…",
+       "o": [
+        "halve the pressure",
+        "double the pressure",
+        "keep the pressure the same",
+        "quadruple the pressure"
+       ],
+       "a": 1,
+       "e": "Boyle’s law."
+      },
+      {
+       "t": "c",
+       "q": "Use \\(pV = nRT\\) to find \\(V\\) for \\(0.100\\ \\mathrm{mol}\\) at \\(25\\,{}^\\circ\\mathrm{C}\\) and \\(100\\ \\mathrm{kPa}\\).",
+       "a": "\\(V = \\dfrac{nRT}{p} = \\dfrac{0.100 \\times 8.31 \\times 298}{100} = 2.48\\ \\mathrm{L}\\)",
+       "e": ""
+      }
+     ]
+    },
+    {
+     "id": "salts",
+     "title": "Analysis of salts",
+     "points": [
+      "Sources of salts in water: minerals from rocks, heavy metals (Pb, Hg, Cd) from industry, organometallics such as methylmercury.",
+      "Gravimetric analysis: dissolve, precipitate with excess reagent, filter, wash, dry to constant mass, weigh, calculate.",
+      "A precipitate that is not fully dried makes the result too high.",
+      "Colorimetry and UV-visible spectroscopy: absorbance is proportional to concentration. Use standards to draw a calibration curve.",
+      "Choose a wavelength (or complementary-colour filter) where the substance absorbs most."
+     ],
+     "explain": "Explain why a precipitate must be dried to constant mass.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "\\(0.466\\ \\mathrm{g}\\) of \\(\\mathrm{BaSO_4}\\) (\\(M = 233.4\\ \\mathrm{g\\ mol^{-1}}\\)) is collected. Find the mass of sulfate ions.",
+       "a": "\\(n = \\dfrac{0.466}{233.4} = 2.00 \\times 10^{-3}\\ \\mathrm{mol}\\); \\(m(\\mathrm{SO_4^{2-}}) = 2.00 \\times 10^{-3} \\times 96.1 = 0.192\\ \\mathrm{g}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In UV-visible spectroscopy, the unknown’s concentration is found from…",
+       "o": [
+        "its Rf value",
+        "a calibration curve",
+        "its boiling point",
+        "its mass spectrum"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A precipitate is weighed while still damp. The calculated amount will be…",
+       "o": [
+        "too high",
+        "too low",
+        "unchanged",
+        "negative"
+       ],
+       "a": 0,
+       "e": "The extra mass is water."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

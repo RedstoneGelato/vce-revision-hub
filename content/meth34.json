@@ -1,0 +1,96 @@
+{
+"title": "Mathematical Methods Units 3 & 4",
+"aos": [
+{"name": "Functions, relations and graphs · Algebra", "topics": [
+{"id": "functions34", "title": "Functions, composites and inverses",
+ "points": [
+  "A function has one \\(y\\)-value for each \\(x\\). State the domain (allowed \\(x\\)) and range (resulting \\(y\\)).",
+  "The composite \\(f(g(x))\\) exists only if \\(\\operatorname{ran}(g) \\subseteq \\operatorname{dom}(f)\\).",
+  "An inverse \\(f^{-1}\\) exists only for a one-to-one function: swap \\(x\\) and \\(y\\) and solve. Its graph is the reflection of \\(f\\) in \\(y = x\\); \\(\\operatorname{dom}(f^{-1}) = \\operatorname{ran}(f)\\) and \\(\\operatorname{ran}(f^{-1}) = \\operatorname{dom}(f)\\).",
+  "Transformations: \\(y = a f\\big(b(x - h)\\big) + k\\). Describe them as dilations, reflections, then translations, or as a mapping \\((x, y) \\to (x', y')\\).",
+  "Sum or product of functions: the domain is \\(\\operatorname{dom}(f) \\cap \\operatorname{dom}(g)\\)."],
+ "explain": "Explain why \\(y = x^2\\) needs a restricted domain to have an inverse function.",
+ "qs": [
+  {"t":"c","q":"Find the inverse of \\(f(x) = 2x + 3\\).","a":"\\(f^{-1}(x) = \\dfrac{x - 3}{2}\\)","e":""},
+  {"t":"m","q":"\\(f(x) = x^2\\) and \\(g(x) = x + 1\\). What is \\(f(g(x))\\)?","o":["\\(x^2 + 1\\)","\\((x + 1)^2\\)","\\(x^3 + x^2\\)","\\(x^2 + x + 1\\)"],"a":1,"e":""},
+  {"t":"m","q":"The graph of \\(f^{-1}\\) is the reflection of \\(f\\) in…","o":["the \\(x\\)-axis","the \\(y\\)-axis","the line \\(y = x\\)","the origin"],"a":2,"e":""},
+  {"t":"c","q":"State the maximal domain of \\(f(x) = \\log_e(x - 2)\\).","a":"\\((2, \\infty)\\)","e":"Need \\(x - 2 > 0\\)."}]},
+{"id": "equations34", "title": "Solving equations",
+ "points": [
+  "Exponential and log equations: use the log laws; check every solution is in the domain.",
+  "Circular equations: find the base angle, then use symmetry (ASTC) and add periods to get all solutions in the domain.",
+  "General solution: \\(\\sin x = a \\Rightarrow x = \\sin^{-1}(a) + 2n\\pi\\) or \\(x = \\pi - \\sin^{-1}(a) + 2n\\pi\\), \\(n \\in \\mathbb{Z}\\).",
+  "Simultaneous linear equations can have a unique solution, infinitely many, or none.",
+  "Use CAS where allowed, but write the set-up."],
+ "explain": "Explain why \\(2\\sin x = 1\\) has two solutions in \\([0, 2\\pi]\\).",
+ "qs": [
+  {"t":"c","q":"Solve \\(2\\sin(x) = 1\\) for \\(x \\in [0, 2\\pi]\\).","a":"\\(x = \\dfrac{\\pi}{6}\\) and \\(x = \\dfrac{5\\pi}{6}\\)","e":""},
+  {"t":"c","q":"Solve \\(\\log_2(x) + \\log_2(x - 2) = 3\\).","a":"\\(\\log_2\\big(x(x - 2)\\big) = 3 \\Rightarrow x^2 - 2x - 8 = 0 \\Rightarrow x = 4\\) (reject \\(x = -2\\))","e":""},
+  {"t":"m","q":"Solve \\(e^{2x} = 9\\).","o":["\\(x = \\log_e 3\\)","\\(x = \\log_e 9\\)","\\(x = 3\\)","\\(x = \\tfrac{9}{2}\\)"],"a":0,"e":"\\(2x = \\log_e 9 = 2\\log_e 3\\), so \\(x = \\log_e 3\\)."}]}
+]},
+{"name": "Calculus", "topics": [
+{"id": "derivatives34", "title": "Differentiation rules",
+ "points": [
+  "Standard derivatives: \\[\\begin{aligned} \\frac{d}{dx}e^{kx} &= ke^{kx} & \\frac{d}{dx}\\log_e x &= \\frac{1}{x} \\\\ \\frac{d}{dx}\\sin(kx) &= k\\cos(kx) & \\frac{d}{dx}\\cos(kx) &= -k\\sin(kx) \\\\ \\frac{d}{dx}\\tan(kx) &= \\frac{k}{\\cos^2(kx)} \\end{aligned}\\]",
+  "Chain rule: \\(\\dfrac{dy}{dx} = \\dfrac{dy}{du} \\times \\dfrac{du}{dx}\\).",
+  "Product rule: \\(\\dfrac{d}{dx}(uv) = u'v + uv'\\). Quotient rule: \\(\\dfrac{d}{dx}\\left(\\dfrac{u}{v}\\right) = \\dfrac{u'v - uv'}{v^2}\\).",
+  "Applications: tangents and normals, stationary points, maximum and minimum problems, rates of change.",
+  "Strictly increasing where \\(f'(x) > 0\\); strictly decreasing where \\(f'(x) < 0\\).",
+  "Linear approximation: \\(f(x + h) \\approx f(x) + h f'(x)\\)."],
+ "explain": "Explain when you would use the chain rule instead of the product rule.",
+ "qs": [
+  {"t":"m","q":"Differentiate \\(\\sin(3x)\\).","o":["\\(\\cos(3x)\\)","\\(3\\cos(3x)\\)","\\(-3\\cos(3x)\\)","\\(3\\sin(3x)\\)"],"a":1,"e":""},
+  {"t":"c","q":"Differentiate \\(\\log_e(x^2 + 1)\\).","a":"\\(\\dfrac{2x}{x^2 + 1}\\)","e":"Chain rule."},
+  {"t":"c","q":"Differentiate \\(xe^x\\).","a":"\\(e^x + xe^x = e^x(1 + x)\\)","e":"Product rule."},
+  {"t":"m","q":"\\(\\dfrac{d}{dx}\\,e^{2x} = \\)","o":["\\(e^{2x}\\)","\\(2e^{2x}\\)","\\(2xe^{2x}\\)","\\(\\tfrac{1}{2}e^{2x}\\)"],"a":1,"e":""}]},
+{"id": "integration34", "title": "Integration and area",
+ "points": [
+  "Standard integrals: \\[\\begin{aligned} \\int e^{kx}\\,dx &= \\frac{1}{k}e^{kx} + c & \\int \\frac{1}{x}\\,dx &= \\log_e|x| + c \\\\ \\int \\sin(kx)\\,dx &= -\\frac{1}{k}\\cos(kx) + c & \\int \\cos(kx)\\,dx &= \\frac{1}{k}\\sin(kx) + c \\end{aligned}\\]",
+  "Definite integral: \\(\\displaystyle\\int_a^b f(x)\\,dx = F(b) - F(a)\\).",
+  "Area between a curve and the \\(x\\)-axis: split at the \\(x\\)-intercepts. Regions below the axis give negative integrals, so take their absolute value.",
+  "Area between curves: \\(\\displaystyle\\int_a^b \\big(f_{\\text{upper}}(x) - f_{\\text{lower}}(x)\\big)\\,dx\\).",
+  "Average value of \\(f\\) on \\([a, b]\\): \\(\\displaystyle\\frac{1}{b - a}\\int_a^b f(x)\\,dx\\). The trapezium rule approximates area."],
+ "explain": "Explain why \\(\\displaystyle\\int_{-1}^{1} x^3\\,dx = 0\\) even though there is area between the curve and the axis.",
+ "qs": [
+  {"t":"c","q":"Evaluate \\(\\displaystyle\\int_0^2 3x^2\\,dx\\).","a":"\\(\\big[x^3\\big]_0^2 = 8\\)","e":""},
+  {"t":"c","q":"Find the average value of \\(f(x) = x^2\\) on \\([0, 3]\\).","a":"\\(\\dfrac{1}{3}\\displaystyle\\int_0^3 x^2\\,dx = \\dfrac{1}{3} \\times 9 = 3\\)","e":""},
+  {"t":"m","q":"\\(\\displaystyle\\int e^{3x}\\,dx = \\)","o":["\\(3e^{3x} + c\\)","\\(\\tfrac{1}{3}e^{3x} + c\\)","\\(e^{3x} + c\\)","\\(\\dfrac{e^{3x}}{x} + c\\)"],"a":1,"e":""}]}
+]},
+{"name": "Data analysis, probability and statistics", "topics": [
+{"id": "drv-binomial", "title": "Discrete random variables and the binomial distribution",
+ "points": [
+  "A discrete probability distribution has \\(0 \\le \\Pr(X = x) \\le 1\\) and \\(\\sum \\Pr(X = x) = 1\\).",
+  "\\(\\operatorname{E}(X) = \\sum x\\Pr(X = x)\\). \\(\\operatorname{Var}(X) = \\operatorname{E}(X^2) - [\\operatorname{E}(X)]^2\\). \\(\\operatorname{sd}(X) = \\sqrt{\\operatorname{Var}(X)}\\).",
+  "Binomial \\(X \\sim \\operatorname{Bi}(n, p)\\): \\(n\\) independent trials, each a success with probability \\(p\\). \\[\\Pr(X = x) = \\binom{n}{x}p^x(1 - p)^{n - x}\\]",
+  "Binomial mean \\(\\operatorname{E}(X) = np\\); variance \\(\\operatorname{Var}(X) = np(1 - p)\\).",
+  "\\(\\operatorname{E}(aX + b) = a\\operatorname{E}(X) + b\\); \\(\\operatorname{Var}(aX + b) = a^2\\operatorname{Var}(X)\\)."],
+ "explain": "Explain the four conditions that make a situation binomial.",
+ "qs": [
+  {"t":"c","q":"\\(X\\) takes values \\(0, 1, 2\\) with probabilities \\(0.2, 0.5, 0.3\\). Find \\(\\operatorname{E}(X)\\) and \\(\\operatorname{Var}(X)\\).","a":"\\(\\operatorname{E}(X) = 1.1\\); \\(\\operatorname{E}(X^2) = 1.7\\); \\(\\operatorname{Var}(X) = 1.7 - 1.1^2 = 0.49\\)","e":""},
+  {"t":"m","q":"\\(X \\sim \\operatorname{Bi}(10, 0.3)\\). Find \\(\\operatorname{E}(X)\\).","o":["\\(0.3\\)","\\(3\\)","\\(2.1\\)","\\(7\\)"],"a":1,"e":"\\(np = 10 \\times 0.3 = 3\\)"},
+  {"t":"c","q":"\\(X \\sim \\operatorname{Bi}(10, 0.3)\\). Find \\(\\operatorname{Var}(X)\\).","a":"\\(10 \\times 0.3 \\times 0.7 = 2.1\\)","e":""}]},
+{"id": "continuous", "title": "Continuous random variables and the normal distribution",
+ "points": [
+  "A probability density function has \\(f(x) \\ge 0\\) and \\(\\displaystyle\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1\\). \\(\\Pr(a < X < b) = \\displaystyle\\int_a^b f(x)\\,dx\\).",
+  "\\(\\operatorname{E}(X) = \\displaystyle\\int_{-\\infty}^{\\infty} x f(x)\\,dx\\). The median \\(m\\) satisfies \\(\\displaystyle\\int_{-\\infty}^{m} f(x)\\,dx = 0.5\\).",
+  "Normal distribution \\(X \\sim N(\\mu, \\sigma^2)\\): about 68% within \\(\\mu \\pm \\sigma\\), 95% within \\(\\mu \\pm 2\\sigma\\), 99.7% within \\(\\mu \\pm 3\\sigma\\).",
+  "Standardise: \\(Z = \\dfrac{X - \\mu}{\\sigma}\\), with \\(Z \\sim N(0, 1)\\).",
+  "For a continuous variable, \\(\\Pr(X = a) = 0\\)."],
+ "explain": "Explain why \\(\\Pr(X = 3) = 0\\) for a continuous random variable.",
+ "qs": [
+  {"t":"c","q":"\\(f(x) = kx\\) for \\(0 \\le x \\le 2\\) (zero elsewhere) is a probability density function. Find \\(k\\).","a":"\\(\\displaystyle\\int_0^2 kx\\,dx = 2k = 1\\), so \\(k = \\tfrac{1}{2}\\)","e":""},
+  {"t":"m","q":"\\(X \\sim N(50, 5^2)\\). Using the 68–95–99.7 rule, \\(\\Pr(X > 60)\\) is about…","o":["\\(0.16\\)","\\(0.05\\)","\\(0.025\\)","\\(0.0015\\)"],"a":2,"e":"\\(60 = \\mu + 2\\sigma\\), so \\(\\Pr(X > 60) \\approx \\dfrac{1 - 0.95}{2} = 0.025\\)."},
+  {"t":"c","q":"\\(X \\sim N(100, 15^2)\\). Find the \\(z\\)-score of \\(x = 130\\).","a":"\\(z = \\dfrac{130 - 100}{15} = 2\\)","e":""}]},
+{"id": "sampling", "title": "Sample proportions and confidence intervals",
+ "points": [
+  "The sample proportion \\(\\hat{p}\\) estimates the population proportion \\(p\\).",
+  "For large samples, \\(\\hat{P}\\) is approximately normal with mean \\(p\\) and standard deviation \\(\\sqrt{\\dfrac{p(1 - p)}{n}}\\).",
+  "Approximate 95% confidence interval: \\[\\left(\\hat{p} - 1.96\\sqrt{\\frac{\\hat{p}(1 - \\hat{p})}{n}},\\ \\hat{p} + 1.96\\sqrt{\\frac{\\hat{p}(1 - \\hat{p})}{n}}\\right)\\]",
+  "Higher confidence gives a wider interval; a larger sample gives a narrower interval.",
+  "About 95% of intervals made this way contain \\(p\\); any single interval either does or does not."],
+ "explain": "Explain what a 95% confidence interval does and does not tell you.",
+ "qs": [
+  {"t":"c","q":"In a sample of \\(n = 100\\), \\(\\hat{p} = 0.4\\). Find an approximate 95% confidence interval for \\(p\\).","a":"\\(\\sqrt{\\dfrac{0.4 \\times 0.6}{100}} \\approx 0.049\\); \\(0.4 \\pm 1.96 \\times 0.049 \\Rightarrow (0.304,\\ 0.496)\\)","e":""},
+  {"t":"m","q":"Quadrupling the sample size makes the margin of error…","o":["four times larger","twice as large","half as large","a quarter as large"],"a":2,"e":"The margin is proportional to \\(\\dfrac{1}{\\sqrt{n}}\\), and \\(\\sqrt{4} = 2\\)."}]}
+]}
+]}

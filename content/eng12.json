@@ -1,0 +1,103 @@
+{
+"title": "English Language Units 1 & 2",
+"aos": [
+{"name": "Unit 1 AoS 1 · The nature and functions of language", "topics": [
+{"id": "functions", "title": "Language functions and context",
+ "points": [
+  "Language is a rule-governed system of symbols used to communicate. It is arbitrary, creative and changes over time.",
+  "Functions (Jakobson): referential (informing), expressive or emotive (feelings), conative or directive (getting someone to act), phatic (building contact: “How’s it going?”), poetic (focus on form), metalingual (talking about language).",
+  "Situational context: field (topic), mode (spoken, written, signed, digital), setting, participants and their relationship, purpose.",
+  "Cultural context: the values, beliefs and attitudes of the wider community that shape a text.",
+  "Register runs from formal to informal. Tenor is the relationship between participants (social distance, status)."],
+ "explain": "Pick a text message you sent today. Name its function, mode, tenor and register.",
+ "qs": [
+  {"t":"m","q":"“Hey, how’ve you been?” mainly serves which function?","o":["Referential","Phatic","Metalingual","Poetic"],"a":1,"e":"It builds social contact rather than passing on information."},
+  {"t":"m","q":"“Close the door, please” is mainly…","o":["expressive","conative (directive)","phatic","referential"],"a":1,"e":""},
+  {"t":"c","q":"What is the difference between field and tenor?","a":"Field is the subject matter of the text. Tenor is the relationship between the participants (how formal, close or equal they are).","e":""},
+  {"t":"c","q":"Define register.","a":"The variety of language used for a particular situation, placed on a scale from formal to informal.","e":""}]},
+{"id": "subsystems", "title": "Subsystems and metalanguage",
+ "points": [
+  "Phonetics and phonology: speech sounds and how they pattern (stress, intonation, assimilation, elision).",
+  "Morphology and lexicology: morphemes (free, bound; inflectional, derivational) and words (word classes, word formation).",
+  "Syntax: how words combine into phrases, clauses and sentences (simple, compound, complex, compound-complex).",
+  "Semantics: meaning of words and sentences (denotation, connotation, semantic fields, figurative language).",
+  "Discourse and pragmatics: how texts hang together (cohesion, coherence) and meaning in context (implicature, politeness).",
+  "Analysis pattern: name the feature (metalanguage) → quote an example → explain its effect in context."],
+ "explain": "Label every morpheme in “unhelpfulness” and say whether each is free or bound.",
+ "qs": [
+  {"t":"m","q":"In “walked”, the suffix -ed is a…","o":["free morpheme","derivational morpheme","inflectional morpheme","root"],"a":2,"e":"It marks past tense without changing the word class."},
+  {"t":"m","q":"Which subsystem studies cohesion and implicature?","o":["Syntax","Phonology","Discourse and pragmatics","Morphology"],"a":2,"e":""},
+  {"t":"c","q":"What is the difference between denotation and connotation?","a":"Denotation is the literal dictionary meaning; connotation is the extra associations or feelings a word carries (e.g. “home” vs “house”).","e":""},
+  {"t":"m","q":"“I went home because it rained” is a…","o":["simple sentence","compound sentence","complex sentence","minor sentence"],"a":2,"e":"Main clause + subordinate clause (because…)."},
+  {"t":"c","q":"Name the three steps in analysing a language feature.","a":"Identify the feature using metalanguage, give a quoted example, explain its effect or function in the context.","e":""}]}
+]},
+{"name": "Unit 1 AoS 2 · Language acquisition", "topics": [
+{"id": "acquisition", "title": "First-language acquisition",
+ "points": [
+  "Stages: crying and cooing (0–4 months), babbling (6–12 months), holophrastic (one word, ~12 months), two-word (~18 months), telegraphic (2–3 years), post-telegraphic.",
+  "Children overgeneralise rules (“I goed”, “mouses”), showing they are learning patterns, not just copying.",
+  "Behaviourist (Skinner): imitation and reinforcement. Nativist (Chomsky): an innate language acquisition device and universal grammar.",
+  "Cognitive (Piaget): language follows thinking development. Interactionist (Bruner, Vygotsky): carers support learning (child-directed speech, scaffolding).",
+  "Critical age hypothesis (Lenneberg): a first language is acquired most easily before puberty.",
+  "IPA symbols record speech sounds precisely; connected speech processes include assimilation, elision and vowel reduction."],
+ "explain": "Explain how “I eated it” is evidence against a pure imitation theory.",
+ "qs": [
+  {"t":"m","q":"“Daddy go car” is typical of which stage?","o":["Babbling","Holophrastic","Telegraphic","Cooing"],"a":2,"e":"Content words only, function words left out."},
+  {"t":"m","q":"Which theorist proposed an innate language acquisition device?","o":["Skinner","Chomsky","Piaget","Bruner"],"a":1,"e":""},
+  {"t":"c","q":"What is overgeneralisation? Give an example.","a":"Applying a regular rule to an irregular form, e.g. “sheeps” or “runned”.","e":""},
+  {"t":"c","q":"What is the critical age hypothesis?","a":"The idea that there is a window, ending around puberty, in which a first language can be fully acquired; after it, acquisition is much harder.","e":""}]},
+{"id": "additional", "title": "Additional-language learning and multilingualism",
+ "points": [
+  "Additional-language learners often show interlanguage: a developing system with features of both languages.",
+  "Transfer (interference): first-language patterns carry over into the new language, e.g. word order or sounds.",
+  "Code-switching: moving between languages or varieties in one conversation, often to show identity or include people.",
+  "Multilingualism is normal worldwide; Australia has many community languages and Aboriginal languages.",
+  "Learning after childhood often leaves an accent but can still reach high fluency."],
+ "explain": "Explain why an adult learner might keep an accent even when their grammar is excellent.",
+ "qs": [
+  {"t":"c","q":"What is code-switching?","a":"Switching between two languages or varieties within one conversation or sentence.","e":"It can signal identity, solidarity or fill a vocabulary gap."},
+  {"t":"m","q":"A Spanish speaker says “the car red”. This shows…","o":["phatic language","first-language transfer","telegraphic speech","a creole"],"a":1,"e":"Spanish puts adjectives after the noun."},
+  {"t":"c","q":"What is interlanguage?","a":"The in-between system a learner builds while acquiring an additional language, mixing rules from both languages and their own hypotheses.","e":""}]}
+]},
+{"name": "Unit 2 AoS 1 · English across time", "topics": [
+{"id": "history", "title": "Periods of English",
+ "points": [
+  "Old English (about 450–1100): Germanic tribes (Angles, Saxons, Jutes); heavy inflections; Norse influence (they, sky, egg).",
+  "Middle English (about 1100–1500): after the Norman Conquest (1066), French adds law, food and government words; inflections are lost; word order becomes fixed.",
+  "Early Modern English (about 1500–1800): the printing press (Caxton, 1476) and the Great Vowel Shift; Shakespeare and the King James Bible; Johnson’s dictionary (1755).",
+  "Modern English (1800 onward): science, empire, technology and global spread.",
+  "English belongs to the Germanic branch of the Indo-European family."],
+ "explain": "Explain why English has pairs like cow/beef and pig/pork.",
+ "qs": [
+  {"t":"m","q":"Which event brought many French words into English?","o":["The arrival of the Vikings","The Norman Conquest of 1066","The printing press","Johnson’s dictionary"],"a":1,"e":""},
+  {"t":"m","q":"The Great Vowel Shift happened mainly during…","o":["Old English","Middle English to Early Modern English","Modern English","Old Norse rule"],"a":1,"e":"Roughly 1400–1700, changing long vowel sounds."},
+  {"t":"c","q":"How did the printing press help standardise English?","a":"Printers chose fixed spellings and forms so texts could be read widely, spreading one written standard (largely London English).","e":""}]},
+{"id": "change", "title": "Processes of language change",
+ "points": [
+  "Word formation: borrowing (sushi), compounding (smartphone), blending (brunch), clipping (uni), acronyms (scuba) and initialisms (ATM), coinage (Google), conversion (to text), affixation (unfriend).",
+  "Semantic change: broadening (holiday), narrowing (meat once meant all food), amelioration (nice), pejoration (silly once meant blessed).",
+  "Sound change and grammatical change also happen (loss of thou, new uses of “like”).",
+  "Prescriptivism: rules about how language should be used. Descriptivism: describing how it is actually used.",
+  "Aitchison’s metaphors for fears of change: the damp spoon (laziness), the crumbling castle (decline from a perfect past), the infectious disease (picked up from others)."],
+ "explain": "Explain whether the change in meaning of “literally” is good or bad, from both a prescriptive and a descriptive view.",
+ "qs": [
+  {"t":"m","q":"“Brunch” is formed by…","o":["clipping","blending","conversion","borrowing"],"a":1,"e":"Breakfast + lunch."},
+  {"t":"m","q":"“Google” used as a verb is an example of…","o":["conversion","narrowing","acronym","pejoration"],"a":0,"e":"A noun changes word class."},
+  {"t":"c","q":"“Nice” once meant foolish. What process is this?","a":"Amelioration: the meaning became more positive.","e":""},
+  {"t":"c","q":"Define prescriptivism.","a":"The view that there are correct and incorrect ways to use a language and that people should follow the rules of a standard.","e":""}]}
+]},
+{"name": "Unit 2 AoS 2 · Englishes in contact", "topics": [
+{"id": "englishes", "title": "Global Englishes, pidgins and creoles",
+ "points": [
+  "Kachru’s circles: inner (native: UK, US, Australia), outer (official or second language: India, Nigeria, Singapore), expanding (foreign language: China, Japan).",
+  "A pidgin is a simplified contact language with no native speakers. When children grow up speaking it, it becomes a creole (e.g. Tok Pisin, Kriol).",
+  "Contact with English can cause language shift and language death; revival programs work to restore languages.",
+  "Aboriginal English is a dialect with its own systematic features, and it carries cultural identity.",
+  "New Englishes develop their own standard forms, reflecting local identity."],
+ "explain": "Explain the difference between a pidgin and a creole using Tok Pisin.",
+ "qs": [
+  {"t":"m","q":"A contact language that has native speakers is a…","o":["pidgin","creole","dialect of the inner circle","lingua franca only"],"a":1,"e":""},
+  {"t":"m","q":"India is in which of Kachru’s circles?","o":["Inner","Outer","Expanding","None"],"a":1,"e":"English is an official second language there."},
+  {"t":"c","q":"Why is language death a loss for a community?","a":"A language carries culture, knowledge, identity and ways of seeing the world; when it dies these are hard to pass on.","e":""}]}
+]}
+]}

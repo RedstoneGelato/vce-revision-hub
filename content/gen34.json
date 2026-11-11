@@ -1,0 +1,90 @@
+{
+"title": "General Mathematics Units 3 & 4",
+"aos": [
+{"name": "Unit 3 AoS 1 · Data analysis", "topics": [
+{"id": "normal-z", "title": "Univariate data, z-scores and the 68–95–99.7 rule",
+ "points": [
+  "Standard score: \\(z = \\dfrac{x - \\bar{x}}{s}\\).",
+  "For a bell-shaped distribution: about 68% of values lie within \\(\\bar{x} \\pm s\\), 95% within \\(\\bar{x} \\pm 2s\\), 99.7% within \\(\\bar{x} \\pm 3s\\).",
+  "Use \\(z\\)-scores to compare results from different distributions.",
+  "Boxplots, five-number summaries and outlier fences (\\(Q_1 - 1.5 \\times \\text{IQR}\\), \\(Q_3 + 1.5 \\times \\text{IQR}\\)) describe skewed data.",
+  "Report centre, spread, shape and outliers in context."],
+ "explain": "Explain how \\(z\\)-scores let you compare a Maths mark with an English mark.",
+ "qs": [
+  {"t":"c","q":"A score of \\(75\\) comes from a distribution with \\(\\bar{x} = 60\\) and \\(s = 5\\). Find \\(z\\).","a":"\\(z = \\dfrac{75 - 60}{5} = 3\\)","e":""},
+  {"t":"m","q":"Heights have \\(\\bar{x} = 170\\) cm and \\(s = 8\\) cm. What percentage are above \\(186\\) cm?","o":["5%","2.5%","16%","0.15%"],"a":1,"e":"\\(186 = \\bar{x} + 2s\\), so about \\(\\dfrac{5\\%}{2} = 2.5\\%\\)."}]},
+{"id": "regression", "title": "Bivariate data and regression",
+ "points": [
+  "Least-squares line: \\(\\text{response} = a + b \\times \\text{explanatory}\\). The slope \\(b\\) is the change in the response for each 1-unit increase in the explanatory variable.",
+  "Coefficient of determination \\(r^2\\): the percentage of variation in the response explained by the explanatory variable.",
+  "Residual \\(= \\text{actual} - \\text{predicted}\\). A random residual plot supports a linear model; a pattern suggests the data is non-linear.",
+  "Interpolation (inside the data range) is more reliable than extrapolation (outside it).",
+  "Transformations such as \\(\\log x\\), \\(\\dfrac{1}{x}\\) and \\(x^2\\) can linearise non-linear data."],
+ "explain": "Interpret the slope and \\(r^2\\) for \\(\\text{score} = 20 + 3.5 \\times \\text{hours}\\), \\(r = 0.8\\).",
+ "qs": [
+  {"t":"c","q":"\\(r = 0.8\\). Find and interpret \\(r^2\\).","a":"\\(r^2 = 0.64\\): 64% of the variation in the response is explained by the variation in the explanatory variable.","e":""},
+  {"t":"c","q":"The actual value is \\(20\\) and the predicted value is \\(17\\). Find the residual.","a":"\\(20 - 17 = 3\\)","e":""},
+  {"t":"m","q":"A curved pattern in a residual plot means…","o":["the linear model is a good fit","the data is not linear","\\(r = 1\\)","there are no outliers"],"a":1,"e":""}]},
+{"id": "time-series", "title": "Time series",
+ "points": [
+  "Look for trend, seasonality, cycles, irregular fluctuations and outliers.",
+  "Smoothing: moving averages (centre an even-period average) or median smoothing.",
+  "\\(\\text{seasonal index} = \\dfrac{\\text{seasonal value}}{\\text{seasonal average}}\\). The indices average to \\(1\\).",
+  "\\(\\text{deseasonalised value} = \\dfrac{\\text{actual value}}{\\text{seasonal index}}\\). Re-seasonalise by multiplying by the index.",
+  "Fit a trend line to deseasonalised data to forecast."],
+ "explain": "Explain what a seasonal index of \\(1.2\\) for summer means.",
+ "qs": [
+  {"t":"c","q":"Summer sales are \\(600\\) and the summer seasonal index is \\(1.2\\). Find deseasonalised sales.","a":"\\(\\dfrac{600}{1.2} = 500\\)","e":""},
+  {"t":"m","q":"A seasonal index of \\(0.8\\) means sales in that season are…","o":["20% above average","20% below average","80% above average","equal to average"],"a":1,"e":""}]}
+]},
+{"name": "Unit 3 AoS 2 · Recursion and financial modelling", "topics": [
+{"id": "depreciation", "title": "Depreciation and interest",
+ "points": [
+  "Flat-rate depreciation: \\(V_{n+1} = V_n - D\\) (linear). Unit-cost depreciation: \\(D = \\text{cost per unit} \\times \\text{units used}\\).",
+  "Reducing-balance depreciation: \\(V_{n+1} = RV_n\\) with \\(R = 1 - \\dfrac{r}{100}\\) (geometric).",
+  "Compound interest: \\(V_{n+1} = RV_n\\) with \\(R = 1 + \\dfrac{r}{100\\,n}\\) per compounding period (\\(n\\) periods per year).",
+  "Effective interest rate: \\[r_{\\text{eff}} = \\left[\\left(1 + \\frac{r}{100\\,n}\\right)^{n} - 1\\right] \\times 100\\%\\]",
+  "Finance solver: \\(N\\), \\(I\\%\\), \\(PV\\), \\(PMT\\), \\(FV\\), \\(P/Y\\), \\(C/Y\\)."],
+ "explain": "Explain why reducing-balance depreciation loses the most value in the first year.",
+ "qs": [
+  {"t":"c","q":"A $30 000 car depreciates at a flat rate of 10% of its purchase price per year. Find its value after 4 years.","a":"\\(D = 3000\\); \\(V_4 = 30\\,000 - 4 \\times 3000 = 18\\,000\\), so $18 000","e":""},
+  {"t":"c","q":"The same car depreciates by 20% per year on a reducing balance. Find its value after 2 years.","a":"\\(V_2 = 30\\,000 \\times 0.8^2 = 19\\,200\\), so $19 200","e":""},
+  {"t":"c","q":"Find the effective annual rate for 6% p.a. compounding monthly.","a":"\\(\\left[\\left(1 + \\dfrac{6}{1200}\\right)^{12} - 1\\right] \\times 100\\% = (1.005^{12} - 1) \\times 100\\% \\approx 6.17\\%\\)","e":""}]},
+{"id": "annuities", "title": "Loans, annuities and perpetuities",
+ "points": [
+  "Reducing-balance loan or annuity: \\(V_{n+1} = RV_n - d\\). Each payment covers the interest first, then reduces the balance.",
+  "An annuity pays regular amounts from an invested sum until it runs out.",
+  "A perpetuity pays only the interest, so the balance never falls: \\(d = V_0 \\times \\dfrac{r}{100}\\) per period.",
+  "Annuity investment (regular deposits added): \\(V_{n+1} = RV_n + d\\).",
+  "Amortisation tables show the payment, interest, principal reduction and balance."],
+ "explain": "Explain why a perpetuity can pay forever but an annuity cannot.",
+ "qs": [
+  {"t":"c","q":"$500 000 is invested in a perpetuity at 4% p.a., paid annually. Find the annual payment.","a":"\\(d = 500\\,000 \\times 0.04 = 20\\,000\\), so $20 000","e":""},
+  {"t":"m","q":"\\(V_{n+1} = 1.005\\,V_n - 800\\) models…","o":["a perpetuity","a reducing-balance loan or annuity","flat-rate depreciation","simple interest"],"a":1,"e":""}]}
+]},
+{"name": "Unit 4 · Matrices and networks", "topics": [
+{"id": "matrices34", "title": "Matrices and transition matrices",
+ "points": [
+  "Binary, permutation, communication and dominance matrices model relationships.",
+  "Transition matrix \\(T\\): each column sums to \\(1\\). State matrices: \\(S_{n+1} = TS_n\\), so \\(S_n = T^n S_0\\).",
+  "Steady state: the state matrix stops changing as \\(n\\) grows large.",
+  "Extended models add a recurring input: \\(S_{n+1} = TS_n + B\\). Leslie matrices model populations by age group (birth rates on the top row, survival rates below).",
+  "Inverse matrices solve systems: \\(AX = B \\Rightarrow X = A^{-1}B\\)."],
+ "explain": "Explain what the steady state of a transition matrix model tells you.",
+ "qs": [
+  {"t":"m","q":"In a transition matrix, each column sums to…","o":["\\(0\\)","\\(1\\)","\\(100\\)","the number of states"],"a":1,"e":""},
+  {"t":"c","q":"Write the rule linking state matrices with transition matrix \\(T\\).","a":"\\(S_{n+1} = TS_n\\), so \\(S_n = T^n S_0\\)","e":""}]},
+{"id": "networks34", "title": "Networks and decision mathematics",
+ "points": [
+  "Shortest path: Dijkstra’s algorithm or inspection. Minimum spanning tree: Prim’s algorithm.",
+  "Network flow: maximum flow \\(=\\) capacity of the minimum cut.",
+  "Allocation (assignment): Hungarian algorithm to minimise total cost or time.",
+  "Critical path analysis: earliest start times (forward pass) and latest start times (backward pass). \\(\\text{float} = \\text{LST} - \\text{EST}\\). Activities with zero float are critical.",
+  "Crashing reduces project time by shortening critical activities, usually at extra cost."],
+ "explain": "Explain why delaying a critical activity delays the whole project.",
+ "qs": [
+  {"t":"m","q":"The maximum flow through a network equals…","o":["the largest edge capacity","the capacity of the minimum cut","the number of vertices","the sum of all capacities"],"a":1,"e":""},
+  {"t":"c","q":"An activity has \\(\\text{EST} = 4\\) and \\(\\text{LST} = 7\\). Find its float.","a":"\\(7 - 4 = 3\\) (not critical)","e":""},
+  {"t":"m","q":"Which algorithm finds a minimum spanning tree?","o":["Dijkstra’s","Prim’s","Hungarian","Euler’s"],"a":1,"e":""}]}
+]}
+]}

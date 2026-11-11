@@ -1,0 +1,82 @@
+{
+"title": "General Mathematics Units 1 & 2",
+"aos": [
+{"name": "Data analysis", "topics": [
+{"id": "univariate", "title": "Univariate data",
+ "points": [
+  "Categorical data: nominal (no order) or ordinal (ordered). Numerical data: discrete (counted) or continuous (measured).",
+  "Centre: mean \\(\\bar{x} = \\dfrac{\\sum x}{n}\\) (affected by outliers) and median (resistant). Spread: range, \\(\\text{IQR} = Q_3 - Q_1\\), standard deviation \\(s\\).",
+  "Outliers lie below \\(Q_1 - 1.5 \\times \\text{IQR}\\) or above \\(Q_3 + 1.5 \\times \\text{IQR}\\).",
+  "Shape: symmetric, positively skewed (tail to the right), negatively skewed (tail to the left).",
+  "Displays: bar charts for categorical data; histograms, dot plots, stem plots and boxplots for numerical data."],
+ "explain": "Explain why the median is a better measure of centre than the mean for house prices.",
+ "qs": [
+  {"t":"c","q":"\\(Q_1 = 10\\) and \\(Q_3 = 18\\). Is \\(35\\) an outlier?","a":"\\(\\text{IQR} = 8\\); upper fence \\(= 18 + 1.5 \\times 8 = 30\\). Since \\(35 > 30\\), yes.","e":""},
+  {"t":"m","q":"Postcode is which type of data?","o":["Numerical discrete","Numerical continuous","Categorical nominal","Categorical ordinal"],"a":2,"e":"Numbers used as labels."},
+  {"t":"m","q":"A distribution with a long tail to the right is…","o":["negatively skewed","positively skewed","symmetric","bimodal"],"a":1,"e":""},
+  {"t":"c","q":"Find the mean and median of \\(2, 4, 6, 8, 10\\).","a":"\\(\\bar{x} = \\dfrac{30}{5} = 6\\); median \\(= 6\\)","e":""}]},
+{"id": "bivariate12", "title": "Investigating relationships",
+ "points": [
+  "Explanatory variable on the \\(x\\)-axis, response variable on the \\(y\\)-axis.",
+  "Describe a scatterplot by direction (positive or negative), form (linear or non-linear) and strength (weak, moderate, strong).",
+  "Pearson’s correlation coefficient: \\(-1 \\le r \\le 1\\). It only measures linear relationships.",
+  "Correlation does not mean causation: a third variable may explain both.",
+  "Two-way tables and segmented bar charts compare two categorical variables."],
+ "explain": "Explain why ice-cream sales and drownings are correlated but one does not cause the other.",
+ "qs": [
+  {"t":"m","q":"\\(r = -0.85\\) describes a…","o":["weak positive relationship","strong negative linear relationship","no relationship","strong positive relationship"],"a":1,"e":""},
+  {"t":"c","q":"Height and shoe size: which is explanatory if you want to predict shoe size?","a":"Height (explanatory), shoe size (response)","e":""}]}
+]},
+{"name": "Arithmetic, recursion and financial mathematics", "topics": [
+{"id": "finance12", "title": "Percentages, interest and recursion",
+ "points": [
+  "Percentage change \\(= \\dfrac{\\text{change}}{\\text{original}} \\times 100\\%\\). GST: price \\(\\times 1.1\\); GST in a total \\(= \\dfrac{\\text{total}}{11}\\).",
+  "Simple interest: \\(I = \\dfrac{PrT}{100}\\); total value \\(A = P + I\\).",
+  "Compound interest: \\(A = P\\left(1 + \\dfrac{r}{100}\\right)^n\\).",
+  "Linear recurrence \\(u_{n+1} = u_n + d\\) (simple interest, flat-rate depreciation). Geometric recurrence \\(u_{n+1} = Ru_n\\) (compound growth or decay).",
+  "Inflation reduces purchasing power; compare costs in today’s dollars."],
+ "explain": "Explain why compound interest grows faster than simple interest over time.",
+ "qs": [
+  {"t":"c","q":"Find the simple interest on $5 000 at 4% p.a. for 3 years.","a":"\\(I = \\dfrac{5000 \\times 4 \\times 3}{100} = 600\\), so $600","e":""},
+  {"t":"c","q":"$1 000 is invested at 5% p.a. compounding annually. Find its value after 2 years.","a":"\\(A = 1000 \\times 1.05^2 = 1102.50\\), so $1 102.50","e":""},
+  {"t":"m","q":"\\(u_0 = 200\\) and \\(u_{n+1} = u_n + 15\\). Find \\(u_3\\).","o":["\\(215\\)","\\(230\\)","\\(245\\)","\\(260\\)"],"a":2,"e":"\\(u_3 = 200 + 3 \\times 15 = 245\\)"},
+  {"t":"c","q":"A $80 item rises to $92. Find the percentage increase.","a":"\\(\\dfrac{12}{80} \\times 100\\% = 15\\%\\)","e":""}]}
+]},
+{"name": "Matrices, networks and linear relations", "topics": [
+{"id": "matrices12", "title": "Matrices",
+ "points": [
+  "Order = rows \\(\\times\\) columns. Add or subtract matrices only of the same order.",
+  "\\(AB\\) exists if the number of columns of \\(A\\) equals the number of rows of \\(B\\): \\((m \\times n)(n \\times p)\\) gives an \\(m \\times p\\) matrix.",
+  "Matrix multiplication is not usually commutative: \\(AB \\neq BA\\).",
+  "For \\(A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}\\): \\(\\det A = ad - bc\\) and \\(A^{-1} = \\dfrac{1}{ad - bc}\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}\\), which exists only if \\(\\det A \\neq 0\\).",
+  "Matrices store data in tables and can solve simultaneous equations."],
+ "explain": "Explain why a \\(2 \\times 3\\) matrix cannot be multiplied by another \\(2 \\times 3\\) matrix.",
+ "qs": [
+  {"t":"m","q":"\\(A\\) is \\(2 \\times 3\\) and \\(B\\) is \\(3 \\times 4\\). The order of \\(AB\\) is…","o":["\\(3 \\times 3\\)","\\(2 \\times 4\\)","\\(4 \\times 2\\)","not defined"],"a":1,"e":""},
+  {"t":"c","q":"Find \\(\\det\\begin{bmatrix} 3 & 2 \\\\ 1 & 4 \\end{bmatrix}\\).","a":"\\(3 \\times 4 - 2 \\times 1 = 10\\)","e":""}]},
+{"id": "networks12", "title": "Graphs and networks",
+ "points": [
+  "A graph has vertices joined by edges; the degree of a vertex is the number of edges at it.",
+  "Euler trail (every edge once): exists if exactly 0 or 2 vertices have odd degree. Euler circuit (returns to start): every degree is even.",
+  "Hamiltonian path: visits every vertex once. Hamiltonian cycle: also returns to the start.",
+  "Connected planar graphs satisfy Euler’s formula \\(v - e + f = 2\\).",
+  "Trees, spanning trees and shortest paths solve real problems such as routes and cabling."],
+ "explain": "Explain why a graph with four odd-degree vertices has no Euler trail.",
+ "qs": [
+  {"t":"m","q":"A connected graph has vertex degrees \\(2, 2, 3, 3\\). It has…","o":["an Euler circuit","an Euler trail but not a circuit","neither","a Hamiltonian cycle only"],"a":1,"e":"Exactly two odd vertices."},
+  {"t":"c","q":"A connected planar graph has 6 vertices and 9 edges. How many faces?","a":"\\(6 - 9 + f = 2 \\Rightarrow f = 5\\)","e":""}]},
+{"id": "linear12", "title": "Linear relations and measurement",
+ "points": [
+  "Linear model: \\(y = a + bx\\), where \\(a\\) is the intercept and \\(b\\) the gradient (rate of change).",
+  "Simultaneous equations: solve by substitution, elimination or graphing. Break-even is where cost \\(=\\) revenue.",
+  "Pythagoras: \\(c^2 = a^2 + b^2\\). Right triangles: \\(\\sin\\theta = \\dfrac{O}{H}\\), \\(\\cos\\theta = \\dfrac{A}{H}\\), \\(\\tan\\theta = \\dfrac{O}{A}\\).",
+  "Sine rule \\(\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}\\); cosine rule \\(c^2 = a^2 + b^2 - 2ab\\cos C\\).",
+  "Similar figures with scale factor \\(k\\): lengths \\(\\times k\\), areas \\(\\times k^2\\), volumes \\(\\times k^3\\).",
+  "Circle \\(A = \\pi r^2\\); cylinder \\(V = \\pi r^2 h\\); sphere \\(V = \\tfrac{4}{3}\\pi r^3\\)."],
+ "explain": "Explain why doubling every length of a box multiplies its volume by \\(8\\).",
+ "qs": [
+  {"t":"c","q":"A right triangle has legs \\(6\\) cm and \\(8\\) cm. Find the hypotenuse.","a":"\\(c = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\) cm","e":""},
+  {"t":"m","q":"Two similar solids have scale factor \\(k = 3\\). Their volumes are in the ratio…","o":["\\(1 : 3\\)","\\(1 : 6\\)","\\(1 : 9\\)","\\(1 : 27\\)"],"a":3,"e":"\\(k^3 = 27\\)"},
+  {"t":"c","q":"Cost \\(C = 200 + 5n\\) and revenue \\(R = 15n\\). Find the break-even point.","a":"\\(200 + 5n = 15n \\Rightarrow n = 20\\)","e":""}]}
+]}
+]}

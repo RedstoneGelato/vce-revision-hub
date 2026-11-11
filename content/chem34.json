@@ -1,0 +1,527 @@
+{
+ "title": "Chemistry Units 3 & 4",
+ "aos": [
+  {
+   "name": "Unit 3 AoS 1 · What are the current and future options for supplying energy?",
+   "topics": [
+    {
+     "id": "fuels",
+     "title": "Fuels and combustion",
+     "points": [
+      "Exothermic reactions release energy (\\(\\Delta H < 0\\)); endothermic reactions absorb it (\\(\\Delta H > 0\\)).",
+      "Fossil fuels (coal, crude oil, natural gas) are non-renewable. Biofuels (bioethanol, biogas, biodiesel) are renewable but need land, water and energy to make.",
+      "Complete combustion: fuel + O₂ → CO₂ + H₂O. Incomplete combustion (little O₂) also makes CO and soot, and releases less energy.",
+      "Thermochemical equations show \\(\\Delta H\\) for the moles in the equation: \\[\\mathrm{CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(l)} \\quad \\Delta H = -890\\ \\mathrm{kJ\\ mol^{-1}}\\]",
+      "Heat of combustion is given in \\(\\mathrm{kJ\\ g^{-1}}\\) or \\(\\mathrm{kJ\\ mol^{-1}}\\) in the data book: \\(E = n \\times \\Delta H_c\\) or \\(E = m \\times (\\mathrm{kJ\\ g^{-1}})\\).",
+      "Bioethanol from fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂. It is carbon neutral only in theory, because farming and processing release CO₂."
+     ],
+     "explain": "Explain why incomplete combustion is both less efficient and more dangerous.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "How much energy is released by burning \\(20.0\\ \\mathrm{g}\\) of butane (\\(M = 58.0\\ \\mathrm{g\\ mol^{-1}}\\), \\(\\Delta H = -2880\\ \\mathrm{kJ\\ mol^{-1}}\\))?",
+       "a": "\\(n = \\dfrac{20.0}{58.0} = 0.345\\ \\mathrm{mol}\\); \\(E = 0.345 \\times 2880 = 993\\ \\mathrm{kJ}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A reaction with \\(\\Delta H = +572\\ \\mathrm{kJ\\ mol^{-1}}\\) is…",
+       "o": [
+        "exothermic",
+        "endothermic",
+        "at equilibrium",
+        "a combustion"
+       ],
+       "a": 1,
+       "e": "Positive \\(\\Delta H\\) means energy is absorbed."
+      },
+      {
+       "t": "c",
+       "q": "Write the equation for the complete combustion of propane.",
+       "a": "C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which fuel is renewable?",
+       "o": [
+        "Coal",
+        "Natural gas",
+        "Biogas",
+        "Crude oil"
+       ],
+       "a": 2,
+       "e": "Biogas comes from decomposing organic matter."
+      }
+     ]
+    },
+    {
+     "id": "calorimetry",
+     "title": "Stoichiometry and calorimetry",
+     "points": [
+      "Gas volumes: \\(n = \\dfrac{V}{V_m}\\) (\\(V_m = 24.8\\ \\mathrm{L\\ mol^{-1}}\\) at SLC) or \\(pV = nRT\\).",
+      "Limiting reactant decides how much product and energy is released.",
+      "Heat absorbed by water: \\(q = mc\\Delta T\\), with \\(c = 4.18\\ \\mathrm{J\\ g^{-1}\\,{}^\\circ C^{-1}}\\).",
+      "Calorimeters are calibrated electrically: \\(\\mathrm{CF} = \\dfrac{VIt}{\\Delta T}\\) (\\(\\mathrm{J\\,{}^\\circ C^{-1}}\\)). Then \\(E = \\mathrm{CF} \\times \\Delta T\\).",
+      "Solution calorimetry: \\(\\Delta H = -\\dfrac{q}{n}\\) (negative when the temperature rises).",
+      "Bomb calorimeters measure combustion energy; heat losses make experimental values lower than data book values."
+     ],
+     "explain": "Explain why calibrating a calorimeter improves accuracy.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "A calorimeter is calibrated with \\(5.00\\ \\mathrm{V}\\), \\(2.00\\ \\mathrm{A}\\) for \\(120\\ \\mathrm{s}\\). The temperature rises \\(2.40\\,{}^\\circ\\mathrm{C}\\). Find the calibration factor.",
+       "a": "\\(E = VIt = 5.00 \\times 2.00 \\times 120 = 1200\\ \\mathrm{J}\\); \\(\\mathrm{CF} = \\dfrac{1200}{2.40} = 500\\ \\mathrm{J\\,{}^\\circ C^{-1}}\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Using \\(\\mathrm{CF} = 500\\ \\mathrm{J\\,{}^\\circ C^{-1}}\\), a reaction raises the temperature by \\(3.10\\,{}^\\circ\\mathrm{C}\\). How much energy was released?",
+       "a": "\\(E = 500 \\times 3.10 = 1550\\ \\mathrm{J} = 1.55\\ \\mathrm{kJ}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Why are experimental heats of combustion usually lower than data book values?",
+       "o": [
+        "The fuel is too pure",
+        "Heat is lost to the surroundings and combustion is incomplete",
+        "The thermometer reads too high",
+        "Water has a low specific heat"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What volume of \\(\\mathrm{CO_2}\\) at SLC forms when \\(0.50\\ \\mathrm{mol}\\) of \\(\\mathrm{CH_4}\\) burns completely?",
+       "a": "\\(1 : 1\\) ratio, so \\(0.50\\ \\mathrm{mol\\ CO_2}\\); \\(V = 0.50 \\times 24.8 = 12.4\\ \\mathrm{L}\\)",
+       "e": ""
+      }
+     ]
+    },
+    {
+     "id": "galvanic",
+     "title": "Redox, galvanic cells and fuel cells",
+     "points": [
+      "Oxidation numbers track electron transfer; balance complex half equations with H₂O, H⁺ and e⁻ (KOHES).",
+      "The electrochemical series: strongest oxidising agent top left (F₂), strongest reducing agent bottom right (Li). A reaction occurs between an oxidant and a reductant below it.",
+      "Galvanic cell: anode (\\(-\\)) oxidation, cathode (\\(+\\)) reduction. \\(E_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}}\\)",
+      "Primary cells are not rechargeable. Predictions from E° values assume standard conditions and say nothing about rate.",
+      "Fuel cells continuously convert chemical energy to electrical energy; reactants are supplied constantly. Hydrogen fuel cell: H₂ is oxidised at the anode, O₂ reduced at the cathode.",
+      "In acidic electrolyte: anode H₂ → 2H⁺ + 2e⁻; cathode O₂ + 4H⁺ + 4e⁻ → 2H₂O."
+     ],
+     "explain": "Compare a fuel cell with a galvanic cell such as a battery.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "Find the standard voltage of a Zn | Cu cell (\\(E^\\circ\\): \\(\\mathrm{Cu^{2+}/Cu}\\ +0.34\\ \\mathrm{V}\\), \\(\\mathrm{Zn^{2+}/Zn}\\ -0.76\\ \\mathrm{V}\\)).",
+       "a": "\\(E_{\\text{cell}} = 0.34 - (-0.76) = 1.10\\ \\mathrm{V}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In a hydrogen–oxygen fuel cell, oxygen is reduced at the…",
+       "o": [
+        "anode, which is negative",
+        "cathode, which is positive",
+        "salt bridge",
+        "anode, which is positive"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Write the cathode half equation for a fuel cell with an alkaline electrolyte.",
+       "a": "O₂ + 2H₂O + 4e⁻ → 4OH⁻",
+       "e": "In acidic electrolyte use O₂ + 4H⁺ + 4e⁻ → 2H₂O."
+      },
+      {
+       "t": "m",
+       "q": "Using the electrochemical series, a spontaneous reaction occurs between…",
+       "o": [
+        "an oxidant and a reductant higher in the table",
+        "an oxidant and a reductant lower in the table",
+        "two oxidants",
+        "two reductants"
+       ],
+       "a": 1,
+       "e": "Top-left reacts with bottom-right."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 3 AoS 2 · How can the yield of a chemical product be optimised?",
+   "topics": [
+    {
+     "id": "rates",
+     "title": "Rates of reaction",
+     "points": [
+      "Collision theory: particles must collide with enough energy (at least the activation energy) and the right orientation.",
+      "Rate increases with higher concentration or pressure (more frequent collisions), greater surface area, and higher temperature.",
+      "Temperature increases rate mainly because a larger fraction of collisions have energy \\(\\geq E_a\\) (see the Maxwell–Boltzmann distribution).",
+      "Catalysts provide an alternative pathway with lower activation energy \\(E_a\\). They are not used up and do not change \\(\\Delta H\\) or the equilibrium position.",
+      "Energy profile diagrams show reactants, products, \\(E_a\\) and \\(\\Delta H\\)."
+     ],
+     "explain": "Use the Maxwell–Boltzmann distribution to explain why a small temperature rise greatly increases rate.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "A catalyst increases reaction rate by…",
+       "o": [
+        "raising the temperature",
+        "lowering the activation energy",
+        "increasing ΔH",
+        "shifting the equilibrium to the right"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Powdered marble reacts faster with acid than marble chips because…",
+       "o": [
+        "it has a higher activation energy",
+        "it has a larger surface area, so more collisions",
+        "the acid is more concentrated",
+        "powder is a catalyst"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why increasing temperature increases the rate of a reaction.",
+       "a": "Particles have more kinetic energy, so they collide more often and, more importantly, a greater proportion of collisions have energy equal to or greater than the activation energy.",
+       "e": ""
+      }
+     ]
+    },
+    {
+     "id": "equilibrium",
+     "title": "Equilibrium and Le Chatelier",
+     "points": [
+      "Dynamic equilibrium in a closed system: forward and reverse rates are equal; concentrations stay constant.",
+      "For \\(a\\mathrm{A} + b\\mathrm{B} \\rightleftharpoons c\\mathrm{C} + d\\mathrm{D}\\): \\[K = \\frac{[\\mathrm{C}]^c[\\mathrm{D}]^d}{[\\mathrm{A}]^a[\\mathrm{B}]^b}\\] (no solids or liquid water). \\(K\\) depends only on temperature.",
+      "Large \\(K\\) (above about \\(10^4\\)): mostly products. Small \\(K\\): mostly reactants. Compare the reaction quotient \\(Q\\) with \\(K\\) to predict the direction.",
+      "Le Chatelier: a system partially opposes a change. Adding reactant shifts right; increasing pressure shifts to the side with fewer gas particles.",
+      "Raising temperature favours the endothermic direction (\\(K\\) changes). Catalysts do not shift equilibrium.",
+      "Reversing an equation gives \\(\\dfrac{1}{K}\\); doubling the coefficients gives \\(K^2\\)."
+     ],
+     "explain": "Explain why adding a catalyst does not change the yield at equilibrium.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "Write the expression for \\(K\\): \\(\\mathrm{N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)}\\)",
+       "a": "\\(K = \\dfrac{[\\mathrm{NH_3}]^2}{[\\mathrm{N_2}][\\mathrm{H_2}]^3}\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "For N₂ + 3H₂ ⇌ 2NH₃ (ΔH negative), what increases the yield of NH₃?",
+       "o": [
+        "Raising temperature",
+        "Lowering pressure",
+        "Raising pressure",
+        "Adding a catalyst"
+       ],
+       "a": 2,
+       "e": "4 gas particles → 2: higher pressure favours fewer particles."
+      },
+      {
+       "t": "m",
+       "q": "If \\(Q < K\\), the reaction will…",
+       "o": [
+        "shift left",
+        "shift right",
+        "stay the same",
+        "stop"
+       ],
+       "a": 1,
+       "e": "It makes more products until \\(Q = K\\)."
+      },
+      {
+       "t": "c",
+       "q": "\\(K\\) for \\(\\mathrm{A} \\rightleftharpoons \\mathrm{B}\\) is \\(4.0\\). What is \\(K\\) for \\(\\mathrm{B} \\rightleftharpoons \\mathrm{A}\\)?",
+       "a": "\\(K' = \\dfrac{1}{4.0} = 0.25\\)",
+       "e": ""
+      }
+     ]
+    },
+    {
+     "id": "electrolysis",
+     "title": "Electrolysis and Faraday’s laws",
+     "points": [
+      "Electrolytic cells use electrical energy to drive non-spontaneous reactions. Anode (+) oxidation, cathode (−) reduction.",
+      "Predict products using the strongest oxidant (reduced at cathode) and strongest reductant (oxidised at anode) present, including water.",
+      "Molten electrolysis avoids water competing; aqueous electrolysis often produces H₂ or O₂ from water.",
+      "\\(Q = It\\) (charge in coulombs). \\(n(e^-) = \\dfrac{Q}{F}\\), where \\(F = 96\\,500\\ \\mathrm{C\\ mol^{-1}}\\).",
+      "Rechargeable batteries act as galvanic cells when discharging and electrolytic cells when recharging.",
+      "Green hydrogen: electrolysis of water powered by renewable electricity."
+     ],
+     "explain": "Compare the polarity of the electrodes in galvanic and electrolytic cells.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "A current of \\(2.00\\ \\mathrm{A}\\) runs for \\(965\\ \\mathrm{s}\\) through \\(\\mathrm{CuSO_4(aq)}\\). What mass of copper forms? (\\(M = 63.5\\ \\mathrm{g\\ mol^{-1}}\\))",
+       "a": "\\(Q = It = 1930\\ \\mathrm{C}\\); \\(n(e^-) = \\dfrac{1930}{96\\,500} = 0.0200\\ \\mathrm{mol}\\); \\(n(\\mathrm{Cu}) = 0.0100\\ \\mathrm{mol}\\); \\(m = 0.0100 \\times 63.5 = 0.635\\ \\mathrm{g}\\)",
+       "e": "Cu²⁺ + 2e⁻ → Cu."
+      },
+      {
+       "t": "m",
+       "q": "In an electrolytic cell, the anode is…",
+       "o": [
+        "negative, reduction",
+        "positive, oxidation",
+        "negative, oxidation",
+        "positive, reduction"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Electrolysis of molten NaCl produces…",
+       "o": [
+        "Na and Cl₂",
+        "H₂ and O₂",
+        "NaOH and H₂",
+        "Na and O₂"
+       ],
+       "a": 0,
+       "e": "No water present."
+      },
+      {
+       "t": "c",
+       "q": "What makes hydrogen “green”?",
+       "a": "It is made by electrolysis of water using electricity from renewable sources, so no CO₂ is released in production.",
+       "e": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 4 AoS 1 · How are organic compounds categorised and synthesised?",
+   "topics": [
+    {
+     "id": "organic-structure",
+     "title": "Organic structure and naming",
+     "points": [
+      "Functional groups: alkene, haloalkane, hydroxyl (alcohol), amino (amine), carbonyl (aldehyde, ketone), carboxyl (carboxylic acid), ester, amide.",
+      "IUPAC naming: longest chain with the main functional group, lowest locants, substituents alphabetical.",
+      "Primary, secondary and tertiary alcohols depend on how many carbons are bonded to the C–OH carbon.",
+      "Structural isomers differ in chain, position or functional group. Stereoisomers include cis–trans (around C=C) and optical isomers (a chiral carbon with four different groups).",
+      "Boiling point rises with chain length (dispersion forces) and with hydrogen bonding (alcohols, carboxylic acids, amines)."
+     ],
+     "explain": "Explain why butan-1-ol has a higher boiling point than butanal.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which functional group is in an ester?",
+       "o": [
+        "–OH",
+        "–COOH",
+        "–COO–",
+        "–NH₂"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Propan-2-ol is a…",
+       "o": [
+        "primary alcohol",
+        "secondary alcohol",
+        "tertiary alcohol",
+        "carboxylic acid"
+       ],
+       "a": 1,
+       "e": "The C–OH carbon is bonded to two other carbons."
+      },
+      {
+       "t": "c",
+       "q": "What makes a carbon atom chiral?",
+       "a": "It is bonded to four different groups, so its mirror images cannot be superimposed (optical isomers).",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name CH₃CH₂COOCH₃.",
+       "a": "Methyl propanoate",
+       "e": "Alcohol part (methyl) first, acid part (propanoate) second."
+      }
+     ]
+    },
+    {
+     "id": "reactions",
+     "title": "Organic reactions and pathways",
+     "points": [
+      "Alkanes + halogens (UV): substitution → haloalkane. Haloalkane + OH⁻ → alcohol; haloalkane + NH₃ → amine.",
+      "Alkenes: addition of H₂ (Ni catalyst), halogens, HX, or H₂O (H₃PO₄ catalyst) → alcohol.",
+      "Primary alcohols oxidise (acidified Cr₂O₇²⁻ or MnO₄⁻) to aldehydes then carboxylic acids; secondary alcohols to ketones; tertiary alcohols do not oxidise.",
+      "Esterification: carboxylic acid + alcohol ⇌ ester + water (concentrated H₂SO₄ catalyst).",
+      "\\[\\text{Atom economy} = \\frac{\\text{mass of desired product}}{\\text{total mass of reactants}} \\times 100\\%\\] \\[\\%\\ \\text{yield} = \\frac{\\text{actual yield}}{\\text{theoretical yield}} \\times 100\\%\\]",
+      "Green chemistry: high atom economy, renewable feedstocks, safer solvents, catalysts, less waste."
+     ],
+     "explain": "Draw the pathway from ethene to ethyl ethanoate and name every reagent.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "Oxidising propan-1-ol with acidified dichromate fully produces…",
+       "o": [
+        "propanone",
+        "propanoic acid",
+        "propene",
+        "propane"
+       ],
+       "a": 1,
+       "e": "Primary alcohol → aldehyde → carboxylic acid."
+      },
+      {
+       "t": "c",
+       "q": "Write the products of ethanoic acid + ethanol (H₂SO₄ catalyst).",
+       "a": "Ethyl ethanoate and water: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "\\(0.80\\ \\mathrm{g}\\) of product forms when \\(1.00\\ \\mathrm{g}\\) was theoretically possible. Find the percentage yield.",
+       "a": "\\(\\dfrac{0.80}{1.00} \\times 100\\% = 80\\%\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which reaction has 100% atom economy?",
+       "o": [
+        "Substitution",
+        "Addition",
+        "Esterification",
+        "Combustion"
+       ],
+       "a": 1,
+       "e": "All reactant atoms end up in one product."
+      }
+     ]
+    },
+    {
+     "id": "biomolecules",
+     "title": "Food chemistry and biomolecules",
+     "points": [
+      "Proteins: amino acids join by condensation, forming peptide (amide) links and releasing water. Structure: primary to quaternary.",
+      "Carbohydrates: glucose units join by condensation (glycosidic links) into starch, glycogen and cellulose.",
+      "Fats and oils (triglycerides): glycerol + 3 fatty acids, joined by ester links. Unsaturated fats have C=C and lower melting points.",
+      "Hydrolysis is the reverse: water breaks the links during digestion, catalysed by enzymes.",
+      "Enzymes are protein catalysts with an active site. High temperature or extreme pH denatures them (the shape changes).",
+      "Energy values: carbohydrates and proteins about 17 kJ g⁻¹, fats about 37 kJ g⁻¹."
+     ],
+     "explain": "Explain why boiling denatures an enzyme but does not break its primary structure.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "The link between amino acids in a protein is a…",
+       "o": [
+        "glycosidic link",
+        "ester link",
+        "peptide (amide) link",
+        "hydrogen bond"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Hydrolysis of a triglyceride produces…",
+       "o": [
+        "glucose",
+        "glycerol and fatty acids",
+        "amino acids",
+        "starch"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why does an enzyme stop working at very low pH?",
+       "a": "Changes in pH disrupt the hydrogen bonds and ionic interactions holding the tertiary structure, so the active site changes shape (denatures) and the substrate no longer fits.",
+       "e": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 4 AoS 2 · How are organic compounds analysed?",
+   "topics": [
+    {
+     "id": "spectroscopy",
+     "title": "Spectroscopy and chromatography",
+     "points": [
+      "Mass spectrometry: the molecular ion peak (M⁺) gives the molar mass; fragments help identify structure.",
+      "Infrared: O–H (alcohol) broad 3200–3600 cm⁻¹; O–H (acid) very broad 2500–3300; C=O sharp about 1700; C–H about 2850–3000.",
+      "¹³C NMR: the number of peaks equals the number of different carbon environments.",
+      "\\({}^1\\mathrm{H}\\) NMR: number of peaks = proton environments; area ratio = relative number of H; splitting follows the \\(n + 1\\) rule.",
+      "HPLC: retention time identifies a compound; peak area (with a calibration curve) gives its concentration.",
+      "Redox titrations (e.g. with MnO₄⁻) and qualitative tests (bromine water for C=C) also identify and quantify organic compounds."
+     ],
+     "explain": "Explain how you could tell propan-1-ol from propanoic acid using IR spectra.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "An IR spectrum shows a sharp peak at 1715 cm⁻¹. This suggests…",
+       "o": [
+        "O–H",
+        "C=O",
+        "C–H",
+        "N–H"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How many peaks would ethanol (CH₃CH₂OH) show in its ¹³C NMR spectrum?",
+       "a": "2 (two different carbon environments)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In ¹H NMR, a signal split into a triplet means the neighbouring carbon has…",
+       "o": [
+        "1 H",
+        "2 H",
+        "3 H",
+        "no H"
+       ],
+       "a": 1,
+       "e": "\\(n + 1\\) rule: \\(2 + 1 = 3\\)"
+      },
+      {
+       "t": "m",
+       "q": "In HPLC, a compound is identified by its…",
+       "o": [
+        "peak area",
+        "retention time",
+        "molecular ion",
+        "Rf value"
+       ],
+       "a": 1,
+       "e": "Peak area tells you how much."
+      },
+      {
+       "t": "c",
+       "q": "What does adding bromine water show about an organic compound?",
+       "a": "If the orange colour disappears quickly, the compound has a C=C double bond (an addition reaction occurs).",
+       "e": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

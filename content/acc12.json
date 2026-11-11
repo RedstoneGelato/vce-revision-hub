@@ -1,0 +1,106 @@
+{
+"title": "Accounting Units 1 & 2",
+"aos": [
+{"name": "Step 1 · Source documents", "topics": [
+{"id": "documents", "title": "Source documents and GST",
+ "points": [
+  "The four steps of accounting: source documents → records → reports → advice.",
+  "Tax invoice: a credit sale or purchase (Sales or Purchases Journal). Receipt or till tape: cash received. Cheque butt, EFT or payroll: cash paid.",
+  "Credit note: goods returned or a price reduction. Bank statement: the bank’s record, used for bank reconciliation. Memo: internal (drawings of stock, depreciation).",
+  "GST is 10%: GST = price × 10% = GST-inclusive total ÷ 11.",
+  "No GST on wages, capital, drawings, loan principal or interest.",
+  "GST payable = GST collected on sales − GST paid on purchases. If negative, it is a GST receivable (refund)."],
+ "explain": "Explain why the business must keep a source document for every transaction.",
+ "qs": [
+  {"t":"m","q":"Which document proves a credit sale?","o":["Receipt","Tax invoice","Cheque butt","Bank statement"],"a":1,"e":""},
+  {"t":"c","q":"A tax invoice total is $3 300 including GST. Find the GST and the price.","a":"GST = 3 300 ÷ 11 = $300; price = $3 000","e":""},
+  {"t":"m","q":"Which payment has no GST?","o":["Rent","Advertising","Wages","Electricity"],"a":2,"e":""},
+  {"t":"c","q":"GST collected is $700 and GST paid is $900. What is the GST position?","a":"GST receivable (refund due) of $200, a current asset.","e":""}]}
+]},
+{"name": "Step 2 · Records", "topics": [
+{"id": "journals", "title": "The four journals",
+ "points": [
+  "Cash Receipts Journal: Bank, Sales, Receipts from Accounts Receivable, Sundries, GST.",
+  "Cash Payments Journal: Bank, Inventory, Accounts Payable, Drawings, Wages, Sundries, GST.",
+  "Sales Journal: Sales, GST, Accounts Receivable. Purchases Journal: Inventory, GST, Accounts Payable.",
+  "Sundries is for anything without its own column; write the account name in Details.",
+  "The Bank (or total) column must equal the sum of the other columns.",
+  "Receipts from AR and payments to AP carry no GST in the cash journals: it was recorded at the credit transaction."],
+ "explain": "Explain how an EFT payment for rent of $1 100 is recorded, column by column.",
+ "qs": [
+  {"t":"c","q":"Record a cash sale of $4 400 (incl. GST) in the Cash Receipts Journal.","a":"Bank 4 400, Sales 4 000, GST 400","e":""},
+  {"t":"m","q":"An owner contributes $20 000 cash. Which column is used besides Bank?","o":["Sales","Sundries (Capital)","Receipts from AR","GST"],"a":1,"e":""},
+  {"t":"m","q":"A customer pays $2 000 they owe. Which columns are used?","o":["Bank and Sales","Bank and Receipts from AR","Bank, Sales and GST","Bank and Sundries"],"a":1,"e":"No GST: it was recorded on the original invoice."},
+  {"t":"c","q":"Record a $6 600 credit purchase of inventory (incl. GST) in the Purchases Journal.","a":"Inventory 6 000, GST 600, Accounts Payable 6 600","e":""}]},
+{"id": "inventory", "title": "Inventory cards",
+ "points": [
+  "Inventory cards have IN, OUT and BALANCE columns (quantity, unit cost, total), at cost price, GST excluded.",
+  "Cost of Sales = inventory sold (OUT) at cost. Identified cost uses each item’s actual cost; FIFO assumes the oldest stock sells first.",
+  "A stocktake (physical count) checks the cards. Card higher than count = inventory loss (expense); lower = inventory gain (revenue).",
+  "The Balance Sheet shows inventory at the physical count.",
+  "Drawings of inventory by the owner are recorded at cost and are not an expense."],
+ "explain": "Explain why inventory sold is recorded at cost, not selling price, on the card.",
+ "qs": [
+  {"t":"c","q":"Card balance is $1 800; the stocktake counts $1 750. What is recorded?","a":"Inventory loss of $50, deducted from Gross Profit; Balance Sheet inventory $1 750.","e":""},
+  {"t":"m","q":"Under FIFO, which units are assumed to be sold first?","o":["The newest","The oldest","The most expensive","The cheapest"],"a":1,"e":""},
+  {"t":"m","q":"Cost of Sales is…","o":["the selling price of goods sold","the cost price of goods sold","total purchases","the stocktake value"],"a":1,"e":""}]},
+{"id": "subsidiary", "title": "AR, AP, depreciation and double entry",
+ "points": [
+  "One AR record per customer and one AP record per supplier; schedules total them to the Balance Sheet figure.",
+  "AR = opening + credit sales (incl. GST) − receipts − returns. AP = opening + credit purchases (incl. GST) − payments − returns.",
+  "Straight-line depreciation = (cost − residual value) ÷ useful life. Reducing balance = carrying amount × rate.",
+  "Carrying amount = cost − accumulated depreciation. Depreciation is an expense but not a cash flow.",
+  "Double entry: assets, expenses and drawings increase with a debit; liabilities, capital and revenue increase with a credit."],
+ "explain": "Explain why depreciation reduces profit but not cash.",
+ "qs": [
+  {"t":"c","q":"Equipment costs $8 000, residual value $500, life 5 years. Find annual straight-line depreciation.","a":"(8 000 − 500) ÷ 5 = $1 500 per year","e":""},
+  {"t":"c","q":"J. Park owes $3 300 and pays $2 000. What is the AR balance?","a":"$1 300","e":""},
+  {"t":"m","q":"Which account increases with a credit?","o":["Bank","Wages","Sales","Drawings"],"a":2,"e":"Revenue increases with a credit."}]}
+]},
+{"name": "Step 3 · Reports", "topics": [
+{"id": "reports", "title": "The three reports and their headings",
+ "points": [
+  "Build order: Cash Flow Statement (closing Bank) → Income Statement (Net Profit) → Balance Sheet.",
+  "Cash Flow Statement for a period: Cash Flows from Operating, Investing and Financing Activities; Net Increase (Decrease) in cash position; Add Bank Balance at start; Bank Balance at end.",
+  "Income Statement for a period: Revenue; Less Cost of Goods Sold; Gross Profit; Less Inventory loss; Adjusted Gross Profit; Add Other revenue; Less Other expenses; Net Profit.",
+  "Balance Sheet as at a date: Assets (Current, Non-Current) | Equities (Current Liabilities, Non-Current Liabilities, Owner’s equity: Capital + Net Profit − Drawings). Total Assets = Total Equities.",
+  "Current = within the next 12 months. Interest is operating; loan principal and drawings are financing; buying a non-current asset is investing.",
+  "The Income Statement is GST-exclusive. Credit sales, depreciation and inventory loss are not cash flows."],
+ "explain": "Explain why a business can show a Net Profit but a decrease in cash.",
+ "qs": [
+  {"t":"m","q":"Repaying a loan’s principal is which cash flow?","o":["Operating","Investing","Financing","Not a cash flow"],"a":2,"e":""},
+  {"t":"m","q":"Which heading belongs to the Balance Sheet?","o":["Gross Profit","Net Cash Flows from Operating Activities","Current Liabilities","Cost of Goods Sold"],"a":2,"e":""},
+  {"t":"c","q":"Sales $7 000, Cost of Sales $4 200, inventory loss $50, expenses $2 220. Find Net Profit.","a":"Gross Profit 2 800 → Adjusted GP 2 750 → Net Profit 530","e":""},
+  {"t":"c","q":"Capital $20 000, Net Profit $530, Drawings $500. Find closing owner’s equity.","a":"20 000 + 530 − 500 = $20 030","e":""},
+  {"t":"m","q":"Reports for a period use “for”. The Balance Sheet uses…","o":["“for the year ended”","“as at”","“during”","“from”"],"a":1,"e":""}]}
+]},
+{"name": "Step 4 · Advice", "topics": [
+{"id": "indicators", "title": "Performance indicators",
+ "points": [
+  "Profitability: ROI = Net Profit ÷ Average Capital × 100; ROA = Net Profit ÷ Average Total Assets × 100; Asset Turnover = Net Sales ÷ Average Total Assets; NPM = Net Profit ÷ Net Sales × 100; GPM = Gross Profit ÷ Net Sales × 100.",
+  "Liquidity: WCR = Current Assets ÷ Current Liabilities; QAR = (CA − inventory − prepaid) ÷ CL; Cash Flow Cover = Net Cash Flow from Operating ÷ Average CL.",
+  "Speed: Inventory Turnover = Average Inventory ÷ COGS × 365; AR Turnover = Average AR ÷ Net Credit Sales (+GST) × 365; AP Turnover = Average AP ÷ Net Credit Purchases (+GST) × 365.",
+  "Stability: Debt Ratio = Total Liabilities ÷ Total Assets × 100.",
+  "Average = (start + end) ÷ 2. Compare with the previous period, budget and industry average.",
+  "Advice: what happened (with numbers) → why → effect → a specific recommendation."],
+ "explain": "Explain what a falling Net Profit Margin with a steady Gross Profit Margin tells you.",
+ "qs": [
+  {"t":"c","q":"Current Assets $18 000, Current Liabilities $12 000. Find the Working Capital Ratio.","a":"1.5 : 1","e":""},
+  {"t":"c","q":"Net Profit $8 000, Net Sales $50 000. Find NPM.","a":"16%","e":""},
+  {"t":"m","q":"AR Turnover rises from 30 to 45 days. This means…","o":["customers are paying faster","customers are paying more slowly","inventory sells faster","the business pays suppliers faster"],"a":1,"e":""},
+  {"t":"m","q":"Which indicator measures stability?","o":["Gross Profit Margin","Debt Ratio","Inventory Turnover","Quick Asset Ratio"],"a":1,"e":""}]},
+{"id": "theory", "title": "Assumptions, characteristics, budgets and ethics",
+ "points": [
+  "Assumptions: Accounting entity (business separate from owner), Accrual basis (record when earned or incurred), Going concern (will keep operating), Period (equal reporting periods).",
+  "Qualitative characteristics: Relevance, Faithful representation, Comparability, Verifiability, Timeliness, Understandability.",
+  "Budgets plan, control and evaluate. Variance: favourable if revenue is above or an expense below budget; unfavourable otherwise.",
+  "Selling price = cost × (1 + mark-up ÷ 100). CVP: quantity = (fixed costs + profit) ÷ (selling price − variable cost per unit).",
+  "Ethical, social and environmental considerations: honest reports, fair treatment of suppliers and staff, waste and sustainability."],
+ "explain": "Explain which assumption is broken when an owner pays a family holiday from the business account and records it as an expense.",
+ "qs": [
+  {"t":"m","q":"Recording a credit sale as revenue before the cash arrives follows…","o":["Going concern","Accrual basis","Accounting entity","Period"],"a":1,"e":""},
+  {"t":"m","q":"Information that can be checked against source documents is…","o":["relevant","verifiable","timely","comparable"],"a":1,"e":""},
+  {"t":"c","q":"Fixed costs $400, selling price $50, variable cost $30. How many units to break even?","a":"400 ÷ (50 − 30) = 20 units","e":""},
+  {"t":"c","q":"Budgeted wages $1 000, actual $1 200. State the variance.","a":"$200 Unfavourable","e":""}]}
+]}
+]}

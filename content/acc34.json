@@ -1,0 +1,99 @@
+{
+"title": "Accounting Units 3 & 4",
+"aos": [
+{"name": "Unit 3 · Financial accounting for a trading business", "topics": [
+{"id": "double-entry", "title": "Double entry and the General Journal",
+ "points": [
+  "Every transaction has at least one debit and one credit of equal value; the accounting equation always balances.",
+  "Debit increases: assets, expenses, drawings. Credit increases: liabilities, owner’s capital, revenue.",
+  "Special journals (Cash Receipts, Cash Payments, Sales, Purchases) are posted to ledger accounts; the General Journal records everything else, with a narration.",
+  "Ledger accounts (T-accounts) are balanced at the end of the period; a Trial Balance lists all balances and total debits should equal total credits.",
+  "A Trial Balance that balances can still hide errors: omission, reversal, wrong account, or the same mistake on both sides.",
+  "GST Clearing: credit for GST on sales, debit for GST on purchases."],
+ "explain": "Explain why a Trial Balance that balances does not prove the records are correct.",
+ "qs": [
+  {"t":"c","q":"Give the double entry for a credit sale of $1 100 including GST.","a":"Dr Accounts Receivable 1 100; Cr Sales 1 000; Cr GST Clearing 100 (plus Dr Cost of Sales and Cr Inventory at cost under a perpetual system)","e":""},
+  {"t":"m","q":"Which account normally has a credit balance?","o":["Inventory","Wages","Accounts Payable","Drawings"],"a":2,"e":""},
+  {"t":"c","q":"Give the General Journal entry for the owner taking $200 of inventory (at cost) for private use.","a":"Dr Drawings 200; Cr Inventory 200","e":"Narration: owner’s drawings of inventory, memo 12."},
+  {"t":"m","q":"Paying $500 to a creditor affects the equation by…","o":["assets up, liabilities up","assets down, liabilities down","assets down, owner’s equity down","no effect"],"a":1,"e":""}]},
+{"id": "inventory34", "title": "Inventory and cost of sales",
+ "points": [
+  "Perpetual inventory: inventory cards updated with every purchase, sale and return; Cost of Sales recorded at each sale.",
+  "Cost methods: identified cost or FIFO. Costs include purchase price, freight in and customs, but not GST.",
+  "Inventory is reported at the lower of cost and net realisable value (NRV); a write-down is an expense.",
+  "Stocktake differences: inventory loss (expense) or gain (revenue), recorded by General Journal.",
+  "Inventory management: avoid stock-outs and overstocking; watch Inventory Turnover; consider obsolete or slow-moving stock."],
+ "explain": "Explain why inventory must be written down to net realisable value.",
+ "qs": [
+  {"t":"m","q":"Freight paid to bring inventory into the store is…","o":["an expense called delivery expense","part of the cost of inventory","a financing cash flow","revenue"],"a":1,"e":""},
+  {"t":"c","q":"Stock costing $900 can only be sold for $700 less $50 selling costs. What is the write-down?","a":"NRV = 700 − 50 = 650; write-down = 900 − 650 = $250","e":""},
+  {"t":"m","q":"Which method assumes the oldest stock is sold first?","o":["Identified cost","FIFO","NRV","Straight line"],"a":1,"e":""}]},
+{"id": "reports34", "title": "Reports and cash flows",
+ "points": [
+  "Income Statement: Revenue, Less Cost of Sales, Gross Profit, Less Inventory loss / Add gain, Add Other revenue, Less Other expenses (selling, administrative, finance), Net Profit.",
+  "Balance Sheet: current and non-current assets and liabilities; owner’s equity = capital + net profit − drawings.",
+  "Cash Flow Statement: operating, investing, financing activities. A reconciliation explains why Net Profit differs from net operating cash flow.",
+  "Differences come from accruals and prepayments, depreciation, credit transactions and GST timing.",
+  "Profit is not cash: a profitable business can still run short of cash."],
+ "explain": "Explain three reasons Net Profit might be higher than Net Cash Flow from Operating Activities.",
+ "qs": [
+  {"t":"m","q":"Depreciation expense of $2 000 in the reconciliation is…","o":["subtracted from net profit","added back to net profit","shown as an investing outflow","ignored"],"a":1,"e":"It reduced profit but used no cash."},
+  {"t":"m","q":"Buying a delivery van for cash is which activity?","o":["Operating","Investing","Financing","None"],"a":1,"e":""},
+  {"t":"c","q":"Net Profit is $10 000 but Accounts Receivable rose by $3 000. Effect on operating cash?","a":"Cash from operations is $3 000 lower than profit, because some sales have not been collected.","e":""}]}
+]},
+{"name": "Unit 4 AoS 1 · Recording, reporting and balance day adjustments", "topics": [
+{"id": "bda", "title": "Balance day adjustments",
+ "points": [
+  "Accrued expense (owed, not yet paid): Dr Expense, Cr Accrued Expense (current liability).",
+  "Prepaid expense (paid in advance): an asset; at balance day, Dr Expense, Cr Prepaid Expense for the part used.",
+  "Accrued revenue (earned, not yet received): Dr Accrued Revenue (current asset), Cr Revenue.",
+  "Unearned revenue (received in advance): a current liability until it is earned.",
+  "Depreciation: Dr Depreciation expense, Cr Accumulated Depreciation. Bad debts: Dr Bad Debts, Cr Accounts Receivable.",
+  "Adjustments apply the accrual basis and period assumptions, so revenue and expenses match the period."],
+ "explain": "Explain why wages owed at 30 June must be recorded even though no cash has been paid.",
+ "qs": [
+  {"t":"c","q":"Wages of $800 are owed at 30 June. Give the balance day adjustment.","a":"Dr Wages 800; Cr Accrued Wages 800","e":""},
+  {"t":"m","q":"Rent paid in advance at balance day is reported as…","o":["an expense","a current asset","a current liability","owner’s equity"],"a":1,"e":""},
+  {"t":"m","q":"Fees received from a client for work not yet done are…","o":["revenue","an asset","unearned revenue, a liability","an expense"],"a":2,"e":""},
+  {"t":"c","q":"A debtor owing $400 goes bankrupt. Record the write-off.","a":"Dr Bad Debts 400; Cr Accounts Receivable 400","e":""}]},
+{"id": "closing", "title": "Closing the ledger",
+ "points": [
+  "Revenue and expense accounts are closed to the Profit and Loss Summary at the end of the period.",
+  "The Profit and Loss Summary balance (net profit or loss) is closed to Capital.",
+  "Drawings are closed directly to Capital.",
+  "Asset, liability and capital accounts are balanced and carried forward to the next period.",
+  "Closing entries keep each period separate (period assumption)."],
+ "explain": "Explain why revenue and expense accounts start each year at zero.",
+ "qs": [
+  {"t":"c","q":"Give the closing entry for Sales of $50 000.","a":"Dr Sales 50 000; Cr Profit and Loss Summary 50 000","e":""},
+  {"t":"m","q":"Drawings are closed to…","o":["Profit and Loss Summary","Capital","Bank","Retained earnings"],"a":1,"e":""},
+  {"t":"m","q":"Which account is not closed at year end?","o":["Wages","Sales","Accounts Payable","Cost of Sales"],"a":2,"e":"Liabilities are carried forward."}]}
+]},
+{"name": "Unit 4 AoS 2 · Budgeting and decision-making", "topics": [
+{"id": "budgets", "title": "Budgets",
+ "points": [
+  "Budgeted Cash Flow Statement: expected cash receipts and payments (no depreciation; includes GST and loan principal).",
+  "Budgeted Income Statement: expected revenue and expenses on an accrual basis.",
+  "Budgeted Balance Sheet: expected financial position at the end of the period.",
+  "Cash collected from AR = opening AR + credit sales (incl. GST) − closing AR.",
+  "Variance reports compare actual with budget: favourable or unfavourable, then explain causes and suggest action."],
+ "explain": "Explain why depreciation appears in the budgeted Income Statement but not the budgeted Cash Flow Statement.",
+ "qs": [
+  {"t":"c","q":"Opening AR $5 000, credit sales $22 000 (incl. GST), closing AR $6 000. Find cash received from customers.","a":"5 000 + 22 000 − 6 000 = $21 000","e":""},
+  {"t":"m","q":"Which item appears in a budgeted Cash Flow Statement but not a budgeted Income Statement?","o":["Depreciation","Loan principal repayment","Bad debts","Cost of sales"],"a":1,"e":""},
+  {"t":"c","q":"Budgeted sales $80 000, actual $74 000. State the variance.","a":"$6 000 Unfavourable","e":""}]},
+{"id": "analysis", "title": "Performance analysis and decisions",
+ "points": [
+  "Profitability: ROI, ROA, Asset Turnover, NPM, GPM, Expense ratio (expense ÷ sales × 100).",
+  "Liquidity: WCR, QAR, Cash Flow Cover; efficiency of collection and payment: AR, AP and Inventory Turnover.",
+  "Stability: Debt Ratio and Interest Cover where taught.",
+  "Strategies: raise prices or mark-up, cut costs, promote, chase debtors, offer discounts, reduce stock levels, refinance debt.",
+  "Consider ethical, social and environmental factors as well as financial ones.",
+  "Always use the figures: state the trend, explain it, then advise."],
+ "explain": "Advise an owner whose AR Turnover rose from 30 to 50 days on 30-day credit terms.",
+ "qs": [
+  {"t":"m","q":"Offering a discount for early payment mainly aims to…","o":["increase Gross Profit","speed up cash collection from customers","reduce inventory","lower the Debt Ratio"],"a":1,"e":""},
+  {"t":"c","q":"Net Profit $12 000, average capital $80 000. Find the Return on Owner’s Investment.","a":"12 000 ÷ 80 000 × 100 = 15%","e":""},
+  {"t":"m","q":"A Quick Asset Ratio of 0.6 : 1 suggests…","o":["strong liquidity","the business may struggle to pay immediate debts","high profitability","low gearing"],"a":1,"e":""}]}
+]}
+]}
