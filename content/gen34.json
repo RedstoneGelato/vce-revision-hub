@@ -1,90 +1,543 @@
 {
-"title": "General Mathematics Units 3 & 4",
-"aos": [
-{"name": "Unit 3 AoS 1 · Data analysis", "topics": [
-{"id": "normal-z", "title": "Univariate data, z-scores and the 68–95–99.7 rule",
- "points": [
-  "Standard score: \\(z = \\dfrac{x - \\bar{x}}{s}\\).",
-  "For a bell-shaped distribution: about 68% of values lie within \\(\\bar{x} \\pm s\\), 95% within \\(\\bar{x} \\pm 2s\\), 99.7% within \\(\\bar{x} \\pm 3s\\).",
-  "Use \\(z\\)-scores to compare results from different distributions.",
-  "Boxplots, five-number summaries and outlier fences (\\(Q_1 - 1.5 \\times \\text{IQR}\\), \\(Q_3 + 1.5 \\times \\text{IQR}\\)) describe skewed data.",
-  "Report centre, spread, shape and outliers in context."],
- "explain": "Explain how \\(z\\)-scores let you compare a Maths mark with an English mark.",
- "qs": [
-  {"t":"c","q":"A score of \\(75\\) comes from a distribution with \\(\\bar{x} = 60\\) and \\(s = 5\\). Find \\(z\\).","a":"\\(z = \\dfrac{75 - 60}{5} = 3\\)","e":""},
-  {"t":"m","q":"Heights have \\(\\bar{x} = 170\\) cm and \\(s = 8\\) cm. What percentage are above \\(186\\) cm?","o":["5%","2.5%","16%","0.15%"],"a":1,"e":"\\(186 = \\bar{x} + 2s\\), so about \\(\\dfrac{5\\%}{2} = 2.5\\%\\)."}]},
-{"id": "regression", "title": "Bivariate data and regression",
- "points": [
-  "Least-squares line: \\(\\text{response} = a + b \\times \\text{explanatory}\\). The slope \\(b\\) is the change in the response for each 1-unit increase in the explanatory variable.",
-  "Coefficient of determination \\(r^2\\): the percentage of variation in the response explained by the explanatory variable.",
-  "Residual \\(= \\text{actual} - \\text{predicted}\\). A random residual plot supports a linear model; a pattern suggests the data is non-linear.",
-  "Interpolation (inside the data range) is more reliable than extrapolation (outside it).",
-  "Transformations such as \\(\\log x\\), \\(\\dfrac{1}{x}\\) and \\(x^2\\) can linearise non-linear data."],
- "explain": "Interpret the slope and \\(r^2\\) for \\(\\text{score} = 20 + 3.5 \\times \\text{hours}\\), \\(r = 0.8\\).",
- "qs": [
-  {"t":"c","q":"\\(r = 0.8\\). Find and interpret \\(r^2\\).","a":"\\(r^2 = 0.64\\): 64% of the variation in the response is explained by the variation in the explanatory variable.","e":""},
-  {"t":"c","q":"The actual value is \\(20\\) and the predicted value is \\(17\\). Find the residual.","a":"\\(20 - 17 = 3\\)","e":""},
-  {"t":"m","q":"A curved pattern in a residual plot means…","o":["the linear model is a good fit","the data is not linear","\\(r = 1\\)","there are no outliers"],"a":1,"e":""}]},
-{"id": "time-series", "title": "Time series",
- "points": [
-  "Look for trend, seasonality, cycles, irregular fluctuations and outliers.",
-  "Smoothing: moving averages (centre an even-period average) or median smoothing.",
-  "\\(\\text{seasonal index} = \\dfrac{\\text{seasonal value}}{\\text{seasonal average}}\\). The indices average to \\(1\\).",
-  "\\(\\text{deseasonalised value} = \\dfrac{\\text{actual value}}{\\text{seasonal index}}\\). Re-seasonalise by multiplying by the index.",
-  "Fit a trend line to deseasonalised data to forecast."],
- "explain": "Explain what a seasonal index of \\(1.2\\) for summer means.",
- "qs": [
-  {"t":"c","q":"Summer sales are \\(600\\) and the summer seasonal index is \\(1.2\\). Find deseasonalised sales.","a":"\\(\\dfrac{600}{1.2} = 500\\)","e":""},
-  {"t":"m","q":"A seasonal index of \\(0.8\\) means sales in that season are…","o":["20% above average","20% below average","80% above average","equal to average"],"a":1,"e":""}]}
-]},
-{"name": "Unit 3 AoS 2 · Recursion and financial modelling", "topics": [
-{"id": "depreciation", "title": "Depreciation and interest",
- "points": [
-  "Flat-rate depreciation: \\(V_{n+1} = V_n - D\\) (linear). Unit-cost depreciation: \\(D = \\text{cost per unit} \\times \\text{units used}\\).",
-  "Reducing-balance depreciation: \\(V_{n+1} = RV_n\\) with \\(R = 1 - \\dfrac{r}{100}\\) (geometric).",
-  "Compound interest: \\(V_{n+1} = RV_n\\) with \\(R = 1 + \\dfrac{r}{100\\,n}\\) per compounding period (\\(n\\) periods per year).",
-  "Effective interest rate: \\[r_{\\text{eff}} = \\left[\\left(1 + \\frac{r}{100\\,n}\\right)^{n} - 1\\right] \\times 100\\%\\]",
-  "Finance solver: \\(N\\), \\(I\\%\\), \\(PV\\), \\(PMT\\), \\(FV\\), \\(P/Y\\), \\(C/Y\\)."],
- "explain": "Explain why reducing-balance depreciation loses the most value in the first year.",
- "qs": [
-  {"t":"c","q":"A $30 000 car depreciates at a flat rate of 10% of its purchase price per year. Find its value after 4 years.","a":"\\(D = 3000\\); \\(V_4 = 30\\,000 - 4 \\times 3000 = 18\\,000\\), so $18 000","e":""},
-  {"t":"c","q":"The same car depreciates by 20% per year on a reducing balance. Find its value after 2 years.","a":"\\(V_2 = 30\\,000 \\times 0.8^2 = 19\\,200\\), so $19 200","e":""},
-  {"t":"c","q":"Find the effective annual rate for 6% p.a. compounding monthly.","a":"\\(\\left[\\left(1 + \\dfrac{6}{1200}\\right)^{12} - 1\\right] \\times 100\\% = (1.005^{12} - 1) \\times 100\\% \\approx 6.17\\%\\)","e":""}]},
-{"id": "annuities", "title": "Loans, annuities and perpetuities",
- "points": [
-  "Reducing-balance loan or annuity: \\(V_{n+1} = RV_n - d\\). Each payment covers the interest first, then reduces the balance.",
-  "An annuity pays regular amounts from an invested sum until it runs out.",
-  "A perpetuity pays only the interest, so the balance never falls: \\(d = V_0 \\times \\dfrac{r}{100}\\) per period.",
-  "Annuity investment (regular deposits added): \\(V_{n+1} = RV_n + d\\).",
-  "Amortisation tables show the payment, interest, principal reduction and balance."],
- "explain": "Explain why a perpetuity can pay forever but an annuity cannot.",
- "qs": [
-  {"t":"c","q":"$500 000 is invested in a perpetuity at 4% p.a., paid annually. Find the annual payment.","a":"\\(d = 500\\,000 \\times 0.04 = 20\\,000\\), so $20 000","e":""},
-  {"t":"m","q":"\\(V_{n+1} = 1.005\\,V_n - 800\\) models…","o":["a perpetuity","a reducing-balance loan or annuity","flat-rate depreciation","simple interest"],"a":1,"e":""}]}
-]},
-{"name": "Unit 4 · Matrices and networks", "topics": [
-{"id": "matrices34", "title": "Matrices and transition matrices",
- "points": [
-  "Binary, permutation, communication and dominance matrices model relationships.",
-  "Transition matrix \\(T\\): each column sums to \\(1\\). State matrices: \\(S_{n+1} = TS_n\\), so \\(S_n = T^n S_0\\).",
-  "Steady state: the state matrix stops changing as \\(n\\) grows large.",
-  "Extended models add a recurring input: \\(S_{n+1} = TS_n + B\\). Leslie matrices model populations by age group (birth rates on the top row, survival rates below).",
-  "Inverse matrices solve systems: \\(AX = B \\Rightarrow X = A^{-1}B\\)."],
- "explain": "Explain what the steady state of a transition matrix model tells you.",
- "qs": [
-  {"t":"m","q":"In a transition matrix, each column sums to…","o":["\\(0\\)","\\(1\\)","\\(100\\)","the number of states"],"a":1,"e":""},
-  {"t":"c","q":"Write the rule linking state matrices with transition matrix \\(T\\).","a":"\\(S_{n+1} = TS_n\\), so \\(S_n = T^n S_0\\)","e":""}]},
-{"id": "networks34", "title": "Networks and decision mathematics",
- "points": [
-  "Shortest path: Dijkstra’s algorithm or inspection. Minimum spanning tree: Prim’s algorithm.",
-  "Network flow: maximum flow \\(=\\) capacity of the minimum cut.",
-  "Allocation (assignment): Hungarian algorithm to minimise total cost or time.",
-  "Critical path analysis: earliest start times (forward pass) and latest start times (backward pass). \\(\\text{float} = \\text{LST} - \\text{EST}\\). Activities with zero float are critical.",
-  "Crashing reduces project time by shortening critical activities, usually at extra cost."],
- "explain": "Explain why delaying a critical activity delays the whole project.",
- "qs": [
-  {"t":"m","q":"The maximum flow through a network equals…","o":["the largest edge capacity","the capacity of the minimum cut","the number of vertices","the sum of all capacities"],"a":1,"e":""},
-  {"t":"c","q":"An activity has \\(\\text{EST} = 4\\) and \\(\\text{LST} = 7\\). Find its float.","a":"\\(7 - 4 = 3\\) (not critical)","e":""},
-  {"t":"m","q":"Which algorithm finds a minimum spanning tree?","o":["Dijkstra’s","Prim’s","Hungarian","Euler’s"],"a":1,"e":""}]}
-]}
-]}
+ "title": "General Mathematics Units 3 & 4",
+ "aos": [
+  {
+   "name": "Unit 3 AoS 1 · Data analysis",
+   "topics": [
+    {
+     "id": "normal-z",
+     "title": "Univariate data, z-scores and the 68–95–99.7 rule",
+     "points": [
+      "Standard score: \\(z = \\dfrac{x - \\bar{x}}{s}\\).",
+      "For a bell-shaped distribution: about 68% of values lie within \\(\\bar{x} \\pm s\\), 95% within \\(\\bar{x} \\pm 2s\\), 99.7% within \\(\\bar{x} \\pm 3s\\).",
+      "Use \\(z\\)-scores to compare results from different distributions.",
+      "Boxplots, five-number summaries and outlier fences (\\(Q_1 - 1.5 \\times \\text{IQR}\\), \\(Q_3 + 1.5 \\times \\text{IQR}\\)) describe skewed data.",
+      "Report centre, spread, shape and outliers in context."
+     ],
+     "explain": "Explain how \\(z\\)-scores let you compare a Maths mark with an English mark.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "A score of \\(75\\) comes from a distribution with \\(\\bar{x} = 60\\) and \\(s = 5\\). Find \\(z\\).",
+       "a": "\\(z = \\dfrac{75 - 60}{5} = 3\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Heights have \\(\\bar{x} = 170\\) cm and \\(s = 8\\) cm. What percentage are above \\(186\\) cm?",
+       "o": [
+        "5%",
+        "2.5%",
+        "16%",
+        "0.15%"
+       ],
+       "a": 1,
+       "e": "\\(186 = \\bar{x} + 2s\\), so about \\(\\dfrac{5\\%}{2} = 2.5\\%\\)."
+      }
+     ],
+     "notes": [
+      {
+       "h": "Summary statistics and when to use them",
+       "p": [
+        "The mean and standard deviation suit symmetric distributions without outliers. The median and IQR suit skewed distributions or those with outliers. Learn to read both from a histogram, a boxplot and a stem plot, and from a log scale: on a \\(\\log_{10}\\) axis, a value of 3 means \\(10^3 = 1000\\)."
+       ]
+      },
+      {
+       "h": "The 68–95–99.7% rule",
+       "p": [
+        "For a bell-shaped (approximately normal) distribution, about 68% of values lie within one standard deviation of the mean, 95% within two, and 99.7% within three. Split the remainders evenly between the tails: 16% lie below one standard deviation under the mean, 2.5% below two, and 0.15% below three."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Bags of flour have a bell-shaped distribution with mean 1002 g and standard deviation 4 g.",
+        "Between 998 g and 1006 g is within one standard deviation: 68%. More than 1010 g is more than two standard deviations above: 2.5%. Between 994 g and 1006 g: \\(47.5\\% + 34\\% = 81.5\\%\\). Out of 2000 bags, the number under 998 g is expected to be \\(0.16 \\times 2000 = 320\\)."
+       ]
+      },
+      {
+       "h": "Standardised scores",
+       "p": [
+        "A \\(z\\)-score says how many standard deviations a value is above or below the mean. Positive means above the mean. To recover the actual value: \\(x = \\bar{x} + z \\times s\\).",
+        "Comparing results: Ava scores 72 in Biology (mean 60, sd 8) and 78 in Legal Studies (mean 70, sd 10). \\(z = 1.5\\) for Biology and \\(z = 0.8\\) for Legal Studies, so the Biology result is better relative to the class."
+       ]
+      },
+      {
+       "h": "Reports on a distribution",
+       "p": [
+        "Structure: shape, centre, spread, outliers, with values and units. For comparisons, write a sentence for each feature that names both groups and quotes both values."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Applying the 68–95–99.7% rule to a skewed distribution. Subtracting in the wrong order in a \\(z\\)-score. Forgetting to halve the percentage outside the interval when one tail is needed. Reading a log scale as if it were linear."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "regression",
+     "title": "Bivariate data and regression",
+     "points": [
+      "Least-squares line: \\(\\text{response} = a + b \\times \\text{explanatory}\\). The slope \\(b\\) is the change in the response for each 1-unit increase in the explanatory variable.",
+      "Coefficient of determination \\(r^2\\): the percentage of variation in the response explained by the explanatory variable.",
+      "Residual \\(= \\text{actual} - \\text{predicted}\\). A random residual plot supports a linear model; a pattern suggests the data is non-linear.",
+      "Interpolation (inside the data range) is more reliable than extrapolation (outside it).",
+      "Transformations such as \\(\\log x\\), \\(\\dfrac{1}{x}\\) and \\(x^2\\) can linearise non-linear data."
+     ],
+     "explain": "Interpret the slope and \\(r^2\\) for \\(\\text{score} = 20 + 3.5 \\times \\text{hours}\\), \\(r = 0.8\\).",
+     "qs": [
+      {
+       "t": "c",
+       "q": "\\(r = 0.8\\). Find and interpret \\(r^2\\).",
+       "a": "\\(r^2 = 0.64\\): 64% of the variation in the response is explained by the variation in the explanatory variable.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "The actual value is \\(20\\) and the predicted value is \\(17\\). Find the residual.",
+       "a": "\\(20 - 17 = 3\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A curved pattern in a residual plot means…",
+       "o": [
+        "the linear model is a good fit",
+        "the data is not linear",
+        "\\(r = 1\\)",
+        "there are no outliers"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Least squares regression",
+       "p": [
+        "The least squares line minimises the sum of the squares of the residuals. Its slope and intercept come from summary statistics: \\(b = r\\dfrac{s_y}{s_x}\\) and \\(a = \\bar{y} - b\\bar{x}\\). The line always passes through \\((\\bar{x}, \\bar{y})\\). It assumes the variables are numerical, the association is linear and there are no clear outliers."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "For hours of sunshine \\(x\\) and ice-creams sold \\(y\\): \\(\\bar{x} = 6\\), \\(s_x = 2\\), \\(\\bar{y} = 150\\), \\(s_y = 40\\), \\(r = 0.9\\).",
+        "\\(b = 0.9 \\times \\dfrac{40}{2} = 18\\) and \\(a = 150 - 18 \\times 6 = 42\\). So \\(\\text{sales} = 42 + 18 \\times \\text{sunshine}\\)."
+       ]
+      },
+      {
+       "h": "Interpreting the line",
+       "p": [
+        "Slope: “On average, sales increase by 18 ice-creams for each additional hour of sunshine.” Intercept: “When there are 0 hours of sunshine, predicted sales are 42 ice-creams.” Coefficient of determination: \\(r^2 = 0.81\\), so “81% of the variation in sales can be explained by the variation in hours of sunshine.” Always name the variables and include units."
+       ]
+      },
+      {
+       "h": "Predictions and residuals",
+       "p": [
+        "Predicting for 8 hours: \\(42 + 18 \\times 8 = 186\\). If actual sales were 170, the residual is \\(170 - 186 = -16\\): the line overestimated. Interpolation is predicting within the range of the data; extrapolation is predicting outside it and is less reliable because the pattern may not continue.",
+        "A residual plot checks the linearity assumption. Random scatter around zero supports a linear model. A curved pattern means the association is not linear and a transformation should be tried."
+       ]
+      },
+      {
+       "h": "Transforming data",
+       "p": [
+        "Transformations change the scale of one axis to straighten a curve. Squaring stretches large values; \\(\\log\\) and reciprocal compress them. Use the shape of the scatterplot to pick candidates, apply one, then re-check the residual plot and \\(r^2\\).",
+        "After a transformation the equation uses the transformed variable. Example: \\(\\text{weight} = 2.1 + 14 \\times \\log_{10}(\\text{age})\\). For age 100: \\(\\log_{10}100 = 2\\), so weight \\(= 30.1\\). If the response was transformed, undo it at the end: \\(\\log_{10} y = 1.5\\) gives \\(y = 10^{1.5} \\approx 31.6\\)."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Writing the equation with \\(x\\) and \\(y\\) when the question names the variables. Interpreting \\(r\\) as a percentage. Calculating the residual as predicted minus actual. Forgetting to back-transform a prediction."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "time-series",
+     "title": "Time series",
+     "points": [
+      "Look for trend, seasonality, cycles, irregular fluctuations and outliers.",
+      "Smoothing: moving averages (centre an even-period average) or median smoothing.",
+      "\\(\\text{seasonal index} = \\dfrac{\\text{seasonal value}}{\\text{seasonal average}}\\). The indices average to \\(1\\).",
+      "\\(\\text{deseasonalised value} = \\dfrac{\\text{actual value}}{\\text{seasonal index}}\\). Re-seasonalise by multiplying by the index.",
+      "Fit a trend line to deseasonalised data to forecast."
+     ],
+     "explain": "Explain what a seasonal index of \\(1.2\\) for summer means.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "Summer sales are \\(600\\) and the summer seasonal index is \\(1.2\\). Find deseasonalised sales.",
+       "a": "\\(\\dfrac{600}{1.2} = 500\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A seasonal index of \\(0.8\\) means sales in that season are…",
+       "o": [
+        "20% above average",
+        "20% below average",
+        "80% above average",
+        "equal to average"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Describing a time series plot",
+       "p": [
+        "Trend: a long-term increase or decrease. Seasonality: a pattern that repeats over a fixed period of a year or less, linked to the calendar. Cycles: rises and falls over periods longer than a year, without fixed length. Irregular fluctuations: random variation. Also note structural change (a sudden change in level or trend) and outliers."
+       ]
+      },
+      {
+       "h": "Smoothing",
+       "p": [
+        "Smoothing removes fluctuations to reveal the trend. A three-point moving mean replaces each value with the mean of itself and its two neighbours. Example: values 12, 15, 21 give a smoothed value of 16 for the middle time.",
+        "With an even number of points, the average falls between two time periods, so centring is needed: take the mean of two adjacent moving means. Median smoothing uses the median in place of the mean and is less affected by outliers; it can be done directly on the graph."
+       ]
+      },
+      {
+       "h": "Seasonal indices",
+       "p": [
+        "A seasonal index compares a season with the average season. An index of 1.25 means that season is typically 25% above the average; 0.80 means 20% below. The indices add up to the number of seasons (4 for quarters, 12 for months).",
+        "Example for one year of quarterly sales 60, 90, 150, 100: the mean is 100, so the indices are 0.60, 0.90, 1.50 and 1.00. With several years, calculate the indices for each year and average them."
+       ]
+      },
+      {
+       "h": "Deseasonalising and forecasting",
+       "p": [
+        "Deseasonalise by dividing by the index: a third-quarter value of 165 becomes \\(165 \\div 1.5 = 110\\). Deseasonalised data shows the underlying trend. Fit a least squares line to it, with time as the explanatory variable, to forecast.",
+        "To forecast an actual value, predict the deseasonalised value from the trend line and then reseasonalise by multiplying by the index: a predicted 120 for a third quarter gives \\(120 \\times 1.5 = 180\\).",
+        "To correct for seasonality in words: an index of 0.8 means actual figures should be increased by 25% (since \\(1 \\div 0.8 = 1.25\\)) to deseasonalise."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Calling any up-and-down pattern seasonal. Forgetting to centre an even-point moving mean. Multiplying when you should divide by the index. Using the wrong numbering for time periods in the trend line."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 3 AoS 2 · Recursion and financial modelling",
+   "topics": [
+    {
+     "id": "depreciation",
+     "title": "Depreciation and interest",
+     "points": [
+      "Flat-rate depreciation: \\(V_{n+1} = V_n - D\\) (linear). Unit-cost depreciation: \\(D = \\text{cost per unit} \\times \\text{units used}\\).",
+      "Reducing-balance depreciation: \\(V_{n+1} = RV_n\\) with \\(R = 1 - \\dfrac{r}{100}\\) (geometric).",
+      "Compound interest: \\(V_{n+1} = RV_n\\) with \\(R = 1 + \\dfrac{r}{100\\,n}\\) per compounding period (\\(n\\) periods per year).",
+      "Effective interest rate: \\[r_{\\text{eff}} = \\left[\\left(1 + \\frac{r}{100\\,n}\\right)^{n} - 1\\right] \\times 100\\%\\]",
+      "Finance solver: \\(N\\), \\(I\\%\\), \\(PV\\), \\(PMT\\), \\(FV\\), \\(P/Y\\), \\(C/Y\\)."
+     ],
+     "explain": "Explain why reducing-balance depreciation loses the most value in the first year.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "A $30 000 car depreciates at a flat rate of 10% of its purchase price per year. Find its value after 4 years.",
+       "a": "\\(D = 3000\\); \\(V_4 = 30\\,000 - 4 \\times 3000 = 18\\,000\\), so $18 000",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "The same car depreciates by 20% per year on a reducing balance. Find its value after 2 years.",
+       "a": "\\(V_2 = 30\\,000 \\times 0.8^2 = 19\\,200\\), so $19 200",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the effective annual rate for 6% p.a. compounding monthly.",
+       "a": "\\(\\left[\\left(1 + \\dfrac{6}{1200}\\right)^{12} - 1\\right] \\times 100\\% = (1.005^{12} - 1) \\times 100\\% \\approx 6.17\\%\\)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Recurrence relations for money",
+       "p": [
+        "Every model has the form \\(V_0 = \\text{starting value},\\ V_{n+1} = R \\times V_n \\pm d\\). Adding or subtracting a fixed amount with \\(R = 1\\) gives linear growth or decay. Multiplying by \\(R \\ne 1\\) with \\(d = 0\\) gives geometric growth or decay. \\(V_n\\) is the value after \\(n\\) periods, and one period must match the compounding period."
+       ]
+      },
+      {
+       "h": "Three depreciation methods",
+       "p": [
+        "Flat rate: the same amount is lost each year, a fixed percentage of the purchase price. Rule: \\(V_n = V_0 - nD\\). Unit cost: the value falls by a fixed amount per unit of use (per kilometre, per page). Reducing balance: a fixed percentage of the current value is lost each year. Rule: \\(V_n = R^n V_0\\) with \\(R = 1 - \\dfrac{r}{100}\\).",
+        "Example: a $30 000 car. Flat rate at 12% p.a. loses $3600 a year: after 5 years it is worth $12 000. Reducing balance at 18% p.a.: \\(V_5 = 0.82^5 \\times 30\\,000 = \\$11\\,122\\). Reducing balance loses most in the first years and never reaches zero."
+       ]
+      },
+      {
+       "h": "Compound interest",
+       "p": [
+        "For interest of \\(r\\%\\) per annum compounding \\(p\\) times a year, the multiplier per period is \\(R = 1 + \\dfrac{r}{100p}\\). Example: $8000 at 4.8% p.a. compounding monthly: \\(R = 1.004\\), so \\(V_0 = 8000,\\ V_{n+1} = 1.004V_n\\). After 2 years, \\(V_{24} = 1.004^{24} \\times 8000 = \\$8804.39\\)."
+       ]
+      },
+      {
+       "h": "Nominal and effective rates",
+       "p": [
+        "The nominal rate is the quoted annual rate. The effective rate is the rate that would give the same interest if compounding were annual, so it allows fair comparison. More frequent compounding gives a higher effective rate.",
+        "Example: 6% p.a. compounding monthly. \\(r_{\\text{eff}} = \\left(1.005^{12} - 1\\right) \\times 100 = 6.17\\%\\)."
+       ]
+      },
+      {
+       "h": "Using the finance solver",
+       "p": [
+        "Enter money you pay out or invest as negative and money you receive as positive. For compound interest without payments set PMT to 0. Example: how long for $8000 to reach $10 000 at 4.8% p.a. compounding monthly? N = ?, I% = 4.8, PV = −8000, PMT = 0, FV = 10 000, P/Y = C/Y = 12 gives N ≈ 55.9, so 56 months."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Using the annual rate as the per-period rate. Giving \\(R\\) as the percentage instead of the multiplier. Rounding the number of periods down when a target must be reached. Getting the signs of PV and FV the same."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "annuities",
+     "title": "Loans, annuities and perpetuities",
+     "points": [
+      "Reducing-balance loan or annuity: \\(V_{n+1} = RV_n - d\\). Each payment covers the interest first, then reduces the balance.",
+      "An annuity pays regular amounts from an invested sum until it runs out.",
+      "A perpetuity pays only the interest, so the balance never falls: \\(d = V_0 \\times \\dfrac{r}{100}\\) per period.",
+      "Annuity investment (regular deposits added): \\(V_{n+1} = RV_n + d\\).",
+      "Amortisation tables show the payment, interest, principal reduction and balance."
+     ],
+     "explain": "Explain why a perpetuity can pay forever but an annuity cannot.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "$500 000 is invested in a perpetuity at 4% p.a., paid annually. Find the annual payment.",
+       "a": "\\(d = 500\\,000 \\times 0.04 = 20\\,000\\), so $20 000",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "\\(V_{n+1} = 1.005\\,V_n - 800\\) models…",
+       "o": [
+        "a perpetuity",
+        "a reducing-balance loan or annuity",
+        "flat-rate depreciation",
+        "simple interest"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "One recurrence relation, four products",
+       "p": [
+        "\\(V_{n+1} = RV_n \\pm d\\) with \\(R = 1 + \\dfrac{r}{100p}\\) covers them all. Reducing-balance loan: interest is added, a payment is subtracted, and the balance falls to zero. Annuity: an invested sum earns interest while regular payments are withdrawn until it runs out. Perpetuity: the payment equals the interest, so the balance stays constant for ever. Annuity investment: regular deposits are added to a growing balance."
+       ]
+      },
+      {
+       "h": "How a loan repayment splits",
+       "p": [
+        "Each payment first covers the interest for that period; the remainder reduces the principal. Early in a loan most of the payment is interest; later most of it is principal.",
+        "Example: a $20 000 loan at 6% p.a. compounding monthly with payments of $400. \\(R = 1.005\\). Month 1 interest \\(= 0.005 \\times 20\\,000 = \\$100\\); principal reduction \\(= 400 - 100 = \\$300\\); balance $19 700. Month 2 interest \\(= 0.005 \\times 19\\,700 = \\$98.50\\); principal reduction $301.50; balance $19 398.50. This is what an amortisation table records."
+       ]
+      },
+      {
+       "h": "Total cost and the final payment",
+       "p": [
+        "Total paid = payment × number of payments. Total interest = total paid − amount borrowed. Because payments are rounded to the cent, the last payment usually needs adjusting so the balance is exactly zero: find the balance after the second-last payment, add one period of interest, and that is the final payment."
+       ]
+      },
+      {
+       "h": "Interest-only loans and perpetuities",
+       "p": [
+        "If the payment equals the interest, the balance never changes. For a perpetuity, \\(d = \\dfrac{r}{100p} \\times V_0\\). Example: $500 000 invested at 4.2% p.a. with monthly payments gives \\(0.0035 \\times 500\\,000 = \\$1750\\) a month for ever. To fund $2000 a month at the same rate needs \\(2000 \\div 0.0035 = \\$571\\,429\\)."
+       ]
+      },
+      {
+       "h": "Finance solver set-ups",
+       "p": [
+        "Loan: PV positive (you receive it), PMT negative, FV zero or negative. Annuity: PV negative (you invest it), PMT positive, FV zero. Annuity investment: PV negative, PMT negative, FV positive. To see the effect of a rate change or an extra payment, first find the balance at that time, then start a new calculation with that balance as PV."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Mismatching P/Y and C/Y with the payment frequency. Leaving N as years. Forgetting that paying only the interest never reduces the loan. Reporting total interest as the total repaid."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 4 · Matrices and networks",
+   "topics": [
+    {
+     "id": "matrices34",
+     "title": "Matrices and transition matrices",
+     "points": [
+      "Binary, permutation, communication and dominance matrices model relationships.",
+      "Transition matrix \\(T\\): each column sums to \\(1\\). State matrices: \\(S_{n+1} = TS_n\\), so \\(S_n = T^n S_0\\).",
+      "Steady state: the state matrix stops changing as \\(n\\) grows large.",
+      "Extended models add a recurring input: \\(S_{n+1} = TS_n + B\\). Leslie matrices model populations by age group (birth rates on the top row, survival rates below).",
+      "Inverse matrices solve systems: \\(AX = B \\Rightarrow X = A^{-1}B\\)."
+     ],
+     "explain": "Explain what the steady state of a transition matrix model tells you.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "In a transition matrix, each column sums to…",
+       "o": [
+        "\\(0\\)",
+        "\\(1\\)",
+        "\\(100\\)",
+        "the number of states"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Write the rule linking state matrices with transition matrix \\(T\\).",
+       "a": "\\(S_{n+1} = TS_n\\), so \\(S_n = T^n S_0\\)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Matrices that describe relationships",
+       "p": [
+        "A binary matrix has only 0s and 1s. A permutation matrix has exactly one 1 in each row and column and rearranges the elements of another matrix. A communication matrix shows direct links; its square shows two-step links. A dominance matrix records winners in a round robin: a 1 in row A, column B means A defeated B. One-step dominance is the row sum; add the two-step dominances from the squared matrix to separate ties."
+       ]
+      },
+      {
+       "h": "Transition matrices",
+       "p": [
+        "A transition matrix models movement between states from one time period to the next. Columns are “from” and rows are “to”, so every column adds to 1. The state matrix \\(S_n\\) is a column of the numbers (or proportions) in each state.",
+        "Example: each week 80% of customers of shop A stay and 20% switch to B; 30% of B’s customers switch to A and 70% stay. \\(T = \\begin{bmatrix} 0.8 & 0.3 \\\\ 0.2 & 0.7 \\end{bmatrix}\\), \\(S_0 = \\begin{bmatrix} 200 \\\\ 300 \\end{bmatrix}\\). \\(S_1 = TS_0 = \\begin{bmatrix} 250 \\\\ 250 \\end{bmatrix}\\) and \\(S_2 = \\begin{bmatrix} 275 \\\\ 225 \\end{bmatrix}\\). In general \\(S_n = T^nS_0\\)."
+       ]
+      },
+      {
+       "h": "Steady state",
+       "p": [
+        "In the long run the state matrix stops changing. Estimate it with a large power, such as \\(T^{50}S_0\\), and confirm that the next step gives the same result. For the example the steady state is 300 at A and 200 at B: check \\(0.8 \\times 300 + 0.3 \\times 200 = 300\\). The steady state does not depend on the starting numbers, only on their total."
+       ]
+      },
+      {
+       "h": "Models with additions",
+       "p": [
+        "If new members join or leave each period, use \\(S_{n+1} = TS_n + B\\). Calculate step by step, since \\(T^n\\) alone no longer works. Example: with 10 new customers added to each shop weekly, \\(S_1 = \\begin{bmatrix} 250 \\\\ 250 \\end{bmatrix} + \\begin{bmatrix} 10 \\\\ 10 \\end{bmatrix} = \\begin{bmatrix} 260 \\\\ 260 \\end{bmatrix}\\)."
+       ]
+      },
+      {
+       "h": "Leslie matrices",
+       "p": [
+        "A Leslie matrix models a population by age group. The first row holds the birth rates of each age group, and the entries just below the leading diagonal hold the survival rates from each group to the next. \\(S_{n+1} = LS_n\\). Only females are usually counted."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Writing the transition matrix with rows adding to 1 instead of columns. Multiplying \\(S_0T\\) in the wrong order. Using \\(T^nS_0\\) for a model with an added matrix \\(B\\). Reading a transition diagram’s arrows backwards."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "networks34",
+     "title": "Networks and decision mathematics",
+     "points": [
+      "Shortest path: Dijkstra’s algorithm or inspection. Minimum spanning tree: Prim’s algorithm.",
+      "Network flow: maximum flow \\(=\\) capacity of the minimum cut.",
+      "Allocation (assignment): Hungarian algorithm to minimise total cost or time.",
+      "Critical path analysis: earliest start times (forward pass) and latest start times (backward pass). \\(\\text{float} = \\text{LST} - \\text{EST}\\). Activities with zero float are critical.",
+      "Crashing reduces project time by shortening critical activities, usually at extra cost."
+     ],
+     "explain": "Explain why delaying a critical activity delays the whole project.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "The maximum flow through a network equals…",
+       "o": [
+        "the largest edge capacity",
+        "the capacity of the minimum cut",
+        "the number of vertices",
+        "the sum of all capacities"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "An activity has \\(\\text{EST} = 4\\) and \\(\\text{LST} = 7\\). Find its float.",
+       "a": "\\(7 - 4 = 3\\) (not critical)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which algorithm finds a minimum spanning tree?",
+       "o": [
+        "Dijkstra’s",
+        "Prim’s",
+        "Hungarian",
+        "Euler’s"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Shortest path and minimum spanning tree",
+       "p": [
+        "A shortest path connects two particular vertices with the least total weight. Dijkstra’s algorithm labels each vertex with the shortest distance found so far from the start, always moving next to the unvisited vertex with the smallest label. A minimum spanning tree connects every vertex with the least total weight and contains no cycles; use Prim’s algorithm and stop after \\(n - 1\\) edges."
+       ]
+      },
+      {
+       "h": "Flow problems",
+       "p": [
+        "In a directed network each edge has a capacity. A cut is a set of edges whose removal completely separates the source from the sink. The capacity of a cut is the sum of the capacities of its edges that run from the source side to the sink side; edges crossing the other way count as zero. The maximum flow equals the capacity of the minimum cut.",
+        "Method: draw each possible cut as a line across the network, add up the forward capacities and choose the smallest."
+       ]
+      },
+      {
+       "h": "Allocation problems",
+       "p": [
+        "Assign people to tasks so the total cost or time is least. Hungarian algorithm: subtract the smallest entry of each row from that row; if needed, do the same for columns; cover all zeros with the smallest number of lines; if the number of lines equals the number of rows, allocate using the zeros; otherwise subtract the smallest uncovered entry from all uncovered entries, add it where lines cross, and repeat. A bipartite graph of the zeros helps find the allocation."
+       ]
+      },
+      {
+       "h": "Critical path analysis",
+       "p": [
+        "An activity network shows which activities must finish before others start. The earliest start time (EST) of an activity is the longest path leading to it, found by a forward scan taking the largest value where paths meet. The latest start time (LST) is found by a backward scan from the project completion time, taking the smallest value. Float (slack) \\(= \\text{LST} - \\text{EST}\\). Activities with zero float are critical; the critical path is the longest path through the network and gives the minimum completion time. A dummy activity has zero duration and only shows a dependency."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A (3 days) and B (5 days) have no predecessors. C (4) follows A. D (2) follows B. E (6) follows C and D.",
+        "EST: A 0, B 0, C 3, D 5, E \\(= \\max(3 + 4, 5 + 2) = 7\\). Completion time \\(= 7 + 6 = 13\\) days. Backward: LST of E is 7; C \\(= 7 - 4 = 3\\); D \\(= 7 - 2 = 5\\); A \\(= 3 - 3 = 0\\); B \\(= 5 - 5 = 0\\). Every float is zero, so both A–C–E and B–D–E are critical paths."
+       ]
+      },
+      {
+       "h": "Crashing",
+       "p": [
+        "Crashing shortens the project by reducing the duration of activities, usually at a cost. Only reductions on a critical path help, and after each reduction another path may become critical, so recheck every path. The project cannot be shorter than its longest path after crashing."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Counting an edge that crosses a cut from the sink side to the source side. Taking the smallest value in the forward scan. Forgetting that reducing a non-critical activity saves no time. Stopping the Hungarian algorithm before the minimum number of covering lines equals the number of rows."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

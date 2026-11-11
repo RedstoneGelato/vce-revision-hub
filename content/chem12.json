@@ -65,6 +65,42 @@
        "a": "Electrons absorb energy and jump to higher energy levels. When they fall back they emit light with exact energies (the differences between levels), so only certain wavelengths appear.",
        "e": "Each element has its own set of energy levels, so its spectrum is a fingerprint (flame tests)."
       }
+     ],
+     "notes": [
+      {
+       "h": "Inside the atom",
+       "p": [
+        "Almost all the mass of an atom is in its tiny nucleus; the electrons occupy the space around it and decide how the atom bonds. Because the number of protons fixes the element, changing the number of neutrons gives a different isotope of the same element, and changing the number of electrons gives an ion.",
+        "Isotopes of an element have the same chemical properties because they have the same electron arrangement. They differ in mass, and some are radioactive."
+       ]
+      },
+      {
+       "h": "Relative atomic mass",
+       "p": [
+        "Masses are measured relative to carbon-12, which is given a mass of exactly 12. A mass spectrometer separates the isotopes of an element and gives the relative isotopic mass and percentage abundance of each. The relative atomic mass on the periodic table is the weighted mean.",
+        "\\[A_r = \\frac{\\sum(\\text{relative isotopic mass} \\times \\%\\ \\text{abundance})}{100}\\]"
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Chlorine is 75.8% chlorine-35 (mass 34.97) and 24.2% chlorine-37 (mass 36.97).",
+        "\\(A_r = \\dfrac{34.97 \\times 75.8 + 36.97 \\times 24.2}{100} = 35.45\\). The answer sits closer to 35 because that isotope is more abundant; use this as a check."
+       ]
+      },
+      {
+       "h": "Shells, subshells and orbitals",
+       "p": [
+        "The shell model explains group trends, but it cannot explain why the fourth shell starts filling before the third is full. The Schrödinger model does: shells are divided into subshells (s, p, d, f) made of orbitals, each orbital holding at most two electrons. Subshells fill in order of increasing energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p.",
+        "The 4s subshell is lower in energy than 3d, so it fills first. When transition metals form ions, the 4s electrons are lost first. Example: Fe is 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s², and Fe²⁺ is 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Writing 3d before 4s is filled for potassium and calcium. Forgetting the chromium and copper exceptions. Giving an electron configuration for an ion with the neutral atom’s electron count. An excited-state configuration has an electron in a higher subshell than expected; it is not a different element."
+       ]
+      }
      ]
     },
     {
@@ -120,6 +156,45 @@
        ],
        "a": 1,
        "e": "Valence electrons are further from the nucleus, so bonding electrons are attracted less."
+      }
+     ],
+     "notes": [
+      {
+       "h": "The idea behind every trend",
+       "p": [
+        "Nearly every trend can be explained with two factors: core charge (how strongly the nucleus pulls on the valence electrons) and the distance of the valence shell from the nucleus. Across a period the core charge rises while the valence shell stays the same, so valence electrons are held more tightly. Down a group the core charge stays the same while the number of shells rises, so valence electrons are further away and held less tightly."
+       ]
+      },
+      {
+       "h": "Applying it",
+       "p": [
+        "Atomic radius: decreases across a period (stronger pull draws the shell in) and increases down a group (more shells). Electronegativity, the ability of an atom to attract electrons in a bond: increases across, decreases down. First ionisation energy, the energy needed to remove one electron from an atom in the gas phase: increases across, decreases down. Metallic character: decreases across, increases down."
+       ]
+      },
+      {
+       "h": "Reactivity",
+       "p": [
+        "Metals react by losing electrons, so the more easily they lose them the more reactive they are: reactivity increases down group 1. Non-metals react by gaining electrons, so the more strongly they attract them the more reactive they are: reactivity decreases down group 17. Fluorine is the most reactive non-metal."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Explain why sodium has a larger atomic radius than chlorine.",
+        "Both have three occupied shells. Sodium has a core charge of +1 (11 − 10) and chlorine +7 (17 − 10). Chlorine’s valence electrons are attracted more strongly to the nucleus, so they are held closer, giving a smaller radius."
+       ]
+      },
+      {
+       "h": "Critical elements",
+       "p": [
+        "Some elements are in short supply or hard to obtain, such as helium, phosphorus, rare-earth elements and post-transition metals and metalloids used in electronics. Recycling them supports a circular economy, in which materials are kept in use for as long as possible instead of being mined, used once and thrown away."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Saying “more protons” alone; you must also mention the shell or shielding. Saying “more electrons means bigger” across a period. Explaining a trend by restating it."
+       ]
       }
      ]
     },
@@ -184,6 +259,46 @@
        "a": "Hydrogen bonds between molecules. The O–H covalent bonds inside each molecule stay intact.",
        "e": "A very common exam trap."
       }
+     ],
+     "notes": [
+      {
+       "h": "From electrons to shape",
+       "p": [
+        "A reliable order of working: count valence electrons, draw the Lewis structure, count electron groups around the central atom (a lone pair, single bond, double bond or triple bond each count as one group), name the shape from the positions of the atoms, then decide polarity.",
+        "Four groups with no lone pairs give a tetrahedral shape (CH₄, 109.5°). Four groups with one lone pair give a pyramidal shape (NH₃). Four groups with two lone pairs give a bent or V-shape (H₂O). Three groups give trigonal planar (BF₃). Two groups give linear (CO₂). Lone pairs repel more strongly than bonding pairs, which squeezes the bond angles slightly."
+       ]
+      },
+      {
+       "h": "Polarity",
+       "p": [
+        "A bond is polar when the two atoms differ in electronegativity; the more electronegative atom carries a partial negative charge. A molecule is polar only if the bond dipoles do not cancel. Symmetrical molecules such as CO₂ and CCl₄ have polar bonds but are non-polar overall. Asymmetrical molecules such as H₂O, NH₃ and CHCl₃ are polar."
+       ]
+      },
+      {
+       "h": "Intermolecular forces",
+       "p": [
+        "Melting and boiling a molecular substance breaks the forces between molecules, not the covalent bonds inside them. Dispersion forces act between all molecules and get stronger with more electrons and a larger surface area. Dipole–dipole forces act between polar molecules. Hydrogen bonds are especially strong dipole–dipole attractions that occur when hydrogen is bonded to N, O or F and is attracted to a lone pair on N, O or F of a neighbouring molecule."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Why does water (18 g mol⁻¹) boil at 100 °C while methane (16 g mol⁻¹) boils at −162 °C?",
+        "The molecules have similar numbers of electrons, so dispersion forces are similar. Methane is non-polar and has only dispersion forces. Water is polar with O–H bonds, so it forms hydrogen bonds between molecules, which need much more energy to overcome."
+       ]
+      },
+      {
+       "h": "Diamond and graphite",
+       "p": [
+        "In covalent network lattices the atoms are held by covalent bonds throughout. Diamond: each carbon bonds to four others, so it is extremely hard with no free electrons. Graphite: each carbon bonds to three others in layers, leaving one delocalised electron per atom, so it conducts; the layers are held by weak dispersion forces and slide, so it is soft and a lubricant."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Saying covalent bonds break when a molecular substance boils. Calling a molecule polar because it has polar bonds without checking symmetry. Claiming hydrogen bonding for any molecule that contains H."
+       ]
+      }
      ]
     },
     {
@@ -227,6 +342,41 @@
        ],
        "a": 1,
        "e": "Cations stay fixed; the electrons carry charge."
+      }
+     ],
+     "notes": [
+      {
+       "h": "The metallic bonding model",
+       "p": [
+        "Metal atoms lose their valence electrons into a shared “sea”. The lattice is held together by electrostatic attraction between the positive ions and the delocalised electrons. This attraction is strong and acts in all directions, which explains the usual properties.",
+        "Conductivity of electricity: delocalised electrons are free to move toward a positive terminal. Conductivity of heat: the electrons carry kinetic energy quickly through the lattice. Malleability and ductility: layers of cations can slide without breaking the bonding, because the sea of electrons still holds them. Lustre: free electrons reflect light. High melting point: strong attraction needs a lot of energy to overcome."
+       ]
+      },
+      {
+       "h": "Limits of the model",
+       "p": [
+        "The model does not explain why metals differ so much in melting point, density or magnetism, or why some are much more reactive than others."
+       ]
+      },
+      {
+       "h": "Reactivity of metals",
+       "p": [
+        "The reactivity series ranks metals by how easily they are oxidised. Reactive metals (K, Na, Ca) react with cold water to give a hydroxide and hydrogen. Moderately reactive metals (Mg, Zn, Fe) react with acids to give a salt and hydrogen. Metals react with oxygen to form oxides. Unreactive metals (Cu, Ag, Au) do not react with dilute acids.",
+        "Example: Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)."
+       ]
+      },
+      {
+       "h": "Modifying and recycling metals",
+       "p": [
+        "Alloying adds other atoms that disrupt the regular layers, so they slide less easily and the alloy is harder. Heat treatment changes crystal size: quenching (heating then cooling rapidly) gives small crystals, harder but brittle; annealing (cooling slowly) gives larger crystals, softer and more ductile; tempering (quenching then gentle reheating) reduces brittleness while keeping hardness.",
+        "Metals can be recycled repeatedly without losing their properties. Recycling aluminium uses a small fraction of the energy needed to extract it from ore, and it reduces mining and landfill. This is a clear example of a circular economy."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Saying metals conduct because “ions move”; in a solid metal only the electrons move. Describing delocalised electrons as “free atoms”."
+       ]
       }
      ]
     },
@@ -297,6 +447,40 @@
        "a": 2,
        "e": "Fe³⁺ and O²⁻: swap and simplify, 2 : 3."
       }
+     ],
+     "notes": [
+      {
+       "h": "The ionic bonding model",
+       "p": [
+        "When a metal reacts with a non-metal, electrons transfer from the metal to the non-metal. The resulting cations and anions arrange in a three-dimensional lattice, held by strong electrostatic attraction between opposite charges in all directions. The formula is a ratio, not a molecule.",
+        "High melting point: strong attraction throughout the lattice. Hard but brittle: a force that shifts a layer brings like charges next to each other, and repulsion shatters the crystal. Does not conduct as a solid: ions are fixed in place. Conducts when molten or dissolved: ions are free to move."
+       ]
+      },
+      {
+       "h": "Writing formulas",
+       "p": [
+        "Balance the total positive and negative charge. Calcium phosphate: Ca²⁺ and PO₄³⁻ need three calcium ions (+6) and two phosphate ions (−6), giving Ca₃(PO₄)₂. Use brackets when there is more than one polyatomic ion. For transition metals give the charge in Roman numerals: iron(III) oxide is Fe₂O₃."
+       ]
+      },
+      {
+       "h": "Predicting precipitates",
+       "p": [
+        "A precipitation reaction occurs when two solutions are mixed and one combination of ions forms an insoluble compound. Use a solubility table. Always soluble: compounds of Na⁺, K⁺, NH₄⁺, NO₃⁻ and CH₃COO⁻. Most chlorides, bromides and iodides are soluble except those of Ag⁺ and Pb²⁺. Most sulfates are soluble except those of Ba²⁺, Pb²⁺ and Ca²⁺ (slightly). Most carbonates, phosphates, sulfides and hydroxides are insoluble."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Solutions of lead(II) nitrate and potassium iodide are mixed.",
+        "Possible products: lead(II) iodide and potassium nitrate. Nitrates are soluble; PbI₂ is insoluble. Full equation: Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq). Ionic equation: Pb²⁺(aq) + 2I⁻(aq) → PbI₂(s). K⁺ and NO₃⁻ are spectator ions."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Leaving out state symbols, which carry the meaning in a precipitation equation. Writing PbI instead of balancing charges. Saying an ionic solid conducts because it “has electrons”."
+       ]
+      }
      ]
     },
     {
@@ -340,6 +524,41 @@
        ],
        "a": 1,
        "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Why things dissolve",
+       "p": [
+        "A solute dissolves when the attractions between solute and solvent particles are strong enough to replace the solute–solute and solvent–solvent attractions. Polar and ionic substances tend to dissolve in polar solvents such as water; non-polar substances dissolve in non-polar solvents such as hexane.",
+        "Ionic solids dissociate: the lattice breaks up and each ion is surrounded by water molecules (ion–dipole attraction). Small polar molecules such as ethanol and glucose dissolve by forming hydrogen bonds with water. Acids such as HCl ionise: they react with water to form ions."
+       ]
+      },
+      {
+       "h": "How chromatography separates",
+       "p": [
+        "All chromatography has a stationary phase that stays put and a mobile phase that moves through or over it. Components are continually adsorbing onto the stationary phase and desorbing back into the mobile phase. A component that is strongly attracted to the stationary phase spends more time stuck and moves slowly; one that is more soluble in the mobile phase moves quickly.",
+        "In paper and thin-layer chromatography the stationary phase is polar. With a less polar solvent, polar components travel a shorter distance and have lower Rf values."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A spot moves 3.2 cm from the origin while the solvent front moves 8.0 cm.",
+        "\\(R_f = \\dfrac{3.2}{8.0} = 0.40\\). Rf has no units and is always between 0 and 1. It is only comparable when the stationary phase, solvent and temperature are the same."
+       ]
+      },
+      {
+       "h": "Practical points",
+       "p": [
+        "Draw the origin line in pencil, because ink would dissolve and run. Keep the origin above the solvent level, or the sample dissolves into the solvent pool. Cover the container so the solvent does not evaporate from the paper. Mark the solvent front as soon as the paper is removed."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Measuring from the bottom of the paper instead of from the origin. Writing “absorb” for “adsorb”: adsorption is sticking to a surface. Saying a single spot proves purity; two substances may have the same Rf in that solvent."
+       ]
       }
      ]
     }
@@ -403,6 +622,40 @@
        "a": "\\(M(\\mathrm{CH_2O}) = 30.0\\); \\(\\dfrac{180}{30.0} = 6\\), so \\(\\mathrm{C_6H_{12}O_6}\\).",
        "e": ""
       }
+     ],
+     "notes": [
+      {
+       "h": "Why chemists count in moles",
+       "p": [
+        "Atoms are too small to count, so chemists weigh them. The mole links the mass you can measure to the number of particles that react. One mole of any substance contains the same number of particles, and its mass in grams equals its relative mass."
+       ]
+      },
+      {
+       "h": "The three core relationships",
+       "p": [
+        "\\(n = \\dfrac{m}{M}\\) converts between mass and moles. \\(n = \\dfrac{N}{N_A}\\) converts between number of particles and moles. For a compound, the subscripts give mole ratios of atoms: 1 mol of \\(\\mathrm{H_2SO_4}\\) contains 2 mol of H atoms, 1 mol of S atoms and 4 mol of O atoms."
+       ]
+      },
+      {
+       "h": "Worked example: moles and particles",
+       "p": [
+        "How many oxygen atoms are in 4.9 g of H₂SO₄ (M = 98.1 g mol⁻¹)?",
+        "\\(n(\\mathrm{H_2SO_4}) = \\dfrac{4.9}{98.1} = 0.050\\ \\mathrm{mol}\\). \\(n(\\mathrm{O}) = 4 \\times 0.050 = 0.20\\ \\mathrm{mol}\\). \\(N(\\mathrm{O}) = 0.20 \\times 6.02 \\times 10^{23} = 1.2 \\times 10^{23}\\) atoms."
+       ]
+      },
+      {
+       "h": "Worked example: empirical and molecular formula",
+       "p": [
+        "A compound is 40.0% C, 6.7% H and 53.3% O by mass, with molar mass 180 g mol⁻¹.",
+        "In 100 g: \\(n(\\mathrm{C}) = \\dfrac{40.0}{12.0} = 3.33\\), \\(n(\\mathrm{H}) = \\dfrac{6.7}{1.0} = 6.7\\), \\(n(\\mathrm{O}) = \\dfrac{53.3}{16.0} = 3.33\\). Divide by the smallest: 1 : 2 : 1, so the empirical formula is \\(\\mathrm{CH_2O}\\) (30 g mol⁻¹). \\(180 \\div 30 = 6\\), so the molecular formula is \\(\\mathrm{C_6H_{12}O_6}\\)."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Rounding ratios such as 1.5 or 1.33 to a whole number: multiply all values by 2 or 3 instead. Using atomic number in place of molar mass. Forgetting that diatomic elements (H₂, N₂, O₂, F₂, Cl₂, Br₂, I₂) have a molar mass twice the atomic value. Giving too many or too few significant figures: match the data."
+       ]
+      }
      ]
     },
     {
@@ -459,6 +712,46 @@
        ],
        "a": 1,
        "e": "Both are C₄H₁₀."
+      }
+     ],
+     "notes": [
+      {
+       "h": "Why carbon forms so many compounds",
+       "p": [
+        "Carbon has four valence electrons and forms four strong covalent bonds, including bonds to other carbon atoms in chains, branches and rings. A homologous series is a family of compounds with the same functional group and general formula, where each member differs from the next by CH₂. Members have similar chemical properties and a gradual change in physical properties."
+       ]
+      },
+      {
+       "h": "Representing molecules",
+       "p": [
+        "Molecular formula: C₄H₁₀. Structural formula shows every bond. Semi-structural (condensed) formula lists each carbon with its attached atoms: CH₃CH₂CH₂CH₃. Skeletal formula shows the carbon chain as a zigzag line with hydrogens on carbon left out."
+       ]
+      },
+      {
+       "h": "Naming, step by step",
+       "p": [
+        "Find the longest carbon chain that contains the functional group. Number it from the end that gives the functional group or branch the lowest number. Name branches as alkyl groups (methyl, ethyl) in alphabetical order, with di- or tri- for repeats. Add the suffix: -ane, -ene, -yne, -ol (alcohol), -oic acid (carboxylic acid); haloalkanes use a prefix (chloro-, bromo-).",
+        "Example: CH₃CH(CH₃)CH₂CH₃ has a four-carbon chain with a methyl group on carbon 2: 2-methylbutane. CH₃CH₂CH(OH)CH₃ is butan-2-ol."
+       ]
+      },
+      {
+       "h": "Properties and structure",
+       "p": [
+        "Alkanes and alkenes are non-polar: only dispersion forces, low boiling points that rise with chain length, insoluble in water. Branching lowers the boiling point because branched molecules pack less closely. Alcohols and carboxylic acids form hydrogen bonds, so they boil higher than alkanes of similar size, and the small ones dissolve in water. Solubility falls as the non-polar chain gets longer."
+       ]
+      },
+      {
+       "h": "Reactions and sources",
+       "p": [
+        "Combustion: complete combustion gives CO₂ and H₂O. Substitution: an alkane reacts with a halogen in UV light, replacing an H. Addition: an alkene reacts across the double bond, which is why alkenes decolourise bromine water and alkanes do not. Esters form when an alcohol reacts with a carboxylic acid.",
+        "Most organic chemicals are made from crude oil, a non-renewable source. Plant-based biomass is an alternative feedstock that can be renewed."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Not choosing the longest chain. Numbering from the wrong end. Drawing carbon with five bonds or leaving it with three. Calling the chain length by counting branches."
+       ]
       }
      ]
     },
@@ -517,6 +810,39 @@
        "a": 2,
        "e": "Cross-links stop chains moving apart."
       }
+     ],
+     "notes": [
+      {
+       "h": "How polymers form",
+       "p": [
+        "A polymer is a very large molecule made of many small repeating units called monomers. In addition polymerisation the double bond of each monomer opens and the monomers join end to end; nothing else is produced, so the polymer has the same empirical formula as the monomer. In condensation polymerisation each monomer has two functional groups; they join by forming ester or amide links and release a small molecule, usually water."
+       ]
+      },
+      {
+       "h": "Drawing a polymer",
+       "p": [
+        "For an addition polymer, redraw the monomer with the double bond replaced by a single bond and with a bond extending from each of the two carbons. Put brackets around this repeating unit with a subscript n. Example: propene, CH₂=CH(CH₃), gives the repeating unit –CH₂–CH(CH₃)–. To find the monomer from a polymer chain, take two adjacent backbone carbons and restore the double bond."
+       ]
+      },
+      {
+       "h": "Structure decides properties",
+       "p": [
+        "Longer chains mean stronger dispersion forces in total, so higher melting point and strength. Branching keeps chains apart: low-density polyethene has many branches and is soft and flexible; high-density polyethene has few and is rigid. Crystalline regions, where chains line up, add strength and make the plastic opaque; amorphous regions are tangled and more transparent. Side groups matter: a bulky or polar side group changes stiffness and intermolecular forces.",
+        "Thermoplastics have only weak forces between chains, so they soften when heated and can be remoulded. Thermosetting polymers have strong covalent cross-links, so they char instead of melting and cannot be remoulded. Elastomers have occasional cross-links, so chains can stretch and spring back. Plasticisers are small molecules added between chains to make a plastic softer."
+       ]
+      },
+      {
+       "h": "Plastics and sustainability",
+       "p": [
+        "Most plastics are made from fossil fuels and persist in the environment, breaking into microplastics. Options include mechanical recycling (sorting, melting and remoulding, which works for thermoplastics), chemical or feedstock recycling (breaking the polymer back to monomers or fuel), bioplastics made from renewable biomass, and compostable plastics. A bioplastic is not automatically biodegradable, and a biodegradable plastic is not automatically made from plants."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Leaving a double bond in the repeating unit of an addition polymer. Forgetting the bonds that extend through the brackets. Saying thermosetting plastics have “stronger intermolecular forces”: their cross-links are covalent bonds."
+       ]
+      }
      ]
     }
    ]
@@ -571,6 +897,46 @@
        ],
        "a": 1,
        "e": "Energy goes into breaking hydrogen bonds, not raising temperature."
+      }
+     ],
+     "notes": [
+      {
+       "h": "Why water is unusual",
+       "p": [
+        "Compared with other molecules of its size, water has very high melting and boiling points, a high heat capacity and a high latent heat. The cause is hydrogen bonding. Each water molecule has two O–H bonds and two lone pairs, so it can form up to four hydrogen bonds with neighbours. Breaking or loosening these requires a lot of energy."
+       ]
+      },
+      {
+       "h": "Specific heat capacity",
+       "p": [
+        "Specific heat capacity is the energy needed to raise the temperature of 1 g of a substance by 1 °C. Water’s value of \\(4.18\\ \\mathrm{J\\ g^{-1}\\,{}^\\circ C^{-1}}\\) is high, so water absorbs or releases a lot of energy for a small temperature change. This moderates the climate near oceans and makes water an effective coolant.",
+        "\\[q = mc\\Delta T\\]"
+       ]
+      },
+      {
+       "h": "Latent heat",
+       "p": [
+        "Latent heat is the energy needed to change the state of a substance at constant temperature. During melting or boiling the energy goes into overcoming forces between molecules, so the temperature does not rise. \\(q = n \\times L\\) for molar latent heat, or \\(q = m \\times L\\) for values given per gram. Evaporating sweat cools the body because the water takes its latent heat of vaporisation from the skin."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "How much energy is needed to heat 250 g of water from 20.0 °C to 100.0 °C and then boil all of it? (Latent heat of vaporisation at 100 °C: 40.7 kJ mol⁻¹.)",
+        "Heating: \\(q = 250 \\times 4.18 \\times 80.0 = 83\\,600\\ \\mathrm{J} = 83.6\\ \\mathrm{kJ}\\). Boiling: \\(n = \\dfrac{250}{18.0} = 13.9\\ \\mathrm{mol}\\), so \\(q = 13.9 \\times 40.7 = 566\\ \\mathrm{kJ}\\). Total ≈ 650 kJ. Boiling takes far more energy than heating."
+       ]
+      },
+      {
+       "h": "Density of ice",
+       "p": [
+        "As water freezes, each molecule forms four hydrogen bonds in a fixed, open hexagonal arrangement. This holds the molecules further apart than in the liquid, so ice is less dense and floats. Ice forming on top of lakes insulates the water below, which lets aquatic life survive winter."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Mixing joules and kilojoules. Using a temperature in place of a temperature change. Saying hydrogen bonds are the O–H bonds inside the molecule; they are the attractions between molecules."
+       ]
       }
      ]
     },
@@ -635,6 +1001,47 @@
        "a": 1,
        "e": "It can donate (→ CO₃²⁻) or accept (→ H₂CO₃) a proton."
       }
+     ],
+     "notes": [
+      {
+       "h": "The Brønsted–Lowry model",
+       "p": [
+        "An acid–base reaction is a proton transfer. The acid donates H⁺ and becomes its conjugate base; the base accepts H⁺ and becomes its conjugate acid. In HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq), HCl is the acid and Cl⁻ its conjugate base; H₂O is the base and H₃O⁺ its conjugate acid.",
+        "An amphiprotic substance can donate or accept a proton, depending on what it reacts with. Polyprotic acids can donate more than one proton, one step at a time: H₂SO₄ is diprotic, H₃PO₄ is triprotic."
+       ]
+      },
+      {
+       "h": "Strong, weak, concentrated, dilute",
+       "p": [
+        "Strength describes how completely an acid ionises in water. Concentration describes how much solute is dissolved per litre. They are independent: 0.001 M HCl is a dilute solution of a strong acid; 5 M ethanoic acid is a concentrated solution of a weak acid. At the same concentration a strong acid has a lower pH, conducts better and reacts faster than a weak acid."
+       ]
+      },
+      {
+       "h": "pH calculations",
+       "p": [
+        "\\(\\mathrm{pH} = -\\log_{10}[\\mathrm{H_3O^+}]\\) and \\([\\mathrm{H_3O^+}] = 10^{-\\mathrm{pH}}\\). At 25 °C, \\([\\mathrm{H_3O^+}][\\mathrm{OH^-}] = 1.0 \\times 10^{-14}\\).",
+        "Example 1: 0.020 M HCl. It is a strong monoprotic acid, so \\([\\mathrm{H_3O^+}] = 0.020\\) and \\(\\mathrm{pH} = -\\log(0.020) = 1.70\\).",
+        "Example 2: 0.010 M NaOH. \\([\\mathrm{OH^-}] = 0.010\\), so \\([\\mathrm{H_3O^+}] = \\dfrac{1.0 \\times 10^{-14}}{0.010} = 1.0 \\times 10^{-12}\\) and \\(\\mathrm{pH} = 12.0\\)."
+       ]
+      },
+      {
+       "h": "Reactions of acids",
+       "p": [
+        "Acid + reactive metal → salt + hydrogen. Acid + metal hydroxide → salt + water. Acid + metal oxide → salt + water. Acid + metal carbonate → salt + water + carbon dioxide. Acid + metal hydrogencarbonate → salt + water + carbon dioxide. The ionic equation for a strong acid with a strong base is H⁺(aq) + OH⁻(aq) → H₂O(l)."
+       ]
+      },
+      {
+       "h": "Acids in the environment",
+       "p": [
+        "Carbon dioxide dissolves in sea water to form carbonic acid, which lowers the ocean’s pH. The extra H₃O⁺ reacts with carbonate ions, leaving less carbonate for corals and shellfish to build calcium carbonate shells and skeletons."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Calling a weak acid “dilute”. Forgetting that 0.1 M H₂SO₄ gives more than 0.1 M H₃O⁺. Diluting an acid 10 times and saying the pH falls by 1: it rises by 1, and never past 7."
+       ]
+      }
      ]
     },
     {
@@ -692,6 +1099,47 @@
        "a": 1,
        "e": ""
       }
+     ],
+     "notes": [
+      {
+       "h": "Seeing electron transfer",
+       "p": [
+        "A redox reaction is one in which electrons are transferred. Oxidation and reduction always happen together. The substance oxidised is the reducing agent (it causes the other to be reduced); the substance reduced is the oxidising agent.",
+        "Oxidation numbers are a bookkeeping tool: an increase means oxidation, a decrease means reduction. Rules in order: an element is 0; a monatomic ion equals its charge; hydrogen is +1 (except in metal hydrides); oxygen is −2 (except in peroxides); the numbers add to the overall charge."
+       ]
+      },
+      {
+       "h": "Balancing half-equations in acid",
+       "p": [
+        "Use KOHES: balance the Key element, add water to balance Oxygen, add H⁺ to balance Hydrogen, add Electrons to balance charge, add States.",
+        "Example: MnO₄⁻ to Mn²⁺. Mn is balanced. Add 4H₂O to the right for oxygen. Add 8H⁺ to the left for hydrogen. Charges: left +7, right +2, so add 5e⁻ to the left. MnO₄⁻(aq) + 8H⁺(aq) + 5e⁻ → Mn²⁺(aq) + 4H₂O(l).",
+        "To combine two half-equations, multiply them so the electrons lost equal the electrons gained, add them, and cancel anything that appears on both sides."
+       ]
+      },
+      {
+       "h": "The reactivity series and displacement",
+       "p": [
+        "A more reactive metal is a stronger reducing agent and will displace a less reactive metal from a solution of its ions. Zinc placed in copper(II) sulfate solution: Zn(s) → Zn²⁺(aq) + 2e⁻ and Cu²⁺(aq) + 2e⁻ → Cu(s). The blue colour fades and a red-brown deposit forms. Copper placed in zinc sulfate solution does nothing."
+       ]
+      },
+      {
+       "h": "Galvanic cells",
+       "p": [
+        "If the two half-reactions are separated, the electrons must travel through a wire and can do work. The half-cell where oxidation happens is the anode and is negative, because electrons are released there. Electrons flow through the wire to the cathode, which is positive, where reduction happens. The salt bridge completes the circuit and keeps each half-cell electrically neutral; without it the reaction stops almost at once."
+       ]
+      },
+      {
+       "h": "Corrosion",
+       "p": [
+        "Rusting needs both oxygen and water. Iron is oxidised to Fe²⁺ and oxygen is reduced to OH⁻; further reactions give hydrated iron(III) oxide. Prevention: barriers such as paint or grease; galvanising with zinc; sacrificial protection, where a more reactive metal is attached and corrodes in place of the iron."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Calling the oxidised species the oxidising agent. Putting electrons on the wrong side: they are a product in oxidation and a reactant in reduction. Saying electrons flow through the salt bridge."
+       ]
+      }
      ]
     }
    ]
@@ -734,6 +1182,46 @@
        "q": "How many moles of NaCl are in \\(250\\ \\mathrm{mL}\\) of \\(0.40\\ \\mathrm{M}\\) solution?",
        "a": "\\(n = cV = 0.40 \\times 0.250 = 0.10\\ \\mathrm{mol}\\)",
        "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Describing solutions",
+       "p": [
+        "A solution is unsaturated if more solute can dissolve at that temperature, saturated if no more can dissolve, and supersaturated if it holds more than the saturated amount (an unstable state that crystallises when disturbed). A solubility curve plots solubility against temperature. A point below the curve is unsaturated, on the curve saturated, above it supersaturated."
+       ]
+      },
+      {
+       "h": "Using a solubility curve",
+       "p": [
+        "Example: the solubility of KNO₃ is 110 g per 100 g of water at 60 °C and 32 g per 100 g at 20 °C. A saturated solution in 50 g of water at 60 °C holds 55 g. Cooled to 20 °C it can hold only 16 g, so 55 − 16 = 39 g crystallises."
+       ]
+      },
+      {
+       "h": "Units of concentration",
+       "p": [
+        "Molarity: \\(c = \\dfrac{n}{V}\\) in mol L⁻¹ (M). Mass per volume: g L⁻¹, found from \\(c(\\mathrm{g\\ L^{-1}}) = c(\\mathrm{mol\\ L^{-1}}) \\times M\\). Parts per million: mg of solute per kg of solution, or mg L⁻¹ for dilute aqueous solutions. Percentages: %(m/m) is grams per 100 g of solution, %(m/v) is grams per 100 mL, %(v/v) is mL per 100 mL."
+       ]
+      },
+      {
+       "h": "Worked example: making a solution",
+       "p": [
+        "What mass of NaOH (M = 40.0 g mol⁻¹) is needed to make 250.0 mL of 0.100 M solution?",
+        "\\(n = cV = 0.100 \\times 0.2500 = 0.0250\\ \\mathrm{mol}\\). \\(m = nM = 0.0250 \\times 40.0 = 1.00\\ \\mathrm{g}\\). Dissolve it in less than 250 mL of water in a volumetric flask, then make up to the mark."
+       ]
+      },
+      {
+       "h": "Worked example: dilution",
+       "p": [
+        "What volume of 2.0 M HCl is needed to make 500 mL of 0.10 M HCl?",
+        "\\(V_1 = \\dfrac{c_2V_2}{c_1} = \\dfrac{0.10 \\times 500}{2.0} = 25\\ \\mathrm{mL}\\). Add the acid to water and make up to 500 mL. Diluting changes the concentration but not the amount of solute."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Leaving volume in mL when using c = n ÷ V. Adding 500 mL of water to 25 mL instead of making the total up to 500 mL. Forgetting that ions from a salt may be at a multiple of the salt’s concentration."
+       ]
       }
      ]
     },
@@ -786,6 +1274,48 @@
        "a": 1,
        "e": "0.25 mol CH₄ needs 0.50 mol O₂ but only 0.3125 mol is present."
       }
+     ],
+     "notes": [
+      {
+       "h": "What volumetric analysis does",
+       "p": [
+        "A titration finds an unknown concentration by reacting a measured volume of the unknown with a solution of accurately known concentration (a standard solution) until the reaction is just complete. The equivalence point is when the reactants have been mixed in exactly the mole ratio of the equation. The end point is when the indicator changes colour. A suitable indicator makes these nearly the same."
+       ]
+      },
+      {
+       "h": "Equipment and why it is used",
+       "p": [
+        "Volumetric flask: makes a solution of accurately known volume. Pipette: delivers a fixed, accurate volume (the aliquot). Burette: delivers a variable, accurately measured volume (the titre). Conical flask: holds the reaction mixture and can be swirled without spilling. Titrations are repeated until three titres agree within 0.10 mL; these concordant titres are averaged."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A 20.00 mL aliquot of H₂SO₄ is titrated with 0.100 M NaOH. The average titre is 24.60 mL. Find the concentration of the acid.",
+        "Equation: H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l).",
+        "\\(n(\\mathrm{NaOH}) = 0.100 \\times 0.02460 = 2.460 \\times 10^{-3}\\ \\mathrm{mol}\\). \\(n(\\mathrm{H_2SO_4}) = \\tfrac{1}{2} \\times 2.460 \\times 10^{-3} = 1.230 \\times 10^{-3}\\ \\mathrm{mol}\\). \\(c = \\dfrac{1.230 \\times 10^{-3}}{0.02000} = 0.0615\\ \\mathrm{M}\\)."
+       ]
+      },
+      {
+       "h": "Analysing errors",
+       "p": [
+        "Think about what the mistake does to the amount of substance in the flask or to the concentration in the burette. Burette rinsed with water: its solution is diluted, so a larger titre is needed. Pipette rinsed with water: the aliquot is diluted, so less reagent is in the flask and the titre is smaller. Conical flask rinsed with the aliquot solution: extra reagent is in the flask, so the titre is larger. Conical flask rinsed with water: no effect, because the amount of reagent is unchanged.",
+        "Systematic errors shift every result in the same direction and are not reduced by repeating. Random errors scatter results and are reduced by repeating and averaging."
+       ]
+      },
+      {
+       "h": "Limiting reagent example",
+       "p": [
+        "5.0 g of Mg (M = 24.3) is added to 0.30 mol of HCl. Mg + 2HCl → MgCl₂ + H₂.",
+        "\\(n(\\mathrm{Mg}) = 0.206\\ \\mathrm{mol}\\), which would need 0.412 mol of HCl. Only 0.30 mol is available, so HCl is limiting. \\(n(\\mathrm{H_2}) = \\tfrac{1}{2} \\times 0.30 = 0.15\\ \\mathrm{mol}\\)."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Ignoring the mole ratio. Averaging all titres including the rough one. Recording burette readings to one decimal place; record to two."
+       ]
+      }
      ]
     },
     {
@@ -837,6 +1367,52 @@
        "a": "\\(V = \\dfrac{nRT}{p} = \\dfrac{0.100 \\times 8.31 \\times 298}{100} = 2.48\\ \\mathrm{L}\\)",
        "e": ""
       }
+     ],
+     "notes": [
+      {
+       "h": "The kinetic molecular theory",
+       "p": [
+        "Gas particles are in constant, rapid, random motion; they are far apart, so a gas is mostly empty space and can be compressed; forces between them are negligible; collisions are elastic; and the average kinetic energy is proportional to the temperature in kelvin. Pressure is caused by particles colliding with the walls of the container."
+       ]
+      },
+      {
+       "h": "Explaining the gas laws",
+       "p": [
+        "Smaller volume at constant temperature: particles hit the walls more often, so pressure rises. Higher temperature at constant volume: particles move faster and hit the walls harder and more often, so pressure rises. Higher temperature at constant pressure: the gas expands."
+       ]
+      },
+      {
+       "h": "Units and conditions",
+       "p": [
+        "Temperatures must be in kelvin: \\(T(\\mathrm{K}) = T({}^\\circ\\mathrm{C}) + 273\\). With \\(R = 8.31\\ \\mathrm{J\\ K^{-1}\\ mol^{-1}}\\), use pressure in kPa and volume in L. Standard laboratory conditions (SLC) are 25 °C and 100 kPa, where one mole of any gas occupies 24.8 L."
+       ]
+      },
+      {
+       "h": "Worked example: general gas equation",
+       "p": [
+        "What volume does 4.00 g of CO₂ (M = 44.0 g mol⁻¹) occupy at 30 °C and 95.0 kPa?",
+        "\\(n = \\dfrac{4.00}{44.0} = 0.0909\\ \\mathrm{mol}\\); \\(T = 303\\ \\mathrm{K}\\). \\(V = \\dfrac{nRT}{p} = \\dfrac{0.0909 \\times 8.31 \\times 303}{95.0} = 2.41\\ \\mathrm{L}\\)."
+       ]
+      },
+      {
+       "h": "Worked example: gas stoichiometry",
+       "p": [
+        "What volume of CO₂ at SLC forms when 10.0 g of CaCO₃ (M = 100.1) reacts with excess acid? CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂.",
+        "\\(n(\\mathrm{CaCO_3}) = 0.0999\\ \\mathrm{mol} = n(\\mathrm{CO_2})\\). \\(V = 0.0999 \\times 24.8 = 2.48\\ \\mathrm{L}\\)."
+       ]
+      },
+      {
+       "h": "Greenhouse gases",
+       "p": [
+        "The Sun’s radiation passes through the atmosphere and warms the Earth, which emits infrared radiation. Greenhouse gas molecules absorb that infrared radiation and re-emit it in all directions, including back toward the surface. This natural effect keeps the planet habitable. Human activity, mainly burning fossil fuels and agriculture, has raised the concentrations of CO₂, CH₄ and N₂O, producing the enhanced greenhouse effect and global warming."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Using °C in gas calculations. Using 24.8 L mol⁻¹ when the gas is not at SLC. Using it for liquids or solids."
+       ]
+      }
      ]
     },
     {
@@ -880,6 +1456,46 @@
        ],
        "a": 0,
        "e": "The extra mass is water."
+      }
+     ],
+     "notes": [
+      {
+       "h": "Why analyse water",
+       "p": [
+        "Water dissolves salts from rocks and soil, and human activity adds more: fertiliser run-off (nitrates and phosphates), mining and industry (heavy metals such as lead, mercury and cadmium), and irrigation (salinity). Analysis shows whether water is safe to drink or to release. Electrical conductivity gives a quick estimate of total dissolved salts, because more ions carry more current; it does not identify which ions are present."
+       ]
+      },
+      {
+       "h": "Gravimetric analysis",
+       "p": [
+        "Find the mass of a substance by converting it into a precipitate of known formula and weighing it. Steps: weigh the sample and dissolve it; add an excess of a reagent that precipitates the ion; filter; wash the precipitate with water to remove soluble impurities; dry and weigh it; repeat drying until the mass is constant."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A 2.00 g sample of fertiliser is dissolved and excess BaCl₂ is added. 1.17 g of BaSO₄ (M = 233.4) precipitates. Find the percentage of sulfate (M = 96.1) in the fertiliser.",
+        "\\(n(\\mathrm{BaSO_4}) = \\dfrac{1.17}{233.4} = 5.01 \\times 10^{-3}\\ \\mathrm{mol} = n(\\mathrm{SO_4^{2-}})\\). \\(m(\\mathrm{SO_4^{2-}}) = 5.01 \\times 10^{-3} \\times 96.1 = 0.482\\ \\mathrm{g}\\). \\(\\% = \\dfrac{0.482}{2.00} \\times 100 = 24.1\\%\\)."
+       ]
+      },
+      {
+       "h": "Sources of error",
+       "p": [
+        "Result too high: precipitate not dry; precipitate not washed, so soluble impurities remain; another ion also precipitated. Result too low: precipitate lost during transfer or through the filter; not enough reagent added; precipitate slightly soluble and washed with too much water."
+       ]
+      },
+      {
+       "h": "Colorimetry and UV-visible spectroscopy",
+       "p": [
+        "A coloured solution absorbs light, and the more concentrated it is, the more it absorbs. Method: prepare a set of standard solutions of known concentration; measure the absorbance of each at a wavelength the substance absorbs strongly; plot a calibration curve of absorbance against concentration; measure the absorbance of the sample and read its concentration from the curve.",
+        "The sample’s absorbance must fall within the range of the standards. If it is too high, dilute the sample and multiply the result by the dilution factor."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Reading the calibration curve beyond the highest standard. Forgetting the dilution factor. Choosing light the same colour as the solution: a solution absorbs its complementary colour."
+       ]
       }
      ]
     }

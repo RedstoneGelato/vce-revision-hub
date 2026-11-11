@@ -1,97 +1,595 @@
 {
-"title": "English Language Units 3 & 4",
-"aos": [
-{"name": "Unit 3 AoS 1 · Informal language", "topics": [
-{"id": "informal-features", "title": "Features of informal language",
- "points": [
-  "Lexis: colloquialisms, slang, contractions, abbreviations, diminutives, swearing, everyday vocabulary.",
-  "Syntax: ellipsis, minor sentences, simple or loosely joined clauses, tag questions.",
-  "Spoken features: fillers (um), false starts, repairs, overlapping speech, discourse particles (like, you know), prosody (stress, intonation, volume).",
-  "Digital features: emoji, non-standard spelling, initialisms (lol), reduplicated letters (sooo).",
-  "Informal language often relies on shared knowledge, so meaning can be implicit."],
- "explain": "Transcribe 30 seconds of a casual conversation and label five informal features.",
- "qs": [
-  {"t":"m","q":"“Wanna come?” is an example of…","o":["nominalisation","ellipsis","passive voice","jargon"],"a":1,"e":"“Do you” is omitted."},
-  {"t":"c","q":"What is a false start?","a":"When a speaker begins an utterance, stops, and starts again differently (“I was– we went to the beach”).","e":"A non-fluency feature."},
-  {"t":"m","q":"Which is a discourse particle?","o":["however","like","therefore","notwithstanding"],"a":1,"e":""},
-  {"t":"c","q":"Why might a writer use “sooo” instead of “so” in a text message?","a":"Reduplicating letters imitates stress or lengthening in speech, adding emphasis or emotion that writing usually lacks.","e":""}]},
-{"id": "informal-purpose", "title": "Social purposes of informal language",
- "points": [
-  "Purposes: build rapport and intimacy, show solidarity and group membership, express identity, entertain, release tension, include or exclude.",
-  "Politeness: positive face (wish to be liked) and negative face (wish not to be imposed on). Face-threatening acts can be softened with hedges or humour.",
-  "Informal language can challenge social distance or reduce power differences.",
-  "Covert prestige: non-standard forms valued within a group.",
-  "Always link the feature to its purpose in that context."],
- "explain": "Explain how teasing between friends can build solidarity rather than cause offence.",
- "qs": [
-  {"t":"c","q":"What is positive face?","a":"A person’s need to be liked, approved of and included.","e":""},
-  {"t":"m","q":"Using a friend’s nickname mainly…","o":["threatens negative face","builds solidarity and intimacy","shows formality","creates social distance"],"a":1,"e":""},
-  {"t":"c","q":"What is covert prestige?","a":"Hidden status given to non-standard language within a group, because it signals belonging or toughness, even if wider society judges it negatively.","e":""}]}
-]},
-{"name": "Unit 3 AoS 2 · Formal language", "topics": [
-{"id": "formal-features", "title": "Features of formal language",
- "points": [
-  "Lexis: Latinate and technical vocabulary, jargon, full forms (no contractions), titles and honorifics.",
-  "Syntax: complex and compound-complex sentences, passive voice, nominalisation (“the decision was made”), embedded clauses.",
-  "Modality and hedging: may, could, it is likely that.",
-  "Standard spelling and grammar; careful cohesion with connectives (however, consequently).",
-  "Planned, edited texts with consistent structure and impersonal tone."],
- "explain": "Rewrite “We messed up the budget” in formal language and label what you changed.",
- "qs": [
-  {"t":"m","q":"“The implementation of the policy” shows…","o":["ellipsis","nominalisation","a discourse particle","slang"],"a":1,"e":"The verb “implement” has become a noun."},
-  {"t":"m","q":"“Mistakes were made” uses the passive voice to…","o":["add humour","hide who is responsible","build rapport","shorten the sentence"],"a":1,"e":"The agent is left out."},
-  {"t":"c","q":"What is jargon?","a":"Specialised vocabulary of a profession or field, understood by insiders.","e":"It can show expertise or exclude outsiders."}]},
-{"id": "formal-purpose", "title": "Social purposes of formal language",
- "points": [
-  "Purposes: establish authority and expertise, maintain social distance, promote social harmony, clarify, or obfuscate (make unclear).",
-  "Euphemism softens unpleasant ideas (“passed away”); doublespeak deliberately hides meaning (“collateral damage”).",
-  "Overt prestige: status of Standard English in public, legal, academic and government settings.",
-  "Formal language can include people who know its conventions and exclude those who don’t.",
-  "Political correctness and inclusive language reflect changing social values."],
- "explain": "Explain how doublespeak in a company statement could manipulate the public.",
- "qs": [
-  {"t":"m","q":"“Rightsizing the workforce” instead of “sacking staff” is…","o":["slang","doublespeak","phatic talk","code-switching"],"a":1,"e":""},
-  {"t":"c","q":"What is overt prestige?","a":"Open, publicly recognised status given to standard, formal language.","e":""},
-  {"t":"c","q":"How can formal language promote social harmony?","a":"Polite, neutral, inclusive wording avoids offence and shows respect, helping people with different views cooperate.","e":""}]}
-]},
-{"name": "Unit 4 AoS 1 · Language variation in Australian society", "topics": [
-{"id": "aus-english", "title": "Australian English",
- "points": [
-  "Accent spectrum: broad, general and cultivated Australian English.",
-  "Distinctive lexis: arvo, servo, brekkie, ute; diminutives in -o and -ie; words borrowed from Aboriginal languages (kangaroo, billabong).",
-  "Phonological features: high rising terminal, vowel sounds, non-rhotic accent.",
-  "Ethnocultural varieties and Aboriginal English reflect Australia’s diverse identities.",
-  "Attitudes: cultural cringe (seeing local English as inferior) has largely given way to pride in Australian English; Standard Australian English is used in formal settings."],
- "explain": "Explain how Australian English expresses national identity, with two examples.",
- "qs": [
-  {"t":"m","q":"“Servo” is an example of…","o":["a hypocoristic (diminutive) form","a pidgin","an acronym","jargon"],"a":0,"e":"Clipping plus -o, typical of Australian English."},
-  {"t":"c","q":"What is cultural cringe?","a":"The belief that one’s own culture or language variety is inferior to another’s (e.g. preferring British English to Australian English).","e":""},
-  {"t":"m","q":"Australian English is…","o":["rhotic","non-rhotic","a creole","an expanding-circle variety"],"a":1,"e":"The r after a vowel is not pronounced (car)."}]}
-]},
-{"name": "Unit 4 AoS 2 · Individual and group identities", "topics": [
-{"id": "identity", "title": "Language and identity",
- "points": [
-  "Idiolect: a person’s individual way of speaking. Sociolect: language of a social group. Ethnolect: shaped by ethnic background.",
-  "Accommodation: convergence (speaking more like others) and divergence (emphasising difference).",
-  "Code-switching and style-shifting show different identities in different settings.",
-  "Language can include (in-group slang) or exclude (jargon, insults) and reflects age, gender, occupation, ethnicity and place.",
-  "Language reflects and shapes attitudes: inclusive language, reclaimed words, naming practices."],
- "explain": "Describe how your own language changes between home, school and online.",
- "qs": [
-  {"t":"m","q":"A teenager speaking more formally in a job interview shows…","o":["divergence","convergence","a creole","overgeneralisation"],"a":1,"e":"Adjusting towards the interviewer’s style."},
-  {"t":"c","q":"What is an ethnolect?","a":"A variety of a language associated with a particular ethnic group, often influenced by a heritage language.","e":""},
-  {"t":"c","q":"How can slang exclude people?","a":"Only in-group members understand it, so outsiders are marked as not belonging.","e":""}]},
-{"id": "exam", "title": "Exam: analytical commentary and essay",
- "points": [
-  "Section B analytical commentary: discuss the text’s context, register, functions and features, with metalanguage and short quotes with line numbers.",
-  "Pattern for each point: feature → example → effect on meaning or purpose → link to context.",
-  "Section C essay: a balanced contention that answers the prompt, 3 body paragraphs, contemporary Australian examples, and linguistic evidence.",
-  "Use examples from the news, media and everyday Australian language from the past year.",
-  "Do not just list features; explain their function and social purpose."],
- "explain": "Plan an essay paragraph on whether informal language is taking over public life.",
- "qs": [
-  {"t":"c","q":"What four things should each analytical commentary point include?","a":"Metalanguage naming the feature, a quoted example with line number, its effect or function, and a link to the context or purpose.","e":""},
-  {"t":"c","q":"What makes a strong essay contention?","a":"It directly answers the prompt, is arguable and balanced (acknowledges complexity), and sets up the paragraphs.","e":""},
-  {"t":"m","q":"Which is the best evidence for a Section C essay?","o":["A dictionary definition","A recent Australian example with linguistic analysis","A personal opinion","A historical date"],"a":1,"e":""}]}
-]}
-]}
+ "title": "English Language Units 3 & 4",
+ "aos": [
+  {
+   "name": "Unit 3 AoS 1 · Informal language",
+   "topics": [
+    {
+     "id": "informal-features",
+     "title": "Features of informal language",
+     "points": [
+      "Lexis: colloquialisms, slang, contractions, abbreviations, diminutives, swearing, everyday vocabulary.",
+      "Syntax: ellipsis, minor sentences, simple or loosely joined clauses, tag questions.",
+      "Spoken features: fillers (um), false starts, repairs, overlapping speech, discourse particles (like, you know), prosody (stress, intonation, volume).",
+      "Digital features: emoji, non-standard spelling, initialisms (lol), reduplicated letters (sooo).",
+      "Informal language often relies on shared knowledge, so meaning can be implicit."
+     ],
+     "explain": "Transcribe 30 seconds of a casual conversation and label five informal features.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "“Wanna come?” is an example of…",
+       "o": [
+        "nominalisation",
+        "ellipsis",
+        "passive voice",
+        "jargon"
+       ],
+       "a": 1,
+       "e": "“Do you” is omitted."
+      },
+      {
+       "t": "c",
+       "q": "What is a false start?",
+       "a": "When a speaker begins an utterance, stops, and starts again differently (“I was– we went to the beach”).",
+       "e": "A non-fluency feature."
+      },
+      {
+       "t": "m",
+       "q": "Which is a discourse particle?",
+       "o": [
+        "however",
+        "like",
+        "therefore",
+        "notwithstanding"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why might a writer use “sooo” instead of “so” in a text message?",
+       "a": "Reduplicating letters imitates stress or lengthening in speech, adding emphasis or emotion that writing usually lacks.",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "What informal language is",
+       "p": [
+        "Informal language is the language of close relationships and relaxed settings. It is usually spontaneous, relies on shared knowledge, and uses non-standard features freely. It appears in speech and in writing; a text thread can be more informal than a conversation with a stranger. Always describe it as a position on the register scale, and notice when a text shifts."
+       ]
+      },
+      {
+       "h": "Features of spoken informal discourse",
+       "p": [
+        "Conversation is jointly built, so look at how speakers manage it. Turn-taking: who holds, takes and passes the floor. Adjacency pairs: paired turns such as greeting and greeting, question and answer. Overlapping speech: can show enthusiasm and support, or competition for the floor. Minimal responses (backchannels): “mm”, “yeah”, showing the listener is following. Openings and closings frame the talk. Topic management: who starts, changes and returns to topics shows who has control.",
+        "Non-fluency features come from planning speech in real time: pauses, filled pauses and voiced hesitations (“um”, “er”), false starts, repetition and repairs. They are normal, not errors. Discourse markers and particles (“well”, “so”, “anyway”, “like”, “you know”) organise the talk and manage the relationship. Hedges soften a claim (“sort of”, “maybe”)."
+       ]
+      },
+      {
+       "h": "Lexical, syntactic and phonological features",
+       "p": [
+        "Lexis: slang, colloquialisms, swearing and taboo language, diminutives and shortenings (“arvo”, “servo”), neologisms, idioms, and in-group terms. Syntax: ellipsis (“Coming?”), sentence fragments, coordination with “and” or “but” in long chains, front focus and end focus to highlight information, and interrogative tags (“isn’t it?”). Phonology: elision, assimilation, vowel reduction, and prosody used for emphasis and emotion. In transcripts, check the key for symbols marking pitch, stress, pace and volume."
+       ]
+      },
+      {
+       "h": "Informal writing and online language",
+       "p": [
+        "Texts and posts borrow from speech. Look for emoji and emoticons standing in for prosody and facial expression, non-standard spelling and punctuation (“sooo”, “!!!”), initialisms (“lol”, “idk”), lower-case throughout, hashtags, and multimodal elements such as images and GIFs."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Transcript: A: “so um (.) did you end up going to the footy?” B: “yeah nah it was freezing, we just [stayed home]” A: “[oh fair] enough”.",
+        "The discourse marker “so” opens a new topic. The filled pause “um” and the short pause show real-time planning. “Yeah nah” is a characteristic Australian discourse particle: “yeah” acknowledges the question and “nah” gives the answer. The overlap in square brackets is cooperative, and “oh fair enough” is supportive feedback that protects B’s positive face. The ellipsis and colloquial “footy” reflect a close tenor."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Listing features without saying what each one does in this text. Treating non-fluency as poor speaking. Ignoring the transcript key. Calling everything “slang” when the better term is colloquialism, diminutive or idiom."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "informal-purpose",
+     "title": "Social purposes of informal language",
+     "points": [
+      "Purposes: build rapport and intimacy, show solidarity and group membership, express identity, entertain, release tension, include or exclude.",
+      "Politeness: positive face (wish to be liked) and negative face (wish not to be imposed on). Face-threatening acts can be softened with hedges or humour.",
+      "Informal language can challenge social distance or reduce power differences.",
+      "Covert prestige: non-standard forms valued within a group.",
+      "Always link the feature to its purpose in that context."
+     ],
+     "explain": "Explain how teasing between friends can build solidarity rather than cause offence.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "What is positive face?",
+       "a": "A person’s need to be liked, approved of and included.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Using a friend’s nickname mainly…",
+       "o": [
+        "threatens negative face",
+        "builds solidarity and intimacy",
+        "shows formality",
+        "creates social distance"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is covert prestige?",
+       "a": "Hidden status given to non-standard language within a group, because it signals belonging or toughness, even if wider society judges it negatively.",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Social purposes to look for",
+       "p": [
+        "Informal language does social work. Common purposes: encouraging intimacy, solidarity and equality; maintaining and challenging positive and negative face needs; promoting linguistic innovation; supporting in-group membership; and building rapport. A single feature can serve several purposes at once, and the same feature can do opposite jobs in different contexts."
+       ]
+      },
+      {
+       "h": "Face and politeness",
+       "p": [
+        "Face is a person’s public self-image. Positive face is the need to be liked, approved of and included. Negative face is the need to be free from imposition and to act independently. A face-threatening act puts either at risk: a criticism threatens positive face; a request or order threatens negative face.",
+        "Positive politeness strategies appeal to positive face: compliments, nicknames, shared slang, agreeing, joking. Negative politeness strategies respect negative face: hedging, apologising, indirect requests, giving options (“If you get a sec, could you…”). Informal settings tend to use positive politeness heavily."
+       ]
+      },
+      {
+       "h": "Solidarity, in-groups and prestige",
+       "p": [
+        "Shared slang, nicknames, swearing and in-jokes mark who belongs. They build solidarity inside the group and, by the same move, exclude outsiders who do not know the code. Teenspeak changes quickly for exactly this reason: once outsiders adopt a term, it stops marking the group.",
+        "Covert prestige is the status a non-standard form has within a group, even though wider society does not value it. Broad Australian features or swearing can earn approval among friends for sounding genuine and unpretentious. Overt prestige belongs to the standard forms valued publicly."
+       ]
+      },
+      {
+       "h": "Swearing, taboo and dysphemism",
+       "p": [
+        "Swearing has several functions: expletive (releasing emotion), abusive (attacking), social (bonding, with no intent to offend) and stylistic (emphasis). Among close friends in Australia, insults can be affectionate; this relies on a secure relationship. A dysphemism is a harsh or blunt term chosen in place of a neutral one. Context decides whether a term offends."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A tradie’s text to a mate: “Oi legend, any chance you could chuck us a lift tmrw? Car’s cactus.”",
+        "The vocative “legend” appeals to the friend’s positive face before a request that threatens his negative face. “Any chance you could” is a hedged, indirect request (negative politeness). “Us” for “me”, “chuck” and “cactus” are Australian colloquialisms that signal solidarity and a shared identity; the humour reduces the imposition."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Mixing up the two kinds of face. Check: is the threat to being liked (positive) or to being left alone (negative)? Saying informal language “creates a casual tone” and stopping there; name the social purpose and who benefits."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 3 AoS 2 · Formal language",
+   "topics": [
+    {
+     "id": "formal-features",
+     "title": "Features of formal language",
+     "points": [
+      "Lexis: Latinate and technical vocabulary, jargon, full forms (no contractions), titles and honorifics.",
+      "Syntax: complex and compound-complex sentences, passive voice, nominalisation (“the decision was made”), embedded clauses.",
+      "Modality and hedging: may, could, it is likely that.",
+      "Standard spelling and grammar; careful cohesion with connectives (however, consequently).",
+      "Planned, edited texts with consistent structure and impersonal tone."
+     ],
+     "explain": "Rewrite “We messed up the budget” in formal language and label what you changed.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "“The implementation of the policy” shows…",
+       "o": [
+        "ellipsis",
+        "nominalisation",
+        "a discourse particle",
+        "slang"
+       ],
+       "a": 1,
+       "e": "The verb “implement” has become a noun."
+      },
+      {
+       "t": "m",
+       "q": "“Mistakes were made” uses the passive voice to…",
+       "o": [
+        "add humour",
+        "hide who is responsible",
+        "build rapport",
+        "shorten the sentence"
+       ],
+       "a": 1,
+       "e": "The agent is left out."
+      },
+      {
+       "t": "c",
+       "q": "What is jargon?",
+       "a": "Specialised vocabulary of a profession or field, understood by insiders.",
+       "e": "It can show expertise or exclude outsiders."
+      }
+     ],
+     "notes": [
+      {
+       "h": "What formal language is",
+       "p": [
+        "Formal language is used where there is social distance, a serious purpose or a public audience. It is usually planned and edited, follows standard conventions, and aims to be explicit so that it can be understood without shared background. It appears in writing (legislation, reports, editorials) and in speech (court proceedings, ceremonies, speeches)."
+       ]
+      },
+      {
+       "h": "Lexis and semantics",
+       "p": [
+        "Expect elevated and Latinate vocabulary (“commence” for “start”), jargon specific to a field, and few contractions. Nominalisation turns verbs and adjectives into nouns (“decide” to “decision”; “fail” to “failure”). It packs information into noun phrases, removes the doer, and makes writing sound objective and abstract. Lexical choices are precise to avoid ambiguity; legal texts repeat nouns where everyday language would use a pronoun."
+       ]
+      },
+      {
+       "h": "Syntax",
+       "p": [
+        "Longer sentences with subordination (complex and compound-complex structures). Agentless passives hide or background the doer (“Mistakes were made”). Syntactic patterning is common in speeches: parallelism (repeated structure: “We will listen, we will learn, we will act”), antithesis (contrasting ideas in balanced structure) and listing. Information flow is controlled deliberately: front focus places something unusual at the start; end focus saves new or important information for last; clefting splits a sentence to highlight one part (“It was the committee that decided”)."
+       ]
+      },
+      {
+       "h": "Discourse: cohesion and coherence",
+       "p": [
+        "Formal texts are tightly organised. Cohesion comes from conjunctions and adverbials (“however”, “consequently”), anaphoric and cataphoric reference, deictic expressions, repetition, synonymy, antonymy, collocation, ellipsis and substitution. Coherence comes from logical ordering, consistency and conventions, formatting such as headings and numbered clauses, and the reader’s ability to infer connections."
+       ]
+      },
+      {
+       "h": "Prepared speech",
+       "p": [
+        "A speech is written to be heard. Look for rhetorical questions, inclusive pronouns (“we”, “our”), repetition in threes, deliberate pauses, and controlled pitch, pace and volume. Compared with conversation it has few non-fluency features, because it is scripted."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Sentence from a council notice: “Failure to comply with the above requirements may result in the issuing of an infringement notice.”",
+        "Nominalisations (“failure”, “issuing”) and the absence of any human subject make the threat impersonal: the council does not say “we will fine you”. The modal verb “may” hedges the consequence. Latinate lexis (“comply”, “requirements”, “infringement”) and anaphoric “the above” maintain a formal register and the council’s authority, while reducing the threat to the reader’s face."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "formal-purpose",
+     "title": "Social purposes of formal language",
+     "points": [
+      "Purposes: establish authority and expertise, maintain social distance, promote social harmony, clarify, or obfuscate (make unclear).",
+      "Euphemism softens unpleasant ideas (“passed away”); doublespeak deliberately hides meaning (“collateral damage”).",
+      "Overt prestige: status of Standard English in public, legal, academic and government settings.",
+      "Formal language can include people who know its conventions and exclude those who don’t.",
+      "Political correctness and inclusive language reflect changing social values."
+     ],
+     "explain": "Explain how doublespeak in a company statement could manipulate the public.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "“Rightsizing the workforce” instead of “sacking staff” is…",
+       "o": [
+        "slang",
+        "doublespeak",
+        "phatic talk",
+        "code-switching"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is overt prestige?",
+       "a": "Open, publicly recognised status given to standard, formal language.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How can formal language promote social harmony?",
+       "a": "Polite, neutral, inclusive wording avoids offence and shows respect, helping people with different views cooperate.",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Social purposes to look for",
+       "p": [
+        "Formal language can: maintain and challenge positive and negative face needs; reinforce social distance and authority; establish expertise; promote social harmony and negotiate social taboos; build rapport; and clarify, manipulate or obfuscate. Always decide which of these the text is doing and who gains."
+       ]
+      },
+      {
+       "h": "Authority, expertise and distance",
+       "p": [
+        "Jargon and technical precision show that the writer belongs to a profession, which builds trust and efficiency among insiders. Titles and honorifics (“Your Honour”, “Professor”) recognise status. Passive voice and nominalisation remove the personal voice, which makes a text sound objective and official."
+       ]
+      },
+      {
+       "h": "Clarifying, manipulating and obfuscating",
+       "p": [
+        "Formal language can make meaning precise, as in a contract that defines every term. It can also hide meaning. Jargon excludes outsiders. Euphemism replaces an unpleasant or taboo term with a milder one (“passed away”, “let go”). Doublespeak is language that deliberately disguises or distorts the truth, often by institutions (“negative growth” for a loss; “enhanced interrogation” for torture). Bureaucratic language with long nominalised sentences can obscure responsibility. Ask: is the complexity serving the reader or protecting the writer?"
+       ]
+      },
+      {
+       "h": "Negotiating taboo and promoting harmony",
+       "p": [
+        "Societies have taboo areas such as death, bodily functions, sex, illness and money. Euphemism lets speakers discuss them without offence, which protects face on both sides. Non-discriminatory (inclusive) language avoids excluding or demeaning people on the basis of gender, ethnicity, disability, age or sexuality: “chairperson”, “people with disability”, the singular “they”. Supporters see it as respect that reflects changing values; critics label it political correctness. Either way, the choices people make show their values."
+       ]
+      },
+      {
+       "h": "Public language and the standard",
+       "p": [
+        "Politics, law, media, bureaucracy and education use Standard Australian English because it has overt prestige and is widely understood. Using it signals education and seriousness. The same prestige means people who do not command the standard can be shut out, which is why plain-language movements push institutions to write more clearly."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A company statement: “Following a strategic review, the organisation has made the difficult decision to realign its workforce, impacting approximately 200 roles.”",
+        "“Realign its workforce” is a euphemism for sacking staff, and “roles” in place of “people” depersonalises those affected. The nominalisation “decision” and the abstract subject “the organisation” hide who decided. “Difficult” appeals for sympathy and protects the company’s positive face. The purpose is to obfuscate responsibility while appearing professional."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 4 AoS 1 · Language variation in Australian society",
+   "topics": [
+    {
+     "id": "aus-english",
+     "title": "Australian English",
+     "points": [
+      "Accent spectrum: broad, general and cultivated Australian English.",
+      "Distinctive lexis: arvo, servo, brekkie, ute; diminutives in -o and -ie; words borrowed from Aboriginal languages (kangaroo, billabong).",
+      "Phonological features: high rising terminal, vowel sounds, non-rhotic accent.",
+      "Ethnocultural varieties and Aboriginal English reflect Australia’s diverse identities.",
+      "Attitudes: cultural cringe (seeing local English as inferior) has largely given way to pride in Australian English; Standard Australian English is used in formal settings."
+     ],
+     "explain": "Explain how Australian English expresses national identity, with two examples.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "“Servo” is an example of…",
+       "o": [
+        "a hypocoristic (diminutive) form",
+        "a pidgin",
+        "an acronym",
+        "jargon"
+       ],
+       "a": 0,
+       "e": "Clipping plus -o, typical of Australian English."
+      },
+      {
+       "t": "c",
+       "q": "What is cultural cringe?",
+       "a": "The belief that one’s own culture or language variety is inferior to another’s (e.g. preferring British English to Australian English).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Australian English is…",
+       "o": [
+        "rhotic",
+        "non-rhotic",
+        "a creole",
+        "an expanding-circle variety"
+       ],
+       "a": 1,
+       "e": "The r after a vowel is not pronounced (car)."
+      }
+     ],
+     "notes": [
+      {
+       "h": "What makes Australian English distinct",
+       "p": [
+        "Australian English is a national variety with its own accent, vocabulary and conventions. It is codified in the Macquarie Dictionary. Its features reflect national values that Australians like to claim: egalitarianism, informality, mateship, humour and anti-authoritarianism."
+       ]
+      },
+      {
+       "h": "Accent",
+       "p": [
+        "Australian accents are traditionally described on a continuum: Broad, General and Cultivated. Broad has the longest diphthongs and the strongest association with rural and working-class identity; Cultivated is closest to British Received Pronunciation; General sits between and is by far the most common. Over recent decades speakers have moved toward General from both ends. Accent varies more with social factors than with region, although some regional differences exist (for example, the vowel in “dance” and “castle”, or “celery” and “salary” sounding alike in Victoria).",
+        "Other phonological features: a non-rhotic accent (no “r” sound after a vowel in “car”), flapping of “t” between vowels, and the high rising terminal, where a statement ends with rising pitch, often to check the listener is following."
+       ]
+      },
+      {
+       "h": "Lexis and morphology",
+       "p": [
+        "Shortening with a suffix is the best-known feature: -ie or -y (“barbie”, “tradie”, “brekky”), -o (“arvo”, “servo”, “ambo”), -a or -za (“Macca’s”, “Gazza”). These diminutives signal friendliness and reduce social distance. Borrowings from Aboriginal languages name animals, plants and places (“kangaroo”, “koala”, “Wagga Wagga”). Idioms and slang include “no worries”, “flat out”, “she’ll be right”. American influence adds words through media (“cookie”, “guys”), which some people resent."
+       ]
+      },
+      {
+       "h": "Variation inside Australian English",
+       "p": [
+        "Aboriginal Englishes: varieties with their own phonological, lexical, syntactic and pragmatic features, tied to identity and community (see Units 1 and 2). Ethnolects: varieties shaped by a community’s heritage language, such as Greek, Lebanese or Vietnamese Australian English, which may differ in vowel sounds, rhythm and vocabulary and let speakers show a dual identity. Variation also follows age, gender, occupation, interests, education and socioeconomic background."
+       ]
+      },
+      {
+       "h": "Attitudes",
+       "p": [
+        "The cultural cringe was the belief that Australian speech was inferior to British English. From the 1970s, Australian accents on radio and television and the publication of the Macquarie Dictionary (1981) helped establish Australian English as legitimate. Today attitudes are mixed: pride in distinctive features, concern about Americanisation, and judgments of Broad or ethnolect features that reflect attitudes to the speakers themselves. Standard Australian English keeps overt prestige in formal contexts."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A politician at a press conference says, “Look, we’re fair dinkum about backing our tradies.”",
+        "“Fair dinkum” and the diminutive “tradies” are Australian colloquialisms used in a formal setting. The purpose is to reduce social distance and present the speaker as an ordinary, trustworthy Australian, drawing on egalitarian values. The discourse marker “Look” claims the floor and signals directness."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Unit 4 AoS 2 · Individual and group identities",
+   "topics": [
+    {
+     "id": "identity",
+     "title": "Language and identity",
+     "points": [
+      "Idiolect: a person’s individual way of speaking. Sociolect: language of a social group. Ethnolect: shaped by ethnic background.",
+      "Accommodation: convergence (speaking more like others) and divergence (emphasising difference).",
+      "Code-switching and style-shifting show different identities in different settings.",
+      "Language can include (in-group slang) or exclude (jargon, insults) and reflects age, gender, occupation, ethnicity and place.",
+      "Language reflects and shapes attitudes: inclusive language, reclaimed words, naming practices."
+     ],
+     "explain": "Describe how your own language changes between home, school and online.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "A teenager speaking more formally in a job interview shows…",
+       "o": [
+        "divergence",
+        "convergence",
+        "a creole",
+        "overgeneralisation"
+       ],
+       "a": 1,
+       "e": "Adjusting towards the interviewer’s style."
+      },
+      {
+       "t": "c",
+       "q": "What is an ethnolect?",
+       "a": "A variety of a language associated with a particular ethnic group, often influenced by a heritage language.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How can slang exclude people?",
+       "a": "Only in-group members understand it, so outsiders are marked as not belonging.",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "How language builds identity",
+       "p": [
+        "People do not have one fixed way of speaking. They have a repertoire and choose from it, usually without thinking, to present themselves and to relate to others. Identity is therefore partly performed through language, and it has layers: individual (idiolect), group (sociolect, ethnolect) and national."
+       ]
+      },
+      {
+       "h": "Social variables",
+       "p": [
+        "Sociolects vary with age (teenspeak, generational slang), gender, occupation (jargon), interests (gaming, sport, music communities), education, socioeconomic status and aspirations. Jargon is the specialised vocabulary of a profession or interest group; it is efficient for members and marks expertise, and it can exclude others. Slang is informal, short-lived vocabulary that marks group membership, especially among young people."
+       ]
+      },
+      {
+       "h": "Adjusting to others",
+       "p": [
+        "Communication accommodation theory says speakers adjust their language according to how they feel about the listener. Convergence is moving toward the other person’s style to reduce social distance and win approval. Divergence is emphasising difference to assert identity or show distance. A teenager may converge toward friends’ slang at school and diverge from a parent by using it at home.",
+        "Style-shifting is changing register within one language; code-switching is changing language or variety. Both let a speaker show different sides of their identity in different settings."
+       ]
+      },
+      {
+       "h": "Prestige and attitudes",
+       "p": [
+        "Overt prestige attaches to standard forms and is valued publicly. Covert prestige attaches to non-standard forms and is valued inside a group as a sign of loyalty and authenticity. A speaker may avoid the standard on purpose, because sounding “posh” would cost them status with their peers.",
+        "Attitudes to a variety are usually attitudes to its speakers. Judging an accent as uneducated is a social judgment with no linguistic basis, but it has real effects in interviews, courts and classrooms. This is linguistic prejudice."
+       ]
+      },
+      {
+       "h": "Language that includes, excludes and reclaims",
+       "p": [
+        "In-group language includes; the same language excludes those who do not share it. Discriminatory language demeans; non-discriminatory language recognises people respectfully. Some groups reclaim a term once used against them and use it with pride within the group; outsiders using it can still offend. Names, pronouns and forms of address are also identity choices."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A Lebanese Australian teenager says to a friend, “Wallah bro, that exam was cooked.”",
+        "“Wallah” is an Arabic borrowing used as an intensifier, marking ethnolect and shared heritage. “Bro” is a solidarity vocative; “cooked” is current youth slang. Together they show a layered identity: young, Australian and Lebanese. Speaking to a teacher, the same student would likely shift toward the standard, which shows awareness of overt prestige."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "exam",
+     "title": "Exam: analytical commentary and essay",
+     "points": [
+      "Section B analytical commentary: discuss the text’s context, register, functions and features, with metalanguage and short quotes with line numbers.",
+      "Pattern for each point: feature → example → effect on meaning or purpose → link to context.",
+      "Section C essay: a balanced contention that answers the prompt, 3 body paragraphs, contemporary Australian examples, and linguistic evidence.",
+      "Use examples from the news, media and everyday Australian language from the past year.",
+      "Do not just list features; explain their function and social purpose."
+     ],
+     "explain": "Plan an essay paragraph on whether informal language is taking over public life.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "What four things should each analytical commentary point include?",
+       "a": "Metalanguage naming the feature, a quoted example with line number, its effect or function, and a link to the context or purpose.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What makes a strong essay contention?",
+       "a": "It directly answers the prompt, is arguable and balanced (acknowledges complexity), and sets up the paragraphs.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which is the best evidence for a Section C essay?",
+       "o": [
+        "A dictionary definition",
+        "A recent Australian example with linguistic analysis",
+        "A personal opinion",
+        "A historical date"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "How the exam is built",
+       "p": [
+        "The exam has three sections: short-answer questions on a text (Section A), an analytical commentary on a text (Section B), and an essay (Section C). Check the current exam specifications on the VCAA website for marks and timing. In all three, marks come from accurate metalanguage, relevant evidence and explanation of how language relates to context and purpose."
+       ]
+      },
+      {
+       "h": "Section A: short answers",
+       "p": [
+        "Match the length of the answer to the marks. A two-mark question usually wants an identified feature with a line reference and one explanation. Use the command word: “identify” needs a name and an example; “explain” or “discuss” needs the effect in this context. Quote briefly and always give line numbers."
+       ]
+      },
+      {
+       "h": "Section B: analytical commentary",
+       "p": [
+        "Plan before writing. An introduction covers the essentials of context: mode, field, setting, the participants and their relationship, register, function and social purpose. Body paragraphs can be organised by subsystem, by social purpose, or by section of the text. Organising by purpose usually produces more analysis and less listing.",
+        "Each point follows a chain: name the feature with metalanguage, quote it with a line number, explain what it does here, and link it to the context or purpose. Cover a range of subsystems; a commentary that discusses only lexis is limited. For a spoken text, deal with discourse features and prosody. For a written text, deal with coherence and cohesion."
+       ]
+      },
+      {
+       "h": "Section C: essay",
+       "p": [
+        "Read the prompt and its stimulus material, then settle a contention that answers the exact question. Each body paragraph needs a topic sentence that advances the contention, a contemporary Australian example, linguistic analysis of that example with metalanguage, and a link back. A quote from a linguist can support a point but cannot replace an example.",
+        "Collect examples through the year: a politician’s phrasing, a new slang term, a public debate about a word, an advertisement, a change to a style guide. Record the exact wording, who said it, when, and what it shows. Examples from the current year are the most valuable."
+       ]
+      },
+      {
+       "h": "Worked paragraph",
+       "p": [
+        "Prompt idea: informal language builds solidarity. “Informal lexis allows speakers to claim membership of a group. When Australian politicians adopt diminutives such as ‘tradies’ and ‘pollies’ in interviews, the suffixation reduces social distance and appeals to egalitarian values, presenting the speaker as an equal. The same choice excludes no one in the audience, since these forms are widely understood, which makes them a low-risk way of building rapport.” The paragraph names the feature, gives the example, explains the effect and ties it to a value."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Feature-spotting: naming ten features and explaining none. Retelling what the text says. Using invented or decades-old examples in the essay. Leaving out line numbers. Writing a memorised essay that does not answer the prompt."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

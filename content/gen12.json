@@ -1,82 +1,493 @@
 {
-"title": "General Mathematics Units 1 & 2",
-"aos": [
-{"name": "Data analysis", "topics": [
-{"id": "univariate", "title": "Univariate data",
- "points": [
-  "Categorical data: nominal (no order) or ordinal (ordered). Numerical data: discrete (counted) or continuous (measured).",
-  "Centre: mean \\(\\bar{x} = \\dfrac{\\sum x}{n}\\) (affected by outliers) and median (resistant). Spread: range, \\(\\text{IQR} = Q_3 - Q_1\\), standard deviation \\(s\\).",
-  "Outliers lie below \\(Q_1 - 1.5 \\times \\text{IQR}\\) or above \\(Q_3 + 1.5 \\times \\text{IQR}\\).",
-  "Shape: symmetric, positively skewed (tail to the right), negatively skewed (tail to the left).",
-  "Displays: bar charts for categorical data; histograms, dot plots, stem plots and boxplots for numerical data."],
- "explain": "Explain why the median is a better measure of centre than the mean for house prices.",
- "qs": [
-  {"t":"c","q":"\\(Q_1 = 10\\) and \\(Q_3 = 18\\). Is \\(35\\) an outlier?","a":"\\(\\text{IQR} = 8\\); upper fence \\(= 18 + 1.5 \\times 8 = 30\\). Since \\(35 > 30\\), yes.","e":""},
-  {"t":"m","q":"Postcode is which type of data?","o":["Numerical discrete","Numerical continuous","Categorical nominal","Categorical ordinal"],"a":2,"e":"Numbers used as labels."},
-  {"t":"m","q":"A distribution with a long tail to the right is…","o":["negatively skewed","positively skewed","symmetric","bimodal"],"a":1,"e":""},
-  {"t":"c","q":"Find the mean and median of \\(2, 4, 6, 8, 10\\).","a":"\\(\\bar{x} = \\dfrac{30}{5} = 6\\); median \\(= 6\\)","e":""}]},
-{"id": "bivariate12", "title": "Investigating relationships",
- "points": [
-  "Explanatory variable on the \\(x\\)-axis, response variable on the \\(y\\)-axis.",
-  "Describe a scatterplot by direction (positive or negative), form (linear or non-linear) and strength (weak, moderate, strong).",
-  "Pearson’s correlation coefficient: \\(-1 \\le r \\le 1\\). It only measures linear relationships.",
-  "Correlation does not mean causation: a third variable may explain both.",
-  "Two-way tables and segmented bar charts compare two categorical variables."],
- "explain": "Explain why ice-cream sales and drownings are correlated but one does not cause the other.",
- "qs": [
-  {"t":"m","q":"\\(r = -0.85\\) describes a…","o":["weak positive relationship","strong negative linear relationship","no relationship","strong positive relationship"],"a":1,"e":""},
-  {"t":"c","q":"Height and shoe size: which is explanatory if you want to predict shoe size?","a":"Height (explanatory), shoe size (response)","e":""}]}
-]},
-{"name": "Arithmetic, recursion and financial mathematics", "topics": [
-{"id": "finance12", "title": "Percentages, interest and recursion",
- "points": [
-  "Percentage change \\(= \\dfrac{\\text{change}}{\\text{original}} \\times 100\\%\\). GST: price \\(\\times 1.1\\); GST in a total \\(= \\dfrac{\\text{total}}{11}\\).",
-  "Simple interest: \\(I = \\dfrac{PrT}{100}\\); total value \\(A = P + I\\).",
-  "Compound interest: \\(A = P\\left(1 + \\dfrac{r}{100}\\right)^n\\).",
-  "Linear recurrence \\(u_{n+1} = u_n + d\\) (simple interest, flat-rate depreciation). Geometric recurrence \\(u_{n+1} = Ru_n\\) (compound growth or decay).",
-  "Inflation reduces purchasing power; compare costs in today’s dollars."],
- "explain": "Explain why compound interest grows faster than simple interest over time.",
- "qs": [
-  {"t":"c","q":"Find the simple interest on $5 000 at 4% p.a. for 3 years.","a":"\\(I = \\dfrac{5000 \\times 4 \\times 3}{100} = 600\\), so $600","e":""},
-  {"t":"c","q":"$1 000 is invested at 5% p.a. compounding annually. Find its value after 2 years.","a":"\\(A = 1000 \\times 1.05^2 = 1102.50\\), so $1 102.50","e":""},
-  {"t":"m","q":"\\(u_0 = 200\\) and \\(u_{n+1} = u_n + 15\\). Find \\(u_3\\).","o":["\\(215\\)","\\(230\\)","\\(245\\)","\\(260\\)"],"a":2,"e":"\\(u_3 = 200 + 3 \\times 15 = 245\\)"},
-  {"t":"c","q":"A $80 item rises to $92. Find the percentage increase.","a":"\\(\\dfrac{12}{80} \\times 100\\% = 15\\%\\)","e":""}]}
-]},
-{"name": "Matrices, networks and linear relations", "topics": [
-{"id": "matrices12", "title": "Matrices",
- "points": [
-  "Order = rows \\(\\times\\) columns. Add or subtract matrices only of the same order.",
-  "\\(AB\\) exists if the number of columns of \\(A\\) equals the number of rows of \\(B\\): \\((m \\times n)(n \\times p)\\) gives an \\(m \\times p\\) matrix.",
-  "Matrix multiplication is not usually commutative: \\(AB \\neq BA\\).",
-  "For \\(A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}\\): \\(\\det A = ad - bc\\) and \\(A^{-1} = \\dfrac{1}{ad - bc}\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}\\), which exists only if \\(\\det A \\neq 0\\).",
-  "Matrices store data in tables and can solve simultaneous equations."],
- "explain": "Explain why a \\(2 \\times 3\\) matrix cannot be multiplied by another \\(2 \\times 3\\) matrix.",
- "qs": [
-  {"t":"m","q":"\\(A\\) is \\(2 \\times 3\\) and \\(B\\) is \\(3 \\times 4\\). The order of \\(AB\\) is…","o":["\\(3 \\times 3\\)","\\(2 \\times 4\\)","\\(4 \\times 2\\)","not defined"],"a":1,"e":""},
-  {"t":"c","q":"Find \\(\\det\\begin{bmatrix} 3 & 2 \\\\ 1 & 4 \\end{bmatrix}\\).","a":"\\(3 \\times 4 - 2 \\times 1 = 10\\)","e":""}]},
-{"id": "networks12", "title": "Graphs and networks",
- "points": [
-  "A graph has vertices joined by edges; the degree of a vertex is the number of edges at it.",
-  "Euler trail (every edge once): exists if exactly 0 or 2 vertices have odd degree. Euler circuit (returns to start): every degree is even.",
-  "Hamiltonian path: visits every vertex once. Hamiltonian cycle: also returns to the start.",
-  "Connected planar graphs satisfy Euler’s formula \\(v - e + f = 2\\).",
-  "Trees, spanning trees and shortest paths solve real problems such as routes and cabling."],
- "explain": "Explain why a graph with four odd-degree vertices has no Euler trail.",
- "qs": [
-  {"t":"m","q":"A connected graph has vertex degrees \\(2, 2, 3, 3\\). It has…","o":["an Euler circuit","an Euler trail but not a circuit","neither","a Hamiltonian cycle only"],"a":1,"e":"Exactly two odd vertices."},
-  {"t":"c","q":"A connected planar graph has 6 vertices and 9 edges. How many faces?","a":"\\(6 - 9 + f = 2 \\Rightarrow f = 5\\)","e":""}]},
-{"id": "linear12", "title": "Linear relations and measurement",
- "points": [
-  "Linear model: \\(y = a + bx\\), where \\(a\\) is the intercept and \\(b\\) the gradient (rate of change).",
-  "Simultaneous equations: solve by substitution, elimination or graphing. Break-even is where cost \\(=\\) revenue.",
-  "Pythagoras: \\(c^2 = a^2 + b^2\\). Right triangles: \\(\\sin\\theta = \\dfrac{O}{H}\\), \\(\\cos\\theta = \\dfrac{A}{H}\\), \\(\\tan\\theta = \\dfrac{O}{A}\\).",
-  "Sine rule \\(\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}\\); cosine rule \\(c^2 = a^2 + b^2 - 2ab\\cos C\\).",
-  "Similar figures with scale factor \\(k\\): lengths \\(\\times k\\), areas \\(\\times k^2\\), volumes \\(\\times k^3\\).",
-  "Circle \\(A = \\pi r^2\\); cylinder \\(V = \\pi r^2 h\\); sphere \\(V = \\tfrac{4}{3}\\pi r^3\\)."],
- "explain": "Explain why doubling every length of a box multiplies its volume by \\(8\\).",
- "qs": [
-  {"t":"c","q":"A right triangle has legs \\(6\\) cm and \\(8\\) cm. Find the hypotenuse.","a":"\\(c = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\) cm","e":""},
-  {"t":"m","q":"Two similar solids have scale factor \\(k = 3\\). Their volumes are in the ratio…","o":["\\(1 : 3\\)","\\(1 : 6\\)","\\(1 : 9\\)","\\(1 : 27\\)"],"a":3,"e":"\\(k^3 = 27\\)"},
-  {"t":"c","q":"Cost \\(C = 200 + 5n\\) and revenue \\(R = 15n\\). Find the break-even point.","a":"\\(200 + 5n = 15n \\Rightarrow n = 20\\)","e":""}]}
-]}
-]}
+ "title": "General Mathematics Units 1 & 2",
+ "aos": [
+  {
+   "name": "Data analysis",
+   "topics": [
+    {
+     "id": "univariate",
+     "title": "Univariate data",
+     "points": [
+      "Categorical data: nominal (no order) or ordinal (ordered). Numerical data: discrete (counted) or continuous (measured).",
+      "Centre: mean \\(\\bar{x} = \\dfrac{\\sum x}{n}\\) (affected by outliers) and median (resistant). Spread: range, \\(\\text{IQR} = Q_3 - Q_1\\), standard deviation \\(s\\).",
+      "Outliers lie below \\(Q_1 - 1.5 \\times \\text{IQR}\\) or above \\(Q_3 + 1.5 \\times \\text{IQR}\\).",
+      "Shape: symmetric, positively skewed (tail to the right), negatively skewed (tail to the left).",
+      "Displays: bar charts for categorical data; histograms, dot plots, stem plots and boxplots for numerical data."
+     ],
+     "explain": "Explain why the median is a better measure of centre than the mean for house prices.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "\\(Q_1 = 10\\) and \\(Q_3 = 18\\). Is \\(35\\) an outlier?",
+       "a": "\\(\\text{IQR} = 8\\); upper fence \\(= 18 + 1.5 \\times 8 = 30\\). Since \\(35 > 30\\), yes.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Postcode is which type of data?",
+       "o": [
+        "Numerical discrete",
+        "Numerical continuous",
+        "Categorical nominal",
+        "Categorical ordinal"
+       ],
+       "a": 2,
+       "e": "Numbers used as labels."
+      },
+      {
+       "t": "m",
+       "q": "A distribution with a long tail to the right is…",
+       "o": [
+        "negatively skewed",
+        "positively skewed",
+        "symmetric",
+        "bimodal"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the mean and median of \\(2, 4, 6, 8, 10\\).",
+       "a": "\\(\\bar{x} = \\dfrac{30}{5} = 6\\); median \\(= 6\\)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Types of data decide everything",
+       "p": [
+        "Before choosing a display or a statistic, classify the variable. Categorical variables put individuals into groups: nominal if the groups have no order (eye colour), ordinal if they do (satisfaction rating). Numerical variables are counts or measurements: discrete if only separate values are possible (number of siblings), continuous if any value in a range is possible (height). A variable recorded with digits is not always numerical: postcodes and jersey numbers are nominal."
+       ]
+      },
+      {
+       "h": "Summarising a distribution",
+       "p": [
+        "Median: the middle value of the ordered data, at position \\(\\dfrac{n + 1}{2}\\). Quartiles split the data into four equal parts; \\(\\text{IQR} = Q_3 - Q_1\\) is the spread of the middle 50%. Range is the maximum minus the minimum. The standard deviation measures the typical distance of values from the mean.",
+        "Use the median and IQR when the distribution is skewed or has outliers, because they are not affected by extreme values. Use the mean and standard deviation when the distribution is roughly symmetric with no outliers."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Data: 3, 5, 6, 7, 8, 9, 10, 12, 30.",
+        "\\(n = 9\\), so the median is the 5th value, 8. Lower half 3, 5, 6, 7 gives \\(Q_1 = 5.5\\); upper half 9, 10, 12, 30 gives \\(Q_3 = 11\\). \\(\\text{IQR} = 5.5\\). Upper fence \\(= 11 + 1.5 \\times 5.5 = 19.25\\), so 30 is an outlier. Lower fence \\(= 5.5 - 8.25 = -2.75\\), so there are no low outliers. The mean is 10, pulled above the median by the outlier."
+       ]
+      },
+      {
+       "h": "Describing and comparing",
+       "p": [
+        "A full description covers shape (symmetric, positively or negatively skewed, number of modes), centre (median or mean), spread (IQR, range or standard deviation) and outliers, always with values and in context. In a boxplot the whisker ends at the last data value inside the fence, and outliers are drawn as separate points.",
+        "To compare groups with parallel boxplots, compare medians and IQRs and quote them: “The median for group A (24) is higher than for group B (18), and its IQR is smaller (5 compared with 9), so A’s values are higher and more consistent.”"
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Finding the median of unordered data. Describing skew the wrong way: the name follows the tail. Calling a value an outlier without calculating the fence. Quoting the mean for strongly skewed data."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "bivariate12",
+     "title": "Investigating relationships",
+     "points": [
+      "Explanatory variable on the \\(x\\)-axis, response variable on the \\(y\\)-axis.",
+      "Describe a scatterplot by direction (positive or negative), form (linear or non-linear) and strength (weak, moderate, strong).",
+      "Pearson’s correlation coefficient: \\(-1 \\le r \\le 1\\). It only measures linear relationships.",
+      "Correlation does not mean causation: a third variable may explain both.",
+      "Two-way tables and segmented bar charts compare two categorical variables."
+     ],
+     "explain": "Explain why ice-cream sales and drownings are correlated but one does not cause the other.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "\\(r = -0.85\\) describes a…",
+       "o": [
+        "weak positive relationship",
+        "strong negative linear relationship",
+        "no relationship",
+        "strong positive relationship"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Height and shoe size: which is explanatory if you want to predict shoe size?",
+       "a": "Height (explanatory), shoe size (response)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Which variable goes where",
+       "p": [
+        "The explanatory variable is the one used to explain or predict; the response variable is the one being explained. In “does study time affect test score?”, study time is explanatory. Put the explanatory variable on the horizontal axis."
+       ]
+      },
+      {
+       "h": "Describing an association",
+       "p": [
+        "For two numerical variables, describe the scatterplot in four parts: direction, form, strength and outliers. As a guide to strength: \\(|r|\\) from 0.75 to 1 is strong, 0.5 to 0.74 moderate, 0.25 to 0.49 weak, below 0.25 no association. \\(r\\) is only meaningful for linear associations with no outliers.",
+        "Model sentence: “There is a strong, positive, linear association between hours studied and test score, with no apparent outliers. Students who study for longer tend to score higher.”"
+       ]
+      },
+      {
+       "h": "Line of good fit",
+       "p": [
+        "A line fitted by eye, or by least squares with technology, summarises a linear association. Interpret the slope as the change in the response variable for each one-unit increase in the explanatory variable, and the intercept as the predicted response when the explanatory variable is zero (if that makes sense in context).",
+        "Example: \\(\\text{score} = 42 + 5.5 \\times \\text{hours}\\). On average, the score increases by 5.5 marks for each extra hour of study. For 6 hours: \\(42 + 33 = 75\\) marks."
+       ]
+      },
+      {
+       "h": "Categorical variables",
+       "p": [
+        "For two categorical variables use a two-way frequency table and convert to percentages, with the explanatory variable defining the columns and each column adding to 100%. An association exists if the percentages differ noticeably across the columns.",
+        "Example: 60% of Year 11 students and 35% of Year 12 students play a sport. Since the percentages differ, participation in sport is associated with year level. Quote the percentages as evidence."
+       ]
+      },
+      {
+       "h": "Association is not causation",
+       "p": [
+        "A strong association does not show that one variable causes the other. The explanation could be a common response to a third variable (ice-cream sales and drownings both rise with temperature), confounding (several possible causes mixed together) or coincidence."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Reversing the variables. Using causal language (“causes”, “leads to”) from observational data. Comparing counts instead of percentages in a two-way table. Describing strength without direction and form."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Arithmetic, recursion and financial mathematics",
+   "topics": [
+    {
+     "id": "finance12",
+     "title": "Percentages, interest and recursion",
+     "points": [
+      "Percentage change \\(= \\dfrac{\\text{change}}{\\text{original}} \\times 100\\%\\). GST: price \\(\\times 1.1\\); GST in a total \\(= \\dfrac{\\text{total}}{11}\\).",
+      "Simple interest: \\(I = \\dfrac{PrT}{100}\\); total value \\(A = P + I\\).",
+      "Compound interest: \\(A = P\\left(1 + \\dfrac{r}{100}\\right)^n\\).",
+      "Linear recurrence \\(u_{n+1} = u_n + d\\) (simple interest, flat-rate depreciation). Geometric recurrence \\(u_{n+1} = Ru_n\\) (compound growth or decay).",
+      "Inflation reduces purchasing power; compare costs in today’s dollars."
+     ],
+     "explain": "Explain why compound interest grows faster than simple interest over time.",
+     "qs": [
+      {
+       "t": "c",
+       "q": "Find the simple interest on $5 000 at 4% p.a. for 3 years.",
+       "a": "\\(I = \\dfrac{5000 \\times 4 \\times 3}{100} = 600\\), so $600",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "$1 000 is invested at 5% p.a. compounding annually. Find its value after 2 years.",
+       "a": "\\(A = 1000 \\times 1.05^2 = 1102.50\\), so $1 102.50",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "\\(u_0 = 200\\) and \\(u_{n+1} = u_n + 15\\). Find \\(u_3\\).",
+       "o": [
+        "\\(215\\)",
+        "\\(230\\)",
+        "\\(245\\)",
+        "\\(260\\)"
+       ],
+       "a": 2,
+       "e": "\\(u_3 = 200 + 3 \\times 15 = 245\\)"
+      },
+      {
+       "t": "c",
+       "q": "A $80 item rises to $92. Find the percentage increase.",
+       "a": "\\(\\dfrac{12}{80} \\times 100\\% = 15\\%\\)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Percentages in money problems",
+       "p": [
+        "To increase by \\(r\\%\\), multiply by \\(1 + \\dfrac{r}{100}\\); to decrease, multiply by \\(1 - \\dfrac{r}{100}\\). To undo a percentage change, divide by the same multiplier.",
+        "Example: a price including 10% GST is $165. The price before GST is \\(165 \\div 1.1 = \\$150\\), and the GST is $15. Taking 10% off $165 gives the wrong answer."
+       ]
+      },
+      {
+       "h": "Simple and compound interest",
+       "p": [
+        "Simple interest is earned on the original principal only, so the balance grows by the same amount each period (linear growth). Compound interest is earned on the principal and on earlier interest, so the balance grows by the same percentage each period (geometric growth) and the gap widens over time.",
+        "Example: $5000 at 6% per annum for 4 years. Simple: \\(I = \\dfrac{5000 \\times 6 \\times 4}{100} = \\$1200\\), total $6200. Compound annually: \\(A = 5000 \\times 1.06^4 = \\$6312.38\\). Compounding monthly: \\(A = 5000 \\times 1.005^{48} = \\$6352.45\\)."
+       ]
+      },
+      {
+       "h": "Recurrence relations",
+       "p": [
+        "A recurrence relation gives a starting value and a rule for getting each term from the one before. \\(u_0 = 5000,\\ u_{n+1} = u_n + 300\\) models simple interest (add the same amount). \\(u_0 = 5000,\\ u_{n+1} = 1.06u_n\\) models compound interest (multiply by the same factor). A first-order linear recurrence \\(u_{n+1} = Ru_n + d\\) combines both, for example a savings account with regular deposits.",
+        "Generate terms one at a time and write each one down: \\(u_1 = 1.06 \\times 5000 = 5300\\), \\(u_2 = 1.06 \\times 5300 = 5618\\)."
+       ]
+      },
+      {
+       "h": "Arithmetic and geometric sequences",
+       "p": [
+        "Arithmetic: common difference \\(d\\), with \\(u_n = u_0 + nd\\). Geometric: common ratio \\(r\\), with \\(u_n = u_0 r^n\\). If the first term is called \\(u_1\\), the rules use \\(n - 1\\) in place of \\(n\\). Check which the question uses."
+       ]
+      },
+      {
+       "h": "Purchasing options",
+       "p": [
+        "Compare cash, credit and buy-now-pay-later by total cost. Example: a $1200 laptop bought with a $200 deposit and 24 monthly payments of $50 costs \\(200 + 1200 = \\$1400\\); the extra $200 is interest on the $1000 borrowed. Flat rate over 2 years \\(= \\dfrac{200}{1000 \\times 2} \\times 100 = 10\\%\\) per annum."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Using the annual rate without dividing by the number of compounding periods. Subtracting a percentage from the final price to undo an increase. Mixing up \\(u_0\\) and \\(u_1\\). Rounding before the final step."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Matrices, networks and linear relations",
+   "topics": [
+    {
+     "id": "matrices12",
+     "title": "Matrices",
+     "points": [
+      "Order = rows \\(\\times\\) columns. Add or subtract matrices only of the same order.",
+      "\\(AB\\) exists if the number of columns of \\(A\\) equals the number of rows of \\(B\\): \\((m \\times n)(n \\times p)\\) gives an \\(m \\times p\\) matrix.",
+      "Matrix multiplication is not usually commutative: \\(AB \\neq BA\\).",
+      "For \\(A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}\\): \\(\\det A = ad - bc\\) and \\(A^{-1} = \\dfrac{1}{ad - bc}\\begin{bmatrix} d & -b \\\\ -c & a \\end{bmatrix}\\), which exists only if \\(\\det A \\neq 0\\).",
+      "Matrices store data in tables and can solve simultaneous equations."
+     ],
+     "explain": "Explain why a \\(2 \\times 3\\) matrix cannot be multiplied by another \\(2 \\times 3\\) matrix.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "\\(A\\) is \\(2 \\times 3\\) and \\(B\\) is \\(3 \\times 4\\). The order of \\(AB\\) is…",
+       "o": [
+        "\\(3 \\times 3\\)",
+        "\\(2 \\times 4\\)",
+        "\\(4 \\times 2\\)",
+        "not defined"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find \\(\\det\\begin{bmatrix} 3 & 2 \\\\ 1 & 4 \\end{bmatrix}\\).",
+       "a": "\\(3 \\times 4 - 2 \\times 1 = 10\\)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Reading and writing matrices",
+       "p": [
+        "A matrix is a rectangular array of numbers. Its order is rows by columns, and element \\(a_{ij}\\) is in row \\(i\\) and column \\(j\\). Row matrices have one row, column matrices one column, and square matrices the same number of each. The identity matrix \\(I\\) has ones on the leading diagonal and zeros elsewhere, and \\(AI = IA = A\\)."
+       ]
+      },
+      {
+       "h": "Operations",
+       "p": [
+        "Add, subtract and multiply by a number (scalar) element by element. To multiply two matrices, each element of the product is a row of the first multiplied by a column of the second, added up. An \\(m \\times n\\) matrix times an \\(n \\times p\\) matrix gives an \\(m \\times p\\) matrix.",
+        "Example: \\(\\begin{bmatrix} 2 & 1 \\\\ 0 & 3 \\end{bmatrix}\\begin{bmatrix} 4 \\\\ 5 \\end{bmatrix} = \\begin{bmatrix} 2 \\times 4 + 1 \\times 5 \\\\ 0 \\times 4 + 3 \\times 5 \\end{bmatrix} = \\begin{bmatrix} 13 \\\\ 15 \\end{bmatrix}\\)."
+       ]
+      },
+      {
+       "h": "Matrices for real data",
+       "p": [
+        "Store quantities in one matrix and prices in another, and the product gives totals. Example: a shop sells 3 pies and 2 drinks on Monday and 5 pies and 4 drinks on Tuesday; pies cost $6 and drinks $3. \\(\\begin{bmatrix} 3 & 2 \\\\ 5 & 4 \\end{bmatrix}\\begin{bmatrix} 6 \\\\ 3 \\end{bmatrix} = \\begin{bmatrix} 24 \\\\ 42 \\end{bmatrix}\\): takings of $24 and $42. The labels on the columns of the first matrix must match the labels on the rows of the second."
+       ]
+      },
+      {
+       "h": "Inverse and determinant",
+       "p": [
+        "The inverse \\(A^{-1}\\) satisfies \\(AA^{-1} = I\\). It exists only for square matrices with a non-zero determinant. For a \\(2 \\times 2\\) matrix, swap the leading diagonal, change the signs of the other diagonal and divide by the determinant.",
+        "Example: \\(A = \\begin{bmatrix} 3 & 1 \\\\ 5 & 2 \\end{bmatrix}\\). \\(\\det A = 6 - 5 = 1\\), so \\(A^{-1} = \\begin{bmatrix} 2 & -1 \\\\ -5 & 3 \\end{bmatrix}\\)."
+       ]
+      },
+      {
+       "h": "Solving simultaneous equations",
+       "p": [
+        "Write the system as \\(AX = B\\), then \\(X = A^{-1}B\\). Example: \\(3x + y = 7\\) and \\(5x + 2y = 12\\). \\(X = \\begin{bmatrix} 2 & -1 \\\\ -5 & 3 \\end{bmatrix}\\begin{bmatrix} 7 \\\\ 12 \\end{bmatrix} = \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix}\\), so \\(x = 2\\), \\(y = 1\\). If the determinant is zero there is no unique solution."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Multiplying in the wrong order: \\(A^{-1}B\\) is not \\(BA^{-1}\\). Multiplying matrices element by element. Attempting a product whose orders do not match. Forgetting to divide by the determinant."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "networks12",
+     "title": "Graphs and networks",
+     "points": [
+      "A graph has vertices joined by edges; the degree of a vertex is the number of edges at it.",
+      "Euler trail (every edge once): exists if exactly 0 or 2 vertices have odd degree. Euler circuit (returns to start): every degree is even.",
+      "Hamiltonian path: visits every vertex once. Hamiltonian cycle: also returns to the start.",
+      "Connected planar graphs satisfy Euler’s formula \\(v - e + f = 2\\).",
+      "Trees, spanning trees and shortest paths solve real problems such as routes and cabling."
+     ],
+     "explain": "Explain why a graph with four odd-degree vertices has no Euler trail.",
+     "qs": [
+      {
+       "t": "m",
+       "q": "A connected graph has vertex degrees \\(2, 2, 3, 3\\). It has…",
+       "o": [
+        "an Euler circuit",
+        "an Euler trail but not a circuit",
+        "neither",
+        "a Hamiltonian cycle only"
+       ],
+       "a": 1,
+       "e": "Exactly two odd vertices."
+      },
+      {
+       "t": "c",
+       "q": "A connected planar graph has 6 vertices and 9 edges. How many faces?",
+       "a": "\\(6 - 9 + f = 2 \\Rightarrow f = 5\\)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Vocabulary",
+       "p": [
+        "A graph is a set of vertices joined by edges. A loop joins a vertex to itself and adds 2 to its degree. The sum of all degrees is twice the number of edges. A connected graph has a path between every pair of vertices. A bridge is an edge whose removal disconnects the graph. A planar graph can be drawn with no edges crossing; its regions, including the outside one, are faces."
+       ]
+      },
+      {
+       "h": "Walks, trails and paths",
+       "p": [
+        "A walk is any sequence of connected edges. A trail is a walk with no repeated edge. A path is a walk with no repeated vertex. A circuit is a trail that starts and ends at the same vertex. A cycle is a path that returns to its start.",
+        "Eulerian questions are about edges (a postie walking every street); Hamiltonian questions are about vertices (a courier visiting every town)."
+       ]
+      },
+      {
+       "h": "Deciding on Eulerian trails",
+       "p": [
+        "Count the degree of every vertex. All even: an Eulerian circuit exists, starting anywhere. Exactly two odd: an Eulerian trail exists, starting at one odd vertex and ending at the other. Any other number of odd vertices: neither exists.",
+        "Example: degrees 2, 3, 3, 4, 4. Two odd vertices, so there is an Eulerian trail but no Eulerian circuit. To make a circuit possible, add an edge joining the two odd vertices. There is no quick test for Hamiltonian paths; find one by trial."
+       ]
+      },
+      {
+       "h": "Euler’s formula",
+       "p": [
+        "Example: a connected planar graph has 6 vertices and 9 edges. \\(f = 2 - v + e = 2 - 6 + 9 = 5\\) faces. To check a claim, substitute: if the numbers do not satisfy the formula, the graph is not a connected planar graph."
+       ]
+      },
+      {
+       "h": "Trees and shortest paths",
+       "p": [
+        "A tree is a connected graph with no cycles; a tree with \\(n\\) vertices has \\(n - 1\\) edges. A spanning tree connects all the vertices of a graph. A minimum spanning tree has the smallest total weight and gives the cheapest way to connect every location, such as laying cable. Prim’s algorithm: start at any vertex, repeatedly add the smallest-weight edge that connects a new vertex, and stop when every vertex is included.",
+        "A shortest path is the route of least total weight between two given vertices. It need not use every vertex."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Forgetting the outside face. Counting a loop as degree 1. Mixing up Eulerian and Hamiltonian. Giving a shortest path when a minimum spanning tree is asked for, or the reverse."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "linear12",
+     "title": "Linear relations and measurement",
+     "points": [
+      "Linear model: \\(y = a + bx\\), where \\(a\\) is the intercept and \\(b\\) the gradient (rate of change).",
+      "Simultaneous equations: solve by substitution, elimination or graphing. Break-even is where cost \\(=\\) revenue.",
+      "Pythagoras: \\(c^2 = a^2 + b^2\\). Right triangles: \\(\\sin\\theta = \\dfrac{O}{H}\\), \\(\\cos\\theta = \\dfrac{A}{H}\\), \\(\\tan\\theta = \\dfrac{O}{A}\\).",
+      "Sine rule \\(\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}\\); cosine rule \\(c^2 = a^2 + b^2 - 2ab\\cos C\\).",
+      "Similar figures with scale factor \\(k\\): lengths \\(\\times k\\), areas \\(\\times k^2\\), volumes \\(\\times k^3\\).",
+      "Circle \\(A = \\pi r^2\\); cylinder \\(V = \\pi r^2 h\\); sphere \\(V = \\tfrac{4}{3}\\pi r^3\\)."
+     ],
+     "explain": "Explain why doubling every length of a box multiplies its volume by \\(8\\).",
+     "qs": [
+      {
+       "t": "c",
+       "q": "A right triangle has legs \\(6\\) cm and \\(8\\) cm. Find the hypotenuse.",
+       "a": "\\(c = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\) cm",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Two similar solids have scale factor \\(k = 3\\). Their volumes are in the ratio…",
+       "o": [
+        "\\(1 : 3\\)",
+        "\\(1 : 6\\)",
+        "\\(1 : 9\\)",
+        "\\(1 : 27\\)"
+       ],
+       "a": 3,
+       "e": "\\(k^3 = 27\\)"
+      },
+      {
+       "t": "c",
+       "q": "Cost \\(C = 200 + 5n\\) and revenue \\(R = 15n\\). Find the break-even point.",
+       "a": "\\(200 + 5n = 15n \\Rightarrow n = 20\\)",
+       "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Linear models",
+       "p": [
+        "A linear model has a constant rate of change. In \\(y = a + bx\\), the intercept \\(a\\) is the starting value and the slope \\(b\\) is the rate. Example: a plumber charges an $80 call-out fee plus $60 per hour: \\(C = 80 + 60t\\). A 2.5-hour job costs \\(80 + 150 = \\$230\\). Models only apply over the range for which they make sense."
+       ]
+      },
+      {
+       "h": "Simultaneous equations and break-even",
+       "p": [
+        "Example: a stall has fixed costs of $120 and each item costs $4 to make and sells for $10. Cost \\(C = 120 + 4n\\); revenue \\(R = 10n\\). Break-even when \\(10n = 120 + 4n\\), so \\(n = 20\\) items. Selling more than 20 makes a profit.",
+        "Elimination example: \\(2x + 3y = 13\\) and \\(x - 3y = -1\\). Adding gives \\(3x = 12\\), so \\(x = 4\\) and \\(y = \\tfrac{5}{3}\\)."
+       ]
+      },
+      {
+       "h": "Piecewise and step graphs",
+       "p": [
+        "A piecewise linear graph uses different lines over different intervals, such as a taxi fare with a higher rate after a certain distance. A step graph is constant over each interval and jumps between them, such as parking fees. An open circle means the endpoint is not included; a closed circle means it is."
+       ]
+      },
+      {
+       "h": "Right-angled and other triangles",
+       "p": [
+        "Right-angled: use Pythagoras for sides and SOH CAH TOA for a side and an angle. Non-right-angled: use the sine rule when you know a side and its opposite angle; use the cosine rule when you know two sides and the included angle, or three sides. Area \\(= \\tfrac{1}{2}ab\\sin C\\).",
+        "Example: two sides of 8 m and 11 m enclose an angle of 50°. Third side: \\(c^2 = 64 + 121 - 176\\cos 50^\\circ = 71.87\\), so \\(c = 8.48\\) m. Area \\(= \\tfrac{1}{2} \\times 8 \\times 11 \\times \\sin 50^\\circ = 33.7\\) m²."
+       ]
+      },
+      {
+       "h": "Similarity and scale",
+       "p": [
+        "Similar shapes have equal angles and sides in the same ratio \\(k\\). Example: a model is built at a scale of 1 : 20. Lengths are multiplied by 20, areas by \\(20^2 = 400\\) and volumes by \\(20^3 = 8000\\). A model tank holding 0.5 L corresponds to a real tank of 4000 L."
+       ]
+      },
+      {
+       "h": "Units and accuracy",
+       "p": [
+        "Convert before calculating. For area units square the conversion factor (1 m² = 10 000 cm²); for volume cube it (1 m³ = 1 000 000 cm³; 1 cm³ = 1 mL; 1 m³ = 1000 L). Round only at the end, to the accuracy the question asks for."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Calculator in radian mode. Using the sine rule when the cosine rule is needed. Scaling an area by \\(k\\) instead of \\(k^2\\). Forgetting the bearing is measured clockwise from north."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

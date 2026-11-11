@@ -12,6 +12,7 @@ const UNITS = [{ key: "12", name: "Units 1 & 2" }, { key: "34", name: "Units 3 &
 const UNIT_KEYS = SUBJECTS.flatMap((s) => UNITS.map((u) => s.key + u.key));
 const content = {}; // uk -> parsed content file
 const QS = {};      // qid -> {uk, topic, q}
+let glossary = [];  // [{t: term, d: definition, s: subject key, src?: VCAA document the wording is quoted from}]
 
 /* ---------- small helpers ---------- */
 const app = document.getElementById("app");
@@ -163,7 +164,7 @@ async function loadContent() {
       content[uk] = data;
       for (const a of data.aos) for (const t of a.topics) t.qs.forEach((q, i) => { QS[`${uk}.${t.id}.${i}`] = { uk, topic: t, q }; });
     } catch (e) { console.error("Content file failed:", uk, e); }
-  }));
+  }).concat(fetch("content/glossary.json", { cache: "no-cache" }).then((r) => r.json()).then((g) => { glossary = g; }).catch((e) => console.error("Glossary failed:", e))));
 }
 const topicQids = (uk, t) => t.qs.map((_, i) => `${uk}.${t.id}.${i}`);
 
@@ -276,9 +277,28 @@ function viewTopic(uk, tid) {
     el("h1", {}, t.title),
     el("section", { class: "learn " + s.cls }, el("h2", {}, "Key points"), el("ul", {}, t.points.map((p) => el("li", {}, p))),
       t.explain ? el("p", { class: "explain" }, el("b", {}, "Explain it back: "), t.explain) : null),
+    t.notes ? el("section", { class: "learn notes " + s.cls }, el("h2", {}, "In depth"),
+      t.notes.flatMap((n) => [el("h3", {}, n.h), ...n.p.map((p) => el("p", {}, p))])) : null,
     el("div", { class: "row" },
       el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...ids]), t.title, `#t-${uk}-${tid}`) }, `Practise ${ids.length} questions`),
       el("a", { class: "btn", href: `#u-${uk}` }, "All topics")));
+}
+function viewGlossary() {
+  const q = el("input", { type: "search", id: "gl-q", placeholder: "Search terms", "aria-label": "Search terms" });
+  const subj = el("select", { id: "gl-s", "aria-label": "Subject" }, el("option", { value: "" }, "All subjects"), SUBJECTS.map((s) => el("option", { value: s.key }, s.name)));
+  const list = el("dl", { class: "glossary" });
+  const draw = () => {
+    const needle = q.value.trim().toLowerCase();
+    const hits = glossary.filter((g) => (!subj.value || g.s === subj.value) && (g.t + " " + g.d).toLowerCase().includes(needle)).sort((a, b) => a.t.localeCompare(b.t));
+    list.replaceChildren(...(hits.length ? hits.flatMap((g) => { const s = SUBJECTS.find((x) => x.key === g.s); return [
+      el("dt", { class: s.cls }, g.t, " ", el("span", { class: "qtag" }, s.name)),
+      el("dd", {}, g.d, el("span", { class: "muted small" }, g.src ? ` VCAA wording: ${g.src}.` : " Study-note wording."))]; }) : [el("p", { class: "muted" }, "No terms match.")]));
+  };
+  q.addEventListener("input", draw); subj.addEventListener("change", draw);
+  show(el("h1", {}, "Glossary"),
+    el("p", { class: "muted" }, "Each entry says where its wording comes from. “VCAA wording” is quoted from the named VCAA document. “Study-note wording” is our own summary: check it against your study design before quoting it in a SAC or exam."),
+    el("div", { class: "row" }, q, subj), list);
+  draw();
 }
 function viewReview() {
   const due = shuffle(dueList());
@@ -393,6 +413,7 @@ function route() {
   else if (h === "review") viewReview();
   else if (h === "mix") viewMix();
   else if (h === "errors" || h === "errors-all") viewErrors();
+  else if (h === "glossary") viewGlossary();
   else if (h === "progress") viewProgress();
   else if (h === "tutor") viewTutor();
   else notFound();

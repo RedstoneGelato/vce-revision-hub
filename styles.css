@@ -105,6 +105,12 @@ main.wrap { padding-block: 28px 40px; display: flex; flex-direction: column; gap
 .learn { background: var(--panel); border: 1px solid var(--line); border-left: 6px solid var(--c); border-radius: var(--r); padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; }
 .learn ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; max-width: 70ch; }
 .learn li::marker { color: var(--c); }
+.notes h3 { margin: 10px 0 0; font-size: 1.05rem; }
+.notes p { margin: 0; max-width: 70ch; }
+.glossary { margin: 0; display: flex; flex-direction: column; gap: 4px; max-width: 75ch; }
+.glossary dt { font-weight: 600; margin-top: 12px; }
+.glossary dd { margin: 0; }
+input[type=search] { border: 1px solid var(--line); background: var(--bg); padding: 7px 10px; border-radius: 8px; min-width: 220px; }
 .explain { background: var(--bg); border-radius: 10px; padding: 12px 14px; font-size: 0.95rem; }
 
 /* quiz */

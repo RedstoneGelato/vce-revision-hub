@@ -1,0 +1,892 @@
+[
+ {
+  "t": "Accuracy",
+  "d": "How close a measurement is to the true value of the quantity being measured.",
+  "s": "chem"
+ },
+ {
+  "t": "Precision",
+  "d": "How closely a set of repeated measurements agree with each other.",
+  "s": "chem"
+ },
+ {
+  "t": "Repeatability",
+  "d": "The closeness of agreement of results when the same person repeats the measurement with the same method and equipment under the same conditions.",
+  "s": "chem"
+ },
+ {
+  "t": "Reproducibility",
+  "d": "The closeness of agreement of results when the measurement is carried out by different people, or with different equipment or in a different laboratory.",
+  "s": "chem"
+ },
+ {
+  "t": "Validity",
+  "d": "Whether an experiment and its measurements actually test what they are intended to test.",
+  "s": "chem"
+ },
+ {
+  "t": "Systematic error",
+  "d": "An error that causes readings to differ from the true value by a consistent amount each time, affecting accuracy.",
+  "s": "chem"
+ },
+ {
+  "t": "Random error",
+  "d": "An unpredictable variation in measurements that affects precision and is reduced by repeating and averaging.",
+  "s": "chem"
+ },
+ {
+  "t": "Isotopes",
+  "d": "Atoms of the same element with the same number of protons and different numbers of neutrons.",
+  "s": "chem"
+ },
+ {
+  "t": "Relative atomic mass",
+  "d": "The weighted mean of the relative isotopic masses of an element, on a scale where carbon-12 is exactly 12.",
+  "s": "chem"
+ },
+ {
+  "t": "Electronegativity",
+  "d": "The ability of an atom to attract electrons in a covalent bond towards itself.",
+  "s": "chem"
+ },
+ {
+  "t": "First ionisation energy",
+  "d": "The energy required to remove one mole of electrons from one mole of atoms in the gaseous state.",
+  "s": "chem"
+ },
+ {
+  "t": "Core charge",
+  "d": "The attractive force felt by valence electrons: the number of protons minus the number of inner-shell electrons.",
+  "s": "chem"
+ },
+ {
+  "t": "Mole",
+  "d": "The amount of substance that contains 6.02 × 10²³ specified particles.",
+  "s": "chem"
+ },
+ {
+  "t": "Empirical formula",
+  "d": "The simplest whole-number ratio of atoms of each element in a compound.",
+  "s": "chem"
+ },
+ {
+  "t": "Molecular formula",
+  "d": "The actual number of atoms of each element in one molecule of a compound.",
+  "s": "chem"
+ },
+ {
+  "t": "Brønsted–Lowry acid",
+  "d": "A substance that donates a proton (H⁺) to another substance.",
+  "s": "chem"
+ },
+ {
+  "t": "Brønsted–Lowry base",
+  "d": "A substance that accepts a proton (H⁺) from another substance.",
+  "s": "chem"
+ },
+ {
+  "t": "Amphiprotic",
+  "d": "Able to act as either an acid or a base, by donating or accepting a proton.",
+  "s": "chem"
+ },
+ {
+  "t": "Strong acid",
+  "d": "An acid that ionises completely in water.",
+  "s": "chem"
+ },
+ {
+  "t": "Oxidation",
+  "d": "Loss of electrons; an increase in oxidation number.",
+  "s": "chem"
+ },
+ {
+  "t": "Reduction",
+  "d": "Gain of electrons; a decrease in oxidation number.",
+  "s": "chem"
+ },
+ {
+  "t": "Oxidising agent",
+  "d": "A substance that causes another to be oxidised and is itself reduced.",
+  "s": "chem"
+ },
+ {
+  "t": "Reducing agent",
+  "d": "A substance that causes another to be reduced and is itself oxidised.",
+  "s": "chem"
+ },
+ {
+  "t": "Standard solution",
+  "d": "A solution of accurately known concentration.",
+  "s": "chem"
+ },
+ {
+  "t": "Primary standard",
+  "d": "A substance pure and stable enough to be weighed out to make a solution of accurately known concentration.",
+  "s": "chem"
+ },
+ {
+  "t": "Equivalence point",
+  "d": "The point in a titration when the reactants have been mixed in the mole ratio shown by the balanced equation.",
+  "s": "chem"
+ },
+ {
+  "t": "End point",
+  "d": "The point in a titration when the indicator changes colour.",
+  "s": "chem"
+ },
+ {
+  "t": "Limiting reactant",
+  "d": "The reactant that is completely consumed in a reaction and so determines the amount of product.",
+  "s": "chem"
+ },
+ {
+  "t": "Standard laboratory conditions (SLC)",
+  "d": "A temperature of 25 °C and a pressure of 100 kPa.",
+  "s": "chem"
+ },
+ {
+  "t": "Exothermic reaction",
+  "d": "A reaction that releases energy to the surroundings; ΔH is negative.",
+  "s": "chem"
+ },
+ {
+  "t": "Endothermic reaction",
+  "d": "A reaction that absorbs energy from the surroundings; ΔH is positive.",
+  "s": "chem"
+ },
+ {
+  "t": "Activation energy",
+  "d": "The minimum energy colliding particles need for a reaction to occur.",
+  "s": "chem"
+ },
+ {
+  "t": "Catalyst",
+  "d": "A substance that increases the rate of a reaction by providing an alternative pathway with a lower activation energy, without being consumed.",
+  "s": "chem"
+ },
+ {
+  "t": "Dynamic equilibrium",
+  "d": "The state of a reversible reaction in a closed system when the forward and reverse reactions occur at the same rate.",
+  "s": "chem"
+ },
+ {
+  "t": "Le Chatelier’s principle",
+  "d": "If a change is made to a system at equilibrium, the system adjusts to partially oppose the effect of the change.",
+  "s": "chem"
+ },
+ {
+  "t": "Galvanic cell",
+  "d": "A cell that converts chemical energy to electrical energy through a spontaneous redox reaction.",
+  "s": "chem"
+ },
+ {
+  "t": "Electrolytic cell",
+  "d": "A cell that uses electrical energy to drive a non-spontaneous redox reaction.",
+  "s": "chem"
+ },
+ {
+  "t": "Fuel cell",
+  "d": "A galvanic cell that produces electricity continuously while reactants are supplied.",
+  "s": "chem"
+ },
+ {
+  "t": "Structural isomers",
+  "d": "Compounds with the same molecular formula and different structural formulas.",
+  "s": "chem"
+ },
+ {
+  "t": "Chiral centre",
+  "d": "A carbon atom bonded to four different atoms or groups.",
+  "s": "chem"
+ },
+ {
+  "t": "Atom economy",
+  "d": "The percentage of the total mass of reactants that ends up in the desired product.",
+  "s": "chem"
+ },
+ {
+  "t": "Green chemistry",
+  "d": "The design of chemical products and processes that reduce or eliminate the use and generation of hazardous substances.",
+  "s": "chem"
+ },
+ {
+  "t": "Circular economy",
+  "d": "A system in which materials are kept in use for as long as possible through reuse, repair and recycling, in contrast to a take–make–dispose linear economy.",
+  "s": "chem"
+ },
+ {
+  "t": "Denaturation",
+  "d": "A change in the shape of a protein caused by disruption of its secondary, tertiary or quaternary structure, without breaking peptide links.",
+  "s": "chem"
+ },
+ {
+  "t": "Retention time",
+  "d": "The time a component takes to pass through a chromatography column.",
+  "s": "chem"
+ },
+ {
+  "t": "Register",
+  "d": "The level of formality of a text, on a scale from informal to formal, chosen to suit the context.",
+  "s": "eng"
+ },
+ {
+  "t": "Tenor",
+  "d": "The relationship between the participants in a text, including social distance and relative status.",
+  "s": "eng"
+ },
+ {
+  "t": "Field",
+  "d": "The subject matter or topic of a text.",
+  "s": "eng"
+ },
+ {
+  "t": "Mode",
+  "d": "The channel of communication: spoken, written or signed, including digital forms.",
+  "s": "eng"
+ },
+ {
+  "t": "Situational context",
+  "d": "The immediate circumstances of a text: field, language mode, setting, text type and the relationship between participants.",
+  "s": "eng"
+ },
+ {
+  "t": "Cultural context",
+  "d": "The values, attitudes and beliefs held by the participants and the wider community that influence a text.",
+  "s": "eng"
+ },
+ {
+  "t": "Phatic function",
+  "d": "Language used to create and maintain social contact, not to pass on information.",
+  "s": "eng"
+ },
+ {
+  "t": "Morpheme",
+  "d": "The smallest unit of meaning in a language. Free morphemes stand alone; bound morphemes must attach to another morpheme.",
+  "s": "eng"
+ },
+ {
+  "t": "Inflectional morpheme",
+  "d": "A bound morpheme that marks grammatical information such as tense or number without changing word class.",
+  "s": "eng"
+ },
+ {
+  "t": "Derivational morpheme",
+  "d": "A bound morpheme that creates a new word or changes word class.",
+  "s": "eng"
+ },
+ {
+  "t": "Nominalisation",
+  "d": "Forming a noun from a verb or adjective, such as “decision” from “decide”.",
+  "s": "eng"
+ },
+ {
+  "t": "Ellipsis",
+  "d": "Leaving out words that can be recovered from the context.",
+  "s": "eng"
+ },
+ {
+  "t": "Cohesion",
+  "d": "The linguistic ties that link parts of a text, such as reference, repetition, conjunctions and ellipsis.",
+  "s": "eng"
+ },
+ {
+  "t": "Coherence",
+  "d": "The way a text makes sense as a whole to its audience, through logical ordering, consistency, formatting, inference and conventions.",
+  "s": "eng"
+ },
+ {
+  "t": "Anaphoric reference",
+  "d": "A word that points back to something mentioned earlier in the text.",
+  "s": "eng"
+ },
+ {
+  "t": "Cataphoric reference",
+  "d": "A word that points forward to something mentioned later in the text.",
+  "s": "eng"
+ },
+ {
+  "t": "Discourse marker",
+  "d": "A word or phrase that organises talk or signals the speaker’s attitude, such as “well”, “so” or “anyway”.",
+  "s": "eng"
+ },
+ {
+  "t": "Adjacency pair",
+  "d": "Two related turns by different speakers, where the first expects the second, such as question and answer.",
+  "s": "eng"
+ },
+ {
+  "t": "Positive face",
+  "d": "A person’s need to be liked, approved of and included.",
+  "s": "eng"
+ },
+ {
+  "t": "Negative face",
+  "d": "A person’s need to act freely and not be imposed upon.",
+  "s": "eng"
+ },
+ {
+  "t": "Face-threatening act",
+  "d": "An utterance that risks damaging the positive or negative face of the speaker or the listener.",
+  "s": "eng"
+ },
+ {
+  "t": "Overt prestige",
+  "d": "Status given publicly to standard forms of a language.",
+  "s": "eng"
+ },
+ {
+  "t": "Covert prestige",
+  "d": "Status that non-standard forms have within a particular group.",
+  "s": "eng"
+ },
+ {
+  "t": "Euphemism",
+  "d": "A mild or indirect expression used in place of one considered unpleasant or taboo.",
+  "s": "eng"
+ },
+ {
+  "t": "Dysphemism",
+  "d": "A harsh or blunt expression used in place of a neutral one.",
+  "s": "eng"
+ },
+ {
+  "t": "Doublespeak",
+  "d": "Language that deliberately disguises, distorts or reverses the meaning of words.",
+  "s": "eng"
+ },
+ {
+  "t": "Jargon",
+  "d": "The specialised vocabulary of a profession or interest group.",
+  "s": "eng"
+ },
+ {
+  "t": "Slang",
+  "d": "Informal, often short-lived vocabulary associated with a particular group.",
+  "s": "eng"
+ },
+ {
+  "t": "Idiolect",
+  "d": "The language variety unique to an individual.",
+  "s": "eng"
+ },
+ {
+  "t": "Sociolect",
+  "d": "A language variety associated with a social group, such as an age group or occupation.",
+  "s": "eng"
+ },
+ {
+  "t": "Ethnolect",
+  "d": "A variety of a language associated with an ethnic or cultural group, influenced by a heritage language.",
+  "s": "eng"
+ },
+ {
+  "t": "Standard Australian English",
+  "d": "The variety of Australian English that is codified and used in education, government, the law and the media.",
+  "s": "eng"
+ },
+ {
+  "t": "Code-switching",
+  "d": "Moving between two or more languages or varieties within a conversation.",
+  "s": "eng"
+ },
+ {
+  "t": "Pidgin",
+  "d": "A simplified contact language that develops between groups with no common language. It has no native speakers.",
+  "s": "eng"
+ },
+ {
+  "t": "Creole",
+  "d": "A language that developed from a pidgin and is acquired by children as a first language.",
+  "s": "eng"
+ },
+ {
+  "t": "Prescriptivism",
+  "d": "The view that some language forms are correct and should be enforced.",
+  "s": "eng"
+ },
+ {
+  "t": "Descriptivism",
+  "d": "The approach of describing how language is used without judging it.",
+  "s": "eng"
+ },
+ {
+  "t": "Overgeneralisation",
+  "d": "A child’s application of a regular grammatical rule to an irregular case, such as “goed”.",
+  "s": "eng"
+ },
+ {
+  "t": "Interlanguage",
+  "d": "The systematic, developing language of someone learning an additional language.",
+  "s": "eng"
+ },
+ {
+  "t": "High rising terminal",
+  "d": "Rising intonation at the end of a statement, common in Australian English.",
+  "s": "eng"
+ },
+ {
+  "t": "Accounting entity assumption",
+  "d": "The records of the assets, liabilities and business activities of the entity are kept completely separate from those of the owner and of other entities.",
+  "s": "acc"
+ },
+ {
+  "t": "Going concern assumption",
+  "d": "Financial reports are prepared on the assumption that the business will continue to operate in the future.",
+  "s": "acc"
+ },
+ {
+  "t": "Period assumption",
+  "d": "The life of the business is divided into periods of time so that reports can be prepared and performance measured for each period.",
+  "s": "acc"
+ },
+ {
+  "t": "Accrual basis assumption",
+  "d": "Revenues are recognised when earned and expenses when incurred, so that profit is calculated as revenue earned in a period less expenses incurred in that period.",
+  "s": "acc"
+ },
+ {
+  "t": "Relevance",
+  "d": "Financial information is relevant if it is capable of making a difference to the decisions made by users.",
+  "s": "acc"
+ },
+ {
+  "t": "Faithful representation",
+  "d": "Financial information should be complete, neutral (free from bias) and free from material error.",
+  "s": "acc"
+ },
+ {
+  "t": "Verifiability",
+  "d": "Different knowledgeable and independent observers could reach agreement that the information is faithfully represented, for example by checking source documents.",
+  "s": "acc"
+ },
+ {
+  "t": "Comparability",
+  "d": "Users can identify similarities and differences between reports of different periods or different businesses, which requires consistent accounting methods.",
+  "s": "acc"
+ },
+ {
+  "t": "Timeliness",
+  "d": "Financial information is available to decision-makers in time to be capable of influencing their decisions.",
+  "s": "acc"
+ },
+ {
+  "t": "Understandability",
+  "d": "Financial information is classified, characterised and presented clearly and concisely.",
+  "s": "acc"
+ },
+ {
+  "t": "Asset",
+  "d": "A present economic resource controlled by the entity as a result of past events.",
+  "s": "acc"
+ },
+ {
+  "t": "Liability",
+  "d": "A present obligation of the entity to transfer an economic resource as a result of past events.",
+  "s": "acc"
+ },
+ {
+  "t": "Owner’s equity",
+  "d": "The residual interest in the assets of the entity after deducting all its liabilities.",
+  "s": "acc"
+ },
+ {
+  "t": "Revenue",
+  "d": "An increase in assets or a decrease in liabilities that results in an increase in owner’s equity, other than a contribution from the owner.",
+  "s": "acc"
+ },
+ {
+  "t": "Expense",
+  "d": "A decrease in assets or an increase in liabilities that results in a decrease in owner’s equity, other than a distribution to the owner (drawings).",
+  "s": "acc"
+ },
+ {
+  "t": "Current asset",
+  "d": "An asset expected to be sold, consumed or converted to cash within 12 months.",
+  "s": "acc"
+ },
+ {
+  "t": "Non-current asset",
+  "d": "An asset expected to be used by the business for more than 12 months.",
+  "s": "acc"
+ },
+ {
+  "t": "Source document",
+  "d": "The written or electronic evidence of a transaction, used to record it.",
+  "s": "acc"
+ },
+ {
+  "t": "Depreciation",
+  "d": "The allocation of the depreciable amount of a non-current asset over its useful life.",
+  "s": "acc"
+ },
+ {
+  "t": "Carrying value",
+  "d": "The cost of a non-current asset less its accumulated depreciation.",
+  "s": "acc"
+ },
+ {
+  "t": "Net realisable value",
+  "d": "The estimated selling price of inventory less the estimated costs of selling, marketing and distributing it.",
+  "s": "acc"
+ },
+ {
+  "t": "Product cost",
+  "d": "A cost incurred to bring inventory into a condition and location ready for sale that can be allocated to individual units on a logical basis.",
+  "s": "acc"
+ },
+ {
+  "t": "Period cost",
+  "d": "A cost incurred to bring inventory into a condition and location ready for sale that cannot be allocated to individual units on a logical basis.",
+  "s": "acc"
+ },
+ {
+  "t": "Cost of Sales",
+  "d": "The cost price of the inventory sold in a period.",
+  "s": "acc"
+ },
+ {
+  "t": "Inventory loss",
+  "d": "An expense recognised when the physical count of inventory is less than the balance shown on the inventory card.",
+  "s": "acc"
+ },
+ {
+  "t": "Balance day adjustment",
+  "d": "An entry made at the end of a period so that revenue accounts show revenue earned and expense accounts show expenses incurred in that period.",
+  "s": "acc"
+ },
+ {
+  "t": "Accrued expense",
+  "d": "An expense incurred in the period but not yet paid: a current liability.",
+  "s": "acc"
+ },
+ {
+  "t": "Prepaid expense",
+  "d": "An amount paid for goods or services not yet consumed: a current asset.",
+  "s": "acc"
+ },
+ {
+  "t": "Unearned revenue",
+  "d": "Cash received for goods or services not yet provided: a current liability.",
+  "s": "acc"
+ },
+ {
+  "t": "Accrued revenue",
+  "d": "Revenue earned in the period but not yet received: a current asset.",
+  "s": "acc"
+ },
+ {
+  "t": "Budgeting",
+  "d": "The process of predicting the financial consequences of future events.",
+  "s": "acc"
+ },
+ {
+  "t": "Variance",
+  "d": "The difference between an actual figure and the budgeted figure, described as favourable or unfavourable.",
+  "s": "acc"
+ },
+ {
+  "t": "Profitability",
+  "d": "The ability of the business to earn profit, measured by comparing profit against a base such as sales, assets or owner’s equity.",
+  "s": "acc"
+ },
+ {
+  "t": "Liquidity",
+  "d": "The ability of the business to meet its short-term debts as they fall due.",
+  "s": "acc"
+ },
+ {
+  "t": "Stability",
+  "d": "The ability of the business to meet its debts and continue operating in the long term.",
+  "s": "acc"
+ },
+ {
+  "t": "Break-even point",
+  "d": "The level of sales at which total revenue equals total costs, so that profit is zero.",
+  "s": "acc"
+ },
+ {
+  "t": "Function",
+  "d": "A relation in which each element of the domain is paired with exactly one element of the range.",
+  "s": "meth"
+ },
+ {
+  "t": "Domain",
+  "d": "The set of all values of the independent variable for which a function is defined.",
+  "s": "meth"
+ },
+ {
+  "t": "Range",
+  "d": "The set of all values a function takes.",
+  "s": "meth"
+ },
+ {
+  "t": "One-to-one function",
+  "d": "A function in which each element of the range is the image of exactly one element of the domain.",
+  "s": "meth"
+ },
+ {
+  "t": "Inverse function",
+  "d": "The function \\(f^{-1}\\) that reverses a one-to-one function \\(f\\), so that \\(f^{-1}(f(x)) = x\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Composite function",
+  "d": "A function formed by applying one function to the result of another: \\((f \\circ g)(x) = f(g(x))\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Asymptote",
+  "d": "A line that a graph approaches but does not reach as \\(x\\) or \\(y\\) becomes very large.",
+  "s": "meth"
+ },
+ {
+  "t": "Dilation",
+  "d": "A transformation that stretches or compresses a graph by a factor from an axis.",
+  "s": "meth"
+ },
+ {
+  "t": "Period",
+  "d": "The horizontal length of one complete cycle of a periodic function.",
+  "s": "meth"
+ },
+ {
+  "t": "Amplitude",
+  "d": "Half the distance between the maximum and minimum values of a circular function.",
+  "s": "meth"
+ },
+ {
+  "t": "Derivative",
+  "d": "The instantaneous rate of change of a function; the gradient of the tangent to its graph at a point.",
+  "s": "meth"
+ },
+ {
+  "t": "Stationary point",
+  "d": "A point on a graph where the derivative is zero.",
+  "s": "meth"
+ },
+ {
+  "t": "Point of inflection",
+  "d": "A point on a graph where the concavity changes.",
+  "s": "meth"
+ },
+ {
+  "t": "Antiderivative",
+  "d": "A function \\(F\\) whose derivative is the given function \\(f\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Definite integral",
+  "d": "\\(\\int_a^b f(x)\\,dx = F(b) - F(a)\\), the signed area between the graph of \\(f\\) and the \\(x\\)-axis from \\(a\\) to \\(b\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Average value of a function",
+  "d": "\\(\\dfrac{1}{b - a}\\displaystyle\\int_a^b f(x)\\,dx\\) over the interval \\([a, b]\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Mutually exclusive events",
+  "d": "Events that cannot occur together: \\(\\Pr(A \\cap B) = 0\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Independent events",
+  "d": "Events for which \\(\\Pr(A \\cap B) = \\Pr(A) \\times \\Pr(B)\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Conditional probability",
+  "d": "The probability of \\(A\\) given that \\(B\\) has occurred: \\(\\Pr(A \\mid B) = \\dfrac{\\Pr(A \\cap B)}{\\Pr(B)}\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Discrete random variable",
+  "d": "A random variable whose possible values can be listed.",
+  "s": "meth"
+ },
+ {
+  "t": "Expected value",
+  "d": "The long-run mean of a random variable: \\(\\operatorname{E}(X) = \\sum x\\Pr(X = x)\\) for a discrete variable.",
+  "s": "meth"
+ },
+ {
+  "t": "Binomial distribution",
+  "d": "The distribution of the number of successes in \\(n\\) independent trials, each with the same probability \\(p\\) of success.",
+  "s": "meth"
+ },
+ {
+  "t": "Probability density function",
+  "d": "A function \\(f\\) with \\(f(x) \\ge 0\\) and total area 1, where areas under the graph give probabilities for a continuous random variable.",
+  "s": "meth"
+ },
+ {
+  "t": "Sample proportion",
+  "d": "The proportion of a sample with a particular attribute, \\(\\hat{p}\\), used to estimate the population proportion \\(p\\).",
+  "s": "meth"
+ },
+ {
+  "t": "Confidence interval",
+  "d": "An interval calculated from a sample that, for a stated percentage of samples, contains the population parameter.",
+  "s": "meth"
+ },
+ {
+  "t": "Margin of error",
+  "d": "The distance from the sample proportion to each end of a confidence interval.",
+  "s": "meth"
+ },
+ {
+  "t": "Categorical variable",
+  "d": "A variable whose values are categories. Nominal categories have no order; ordinal categories have a natural order.",
+  "s": "gen"
+ },
+ {
+  "t": "Numerical variable",
+  "d": "A variable whose values are counts or measurements. Discrete values can be listed; continuous values can be any value in an interval.",
+  "s": "gen"
+ },
+ {
+  "t": "Median",
+  "d": "The middle value of an ordered data set.",
+  "s": "gen"
+ },
+ {
+  "t": "Interquartile range (IQR)",
+  "d": "The spread of the middle 50% of the data: \\(Q_3 - Q_1\\).",
+  "s": "gen"
+ },
+ {
+  "t": "Outlier",
+  "d": "A value below \\(Q_1 - 1.5 \\times \\text{IQR}\\) or above \\(Q_3 + 1.5 \\times \\text{IQR}\\).",
+  "s": "gen"
+ },
+ {
+  "t": "Standard deviation",
+  "d": "A measure of the typical spread of data values around the mean.",
+  "s": "gen"
+ },
+ {
+  "t": "Standardised score (z-score)",
+  "d": "The number of standard deviations a value lies from the mean: \\(z = \\dfrac{x - \\bar{x}}{s}\\).",
+  "s": "gen"
+ },
+ {
+  "t": "Explanatory variable",
+  "d": "The variable used to explain or predict changes in the response variable.",
+  "s": "gen"
+ },
+ {
+  "t": "Response variable",
+  "d": "The variable whose changes are explained or predicted by the explanatory variable.",
+  "s": "gen"
+ },
+ {
+  "t": "Correlation coefficient (r)",
+  "d": "A measure of the strength and direction of a linear association between two numerical variables, from \\(-1\\) to \\(1\\).",
+  "s": "gen"
+ },
+ {
+  "t": "Coefficient of determination",
+  "d": "\\(r^2\\): the proportion of the variation in the response variable explained by the variation in the explanatory variable.",
+  "s": "gen"
+ },
+ {
+  "t": "Residual",
+  "d": "Actual value minus predicted value.",
+  "s": "gen"
+ },
+ {
+  "t": "Interpolation",
+  "d": "Predicting within the range of the data.",
+  "s": "gen"
+ },
+ {
+  "t": "Extrapolation",
+  "d": "Predicting outside the range of the data.",
+  "s": "gen"
+ },
+ {
+  "t": "Seasonal index",
+  "d": "The ratio of a season’s value to the average season’s value.",
+  "s": "gen"
+ },
+ {
+  "t": "Recurrence relation",
+  "d": "A rule that gives each term of a sequence from the previous term, together with a starting value.",
+  "s": "gen"
+ },
+ {
+  "t": "Nominal interest rate",
+  "d": "The annual interest rate as quoted, before the effect of compounding within the year.",
+  "s": "gen"
+ },
+ {
+  "t": "Effective interest rate",
+  "d": "The annual rate that gives the same interest as the nominal rate with its compounding periods.",
+  "s": "gen"
+ },
+ {
+  "t": "Reducing-balance loan",
+  "d": "A loan on which interest is calculated on the remaining balance and regular payments reduce the balance.",
+  "s": "gen"
+ },
+ {
+  "t": "Annuity",
+  "d": "An investment that earns compound interest and from which regular payments are made.",
+  "s": "gen"
+ },
+ {
+  "t": "Perpetuity",
+  "d": "An annuity in which the regular payment equals the interest earned, so it lasts indefinitely.",
+  "s": "gen"
+ },
+ {
+  "t": "Amortisation",
+  "d": "The process of paying off a loan with regular payments over time.",
+  "s": "gen"
+ },
+ {
+  "t": "Transition matrix",
+  "d": "A square matrix describing the proportions that move from each state to each state in one time period; each column sums to 1.",
+  "s": "gen"
+ },
+ {
+  "t": "Steady state",
+  "d": "The long-run state matrix that no longer changes when multiplied by the transition matrix.",
+  "s": "gen"
+ },
+ {
+  "t": "Degree of a vertex",
+  "d": "The number of edges attached to a vertex, with a loop counted twice.",
+  "s": "gen"
+ },
+ {
+  "t": "Eulerian trail",
+  "d": "A trail that includes every edge of a graph exactly once.",
+  "s": "gen"
+ },
+ {
+  "t": "Hamiltonian path",
+  "d": "A path that visits every vertex of a graph exactly once.",
+  "s": "gen"
+ },
+ {
+  "t": "Minimum spanning tree",
+  "d": "A spanning tree of a weighted graph with the smallest possible total weight.",
+  "s": "gen"
+ },
+ {
+  "t": "Minimum cut",
+  "d": "The cut of a flow network with the smallest capacity; its capacity equals the maximum flow.",
+  "s": "gen"
+ },
+ {
+  "t": "Critical path",
+  "d": "The longest path through an activity network; it determines the minimum completion time of the project.",
+  "s": "gen"
+ },
+ {
+  "t": "Float (slack)",
+  "d": "The time an activity can be delayed without delaying the project: latest start time minus earliest start time.",
+  "s": "gen"
+ }
+]

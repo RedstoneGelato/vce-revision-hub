@@ -53,6 +53,47 @@
        "a": 2,
        "e": "Biogas comes from decomposing organic matter."
       }
+     ],
+     "notes": [
+      {
+       "h": "Energy changes in reactions",
+       "p": [
+        "Breaking bonds absorbs energy and forming bonds releases it. In an exothermic reaction more energy is released forming the products’ bonds than was absorbed breaking the reactants’ bonds, so the products have lower chemical energy and \\(\\Delta H\\) is negative. Combustion is always exothermic. An energy profile diagram shows the energy of reactants and products, the activation energy and \\(\\Delta H\\)."
+       ]
+      },
+      {
+       "h": "Comparing fuels",
+       "p": [
+        "A fuel is a substance with stored chemical energy that can be released relatively easily. Fossil fuels formed from ancient organisms over millions of years and are non-renewable. Biofuels come from recently living matter and can be replaced within a short time: bioethanol from fermenting sugars, biodiesel from fats and oils, and biogas from the breakdown of organic waste without oxygen.",
+        "When comparing, consider energy content, whether the source is renewable, greenhouse gas and pollutant emissions over the whole life cycle, land and water use, and cost. Biofuels are close to carbon neutral only in principle: the CO₂ released was recently absorbed by the plants, but farming, processing and transport add emissions."
+       ]
+      },
+      {
+       "h": "Thermochemical equations",
+       "p": [
+        "The \\(\\Delta H\\) value belongs to the equation as written, in the states shown. Doubling the coefficients doubles \\(\\Delta H\\); reversing the equation changes its sign.",
+        "Example: \\(\\mathrm{CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(l)}\\), \\(\\Delta H = -890\\ \\mathrm{kJ\\ mol^{-1}}\\). Burning 2 mol of methane releases 1780 kJ."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "How much energy is released when 5.00 g of ethanol (M = 46.0 g mol⁻¹, molar heat of combustion 1360 kJ mol⁻¹) burns completely? What mass of CO₂ forms?",
+        "\\(n = \\dfrac{5.00}{46.0} = 0.109\\ \\mathrm{mol}\\). Energy \\(= 0.109 \\times 1360 = 148\\ \\mathrm{kJ}\\). \\(\\mathrm{C_2H_5OH + 3O_2 \\rightarrow 2CO_2 + 3H_2O}\\), so \\(n(\\mathrm{CO_2}) = 0.217\\ \\mathrm{mol}\\) and \\(m = 0.217 \\times 44.0 = 9.57\\ \\mathrm{g}\\)."
+       ]
+      },
+      {
+       "h": "Food as fuel",
+       "p": [
+        "Carbohydrates, fats and proteins are oxidised in cellular respiration to release energy. Glucose: C₆H₁₂O₆(aq) + 6O₂(g) → 6CO₂(g) + 6H₂O(l). Fats release roughly twice as much energy per gram as carbohydrates because they contain less oxygen, so more of the molecule can be oxidised."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Leaving out the negative sign on an exothermic ΔH, or adding a sign to “energy released”. Writing H₂O(g) when the data book value assumes liquid water. Calling biofuels carbon neutral without qualification."
+       ]
+      }
      ]
     },
     {
@@ -97,6 +138,47 @@
        "q": "What volume of \\(\\mathrm{CO_2}\\) at SLC forms when \\(0.50\\ \\mathrm{mol}\\) of \\(\\mathrm{CH_4}\\) burns completely?",
        "a": "\\(1 : 1\\) ratio, so \\(0.50\\ \\mathrm{mol\\ CO_2}\\); \\(V = 0.50 \\times 24.8 = 12.4\\ \\mathrm{L}\\)",
        "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Measuring energy",
+       "p": [
+        "Calorimetry measures the energy change of a reaction by the temperature change it causes in a known mass of water or in a calibrated calorimeter. The simplest method burns a fuel under a can of water. Much of the heat escapes, so the result is too low."
+       ]
+      },
+      {
+       "h": "Worked example: heating water",
+       "p": [
+        "Burning 0.500 g of ethanol heats 200 g of water by 15.0 °C. Find the experimental heat of combustion in kJ g⁻¹ and compare it with 29.6 kJ g⁻¹.",
+        "\\(q = mc\\Delta T = 200 \\times 4.18 \\times 15.0 = 12\\,540\\ \\mathrm{J} = 12.5\\ \\mathrm{kJ}\\). Per gram: \\(\\dfrac{12.5}{0.500} = 25.1\\ \\mathrm{kJ\\ g^{-1}}\\). Efficiency of energy transfer \\(= \\dfrac{25.1}{29.6} \\times 100 = 85\\%\\). The difference is heat lost to the air and the container, and incomplete combustion."
+       ]
+      },
+      {
+       "h": "Calibration",
+       "p": [
+        "A calorimeter’s calibration factor is the energy needed to raise its temperature by 1 °C. Electrical calibration passes a known current at a known voltage for a known time: \\(E = VIt\\) and \\(\\mathrm{CF} = \\dfrac{VIt}{\\Delta T}\\). Chemical calibration uses a reaction with a known \\(\\Delta H\\). Then for the reaction being studied, \\(q = \\mathrm{CF} \\times \\Delta T\\).",
+        "Solution calorimeters suit reactions in water such as dissolving and neutralisation. Bomb calorimeters are sealed, pressurised with oxygen and surrounded by water; they suit combustion."
+       ]
+      },
+      {
+       "h": "Worked example: calibrated calorimeter",
+       "p": [
+        "A calorimeter is calibrated with 4.00 V and 1.50 A for 120 s, giving a rise of 0.850 °C. Then 1.00 g of glucose (M = 180.0) is burned and the temperature rises 18.4 °C.",
+        "\\(\\mathrm{CF} = \\dfrac{4.00 \\times 1.50 \\times 120}{0.850} = 847\\ \\mathrm{J\\ {}^\\circ C^{-1}}\\). \\(q = 847 \\times 18.4 = 15\\,600\\ \\mathrm{J} = 15.6\\ \\mathrm{kJ}\\). \\(n = \\dfrac{1.00}{180.0} = 5.56 \\times 10^{-3}\\ \\mathrm{mol}\\). \\(\\Delta H = -\\dfrac{15.6}{5.56 \\times 10^{-3}} = -2.81 \\times 10^{3}\\ \\mathrm{kJ\\ mol^{-1}}\\)."
+       ]
+      },
+      {
+       "h": "Temperature–time graphs",
+       "p": [
+        "In a poorly insulated calorimeter the temperature begins to fall before the reaction finishes, so the highest reading understates the true rise. Extrapolate the cooling line back to the time the reaction started to estimate the temperature change that would have occurred with no heat loss."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Using the mass of the fuel as m in q = mcΔT; m is the mass of water. Forgetting to convert J to kJ. Stating the sign of ΔH wrongly: a temperature rise means exothermic and negative."
+       ]
       }
      ]
     },
@@ -149,6 +231,48 @@
        "a": 1,
        "e": "Top-left reacts with bottom-right."
       }
+     ],
+     "notes": [
+      {
+       "h": "Using the electrochemical series",
+       "p": [
+        "The series lists half-equations as reductions, in order of E° from most positive at the top to most negative at the bottom. Oxidising agents are on the left; the strongest is at the top left. Reducing agents are on the right; the strongest is at the bottom right.",
+        "A spontaneous reaction occurs when the oxidising agent is above the reducing agent on the series, that is, the reactants are top left and bottom right. The higher half-equation runs forward as reduction; the lower one runs in reverse as oxidation."
+       ]
+      },
+      {
+       "h": "Worked example: designing a cell",
+       "p": [
+        "A cell is built from Ag⁺/Ag (E° = +0.80 V) and Zn²⁺/Zn (E° = −0.76 V) half-cells.",
+        "Ag⁺ is the stronger oxidising agent, so it is reduced at the cathode (+): Ag⁺(aq) + e⁻ → Ag(s). Zinc is oxidised at the anode (−): Zn(s) → Zn²⁺(aq) + 2e⁻. Overall: Zn(s) + 2Ag⁺(aq) → Zn²⁺(aq) + 2Ag(s). Electrons flow from zinc to silver through the wire.",
+        "\\(E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = 0.80 - (-0.76) = 1.56\\ \\mathrm{V}\\). Do not multiply E° values when you multiply a half-equation."
+       ]
+      },
+      {
+       "h": "Limits of predictions",
+       "p": [
+        "E° values apply at standard conditions: 25 °C, 100 kPa and 1 M solutions. Under other conditions the order can change. The series also says nothing about rate: a reaction predicted to be spontaneous may be too slow to observe."
+       ]
+      },
+      {
+       "h": "Fuel cells",
+       "p": [
+        "A fuel cell is a galvanic cell in which the reactants are supplied continuously, so it produces electricity for as long as fuel is supplied. The electrodes are porous, to give a large surface area and let gases reach the electrolyte, and contain catalysts to increase the reaction rate. Compared with burning the fuel to drive a turbine, a fuel cell converts chemical energy directly to electrical energy with fewer energy transformations, so it is more efficient.",
+        "Hydrogen fuel cell overall: 2H₂(g) + O₂(g) → 2H₂O(l). The only product at the point of use is water. The environmental benefit depends on how the hydrogen was produced. Challenges include the cost of catalysts and safe storage and distribution of hydrogen."
+       ]
+      },
+      {
+       "h": "Green chemistry and electricity",
+       "p": [
+        "Designing cells with renewable feedstocks, less hazardous materials and better energy efficiency applies green chemistry principles. Using cells that can be recycled supports a circular economy."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Giving the anode a positive sign in a galvanic cell. Reversing the sign of E° and also subtracting. Writing a cell reaction in an alkaline fuel cell using H⁺."
+       ]
+      }
      ]
     }
    ]
@@ -197,6 +321,45 @@
        "q": "Explain why increasing temperature increases the rate of a reaction.",
        "a": "Particles have more kinetic energy, so they collide more often and, more importantly, a greater proportion of collisions have energy equal to or greater than the activation energy.",
        "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Collision theory",
+       "p": [
+        "For a reaction to happen, particles must collide, with energy equal to or greater than the activation energy, and in a suitable orientation. Most collisions are unsuccessful. Reaction rate depends on the number of successful collisions per second."
+       ]
+      },
+      {
+       "h": "Explaining each factor",
+       "p": [
+        "Concentration or gas pressure: more particles in a given volume, so collisions are more frequent. Surface area of a solid: more particles are exposed, so collisions are more frequent. Temperature: particles move faster, so collisions are more frequent, but the main effect is that a much greater proportion of collisions have energy at or above the activation energy. Catalyst: provides an alternative reaction pathway with a lower activation energy, so a greater proportion of collisions are successful.",
+        "A full explanation names the change, says what it does to the frequency or the proportion of successful collisions, and concludes about the rate."
+       ]
+      },
+      {
+       "h": "Maxwell–Boltzmann curves",
+       "p": [
+        "The curve shows how many particles have each kinetic energy. The area under the curve is the total number of particles, and the area to the right of the activation energy is the number able to react. Raising the temperature flattens the curve and moves its peak to the right, with the same total area, so a larger area lies beyond the activation energy. Adding a catalyst leaves the curve unchanged and moves the activation energy line to the left."
+       ]
+      },
+      {
+       "h": "Catalysts",
+       "p": [
+        "A catalyst is not consumed, so it does not appear in the overall equation and a small amount can be used repeatedly. It lowers the activation energy of the forward and reverse reactions by the same amount. It does not change ΔH, and it does not change the position of equilibrium or the yield. Its value in industry is that acceptable rates can be reached at lower temperatures, saving energy."
+       ]
+      },
+      {
+       "h": "Measuring rate",
+       "p": [
+        "Rate is the change in amount of a reactant or product per unit time. It can be followed by the volume of gas produced, the loss of mass as a gas escapes, a colour change or a change in pH. On a graph of amount against time, a steeper gradient means a faster rate; the curve flattens as reactants are used up, and levels off when the limiting reactant runs out."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Saying a catalyst “gives particles more energy”. Saying temperature only makes collisions more frequent. Saying a higher concentration gives particles more energy. Confusing rate (how fast) with yield (how much)."
+       ]
       }
      ]
     },
@@ -249,6 +412,46 @@
        "a": "\\(K' = \\dfrac{1}{4.0} = 0.25\\)",
        "e": ""
       }
+     ],
+     "notes": [
+      {
+       "h": "What equilibrium means",
+       "p": [
+        "In a closed system a reversible reaction reaches a state where the forward and reverse reactions are happening at the same rate. Concentrations then stay constant, although both reactions continue. Equilibrium does not mean the amounts of reactants and products are equal."
+       ]
+      },
+      {
+       "h": "The equilibrium constant",
+       "p": [
+        "For \\(a\\mathrm{A} + b\\mathrm{B} \\rightleftharpoons c\\mathrm{C} + d\\mathrm{D}\\), \\(K = \\dfrac{[\\mathrm{C}]^c[\\mathrm{D}]^d}{[\\mathrm{A}]^a[\\mathrm{B}]^b}\\) using equilibrium concentrations. Only a change in temperature changes the value of K. The reaction quotient Q uses the same expression with the concentrations at any moment: if Q is less than K the reaction proceeds forward; if Q is greater than K it proceeds in reverse."
+       ]
+      },
+      {
+       "h": "Worked example: ICE table",
+       "p": [
+        "2.0 mol of N₂O₄ is placed in a 1.0 L vessel. At equilibrium 0.80 mol of NO₂ is present. N₂O₄(g) ⇌ 2NO₂(g). Find K.",
+        "Initial: \\([\\mathrm{N_2O_4}] = 2.0\\), \\([\\mathrm{NO_2}] = 0\\). Change: \\(\\mathrm{NO_2}\\) rose by 0.80, so \\(\\mathrm{N_2O_4}\\) fell by 0.40. Equilibrium: \\([\\mathrm{N_2O_4}] = 1.6\\), \\([\\mathrm{NO_2}] = 0.80\\). \\(K = \\dfrac{0.80^2}{1.6} = 0.40\\ \\mathrm{M}\\)."
+       ]
+      },
+      {
+       "h": "Le Chatelier’s principle",
+       "p": [
+        "When a change is made to a system at equilibrium, the system shifts to partially oppose the change. Adding a reactant: the forward reaction is favoured, using some of what was added. Removing a product: the forward reaction is favoured. Decreasing the volume (raising the pressure): the system shifts to the side with fewer gas particles. Adding water to an aqueous equilibrium: shifts to the side with more dissolved particles. Raising the temperature: the endothermic direction is favoured, and K changes. Adding a catalyst or an inert gas at constant volume: no shift.",
+        "“Partially” matters. If a reactant is added, its concentration ends up higher than before the change, even though some has reacted."
+       ]
+      },
+      {
+       "h": "Rate against yield in industry",
+       "p": [
+        "For an exothermic reaction, a low temperature gives a high equilibrium yield but a slow rate. Industry uses a moderate (compromise) temperature with a catalyst. High pressure improves yield where there are fewer gas particles on the product side, and it also increases rate, but it costs more in equipment and energy. Removing product and recycling unreacted gases improves overall yield and atom economy."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Including solids or pure liquids in K. Saying K changes when concentration or pressure changes. Saying equilibrium shifts “to oppose the change completely”. On concentration–time graphs, drawing a sudden jump for a temperature change: only adding or removing a substance, or changing the volume, gives a sudden jump."
+       ]
+      }
      ]
     },
     {
@@ -299,6 +502,53 @@
        "q": "What makes hydrogen “green”?",
        "a": "It is made by electrolysis of water using electricity from renewable sources, so no CO₂ is released in production.",
        "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Galvanic and electrolytic cells compared",
+       "p": [
+        "A galvanic cell converts chemical energy to electrical energy through a spontaneous reaction. An electrolytic cell uses electrical energy from a power supply to force a non-spontaneous reaction. In both, oxidation occurs at the anode and reduction at the cathode. The polarity is opposite: in an electrolytic cell the anode is positive (connected to the positive terminal) and the cathode is negative.",
+        "Electrolytic cells usually have both electrodes in one container, because the reactants do not react spontaneously with each other."
+       ]
+      },
+      {
+       "h": "Predicting what happens",
+       "p": [
+        "List every species present, including water and the electrode material if it is not inert. On the electrochemical series, the strongest oxidising agent present is reduced at the cathode, and the strongest reducing agent present is oxidised at the anode.",
+        "Molten NaCl: Na⁺ is reduced to Na and Cl⁻ is oxidised to Cl₂. Dilute aqueous NaCl: water is a stronger oxidising agent than Na⁺, so hydrogen and OH⁻ form at the cathode; water is the stronger reducing agent, so oxygen forms at the anode. In concentrated NaCl solution, chlorine is produced at the anode instead, because the conditions are far from standard. This is why very reactive metals such as sodium and aluminium must be produced from molten electrolytes."
+       ]
+      },
+      {
+       "h": "Faraday’s laws",
+       "p": [
+        "The amount of substance produced is proportional to the charge passed. \\(Q = It\\), \\(n(e^-) = \\dfrac{Q}{F}\\) with \\(F = 96\\,500\\ \\mathrm{C\\ mol^{-1}}\\), then use the half-equation to relate electrons to product."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "What mass of copper is deposited when 2.50 A flows for 30.0 minutes through CuSO₄ solution?",
+        "\\(Q = 2.50 \\times 1800 = 4500\\ \\mathrm{C}\\). \\(n(e^-) = \\dfrac{4500}{96\\,500} = 0.0466\\ \\mathrm{mol}\\). \\(\\mathrm{Cu^{2+} + 2e^- \\rightarrow Cu}\\), so \\(n(\\mathrm{Cu}) = 0.0233\\ \\mathrm{mol}\\) and \\(m = 0.0233 \\times 63.5 = 1.48\\ \\mathrm{g}\\)."
+       ]
+      },
+      {
+       "h": "Secondary cells",
+       "p": [
+        "A rechargeable cell is a galvanic cell while discharging and an electrolytic cell while recharging. For this to work the discharge products must stay in contact with the electrodes so the reactions can be reversed. On recharge, the electrode that was the anode (−) becomes the cathode (−): the polarity stays, the process reverses. Battery life falls with side reactions, loss of contact of materials from the electrodes, and high or low temperatures."
+       ]
+      },
+      {
+       "h": "Hydrogen production",
+       "p": [
+        "Electrolysis of water gives hydrogen at the cathode and oxygen at the anode. If the electricity comes from renewable sources, the product is called green hydrogen. Polymer electrolyte membrane electrolysers are one technology for this, and artificial photosynthesis is being developed to use sunlight to split water directly."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Leaving time in minutes. Forgetting the electron ratio in the half-equation. Predicting sodium metal from aqueous sodium chloride."
+       ]
       }
      ]
     }
@@ -355,6 +605,48 @@
        "a": "Methyl propanoate",
        "e": "Alcohol part (methyl) first, acid part (propanoate) second."
       }
+     ],
+     "notes": [
+      {
+       "h": "Functional groups to recognise",
+       "p": [
+        "Alkene: C=C. Haloalkane: –Cl, –Br, –I. Alcohol: hydroxyl, –OH. Aldehyde: –CHO at the end of a chain. Ketone: C=O within a chain. Carboxylic acid: carboxyl, –COOH. Primary amine: amino, –NH₂. Primary amide: –CONH₂. Ester: –COO– linking two carbon chains.",
+        "The functional group decides the chemical reactions; the carbon chain mainly affects physical properties."
+       ]
+      },
+      {
+       "h": "Naming with priorities",
+       "p": [
+        "Choose the longest chain containing the principal functional group and number it so that group has the lowest number. The carboxylic acid group has the highest priority, then aldehyde and ketone, then hydroxyl, then amino; alkenes and halogens follow. A lower-priority group is named as a prefix: hydroxy- for –OH, amino- for –NH₂.",
+        "Examples: CH₃CH(OH)CH₂COOH is 3-hydroxybutanoic acid. CH₃COCH₂CH₃ is butan-2-one. CH₃CH₂COOCH₃ is methyl propanoate: the first word comes from the alcohol and the second from the carboxylic acid."
+       ]
+      },
+      {
+       "h": "Isomers",
+       "p": [
+        "Structural isomers have the same molecular formula but atoms connected in a different order: chain isomers (different branching), positional isomers (functional group in a different position) and functional isomers (different functional group, such as an alcohol and an ether, or an aldehyde and a ketone).",
+        "Stereoisomers have the same connectivity but a different arrangement in space. Cis–trans isomers occur around a C=C double bond when each carbon of the double bond has two different groups; the double bond cannot rotate. Optical isomers (enantiomers) are non-superimposable mirror images. They occur when a molecule has a chiral centre: a carbon atom attached to four different groups."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Does butan-2-ol have a chiral centre?",
+        "Carbon 2 is attached to H, OH, CH₃ and CH₂CH₃. These are four different groups, so it is a chiral centre and butan-2-ol exists as two enantiomers. Butan-1-ol has no carbon with four different groups."
+       ]
+      },
+      {
+       "h": "Explaining physical properties",
+       "p": [
+        "Boiling point depends on the strength of intermolecular forces: carboxylic acids (which form hydrogen-bonded pairs) are above alcohols and amides, which are above aldehydes, ketones and esters (dipole–dipole), which are above alkanes of similar molar mass (dispersion only). Solubility in water falls as the hydrocarbon chain lengthens. Viscosity rises with chain length and with hydrogen bonding."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Including the carbon of –COOH or –CHO as a substituent instead of carbon 1 of the chain. Saying a molecule shows cis–trans isomerism when one double-bond carbon has two identical groups. Counting CH₃ and CH₂CH₃ as the same group."
+       ]
+      }
      ]
     },
     {
@@ -406,6 +698,44 @@
        "a": 1,
        "e": "All reactant atoms end up in one product."
       }
+     ],
+     "notes": [
+      {
+       "h": "Reaction types",
+       "p": [
+        "Substitution: one atom or group replaces another. Alkane + Cl₂ in UV light gives a chloroalkane and HCl. A haloalkane with NaOH(aq) gives an alcohol; with NH₃ it gives an amine.",
+        "Addition: atoms add across a C=C double bond. With H₂ and a metal catalyst: alkane. With Br₂ or Cl₂: dihaloalkane. With HCl or HBr: haloalkane. With steam and an acid catalyst: alcohol.",
+        "Oxidation: a primary alcohol with acidified dichromate or permanganate gives an aldehyde, then a carboxylic acid. A secondary alcohol gives a ketone. A tertiary alcohol is not oxidised by these reagents. The orange dichromate turns green as it is reduced.",
+        "Condensation: two molecules join and release a small molecule. Carboxylic acid + alcohol gives an ester and water (concentrated H₂SO₄ catalyst). Carboxylic acid + amine gives an amide and water. Hydrolysis is the reverse: water splits an ester into its acid and alcohol."
+       ]
+      },
+      {
+       "h": "Designing a pathway",
+       "p": [
+        "Work backwards from the product. Identify its functional group, ask what makes that group, and repeat until you reach the starting material.",
+        "Example: make ethyl ethanoate from ethene. The ester needs ethanol and ethanoic acid. Step 1: ethene + H₂O (H₃PO₄ catalyst, heat) → ethanol. Step 2: oxidise part of the ethanol with acidified Cr₂O₇²⁻ → ethanoic acid. Step 3: ethanol + ethanoic acid (concentrated H₂SO₄, heat) ⇌ ethyl ethanoate + water."
+       ]
+      },
+      {
+       "h": "Yield and atom economy",
+       "p": [
+        "\\(\\%\\ \\text{yield} = \\dfrac{\\text{actual yield}}{\\text{theoretical yield}} \\times 100\\). For a multi-step pathway the overall yield is the product of the yields of each step: steps of 80% and 60% give \\(0.80 \\times 0.60 = 48\\%\\).",
+        "Atom economy measures how much of the reactants’ mass ends up in the desired product. Addition reactions have 100% atom economy; substitution and condensation reactions are lower because they form a by-product. A reaction can have a high yield and still a poor atom economy."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Find the atom economy for making ethanol (M = 46.0) by fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (M of glucose = 180.0).",
+        "\\(\\text{Atom economy} = \\dfrac{2 \\times 46.0}{180.0} \\times 100 = 51.1\\%\\). Hydration of ethene gives 100%, although it relies on a fossil-fuel feedstock."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Leaving out reagents and conditions on the arrow. Oxidising a tertiary alcohol. Writing esterification with a single arrow or without water as a product. Adding the percentage yields of steps instead of multiplying."
+       ]
+      }
      ]
     },
     {
@@ -450,6 +780,48 @@
        "q": "Why does an enzyme stop working at very low pH?",
        "a": "Changes in pH disrupt the hydrogen bonds and ionic interactions holding the tertiary structure, so the active site changes shape (denatures) and the substrate no longer fits.",
        "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "Proteins",
+       "p": [
+        "Amino acids have an amino group and a carboxyl group on the same carbon, plus a side chain that varies. In solution they exist as zwitterions, with –NH₃⁺ and –COO⁻. At low pH the molecule carries an overall positive charge; at high pH, negative.",
+        "Primary structure: the order of amino acids, held by covalent peptide (amide) links. Secondary structure: coils (alpha helices) and pleated sheets held by hydrogen bonds between the C=O and N–H groups of the backbone. Tertiary structure: the overall three-dimensional shape, held by interactions between side chains: hydrogen bonds, dipole–dipole and dispersion forces, ionic attractions and covalent disulfide bridges. Quaternary structure: two or more chains together."
+       ]
+      },
+      {
+       "h": "Enzymes",
+       "p": [
+        "Enzymes are protein catalysts. The substrate fits the active site (lock-and-key or induced fit), which is why each enzyme is specific. Heating above the optimum temperature, or changing pH, disrupts the bonds holding the tertiary structure; the active site changes shape and the enzyme is denatured. Denaturation leaves the primary structure intact. Hydrolysis, in contrast, breaks the peptide links.",
+        "Low temperatures slow enzymes without denaturing them. Coenzymes are small molecules that bind to an enzyme and help it function; many vitamins act this way."
+       ]
+      },
+      {
+       "h": "Carbohydrates",
+       "p": [
+        "Monosaccharides such as glucose join by condensation, forming glycosidic (ether) links and water. Starch is the energy store of plants: amylose is a mostly unbranched coil and amylopectin is branched. Glycogen is the more highly branched store in animals. Cellulose is a straight chain made of a different form of glucose; its chains hydrogen-bond into strong fibres, and humans lack the enzyme to hydrolyse it, so it acts as dietary fibre.",
+        "Glycaemic index (GI) ranks how quickly a food raises blood glucose. Amylopectin and simple sugars are digested quickly (high GI); amylose is digested slowly (lower GI)."
+       ]
+      },
+      {
+       "h": "Fats and oils",
+       "p": [
+        "A triglyceride forms when glycerol reacts with three fatty acids, making three ester links and three water molecules. Saturated fatty acids have no C=C bonds; their straight chains pack closely, giving stronger dispersion forces and higher melting points (fats, solid). Unsaturated chains have C=C bonds that create kinks, so they pack poorly and melt lower (oils, liquid). Omega-3 and omega-6 fatty acids are essential: the body cannot make them.",
+        "Oxidative rancidity: oxygen attacks the C=C bonds of unsaturated fats, producing unpleasant-smelling compounds. Antioxidants such as vitamin C and vitamin E slow it by being oxidised in preference."
+       ]
+      },
+      {
+       "h": "Vitamins",
+       "p": [
+        "Vitamin C has several hydroxyl groups, forms hydrogen bonds with water and is water-soluble, so it is not stored and must be eaten regularly. Vitamin D is mostly non-polar hydrocarbon, so it is fat-soluble and stored in fatty tissue."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Calling the link in a protein an ester link. Saying denaturation breaks peptide bonds. Saying low temperature denatures enzymes. Confusing the energy content of food (how much) with glycaemic index (how fast)."
+       ]
       }
      ]
     }
@@ -518,6 +890,54 @@
        "q": "What does adding bromine water show about an organic compound?",
        "a": "If the orange colour disappears quickly, the compound has a C=C double bond (an addition reaction occurs).",
        "e": ""
+      }
+     ],
+     "notes": [
+      {
+       "h": "What each technique tells you",
+       "p": [
+        "Mass spectrometry: molar mass and fragments. Infrared spectroscopy: the functional groups present. Carbon-13 NMR: the number of different carbon environments. Proton NMR: the number of hydrogen environments, how many hydrogens are in each, and how many hydrogens are on neighbouring carbons. Chromatography: separation, identification and quantity. Structure questions give several spectra together, and each one narrows the possibilities."
+       ]
+      },
+      {
+       "h": "Mass spectrometry",
+       "p": [
+        "Molecules are ionised and broken into positively charged fragments, which are separated by mass-to-charge ratio (m/z). The peak with the highest significant m/z is the molecular ion and gives the relative molecular mass. The tallest peak is the base peak, the most abundant fragment. Fragments are written with a positive charge: a peak at m/z 15 is CH₃⁺, 29 is CH₃CH₂⁺ or CHO⁺, 45 is COOH⁺. A difference of 15 from the molecular ion suggests loss of a methyl group. Small peaks one unit above the molecular ion come from carbon-13."
+       ]
+      },
+      {
+       "h": "Infrared spectroscopy",
+       "p": [
+        "Covalent bonds absorb infrared radiation at characteristic wavenumbers and vibrate more strongly. Use the data book ranges. The most useful absorptions: a broad O–H band for alcohols; a very broad O–H band overlapping the C–H region for carboxylic acids; a strong, sharp C=O band near 1700 cm⁻¹; N–H bands for amines and amides. The region below about 1400 cm⁻¹ is the fingerprint region, unique to each compound."
+       ]
+      },
+      {
+       "h": "NMR spectroscopy",
+       "p": [
+        "Carbon-13 NMR: each peak is one carbon environment; chemical shift indicates the type of carbon. Use symmetry: propan-2-ol has two carbon environments, propan-1-ol has three.",
+        "Proton NMR gives four pieces of information. Number of signals: number of hydrogen environments. Chemical shift: the type of environment. Relative peak area: the ratio of hydrogens in each environment. Splitting: a signal is split into n + 1 peaks by n hydrogens on adjacent carbons. Hydrogens on O–H usually appear as a singlet."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "A compound C₄H₈O₂ has an IR band near 1740 cm⁻¹ and no broad O–H band. Its proton NMR shows a singlet (3H) at 3.7 ppm, a quartet (2H) at 2.3 ppm and a triplet (3H) at 1.1 ppm.",
+        "The C=O band without an O–H band suggests an ester. A quartet (2H) with a triplet (3H) is an ethyl group, CH₃CH₂–. The singlet (3H) is a CH₃ with no hydrogens on the neighbouring atom. Two esters fit: methyl propanoate, CH₃CH₂COOCH₃, and ethyl ethanoate, CH₃COOCH₂CH₃. The chemical shifts decide. A singlet at 3.7 ppm is a CH₃ attached to oxygen, and a quartet at 2.3 ppm is a CH₂ next to C=O, so the compound is methyl propanoate. In ethyl ethanoate the quartet would be near 4.1 ppm (CH₂ attached to oxygen) and the singlet near 2.0 ppm.",
+        "Check: methyl propanoate has four carbon environments, so its carbon-13 spectrum should show four peaks, and its molecular ion should be at m/z 88. Always confirm the final structure against every piece of data."
+       ]
+      },
+      {
+       "h": "Chromatography and titration",
+       "p": [
+        "In HPLC the sample is pumped at high pressure through a column packed with a stationary phase. Components that are more strongly attracted to the stationary phase take longer to pass through and have longer retention times. Retention time identifies a component when compared with a standard under the same conditions. The area under a peak is proportional to the amount; a calibration curve from standards gives the concentration.",
+        "Volumetric analysis, including redox titrations, measures the amount of a substance precisely. Purity can also be checked by melting point: an impure solid melts lower and over a wider range."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Using the tallest peak as the molecular ion. Leaving the positive charge off a fragment. Counting hydrogens on the same carbon when working out splitting. Reading a concentration off a calibration curve beyond its range."
+       ]
       }
      ]
     }
