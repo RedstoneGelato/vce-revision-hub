@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>VCE Revision Hub</title>
+<meta name="description" content="Learn and revise VCE Chemistry, English Language, Accounting, Mathematical Methods and General Mathematics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="styles.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#home">VCE Revision Hub</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home" data-nav="home">Subjects</a>
+      <a href="#review" data-nav="review">Review <span class="badge" id="due-badge" hidden></span></a>
+      <a href="#mix" data-nav="mix">Mixed quiz</a>
+      <a href="#errors" data-nav="errors">Error log</a>
+      <a href="#progress" data-nav="progress">Progress</a>
+      <a href="#tutor" data-nav="tutor" id="tutor-link" hidden>Tutor</a>
+    </nav>
+    <div class="account" id="account"></div>
+  </div>
+</header>
+<main id="app" class="wrap" tabindex="-1">
+  <p class="muted">Loading…</p>
+</main>
+<footer class="foot wrap">
+  <p>Notes summarise the VCE study designs and class textbooks. Always check against your teacher’s notes and the VCAA data book or formula sheet.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
