@@ -86,7 +86,9 @@ main.wrap { padding-block: 28px 40px; display: flex; flex-direction: column; gap
 .unit:hover { outline: 2px solid var(--c, var(--brand)); }
 .unit strong { font-weight: 600; }
 .bar { height: 6px; border-radius: 99px; background: var(--line); overflow: hidden; width: 90px; flex: none; }
-.bar i { display: block; height: 100%; background: var(--c, var(--brand)); }
+.bar { position: relative; }
+.bar i { position: absolute; inset: 0 auto 0 0; background: var(--c, var(--brand)); }
+.bar i.tried { opacity: 0.35; }
 .c-chem { --c: var(--chem); } .c-eng { --c: var(--eng); } .c-acc { --c: var(--acc); } .c-meth { --c: var(--meth); } .c-gen { --c: var(--gen); }
 
 /* topic list */
