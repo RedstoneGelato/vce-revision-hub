@@ -224,6 +224,8 @@ function runQuiz(qids, title, back) {
 }
 
 /* ---------- views ---------- */
+const pbar = (tried, mastered, total) => el("span", { class: "bar", "aria-hidden": "true" },
+  el("i", { class: "tried", style: `width:${total ? (100 * tried) / total : 0}%` }), el("i", { style: `width:${total ? (100 * mastered) / total : 0}%` }));
 function viewHome() {
   const due = dueList().length, errs = openErrors().length;
   const week = Object.entries(state.log).filter(([d]) => d >= isoDay(today() - 6)).reduce((a, [, n]) => a + n, 0);
@@ -234,8 +236,8 @@ function viewHome() {
       const uk = s.key + u.key; if (!content[uk]) return el("p", { class: "muted small" }, `${u.name}: content not loaded`);
       const st = unitStats(uk);
       return el("a", { class: "unit", href: `#u-${uk}` },
-        el("span", {}, el("strong", {}, u.name), el("br"), el("span", { class: "muted small" }, `${st.mastered}/${st.total} mastered${st.due ? ` · ${st.due} due` : ""}`)),
-        el("span", { class: "bar", "aria-hidden": "true" }, el("i", { style: `width:${st.total ? (100 * st.mastered) / st.total : 0}%` })));
+        el("span", {}, el("strong", {}, u.name), el("br"), el("span", { class: "muted small" }, `${st.seen}/${st.total} tried · ${st.mastered} mastered${st.due ? ` · ${st.due} due` : ""}`)),
+        pbar(st.seen, st.mastered, st.total));
     })))));
   show(
     el("section", { class: "hello" },
@@ -243,6 +245,7 @@ function viewHome() {
       el("div", { class: "stats" },
         el("div", { class: "stat" }, el("b", {}, due), el("span", {}, "Due today")),
         el("div", { class: "stat" }, el("b", {}, week), el("span", {}, "Answered this week")),
+        el("div", { class: "stat" }, el("b", {}, Object.keys(state.cards).length), el("span", {}, "Questions tried")),
         el("div", { class: "stat" }, el("b", {}, mastered), el("span", {}, "Mastered")),
         el("div", { class: "stat" }, el("b", {}, errs), el("span", {}, "Open errors")))),
     due ? el("div", { class: "panel" }, el("p", {}, `You have ${due} question${due > 1 ? "s" : ""} due for review. Start there: it is the fastest way to remember more.`), el("div", { class: "row" }, el("a", { class: "btn primary", href: "#review" }, "Start review"))) : null,
@@ -256,13 +259,13 @@ function viewUnit(uk) {
   show(
     el("div", { class: "crumbs" }, el("a", { href: "#home" }, "Subjects"), " / ", s.name),
     el("section", { class: "hello " + s.cls },
-      el("div", {}, el("h1", {}, `${s.name} ${unitName(uk)}`), el("p", { class: "muted" }, `${st.total} questions · ${st.mastered} mastered${st.acc != null ? ` · ${st.acc}% correct so far` : ""}`)),
+      el("div", {}, el("h1", {}, `${s.name} ${unitName(uk)}`), el("p", { class: "muted" }, `${st.total} questions · ${st.seen} tried · ${st.mastered} mastered${st.acc != null ? ` · ${st.acc}% correct so far` : ""}`)),
       el("div", { class: "row" }, el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...all]).slice(0, 20), `${s.name} ${unitName(uk)}: mixed 20`, `#u-${uk}`) }, "Quiz 20 from this unit"))),
     ...c.aos.map((a) => el("section", { class: "aos " + s.cls }, el("h3", {}, a.name),
       el("div", { class: "topics" }, a.topics.map((t) => {
-        const ids = topicQids(uk, t), m = ids.filter((q) => state.cards[q]?.b >= 3).length, d = ids.filter((q) => state.cards[q] && state.cards[q].due <= today()).length;
+        const ids = topicQids(uk, t), n = ids.filter((q) => state.cards[q]).length, m = ids.filter((q) => state.cards[q]?.b >= 3).length, d = ids.filter((q) => state.cards[q] && state.cards[q].due <= today()).length;
         return el("a", { class: "topic", href: `#t-${uk}-${t.id}` }, el("h3", {}, t.title),
-          el("div", { class: "meta" }, el("span", {}, `${m}/${ids.length} mastered${d ? ` · ${d} due` : ""}`), el("span", { class: "bar", "aria-hidden": "true" }, el("i", { style: `width:${(100 * m) / ids.length}%` }))));
+          el("div", { class: "meta" }, el("span", {}, `${n}/${ids.length} tried · ${m} mastered${d ? ` · ${d} due` : ""}`), pbar(n, m, ids.length)));
       })))));
 }
 function viewTopic(uk, tid) {
@@ -397,6 +400,8 @@ function route() {
   window.scrollTo(0, 0);
 }
 window.addEventListener("hashchange", route);
+// A link to the page you are already on fires no hashchange (e.g. Back after a quiz), so re-render by hand.
+document.addEventListener("click", (e) => { const a = e.target.closest?.("a[href^='#']"); if (a && a.getAttribute("href") === (location.hash || "#home")) route(); });
 window.addEventListener("storage", (e) => { if (e.key === LS) { state = loadLocal() || state; updateBadge(); } });
 
 await loadContent();
