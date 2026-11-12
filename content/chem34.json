@@ -56,6 +56,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with moles, balancing equations (including combustion) and the families of organic compounds from Units 1 and 2.",
+        "The big idea: fuels store chemical energy, and burning them releases it. To choose between fuels you need to measure how much energy each releases, and weigh that against where the fuel comes from and what it emits. This lesson gives you the vocabulary and the equations; the next shows how the energy is measured."
+       ]
+      },
+      {
        "h": "Energy changes in reactions",
        "p": [
         "Breaking bonds absorbs energy and forming bonds releases it. In an exothermic reaction more energy is released forming the products’ bonds than was absorbed breaking the reactants’ bonds, so the products have lower chemical energy and \\(\\Delta H\\) is negative. Combustion is always exothermic. An energy profile diagram shows the energy of reactants and products, the activation energy and \\(\\Delta H\\)."
@@ -73,6 +80,12 @@
        "p": [
         "The \\(\\Delta H\\) value belongs to the equation as written, in the states shown. Doubling the coefficients doubles \\(\\Delta H\\); reversing the equation changes its sign.",
         "Example: \\(\\mathrm{CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(l)}\\), \\(\\Delta H = -890\\ \\mathrm{kJ\\ mol^{-1}}\\). Burning 2 mol of methane releases 1780 kJ."
+       ],
+       "check": [
+        [
+         "For N₂(g) + 3H₂(g) → 2NH₃(g), ΔH = −92 kJ mol⁻¹. What is ΔH for 4NH₃(g) → 2N₂(g) + 6H₂(g)?",
+         "Reversing changes the sign and doubling doubles the value: +184 kJ mol⁻¹."
+        ]
        ]
       },
       {
@@ -86,6 +99,40 @@
        "h": "Food as fuel",
        "p": [
         "Carbohydrates, fats and proteins are oxidised in cellular respiration to release energy. Glucose: C₆H₁₂O₆(aq) + 6O₂(g) → 6CO₂(g) + 6H₂O(l). Fats release roughly twice as much energy per gram as carbohydrates because they contain less oxygen, so more of the molecule can be oxidised."
+       ]
+      },
+      {
+       "h": "Writing combustion equations",
+       "p": [
+        "Complete combustion of any fuel containing C, H and possibly O gives only CO₂ and H₂O. Balance carbon first, then hydrogen, then oxygen, remembering to count any oxygen already in the fuel.",
+        "Octane: 2C₈H₁₈(l) + 25O₂(g) → 16CO₂(g) + 18H₂O(l). Ethanol: C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(l). Hydrogen: 2H₂(g) + O₂(g) → 2H₂O(l).",
+        "Incomplete combustion happens when oxygen is limited. Carbon monoxide or carbon (soot) forms in place of some CO₂, and less energy is released. Example: 2CH₄(g) + 3O₂(g) → 2CO(g) + 4H₂O(l). Carbon monoxide is toxic because it binds to haemoglobin in place of oxygen."
+       ],
+       "check": [
+        [
+         "Write the balanced equation for the complete combustion of propan-1-ol, C₃H₇OH.",
+         "2C₃H₇OH(l) + 9O₂(g) → 6CO₂(g) + 8H₂O(l)."
+        ]
+       ]
+      },
+      {
+       "h": "Energy per mole, per gram and per litre",
+       "p": [
+        "The data book gives molar heats of combustion in kJ mol⁻¹. To compare fuels by mass, divide by the molar mass. Methane: \\(\\dfrac{890}{16.0} = 55.6\\ \\mathrm{kJ\\ g^{-1}}\\). Ethanol: \\(\\dfrac{1360}{46.0} = 29.6\\ \\mathrm{kJ\\ g^{-1}}\\). Ethanol releases less energy per gram because it is already partly oxidised: it contains an oxygen atom.",
+        "For liquid fuels, energy per litre matters for storage: multiply the energy per gram by the density in g L⁻¹. Hydrogen has the highest energy per gram of any fuel (about 141 kJ g⁻¹) but, as a gas, a very low energy per litre, which is why storing it is a challenge."
+       ],
+       "check": [
+        [
+         "Propane has a molar heat of combustion of 2220 kJ mol⁻¹ and a molar mass of 44.0 g mol⁻¹. What is its heat of combustion in kJ g⁻¹?",
+         "2220 ÷ 44.0 = 50.5 kJ g⁻¹."
+        ]
+       ]
+      },
+      {
+       "h": "Comparing emissions",
+       "p": [
+        "Example: which releases more CO₂ per kJ of energy, methane or octane? Methane: 1 mol gives 1 mol CO₂ and 890 kJ, so \\(\\dfrac{44.0}{890} = 0.0494\\ \\mathrm{g\\ kJ^{-1}}\\). Octane (heat of combustion 5460 kJ mol⁻¹): 1 mol gives 8 mol CO₂, so \\(\\dfrac{8 \\times 44.0}{5460} = 0.0645\\ \\mathrm{g\\ kJ^{-1}}\\). Natural gas emits less CO₂ for the same energy.",
+        "Photosynthesis, 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, is endothermic and stores solar energy in plants. Respiration and the combustion of biofuels release it again. That is the basis for describing biofuels as renewable."
        ]
       },
       {
@@ -142,6 +189,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know q = mcΔT and thermochemical equations (previous lesson), and be confident with moles.",
+        "The big idea: we cannot measure the energy in a chemical bond directly, but we can let a reaction heat some water and measure the temperature change. Calorimetry is the set of techniques for doing that well, and for working out how far an experimental value is from the true one."
+       ]
+      },
+      {
        "h": "Measuring energy",
        "p": [
         "Calorimetry measures the energy change of a reaction by the temperature change it causes in a known mass of water or in a calibrated calorimeter. The simplest method burns a fuel under a can of water. Much of the heat escapes, so the result is too low."
@@ -159,6 +213,12 @@
        "p": [
         "A calorimeter’s calibration factor is the energy needed to raise its temperature by 1 °C. Electrical calibration passes a known current at a known voltage for a known time: \\(E = VIt\\) and \\(\\mathrm{CF} = \\dfrac{VIt}{\\Delta T}\\). Chemical calibration uses a reaction with a known \\(\\Delta H\\). Then for the reaction being studied, \\(q = \\mathrm{CF} \\times \\Delta T\\).",
         "Solution calorimeters suit reactions in water such as dissolving and neutralisation. Bomb calorimeters are sealed, pressurised with oxygen and surrounded by water; they suit combustion."
+       ],
+       "check": [
+        [
+         "A calorimeter is calibrated with 6.00 V and 2.00 A for 100 s and the temperature rises 1.50 °C. Find the calibration factor.",
+         "E = 6.00 × 2.00 × 100 = 1200 J. CF = 1200 ÷ 1.50 = 800 J °C⁻¹."
+        ]
        ]
       },
       {
@@ -172,6 +232,40 @@
        "h": "Temperature–time graphs",
        "p": [
         "In a poorly insulated calorimeter the temperature begins to fall before the reaction finishes, so the highest reading understates the true rise. Extrapolate the cooling line back to the time the reaction started to estimate the temperature change that would have occurred with no heat loss."
+       ]
+      },
+      {
+       "h": "Stoichiometry with energy",
+       "p": [
+        "A thermochemical equation links moles to energy, so energy can be treated like another product. Example: how much energy is released when 100 g of propane burns? \\(\\mathrm{C_3H_8 + 5O_2 \\rightarrow 3CO_2 + 4H_2O},\\ \\Delta H = -2220\\ \\mathrm{kJ\\ mol^{-1}}\\). \\(n = \\dfrac{100}{44.0} = 2.27\\ \\mathrm{mol}\\). Energy \\(= 2.27 \\times 2220 = 5.05 \\times 10^{3}\\ \\mathrm{kJ}\\).",
+        "Working backwards: what mass of methane must burn to heat 1.00 kg of water from 20 °C to 100 °C, if no heat is lost? \\(q = 1000 \\times 4.18 \\times 80 = 334\\ \\mathrm{kJ}\\). \\(n = \\dfrac{334}{890} = 0.376\\ \\mathrm{mol}\\), so \\(m = 0.376 \\times 16.0 = 6.01\\ \\mathrm{g}\\). In practice more is needed because heat is lost."
+       ],
+       "check": [
+        [
+         "The molar heat of combustion of hydrogen is 286 kJ mol⁻¹. How much energy is released by burning 10.0 g of H₂ (M = 2.0)?",
+         "n = 5.0 mol, so energy = 5.0 × 286 = 1430 kJ, or 1.43 × 10³ kJ."
+        ]
+       ]
+      },
+      {
+       "h": "Solution calorimetry: a full example",
+       "p": [
+        "50.0 mL of 1.00 M HCl is mixed with 50.0 mL of 1.00 M NaOH in an insulated cup. The temperature rises from 21.0 °C to 27.8 °C. Find the enthalpy of neutralisation.",
+        "Total mass of solution ≈ 100 g (assuming the density of water). \\(q = 100 \\times 4.18 \\times 6.8 = 2842\\ \\mathrm{J} = 2.84\\ \\mathrm{kJ}\\). \\(n(\\mathrm{H_2O\\ formed}) = 0.0500 \\times 1.00 = 0.0500\\ \\mathrm{mol}\\). \\(\\Delta H = -\\dfrac{2.84}{0.0500} = -56.8\\ \\mathrm{kJ\\ mol^{-1}}\\).",
+        "Assumptions to state: the solution has the same density and specific heat capacity as water; no heat is lost to the surroundings or absorbed by the cup."
+       ],
+       "check": [
+        [
+         "Dissolving a salt lowers the temperature of the water. Is ΔH positive or negative?",
+         "Positive. The reaction absorbed heat from the water, so it is endothermic."
+        ]
+       ]
+      },
+      {
+       "h": "Why calibrate, and how good is the result?",
+       "p": [
+        "Using q = mcΔT assumes only the water is heated. In a real calorimeter the container, stirrer and thermometer also absorb energy, and some escapes. Calibrating with a known amount of energy measures how the whole apparatus responds, so these effects are built into the calibration factor.",
+        "Typical exam prompts: if the calorimeter is poorly insulated during calibration, the measured ΔT is too small, so the calibration factor comes out too large. If heat is lost during the reaction being studied, ΔT is too small and the calculated energy is too low. Always trace the error through the formula step by step."
        ]
       },
       {
@@ -234,6 +328,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to assign oxidation numbers, balance half-equations in acid and describe a simple galvanic cell (Unit 2 redox).",
+        "The big idea: a spontaneous redox reaction releases energy. If the oxidation and the reduction are kept in separate places, the electrons must flow through a wire, and the energy comes out as electricity. The electrochemical series lets you predict which reactions are spontaneous, which electrode is which, and the voltage."
+       ]
+      },
+      {
        "h": "Using the electrochemical series",
        "p": [
         "The series lists half-equations as reductions, in order of E° from most positive at the top to most negative at the bottom. Oxidising agents are on the left; the strongest is at the top left. Reducing agents are on the right; the strongest is at the bottom right.",
@@ -246,6 +347,12 @@
         "A cell is built from Ag⁺/Ag (E° = +0.80 V) and Zn²⁺/Zn (E° = −0.76 V) half-cells.",
         "Ag⁺ is the stronger oxidising agent, so it is reduced at the cathode (+): Ag⁺(aq) + e⁻ → Ag(s). Zinc is oxidised at the anode (−): Zn(s) → Zn²⁺(aq) + 2e⁻. Overall: Zn(s) + 2Ag⁺(aq) → Zn²⁺(aq) + 2Ag(s). Electrons flow from zinc to silver through the wire.",
         "\\(E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = 0.80 - (-0.76) = 1.56\\ \\mathrm{V}\\). Do not multiply E° values when you multiply a half-equation."
+       ],
+       "check": [
+        [
+         "A cell uses Cu²⁺/Cu (+0.34 V) and Ni²⁺/Ni (−0.25 V). What is the cell voltage and which electrode is the anode?",
+         "0.34 − (−0.25) = 0.59 V. Nickel is the anode: it is the stronger reducing agent and is oxidised."
+        ]
        ]
       },
       {
@@ -265,6 +372,46 @@
        "h": "Green chemistry and electricity",
        "p": [
         "Designing cells with renewable feedstocks, less hazardous materials and better energy efficiency applies green chemistry principles. Using cells that can be recycled supports a circular economy."
+       ]
+      },
+      {
+       "h": "Half-cells and standard conditions",
+       "p": [
+        "A half-cell contains both members of a conjugate redox pair, such as Zn²⁺(aq)/Zn(s). Three types appear: a metal electrode in a solution of its ions; an inert electrode (platinum or graphite) in a solution containing both ions of a pair, such as Fe³⁺(aq)/Fe²⁺(aq); and a gas bubbled over an inert electrode, such as Cl₂(g)/Cl⁻(aq). Inert electrodes are used when neither member of the pair is a solid conductor.",
+        "Standard electrode potentials are measured against the standard hydrogen electrode, H⁺(aq)/H₂(g), which is assigned 0.00 V. A half-cell above it on the series has a greater tendency to be reduced than H⁺."
+       ]
+      },
+      {
+       "h": "Predicting whether a reaction occurs",
+       "p": [
+        "Method: list every species actually present. Find each on the series and decide whether it can act as an oxidising agent (left side) or a reducing agent (right side). A reaction occurs if an oxidising agent is higher on the series than a reducing agent.",
+        "Example: will copper metal react with silver nitrate solution? Ag⁺ (oxidising agent, +0.80 V) is above Cu (reducing agent, +0.34 V), so yes: Cu(s) + 2Ag⁺(aq) → Cu²⁺(aq) + 2Ag(s).",
+        "Example: will copper react with dilute hydrochloric acid? The oxidising agent H⁺ (0.00 V) is below the reducing agent Cu (+0.34 V), so no reaction. Example: can an iron container store nickel(II) sulfate solution? Ni²⁺ (−0.25 V) is above Fe (−0.44 V), so the iron would be oxidised; it is not suitable."
+       ],
+       "check": [
+        [
+         "Will zinc metal react with a solution of iron(II) sulfate? (Fe²⁺/Fe −0.44 V; Zn²⁺/Zn −0.76 V)",
+         "Yes. The oxidising agent Fe²⁺ is higher on the series than the reducing agent Zn: Zn(s) + Fe²⁺(aq) → Zn²⁺(aq) + Fe(s)."
+        ]
+       ]
+      },
+      {
+       "h": "Primary cells",
+       "p": [
+        "A primary cell is a galvanic cell that is discarded when its reactants are used up; the products move away from the electrodes or the reaction cannot be reversed. To analyse an unfamiliar cell, use the half-equations supplied: the oxidation occurs at the anode (negative), the reduction at the cathode (positive), electrons flow from anode to cathode in the external circuit, and ions move in the electrolyte to balance the charge, with anions moving toward the anode."
+       ]
+      },
+      {
+       "h": "Fuel cells in acidic and alkaline electrolytes",
+       "p": [
+        "Acidic electrolyte. Anode: H₂(g) → 2H⁺(aq) + 2e⁻. Cathode: O₂(g) + 4H⁺(aq) + 4e⁻ → 2H₂O(l). Alkaline electrolyte. Anode: H₂(g) + 2OH⁻(aq) → 2H₂O(l) + 2e⁻. Cathode: O₂(g) + 2H₂O(l) + 4e⁻ → 4OH⁻(aq). The overall reaction is the same in both: 2H₂(g) + O₂(g) → 2H₂O(l).",
+        "For a fuel such as methanol in acid: CH₃OH(aq) + H₂O(l) → CO₂(g) + 6H⁺(aq) + 6e⁻ at the anode. Balance with KOHES as usual. The oxidation half-equation always involves the fuel; oxygen is always reduced at the cathode."
+       ],
+       "check": [
+        [
+         "In a hydrogen fuel cell, at which electrode does hydrogen react, and what is its polarity?",
+         "At the anode, where it is oxidised. In a galvanic cell the anode is negative."
+        ]
        ]
       },
       {
@@ -325,6 +472,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should understand exothermic and endothermic reactions and energy profile diagrams.",
+        "The big idea: for particles to react they must collide hard enough and in the right way. Anything that makes successful collisions more frequent makes the reaction faster. This single model explains every factor that affects rate, and it is how chemists speed up the reactions they want."
+       ]
+      },
+      {
        "h": "Collision theory",
        "p": [
         "For a reaction to happen, particles must collide, with energy equal to or greater than the activation energy, and in a suitable orientation. Most collisions are unsuccessful. Reaction rate depends on the number of successful collisions per second."
@@ -347,12 +501,51 @@
        "h": "Catalysts",
        "p": [
         "A catalyst is not consumed, so it does not appear in the overall equation and a small amount can be used repeatedly. It lowers the activation energy of the forward and reverse reactions by the same amount. It does not change ΔH, and it does not change the position of equilibrium or the yield. Its value in industry is that acceptable rates can be reached at lower temperatures, saving energy."
+       ],
+       "check": [
+        [
+         "Does a catalyst change ΔH?",
+         "No. It lowers the activation energy by providing an alternative pathway, but the energies of the reactants and products are unchanged."
+        ]
        ]
       },
       {
        "h": "Measuring rate",
        "p": [
         "Rate is the change in amount of a reactant or product per unit time. It can be followed by the volume of gas produced, the loss of mass as a gas escapes, a colour change or a change in pH. On a graph of amount against time, a steeper gradient means a faster rate; the curve flattens as reactants are used up, and levels off when the limiting reactant runs out."
+       ]
+      },
+      {
+       "h": "Energy profiles in detail",
+       "p": [
+        "On an energy profile, the activation energy \\(E_a\\) is the gap from the reactants up to the peak. The peak is the transition state, where old bonds are partly broken and new ones partly formed. \\(\\Delta H\\) is the gap from reactants to products. For the reverse reaction, \\(E_a(\\text{reverse}) = E_a(\\text{forward}) - \\Delta H\\).",
+        "Example: a reaction has \\(E_a = 120\\ \\mathrm{kJ\\ mol^{-1}}\\) and \\(\\Delta H = -80\\ \\mathrm{kJ\\ mol^{-1}}\\). The activation energy of the reverse reaction is \\(120 - (-80) = 200\\ \\mathrm{kJ\\ mol^{-1}}\\). A catalyst that lowers the forward value to 90 lowers the reverse value to 170; \\(\\Delta H\\) is unchanged."
+       ],
+       "check": [
+        [
+         "A reaction has Eₐ = 50 kJ mol⁻¹ and ΔH = +30 kJ mol⁻¹. What is the activation energy of the reverse reaction?",
+         "50 − 30 = 20 kJ mol⁻¹."
+        ]
+       ]
+      },
+      {
+       "h": "Model answers",
+       "p": [
+        "Question: explain why powdered zinc reacts faster with acid than a lump of the same mass. Answer: “The powder has a much greater surface area, so more zinc atoms are exposed to the acid. Collisions between H⁺ ions and zinc atoms are more frequent, so there are more successful collisions per second and the rate is higher.”",
+        "Question: explain why raising the temperature by 10 °C can roughly double the rate. Answer: “At the higher temperature the particles have greater average kinetic energy. Collisions are slightly more frequent, but more importantly a much greater proportion of collisions have energy equal to or greater than the activation energy, so the frequency of successful collisions increases markedly.”"
+       ]
+      },
+      {
+       "h": "Reading rate graphs",
+       "p": [
+        "For the volume of gas produced against time: the gradient at any point is the rate. The initial gradient is steepest, because the reactant concentration is highest. The curve flattens as the reactant is used up and becomes horizontal when the reaction is complete. The final height depends only on the amount of limiting reactant.",
+        "Compare two experiments. Same amounts but higher temperature or a catalyst: steeper curve, same final height. Half the amount of limiting reactant: half the final height. More concentrated acid in excess with the same mass of metal: steeper curve, same final height, because the metal is limiting."
+       ],
+       "check": [
+        [
+         "A catalyst is added to a reaction producing a gas. How does the graph of gas volume against time change?",
+         "The curve is steeper at the start and levels off sooner, but it reaches the same final volume, because the amount of limiting reactant has not changed."
+        ]
        ]
       },
       {
@@ -415,6 +608,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should understand reaction rate and collision theory, and be confident with concentration calculations.",
+        "The big idea: many reactions do not go to completion. They run in both directions at once until the two directions balance. The equilibrium constant tells you where that balance lies, and Le Chatelier’s principle tells you how it moves when conditions change. Industry uses both to get as much product as possible."
+       ]
+      },
+      {
        "h": "What equilibrium means",
        "p": [
         "In a closed system a reversible reaction reaches a state where the forward and reverse reactions are happening at the same rate. Concentrations then stay constant, although both reactions continue. Equilibrium does not mean the amounts of reactants and products are equal."
@@ -438,12 +638,64 @@
        "p": [
         "When a change is made to a system at equilibrium, the system shifts to partially oppose the change. Adding a reactant: the forward reaction is favoured, using some of what was added. Removing a product: the forward reaction is favoured. Decreasing the volume (raising the pressure): the system shifts to the side with fewer gas particles. Adding water to an aqueous equilibrium: shifts to the side with more dissolved particles. Raising the temperature: the endothermic direction is favoured, and K changes. Adding a catalyst or an inert gas at constant volume: no shift.",
         "“Partially” matters. If a reactant is added, its concentration ends up higher than before the change, even though some has reacted."
+       ],
+       "check": [
+        [
+         "For N₂O₄(g) ⇌ 2NO₂(g), ΔH > 0, what happens to the amount of NO₂ when the mixture is cooled?",
+         "The system favours the exothermic (reverse) direction, so the amount of NO₂ decreases and K decreases."
+        ]
        ]
       },
       {
        "h": "Rate against yield in industry",
        "p": [
         "For an exothermic reaction, a low temperature gives a high equilibrium yield but a slow rate. Industry uses a moderate (compromise) temperature with a catalyst. High pressure improves yield where there are fewer gas particles on the product side, and it also increases rate, but it costs more in equipment and energy. Removing product and recycling unreacted gases improves overall yield and atom economy."
+       ]
+      },
+      {
+       "h": "How equilibrium is reached",
+       "p": [
+        "Start with only reactants. The forward reaction is fast at first, because reactant concentrations are high, and slows as they are used. The reverse reaction starts at zero and speeds up as products build up. Eventually the two rates are equal. From then on, concentrations do not change, although both reactions continue. On a concentration–time graph the lines become horizontal; on a rate–time graph the two lines meet.",
+        "The same equilibrium position is reached whether you start from the reactants or from the products, provided the temperature is the same."
+       ]
+      },
+      {
+       "h": "Calculating and using K: more examples",
+       "p": [
+        "Example 1: for \\(\\mathrm{H_2(g) + I_2(g) \\rightleftharpoons 2HI(g)}\\), an equilibrium mixture in a 2.0 L vessel contains 0.40 mol H₂, 0.40 mol I₂ and 2.8 mol HI. Concentrations: 0.20, 0.20 and 1.4 M. \\(K = \\dfrac{1.4^2}{0.20 \\times 0.20} = 49\\). There are no units here because they cancel. Always convert moles to concentrations first.",
+        "Example 2: using Q. For the same reaction at the same temperature, a mixture has \\([\\mathrm{H_2}] = [\\mathrm{I_2}] = 0.50\\ \\mathrm{M}\\) and \\([\\mathrm{HI}] = 1.0\\ \\mathrm{M}\\). \\(Q = \\dfrac{1.0^2}{0.25} = 4.0\\). Since \\(Q < K\\), the forward reaction is favoured until Q rises to 49.",
+        "Example 3: units. For \\(\\mathrm{N_2 + 3H_2 \\rightleftharpoons 2NH_3}\\), \\(K = \\dfrac{[\\mathrm{NH_3}]^2}{[\\mathrm{N_2}][\\mathrm{H_2}]^3}\\) has units \\(\\mathrm{M^{-2}}\\)."
+       ],
+       "check": [
+        [
+         "For 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), write the expression for K.",
+         "K = [SO₃]² ÷ ([SO₂]²[O₂])."
+        ]
+       ]
+      },
+      {
+       "h": "Explaining a shift with collision theory",
+       "p": [
+        "Le Chatelier’s principle predicts the direction; rates explain it. Adding a reactant raises its concentration, so the forward reaction becomes faster than the reverse. More product forms, which speeds up the reverse reaction, until the rates are equal again at new concentrations.",
+        "Halving the volume doubles all gas concentrations. The reaction with more reacting particles speeds up more, so the net change is toward the side with fewer gas particles. Raising the temperature speeds up both reactions, but the endothermic direction speeds up more, so K changes."
+       ]
+      },
+      {
+       "h": "Concentration–time graphs",
+       "p": [
+        "A substance added or removed: a vertical jump in that one line, then all lines curve to new levels. Volume change: all gas concentrations jump together (up for compression), then adjust. Temperature change: no jump; all lines curve gradually from the moment of change. Catalyst added to a system at equilibrium: no change at all. The amounts by which the lines move during the adjustment follow the mole ratio of the equation."
+       ],
+       "check": [
+        [
+         "On a concentration–time graph, all the lines begin to curve at the same moment with no sudden jump. What change was made?",
+         "The temperature was changed."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: an industrial process",
+       "p": [
+        "Ammonia: N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH = −92 kJ mol⁻¹. Yield is favoured by low temperature (exothermic) and high pressure (four gas particles become two). Rate is favoured by high temperature, high pressure and a catalyst. The process uses a moderate temperature of about 400 to 450 °C as a compromise, high pressure, an iron catalyst, removal of ammonia by cooling it to a liquid, and recycling of unreacted gases."
        ]
       },
       {
@@ -506,6 +758,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with galvanic cells and the electrochemical series.",
+        "The big idea: electricity can force a chemical reaction to run backwards, in the non-spontaneous direction. This is how reactive metals are extracted, how objects are electroplated, how batteries are recharged and how green hydrogen is made."
+       ]
+      },
+      {
        "h": "Galvanic and electrolytic cells compared",
        "p": [
         "A galvanic cell converts chemical energy to electrical energy through a spontaneous reaction. An electrolytic cell uses electrical energy from a power supply to force a non-spontaneous reaction. In both, oxidation occurs at the anode and reduction at the cathode. The polarity is opposite: in an electrolytic cell the anode is positive (connected to the positive terminal) and the cathode is negative.",
@@ -542,6 +801,53 @@
        "h": "Hydrogen production",
        "p": [
         "Electrolysis of water gives hydrogen at the cathode and oxygen at the anode. If the electricity comes from renewable sources, the product is called green hydrogen. Polymer electrolyte membrane electrolysers are one technology for this, and artificial photosynthesis is being developed to use sunlight to split water directly."
+       ]
+      },
+      {
+       "h": "Setting up an electrolytic cell",
+       "p": [
+        "A power supply pushes electrons onto one electrode, making it negative. Positive ions are attracted to it and are reduced, so it is the cathode. The other electrode is positive; reducing agents give up electrons there, so it is the anode. The applied voltage must be greater than the voltage the reverse (galvanic) reaction would produce.",
+        "Inert electrodes (graphite, platinum) do not take part. A reactive metal anode may itself be oxidised: with a copper anode in copper(II) sulfate solution, Cu(s) → Cu²⁺(aq) + 2e⁻ occurs at the anode in preference to water."
+       ],
+       "check": [
+        [
+         "In an electrolytic cell, what is the polarity of the cathode and what happens there?",
+         "The cathode is negative, and reduction occurs there."
+        ]
+       ]
+      },
+      {
+       "h": "Worked examples: predicting products",
+       "p": [
+        "Molten magnesium chloride with inert electrodes. Species: Mg²⁺ and Cl⁻ only. Cathode: Mg²⁺(l) + 2e⁻ → Mg(l). Anode: 2Cl⁻(l) → Cl₂(g) + 2e⁻.",
+        "Aqueous copper(II) sulfate with inert electrodes. Species: Cu²⁺, SO₄²⁻, H₂O. Oxidising agents: Cu²⁺ (+0.34 V) and H₂O (−0.83 V); the stronger is Cu²⁺, so Cu²⁺(aq) + 2e⁻ → Cu(s) at the cathode. Reducing agent: water, so 2H₂O(l) → O₂(g) + 4H⁺(aq) + 4e⁻ at the anode. The solution becomes more acidic and its blue colour fades.",
+        "Aqueous potassium iodide. Cathode: water is a stronger oxidising agent than K⁺, so 2H₂O(l) + 2e⁻ → H₂(g) + 2OH⁻(aq). Anode: I⁻ (+0.54 V) is a stronger reducing agent than water (+1.23 V), so 2I⁻(aq) → I₂(aq) + 2e⁻."
+       ],
+       "check": [
+        [
+         "What is produced at the cathode when aqueous sodium sulfate is electrolysed with inert electrodes?",
+         "Hydrogen gas (and hydroxide ions). Water is a stronger oxidising agent than Na⁺."
+        ]
+       ]
+      },
+      {
+       "h": "Electroplating and electrorefining",
+       "p": [
+        "To plate an object with silver, make the object the cathode and a piece of silver the anode, in a solution containing Ag⁺. At the cathode Ag⁺(aq) + e⁻ → Ag(s) coats the object; at the anode Ag(s) → Ag⁺(aq) + e⁻ replaces the ions, so the concentration of the solution stays constant."
+       ]
+      },
+      {
+       "h": "More Faraday calculations",
+       "p": [
+        "Finding time: how long must 5.00 A flow to deposit 2.70 g of aluminium from molten \\(\\mathrm{Al_2O_3}\\)? \\(n(\\mathrm{Al}) = \\dfrac{2.70}{27.0} = 0.100\\ \\mathrm{mol}\\). \\(\\mathrm{Al^{3+} + 3e^- \\rightarrow Al}\\), so \\(n(e^-) = 0.300\\ \\mathrm{mol}\\). \\(Q = 0.300 \\times 96\\,500 = 28\\,950\\ \\mathrm{C}\\). \\(t = \\dfrac{Q}{I} = 5790\\ \\mathrm{s}\\), about 96.5 minutes.",
+        "Finding the charge on an ion: 0.0100 mol of a metal is deposited by 2895 C. \\(n(e^-) = \\dfrac{2895}{96\\,500} = 0.0300\\ \\mathrm{mol}\\), three electrons per ion, so the ion is 3+.",
+        "Gas volume: 0.200 mol of electrons passes through water. Cathode: \\(\\mathrm{2H_2O + 2e^- \\rightarrow H_2 + 2OH^-}\\), so \\(n(\\mathrm{H_2}) = 0.100\\ \\mathrm{mol}\\), which is 2.48 L at SLC."
+       ],
+       "check": [
+        [
+         "How many moles of electrons are carried by a charge of 19 300 C?",
+         "19 300 ÷ 96 500 = 0.200 mol."
+        ]
        ]
       },
       {
@@ -608,6 +914,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the alkanes, alkenes, alcohols and carboxylic acids from Unit 1, and the types of intermolecular forces.",
+        "The big idea: an organic molecule is a carbon skeleton with one or more functional groups attached. The functional group decides how the molecule reacts, and the whole structure decides its physical properties. Systematic names let any chemist draw the exact molecule from its name."
+       ]
+      },
+      {
        "h": "Functional groups to recognise",
        "p": [
         "Alkene: C=C. Haloalkane: –Cl, –Br, –I. Alcohol: hydroxyl, –OH. Aldehyde: –CHO at the end of a chain. Ketone: C=O within a chain. Carboxylic acid: carboxyl, –COOH. Primary amine: amino, –NH₂. Primary amide: –CONH₂. Ester: –COO– linking two carbon chains.",
@@ -626,6 +939,12 @@
        "p": [
         "Structural isomers have the same molecular formula but atoms connected in a different order: chain isomers (different branching), positional isomers (functional group in a different position) and functional isomers (different functional group, such as an alcohol and an ether, or an aldehyde and a ketone).",
         "Stereoisomers have the same connectivity but a different arrangement in space. Cis–trans isomers occur around a C=C double bond when each carbon of the double bond has two different groups; the double bond cannot rotate. Optical isomers (enantiomers) are non-superimposable mirror images. They occur when a molecule has a chiral centre: a carbon atom attached to four different groups."
+       ],
+       "check": [
+        [
+         "Can but-1-ene show cis–trans isomerism?",
+         "No. Carbon 1 has two identical hydrogen atoms attached. But-2-ene can."
+        ]
        ]
       },
       {
@@ -639,6 +958,47 @@
        "h": "Explaining physical properties",
        "p": [
         "Boiling point depends on the strength of intermolecular forces: carboxylic acids (which form hydrogen-bonded pairs) are above alcohols and amides, which are above aldehydes, ketones and esters (dipole–dipole), which are above alkanes of similar molar mass (dispersion only). Solubility in water falls as the hydrocarbon chain lengthens. Viscosity rises with chain length and with hydrogen bonding."
+       ]
+      },
+      {
+       "h": "Naming worked examples",
+       "p": [
+        "CH₃CH₂CH(CH₃)CH₂OH: longest chain containing the OH has four carbons (butan-); OH on carbon 1; methyl on carbon 2. Name: 2-methylbutan-1-ol.",
+        "CH₃CHClCH=CH₂: four carbons with a double bond; number from the end nearest the double bond, so it starts at carbon 1 and chlorine is on carbon 3. Name: 3-chlorobut-1-ene.",
+        "CH₃CH₂CH₂NH₂: propan-1-amine. CH₃CH₂CONH₂: propanamide. CH₃CH₂CH₂CHO: butanal (the aldehyde carbon is always carbon 1, so no number is needed). HCOOCH₂CH₃: ethyl methanoate.",
+        "Cyclic and aromatic: cyclohexane is a ring of six CH₂ groups, C₆H₁₂. Benzene, C₆H₆, is a planar ring with delocalised electrons, drawn as a hexagon with a circle."
+       ],
+       "check": [
+        [
+         "Name CH₃CH(CH₃)CH₂COOH.",
+         "3-methylbutanoic acid. The carboxyl carbon is carbon 1 of a four-carbon chain."
+        ]
+       ]
+      },
+      {
+       "h": "Classifying alcohols and haloalkanes",
+       "p": [
+        "Look at the carbon carrying the functional group and count the carbon atoms attached to it. One: primary (butan-1-ol). Two: secondary (butan-2-ol). Three: tertiary (2-methylpropan-2-ol). The class matters because it decides the product of oxidation in the next lesson."
+       ],
+       "check": [
+        [
+         "Is propan-2-ol a primary, secondary or tertiary alcohol?",
+         "Secondary: the carbon bearing the OH is attached to two other carbon atoms."
+        ]
+       ]
+      },
+      {
+       "h": "Finding isomers of a formula",
+       "p": [
+        "Example, C₄H₁₀O. Alcohols: butan-1-ol, butan-2-ol, 2-methylpropan-1-ol and 2-methylpropan-2-ol. All four are structural isomers; butan-2-ol also has a chiral centre.",
+        "Example, C₃H₆O₂: propanoic acid, methyl ethanoate and ethyl methanoate are functional isomers. The acid can form hydrogen bonds between its molecules, so it has a much higher boiling point than the esters."
+       ]
+      },
+      {
+       "h": "Explaining a trend: model answer",
+       "p": [
+        "Question: explain why butan-1-ol (118 °C) has a higher boiling point than butanal (75 °C) although their molar masses are similar. Answer: “Both have similar dispersion forces because they have similar numbers of electrons. Butanal is polar and has dipole–dipole attractions between molecules. Butan-1-ol has an O–H group, so it forms hydrogen bonds between molecules, which are stronger than dipole–dipole attractions and require more energy to overcome.”",
+        "Flashpoint, the lowest temperature at which a liquid gives off enough vapour to ignite, follows the same reasoning: stronger intermolecular forces mean lower volatility and a higher flashpoint."
        ]
       },
       {
@@ -701,6 +1061,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to name and draw organic molecules and classify alcohols as primary, secondary or tertiary.",
+        "The big idea: organic chemistry has a small number of reaction types, and each functional group can be converted into certain others. If you learn these conversions as a map, you can plan a route from a simple starting material to a target molecule, which is what synthetic chemists do."
+       ]
+      },
+      {
        "h": "Reaction types",
        "p": [
         "Substitution: one atom or group replaces another. Alkane + Cl₂ in UV light gives a chloroalkane and HCl. A haloalkane with NaOH(aq) gives an alcohol; with NH₃ it gives an amine.",
@@ -721,6 +1088,12 @@
        "p": [
         "\\(\\%\\ \\text{yield} = \\dfrac{\\text{actual yield}}{\\text{theoretical yield}} \\times 100\\). For a multi-step pathway the overall yield is the product of the yields of each step: steps of 80% and 60% give \\(0.80 \\times 0.60 = 48\\%\\).",
         "Atom economy measures how much of the reactants’ mass ends up in the desired product. Addition reactions have 100% atom economy; substitution and condensation reactions are lower because they form a by-product. A reaction can have a high yield and still a poor atom economy."
+       ],
+       "check": [
+        [
+         "A three-step synthesis has yields of 90%, 80% and 50%. What is the overall yield?",
+         "0.90 × 0.80 × 0.50 = 0.36, or 36%."
+        ]
        ]
       },
       {
@@ -728,6 +1101,46 @@
        "p": [
         "Find the atom economy for making ethanol (M = 46.0) by fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (M of glucose = 180.0).",
         "\\(\\text{Atom economy} = \\dfrac{2 \\times 46.0}{180.0} \\times 100 = 51.1\\%\\). Hydration of ethene gives 100%, although it relies on a fossil-fuel feedstock."
+       ]
+      },
+      {
+       "h": "The reaction map",
+       "p": [
+        "Alkane → haloalkane (halogen, UV light; substitution). Alkene → alkane (H₂, catalyst), haloalkane (HCl or HBr), dihaloalkane (Br₂ or Cl₂) or alcohol (H₂O, acid catalyst). Haloalkane → alcohol (NaOH or KOH in water) or amine (NH₃). Primary alcohol → aldehyde → carboxylic acid (acidified K₂Cr₂O₇ or KMnO₄). Secondary alcohol → ketone. Alcohol + carboxylic acid → ester + water. Carboxylic acid + amine → amide + water. Ester + water → alcohol + carboxylic acid (hydrolysis).",
+        "Most pathway questions are solved by finding the two or three arrows on this map that connect the start to the target."
+       ],
+       "check": [
+        [
+         "What reagents convert a haloalkane into an alcohol?",
+         "Aqueous sodium hydroxide or potassium hydroxide (a substitution reaction)."
+        ]
+       ]
+      },
+      {
+       "h": "Equations to practise",
+       "p": [
+        "Substitution: CH₃CH₃ + Cl₂ → CH₃CH₂Cl + HCl. Addition: CH₃CH=CH₂ + H₂O → CH₃CH(OH)CH₃ (the major product) or CH₃CH₂CH₂OH. Substitution: CH₃CH₂Cl + NaOH → CH₃CH₂OH + NaCl. Substitution: CH₃CH₂Cl + NH₃ → CH₃CH₂NH₂ + HCl.",
+        "Oxidation of an alcohol in acid, written as a half-equation: CH₃CH₂OH(aq) + H₂O(l) → CH₃COOH(aq) + 4H⁺(aq) + 4e⁻. The oxidising agent’s half-equation is Cr₂O₇²⁻(aq) + 14H⁺(aq) + 6e⁻ → 2Cr³⁺(aq) + 7H₂O(l).",
+        "Hydrolysis of an ester: CH₃COOCH₂CH₃ + H₂O ⇌ CH₃COOH + CH₃CH₂OH. Transesterification makes biodiesel: a triglyceride + 3 methanol → glycerol + 3 fatty acid methyl esters, with a base catalyst."
+       ],
+       "check": [
+        [
+         "What organic product forms when butan-2-ol is heated with acidified potassium dichromate?",
+         "Butan-2-one, a ketone. Secondary alcohols oxidise to ketones."
+        ]
+       ]
+      },
+      {
+       "h": "Pathway worked example",
+       "p": [
+        "Target: propyl propanoate from propene as the only organic starting material. The ester needs propan-1-ol and propanoic acid. Step 1: propene + HCl → 1-chloropropane (with 2-chloropropane as the other product). Step 2: 1-chloropropane + NaOH(aq) → propan-1-ol. Step 3: oxidise half the propan-1-ol with acidified K₂Cr₂O₇ → propanoic acid. Step 4: propan-1-ol + propanoic acid, concentrated H₂SO₄ catalyst and heat → propyl propanoate + water.",
+        "In practice each step is followed by separating and purifying the product, for example by fractional distillation, which separates liquids by boiling point."
+       ]
+      },
+      {
+       "h": "Biomolecule reactions",
+       "p": [
+        "The same reaction types build and break the molecules in food. Condensation joins amino acids into proteins (amide, or peptide, links), monosaccharides into polysaccharides (glycosidic links) and glycerol with fatty acids into triglycerides (ester links), releasing water each time. Hydrolysis in digestion reverses each one, using water and enzymes."
        ]
       },
       {
@@ -784,6 +1197,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the functional groups, condensation and hydrolysis reactions, and intermolecular forces.",
+        "The big idea: the large molecules in food and in living things are polymers or assemblies built from small units by condensation reactions. Their properties, including how enzymes work and how much energy food supplies, follow from their structure and bonding."
+       ]
+      },
+      {
        "h": "Proteins",
        "p": [
         "Amino acids have an amino group and a carboxyl group on the same carbon, plus a side chain that varies. In solution they exist as zwitterions, with –NH₃⁺ and –COO⁻. At low pH the molecule carries an overall positive charge; at high pH, negative.",
@@ -795,6 +1215,12 @@
        "p": [
         "Enzymes are protein catalysts. The substrate fits the active site (lock-and-key or induced fit), which is why each enzyme is specific. Heating above the optimum temperature, or changing pH, disrupts the bonds holding the tertiary structure; the active site changes shape and the enzyme is denatured. Denaturation leaves the primary structure intact. Hydrolysis, in contrast, breaks the peptide links.",
         "Low temperatures slow enzymes without denaturing them. Coenzymes are small molecules that bind to an enzyme and help it function; many vitamins act this way."
+       ],
+       "check": [
+        [
+         "An enzyme is heated to 80 °C and stops working. Which level of protein structure is unchanged?",
+         "The primary structure. Denaturation disrupts the secondary and tertiary structures but does not break peptide links."
+        ]
        ]
       },
       {
@@ -818,6 +1244,44 @@
        ]
       },
       {
+       "h": "Amino acids and peptide formation",
+       "p": [
+        "The general structure of an amino acid is H₂N–CH(R)–COOH, where R is the side chain. Glycine has R = H; alanine has R = CH₃. When two join, the carboxyl group of one reacts with the amino group of the other, forming a –CO–NH– link and water. Two amino acids give a dipeptide; many give a polypeptide.",
+        "Two different amino acids can form two different dipeptides, depending on which supplies the carboxyl group: glycine–alanine is not the same molecule as alanine–glycine. To hydrolyse a peptide on paper, break each C–N bond of the amide link, adding OH to the carbon and H to the nitrogen."
+       ],
+       "check": [
+        [
+         "How many water molecules are released when a tripeptide forms from three amino acids?",
+         "Two. One water molecule is released for each peptide link, and a tripeptide has two links."
+        ]
+       ]
+      },
+      {
+       "h": "Amino acids and pH",
+       "p": [
+        "In neutral solution an amino acid is a zwitterion: ⁺H₃N–CH(R)–COO⁻. In acid the –COO⁻ group accepts a proton, giving ⁺H₃N–CH(R)–COOH, an overall positive ion. In base the –NH₃⁺ group loses a proton, giving H₂N–CH(R)–COO⁻, an overall negative ion. Side chains with their own acidic or basic groups also change charge, which is why pH affects the ionic interactions that hold an enzyme’s tertiary structure."
+       ],
+       "check": [
+        [
+         "What is the overall charge on a simple amino acid such as glycine in a strongly acidic solution?",
+         "Positive. The amino group is protonated (–NH₃⁺) and the carboxyl group is in its uncharged form (–COOH)."
+        ]
+       ]
+      },
+      {
+       "h": "Energy from food: calculations",
+       "p": [
+        "Example: a snack contains 12 g of carbohydrate, 5.0 g of protein and 8.0 g of fat. Using 16 kJ g⁻¹ for carbohydrate, 17 for protein and 37 for fat: energy \\(= 12 \\times 16 + 5.0 \\times 17 + 8.0 \\times 37 = 192 + 85 + 296 = 573\\ \\mathrm{kJ}\\). Use the values in your data book; they differ slightly between sources.",
+        "The energy content of a food can be measured by burning a sample in a bomb calorimeter. The value available to the body is lower, because not everything is digested: cellulose, for example, burns in a calorimeter but passes through humans undigested."
+       ]
+      },
+      {
+       "h": "Comparing the three food groups",
+       "p": [
+        "Proteins: monomers are amino acids; amide links; hydrolysed to amino acids, which are used to build new proteins. Carbohydrates: monomers are monosaccharides; glycosidic links; hydrolysed to glucose, the main fuel for respiration. Fats and oils: glycerol and three fatty acids; ester links; hydrolysed to glycerol and fatty acids; stored as an energy reserve. Fats are not polymers, because they are not made of a long chain of repeating units."
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Calling the link in a protein an ester link. Saying denaturation breaks peptide bonds. Saying low temperature denatures enzymes. Confusing the energy content of food (how much) with glycaemic index (how fast)."
@@ -830,6 +1294,154 @@
   {
    "name": "Unit 4 AoS 2 · How are organic compounds analysed?",
    "topics": [
+    {
+     "id": "lab-analysis",
+     "title": "Laboratory analysis of organic compounds",
+     "points": [
+      "Test for C=C: bromine water turns from orange-brown to colourless (addition).",
+      "Test for a carboxylic acid: sodium carbonate or hydrogencarbonate gives bubbles of CO₂.",
+      "Primary and secondary alcohols and aldehydes are oxidised by acidified dichromate (orange to green); tertiary alcohols and ketones are not.",
+      "Purity: a pure solid has a sharp melting point; impurities lower it and widen the range.",
+      "Volumetric analysis, including redox titrations, measures the amount of an organic compound; simple and fractional distillation separate and purify liquids."
+     ],
+     "explain": "You are given three unlabelled colourless liquids: hex-1-ene, propanoic acid and butan-2-ol. Describe how you would identify each with simple tests.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the functional groups and their reactions, redox half-equations and titration calculations.",
+        "The big idea: before using instruments, a chemist can learn a lot about an organic compound with quick tests in a test tube, check its purity with a melting point, purify it by distillation and measure how much is present by titration. These methods rely on the characteristic reactions of functional groups."
+       ]
+      },
+      {
+       "h": "Qualitative tests for functional groups",
+       "p": [
+        "Carbon–carbon double bond: add a few drops of bromine water and shake. An alkene decolourises it quickly at room temperature, because bromine adds across the double bond. An alkane does not react without UV light, so the colour remains.",
+        "Carboxyl group: add sodium carbonate or sodium hydrogencarbonate. Fizzing shows carbon dioxide, because the acid is strong enough to react with carbonate: 2CH₃COOH(aq) + Na₂CO₃(aq) → 2CH₃COONa(aq) + H₂O(l) + CO₂(g). Blue litmus turning red also indicates an acid.",
+        "Hydroxyl group: warm with acidified potassium dichromate. Primary and secondary alcohols are oxidised and the solution turns from orange (Cr₂O₇²⁻) to green (Cr³⁺). Tertiary alcohols give no change. Aldehydes are also oxidised by this reagent, whereas ketones are not, which distinguishes those two families."
+       ],
+       "check": [
+        [
+         "A compound decolourises bromine water and also fizzes with sodium carbonate. What two functional groups does it contain?",
+         "A carbon–carbon double bond and a carboxyl group."
+        ],
+        [
+         "Which will not change the colour of acidified dichromate: propan-1-ol, propan-2-ol or 2-methylpropan-2-ol?",
+         "2-methylpropan-2-ol, because it is a tertiary alcohol."
+        ]
+       ]
+      },
+      {
+       "h": "Checking purity with melting point",
+       "p": [
+        "A pure crystalline solid melts sharply, over a range of about 1 °C, at a temperature that can be looked up. Impurities disrupt the regular packing of the lattice, so less energy is needed to break it apart: the melting point is lower and the solid melts over a wider range.",
+        "Example: pure aspirin melts at about 135 °C. A sample that melts between 126 and 131 °C is impure. A mixed melting point test confirms identity: mixing the sample with a known pure sample of the suspected compound leaves the melting point unchanged only if they are the same substance."
+       ]
+      },
+      {
+       "h": "Purifying by distillation",
+       "p": [
+        "Simple distillation separates a liquid from dissolved solids, or two liquids with very different boiling points. The mixture is heated, the more volatile component vaporises first, and the vapour is cooled in a condenser and collected.",
+        "Fractional distillation separates liquids with closer boiling points. A fractionating column between the flask and the condenser gives the vapour a large surface on which to condense and re-evaporate many times. Each cycle enriches the vapour in the component with the lower boiling point, so that component reaches the top first. The thermometer at the top shows which fraction is being collected."
+       ],
+       "check": [
+        [
+         "In fractional distillation of a mixture of ethanol (78 °C) and water (100 °C), which is collected first?",
+         "Ethanol, because it has the lower boiling point and is more volatile."
+        ]
+       ]
+      },
+      {
+       "h": "Volumetric analysis of organic compounds",
+       "p": [
+        "Acid–base titration measures organic acids, for example the ethanoic acid in vinegar or the acid content of fruit juice, using standard sodium hydroxide and phenolphthalein.",
+        "Redox titration measures compounds that can be oxidised or reduced. Ethanol in wine can be oxidised by a standard dichromate solution; vitamin C (ascorbic acid) can be titrated with standard iodine solution, using starch as an indicator that turns blue-black at the end point: C₆H₈O₆(aq) + I₂(aq) → C₆H₆O₆(aq) + 2H⁺(aq) + 2I⁻(aq). Permanganate is self-indicating: the first permanent pale pink marks the end point."
+       ]
+      },
+      {
+       "h": "Worked example: vitamin C in juice",
+       "p": [
+        "A 25.00 mL sample of juice is titrated with 0.00500 M iodine solution; the average titre is 18.40 mL. Find the mass of vitamin C (M = 176.0 g mol⁻¹) per 100 mL.",
+        "\\(n(\\mathrm{I_2}) = 0.00500 \\times 0.01840 = 9.20 \\times 10^{-5}\\ \\mathrm{mol}\\). The ratio is 1 : 1, so \\(n(\\text{vitamin C}) = 9.20 \\times 10^{-5}\\ \\mathrm{mol}\\) in 25.00 mL. \\(m = 9.20 \\times 10^{-5} \\times 176.0 = 0.0162\\ \\mathrm{g}\\). Per 100 mL: \\(0.0162 \\times 4 = 0.0648\\ \\mathrm{g} = 64.8\\ \\mathrm{mg}\\)."
+       ]
+      },
+      {
+       "h": "Degree of unsaturation",
+       "p": [
+        "The amount of iodine or bromine that reacts with a fat or oil measures how many C=C bonds it contains, because each double bond adds one molecule of halogen. The more halogen that reacts per gram, the more unsaturated the oil.",
+        "Example: 0.010 mol of a fatty acid reacts with 0.030 mol of \\(\\mathrm{I_2}\\). Each molecule therefore contains three C=C double bonds."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Writing that bromine water “goes clear”; say it is decolourised or turns colourless. Saying an impurity raises the melting point. Claiming dichromate distinguishes a primary from a secondary alcohol by colour: both turn it green. Forgetting the mole ratio in a redox titration."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which reagent distinguishes hexane from hex-1-ene?",
+       "o": [
+        "Sodium carbonate",
+        "Bromine water",
+        "Acidified dichromate",
+        "Starch solution"
+       ],
+       "a": 1,
+       "e": "The alkene decolourises bromine water by addition; the alkane does not react."
+      },
+      {
+       "t": "m",
+       "q": "A solid melts between 112 °C and 118 °C. The pure compound melts at 122 °C. The sample is…",
+       "o": [
+        "pure",
+        "impure",
+        "a different compound, certainly",
+        "a liquid at room temperature"
+       ],
+       "a": 1,
+       "e": "Impurities lower the melting point and widen the range."
+      },
+      {
+       "t": "m",
+       "q": "Which compound gives a colour change from orange to green when warmed with acidified K₂Cr₂O₇?",
+       "o": [
+        "2-methylpropan-2-ol",
+        "Propanone",
+        "Propan-2-ol",
+        "Propanoic acid"
+       ],
+       "a": 2,
+       "e": "Propan-2-ol is a secondary alcohol and is oxidised to propanone."
+      },
+      {
+       "t": "c",
+       "q": "What would you observe when sodium hydrogencarbonate is added to ethanoic acid, and why?",
+       "a": "Bubbles of gas. The acid reacts with the hydrogencarbonate to produce carbon dioxide, water and sodium ethanoate.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why does a fractionating column improve the separation of two liquids?",
+       "a": "It provides a large surface area for repeated condensation and evaporation. Each cycle enriches the vapour in the more volatile component, so the liquids are separated more completely.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "0.020 mol of an unsaturated fatty acid reacts with 0.040 mol of I₂. How many C=C bonds are in each molecule?",
+       "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "a": 1,
+       "e": "Each double bond adds one I₂: 0.040 ÷ 0.020 = 2."
+      }
+     ]
+    },
     {
      "id": "spectroscopy",
      "title": "Spectroscopy and chromatography",
@@ -894,6 +1506,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to name and draw organic molecules, recognise functional groups and understand chromatography from Unit 1.",
+        "The big idea: chemists cannot see molecules, so they probe them with energy and read the response. Each instrument answers a different question. Put together, the answers identify a compound and how much of it is present. The skill being tested is combining several pieces of evidence into one structure."
+       ]
+      },
+      {
        "h": "What each technique tells you",
        "p": [
         "Mass spectrometry: molar mass and fragments. Infrared spectroscopy: the functional groups present. Carbon-13 NMR: the number of different carbon environments. Proton NMR: the number of hydrogen environments, how many hydrogens are in each, and how many hydrogens are on neighbouring carbons. Chromatography: separation, identification and quantity. Structure questions give several spectra together, and each one narrows the possibilities."
@@ -903,6 +1522,12 @@
        "h": "Mass spectrometry",
        "p": [
         "Molecules are ionised and broken into positively charged fragments, which are separated by mass-to-charge ratio (m/z). The peak with the highest significant m/z is the molecular ion and gives the relative molecular mass. The tallest peak is the base peak, the most abundant fragment. Fragments are written with a positive charge: a peak at m/z 15 is CH₃⁺, 29 is CH₃CH₂⁺ or CHO⁺, 45 is COOH⁺. A difference of 15 from the molecular ion suggests loss of a methyl group. Small peaks one unit above the molecular ion come from carbon-13."
+       ],
+       "check": [
+        [
+         "A mass spectrum has its last significant peak at m/z 46 and a large peak at m/z 31. Suggest the compound and the fragment lost.",
+         "Ethanol (M = 46). Loss of CH₃ (15) gives the fragment CH₂OH⁺ at m/z 31."
+        ]
        ]
       },
       {
@@ -934,10 +1559,302 @@
        ]
       },
       {
+       "h": "A procedure for structure problems",
+       "p": [
+        "1. Mass spectrum: read the molecular ion to get the molar mass, and check it against any molecular formula given. 2. Infrared: decide which functional groups are present and, just as usefully, which are absent. 3. Carbon-13 NMR: count the carbon environments; fewer peaks than carbons means the molecule has symmetry. 4. Proton NMR: for each signal, record the shift, the relative number of hydrogens and the splitting, and build fragments such as CH₃CH₂– or (CH₃)₂CH–. 5. Join the fragments, then check the proposed structure against every piece of data."
+       ],
+       "check": [
+        [
+         "An IR spectrum shows a strong band at 1700 cm⁻¹ and a very broad band from 2500 to 3300 cm⁻¹. What functional group is present?",
+         "A carboxylic acid: the C=O band together with the very broad O–H (acid) band."
+        ]
+       ]
+      },
+      {
+       "h": "Splitting patterns to recognise",
+       "p": [
+        "A triplet (3H) with a quartet (2H) is an ethyl group, CH₃CH₂–. A doublet (6H) with a septet (1H) is an isopropyl group, (CH₃)₂CH–. A singlet (3H) is a methyl group with no hydrogens on the neighbouring atom, such as CH₃–C=O or CH₃–O–. A singlet (9H) is three equivalent methyl groups, (CH₃)₃C–.",
+        "Example: propan-2-ol, CH₃CH(OH)CH₃. The two CH₃ groups are equivalent: a doublet (6H), split by the one hydrogen on the middle carbon. The CH is a septet (1H), split by six neighbours. The OH is a singlet (1H). Carbon-13 NMR shows two peaks. Propan-1-ol would show three carbon peaks and four proton signals."
+       ],
+       "check": [
+        [
+         "How many peaks would the ¹³C NMR spectrum of 2-methylpropane, (CH₃)₃CH, show?",
+         "Two. The three CH₃ carbons are equivalent, and the central CH is the second environment."
+        ]
+       ]
+      },
+      {
+       "h": "A second worked example",
+       "p": [
+        "Compound: C₃H₆O. IR: strong band near 1715 cm⁻¹, no broad O–H band. Carbon-13 NMR: two peaks. Proton NMR: one singlet.",
+        "A C=O with no O–H means an aldehyde or ketone. One proton environment and two carbon environments mean a highly symmetrical molecule: propanone, CH₃COCH₃. The alternative, propanal (CH₃CH₂CHO), would give three carbon peaks and three proton signals."
+       ]
+      },
+      {
+       "h": "HPLC calculations",
+       "p": [
+        "Example: caffeine standards of 10, 20, 30 and 40 mg L⁻¹ give peak areas of 150, 300, 450 and 600 units. A drink diluted 1 in 10 gives a caffeine peak of area 375 at the same retention time. From the calibration line, 375 corresponds to 25 mg L⁻¹ in the diluted sample, so the drink contains 250 mg L⁻¹.",
+        "Changing the conditions changes retention times: a faster flow rate, a higher temperature or a shorter column makes all components come out sooner, which can reduce how well they are separated. In reverse-phase HPLC the stationary phase is non-polar and the mobile phase polar, so polar compounds come out first."
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Using the tallest peak as the molecular ion. Leaving the positive charge off a fragment. Counting hydrogens on the same carbon when working out splitting. Reading a concentration off a calibration curve beyond its range."
        ]
+      }
+     ]
+    },
+    {
+     "id": "medicinal",
+     "title": "Medicinal chemistry",
+     "points": [
+      "Many medicines come from plants. Active compounds are extracted with a solvent in which they are soluble, then purified by distillation or chromatography.",
+      "Enzymes are protein catalysts; a substrate binds at the active site, which is specific in shape and in the interactions it can form.",
+      "A competitive inhibitor has a shape similar to the substrate and blocks the active site.",
+      "Enantiomers of a chiral drug can have different effects in the body, because receptors and enzymes are themselves chiral.",
+      "Structure determines function: functional groups decide how a medicine dissolves, binds and is broken down."
+     ],
+     "explain": "Explain why one enantiomer of a drug might be an effective medicine while its mirror image is not.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should understand solubility and intermolecular forces, chirality, protein structure and enzymes.",
+        "The big idea: a medicine works because its molecules have the right shape and the right functional groups to bind to a particular target in the body, usually a protein. Medicinal chemistry applies everything in organic chemistry to finding, isolating, identifying and improving such molecules."
+       ]
+      },
+      {
+       "h": "Extracting compounds from plants",
+       "p": [
+        "Plants make a huge range of organic compounds, and many medicines were first found in them. Aboriginal and Torres Strait Islander peoples have long used plants as medicines, and this knowledge has guided scientists to active compounds.",
+        "Solvent extraction: plant material is crushed and soaked in a solvent that dissolves the compound of interest. “Like dissolves like” guides the choice: a non-polar compound is extracted with a non-polar solvent such as hexane; a polar compound with water or ethanol. The solvent is then evaporated. Steam or simple distillation separates volatile oils such as eucalyptus oil. Chromatography separates and purifies individual components, and spectroscopy identifies their structures."
+       ],
+       "check": [
+        [
+         "A plant compound has a long hydrocarbon chain and no polar groups. Would water or hexane be the better solvent to extract it?",
+         "Hexane. The compound is non-polar, so it dissolves in a non-polar solvent."
+        ]
+       ]
+      },
+      {
+       "h": "How enzymes work",
+       "p": [
+        "An enzyme is a protein whose tertiary structure creates a pocket called the active site. The substrate fits into it and is held by hydrogen bonds, ionic attractions, dipole–dipole and dispersion forces with the side chains that line it. In the lock-and-key model the substrate fits exactly; in the induced-fit model the active site changes shape slightly as the substrate binds. Either way, binding provides a reaction pathway with a lower activation energy.",
+        "Enzymes are highly specific: because the active site is itself chiral, an enzyme will usually accept only one enantiomer of a substrate. Enzyme activity depends on temperature and pH. Activity rises with temperature up to an optimum, then falls sharply as the enzyme denatures. Each enzyme has an optimum pH; away from it, the charges on acidic and basic side chains change, disrupting the interactions that hold the active site in shape."
+       ]
+      },
+      {
+       "h": "Inhibiting an enzyme",
+       "p": [
+        "Many medicines work by slowing down a particular enzyme. A competitive inhibitor is a molecule similar enough in shape and functional groups to the substrate that it binds to the active site, but it does not react. While it is there, the substrate cannot bind, so the rate of the enzyme-catalysed reaction falls. Because inhibitor and substrate compete, raising the substrate concentration reduces the effect.",
+        "Designing an inhibitor means matching the active site: the right overall shape, and functional groups placed to form the same kinds of interactions as the natural substrate."
+       ],
+       "check": [
+        [
+         "How does a competitive inhibitor reduce the rate of an enzyme-catalysed reaction?",
+         "It binds to the active site in place of the substrate, so fewer enzyme molecules are available to bind substrate at any moment."
+        ]
+       ]
+      },
+      {
+       "h": "Chirality in medicines",
+       "p": [
+        "Enantiomers have the same melting point, solubility and reactions with non-chiral reagents, but they interact differently with other chiral molecules. A receptor in the body is like a glove: a left hand fits it and a right hand does not. So one enantiomer of a drug may bind and act, while the other is inactive or binds somewhere else and causes side effects.",
+        "For this reason, medicines are often produced as a single enantiomer. This requires either a synthesis that makes only one, often using an enzyme as the catalyst, or separating the two after synthesis."
+       ],
+       "check": [
+        [
+         "What structural feature makes a molecule chiral?",
+         "A carbon atom bonded to four different atoms or groups (a chiral centre), giving two non-superimposable mirror images."
+        ]
+       ]
+      },
+      {
+       "h": "Reading the structure of a medicine",
+       "p": [
+        "Given the structure of a drug, you may be asked to circle and name its functional groups, find chiral centres, predict solubility or suggest how it reacts. Polar groups such as –OH, –COOH and –NH₂ form hydrogen bonds with water and increase solubility in blood. Large non-polar regions make a molecule more soluble in fats, so it can cross cell membranes and be stored in fatty tissue.",
+        "Example: aspirin contains a carboxyl group, an ester group and a benzene ring. Its ester group can be hydrolysed, which is how it is broken down; its carboxyl group makes it a weak acid."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Saying enantiomers have different chemical formulas or different boiling points. Saying an inhibitor denatures the enzyme. Describing the active site as matching only in shape and forgetting the intermolecular interactions. Choosing an extraction solvent without referring to polarity."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "A competitive inhibitor…",
+       "o": [
+        "breaks the peptide bonds of the enzyme",
+        "binds to the active site in place of the substrate",
+        "raises the activation energy of all reactions",
+        "is always the mirror image of the enzyme"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Two enantiomers differ in…",
+       "o": [
+        "molecular formula",
+        "the order in which atoms are connected",
+        "their arrangement in space",
+        "their molar mass"
+       ],
+       "a": 2,
+       "e": "They are non-superimposable mirror images with the same connectivity."
+      },
+      {
+       "t": "m",
+       "q": "Which solvent is most suitable for extracting a polar compound with several –OH groups from leaves?",
+       "o": [
+        "Hexane",
+        "Cyclohexane",
+        "Ethanol",
+        "Octane"
+       ],
+       "a": 2,
+       "e": "Ethanol is polar and can form hydrogen bonds with the compound."
+      },
+      {
+       "t": "c",
+       "q": "Why might only one enantiomer of a drug be effective?",
+       "a": "The drug’s target (a receptor or enzyme) is chiral, so only the enantiomer with the matching three-dimensional arrangement can bind to it correctly.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why enzyme activity falls when the pH moves away from the optimum.",
+       "a": "The change in pH alters the charges on acidic and basic side chains, disrupting the ionic and hydrogen bonding that maintain the tertiary structure. The shape of the active site changes, so the substrate binds less well.",
+       "e": ""
+      }
+     ]
+    },
+    {
+     "id": "exam-skills",
+     "title": "Investigations and exam technique",
+     "points": [
+      "Practical investigation: question, hypothesis, variables, method, results, discussion of errors and conclusion, communicated as a scientific poster.",
+      "Know the data book: where each formula, constant and table is, and which values need care.",
+      "Command terms: identify (name), describe (give features), explain (give reasons), compare (similarities and differences), evaluate (judge with evidence), justify (support a choice).",
+      "Show working in calculations, carry units, and round only at the end to the correct significant figures.",
+      "Section A is multiple choice; Section B is short and extended answers. Allocate time by marks."
+     ],
+     "explain": "Take a past exam question you got wrong. Explain what the question was really asking and what a full-mark answer needed.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Read this lesson once you have covered most of Units 3 and 4, and return to it before each practice exam.",
+        "The big idea: knowing the chemistry is necessary but not enough. Marks are lost through misreading the question, missing a step in the working, or answers that describe when the question asks for an explanation. These are skills that improve quickly with deliberate practice."
+       ]
+      },
+      {
+       "h": "The practical investigation and poster",
+       "p": [
+        "In Unit 4 you design or adapt and conduct an investigation related to energy, the production of chemicals or organic compounds, and report it as a scientific poster. The usual sections are: title (often the research question), introduction (background chemistry and hypothesis), methodology and methods (what was done, with variables and safety), results (tables and graphs with units), discussion (trends, explanation, errors and their effects, improvements) and conclusion (answer to the question, linked to the evidence), plus references.",
+        "The highest marks go to the discussion. Link results to chemical concepts, be specific about the quality of the data (accuracy, precision, repeatability, validity), and say how each source of error would change the result and in which direction."
+       ]
+      },
+      {
+       "h": "Using the data book",
+       "p": [
+        "The data book supplies the periodic table, the electrochemical series, formulas and constants, heats of combustion, infrared ranges, NMR shifts, and structures of amino acids, fatty acids and vitamins. You do not need to memorise these, but you must find them quickly.",
+        "Points that catch students: heats of combustion are given as positive magnitudes, so supply the negative sign for ΔH yourself; molar volume applies only at SLC; the electrochemical series lists reductions at standard conditions; infrared and NMR values are ranges, so use them together with other evidence."
+       ],
+       "check": [
+        [
+         "The data book lists the heat of combustion of methane as 890 kJ mol⁻¹. What is ΔH for the combustion equation?",
+         "−890 kJ mol⁻¹. Combustion is exothermic, so ΔH is negative."
+        ]
+       ]
+      },
+      {
+       "h": "Answering the question asked",
+       "p": [
+        "Underline the command term and the number of marks. One mark usually needs one distinct, correct point. “Explain” requires a reason linked to a result: use “because” or “so”. “Compare” requires a statement about both things. “Evaluate” or “discuss” requires points on more than one side and a judgment.",
+        "Use the information in the question. If a question gives data about an unfamiliar battery or molecule, the answer is expected to refer to that particular system, not to a textbook example. Use correct chemical terms: “ionises completely”, not “breaks up fully”; “successful collisions”, not “more reactions”."
+       ]
+      },
+      {
+       "h": "Setting out calculations",
+       "p": [
+        "Write the formula, substitute with units, and state each intermediate answer. If you make an arithmetic slip, later marks can still be awarded for a correct method (consequential marks), but only if the working can be followed. Keep extra digits through the calculation and round the final answer to the number of significant figures in the least precise data. Check that the answer is reasonable: a pH of 15, a negative mass or a yield above 100% signals an error."
+       ],
+       "check": [
+        [
+         "A calculation uses the data 25.00 mL, 0.105 M and 18.6 mL. How many significant figures should the answer have?",
+         "Three, matching the least precise values (0.105 and 18.6)."
+        ]
+       ]
+      },
+      {
+       "h": "Planning revision",
+       "p": [
+        "Spread revision out and test yourself; rereading notes feels productive but builds little recall. Use Review on this site daily. Do past exam questions by topic first, then complete papers under timed conditions. After marking, sort every lost mark into one of three groups: did not know the content, misread the question, or made a slip. Fix the first with study, the second by underlining command terms, and the third by checking units and significant figures.",
+        "Read the examiners’ reports that are published with past exams. They show exactly what earned marks and the errors that were most common."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Writing everything you know about a topic and hoping some of it is relevant. Leaving multiple-choice questions blank. Giving one point for a three-mark question. Omitting states in equations. Spending too long on one hard question and running out of time for easier marks."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "A question says “Explain why the rate increases.” The answer must include…",
+       "o": [
+        "only a statement that it increases",
+        "a reason linked to the change",
+        "a labelled diagram",
+        "a definition of rate"
+       ],
+       "a": 1,
+       "e": "“Explain” asks for the reason."
+      },
+      {
+       "t": "m",
+       "q": "Which section of a scientific poster should discuss sources of error and their effect on the results?",
+       "o": [
+        "Introduction",
+        "Methodology",
+        "Results",
+        "Discussion"
+       ],
+       "a": 3,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What are consequential marks, and how do you make sure you can earn them?",
+       "a": "Marks awarded for a correct method that follows from an earlier wrong value. You earn them by showing clear working at every step.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "After marking a practice exam, into which three groups should you sort lost marks?",
+       "a": "Content you did not know, questions you misread, and slips such as arithmetic, units or significant figures.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The molar volume of 24.8 L mol⁻¹ can be used for…",
+       "o": [
+        "any gas at any conditions",
+        "any gas at SLC",
+        "liquids at SLC",
+        "solutions at 25 °C"
+       ],
+       "a": 1,
+       "e": ""
       }
      ]
     }

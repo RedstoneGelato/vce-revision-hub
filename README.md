@@ -2,7 +2,7 @@
 
 A revision site for VCE Chemistry, English Language, Accounting, Mathematical Methods and General Mathematics (Units 1/2 and 3/4).
 
-- **Learn:** key points for every topic, an "explain it back" prompt, and an "In depth" section with explanations, worked examples and common mistakes.
+- **Learn:** key points for every topic, an "explain it back" prompt, and a full lesson with explanations, worked examples, "check yourself" questions and common mistakes. Lessons run in order, can be marked as learned, and the home page offers "Continue lesson".
 - **Glossary:** searchable definitions for every subject, each labelled with where its wording comes from.
 - **Practise:** multiple-choice and flashcard questions. Options are shuffled each time.
 - **Review:** spaced repetition. Correct answers come back after 1, 2, 4, 7, 15 then 30 days; missed ones come back the next day.
@@ -48,7 +48,7 @@ Each subject and unit has its own file in `content/`, for example `chem12.json` 
 
 ```json
 {"id": "atoms", "title": "Atoms", "points": ["…"], "explain": "…",
- "notes": [{"h": "Section heading", "p": ["A paragraph.", "Another paragraph."]}],
+ "notes": [{"h": "Section heading", "p": ["A paragraph.", "Another paragraph."], "check": [["Question?", "Answer."]]}],
  "qs": [
    {"t": "m", "q": "Question?", "o": ["A", "B", "C", "D"], "a": 1, "e": "Why B is right"},
    {"t": "c", "q": "Flashcard question", "a": "Answer", "e": ""}
@@ -58,7 +58,8 @@ Each subject and unit has its own file in `content/`, for example `chem12.json` 
 - `"t": "m"` is multiple choice. `a` is the index of the correct option, counting from 0.
 - `"t": "c"` is a flashcard the student marks themselves.
 - Add new questions **at the end** of a topic's `qs` list, and don't change topic `id`s. Progress is tracked by topic id and question position, so reordering would mix up saved progress.
-- `notes` is optional: each entry is a heading and its paragraphs, shown under "In depth".
+- `notes` is optional: each entry is a heading and its paragraphs, shown under "Lesson". `check` is optional: quick questions with hidden answers shown after that section.
+- Topics are taught in the order they appear in the file. New topics can be inserted anywhere; give each a new `id`.
 
 ### Glossary
 

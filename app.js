@@ -88,6 +88,10 @@ function merge(a, b) {
     for (const [k, v] of Object.entries(src.errors || {})) if (!out.errors[k] || (v.t || 0) > (out.errors[k].t || 0)) out.errors[k] = v;
     for (const [k, v] of Object.entries(src.log || {})) out.log[k] = Math.max(out.log[k] || 0, v);
   }
+  // learned: +time = marked learned, -time = unmarked; the most recent change wins
+  out.learned = { ...a.learned };
+  for (const [k, v] of Object.entries(b.learned || {})) if (Math.abs(v) > Math.abs(out.learned[k] || 0)) out.learned[k] = v;
+  out.last = ((b.updated || 0) > (a.updated || 0) ? b.last || a.last : a.last || b.last) || "";
   out.updated = Math.max(a.updated || 0, b.updated || 0);
   return out;
 }
@@ -166,6 +170,8 @@ async function loadContent() {
     } catch (e) { console.error("Content file failed:", uk, e); }
   }).concat(fetch("content/glossary.json", { cache: "no-cache" }).then((r) => r.json()).then((g) => { glossary = g; }).catch((e) => console.error("Glossary failed:", e))));
 }
+const lessons = (uk) => content[uk].aos.flatMap((a) => a.topics); // topics in teaching order
+const isLearned = (uk, tid) => (state.learned?.[`${uk}.${tid}`] || 0) > 0;
 const topicQids = (uk, t) => t.qs.map((_, i) => `${uk}.${t.id}.${i}`);
 
 /* ---------- quiz engine ---------- */
@@ -231,6 +237,9 @@ function viewHome() {
   const due = dueList().length, errs = openErrors().length;
   const week = Object.entries(state.log).filter(([d]) => d >= isoDay(today() - 6)).reduce((a, [, n]) => a + n, 0);
   const mastered = Object.values(state.cards).filter((c) => c.b >= 3).length;
+  // resume at the last lesson opened, or the next unlearned one after it
+  const lm = (state.last || "").match(/^t-(\w+?\d\d)-(.+)$/), ll = lm && content[lm[1]] ? lessons(lm[1]) : [], li = ll.findIndex((t) => t.id === lm?.[2]);
+  const rt = li < 0 ? null : ll.slice(li).find((t) => !isLearned(lm[1], t.id)) || ll[li], resume = rt && { uk: lm[1], t: rt };
   const grid = el("div", { class: "grid" }, SUBJECTS.map((s) => el("article", { class: "subj " + s.cls },
     el("h2", {}, s.name),
     el("div", { class: "units" }, UNITS.map((u) => {
@@ -242,46 +251,55 @@ function viewHome() {
     })))));
   show(
     el("section", { class: "hello" },
-      el("div", {}, el("h1", {}, "What are we studying today?"), el("p", { class: "muted" }, "Learn a topic, then test yourself. Anything you miss comes back in Review until it sticks.")),
+      el("div", {}, el("h1", {}, "What are we studying today?"), el("p", { class: "muted" }, "Free lessons and practice for VCE. Work through a unit lesson by lesson, then test yourself. Anything you miss comes back in Review until it sticks.")),
       el("div", { class: "stats" },
         el("div", { class: "stat" }, el("b", {}, due), el("span", {}, "Due today")),
         el("div", { class: "stat" }, el("b", {}, week), el("span", {}, "Answered this week")),
         el("div", { class: "stat" }, el("b", {}, Object.keys(state.cards).length), el("span", {}, "Questions tried")),
         el("div", { class: "stat" }, el("b", {}, mastered), el("span", {}, "Mastered")),
         el("div", { class: "stat" }, el("b", {}, errs), el("span", {}, "Open errors")))),
+    resume ? el("div", { class: "panel" }, el("p", {}, `Pick up where you left off: ${ukLabel(resume.uk)}, ${resume.t.title}.`), el("div", { class: "row" }, el("a", { class: "btn primary", href: `#t-${resume.uk}-${resume.t.id}` }, "Continue lesson"))) : null,
     due ? el("div", { class: "panel" }, el("p", {}, `You have ${due} question${due > 1 ? "s" : ""} due for review. Start there: it is the fastest way to remember more.`), el("div", { class: "row" }, el("a", { class: "btn primary", href: "#review" }, "Start review"))) : null,
     grid,
     el("div", { class: "notice" }, "How to use this: 1. Read a topic’s key points and explain them out loud. 2. Practise its questions without notes. 3. Do Review every day (5–10 minutes). 4. Before an exam, use Mixed quiz across topics and redo your error log."));
 }
 function viewUnit(uk) {
   const c = content[uk]; if (!c) return notFound();
-  const s = subjOf(uk), st = unitStats(uk);
+  const s = subjOf(uk), st = unitStats(uk), ls = lessons(uk), nextUp = ls.find((t) => !isLearned(uk, t.id)), nLearned = ls.filter((t) => isLearned(uk, t.id)).length;
   const all = c.aos.flatMap((a) => a.topics.flatMap((t) => topicQids(uk, t)));
   show(
     el("div", { class: "crumbs" }, el("a", { href: "#home" }, "Subjects"), " / ", s.name),
     el("section", { class: "hello " + s.cls },
-      el("div", {}, el("h1", {}, `${s.name} ${unitName(uk)}`), el("p", { class: "muted" }, `${st.total} questions · ${st.seen} tried · ${st.mastered} mastered${st.acc != null ? ` · ${st.acc}% correct so far` : ""}`)),
-      el("div", { class: "row" }, el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...all]).slice(0, 20), `${s.name} ${unitName(uk)}: mixed 20`, `#u-${uk}`) }, "Quiz 20 from this unit"))),
+      el("div", {}, el("h1", {}, `${s.name} ${unitName(uk)}`), el("p", { class: "muted" }, `${nLearned}/${ls.length} lessons learned · ${st.total} questions · ${st.seen} tried · ${st.mastered} mastered${st.acc != null ? ` · ${st.acc}% correct so far` : ""}`)),
+      el("div", { class: "row" },
+        nextUp ? el("a", { class: "btn primary", href: `#t-${uk}-${nextUp.id}` }, `${nLearned ? "Continue" : "Start"}: ${nextUp.title}`) : null,
+        el("button", { class: "btn" + (nextUp ? "" : " primary"), onclick: () => runQuiz(shuffle([...all]).slice(0, 20), `${s.name} ${unitName(uk)}: mixed 20`, `#u-${uk}`) }, "Quiz 20 from this unit"))),
     ...c.aos.map((a) => el("section", { class: "aos " + s.cls }, el("h3", {}, a.name),
       el("div", { class: "topics" }, a.topics.map((t) => {
         const ids = topicQids(uk, t), n = ids.filter((q) => state.cards[q]).length, m = ids.filter((q) => state.cards[q]?.b >= 3).length, d = ids.filter((q) => state.cards[q] && state.cards[q].due <= today()).length;
-        return el("a", { class: "topic", href: `#t-${uk}-${t.id}` }, el("h3", {}, t.title),
+        return el("a", { class: "topic", href: `#t-${uk}-${t.id}` }, el("span", { class: "muted small" }, `Lesson ${ls.indexOf(t) + 1}${isLearned(uk, t.id) ? " · Learned ✓" : ""}`), el("h3", {}, t.title),
           el("div", { class: "meta" }, el("span", {}, `${n}/${ids.length} tried · ${m} mastered${d ? ` · ${d} due` : ""}`), pbar(n, m, ids.length)));
       })))));
 }
 function viewTopic(uk, tid) {
-  const c = content[uk]; const t = c && c.aos.flatMap((a) => a.topics).find((x) => x.id === tid); if (!t) return notFound();
-  const s = subjOf(uk), ids = topicQids(uk, t);
+  const c = content[uk]; const all = c ? lessons(uk) : [], i = all.findIndex((x) => x.id === tid), t = all[i]; if (!t) return notFound();
+  const s = subjOf(uk), ids = topicQids(uk, t), here = `t-${uk}-${tid}`, learned = isLearned(uk, tid);
+  if (state.last !== here) { state.last = here; save(); }
+  const heads = (t.notes || []).map((n) => el("h3", { tabindex: "-1" }, n.h));
+  const link = (x, label) => x ? el("a", { class: "btn", href: `#t-${uk}-${x.id}` }, label + x.title) : null;
   show(
     el("div", { class: "crumbs" }, el("a", { href: "#home" }, "Subjects"), " / ", el("a", { href: `#u-${uk}` }, `${s.name} ${unitName(uk)}`), " / ", t.title),
-    el("h1", {}, t.title),
+    el("div", {}, el("p", { class: "muted small" }, `Lesson ${i + 1} of ${all.length}${learned ? " · Learned ✓" : ""}`), el("h1", {}, t.title)),
     el("section", { class: "learn " + s.cls }, el("h2", {}, "Key points"), el("ul", {}, t.points.map((p) => el("li", {}, p))),
       t.explain ? el("p", { class: "explain" }, el("b", {}, "Explain it back: "), t.explain) : null),
-    t.notes ? el("section", { class: "learn notes " + s.cls }, el("h2", {}, "In depth"),
-      t.notes.flatMap((n) => [el("h3", {}, n.h), ...n.p.map((p) => el("p", {}, p))])) : null,
+    t.notes ? el("section", { class: "learn notes " + s.cls }, el("h2", {}, "Lesson"),
+      heads.length > 3 ? el("nav", { class: "toc", "aria-label": "In this lesson" }, heads.map((h) => el("button", { class: "btn small", onclick: () => { h.scrollIntoView({ behavior: "smooth", block: "start" }); h.focus({ preventScroll: true }); } }, h.textContent))) : null,
+      t.notes.flatMap((n, k) => [heads[k], ...n.p.map((p) => el("p", {}, p)),
+        ...(n.check || []).map(([q, a]) => el("details", { class: "selfcheck" }, el("summary", {}, el("b", {}, "Check yourself: "), q), el("p", {}, a)))])) : null,
     el("div", { class: "row" },
-      el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...ids]), t.title, `#t-${uk}-${tid}`) }, `Practise ${ids.length} questions`),
-      el("a", { class: "btn", href: `#u-${uk}` }, "All topics")));
+      el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...ids]), t.title, `#${here}`) }, `Practise ${ids.length} questions`),
+      el("button", { class: "btn", "aria-pressed": String(learned), onclick: () => { (state.learned ||= {})[`${uk}.${tid}`] = learned ? -Date.now() : Date.now(); save(); route(); } }, learned ? "Learned ✓ (undo)" : "Mark as learned")),
+    el("div", { class: "row" }, link(all[i - 1], "← "), link(all[i + 1], "Next lesson: "), el("a", { class: "btn", href: `#u-${uk}` }, "All lessons")));
 }
 function viewGlossary() {
   const q = el("input", { type: "search", id: "gl-q", placeholder: "Search terms", "aria-label": "Search terms" });

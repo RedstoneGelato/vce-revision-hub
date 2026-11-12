@@ -68,6 +68,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "You need nothing before this lesson: it is the starting point for chemistry. Everything later (bonding, the mole, reactions) depends on knowing what an atom is made of and how its electrons are arranged.",
+        "The big idea: an element is defined by its number of protons, and its chemistry is decided by its outermost electrons. By the end you should be able to read any box on the periodic table, work out the particles in an atom or ion, calculate a relative atomic mass, and write an electron configuration."
+       ]
+      },
+      {
        "h": "Inside the atom",
        "p": [
         "Almost all the mass of an atom is in its tiny nucleus; the electrons occupy the space around it and decide how the atom bonds. Because the number of protons fixes the element, changing the number of neutrons gives a different isotope of the same element, and changing the number of electrons gives an ion.",
@@ -79,6 +86,12 @@
        "p": [
         "Masses are measured relative to carbon-12, which is given a mass of exactly 12. A mass spectrometer separates the isotopes of an element and gives the relative isotopic mass and percentage abundance of each. The relative atomic mass on the periodic table is the weighted mean.",
         "\\[A_r = \\frac{\\sum(\\text{relative isotopic mass} \\times \\%\\ \\text{abundance})}{100}\\]"
+       ],
+       "check": [
+        [
+         "Boron is 20% boron-10 and 80% boron-11. Estimate its relative atomic mass.",
+         "(10 × 20 + 11 × 80) ÷ 100 = 10.8. It is closer to 11 because boron-11 is more abundant."
+        ]
        ]
       },
       {
@@ -93,6 +106,39 @@
        "p": [
         "The shell model explains group trends, but it cannot explain why the fourth shell starts filling before the third is full. The Schrödinger model does: shells are divided into subshells (s, p, d, f) made of orbitals, each orbital holding at most two electrons. Subshells fill in order of increasing energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p.",
         "The 4s subshell is lower in energy than 3d, so it fills first. When transition metals form ions, the 4s electrons are lost first. Example: Fe is 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s², and Fe²⁺ is 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶."
+       ]
+      },
+      {
+       "h": "Reading isotope notation",
+       "p": [
+        "An isotope is written with the mass number on top and the atomic number below: \\({}^{37}_{17}\\mathrm{Cl}\\), or simply chlorine-37. Protons \\(= Z = 17\\). Neutrons \\(= A - Z = 37 - 17 = 20\\). In a neutral atom, electrons equal protons, so 17.",
+        "For an ion, adjust the electrons only. \\(\\mathrm{Cl^-}\\) has gained one electron: 18 electrons. \\(\\mathrm{Mg^{2+}}\\) (Z = 12) has lost two: 10 electrons. The nucleus is unchanged when an ion forms."
+       ],
+       "check": [
+        [
+         "How many protons, neutrons and electrons are in an aluminium ion, Al³⁺, with mass number 27 (Z = 13)?",
+         "13 protons, 27 − 13 = 14 neutrons, and 13 − 3 = 10 electrons."
+        ]
+       ]
+      },
+      {
+       "h": "Writing electron configurations, step by step",
+       "p": [
+        "Step 1: find the number of electrons. Step 2: fill subshells in the order 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, giving each s subshell up to 2 electrons, each p up to 6 and each d up to 10. Step 3: write the answer with the shells grouped in numerical order.",
+        "Example: phosphorus has 15 electrons: 1s² 2s² 2p⁶ 3s² 3p³. The shell model version is 2, 8, 5. The five electrons in the third shell are its valence electrons, which is why phosphorus is in group 15.",
+        "Example: iron has 26 electrons. Filling gives 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶, usually written 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s². The periodic table shows the pattern: the first two groups are the s-block, groups 13 to 18 are the p-block, and the transition metals are the d-block."
+       ],
+       "check": [
+        [
+         "Write the electron configuration of calcium (Z = 20) and of the Ca²⁺ ion.",
+         "Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s². Ca²⁺ has lost the two 4s electrons: 1s² 2s² 2p⁶ 3s² 3p⁶."
+        ]
+       ]
+      },
+      {
+       "h": "How we know: evidence for shells",
+       "p": [
+        "When atoms are heated or given electrical energy, electrons jump to higher energy levels. When they fall back they emit light of specific energies, seen as coloured lines in an emission spectrum. Each element has its own set of lines, which is why flame tests give characteristic colours. Lines, and not a continuous rainbow, show that electrons can only have certain fixed energies."
        ]
       },
       {
@@ -160,6 +206,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to write electron configurations and count valence electrons (previous lesson).",
+        "The big idea: the periodic table is arranged so that elements with the same number of valence electrons sit in the same column. That is why elements in a group behave alike, and why properties change in a regular way across a row. You do not need to memorise trends: you can work each one out from core charge and the number of shells."
+       ]
+      },
+      {
        "h": "The idea behind every trend",
        "p": [
         "Nearly every trend can be explained with two factors: core charge (how strongly the nucleus pulls on the valence electrons) and the distance of the valence shell from the nucleus. Across a period the core charge rises while the valence shell stays the same, so valence electrons are held more tightly. Down a group the core charge stays the same while the number of shells rises, so valence electrons are further away and held less tightly."
@@ -188,6 +241,46 @@
        "h": "Critical elements",
        "p": [
         "Some elements are in short supply or hard to obtain, such as helium, phosphorus, rare-earth elements and post-transition metals and metalloids used in electronics. Recycling them supports a circular economy, in which materials are kept in use for as long as possible instead of being mined, used once and thrown away."
+       ]
+      },
+      {
+       "h": "Finding your way around the table",
+       "p": [
+        "Periods are the rows; the period number is the number of occupied electron shells. Groups are the columns; for groups 1 and 2 the group number is the number of valence electrons, and for groups 13 to 18 subtract 10. Group 1 are the alkali metals, group 2 the alkaline earth metals, group 17 the halogens and group 18 the noble gases. Metals are on the left and centre, non-metals on the right, and metalloids such as silicon lie along the dividing line.",
+        "Example: sulfur is in period 3, group 16. It has three occupied shells and six valence electrons, so it tends to gain two electrons and form S²⁻."
+       ],
+       "check": [
+        [
+         "An element is in period 4, group 2. How many shells and valence electrons does it have, and what ion does it form?",
+         "Four occupied shells and two valence electrons. It loses both to form a 2+ ion (it is calcium, Ca²⁺)."
+        ]
+       ]
+      },
+      {
+       "h": "Core charge, step by step",
+       "p": [
+        "Valence electrons are attracted by the protons in the nucleus but shielded by the inner-shell electrons between them. Core charge is the net pull they feel: protons minus inner-shell electrons.",
+        "Lithium (2, 1): 3 − 2 = +1. Fluorine (2, 7): 9 − 2 = +7. Both use the second shell, but fluorine’s valence electrons feel seven times the net pull, so fluorine is smaller, holds its electrons more tightly, and attracts bonding electrons more strongly.",
+        "Sodium (2, 8, 1): 11 − 10 = +1, the same core charge as lithium, but its valence electron is one shell further out. So sodium is larger than lithium and loses its electron more easily."
+       ],
+       "check": [
+        [
+         "What is the core charge of oxygen (Z = 8) and of sulfur (Z = 16)?",
+         "Oxygen (2, 6): 8 − 2 = +6. Sulfur (2, 8, 6): 16 − 10 = +6. Same group, same core charge."
+        ]
+       ]
+      },
+      {
+       "h": "Writing a trend explanation that earns full marks",
+       "p": [
+        "Use three sentences. State what stays the same or changes in the number of shells. State what happens to core charge. Link these to the attraction between the nucleus and the valence electrons, then to the property asked about.",
+        "Model answer for “Why does first ionisation energy decrease down group 1?”: “Down the group the core charge stays at +1, but the number of occupied shells increases, so the valence electron is further from the nucleus. The attraction between the nucleus and the valence electron is weaker, so less energy is needed to remove it.”"
+       ],
+       "check": [
+        [
+         "Which is more electronegative, oxygen or sulfur, and why?",
+         "Oxygen. Both have a core charge of +6, but oxygen’s valence shell is closer to the nucleus, so it attracts bonding electrons more strongly."
+        ]
        ]
       },
       {
@@ -262,6 +355,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know how to count valence electrons and what electronegativity means.",
+        "The big idea: non-metal atoms reach a stable outer shell by sharing electrons. The shared pairs hold the atoms together as molecules. The shape and polarity of those molecules decide how strongly the molecules attract each other, and that decides melting point, boiling point and solubility."
+       ]
+      },
+      {
        "h": "From electrons to shape",
        "p": [
         "A reliable order of working: count valence electrons, draw the Lewis structure, count electron groups around the central atom (a lone pair, single bond, double bond or triple bond each count as one group), name the shape from the positions of the atoms, then decide polarity.",
@@ -291,6 +391,47 @@
        "h": "Diamond and graphite",
        "p": [
         "In covalent network lattices the atoms are held by covalent bonds throughout. Diamond: each carbon bonds to four others, so it is extremely hard with no free electrons. Graphite: each carbon bonds to three others in layers, leaving one delocalised electron per atom, so it conducts; the layers are held by weak dispersion forces and slide, so it is soft and a lubricant."
+       ]
+      },
+      {
+       "h": "Drawing Lewis structures, step by step",
+       "p": [
+        "Step 1: add up the valence electrons of all the atoms. Step 2: put the atom that forms the most bonds in the centre (usually the least electronegative; never hydrogen). Step 3: join each outer atom with a single bond (two electrons each). Step 4: give the outer atoms lone pairs until each has eight electrons (hydrogen needs only two). Step 5: put any electrons left on the central atom. Step 6: if the central atom has fewer than eight, move a lone pair from an outer atom to make a double or triple bond.",
+        "Example, CO₂: 4 + 6 + 6 = 16 valence electrons. Carbon in the centre with two single bonds uses 4. Giving each oxygen three lone pairs uses the other 12, but carbon then has only four electrons, so one lone pair from each oxygen becomes a second bond. Result: O=C=O, with two lone pairs on each oxygen.",
+        "Example, NH₃: 5 + 3 = 8 valence electrons. Three N–H bonds use 6; the last 2 form a lone pair on nitrogen."
+       ],
+       "check": [
+        [
+         "How many valence electrons are in a molecule of H₂S, and how many lone pairs are on sulfur?",
+         "1 + 1 + 6 = 8 valence electrons. Two S–H bonds use four, leaving two lone pairs on sulfur."
+        ]
+       ]
+      },
+      {
+       "h": "From Lewis structure to shape: three worked cases",
+       "p": [
+        "CH₄: four bonding groups, no lone pairs: tetrahedral, 109.5°. NH₃: four groups, one of them a lone pair: the atoms form a pyramid, with angles of about 107°. H₂O: four groups, two lone pairs: bent, about 104.5°. In each case the electron groups point to the corners of a tetrahedron; the name describes only where the atoms are.",
+        "CO₂: two groups (each double bond counts once): linear, 180°. The two C=O bond dipoles point in opposite directions and cancel, so the molecule is non-polar even though each bond is polar."
+       ],
+       "check": [
+        [
+         "What is the shape of H₂S, and is the molecule polar?",
+         "Four electron groups with two lone pairs: bent (V-shaped). The bond dipoles do not cancel, so it is polar."
+        ]
+       ]
+      },
+      {
+       "h": "Predicting boiling point order",
+       "p": [
+        "Method: identify the strongest type of intermolecular force for each substance, then compare. If the types are the same, the molecule with more electrons has stronger dispersion forces.",
+        "Example: rank CH₄, HCl and H₂O. CH₄ is non-polar: dispersion only. HCl is polar: dispersion and dipole–dipole. H₂O has O–H bonds: hydrogen bonding. Order of boiling point: CH₄ (−162 °C) < HCl (−85 °C) < H₂O (100 °C).",
+        "Example: the halogens F₂, Cl₂, Br₂, I₂ are all non-polar. Boiling point rises down the group because each molecule has more electrons and stronger dispersion forces; that is why iodine is a solid at room temperature."
+       ],
+       "check": [
+        [
+         "Which has the higher boiling point, CH₃OH or CH₃F, and why?",
+         "CH₃OH. It has an O–H bond, so it forms hydrogen bonds between molecules; CH₃F has only dipole–dipole and dispersion forces."
+        ]
        ]
       },
       {
@@ -346,6 +487,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know that metals have few valence electrons and low electronegativity, so they lose electrons easily.",
+        "The big idea: in a metal, the valence electrons are not attached to any one atom. This single picture, positive ions in a sea of mobile electrons, explains why metals conduct, bend without breaking and shine. It also helps explain how metals react and why we can reshape and recycle them."
+       ]
+      },
+      {
        "h": "The metallic bonding model",
        "p": [
         "Metal atoms lose their valence electrons into a shared “sea”. The lattice is held together by electrostatic attraction between the positive ions and the delocalised electrons. This attraction is strong and acts in all directions, which explains the usual properties.",
@@ -370,6 +518,40 @@
        "p": [
         "Alloying adds other atoms that disrupt the regular layers, so they slide less easily and the alloy is harder. Heat treatment changes crystal size: quenching (heating then cooling rapidly) gives small crystals, harder but brittle; annealing (cooling slowly) gives larger crystals, softer and more ductile; tempering (quenching then gentle reheating) reduces brittleness while keeping hardness.",
         "Metals can be recycled repeatedly without losing their properties. Recycling aluminium uses a small fraction of the energy needed to extract it from ore, and it reduces mining and landfill. This is a clear example of a circular economy."
+       ]
+      },
+      {
+       "h": "Using the model to explain a property",
+       "p": [
+        "Every “explain” answer about metals follows the same pattern: describe the structure, then link the relevant feature to the property.",
+        "Model answer for “Why can copper be drawn into wires?”: “Copper consists of a lattice of Cu²⁺ cations surrounded by delocalised electrons. When a force is applied, layers of cations can slide past each other, and the delocalised electrons continue to attract the cations in their new positions, so the metal changes shape without breaking.”",
+        "Compare this with an ionic solid, where sliding a layer puts like charges together and the crystal shatters. The difference is that a metal has only one kind of ion and its bonding is non-directional."
+       ],
+       "check": [
+        [
+         "Explain why solid metals conduct electricity.",
+         "A metal has delocalised valence electrons that are free to move through the lattice. When a voltage is applied they flow towards the positive terminal, carrying charge."
+        ]
+       ]
+      },
+      {
+       "h": "Working out a reactivity order from experiments",
+       "p": [
+        "Reactivity is judged by how vigorously a metal reacts with water, acid or oxygen. Potassium and sodium react violently with cold water; calcium reacts steadily; magnesium reacts very slowly with cold water but burns in steam; zinc and iron react with acids; copper, silver and gold do not react with dilute acids.",
+        "Example: metal X fizzes rapidly in dilute HCl, metal Y fizzes slowly, and metal Z shows no reaction. Order of reactivity: X > Y > Z. The gas is hydrogen, which can be confirmed with a lit splint (a “pop”).",
+        "The more reactive a metal, the more easily its atoms lose electrons. Very reactive metals are found in nature only as compounds and need a lot of energy to extract; unreactive metals such as gold are found as the element."
+       ],
+       "check": [
+        [
+         "Write the equation for calcium reacting with water.",
+         "Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g). A reactive metal with water gives a metal hydroxide and hydrogen."
+        ]
+       ]
+      },
+      {
+       "h": "Metal nanoparticles and coatings",
+       "p": [
+        "Metallic nanomaterials are particles between 1 and 100 nanometres across. They have a very large surface area for their volume, so they can be far better catalysts than a lump of the same metal, and their colour and reactivity can differ from the bulk metal."
        ]
       },
       {
@@ -450,6 +632,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know which elements are metals and non-metals and how many valence electrons each group has.",
+        "The big idea: when a metal meets a non-metal, electrons are transferred, not shared. The oppositely charged ions that form pack into a regular lattice. Knowing the charges of common ions lets you write the formula of any ionic compound and predict what happens when two solutions are mixed."
+       ]
+      },
+      {
        "h": "The ionic bonding model",
        "p": [
         "When a metal reacts with a non-metal, electrons transfer from the metal to the non-metal. The resulting cations and anions arrange in a three-dimensional lattice, held by strong electrostatic attraction between opposite charges in all directions. The formula is a ratio, not a molecule.",
@@ -476,10 +665,182 @@
        ]
       },
       {
+       "h": "Predicting ion charges",
+       "p": [
+        "Atoms tend to gain or lose electrons to reach the electron configuration of the nearest noble gas. Group 1 metals lose one electron (1+), group 2 lose two (2+), aluminium loses three (3+). Group 15 non-metals gain three (3−), group 16 gain two (2−), group 17 gain one (1−).",
+        "Naming: the cation keeps the element’s name; a simple anion ends in -ide (chloride, oxide, sulfide). Polyatomic ions have their own names and stay together as a unit: sulfate SO₄²⁻, nitrate NO₃⁻, carbonate CO₃²⁻, hydroxide OH⁻, ammonium NH₄⁺, phosphate PO₄³⁻."
+       ],
+       "check": [
+        [
+         "What ions do potassium (group 1) and sulfur (group 16) form, and what is the formula of potassium sulfide?",
+         "K⁺ and S²⁻. Two K⁺ balance one S²⁻, so the formula is K₂S."
+        ]
+       ]
+      },
+      {
+       "h": "Formulas: more practice",
+       "p": [
+        "Swap-and-simplify works as a shortcut: use the size of each ion’s charge as the other ion’s subscript, then reduce to the simplest ratio.",
+        "Aluminium sulfate: Al³⁺ and SO₄²⁻ give Al₂(SO₄)₃. Check: 2 × (+3) + 3 × (−2) = 0. Magnesium oxide: Mg²⁺ and O²⁻ give Mg₂O₂, which simplifies to MgO. Ammonium carbonate: NH₄⁺ and CO₃²⁻ give (NH₄)₂CO₃. Copper(II) nitrate: Cu²⁺ and NO₃⁻ give Cu(NO₃)₂."
+       ],
+       "check": [
+        [
+         "Write the formula of iron(III) hydroxide.",
+         "Fe³⁺ and OH⁻ give Fe(OH)₃. Brackets are needed because there is more than one hydroxide ion."
+        ]
+       ]
+      },
+      {
+       "h": "Three kinds of equation",
+       "p": [
+        "For sodium sulfate solution mixed with barium chloride solution. Full (molecular) equation: Na₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2NaCl(aq). To get the ionic equation, split every aqueous ionic compound into its ions, leave the solid whole, then cancel ions that appear unchanged on both sides (the spectator ions, here Na⁺ and Cl⁻). Ionic equation: Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s).",
+        "The ionic equation shows what actually happens: any soluble barium salt with any soluble sulfate gives the same reaction. Precipitation is used to remove unwanted ions from water, such as phosphate or heavy metals."
+       ],
+       "check": [
+        [
+         "Silver nitrate solution is added to sodium chloride solution. Write the ionic equation and name the spectator ions.",
+         "Ag⁺(aq) + Cl⁻(aq) → AgCl(s). The spectator ions are Na⁺ and NO₃⁻."
+        ]
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Leaving out state symbols, which carry the meaning in a precipitation equation. Writing PbI instead of balancing charges. Saying an ionic solid conducts because it “has electrons”."
        ]
+      }
+     ]
+    },
+    {
+     "id": "equations",
+     "title": "Writing and balancing equations",
+     "points": [
+      "A chemical equation shows reactants → products with correct formulas. Atoms are rearranged, never created or destroyed.",
+      "Balance by changing coefficients (the numbers in front), never the subscripts inside a formula.",
+      "State symbols: (s) solid, (l) liquid, (g) gas, (aq) dissolved in water.",
+      "Diatomic elements: H₂, N₂, O₂, F₂, Cl₂, Br₂, I₂.",
+      "Common reaction types: combination, decomposition, combustion, precipitation, acid–base, redox (including displacement)."
+     ],
+     "explain": "Explain why changing a subscript to balance an equation is wrong, using H₂O and H₂O₂ as your example.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to write formulas for ionic compounds and simple molecules.",
+        "The big idea: an equation is a precise sentence. It says which substances react, what they become and in what ratio. Because atoms are conserved, the same number of each type of atom must appear on both sides. Being able to write a correct balanced equation is the first step of nearly every calculation in the course."
+       ]
+      },
+      {
+       "h": "From words to symbols",
+       "p": [
+        "Step 1: write a word equation. Step 2: replace each name with its correct formula, checking ion charges and remembering the diatomic elements. Step 3: balance. Step 4: add state symbols.",
+        "Example: magnesium burns in oxygen to form magnesium oxide. Word equation: magnesium + oxygen → magnesium oxide. Formulas: Mg + O₂ → MgO. Balance: there are two oxygen atoms on the left, so put 2 in front of MgO, then 2 in front of Mg. Result: 2Mg(s) + O₂(g) → 2MgO(s)."
+       ]
+      },
+      {
+       "h": "A method for balancing",
+       "p": [
+        "Count the atoms of each element on both sides. Balance elements that appear in only one substance on each side first. Leave hydrogen and oxygen, and any element on its own, until last. Treat a polyatomic ion that stays intact as a single unit. Finally check every element again and reduce the coefficients to the simplest whole numbers.",
+        "Example: Al + HCl → AlCl₃ + H₂. Chlorine: 1 on the left, 3 on the right. Hydrogen: 1 and 2. The lowest number that suits both is 6 HCl, giving 2AlCl₃ and 3H₂, which then needs 2Al. Result: 2Al(s) + 6HCl(aq) → 2AlCl₃(aq) + 3H₂(g). Check: Al 2 and 2; H 6 and 6; Cl 6 and 6.",
+        "Example with a polyatomic ion: Ca(OH)₂ + H₃PO₄ → Ca₃(PO₄)₂ + H₂O. Calcium: 3 Ca(OH)₂. Phosphate: 2 H₃PO₄. Hydrogen on the left: 6 + 6 = 12, so 6 H₂O. Oxygen then checks: 6 + 8 = 14 on the left and 8 + 6 = 14 on the right. Result: 3Ca(OH)₂ + 2H₃PO₄ → Ca₃(PO₄)₂ + 6H₂O."
+       ],
+       "check": [
+        [
+         "Balance: Fe + O₂ → Fe₂O₃.",
+         "4Fe + 3O₂ → 2Fe₂O₃. Oxygen needs a common multiple of 2 and 3 (six atoms), which then requires four iron atoms."
+        ],
+        [
+         "Balance: C₂H₆ + O₂ → CO₂ + H₂O.",
+         "2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O. Balancing C and H first gives 3.5 O₂, so double everything."
+        ]
+       ]
+      },
+      {
+       "h": "Recognising reaction types",
+       "p": [
+        "Combination: two substances join into one, as in 2Na + Cl₂ → 2NaCl. Decomposition: one substance breaks into simpler ones, as in CaCO₃ → CaO + CO₂ on heating. Combustion: a fuel reacts with oxygen, releasing energy. Precipitation: two solutions give an insoluble solid. Acid–base: a proton is transferred, often giving a salt and water. Displacement: a more reactive element replaces a less reactive one in a compound, as in Zn + CuSO₄ → ZnSO₄ + Cu.",
+        "Signs that a chemical reaction has happened: a gas is given off, a precipitate forms, the colour changes, or the temperature changes."
+       ],
+       "check": [
+        [
+         "What type of reaction is 2H₂O₂ → 2H₂O + O₂?",
+         "Decomposition: one compound breaks down into two simpler substances."
+        ]
+       ]
+      },
+      {
+       "h": "What an equation tells you",
+       "p": [
+        "The coefficients give the ratio in which particles, and therefore moles, react. 2H₂ + O₂ → 2H₂O means two moles of hydrogen react with one mole of oxygen to give two moles of water. It does not mean two grams react with one gram. Mass is still conserved: 4.0 g of hydrogen and 32.0 g of oxygen give 36.0 g of water."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Changing subscripts to balance. Writing O instead of O₂ for oxygen gas. Forgetting brackets around a polyatomic ion with a subscript. Leaving coefficients that can be simplified. Omitting state symbols."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which is the correctly balanced equation for hydrogen reacting with nitrogen to form ammonia?",
+       "o": [
+        "H₂ + N₂ → NH₃",
+        "3H₂ + N₂ → 2NH₃",
+        "H₃ + N → NH₃",
+        "6H + 2N → 2NH₃"
+       ],
+       "a": 1,
+       "e": "Hydrogen and nitrogen are diatomic. Three H₂ and one N₂ give six H and two N, matching 2NH₃."
+      },
+      {
+       "t": "m",
+       "q": "In the balanced equation for C₃H₈ + O₂ → CO₂ + H₂O, the coefficient of O₂ is…",
+       "o": [
+        "3",
+        "4",
+        "5",
+        "10"
+       ],
+       "a": 2,
+       "e": "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O. Oxygen atoms on the right: 6 + 4 = 10, so 5 O₂."
+      },
+      {
+       "t": "m",
+       "q": "Which change is allowed when balancing an equation?",
+       "o": [
+        "Changing a subscript in a formula",
+        "Changing a coefficient in front of a formula",
+        "Removing a product",
+        "Changing a state symbol"
+       ],
+       "a": 1,
+       "e": "Subscripts define the substance. Only coefficients may change."
+      },
+      {
+       "t": "c",
+       "q": "Balance: Na + H₂O → NaOH + H₂.",
+       "a": "2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g).",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "List the seven diatomic elements.",
+       "a": "Hydrogen, nitrogen, oxygen, fluorine, chlorine, bromine and iodine.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "CaCO₃(s) → CaO(s) + CO₂(g) is an example of…",
+       "o": [
+        "combination",
+        "decomposition",
+        "precipitation",
+        "displacement"
+       ],
+       "a": 1,
+       "e": "One compound breaks into two simpler substances."
       }
      ]
     },
@@ -528,6 +889,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should understand polarity and the types of intermolecular forces (covalent bonding lesson) and how ionic lattices are held together.",
+        "The big idea: whether a substance dissolves depends on whether the new attractions it can form with the solvent are strong enough to replace the old ones. Chromatography uses the same idea to separate a mixture: different substances are attracted to a surface and to a solvent to different extents, so they travel at different speeds."
+       ]
+      },
+      {
        "h": "Why things dissolve",
        "p": [
         "A solute dissolves when the attractions between solute and solvent particles are strong enough to replace the solute–solute and solvent–solvent attractions. Polar and ionic substances tend to dissolve in polar solvents such as water; non-polar substances dissolve in non-polar solvents such as hexane.",
@@ -552,6 +920,39 @@
        "h": "Practical points",
        "p": [
         "Draw the origin line in pencil, because ink would dissolve and run. Keep the origin above the solvent level, or the sample dissolves into the solvent pool. Cover the container so the solvent does not evaporate from the paper. Mark the solvent front as soon as the paper is removed."
+       ]
+      },
+      {
+       "h": "Solutions vocabulary",
+       "p": [
+        "A solution is a homogeneous mixture: the solute (the substance dissolved) is spread evenly through the solvent (the substance doing the dissolving) and cannot be seen or filtered out. Soluble means it dissolves to a useful extent; insoluble means very little dissolves. Two liquids that mix fully are miscible; oil and water are immiscible."
+       ]
+      },
+      {
+       "h": "Explaining solubility in three cases",
+       "p": [
+        "Sodium chloride in water: the partial negative oxygen atoms of water are attracted to Na⁺ and the partial positive hydrogen atoms to Cl⁻. These ion–dipole attractions pull ions out of the lattice, and each ion becomes surrounded by water molecules (hydrated). Equation: NaCl(s) → Na⁺(aq) + Cl⁻(aq).",
+        "Ethanol in water: ethanol’s O–H group forms hydrogen bonds with water molecules, so the two mix completely. As the carbon chain gets longer (butanol, hexanol), more of the molecule is non-polar and solubility drops.",
+        "Oil in water: oil molecules are non-polar and can only form weak dispersion forces with water. These cannot replace the hydrogen bonds between water molecules, so the oil is pushed out and forms a separate layer. Oil dissolves in hexane, where dispersion forces replace dispersion forces."
+       ],
+       "check": [
+        [
+         "Explain why iodine, I₂, dissolves in hexane but hardly at all in water.",
+         "Iodine and hexane are both non-polar, so dispersion forces between them replace the dispersion forces in each. Iodine cannot form hydrogen bonds or dipole attractions strong enough to disrupt the hydrogen bonding between water molecules."
+        ]
+       ]
+      },
+      {
+       "h": "Reading a chromatogram",
+       "p": [
+        "A pure substance gives one spot. A mixture gives one spot for each component, unless two components happen to have the same Rf. To identify a component, run known substances (standards) beside the sample on the same paper: spots that travel the same distance have the same Rf and are likely the same substance.",
+        "Example: a food dye gives spots at Rf 0.25 and 0.70. Standards run alongside give tartrazine 0.25, brilliant blue 0.70 and allura red 0.45. The dye contains tartrazine and brilliant blue, not allura red."
+       ],
+       "check": [
+        [
+         "On a polar stationary phase with a non-polar solvent, which travels further: a polar or a non-polar component?",
+         "The non-polar component. It is more soluble in the mobile phase and less strongly adsorbed to the polar stationary phase, so it has the higher Rf."
+        ]
        ]
       },
       {
@@ -625,6 +1026,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to read relative atomic masses from the periodic table and write chemical formulas.",
+        "The big idea: a mole is just a counting unit, like a dozen, but very large. One mole of anything is 6.02 × 10²³ particles. The mole is useful because the mass of one mole in grams equals the relative mass, so weighing a substance tells you how many particles you have. Almost every calculation in chemistry goes through moles."
+       ]
+      },
+      {
        "h": "Why chemists count in moles",
        "p": [
         "Atoms are too small to count, so chemists weigh them. The mole links the mass you can measure to the number of particles that react. One mole of any substance contains the same number of particles, and its mass in grams equals its relative mass."
@@ -648,6 +1056,50 @@
        "p": [
         "A compound is 40.0% C, 6.7% H and 53.3% O by mass, with molar mass 180 g mol⁻¹.",
         "In 100 g: \\(n(\\mathrm{C}) = \\dfrac{40.0}{12.0} = 3.33\\), \\(n(\\mathrm{H}) = \\dfrac{6.7}{1.0} = 6.7\\), \\(n(\\mathrm{O}) = \\dfrac{53.3}{16.0} = 3.33\\). Divide by the smallest: 1 : 2 : 1, so the empirical formula is \\(\\mathrm{CH_2O}\\) (30 g mol⁻¹). \\(180 \\div 30 = 6\\), so the molecular formula is \\(\\mathrm{C_6H_{12}O_6}\\)."
+       ]
+      },
+      {
+       "h": "Calculating molar mass",
+       "p": [
+        "Add the relative atomic masses of every atom in the formula. \\(M(\\mathrm{H_2O}) = 2(1.0) + 16.0 = 18.0\\ \\mathrm{g\\ mol^{-1}}\\). \\(M(\\mathrm{Ca(OH)_2}) = 40.1 + 2(16.0 + 1.0) = 74.1\\ \\mathrm{g\\ mol^{-1}}\\): the subscript outside the bracket multiplies everything inside. \\(M(\\mathrm{CuSO_4{\\cdot}5H_2O}) = 63.5 + 32.1 + 4(16.0) + 5(18.0) = 249.6\\ \\mathrm{g\\ mol^{-1}}\\): water of crystallisation is included."
+       ],
+       "check": [
+        [
+         "Calculate the molar mass of aluminium sulfate, Al₂(SO₄)₃ (Al 27.0, S 32.1, O 16.0).",
+         "2(27.0) + 3(32.1 + 64.0) = 54.0 + 288.3 = 342.3 g mol⁻¹."
+        ]
+       ]
+      },
+      {
+       "h": "A reliable method for any mole problem",
+       "p": [
+        "Write down what you are given with its unit, and what you want. Convert the given quantity to moles. Use the formula or equation to change to moles of what you want. Convert to the unit asked for. Then check that the size of the answer is sensible and round to the correct significant figures.",
+        "Example: what mass of carbon is in 11.0 g of \\(\\mathrm{CO_2}\\)? \\(n(\\mathrm{CO_2}) = \\dfrac{11.0}{44.0} = 0.250\\ \\mathrm{mol}\\). Each molecule has one carbon atom, so \\(n(\\mathrm{C}) = 0.250\\ \\mathrm{mol}\\). \\(m(\\mathrm{C}) = 0.250 \\times 12.0 = 3.00\\ \\mathrm{g}\\).",
+        "Example: how many molecules are in 9.0 g of water? \\(n = \\dfrac{9.0}{18.0} = 0.50\\ \\mathrm{mol}\\). \\(N = 0.50 \\times 6.02 \\times 10^{23} = 3.0 \\times 10^{23}\\) molecules, containing \\(9.0 \\times 10^{23}\\) atoms."
+       ],
+       "check": [
+        [
+         "How many moles are in 4.0 g of sodium hydroxide, NaOH (M = 40.0 g mol⁻¹)?",
+         "n = m ÷ M = 4.0 ÷ 40.0 = 0.10 mol."
+        ]
+       ]
+      },
+      {
+       "h": "Percentage composition",
+       "p": [
+        "Example: percentage of nitrogen in ammonium nitrate, \\(\\mathrm{NH_4NO_3}\\) (M = 80.0). There are two nitrogen atoms: \\(\\%\\mathrm{N} = \\dfrac{2 \\times 14.0}{80.0} \\times 100 = 35.0\\%\\). This is how fertilisers are compared."
+       ],
+       "check": [
+        [
+         "What is the percentage by mass of oxygen in water?",
+         "16.0 ÷ 18.0 × 100 = 88.9%."
+        ]
+       ]
+      },
+      {
+       "h": "Significant figures",
+       "p": [
+        "Give answers to the smallest number of significant figures in the data. Leading zeros do not count (0.0250 has three); trailing zeros after a decimal point do. Keep extra digits in your calculator and round only the final answer."
        ]
       },
       {
@@ -716,6 +1168,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to draw Lewis structures and know the types of intermolecular forces.",
+        "The big idea: organic chemistry is the chemistry of carbon compounds. There are millions of them, but they are organised into families. If you learn how one member of a family is named and how it behaves, you know the whole family."
+       ]
+      },
+      {
        "h": "Why carbon forms so many compounds",
        "p": [
         "Carbon has four valence electrons and forms four strong covalent bonds, including bonds to other carbon atoms in chains, branches and rings. A homologous series is a family of compounds with the same functional group and general formula, where each member differs from the next by CH₂. Members have similar chemical properties and a gradual change in physical properties."
@@ -745,6 +1204,45 @@
        "p": [
         "Combustion: complete combustion gives CO₂ and H₂O. Substitution: an alkane reacts with a halogen in UV light, replacing an H. Addition: an alkene reacts across the double bond, which is why alkenes decolourise bromine water and alkanes do not. Esters form when an alcohol reacts with a carboxylic acid.",
         "Most organic chemicals are made from crude oil, a non-renewable source. Plant-based biomass is an alternative feedstock that can be renewed."
+       ]
+      },
+      {
+       "h": "The families at a glance",
+       "p": [
+        "Alkanes: only single bonds, CₙH₂ₙ₊₂, called saturated. Methane CH₄, ethane C₂H₆, propane C₃H₈, butane C₄H₁₀. Alkenes: one C=C double bond, CₙH₂ₙ, unsaturated. Ethene C₂H₄, propene C₃H₆. Haloalkanes: a halogen replaces a hydrogen, e.g. chloroethane CH₃CH₂Cl. Alcohols: an –OH group, e.g. ethanol CH₃CH₂OH. Carboxylic acids: a –COOH group, e.g. ethanoic acid CH₃COOH. Esters: formed from an alcohol and a carboxylic acid, often with fruity smells."
+       ],
+       "check": [
+        [
+         "What is the molecular formula of the alkane with six carbon atoms, and what is it called?",
+         "CₙH₂ₙ₊₂ with n = 6 gives C₆H₁₄, hexane."
+        ]
+       ]
+      },
+      {
+       "h": "Drawing isomers systematically",
+       "p": [
+        "To find all structural isomers, start with the longest chain, then shorten the chain by one carbon and attach it as a branch in each different position, and repeat. Check for duplicates by naming each one: two drawings with the same name are the same molecule.",
+        "Example, C₅H₁₂: pentane (five in a row); 2-methylbutane (four in a row, one branch); 2,2-dimethylpropane (three in a row, two branches on the middle carbon). There are three isomers. “3-methylbutane” is 2-methylbutane numbered from the wrong end.",
+        "For an alkene or alcohol, also move the functional group: but-1-ene and but-2-ene; propan-1-ol and propan-2-ol."
+       ],
+       "check": [
+        [
+         "Name the two structural isomers of C₄H₁₀.",
+         "Butane and 2-methylpropane."
+        ]
+       ]
+      },
+      {
+       "h": "Writing organic equations",
+       "p": [
+        "Complete combustion of propane: C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l). Balance carbon, then hydrogen, then oxygen last. Substitution: CH₄ + Cl₂ → CH₃Cl + HCl (UV light). Addition: CH₂=CH₂ + Br₂ → CH₂BrCH₂Br. Addition of water to ethene gives ethanol: CH₂=CH₂ + H₂O → CH₃CH₂OH (catalyst).",
+        "Esterification: ethanol + ethanoic acid → ethyl ethanoate + water. The ester’s name takes its first word from the alcohol and its second from the acid."
+       ],
+       "check": [
+        [
+         "Write the balanced equation for the complete combustion of ethanol, C₂H₅OH.",
+         "C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(l)."
+        ]
        ]
       },
       {
@@ -813,6 +1311,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the alkene, alcohol and carboxylic acid functional groups and what intermolecular forces are.",
+        "The big idea: plastics are made of very long chain molecules. The way the chains are built, and how well they can pack together, decides whether a plastic is soft or rigid, clear or opaque, and whether it can be melted and recycled."
+       ]
+      },
+      {
        "h": "How polymers form",
        "p": [
         "A polymer is a very large molecule made of many small repeating units called monomers. In addition polymerisation the double bond of each monomer opens and the monomers join end to end; nothing else is produced, so the polymer has the same empirical formula as the monomer. In condensation polymerisation each monomer has two functional groups; they join by forming ester or amide links and release a small molecule, usually water."
@@ -829,6 +1334,12 @@
        "p": [
         "Longer chains mean stronger dispersion forces in total, so higher melting point and strength. Branching keeps chains apart: low-density polyethene has many branches and is soft and flexible; high-density polyethene has few and is rigid. Crystalline regions, where chains line up, add strength and make the plastic opaque; amorphous regions are tangled and more transparent. Side groups matter: a bulky or polar side group changes stiffness and intermolecular forces.",
         "Thermoplastics have only weak forces between chains, so they soften when heated and can be remoulded. Thermosetting polymers have strong covalent cross-links, so they char instead of melting and cannot be remoulded. Elastomers have occasional cross-links, so chains can stretch and spring back. Plasticisers are small molecules added between chains to make a plastic softer."
+       ],
+       "check": [
+        [
+         "Why is HDPE more rigid than LDPE?",
+         "HDPE chains have few branches, so they pack closely and the total dispersion forces between chains are stronger."
+        ]
        ]
       },
       {
@@ -838,10 +1349,163 @@
        ]
       },
       {
+       "h": "Common addition polymers",
+       "p": [
+        "Polyethene from ethene: bags, bottles. Polypropene from propene: ropes, food containers. Polyvinyl chloride (PVC) from chloroethene: pipes, cable insulation; the polar C–Cl bonds add dipole–dipole attractions between chains, making it more rigid. Polystyrene from phenylethene: foam packaging; the bulky side group stops chains packing closely. Polytetrafluoroethene (PTFE) from tetrafluoroethene: non-stick coatings."
+       ]
+      },
+      {
+       "h": "Condensation polymers in more detail",
+       "p": [
+        "A polyester forms when a monomer with two carboxyl groups reacts with a monomer with two hydroxyl groups. Each ester link made releases one water molecule. PET, used in drink bottles, is a polyester. A polyamide forms when a dicarboxylic acid reacts with a diamine, making amide links; nylon is a polyamide, and so are proteins.",
+        "To spot the type: if the backbone of the chain is only carbon atoms, it is an addition polymer. If the backbone contains ester (–COO–) or amide (–CONH–) links, it is a condensation polymer."
+       ],
+       "check": [
+        [
+         "A polymer chain contains –CONH– links. Is it an addition or condensation polymer, and what small molecule was released as it formed?",
+         "A condensation polymer (a polyamide). Water was released for each link formed."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: from polymer to monomer",
+       "p": [
+        "A section of chain reads –CH₂–CHCl–CH₂–CHCl–CH₂–CHCl–. The pattern repeats every two carbons, so the repeating unit is –CH₂–CHCl–. Restore the double bond between those two carbons: the monomer is CH₂=CHCl, chloroethene."
+       ],
+       "check": [
+        [
+         "What is the monomer of the polymer –CF₂–CF₂–CF₂–CF₂–?",
+         "CF₂=CF₂, tetrafluoroethene."
+        ]
+       ]
+      },
+      {
+       "h": "Recycling codes and what they mean",
+       "p": [
+        "The number in the triangle identifies the polymer so it can be sorted: 1 PET, 2 HDPE, 3 PVC, 4 LDPE, 5 polypropene, 6 polystyrene. PET and HDPE are the most widely recycled. Mixed or contaminated plastics are hard to recycle mechanically, which is one reason chemical recycling and better product design matter in a circular economy."
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Leaving a double bond in the repeating unit of an addition polymer. Forgetting the bonds that extend through the brackets. Saying thermosetting plastics have “stronger intermolecular forces”: their cross-links are covalent bonds."
        ]
+      }
+     ]
+    },
+    {
+     "id": "sustainability",
+     "title": "Green chemistry and sustainability",
+     "points": [
+      "Sustainable development meets present needs without reducing the ability of future generations to meet theirs.",
+      "A linear economy takes, makes and disposes. A circular economy keeps materials in use through design, reuse, repair and recycling.",
+      "Green chemistry principles include: prevent waste, high atom economy, less hazardous substances, safer solvents, energy efficiency, renewable feedstocks, catalysis, and design for degradation.",
+      "Life-cycle thinking considers raw materials, manufacture, transport, use and end of life.",
+      "Evaluate sources: who wrote it, what evidence, is it current, and is there a conflict of interest?"
+     ],
+     "explain": "Choose one product you used today. Describe one change at each stage of its life cycle that would make it more sustainable.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson it helps to have studied metals, polymers and organic compounds, because the examples come from them.",
+        "The big idea: chemistry makes the materials modern life depends on, and the way they are made and discarded has consequences. Green chemistry asks chemists to prevent problems at the design stage instead of cleaning up afterwards. In Unit 1 this is also the basis of the research investigation, where you answer a question about how a material is produced or used."
+       ]
+      },
+      {
+       "h": "Linear and circular economies",
+       "p": [
+        "In a linear economy, raw materials are extracted, made into products, used and thrown away. This uses up finite resources and creates waste. In a circular economy, products are designed from the start to last longer, to be repaired and reused, and finally to be recycled back into new materials, so that waste from one process becomes a feedstock for another.",
+        "Example: aluminium cans. Making aluminium from bauxite ore needs a great deal of electrical energy. Collected cans can be melted and re-formed repeatedly with no loss of quality, using only a small fraction of that energy. Aluminium therefore suits a circular model well. Many plastics do not, because they are downgraded each time they are mechanically recycled."
+       ],
+       "check": [
+        [
+         "Give one difference between a linear and a circular economy.",
+         "A linear economy disposes of products after use; a circular economy keeps materials in use by reusing, repairing and recycling them."
+        ]
+       ]
+      },
+      {
+       "h": "The green chemistry principles in practice",
+       "p": [
+        "Waste prevention: it is better to avoid making waste than to treat it. Atom economy: choose reactions in which most of the atoms of the reactants end up in the product. Safer chemistry: use and produce substances with little toxicity. Safer solvents: avoid solvents where possible, or use water. Energy efficiency: run reactions at room temperature and pressure where possible. Renewable feedstocks: use raw materials from plants in preference to fossil fuels. Catalysis: catalysts are needed in small amounts and are reused, unlike reagents that are consumed. Design for degradation: products should break down into harmless substances after use.",
+        "Example: making polylactic acid (PLA) from corn starch uses a renewable feedstock and gives a compostable plastic. It still needs farmland, water and industrial composting conditions, so it is an improvement in some respects and not in others. Real evaluations nearly always involve trade-offs like this."
+       ],
+       "check": [
+        [
+         "Which green chemistry principle is met by replacing a petroleum-based feedstock with plant material?",
+         "Use of renewable feedstocks."
+        ]
+       ]
+      },
+      {
+       "h": "Life-cycle thinking",
+       "p": [
+        "To judge a product fairly, follow it from start to finish. Raw materials: are they renewable, scarce or damaging to extract? Manufacture: how much energy and water, and what emissions and by-products? Transport and use: how long does it last? End of life: is it reused, recycled, composted, burned or sent to landfill?",
+        "A paper bag can have a larger footprint than a plastic bag in manufacture, but breaks down readily; a cotton bag has a large footprint to make and only becomes the better choice after many uses. Without the whole life cycle, conclusions are easily wrong."
+       ]
+      },
+      {
+       "h": "Researching and communicating",
+       "p": [
+        "A good research question is specific and can be answered with evidence, for example “How does recycling lithium-ion batteries reduce the demand for critical elements?” Use reliable sources such as government agencies, scientific organisations and peer-reviewed articles, and be cautious with sources that sell a product. Record every source as you go and acknowledge it. Distinguish between what the evidence shows, what is opinion and what is still uncertain, and present both benefits and limitations."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Treating “natural”, “bio” or “biodegradable” as automatically sustainable. Describing only the benefits of a solution. Confusing atom economy with yield. Using a single source, or one with an obvious commercial interest."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which best describes a circular economy?",
+       "o": [
+        "Materials are extracted, used once and discarded",
+        "Materials are kept in use through reuse, repair and recycling",
+        "Only renewable energy is used",
+        "All products are biodegradable"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A reaction is redesigned so that nearly all reactant atoms end up in the product. Which principle does this apply?",
+       "o": [
+        "Design for degradation",
+        "Atom economy",
+        "Safer solvents",
+        "Energy efficiency"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "List the five stages of a product’s life cycle.",
+       "a": "Raw material extraction, manufacture, transport or distribution, use, and end of life (disposal, reuse or recycling).",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is recycling aluminium a strong example of a circular economy?",
+       "a": "Aluminium can be melted and re-formed repeatedly without losing its properties, and recycling uses far less energy than extracting it from ore.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which source is likely to be the most reliable for a research investigation?",
+       "o": [
+        "A company’s advertisement for its own product",
+        "An anonymous social media post",
+        "A peer-reviewed journal article",
+        "A product review blog"
+       ],
+       "a": 2,
+       "e": "Peer review means other experts have checked the methods and conclusions."
       }
      ]
     }
@@ -901,6 +1565,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should understand polarity and hydrogen bonding (covalent bonding lesson).",
+        "The big idea: water is a small molecule that behaves like a much larger one, because its molecules are held to each other by hydrogen bonds. Its ability to store and move large amounts of heat shapes weather, climate and living things."
+       ]
+      },
+      {
        "h": "Why water is unusual",
        "p": [
         "Compared with other molecules of its size, water has very high melting and boiling points, a high heat capacity and a high latent heat. The cause is hydrogen bonding. Each water molecule has two O–H bonds and two lone pairs, so it can form up to four hydrogen bonds with neighbours. Breaking or loosening these requires a lot of energy."
@@ -930,6 +1601,38 @@
        "h": "Density of ice",
        "p": [
         "As water freezes, each molecule forms four hydrogen bonds in a fixed, open hexagonal arrangement. This holds the molecules further apart than in the liquid, so ice is less dense and floats. Ice forming on top of lakes insulates the water below, which lets aquatic life survive winter."
+       ]
+      },
+      {
+       "h": "Reading a heating curve",
+       "p": [
+        "If ice is heated steadily, a graph of temperature against time has sloping sections and flat sections. On a slope, the energy raises the temperature of one state (ice, then water, then steam), and you calculate it with q = mcΔT. On a flat section, the state is changing at constant temperature: the energy goes into overcoming the attractions between molecules, and you calculate it with the latent heat. The flat section for boiling is much longer than for melting, because boiling separates the molecules completely."
+       ],
+       "check": [
+        [
+         "Why does the temperature stay at 100 °C while water boils, even though it is still being heated?",
+         "The energy is being used to overcome the hydrogen bonds between water molecules, not to increase their kinetic energy, so the temperature does not rise until all the water has become steam."
+        ]
+       ]
+      },
+      {
+       "h": "More worked examples",
+       "p": [
+        "Example 1: 500 g of water cools from 80.0 °C to 25.0 °C. Energy released: \\(q = 500 \\times 4.18 \\times 55.0 = 114\\,950\\ \\mathrm{J} = 115\\ \\mathrm{kJ}\\).",
+        "Example 2: finding a temperature change. 10.0 kJ is added to 200 g of water at 20.0 °C. \\(\\Delta T = \\dfrac{q}{mc} = \\dfrac{10\\,000}{200 \\times 4.18} = 12.0\\ {}^\\circ\\mathrm{C}\\), so the final temperature is 32.0 °C.",
+        "Example 3: melting ice. Latent heat of fusion of water is 6.01 kJ mol⁻¹. For 36.0 g of ice, \\(n = 2.00\\ \\mathrm{mol}\\), so \\(q = 2.00 \\times 6.01 = 12.0\\ \\mathrm{kJ}\\)."
+       ],
+       "check": [
+        [
+         "How much energy is needed to heat 100 g of water by 10.0 °C?",
+         "q = 100 × 4.18 × 10.0 = 4180 J, or 4.18 kJ."
+        ]
+       ]
+      },
+      {
+       "h": "Comparing water with similar molecules",
+       "p": [
+        "The hydrides of group 16 are H₂O, H₂S, H₂Se and H₂Te. Boiling points rise from H₂S (−60 °C) to H₂Te (−2 °C) as dispersion forces increase with the number of electrons. If water followed the trend it would boil at about −80 °C. It boils at 100 °C because only water forms hydrogen bonds."
        ]
       },
       {
@@ -1004,6 +1707,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to write formulas for ionic compounds and balance equations.",
+        "The big idea: acids are substances that give away hydrogen ions (protons), and bases are substances that take them. pH measures how many hydronium ions are in a solution. With these two ideas you can explain everything from indigestion tablets to ocean acidification."
+       ]
+      },
+      {
        "h": "The Brønsted–Lowry model",
        "p": [
         "An acid–base reaction is a proton transfer. The acid donates H⁺ and becomes its conjugate base; the base accepts H⁺ and becomes its conjugate acid. In HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq), HCl is the acid and Cl⁻ its conjugate base; H₂O is the base and H₃O⁺ its conjugate acid.",
@@ -1014,6 +1724,12 @@
        "h": "Strong, weak, concentrated, dilute",
        "p": [
         "Strength describes how completely an acid ionises in water. Concentration describes how much solute is dissolved per litre. They are independent: 0.001 M HCl is a dilute solution of a strong acid; 5 M ethanoic acid is a concentrated solution of a weak acid. At the same concentration a strong acid has a lower pH, conducts better and reacts faster than a weak acid."
+       ],
+       "check": [
+        [
+         "Two acids both have a concentration of 0.1 M. One has pH 1.0 and the other pH 2.9. Which is the weak acid?",
+         "The one with pH 2.9. It has only partly ionised, so its H₃O⁺ concentration is much lower than 0.1 M."
+        ]
        ]
       },
       {
@@ -1034,6 +1750,46 @@
        "h": "Acids in the environment",
        "p": [
         "Carbon dioxide dissolves in sea water to form carbonic acid, which lowers the ocean’s pH. The extra H₃O⁺ reacts with carbonate ions, leaving less carbonate for corals and shellfish to build calcium carbonate shells and skeletons."
+       ]
+      },
+      {
+       "h": "Common acids and bases to know",
+       "p": [
+        "Strong acids: hydrochloric HCl, nitric HNO₃, sulfuric H₂SO₄. Weak acids: ethanoic CH₃COOH, carbonic H₂CO₃, phosphoric H₃PO₄. Strong bases: sodium hydroxide NaOH, potassium hydroxide KOH, and other group 1 and 2 hydroxides. Weak base: ammonia NH₃. Weak acids and bases use reversible arrows: CH₃COOH(aq) + H₂O(l) ⇌ CH₃COO⁻(aq) + H₃O⁺(aq)."
+       ]
+      },
+      {
+       "h": "Finding conjugate pairs",
+       "p": [
+        "To find the conjugate base of an acid, remove one H⁺: the conjugate base of H₂SO₄ is HSO₄⁻; of NH₄⁺ is NH₃. To find the conjugate acid of a base, add one H⁺: the conjugate acid of NH₃ is NH₄⁺; of OH⁻ is H₂O; of H₂O is H₃O⁺.",
+        "Example: NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq). Water donates a proton, so here it is the acid. The pairs are H₂O/OH⁻ and NH₄⁺/NH₃. Compare with HCl in water, where water is the base: this is what amphiprotic means."
+       ],
+       "check": [
+        [
+         "What is the conjugate base of HCO₃⁻, and what is its conjugate acid?",
+         "Conjugate base: CO₃²⁻ (remove H⁺). Conjugate acid: H₂CO₃ (add H⁺). HCO₃⁻ is amphiprotic."
+        ]
+       ]
+      },
+      {
+       "h": "More pH practice",
+       "p": [
+        "From pH to concentration: a solution has pH 3.40. \\([\\mathrm{H_3O^+}] = 10^{-3.40} = 4.0 \\times 10^{-4}\\ \\mathrm{M}\\).",
+        "Dilution: 10.0 mL of 0.10 M HCl is made up to 1.00 L. \\(c_2 = \\dfrac{0.10 \\times 10.0}{1000} = 1.0 \\times 10^{-3}\\ \\mathrm{M}\\), so the pH changes from 1.0 to 3.0. A 100-fold dilution raises the pH of a strong acid by 2.",
+        "A diprotic strong base: 0.0050 M \\(\\mathrm{Ba(OH)_2}\\) gives \\([\\mathrm{OH^-}] = 0.010\\ \\mathrm{M}\\), so \\(\\mathrm{pH} = 12.0\\).",
+        "Remember the scale at 25 °C: below 7 is acidic, 7 is neutral, above 7 is basic. Indicators are substances whose colour depends on pH; universal indicator and pH meters give an actual value."
+       ],
+       "check": [
+        [
+         "What is the pH of 0.0010 M HNO₃?",
+         "It is a strong monoprotic acid, so [H₃O⁺] = 0.0010 M and pH = 3.0."
+        ]
+       ]
+      },
+      {
+       "h": "Writing ionic equations for acid reactions",
+       "p": [
+        "Zinc and hydrochloric acid: Zn(s) + 2H⁺(aq) → Zn²⁺(aq) + H₂(g). Calcium carbonate and nitric acid: CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) + H₂O(l) + CO₂(g). Copper(II) oxide and sulfuric acid: CuO(s) + 2H⁺(aq) → Cu²⁺(aq) + H₂O(l). In each case the anion of the acid is a spectator ion."
        ]
       },
       {
@@ -1102,6 +1858,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to write formulas and balanced ionic equations, and know which metals are more reactive.",
+        "The big idea: many reactions involve electrons moving from one substance to another. Following the electrons lets you explain rusting, batteries, and how metals are extracted. Oxidation is losing electrons; reduction is gaining them; they always happen together."
+       ]
+      },
+      {
        "h": "Seeing electron transfer",
        "p": [
         "A redox reaction is one in which electrons are transferred. Oxidation and reduction always happen together. The substance oxidised is the reducing agent (it causes the other to be reduced); the substance reduced is the oxidising agent.",
@@ -1132,6 +1895,46 @@
        "h": "Corrosion",
        "p": [
         "Rusting needs both oxygen and water. Iron is oxidised to Fe²⁺ and oxygen is reduced to OH⁻; further reactions give hydrated iron(III) oxide. Prevention: barriers such as paint or grease; galvanising with zinc; sacrificial protection, where a more reactive metal is attached and corrodes in place of the iron."
+       ]
+      },
+      {
+       "h": "Assigning oxidation numbers: worked cases",
+       "p": [
+        "\\(\\mathrm{H_2SO_4}\\): H is +1 (total +2), O is −2 (total −8), so S must be +6 for the sum to be zero. \\(\\mathrm{MnO_4^-}\\): O totals −8 and the ion’s charge is −1, so Mn is +7. \\(\\mathrm{Cr_2O_7^{2-}}\\): O totals −14, charge −2, so the two Cr total +12: each is +6. \\(\\mathrm{H_2O_2}\\): H is +1, so O is −1 (a peroxide).",
+        "Example: is 2Mg + O₂ → 2MgO a redox reaction? Mg goes from 0 to +2 (oxidised). O goes from 0 to −2 (reduced). Yes: magnesium is the reducing agent and oxygen is the oxidising agent."
+       ],
+       "check": [
+        [
+         "What is the oxidation number of nitrogen in NO₃⁻?",
+         "Oxygen totals −6 and the charge is −1, so nitrogen is +5."
+        ]
+       ]
+      },
+      {
+       "h": "Combining half-equations",
+       "p": [
+        "Example: iron(II) ions react with permanganate in acid. Oxidation: Fe²⁺ → Fe³⁺ + e⁻. Reduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O. Multiply the oxidation by 5 so both involve five electrons, then add: MnO₄⁻(aq) + 8H⁺(aq) + 5Fe²⁺(aq) → Mn²⁺(aq) + 4H₂O(l) + 5Fe³⁺(aq).",
+        "Check the result: atoms balance, and the total charge is the same on each side (left: −1 + 8 + 10 = +17; right: +2 + 15 = +17). No electrons should remain in an overall equation."
+       ],
+       "check": [
+        [
+         "Combine Al → Al³⁺ + 3e⁻ and Cu²⁺ + 2e⁻ → Cu into an overall equation.",
+         "Multiply the first by 2 and the second by 3 so six electrons are transferred: 2Al(s) + 3Cu²⁺(aq) → 2Al³⁺(aq) + 3Cu(s)."
+        ]
+       ]
+      },
+      {
+       "h": "A complete galvanic cell",
+       "p": [
+        "Zinc–copper cell. One beaker holds a zinc electrode in zinc sulfate solution; the other holds a copper electrode in copper(II) sulfate solution. A wire joins the electrodes and a salt bridge soaked in potassium nitrate joins the solutions.",
+        "Zinc is the more reactive metal, so it is oxidised: Zn(s) → Zn²⁺(aq) + 2e⁻. This is the anode, negative. Electrons travel through the wire to the copper electrode, where Cu²⁺(aq) + 2e⁻ → Cu(s). This is the cathode, positive. Over time the zinc electrode loses mass, the copper electrode gains mass, and the blue colour of the copper solution fades.",
+        "In the salt bridge, NO₃⁻ ions move toward the zinc half-cell, where positive charge is building up, and K⁺ ions move toward the copper half-cell, where positive ions are being removed."
+       ],
+       "check": [
+        [
+         "In a magnesium–silver cell, which metal is the anode?",
+         "Magnesium. It is more reactive, so it is oxidised, and oxidation occurs at the anode."
+        ]
        ]
       },
       {
@@ -1186,6 +1989,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to convert between mass and moles and explain why substances dissolve.",
+        "The big idea: concentration tells you how much solute is in a given amount of solution. Chemists need it to prepare solutions, to compare water samples against safety limits and to do every calculation involving reactions in solution."
+       ]
+      },
+      {
        "h": "Describing solutions",
        "p": [
         "A solution is unsaturated if more solute can dissolve at that temperature, saturated if no more can dissolve, and supersaturated if it holds more than the saturated amount (an unstable state that crystallises when disturbed). A solubility curve plots solubility against temperature. A point below the curve is unsaturated, on the curve saturated, above it supersaturated."
@@ -1215,6 +2025,51 @@
        "p": [
         "What volume of 2.0 M HCl is needed to make 500 mL of 0.10 M HCl?",
         "\\(V_1 = \\dfrac{c_2V_2}{c_1} = \\dfrac{0.10 \\times 500}{2.0} = 25\\ \\mathrm{mL}\\). Add the acid to water and make up to 500 mL. Diluting changes the concentration but not the amount of solute."
+       ],
+       "check": [
+        [
+         "25.0 mL of 1.0 M solution is diluted to 250.0 mL. What is the new concentration?",
+         "c₂ = 1.0 × 25.0 ÷ 250.0 = 0.10 M, a 1 in 10 dilution."
+        ]
+       ]
+      },
+      {
+       "h": "Converting between units",
+       "p": [
+        "From mol L⁻¹ to g L⁻¹, multiply by the molar mass. A 0.150 M NaCl solution (M = 58.5): \\(0.150 \\times 58.5 = 8.78\\ \\mathrm{g\\ L^{-1}}\\).",
+        "To ppm: 1 ppm is 1 mg per litre for dilute solutions in water. A sample with 0.0025 g of lead in 500 mL has \\(\\dfrac{2.5\\ \\mathrm{mg}}{0.500\\ \\mathrm{L}} = 5.0\\ \\mathrm{mg\\ L^{-1}} = 5.0\\ \\mathrm{ppm}\\).",
+        "Percentage: 5.0 g of glucose dissolved and made up to 250 mL is \\(\\dfrac{5.0}{250} \\times 100 = 2.0\\%\\ \\mathrm{(m/v)}\\)."
+       ],
+       "check": [
+        [
+         "A solution contains 4.0 g of NaOH (M = 40.0) in 500 mL. What is its concentration in mol L⁻¹?",
+         "n = 4.0 ÷ 40.0 = 0.10 mol. c = 0.10 ÷ 0.500 = 0.20 M."
+        ]
+       ]
+      },
+      {
+       "h": "Concentration of ions",
+       "p": [
+        "When an ionic compound dissolves, use the dissociation equation. \\(\\mathrm{Al_2(SO_4)_3(s) \\rightarrow 2Al^{3+}(aq) + 3SO_4^{2-}(aq)}\\). In 0.10 M aluminium sulfate, \\([\\mathrm{Al^{3+}}] = 0.20\\ \\mathrm{M}\\) and \\([\\mathrm{SO_4^{2-}}] = 0.30\\ \\mathrm{M}\\)."
+       ],
+       "check": [
+        [
+         "What is the concentration of chloride ions in 0.25 M CaCl₂?",
+         "Each CaCl₂ gives two Cl⁻, so 0.50 M."
+        ]
+       ]
+      },
+      {
+       "h": "Mixing and serial dilution",
+       "p": [
+        "Mixing two solutions of the same solute: add the moles and add the volumes. 100 mL of 0.20 M NaCl mixed with 300 mL of 0.40 M NaCl: \\(n = 0.020 + 0.120 = 0.140\\ \\mathrm{mol}\\) in 0.400 L, so \\(c = 0.35\\ \\mathrm{M}\\).",
+        "Serial dilution: diluting 10.0 mL to 100.0 mL is a 1 in 10 dilution. Doing it again on the diluted solution gives 1 in 100 overall. This is how the low-concentration standards for a calibration curve are made accurately."
+       ]
+      },
+      {
+       "h": "Solubility of gases and temperature",
+       "p": [
+        "Gases become less soluble as water warms. Warm water released from power stations holds less dissolved oxygen, which can harm fish; this is called thermal pollution. It is also why a warm fizzy drink goes flat faster than a cold one."
        ]
       },
       {
@@ -1277,6 +2132,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with moles, concentration (c = n ÷ V) and balancing equations.",
+        "The big idea: a balanced equation is a recipe that gives the ratio in which substances react, in moles. Stoichiometry uses that ratio to calculate amounts. A titration is stoichiometry done with accurate glassware to find an unknown concentration."
+       ]
+      },
+      {
        "h": "What volumetric analysis does",
        "p": [
         "A titration finds an unknown concentration by reacting a measured volume of the unknown with a solution of accurately known concentration (a standard solution) until the reaction is just complete. The equivalence point is when the reactants have been mixed in exactly the mole ratio of the equation. The end point is when the indicator changes colour. A suitable indicator makes these nearly the same."
@@ -1308,6 +2170,46 @@
        "p": [
         "5.0 g of Mg (M = 24.3) is added to 0.30 mol of HCl. Mg + 2HCl → MgCl₂ + H₂.",
         "\\(n(\\mathrm{Mg}) = 0.206\\ \\mathrm{mol}\\), which would need 0.412 mol of HCl. Only 0.30 mol is available, so HCl is limiting. \\(n(\\mathrm{H_2}) = \\tfrac{1}{2} \\times 0.30 = 0.15\\ \\mathrm{mol}\\)."
+       ]
+      },
+      {
+       "h": "Mass–mass stoichiometry",
+       "p": [
+        "The four steps: write the balanced equation; convert the known quantity to moles; use the mole ratio from the equation; convert to the quantity asked for.",
+        "Example: what mass of water forms when 8.0 g of hydrogen burns? \\(\\mathrm{2H_2 + O_2 \\rightarrow 2H_2O}\\). \\(n(\\mathrm{H_2}) = \\dfrac{8.0}{2.0} = 4.0\\ \\mathrm{mol}\\). Ratio 2 : 2, so \\(n(\\mathrm{H_2O}) = 4.0\\ \\mathrm{mol}\\). \\(m = 4.0 \\times 18.0 = 72\\ \\mathrm{g}\\).",
+        "Example with an unequal ratio: what mass of aluminium oxide forms from 5.40 g of aluminium? \\(\\mathrm{4Al + 3O_2 \\rightarrow 2Al_2O_3}\\). \\(n(\\mathrm{Al}) = \\dfrac{5.40}{27.0} = 0.200\\ \\mathrm{mol}\\). \\(n(\\mathrm{Al_2O_3}) = \\tfrac{2}{4} \\times 0.200 = 0.100\\ \\mathrm{mol}\\). \\(m = 0.100 \\times 102.0 = 10.2\\ \\mathrm{g}\\)."
+       ],
+       "check": [
+        [
+         "What mass of CO₂ forms when 6.0 g of carbon burns completely? (C 12.0, CO₂ 44.0)",
+         "n(C) = 0.50 mol. C + O₂ → CO₂ is 1 : 1, so n(CO₂) = 0.50 mol and m = 22 g."
+        ]
+       ]
+      },
+      {
+       "h": "Carrying out a titration",
+       "p": [
+        "1. Prepare the standard solution: weigh the primary standard, dissolve it, transfer with rinsings to a volumetric flask and make up to the mark. 2. Rinse the pipette with the solution it will deliver, then transfer an aliquot to a clean conical flask. 3. Add two or three drops of indicator. 4. Rinse and fill the burette with the other solution, remove air bubbles from the tip and record the initial reading to two decimal places. 5. Add solution while swirling until one drop causes a permanent colour change; record the final reading. 6. Repeat until three titres are concordant.",
+        "Choosing an indicator: phenolphthalein (colourless to pink, changes around pH 8 to 10) suits a strong base with a weak or strong acid. Methyl orange (red to yellow, around pH 3 to 4.5) suits a strong acid with a weak base."
+       ],
+       "check": [
+        [
+         "Why is the conical flask rinsed with water and not with the solution it will hold?",
+         "Water does not change the amount (moles) of reagent delivered by the pipette. Rinsing with the solution would leave extra reagent in the flask and make the titre too large."
+        ]
+       ]
+      },
+      {
+       "h": "Titrations with a dilution step",
+       "p": [
+        "Vinegar and other concentrated samples are diluted first, so the titre is a convenient size. Work backwards and remember the dilution factor.",
+        "Example: 25.00 mL of vinegar is diluted to 250.0 mL. A 20.00 mL aliquot of the diluted vinegar needs 16.40 mL of 0.100 M NaOH. \\(n(\\mathrm{NaOH}) = 1.640 \\times 10^{-3}\\ \\mathrm{mol} = n(\\mathrm{CH_3COOH})\\) in the aliquot. Diluted concentration \\(= \\dfrac{1.640 \\times 10^{-3}}{0.02000} = 0.0820\\ \\mathrm{M}\\). The original vinegar is 10 times more concentrated: 0.820 M."
+       ],
+       "check": [
+        [
+         "A sample is diluted from 10.00 mL to 100.0 mL and the diluted solution is found to be 0.050 M. What was the original concentration?",
+         "The dilution factor is 10, so the original was 0.50 M."
+        ]
        ]
       },
       {
@@ -1370,6 +2272,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with moles and stoichiometry.",
+        "The big idea: gases are mostly empty space, and all gases behave in nearly the same way. So one simple equation links the pressure, volume, temperature and amount of any gas, and one mole of any gas takes up the same volume under the same conditions."
+       ]
+      },
+      {
        "h": "The kinetic molecular theory",
        "p": [
         "Gas particles are in constant, rapid, random motion; they are far apart, so a gas is mostly empty space and can be compressed; forces between them are negligible; collisions are elastic; and the average kinetic energy is proportional to the temperature in kelvin. Pressure is caused by particles colliding with the walls of the container."
@@ -1385,6 +2294,12 @@
        "h": "Units and conditions",
        "p": [
         "Temperatures must be in kelvin: \\(T(\\mathrm{K}) = T({}^\\circ\\mathrm{C}) + 273\\). With \\(R = 8.31\\ \\mathrm{J\\ K^{-1}\\ mol^{-1}}\\), use pressure in kPa and volume in L. Standard laboratory conditions (SLC) are 25 °C and 100 kPa, where one mole of any gas occupies 24.8 L."
+       ],
+       "check": [
+        [
+         "Convert 25 °C to kelvin.",
+         "25 + 273 = 298 K."
+        ]
        ]
       },
       {
@@ -1405,6 +2320,39 @@
        "h": "Greenhouse gases",
        "p": [
         "The Sun’s radiation passes through the atmosphere and warms the Earth, which emits infrared radiation. Greenhouse gas molecules absorb that infrared radiation and re-emit it in all directions, including back toward the surface. This natural effect keeps the planet habitable. Human activity, mainly burning fossil fuels and agriculture, has raised the concentrations of CO₂, CH₄ and N₂O, producing the enhanced greenhouse effect and global warming."
+       ]
+      },
+      {
+       "h": "What pressure, volume and temperature mean",
+       "p": [
+        "Pressure is the force of gas particles hitting the container walls per unit area. Units: 1 atm = 101.3 kPa = 760 mmHg; standard laboratory pressure is 100 kPa. Volume: 1 L = 1000 mL = 1 dm³; 1 m³ = 1000 L. Temperature must be absolute: 0 K (−273 °C) is the temperature at which particles would have no kinetic energy, so volume and pressure are proportional to temperature only on the kelvin scale."
+       ]
+      },
+      {
+       "h": "Choosing the right formula",
+       "p": [
+        "If the gas is at SLC, use \\(n = \\dfrac{V}{24.8}\\). If it is at any other conditions, use \\(pV = nRT\\). If the same sample of gas changes from one set of conditions to another, use the combined relationship \\(\\dfrac{p_1V_1}{T_1} = \\dfrac{p_2V_2}{T_2}\\), cancelling anything that stays constant.",
+        "Example: a balloon holds 2.0 L at 100 kPa and 300 K. It rises to where the pressure is 50 kPa and the temperature 250 K. \\(V_2 = \\dfrac{p_1V_1T_2}{T_1p_2} = \\dfrac{100 \\times 2.0 \\times 250}{300 \\times 50} = 3.3\\ \\mathrm{L}\\).",
+        "Example: molar mass from gas data. 1.40 g of a gas occupies 1.24 L at SLC. \\(n = \\dfrac{1.24}{24.8} = 0.0500\\ \\mathrm{mol}\\), so \\(M = \\dfrac{1.40}{0.0500} = 28.0\\ \\mathrm{g\\ mol^{-1}}\\): possibly nitrogen or carbon monoxide."
+       ],
+       "check": [
+        [
+         "How many moles of gas are in 6.20 L at SLC?",
+         "n = 6.20 ÷ 24.8 = 0.250 mol."
+        ]
+       ]
+      },
+      {
+       "h": "Volume–volume stoichiometry",
+       "p": [
+        "At the same temperature and pressure, equal volumes of gases contain equal numbers of moles. So for gases the coefficients in an equation are also volume ratios.",
+        "Example: N₂(g) + 3H₂(g) → 2NH₃(g). 30 mL of hydrogen reacts with 10 mL of nitrogen to give 20 mL of ammonia, all measured under the same conditions."
+       ],
+       "check": [
+        [
+         "What volume of oxygen is needed to burn 50 mL of methane completely, at the same temperature and pressure? CH₄ + 2O₂ → CO₂ + 2H₂O.",
+         "The ratio is 1 : 2, so 100 mL of oxygen."
+        ]
        ]
       },
       {
@@ -1460,6 +2408,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to predict precipitates, use moles and concentration, and understand dilution.",
+        "The big idea: to find out how much of a salt is in a sample you can either turn it into a solid and weigh it (gravimetric analysis) or measure how much light it absorbs (colorimetry and UV-visible spectroscopy). Both rely on comparing the sample with something whose amount is known."
+       ]
+      },
+      {
        "h": "Why analyse water",
        "p": [
         "Water dissolves salts from rocks and soil, and human activity adds more: fertiliser run-off (nitrates and phosphates), mining and industry (heavy metals such as lead, mercury and cadmium), and irrigation (salinity). Analysis shows whether water is safe to drink or to release. Electrical conductivity gives a quick estimate of total dissolved salts, because more ions carry more current; it does not identify which ions are present."
@@ -1482,6 +2437,12 @@
        "h": "Sources of error",
        "p": [
         "Result too high: precipitate not dry; precipitate not washed, so soluble impurities remain; another ion also precipitated. Result too low: precipitate lost during transfer or through the filter; not enough reagent added; precipitate slightly soluble and washed with too much water."
+       ],
+       "check": [
+        [
+         "A student forgets to wash the precipitate. Will the calculated mass of the ion be too high or too low?",
+         "Too high. Soluble impurities remain on the precipitate and add to its mass."
+        ]
        ]
       },
       {
@@ -1492,10 +2453,178 @@
        ]
       },
       {
+       "h": "Designing a gravimetric analysis",
+       "p": [
+        "Choose a reagent that forms a precipitate with the ion you want and with nothing else in the sample. For sulfate use barium chloride (BaSO₄ precipitates). For chloride use silver nitrate (AgCl precipitates). For calcium use sodium carbonate or oxalate. Add the reagent in excess so that all of the ion precipitates; test by adding another drop to the clear liquid above the precipitate and checking that no more solid forms.",
+        "A good precipitate has a known, stable formula, is very insoluble, and can be dried without decomposing. Heating “to constant mass” means drying, weighing, drying again and reweighing until two readings agree, which shows all the water has gone."
+       ],
+       "check": [
+        [
+         "Why is the precipitating reagent added in excess?",
+         "To make sure all of the ion being analysed is precipitated. If too little is added, some of the ion stays in solution and the result is too low."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: chloride in a snack food",
+       "p": [
+        "A 5.00 g sample of chips is crushed and stirred with water, filtered, and excess silver nitrate is added to the filtrate. 0.287 g of AgCl (M = 143.4) is collected. Find the percentage of sodium chloride (M = 58.5) in the chips.",
+        "\\(n(\\mathrm{AgCl}) = \\dfrac{0.287}{143.4} = 2.00 \\times 10^{-3}\\ \\mathrm{mol} = n(\\mathrm{Cl^-}) = n(\\mathrm{NaCl})\\). \\(m(\\mathrm{NaCl}) = 2.00 \\times 10^{-3} \\times 58.5 = 0.117\\ \\mathrm{g}\\). \\(\\% = \\dfrac{0.117}{5.00} \\times 100 = 2.34\\%\\). This assumes all the chloride came from sodium chloride."
+       ]
+      },
+      {
+       "h": "Worked example: a calibration curve",
+       "p": [
+        "Standards of copper(II) sulfate with concentrations 0.10, 0.20, 0.30 and 0.40 M give absorbances of 0.15, 0.30, 0.45 and 0.60. The graph is a straight line through the origin with a gradient of 1.5 per mol L⁻¹. A sample has absorbance 0.36, so its concentration is 0.36 ÷ 1.5 = 0.24 M.",
+        "If the sample had been diluted 1 in 5 before measuring, the original concentration would be 5 × 0.24 = 1.2 M. A blank (the solvent with no solute) is used first to set the instrument to zero, so that only the solute’s absorbance is measured."
+       ],
+       "check": [
+        [
+         "A calibration line has a gradient of 2.0 absorbance units per mol L⁻¹. What is the concentration of a sample with absorbance 0.50?",
+         "0.50 ÷ 2.0 = 0.25 M."
+        ]
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Reading the calibration curve beyond the highest standard. Forgetting the dilution factor. Choosing light the same colour as the solution: a solution absorbs its complementary colour."
        ]
+      }
+     ]
+    },
+    {
+     "id": "investigation",
+     "title": "Scientific investigations and measurement",
+     "points": [
+      "Independent variable: what you change. Dependent variable: what you measure. Controlled variables: what you keep the same.",
+      "Accuracy is closeness to the true value. Precision is how close repeated measurements are to each other.",
+      "Systematic errors shift all results the same way and affect accuracy. Random errors scatter results and affect precision.",
+      "Repeat measurements and average to reduce random error; calibrate and improve the method to reduce systematic error.",
+      "A conclusion answers the question using the evidence, and stays within what the data shows."
+     ],
+     "explain": "Explain to someone the difference between a mistake, a random error and a systematic error, with an example of each from a titration.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "You can read this lesson at any time; it underpins every practical task and many exam questions in all four units.",
+        "The big idea: a scientific investigation is a fair test designed so that the evidence can actually answer the question. Knowing how to plan one, how to judge the quality of data and how to write about it is assessed directly, and it also earns marks in questions about experiments throughout the course."
+       ]
+      },
+      {
+       "h": "Planning an investigation",
+       "p": [
+        "Aim: one sentence saying what will be investigated. Hypothesis: a testable prediction that links the variables, often written as “If… then… because…”. Variables: identify the independent, dependent and controlled variables. Method: numbered steps that someone else could follow, including quantities and equipment. Safety: identify hazards using safety data sheets and say how risks will be reduced.",
+        "Example: “How does temperature affect the rate of reaction between magnesium and hydrochloric acid?” Independent variable: temperature of the acid. Dependent variable: time for the magnesium to disappear. Controlled: concentration and volume of acid, mass and surface area of magnesium. Hypothesis: if the temperature is increased, the time taken will decrease, because a greater proportion of collisions will have enough energy to react."
+       ],
+       "check": [
+        [
+         "In an experiment testing how the concentration of acid affects the volume of gas produced in one minute, name the independent and dependent variables.",
+         "Independent: the concentration of the acid. Dependent: the volume of gas produced in one minute."
+        ]
+       ]
+      },
+      {
+       "h": "Quality of data",
+       "p": [
+        "Accuracy: how close a result is to the true value. Precision: how close repeated results are to each other; precise results can still be inaccurate. Repeatability: you get the same results when you repeat the experiment yourself under the same conditions. Reproducibility: other people get the same results using different equipment or in a different place. Validity: the experiment really measures what it claims to, with other variables controlled.",
+        "Picture a dartboard. Darts close together in the bullseye are accurate and precise. Darts close together but off-centre are precise but not accurate, which suggests a systematic error. Darts scattered around the centre suggest random error."
+       ],
+       "check": [
+        [
+         "Three titres of 21.50, 21.52 and 21.48 mL are obtained, but the true value is 20.00 mL. Describe the results.",
+         "They are precise (close together) but not accurate. A systematic error is likely, such as a wrongly labelled concentration."
+        ]
+       ]
+      },
+      {
+       "h": "Errors and uncertainty",
+       "p": [
+        "Mistakes (personal errors), such as misreading a scale or spilling a sample, are not counted as experimental errors; the measurement should be repeated. Systematic errors come from the equipment or method and push every result in the same direction: an uncalibrated balance, heat always being lost from a calorimeter. Random errors are unpredictable variations: judging a colour change, reading between scale marks.",
+        "Uncertainty is the range within which a measurement is expected to lie. For an analogue scale it is commonly half the smallest division; a burette marked every 0.1 mL is read to ±0.05 mL. An outlier is a result far from the others; investigate it and, if a cause is found, exclude it and say so."
+       ]
+      },
+      {
+       "h": "Significant figures and presenting data",
+       "p": [
+        "Record measurements to the precision of the instrument: a burette reading is 23.40 mL, not 23.4. In calculations, give the answer to the same number of significant figures as the least precise piece of data. Tables need headings with units. Graphs need a title, labelled axes with units, the independent variable on the horizontal axis, an even scale and a line or curve of best fit."
+       ]
+      },
+      {
+       "h": "Discussion and conclusion",
+       "p": [
+        "In the discussion, describe the trend, explain it with chemical ideas, compare with the hypothesis, identify the main sources of error and say how each affected the result (too high or too low), and suggest specific improvements. “Human error” earns no credit; say exactly what could go wrong and how to fix it.",
+        "The conclusion answers the aim in one or two sentences, quoting the key result. It should not claim more than the data supports: results for one acid at three temperatures do not prove a rule for all reactions."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Mixing up accuracy and precision. Writing “repeat the experiment” as a fix for a systematic error. Listing controlled variables that do not affect the result. Drawing dot-to-dot lines on a graph. Stating a conclusion that the hypothesis was “proved”: evidence supports or does not support a hypothesis."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "A balance always reads 0.05 g too high. This is a…",
+       "o": [
+        "random error",
+        "systematic error",
+        "mistake",
+        "outlier"
+       ],
+       "a": 1,
+       "e": "It shifts every reading by the same amount in the same direction."
+      },
+      {
+       "t": "m",
+       "q": "Repeating an experiment several times and averaging mainly reduces the effect of…",
+       "o": [
+        "systematic errors",
+        "random errors",
+        "mistakes in the method",
+        "uncalibrated equipment"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A student changes the surface area of marble chips and measures the volume of CO₂ produced each minute. The surface area is the…",
+       "o": [
+        "dependent variable",
+        "independent variable",
+        "controlled variable",
+        "hypothesis"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between accuracy and precision?",
+       "a": "Accuracy is how close a measurement is to the true value. Precision is how close repeated measurements are to each other.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is “human error” not an acceptable source of error in a report?",
+       "a": "It is not specific. A report should name the particular source of error, state how it affected the result, and suggest how to reduce it. Mistakes should be corrected by repeating the measurement.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "To how many significant figures should 0.02500 × 12.3 be given?",
+       "o": [
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "a": 1,
+       "e": "12.3 has three significant figures, the fewest in the data."
       }
      ]
     }

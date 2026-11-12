@@ -5,6 +5,282 @@
    "name": "Step 1 · Source documents",
    "topics": [
     {
+     "id": "role",
+     "title": "The role of accounting and types of business",
+     "points": [
+      "Accounting collects and records financial data, then reports, analyses and interprets it to help people make decisions.",
+      "Users include the owner, lenders, suppliers, the ATO, employees and potential investors.",
+      "Financial data is the raw facts about transactions; financial information is that data sorted and summarised so it is useful.",
+      "Ownership structures: sole trader (one owner), partnership (two or more), private company (shareholders, a separate legal entity).",
+      "Sources of finance: owner’s capital (internal) or borrowing such as loans, overdrafts and trade credit (external)."
+     ],
+     "explain": "Explain to a friend who wants to open a market stall why they should keep accounting records, and who else might want to see them.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "You need nothing before this lesson: it is the starting point for accounting.",
+        "The big idea: every business needs answers to a few questions. Are we making a profit? Can we pay our bills? What do we own and owe? Accounting is the system that produces those answers. This lesson explains what accounting is for, who uses it, and the basic choices an owner makes when starting a business."
+       ]
+      },
+      {
+       "h": "What accounting does",
+       "p": [
+        "The accounting process has four steps. Source documents are collected as evidence of each transaction. The data is recorded and sorted. Reports summarise it. The reports are then analysed and interpreted to give advice.",
+        "A transaction is an exchange between the business and another party that can be measured in dollars, such as selling goods, paying wages or borrowing money. Financial data is the raw detail on documents. Financial information is the result of processing that data into a form a person can use to make a decision. A shoebox of receipts is data; an Income Statement is information."
+       ],
+       "check": [
+        [
+         "What is the difference between financial data and financial information?",
+         "Data is the raw facts and figures from transactions. Information is data that has been sorted, summarised and reported so it can be used to make decisions."
+        ]
+       ]
+      },
+      {
+       "h": "Who uses accounting information",
+       "p": [
+        "The owner uses it to decide prices, control costs, judge whether to expand and check that the business can pay its debts. A bank uses it to decide whether to lend and whether the loan can be repaid. Suppliers use it to decide whether to offer credit. The Australian Taxation Office uses it to check that the right amount of tax and GST is paid. Employees care whether the business can keep paying wages. A potential buyer or investor uses it to decide what the business is worth.",
+        "Each user needs different information, but all of them rely on the reports being prepared in a consistent, honest way."
+       ]
+      },
+      {
+       "h": "Types of business",
+       "p": [
+        "By activity: a service business sells time and skill (a plumber, a tutor); a trading business buys goods and resells them (a clothing shop); a manufacturing business makes goods. Units 1 and 2 begin with service businesses and move to trading businesses.",
+        "By ownership. A sole trader is owned and run by one person. It is cheap and simple to set up and the owner keeps all the profit and makes all the decisions, but the owner has unlimited liability: personal assets such as a house can be used to pay business debts. A partnership has two or more owners who share capital, skills, workload and profit; it also has unlimited liability and can suffer from disputes. A private company is a separate legal entity owned by shareholders, who have limited liability: they can lose only what they invested. Companies cost more to set up and have more reporting requirements."
+       ],
+       "check": [
+        [
+         "What does unlimited liability mean for a sole trader?",
+         "The owner is personally responsible for all business debts, so personal assets can be used to pay them."
+        ]
+       ]
+      },
+      {
+       "h": "Financing a business",
+       "p": [
+        "Internal finance comes from the owner (capital contributions) or from profits kept in the business. It has no interest cost and no repayments, but it is limited by the owner’s wealth.",
+        "External finance is borrowed. A bank loan gives a fixed amount repaid over a set time with interest. A bank overdraft lets the business overdraw its account up to a limit, which is flexible but usually has a higher interest rate. Trade credit is buying from suppliers now and paying later. Borrowing allows growth without the owner contributing more, but interest must be paid and the debt repaid whether or not the business is doing well, which adds risk."
+       ]
+      },
+      {
+       "h": "Is the business worth starting?",
+       "p": [
+        "Before starting or buying a business, an owner weighs the expected return against the risk and against alternatives. If $100,000 invested in the business is expected to earn $8,000 profit a year, the return is 8%. If a bank term deposit pays 5% with almost no risk, the owner must decide whether an extra 3% is enough reward for the risk and the work. Non-financial factors count as well: being your own boss, hours of work, and the effect on the community and environment."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Mixing up the owner and the business; they are treated as separate in accounting even for a sole trader. Saying a sole trader has limited liability. Describing accounting as only “recording”: the purpose is to provide information for decisions. Treating loans and capital as the same thing."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which is an advantage of operating as a sole trader?",
+       "o": [
+        "Limited liability",
+        "Shared workload",
+        "The owner keeps all profits and control",
+        "Easier to raise large amounts of capital"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A bank deciding whether to approve a loan is most interested in the business’s…",
+       "o": [
+        "staff uniforms",
+        "ability to repay debts",
+        "number of customers’ complaints",
+        "owner’s hobbies"
+       ],
+       "a": 1,
+       "e": "Lenders look at liquidity, stability and existing debt."
+      },
+      {
+       "t": "m",
+       "q": "Which is an external source of finance?",
+       "o": [
+        "Capital contribution",
+        "Retained profits",
+        "Bank loan",
+        "Owner’s savings"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "List the four steps of the accounting process.",
+       "a": "Source documents, recording, reporting, and advice (analysis and interpretation).",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give one advantage and one disadvantage of a partnership compared with a sole trader.",
+       "a": "Advantage: more capital, shared skills and workload. Disadvantage: profits are shared, decisions can cause disputes, and partners still have unlimited liability.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Shareholders of a private company have…",
+       "o": [
+        "unlimited liability",
+        "limited liability",
+        "no claim on profits",
+        "to work in the business"
+       ],
+       "a": 1,
+       "e": "They can lose only the amount they invested."
+      }
+     ]
+    },
+    {
+     "id": "equation",
+     "title": "The accounting equation and the elements",
+     "points": [
+      "Assets = Liabilities + Owner’s Equity. The equation always balances.",
+      "Assets are resources the business controls; liabilities are what it owes to outsiders; owner’s equity is what is left for the owner.",
+      "Revenue increases owner’s equity; expenses decrease it. Profit = revenue − expenses.",
+      "Every transaction changes at least two items, keeping the equation in balance.",
+      "Capital contributions and drawings change owner’s equity but are not revenue or expenses."
+     ],
+     "explain": "Use the accounting equation to explain why buying a van with a bank loan does not make the owner any richer.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know what a transaction is and that the business is treated as separate from its owner.",
+        "The big idea: everything a business has was paid for by someone, either by lenders and suppliers or by the owner. That one idea, written as an equation, is the foundation of all accounting. If you can work out how a transaction changes the equation, you understand the transaction."
+       ]
+      },
+      {
+       "h": "The five elements",
+       "p": [
+        "Assets are economic resources controlled by the business that are expected to bring it benefits: cash at bank, inventory, amounts owed by customers (Accounts Receivable), vehicles, equipment, premises.",
+        "Liabilities are obligations to hand over resources to someone outside the business: amounts owed to suppliers (Accounts Payable), loans, GST owed to the ATO.",
+        "Owner’s equity is the owner’s claim on the assets: what would be left if all assets were used to pay all liabilities. It is increased by capital contributions and profit, and decreased by drawings and losses.",
+        "Revenue is what the business earns from its activities, such as sales or fees, which increases owner’s equity. Expenses are what it consumes in earning that revenue, such as wages, rent and the cost of goods sold, which decreases owner’s equity."
+       ],
+       "check": [
+        [
+         "Classify each as an asset, liability or owner’s equity: inventory; bank loan; capital; Accounts Payable.",
+         "Inventory is an asset. The bank loan and Accounts Payable are liabilities. Capital is owner’s equity."
+        ]
+       ]
+      },
+      {
+       "h": "The equation",
+       "p": [
+        "Assets = Liabilities + Owner’s Equity. Rearranged: Owner’s Equity = Assets − Liabilities.",
+        "Example: a business has cash $5,000, inventory $12,000 and a van worth $18,000, and it owes a supplier $4,000 and the bank $10,000. Assets = $35,000. Liabilities = $14,000. Owner’s equity = 35,000 − 14,000 = $21,000."
+       ]
+      },
+      {
+       "h": "Analysing transactions",
+       "p": [
+        "For each transaction ask: which items change, and does each go up or down? Then check that the equation still balances.",
+        "1. Owner contributes $20,000 cash. Bank (asset) +20,000; Capital (owner’s equity) +20,000. 2. Buys equipment for $6,000 cash. Equipment +6,000; Bank −6,000. Total assets unchanged. 3. Buys inventory for $3,000 on credit. Inventory +3,000; Accounts Payable (liability) +3,000. 4. Pays the supplier $1,000. Bank −1,000; Accounts Payable −1,000. 5. Earns fees of $2,500 in cash. Bank +2,500; owner’s equity +2,500 (revenue). 6. Pays wages $800. Bank −800; owner’s equity −800 (expense). 7. Owner withdraws $300. Bank −300; owner’s equity −300 (drawings).",
+        "After all seven: Bank 20,000 − 6,000 − 1,000 + 2,500 − 800 − 300 = 14,400; Equipment 6,000; Inventory 3,000. Assets = $23,400. Liabilities = 2,000. Owner’s equity = 20,000 + 2,500 − 800 − 300 = 21,400. Check: 2,000 + 21,400 = 23,400."
+       ],
+       "check": [
+        [
+         "A business takes out a $15,000 bank loan. What happens to the accounting equation?",
+         "Assets (Bank) increase by $15,000 and liabilities (Loan) increase by $15,000. Owner’s equity does not change."
+        ],
+        [
+         "A business pays $400 for advertising. Which two items change?",
+         "Bank (an asset) decreases by $400 and owner’s equity decreases by $400, because advertising is an expense."
+        ]
+       ]
+      },
+      {
+       "h": "Revenue and expenses are not the same as cash",
+       "p": [
+        "Revenue is earned when the goods or service are provided, even if the customer pays later. An expense is incurred when the benefit is consumed, even if it is paid later. A cash payment to buy a van is not an expense: one asset (cash) is swapped for another (the van). A loan received is not revenue: the business has more cash but owes the same amount. Keeping these distinctions clear prevents most errors in reports."
+       ]
+      },
+      {
+       "h": "Current and non-current",
+       "p": [
+        "Current assets are expected to be turned into cash, sold or used up within 12 months: bank, Accounts Receivable, inventory, prepaid expenses. Non-current assets will be used for longer: vehicles, equipment, premises. Current liabilities are due within 12 months: Accounts Payable, GST, the next year’s loan repayments. Non-current liabilities are due later. The classification shows whether the business can meet its short-term debts."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Treating a capital contribution as revenue or drawings as an expense. Treating the purchase of an asset as an expense. Forgetting that every transaction has two effects. Thinking owner’s equity is cash: it is a claim on all the assets, most of which are not cash."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Assets are $80,000 and liabilities are $30,000. Owner’s equity is…",
+       "o": [
+        "$110,000",
+        "$50,000",
+        "$30,000",
+        "$80,000"
+       ],
+       "a": 1,
+       "e": "Owner’s equity = Assets − Liabilities."
+      },
+      {
+       "t": "m",
+       "q": "A business buys office furniture for $2,000 cash. The effect on the accounting equation is…",
+       "o": [
+        "assets increase, owner’s equity increases",
+        "assets increase and decrease by the same amount",
+        "assets decrease, liabilities decrease",
+        "liabilities increase, owner’s equity decreases"
+       ],
+       "a": 1,
+       "e": "Furniture rises and Bank falls; total assets do not change."
+      },
+      {
+       "t": "m",
+       "q": "Which transaction decreases owner’s equity?",
+       "o": [
+        "Receiving a bank loan",
+        "Paying wages",
+        "Buying inventory on credit",
+        "Collecting cash from a customer who owed money"
+       ],
+       "a": 1,
+       "e": "Wages are an expense."
+      },
+      {
+       "t": "c",
+       "q": "Why are drawings not an expense?",
+       "a": "Drawings are assets taken by the owner for personal use. They are not consumed in earning revenue, so they reduce owner’s equity directly without affecting profit.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "State the accounting equation and explain why it always balances.",
+       "a": "Assets = Liabilities + Owner’s Equity. Every asset is funded either by outsiders (liabilities) or by the owner (owner’s equity), and every transaction has two equal effects.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A customer pays $500 they owed from last month. The effect is…",
+       "o": [
+        "Bank up, revenue up",
+        "Bank up, Accounts Receivable down",
+        "Bank up, liabilities up",
+        "Accounts Receivable up, revenue up"
+       ],
+       "a": 1,
+       "e": "The revenue was recorded when the sale was made. Now one asset replaces another."
+      }
+     ]
+    },
+    {
      "id": "documents",
      "title": "Source documents and GST",
      "points": [
@@ -56,6 +332,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the accounting equation and the five elements (assets, liabilities, owner’s equity, revenue and expenses) from the first two lessons.",
+        "The big idea: accounting is a process with four steps. Source documents provide the evidence, records sort and summarise it, reports present it, and advice is given to the owner based on the reports. This lesson covers the first step and the tax that sits on most documents, GST."
+       ]
+      },
+      {
        "h": "Why source documents come first",
        "p": [
         "A source document is the paper or electronic evidence that a transaction happened. Nothing is recorded without one. This is what makes accounting information verifiable: anyone checking the records can trace each figure back to its evidence, which supports faithful representation.",
@@ -75,6 +358,12 @@
        "p": [
         "GST is a 10% tax on most goods and services. A business registered for GST acts as a collector for the Australian Taxation Office. It charges GST on its sales (a liability, because it owes that money to the ATO) and pays GST on its purchases (which it can claim back, reducing the liability). GST is never revenue and never an expense for a registered business.",
         "If GST on sales is greater than GST on purchases, the business has a GST liability and makes a GST settlement to the ATO. If GST on purchases is greater, the business is owed a GST refund, and the balance is a current asset."
+       ],
+       "check": [
+        [
+         "A business makes a cash sale for $550 including GST. How much is revenue and how much is GST?",
+         "GST = 550 ÷ 11 = $50. Sales revenue = $500."
+        ]
        ]
       },
       {
@@ -82,6 +371,40 @@
        "p": [
         "A business sells goods on credit for $660 including GST, and buys inventory for cash for $330 including GST.",
         "Sale: GST = 660 ÷ 11 = $60; Sales revenue = $600; Account Receivable increases by $660. Purchase: GST = 330 ÷ 11 = $30; Inventory increases by $300; Bank decreases by $330. Net GST owed to the ATO = 60 − 30 = $30."
+       ]
+      },
+      {
+       "h": "Reading a document, step by step",
+       "p": [
+        "Take any document and answer five questions. What type is it? Who issued it, and are we the seller or the buyer? What is the date? What was exchanged? What are the amounts: before GST, GST, and total?",
+        "Example: a tax invoice headed “Beach Boards”, addressed to “Surf Shack”, dated 4 March, for 5 surfboards at $400 each plus GST $200, total $2,200, terms 30 days. If we are Surf Shack, this is a credit purchase of inventory: Inventory increases by $2,000, the GST of $200 can be claimed back, and we owe Beach Boards $2,200 as an Account Payable. If we are Beach Boards, the same document is a credit sale: Sales revenue $2,000, GST $200 owed to the ATO, and an Account Receivable of $2,200.",
+        "One document is always two-sided. Deciding which side you are on is the most important step."
+       ],
+       "check": [
+        [
+         "Your business receives a tax invoice from a supplier for inventory, with 14-day terms. Is this a cash or credit transaction, and which journal would record it?",
+         "A credit purchase of inventory, recorded in the Purchases Journal."
+        ]
+       ]
+      },
+      {
+       "h": "GST across a whole period",
+       "p": [
+        "At the end of each reporting period for GST, the business totals the GST it charged customers and the GST it paid suppliers.",
+        "Example: during a quarter a shop makes sales of $44,000 including GST and purchases and pays expenses of $27,500 including GST. GST on sales = 44,000 ÷ 11 = $4,000. GST on purchases = 27,500 ÷ 11 = $2,500. The business owes the ATO 4,000 − 2,500 = $1,500. Until it is paid, that $1,500 is a current liability. When it is paid, the payment is called a GST settlement.",
+        "If the shop had bought a $33,000 delivery van that quarter as well, GST on purchases would rise by $3,000 to $5,500. GST paid would then exceed GST collected by $1,500, and the business would be owed a GST refund, a current asset until received."
+       ],
+       "check": [
+        [
+         "GST on sales is $3,200 and GST on purchases is $4,100. What is the result?",
+         "The business paid $900 more than it collected, so it is owed a GST refund of $900 (a current asset)."
+        ]
+       ]
+      },
+      {
+       "h": "Why documents matter for the quality of information",
+       "p": [
+        "A document is evidence that can be checked by someone else, which makes the information verifiable. Because the amount comes from the document and not from someone’s opinion, the information is free from bias, which supports faithful representation. Documents are numbered and filed so that every entry in the records can be traced back."
        ]
       },
       {
@@ -149,6 +472,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to identify source documents and calculate GST (previous lesson).",
+        "The big idea: a business may have hundreds of transactions a month. Journals sort them by type and add them up, so the owner works with a few totals instead of hundreds of separate entries. If you can choose the right journal and the right column, you can record almost any transaction."
+       ]
+      },
+      {
        "h": "What journals are for",
        "p": [
         "Journals are the first place transactions are recorded. They gather transactions of the same type in date order and total them, so only the totals need to be carried to the next stage. Special journals (the cash and credit journals) handle the frequent transactions; the General Journal handles the rest.",
@@ -166,6 +496,12 @@
        "h": "Why receipts from customers carry no GST",
        "p": [
         "GST is recorded once, when the sale or purchase occurs. A credit sale of $1,100 records $100 GST on the day of the invoice. When the customer pays three weeks later, the business is only collecting a debt, so the Cash Receipts Journal shows $1,100 in the Accounts Receivable column and nothing in GST. Recording GST again would double-count it."
+       ],
+       "check": [
+        [
+         "A customer pays $1,100 owing from a credit sale last month. What goes in the GST column of the Cash Receipts Journal?",
+         "Nothing. The GST was recorded in the Sales Journal when the sale was made."
+        ]
        ]
       },
       {
@@ -174,6 +510,39 @@
         "Transactions: 3 May cash sale $440 incl. GST (cost $250); 5 May credit sale to J. Li $880 incl. GST (cost $500); 9 May received $880 from J. Li; 12 May owner contributed $5,000 cash.",
         "Cash Receipts Journal: 3 May Bank 440, Sales 400, GST 40, Cost of Sales 250. 9 May Bank 880, Accounts Receivable 880. 12 May Bank 5,000, Sundries 5,000 (Capital). Sales Journal: 5 May Sales 800, GST 80, Accounts Receivable 880, Cost of Sales 500.",
         "Check: in each cash journal row, the Bank amount equals the sum of the other columns except Cost of Sales, which is a memo of the cost and is not cash."
+       ]
+      },
+      {
+       "h": "A decision path for any transaction",
+       "p": [
+        "Question 1: was cash received at the time? If yes, Cash Receipts Journal. Question 2: was cash paid at the time? If yes, Cash Payments Journal. Question 3: was it a credit sale of inventory? Sales Journal. Question 4: was it a credit purchase of inventory? Purchases Journal. Anything else, such as a credit purchase of equipment, the owner taking inventory home, or correcting an error, goes in the General Journal.",
+        "Examples: paid wages $900 (Cash Payments Journal; no GST). Received $330 from a customer who bought on credit last month (Cash Receipts Journal; Accounts Receivable column; no GST). Bought inventory for $1,100 on credit (Purchases Journal). Owner withdrew $200 cash (Cash Payments Journal; Drawings; no GST). Paid $660 for advertising including GST (Cash Payments Journal; Advertising $600, GST $60)."
+       ],
+       "check": [
+        [
+         "The business buys a computer on credit for use in the office. Which journal is used?",
+         "The General Journal. The Purchases Journal is only for credit purchases of inventory."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: Cash Payments Journal and Purchases Journal",
+       "p": [
+        "Transactions: 2 June paid rent $1,320 including GST. 6 June bought inventory on credit from Kelp Co. for $2,200 including GST. 15 June paid Kelp Co. $2,200. 20 June bought inventory for cash $550 including GST. 28 June owner withdrew $400.",
+        "Cash Payments Journal: 2 June Bank 1,320; Sundries 1,200 (Rent); GST 120. 15 June Bank 2,200; Accounts Payable 2,200. 20 June Bank 550; Inventory 500; GST 50. 28 June Bank 400; Drawings 400. Totals: Bank 4,470; Inventory 500; Accounts Payable 2,200; Drawings 400; Sundries 1,200; GST 170. Check: 500 + 2,200 + 400 + 1,200 + 170 = 4,470.",
+        "Purchases Journal: 6 June Kelp Co.; Inventory 2,000; GST 200; Accounts Payable 2,200."
+       ],
+       "check": [
+        [
+         "A business pays $2,750 including GST for inventory. What amounts go in the Bank, Inventory and GST columns?",
+         "Bank $2,750; Inventory $2,500; GST $250."
+        ]
+       ]
+      },
+      {
+       "h": "From journals to the rest of the system",
+       "p": [
+        "At the end of the period each column is totalled. The totals show the owner, for example, total cash received and paid, total credit sales and how much was spent on each type of expense. These totals feed the reports: the cash journals supply the Cash Flow Statement, and the sales, cost of sales and expense totals supply the Income Statement. In Units 3 and 4 the totals are posted to ledger accounts using double entry."
        ]
       },
       {
@@ -229,6 +598,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should understand source documents, GST and the journals.",
+        "The big idea: for a business that buys and sells goods, inventory is usually its most important asset and Cost of Sales its largest expense. An inventory card tracks both. Every figure on the card is at cost price, because the card records what the business paid, not what it hopes to earn."
+       ]
+      },
+      {
        "h": "Perpetual inventory",
        "p": [
         "A trading business buys goods and sells them at a higher price. Under the perpetual system, an inventory card is kept for each line and updated after every movement, so the business always knows how many units it should have and what they cost. The cards feed two figures into the reports: Cost of Sales (an expense in the Income Statement) and Inventory on hand (a current asset in the Balance Sheet)."
@@ -251,6 +627,12 @@
        "h": "Stocktake",
        "p": [
         "A physical count is done at least once a period to check that the cards match reality. Differences come from theft, damage, breakage, recording errors, or supplying the wrong quantity. An inventory loss is recorded in the OUT column and reported as an expense; an inventory gain is recorded in the IN column and reported as revenue. After the adjustment, the card balance equals the count."
+       ],
+       "check": [
+        [
+         "The card shows 40 units and the stocktake counts 38. What is recorded?",
+         "An inventory loss of 2 units, in the OUT column, reported as an expense."
+        ]
        ]
       },
       {
@@ -258,6 +640,46 @@
        "p": [
         "1 Mar balance 10 units at $20. 6 Mar purchase 20 units at $22. 10 Mar sale of 15 units. 31 Mar stocktake counts 14 units.",
         "10 Mar OUT: 10 at $20 = $200 and 5 at $22 = $110, so Cost of Sales = $310. Balance: 15 at $22 = $330. 31 Mar: the card shows 15 and the count is 14, so there is an inventory loss of 1 unit at $22 = $22. Closing balance: 14 at $22 = $308."
+       ]
+      },
+      {
+       "h": "Layout of an inventory card",
+       "p": [
+        "The heading names the item, its supplier, its location and the cost assignment method. The body has a date column, a details column with the document number, and three sections, IN, OUT and BALANCE, each split into quantity, unit cost and total value. After every transaction the BALANCE is rewritten, keeping different unit costs on separate lines.",
+        "Documents drive the entries: a purchase invoice or cheque butt (IN), a sales invoice or receipt (OUT), a credit note (returns), and a memo (drawings, losses and gains)."
+       ],
+       "check": [
+        [
+         "At what value is a sale recorded in an inventory card?",
+         "At cost price, in the OUT column. The selling price never appears on the card."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: Identified Cost",
+       "p": [
+        "A bike shop tags each bike. On hand at 1 May: bike A1 cost $300 and bike A2 cost $320. On 5 May it buys bikes B1 and B2 at $350 each. On 9 May it sells bikes A2 and B1.",
+        "Cost of Sales on 9 May = 320 + 350 = $670. Balance: A1 at $300 and B2 at $350, total $650. The cost follows the actual item sold, so there is no assumption about order."
+       ]
+      },
+      {
+       "h": "Worked example: FIFO with a return",
+       "p": [
+        "1 July balance 20 units at $10. 4 July purchase 30 units at $12. 10 July sale of 35 units. 12 July the customer returns 2 of those units. 20 July owner takes 3 units for personal use.",
+        "10 July OUT: 20 at $10 and 15 at $12 = 200 + 180 = $380. Balance: 15 at $12. 12 July sales return IN: the 2 units come back at the cost of the last units to leave on that sale, $12, so IN 2 at $12 = $24. Balance: 17 at $12. 20 July drawings OUT: 3 at $12 = $36. Balance: 14 at $12 = $168.",
+        "Cost of Sales for the month = 380 − 24 = $356. Drawings of $36 reduce owner’s equity; they are not part of Cost of Sales."
+       ],
+       "check": [
+        [
+         "Balance: 5 units at $8 and 10 units at $9. Under FIFO, what is the Cost of Sales for a sale of 8 units?",
+         "5 at $8 and 3 at $9 = 40 + 27 = $67."
+        ]
+       ]
+      },
+      {
+       "h": "Comparing the two methods",
+       "p": [
+        "Identified Cost is the most accurate, since every unit is matched with its real cost, but it needs each unit to be labelled and tracked, which is only practical for individually distinguishable or high-value items. FIFO is easier for identical items and leaves the inventory on hand valued at the most recent costs. Whichever method is chosen should be used consistently, so that results can be compared from one period to the next (comparability)."
        ]
       },
       {
@@ -307,6 +729,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to record credit transactions in the Sales and Purchases Journals.",
+        "The big idea: selling on credit and buying on credit help a business trade, but both must be managed, and assets that last for years must have their cost spread over the years they are used. This lesson covers the records and calculations behind Accounts Receivable, Accounts Payable and non-current assets."
+       ]
+      },
+      {
        "h": "Why keep individual records",
        "p": [
         "The Balance Sheet shows one figure for Accounts Receivable and one for Accounts Payable. To manage credit the business also needs to know who owes what. A separate record is kept for each customer and each supplier. The total of the individual balances must equal the single figure reported, and that check helps detect errors."
@@ -330,6 +759,12 @@
        "h": "Double entry in one page",
        "p": [
         "Every transaction affects at least two accounts, and the accounting equation stays in balance: Assets = Liabilities + Owner’s Equity. Debit entries increase assets and expenses; credit entries increase liabilities, owner’s equity and revenue. Drawings reduce owner’s equity, so drawings increase with a debit."
+       ],
+       "check": [
+        [
+         "Does an increase in an expense go on the debit or credit side?",
+         "The debit side."
+        ]
        ]
       },
       {
@@ -337,6 +772,46 @@
        "p": [
         "A van costs $33,000 including GST, plus $1,000 (excluding GST) for signwriting. Residual value $4,000; useful life 5 years.",
         "Cost = 30,000 + 1,000 = $31,000. Annual straight-line depreciation = (31,000 − 4,000) ÷ 5 = $5,400. After two years, accumulated depreciation is $10,800 and the carrying value is $20,200."
+       ]
+      },
+      {
+       "h": "Worked example: an Account Receivable record",
+       "p": [
+        "Customer: T. Nguyen, terms 30 days. 1 April balance $440. 6 April credit sale, invoice 51, $880 including GST. 9 April T. Nguyen returns goods, credit note 7, $110 including GST. 20 April receipt 204, $440.",
+        "Balance after each entry: 440; then 440 + 880 = 1,320; then 1,320 − 110 = 1,210; then 1,210 − 440 = $770 owing at 30 April. The amounts include GST, because that is what the customer actually owes."
+       ],
+       "check": [
+        [
+         "A customer owes $660, buys a further $1,100 on credit and pays $500. What is the balance?",
+         "660 + 1,100 − 500 = $1,260."
+        ]
+       ]
+      },
+      {
+       "h": "Ageing and credit terms",
+       "p": [
+        "Credit terms state how long the customer has to pay, for example “net 30 days”. Terms such as “5/7, n/30” offer a 5% discount for payment within 7 days, with the full amount due in 30. An ageing analysis lists what each customer owes by how long it has been outstanding: current, 30 to 60 days, over 60 days. The older a debt, the less likely it is to be collected, so old balances are followed up first."
+       ]
+      },
+      {
+       "h": "Depreciation: both methods side by side",
+       "p": [
+        "A machine costs $20,000, has a residual value of $2,000 and a useful life of 4 years.",
+        "Straight-line: (20,000 − 2,000) ÷ 4 = $4,500 every year. Carrying value after year 1: $15,500; year 2: $11,000; year 3: $6,500; year 4: $2,000.",
+        "Reducing balance at 40% per annum: year 1: 40% × 20,000 = $8,000, carrying value $12,000. Year 2: 40% × 12,000 = $4,800, carrying value $7,200. Year 3: 40% × 7,200 = $2,880, carrying value $4,320. The expense is larger in early years and falls each year. Residual value is not subtracted before applying the rate.",
+        "Part of a year: if the machine was bought on 1 October and the period ends 31 December, straight-line depreciation is 4,500 × 3/12 = $1,125."
+       ],
+       "check": [
+        [
+         "Equipment cost $12,000, residual value $2,000, useful life 5 years. What is the annual straight-line depreciation?",
+         "(12,000 − 2,000) ÷ 5 = $2,000 per year."
+        ]
+       ]
+      },
+      {
+       "h": "Why depreciation is recorded",
+       "p": [
+        "The asset helps earn revenue over several periods, so its cost is matched against that revenue over the same periods (accrual basis). Without depreciation, profit would be overstated every year the asset is used, and the asset would be overstated in the Balance Sheet."
        ]
       },
       {
@@ -416,6 +891,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to record transactions in journals and inventory cards and calculate depreciation.",
+        "The big idea: records are for the bookkeeper; reports are for the owner. Three reports turn the period’s records into answers about cash, profit and financial position. Learning what belongs in each, and what does not, is the core skill of Units 1 and 2."
+       ]
+      },
+      {
        "h": "What each report answers",
        "p": [
         "The Cash Flow Statement answers: where did cash come from and where did it go? The Income Statement answers: did the business earn more than it consumed? The Balance Sheet answers: what does the business control and owe at this date? An owner needs all three, because a business can be profitable and still run out of cash."
@@ -438,6 +920,12 @@
        "p": [
         "An asset is a present economic resource controlled by the business as a result of past events. A liability is a present obligation to transfer an economic resource as a result of past events. Owner’s equity is the residual interest in the assets after deducting the liabilities. Current items are expected to be converted to cash, sold, consumed or settled within 12 months; everything else is non-current.",
         "A loan often needs splitting: the part due in the next 12 months is a current liability and the remainder is non-current."
+       ],
+       "check": [
+        [
+         "A $24,000 loan is repaid at $500 a month. How is it classified in the Balance Sheet?",
+         "$6,000 (the next 12 months) is a current liability and $18,000 is a non-current liability."
+        ]
        ]
       },
       {
@@ -445,6 +933,39 @@
        "p": [
         "In June a business makes cash sales of $8,000 and credit sales of $6,000 (cost of all inventory sold $7,000), pays wages of $2,000, records depreciation of $500, and repays $3,000 of loan principal.",
         "Net Profit = (8,000 + 6,000) − 7,000 − 2,000 − 500 = $4,500. Cash from these items = 8,000 − 2,000 − 3,000 = $3,000, before any payment for the inventory itself. The credit sales raised profit without bringing in cash, depreciation reduced profit without using cash, and the loan repayment used cash without affecting profit."
+       ]
+      },
+      {
+       "h": "Classifying items: a sorting exercise",
+       "p": [
+        "Cash sales: operating cash inflow, and revenue. Credit sales: revenue, and an Account Receivable (current asset) until collected; no cash flow yet. Receipts from Accounts Receivable: operating cash inflow; not revenue (already recorded). Wages paid: operating cash outflow, and an expense. Depreciation: an expense only. Purchase of a vehicle for cash: investing cash outflow, and a non-current asset; not an expense. Loan received: financing cash inflow, and a liability. Loan repayment: financing cash outflow, reducing the liability; the interest is an operating outflow and an expense. Capital contribution: financing inflow, and owner’s equity. Drawings: financing outflow, reducing owner’s equity."
+       ],
+       "check": [
+        [
+         "Where does the purchase of shop fittings for cash appear in the Cash Flow Statement?",
+         "Under Investing activities, as a cash outflow."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: three reports from one set of data",
+       "p": [
+        "A new business, for the month of July. Owner contributed $20,000. Took a $10,000 loan. Bought a van for $15,000 cash (ignore GST for simplicity). Bought inventory for cash $8,000. Cash sales $9,000 and credit sales $3,000; the cost of the inventory sold was $6,000. Paid wages $2,000 and rent $1,000. Depreciation of van $250. Drawings $500.",
+        "Cash Flow Statement. Operating: cash sales 9,000 − inventory 8,000 − wages 2,000 − rent 1,000 = −$2,000. Investing: van −$15,000. Financing: capital 20,000 + loan 10,000 − drawings 500 = +$29,500. Net increase in cash = $12,500, which is the closing bank balance.",
+        "Income Statement. Sales 12,000 − Cost of Sales 6,000 = Gross Profit $6,000. Less wages 2,000, rent 1,000, depreciation 250. Net Profit = $2,750.",
+        "Balance Sheet as at 31 July. Assets: Bank 12,500; Accounts Receivable 3,000; Inventory 2,000 (8,000 bought − 6,000 sold); Van 15,000 less accumulated depreciation 250 = 14,750. Total $32,250. Liabilities: Loan 10,000. Owner’s equity: Capital 20,000 + Net Profit 2,750 − Drawings 500 = 22,250. Total $32,250. The business made a profit while its operating cash flow was negative, because it spent cash on inventory that is still on hand and has not yet collected its credit sales."
+       ],
+       "check": [
+        [
+         "Capital at start $30,000, Net Profit $8,000, Drawings $5,000. What is closing owner’s equity?",
+         "30,000 + 8,000 − 5,000 = $33,000."
+        ]
+       ]
+      },
+      {
+       "h": "Links between the reports",
+       "p": [
+        "The closing bank balance from the Cash Flow Statement is the Bank figure in the Balance Sheet. Net Profit from the Income Statement is added to owner’s equity in the Balance Sheet. If your Balance Sheet does not balance, check these two links first."
        ]
       },
       {
@@ -512,6 +1033,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to read an Income Statement and a Balance Sheet.",
+        "The big idea: reports give dollar amounts, but a $50,000 profit means something different for a corner shop than for a supermarket. Indicators turn amounts into ratios and percentages so that performance can be compared over time, against a budget and against other businesses. The calculation is the easy part; marks come from explaining what it shows."
+       ]
+      },
+      {
        "h": "How to use an indicator",
        "p": [
         "A single figure means little. Compare it with something: the previous period (trend), the budget (benchmark the owner set), or a similar business (inter-business comparison). Then explain the cause by looking at the parts of the formula, and suggest an action. A complete answer has three steps: state the change with figures, explain why it happened, and say what it means for the business."
@@ -548,6 +1076,51 @@
        "h": "Non-financial information",
        "p": [
         "Indicators only measure what is recorded in dollars. Customer satisfaction, staff turnover, product quality, the number of returns, competitors’ actions and the state of the economy all help explain results and are often asked for."
+       ]
+      },
+      {
+       "h": "Worked example: calculating a set of indicators",
+       "p": [
+        "Data for the year: Net Sales $200,000 (all on credit); Cost of Goods Sold $120,000; Net Profit $20,000. Average total assets $100,000; average capital $50,000. Current assets $40,000, including inventory $22,000 and prepaid expenses $2,000; current liabilities $25,000. Total liabilities $45,000; total assets $105,000. Average inventory $20,000; average Accounts Receivable $22,000.",
+        "Gross Profit Margin = 80,000 ÷ 200,000 = 40%. Net Profit Margin = 20,000 ÷ 200,000 = 10%. Return on Assets = 20,000 ÷ 100,000 = 20%. Asset Turnover = 200,000 ÷ 100,000 = 2 times. Return on Owner’s Investment = 20,000 ÷ 50,000 = 40%.",
+        "Working Capital Ratio = 40,000 ÷ 25,000 = 1.6 : 1. Quick Asset Ratio = (40,000 − 22,000 − 2,000) ÷ 25,000 = 0.64 : 1. Debt Ratio = 45,000 ÷ 105,000 = 43%. Inventory Turnover = 20,000 ÷ 120,000 × 365 = 61 days. Accounts Receivable Turnover = 22,000 ÷ 220,000 × 365 = 37 days (credit sales plus GST)."
+       ],
+       "check": [
+        [
+         "Net Profit $15,000 and Net Sales $120,000. What is the Net Profit Margin?",
+         "15,000 ÷ 120,000 × 100 = 12.5%."
+        ]
+       ]
+      },
+      {
+       "h": "Interpreting the set",
+       "p": [
+        "Each dollar of sales earns 40 cents of gross profit and 10 cents of net profit, so 30 cents goes on other expenses. The owner earns 40% on their investment, far better than a bank deposit, partly because nearly half the assets are funded by borrowing.",
+        "Liquidity is mixed. The Working Capital Ratio of 1.6 suggests the business can cover its short-term debts, but the Quick Asset Ratio of 0.64 shows it depends on selling inventory to do so, and inventory takes 61 days to sell. Customers take 37 days to pay; if the credit terms are 30 days, collection needs attention."
+       ],
+       "check": [
+        [
+         "A business has a Working Capital Ratio of 2.5 but a Quick Asset Ratio of 0.5. What does this suggest?",
+         "Most of its current assets are inventory or prepaid expenses. It may struggle to pay debts quickly unless it can sell its inventory."
+        ]
+       ]
+      },
+      {
+       "h": "Benchmarks",
+       "p": [
+        "A trend compares this period with earlier periods of the same business and shows the direction of change. A budget comparison shows whether the owner’s own target was met. An inter-business comparison, against a similar business or an industry average, shows whether performance is competitive. A result can be improving and still be below the industry average, so use more than one benchmark."
+       ],
+       "check": [
+        [
+         "Name the three benchmarks used to assess an indicator.",
+         "Previous periods (trend), the budget, and a similar business or industry average."
+        ]
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Saying a ratio is “good” or “bad” with no benchmark. Using closing figures where the formula needs an average. Forgetting to add GST to credit sales for Accounts Receivable Turnover. Stating that faster turnover is better without saying why it helps cash flow. Describing the change and stopping before explaining its cause."
        ]
       }
      ]
@@ -603,6 +1176,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson it helps to have worked through recording and reporting, because the theory explains why those tasks are done the way they are.",
+        "The big idea: accounting follows a shared set of rules so that reports mean the same thing to everyone who reads them. Four assumptions say how reports are prepared, and six qualitative characteristics say what makes the information useful. Theory questions ask you to connect a real situation to these rules."
+       ]
+      },
+      {
        "h": "Accounting assumptions",
        "p": [
         "The assumptions are the ground rules for preparing reports. Accounting entity: the business is separate from its owner and from other businesses, so only the business’s transactions are recorded; this is why the owner taking cash is drawings and not wages. Going concern: the business is assumed to continue operating into the future, which allows assets and liabilities to be classified as current or non-current and assets to be recorded at cost. Period: the life of the business is divided into periods of equal length so that profit can be measured and compared. Accrual basis: revenues are recognised when earned and expenses when incurred, so profit is calculated by matching the two in the same period."
@@ -638,6 +1218,58 @@
        "h": "Ethical considerations",
        "p": [
         "Ethical considerations are about doing the right thing by owners, staff, customers, suppliers, the community and the environment. Typical exam cases: choosing a cheaper supplier with poor labour practices, delaying payments to small suppliers, or leaving information out of a report. A good answer weighs the financial effect against the ethical one and reaches a recommendation."
+       ]
+      },
+      {
+       "h": "A formula for theory answers",
+       "p": [
+        "Use three steps: identify, define, apply. Identify the assumption or characteristic. Define it in a sentence. Apply it to the facts in the question, using the names and amounts given.",
+        "Example question: the owner paid her home electricity bill from the business bank account and wants it recorded as a business expense. Answer: “This should be recorded as drawings, not as an expense. Under the accounting entity assumption, the business is separate from its owner, and only business transactions are recorded in its reports. The home electricity is a personal expense of the owner, so recording it as a business expense would understate profit and would not be a faithful representation of the business’s expenses.”"
+       ],
+       "check": [
+        [
+         "The owner wants to leave a large unpaid electricity bill out of this year’s expenses because it has not been paid yet. Which assumption does this breach?",
+         "The accrual basis assumption: expenses are recognised when incurred, not when paid."
+        ]
+       ]
+      },
+      {
+       "h": "Matching situations to concepts",
+       "p": [
+        "Recording a sale when the invoice is issued, before cash arrives: accrual basis. Splitting a loan into current and non-current: going concern. Preparing reports every month or year: period. Keeping the owner’s car out of the Balance Sheet: accounting entity.",
+        "Using the invoice amount, not an estimate: verifiability and faithful representation. Using the same depreciation method each year: comparability. Giving the owner the report soon after the period ends: timeliness. Using clear headings and a graph: understandability. Reporting a large inventory loss separately instead of hiding it in Cost of Sales: relevance."
+       ],
+       "check": [
+        [
+         "Which qualitative characteristic is supported by keeping source documents for every transaction?",
+         "Verifiability."
+        ]
+       ]
+      },
+      {
+       "h": "Budget variance example",
+       "p": [
+        "Budgeted sales $50,000, actual $46,000: variance $4,000 unfavourable. Budgeted wages $12,000, actual $11,000: variance $1,000 favourable. Budgeted advertising $2,000, actual $800: variance $1,200 favourable.",
+        "A discussion would link them: spending much less than planned on advertising, and less on wages, may be the reason sales fell short. The favourable expense variances did not make up for the lost sales, so the overall result is worse than budget."
+       ]
+      },
+      {
+       "h": "Break-even: a second example and a graph",
+       "p": [
+        "A café sells coffee at $5. Each cup costs $1.50 in beans, milk and cup. Fixed costs are $2,800 a week. Contribution margin = 5 − 1.50 = $3.50 per cup. Break-even = 2,800 ÷ 3.50 = 800 cups a week. If the café sells 1,000 cups, the margin of safety is 200 cups, and profit = 200 × 3.50 = $700.",
+        "On a break-even graph, the total cost line starts at the level of fixed costs and rises with each unit; the revenue line starts at zero and rises more steeply. They cross at the break-even point. Below it the gap is a loss; above it the gap is profit. If the selling price rises, the revenue line gets steeper and the break-even point falls."
+       ],
+       "check": [
+        [
+         "Selling price $20, variable cost $12, fixed costs $4,000. How many units must be sold to break even?",
+         "4,000 ÷ (20 − 12) = 500 units."
+        ]
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Naming a concept without defining or applying it. Confusing verifiability (can it be checked against evidence?) with faithful representation (is it complete, neutral and free from error?). Calling drawings an expense. Dividing fixed costs by the selling price in a break-even calculation instead of by the contribution margin."
        ]
       }
      ]
