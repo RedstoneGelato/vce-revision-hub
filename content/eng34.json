@@ -55,6 +55,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the subsystems and their metalanguage from Units 1 and 2: word classes, sentence structures, prosody, cohesion and pragmatics. If you are starting at Units 3 and 4, work through the Units 1 and 2 lessons on those topics first.",
+        "The big idea: informal language is not careless language. It has its own typical features in every subsystem, and speakers choose them, mostly without thinking, because they suit close relationships and relaxed settings. Unit 3 asks you to identify those features precisely and explain what they achieve."
+       ]
+      },
+      {
        "h": "What informal language is",
        "p": [
         "Informal language is the language of close relationships and relaxed settings. It is usually spontaneous, relies on shared knowledge, and uses non-standard features freely. It appears in speech and in writing; a text thread can be more informal than a conversation with a stranger. Always describe it as a position on the register scale, and notice when a text shifts."
@@ -87,10 +94,209 @@
        ]
       },
       {
+       "h": "What pushes a text toward informality",
+       "p": [
+        "Close tenor: friends, family, teammates. A private or relaxed setting. A spoken or instant mode with little planning. Everyday fields. A purpose that is social more than transactional. Change any of these and the register moves: the same two friends will sound more formal when one is interviewing the other for a job.",
+        "Informality can also be marked, meaning unexpected. When a bank writes “Hey there! Let’s sort out your savings”, the informal features stand out because of the context, and they are there for a reason: to seem approachable."
+       ],
+       "check": [
+        [
+         "A real estate agency emails a client: “Hi Sam! Super excited to show you the place on Sat 😊”. Why might the agency choose informal features?",
+         "To reduce social distance and appear friendly and approachable, building rapport with the client."
+        ]
+       ]
+      },
+      {
+       "h": "A checklist by subsystem",
+       "p": [
+        "Phonology and prosody: elision and assimilation (“gonna”, “dunno”), vowel reduction, expressive pitch, stress and volume, laughter. Morphology: shortenings and diminutives (“arvo”, “brekkie”), contractions, creative affixation (“cringey”). Lexis: slang, colloquialisms, swearing, idioms, vague language (“stuff”, “thingy”), intensifiers (“heaps”, “so”). Syntax: ellipsis, fragments, simple and compound structures, tag questions, non-standard grammar (“me and him went”). Discourse: discourse particles, non-fluency features, overlaps, topic shifts, openings and closings such as “hey” and “see ya”. Semantics and pragmatics: in-jokes, irony, hyperbole, heavy reliance on inference and deixis.",
+        "Use the checklist to make sure a commentary covers several subsystems, not just lexis."
+       ],
+       "check": [
+        [
+         "Name one informal feature from each of lexis, syntax and discourse.",
+         "For example: slang (lexis), ellipsis (syntax), discourse particles such as “like” (discourse)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a group chat",
+       "p": [
+        "Text. Jas: “omg did u see the maths sac 😭”. Tom: “bro dont. cooked”. Jas: “same lol. maccas after to recover??”. Tom: “say less”.",
+        "Orthography: lower case throughout and no full stops, typical of instant messaging, where a full stop can seem abrupt. Lexis: initialisms (“omg”, “lol”), the school jargon “sac”, the vocative “bro”, youth slang (“cooked”, “say less”) and the Australian shortening “maccas”. The emoji stands in for facial expression. Syntax: every turn is elliptical; “cooked” is a one-word fragment whose subject, “I am” or “it was”, is recovered from context. The doubled question mark shows rising, hopeful intonation.",
+        "Purpose: the shared slang and the mirrored complaint (“same”) build solidarity between two students who have had the same experience, and the invitation is made indirectly so that refusing would be easy. The text only makes sense to insiders, which is part of its function."
+       ],
+       "check": [
+        [
+         "In the chat, what does the emoji contribute?",
+         "It replaces the facial expression and tone of voice missing from written text, showing the writer’s distress in an exaggerated, humorous way."
+        ]
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Listing features without saying what each one does in this text. Treating non-fluency as poor speaking. Ignoring the transcript key. Calling everything “slang” when the better term is colloquialism, diminutive or idiom."
        ]
+      }
+     ]
+    },
+    {
+     "id": "transcripts",
+     "title": "Reading and analysing spoken transcripts",
+     "points": [
+      "A transcript records what was said and how: always read the key to its symbols first.",
+      "Turn-taking: speakers hold, pass and take the floor; adjacency pairs link turns.",
+      "Overlaps and interruptions can be cooperative (supportive) or competitive.",
+      "Non-fluency features (pauses, fillers, false starts, repairs) are a normal part of unplanned speech.",
+      "Discourse particles, minimal responses and topic management show how speakers cooperate and who has control."
+     ],
+     "explain": "Record or recall thirty seconds of real conversation. Describe who controlled the topic, and give two features that show the speakers were cooperating.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the features of informal language and the prosodic features from the phonology lesson.",
+        "The big idea: conversation looks messy on paper, full of pauses, overlaps and half-finished sentences. In fact it is highly organised: speakers follow shared, unspoken rules about whose turn it is and how to show they are listening. A transcript makes those rules visible. Spoken texts appear regularly in assessment, so being comfortable with transcripts is essential."
+       ]
+      },
+      {
+       "h": "Transcript conventions",
+       "p": [
+        "A transcript uses symbols for features that ordinary writing ignores. Symbols differ from one transcript to another, so the key printed with the text is the authority. Commonly marked features: short and longer pauses; overlapping speech, often with square brackets; latching, where one turn follows another with no gap; rising and falling intonation; emphatic stress; changes in volume and tempo; lengthened sounds; laughter; and inaudible sections.",
+        "Lines are numbered so you can refer to them. Punctuation in a transcript usually shows intonation, not grammar, and there are no sentences in the written sense: speech is divided into utterances and turns.",
+        "First step with any transcript: read the key, then read the text aloud in your head using the symbols, so that you hear it."
+       ],
+       "check": [
+        [
+         "Why must you read the key before analysing a transcript?",
+         "Transcription symbols are not standard across texts; the key tells you what each symbol means in this transcript."
+        ]
+       ]
+      },
+      {
+       "h": "Turns and the floor",
+       "p": [
+        "The floor is the right to speak. A speaker signals that a turn is ending with falling intonation, a completed grammatical unit, a pause, a tag question, or by naming the next speaker. Listeners use these cues to come in at the right moment, which is why most changes of speaker happen with almost no gap.",
+        "To hold the floor, a speaker may speed up, avoid pausing at the end of a clause, use a filler (“um”) or a continuing conjunction (“and so”), or list (“first…”). To take the floor, a speaker may start with a discourse particle (“well”, “look”), overlap, or raise their volume. To pass it, a speaker asks a question or uses a vocative.",
+        "Who speaks most, who asks the questions and who chooses and changes the topic all indicate who holds power in the interaction or how equal the participants are."
+       ]
+      },
+      {
+       "h": "Adjacency pairs and feedback",
+       "p": [
+        "An adjacency pair is two turns by different speakers that belong together: greeting and greeting, question and answer, invitation and acceptance or refusal, compliment and response, apology and acceptance. An unexpected second part, such as silence after a greeting, is noticeable and meaningful.",
+        "Minimal responses (backchannels) such as “mm”, “yeah”, “right” and laughter are not attempts to take the floor. They show attention and encourage the speaker to continue. Their absence can signal disagreement, boredom or, on the phone, a lost connection."
+       ],
+       "check": [
+        [
+         "A: “Thanks so much for the lift.” B: “No worries.” What is this pattern called?",
+         "An adjacency pair (thanks and acknowledgment)."
+        ]
+       ]
+      },
+      {
+       "h": "Overlap and interruption",
+       "p": [
+        "Overlapping speech is common in relaxed conversation. Cooperative overlap supports the speaker: finishing their sentence, agreeing, laughing or adding a short comment. It shows engagement and closeness. Competitive overlap, or interruption, tries to take the floor before the speaker has finished, and can show dominance, urgency or disagreement.",
+        "Decide which it is from what happens next. If the first speaker continues happily, it was cooperative. If they stop, restart or raise their volume to keep the floor, it was competitive."
+       ]
+      },
+      {
+       "h": "Non-fluency features and repair",
+       "p": [
+        "Unplanned speech is produced in real time, so it contains pauses, filled pauses (“um”, “er”), false starts (“I was— we were going”), repetition and repairs, where a speaker corrects or rephrases. Self-repair is fixing your own utterance; other-repair is when a listener does it or asks for clarification.",
+        "These features give speakers time to plan, and they can carry meaning: hesitation before a refusal softens it; many false starts may show nervousness or a delicate topic. A prepared speech has few of them. Avoid describing them as errors."
+       ]
+      },
+      {
+       "h": "Discourse particles and topic management",
+       "p": [
+        "Discourse particles have little dictionary meaning but do important work. “Well” can signal that a disagreeing or indirect answer is coming. “So” can mark a new topic or a conclusion. “Anyway” returns to an earlier topic or prepares to close. “Like” can hedge, focus attention or introduce reported speech. “You know” and “I mean” check or build shared understanding. The same particle can have different functions, so always decide what it does in its line.",
+        "Topic management: note who initiates each topic, how topics are developed, shifted and returned to, and how the conversation is opened and closed. Closings are usually negotiated over several turns (“anyway”, “I’d better let you go”, “see you”) so that nobody seems to be dismissing the other."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Transcript (in the key: (.) is a short pause; square brackets mark overlap; capitals show stress). 1 Mel: so how was the INTERVIEW. 2 Jo: um (.) yeah it was (.) it was okay I think [they asked] 3 Mel: [just okay] 4 Jo: they asked heaps about teamwork and I kind of (.) blanked. 5 Mel: oh no. 6 Jo: but then I talked about netball so (.) yeah. 7 Mel: nice SAVE.",
+        "Mel opens the topic with the discourse particle “so” and stress on “interview”, passing the floor to Jo with a question. Jo’s turn in line 2 is full of non-fluency features, a filler, pauses and the repetition “it was (.) it was”, which suggest uncertainty about how the interview went; the hedge “I think” weakens the claim. Mel’s overlap in line 3 repeats Jo’s word as a question. It is cooperative: it invites elaboration, and Jo carries on in line 4 without contesting the floor.",
+        "“Heaps” and “blanked” are colloquial, fitting the close tenor. Mel’s minimal response “oh no” (line 5) shows sympathy and supports Jo’s positive face. Jo’s trailing “so (.) yeah” signals the end of the turn, and Mel’s evaluative “nice SAVE”, with emphatic stress, closes the sequence with approval. The equal turn lengths and supportive feedback reflect solidarity between friends."
+       ],
+       "check": [
+        [
+         "In the transcript, is Mel’s overlap in line 3 cooperative or competitive? How can you tell?",
+         "Cooperative. It prompts Jo to say more, and Jo continues the same point without struggling to keep the floor."
+        ]
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Ignoring the key and misreading symbols. Describing pauses and fillers as mistakes. Calling every overlap an interruption. Listing features without relating them to the relationship between the speakers. Quoting without line numbers."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which is a minimal response?",
+       "o": [
+        "“Anyway, as I was saying”",
+        "“mm”",
+        "“Could you repeat that?”",
+        "“I disagree”"
+       ],
+       "a": 1,
+       "e": "It shows the listener is following without taking the floor."
+      },
+      {
+       "t": "m",
+       "q": "A speaker says “I went— we went to the beach.” This is an example of…",
+       "o": [
+        "an adjacency pair",
+        "a repair",
+        "a minimal response",
+        "latching"
+       ],
+       "a": 1,
+       "e": "The speaker corrects their own utterance (a self-repair after a false start)."
+      },
+      {
+       "t": "m",
+       "q": "Which is a way of holding the floor?",
+       "o": [
+        "Asking a question",
+        "Using falling intonation and pausing",
+        "Using a filled pause such as “um” before continuing",
+        "Naming the next speaker"
+       ],
+       "a": 2,
+       "e": "The filler signals that the speaker has not finished."
+      },
+      {
+       "t": "c",
+       "q": "How can you tell whether an overlap is cooperative or competitive?",
+       "a": "Look at its content and what follows. Cooperative overlap supports or agrees and the first speaker continues. Competitive overlap tries to take the floor, and the first speaker stops or fights to continue.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give two functions of the discourse particle “well”.",
+       "a": "For example: to signal that a disagreeing or indirect response is coming, to take the floor at the start of a turn, or to mark a pause for thought.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In a transcript, punctuation such as a question mark usually indicates…",
+       "o": [
+        "grammatical sentence type",
+        "intonation",
+        "a spelling error",
+        "volume"
+       ],
+       "a": 1,
+       "e": "Check the key, but transcripts normally use it for rising intonation."
       }
      ]
     },
@@ -133,6 +339,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to identify the features of informal language (first lessons of Unit 3).",
+        "The big idea: features are only half an answer. The other half is what they do for the people involved. Informal language builds and tests relationships: it draws people together, marks who belongs, lets them play, and sometimes pushes others away. This lesson gives you the vocabulary for those effects."
+       ]
+      },
+      {
        "h": "Social purposes to look for",
        "p": [
         "Informal language does social work. Common purposes: encouraging intimacy, solidarity and equality; maintaining and challenging positive and negative face needs; promoting linguistic innovation; supporting in-group membership; and building rapport. A single feature can serve several purposes at once, and the same feature can do opposite jobs in different contexts."
@@ -143,6 +356,12 @@
        "p": [
         "Face is a person’s public self-image. Positive face is the need to be liked, approved of and included. Negative face is the need to be free from imposition and to act independently. A face-threatening act puts either at risk: a criticism threatens positive face; a request or order threatens negative face.",
         "Positive politeness strategies appeal to positive face: compliments, nicknames, shared slang, agreeing, joking. Negative politeness strategies respect negative face: hedging, apologising, indirect requests, giving options (“If you get a sec, could you…”). Informal settings tend to use positive politeness heavily."
+       ],
+       "check": [
+        [
+         "A friend says, “I love your jacket, where’d you get it?” Which face need does this address?",
+         "Positive face: it shows approval and interest in the other person."
+        ]
        ]
       },
       {
@@ -163,6 +382,39 @@
        "p": [
         "A tradie’s text to a mate: “Oi legend, any chance you could chuck us a lift tmrw? Car’s cactus.”",
         "The vocative “legend” appeals to the friend’s positive face before a request that threatens his negative face. “Any chance you could” is a hedged, indirect request (negative politeness). “Us” for “me”, “chuck” and “cactus” are Australian colloquialisms that signal solidarity and a shared identity; the humour reduces the imposition."
+       ]
+      },
+      {
+       "h": "Playing with language",
+       "p": [
+        "Informal settings are where much linguistic innovation happens. Speakers coin words, blend them, shift their meanings and bend spelling for fun: “hangry”, “adulting”, “cheugy”. Puns, rhyme, exaggeration and running jokes entertain and show wit. Online, memes and hashtags spread new expressions within days.",
+        "Innovation serves identity. Using the newest term signals that you are current and part of the group that uses it. When a term spreads to parents and advertisers it loses that value, and the group moves on. This is why slang changes so fast and why an older speaker using youth slang can sound out of place."
+       ],
+       "check": [
+        [
+         "Why does slang used by teenagers change so quickly?",
+         "Its job is to mark membership of the group. Once outsiders adopt a term it no longer distinguishes the group, so new terms replace it."
+        ]
+       ]
+      },
+      {
+       "h": "Informality in public life",
+       "p": [
+        "Informal language now appears in places that were once formal. Politicians use first names, contractions and colloquialisms to seem like ordinary people. Companies write to customers in a chatty voice. Government campaigns use slang and humour to reach young audiences.",
+        "The purposes: reduce social distance, build rapport and trust, appear authentic, and appeal to Australian values of egalitarianism and not taking oneself too seriously. The risks: sounding insincere, patronising or unprofessional, or excluding people who do not share the references. When you analyse such a text, weigh both."
+       ],
+       "check": [
+        [
+         "Give one benefit and one risk when a politician uses colloquial language in an interview.",
+         "Benefit: reduces social distance and builds rapport with voters. Risk: may seem insincere or unprofessional."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: banter",
+       "p": [
+        "A football club’s social media post after a win: “What. A. Game. Shoutout to Dazza for finally remembering how to kick 😂 Beers are on him. Go Tigers!!”",
+        "The one-word sentences “What. A. Game.” imitate slow, emphatic speech. “Dazza” uses the -zza suffix typical of Australian nicknames, signalling affection and membership. The teasing (“finally remembering how to kick”) is a mock insult: it threatens Dazza’s positive face on the surface, but among teammates it shows closeness, since only friends can joke this way, and the laughing emoji marks it as play. “Beers are on him” and the chant “Go Tigers!!” reinforce a shared club identity. Outsiders can read the post, but it is addressed to insiders."
        ]
       },
       {
@@ -223,6 +475,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the Unit 1 and 2 metalanguage and the features of informal language, since formal language is best understood by contrast.",
+        "The big idea: formal language is planned, explicit and careful. Where informal language leans on shared context, formal language spells things out so that a distant or unknown audience cannot misunderstand, and it follows conventions that signal seriousness. Each subsystem has features that do this work."
+       ]
+      },
+      {
        "h": "What formal language is",
        "p": [
         "Formal language is used where there is social distance, a serious purpose or a public audience. It is usually planned and edited, follows standard conventions, and aims to be explicit so that it can be understood without shared background. It appears in writing (legislation, reports, editorials) and in speech (court proceedings, ceremonies, speeches)."
@@ -238,6 +497,12 @@
        "h": "Syntax",
        "p": [
         "Longer sentences with subordination (complex and compound-complex structures). Agentless passives hide or background the doer (“Mistakes were made”). Syntactic patterning is common in speeches: parallelism (repeated structure: “We will listen, we will learn, we will act”), antithesis (contrasting ideas in balanced structure) and listing. Information flow is controlled deliberately: front focus places something unusual at the start; end focus saves new or important information for last; clefting splits a sentence to highlight one part (“It was the committee that decided”)."
+       ],
+       "check": [
+        [
+         "Why might a report say “Errors were made” instead of “We made errors”?",
+         "The agentless passive removes the doer, avoiding direct responsibility and sounding impersonal."
+        ]
        ]
       },
       {
@@ -257,6 +522,45 @@
        "p": [
         "Sentence from a council notice: “Failure to comply with the above requirements may result in the issuing of an infringement notice.”",
         "Nominalisations (“failure”, “issuing”) and the absence of any human subject make the threat impersonal: the council does not say “we will fine you”. The modal verb “may” hedges the consequence. Latinate lexis (“comply”, “requirements”, “infringement”) and anaphoric “the above” maintain a formal register and the council’s authority, while reducing the threat to the reader’s face."
+       ]
+      },
+      {
+       "h": "Formal and informal side by side",
+       "p": [
+        "Informal: “Sorry, we stuffed up your order. We’ll fix it ASAP.” Formal: “We apologise for the error in processing your order. The matter will be resolved as soon as possible.”",
+        "What changed: the colloquial verb “stuffed up” became the nominalisation “the error”; the contraction “we’ll” and the initialism “ASAP” were written in full; the active “We’ll fix it” became the passive “will be resolved”, removing the doer; the fragment-like apology became a complete declarative. The formal version is longer, more distant and harder to argue with. Practising this kind of translation in both directions is the fastest way to learn the features."
+       ],
+       "check": [
+        [
+         "Rewrite “We reckon the rules are unfair” in a formal register and name one change you made.",
+         "For example, “It is our view that the regulations are inequitable.” Changes: the colloquial verb “reckon” is replaced and Latinate lexis (“regulations”, “inequitable”) is used."
+        ]
+       ]
+      },
+      {
+       "h": "Information flow in more detail",
+       "p": [
+        "English sentences normally begin with what is already known and end with what is new, so the end of a clause carries natural emphasis: end focus. “The winner of this year’s award is Priya Nair” saves the key information for last.",
+        "Front focus moves an element out of its usual place to the start: “Rarely has this court seen such conduct.” The unusual order draws attention. Clefting splits one clause into two to spotlight a part: “It was the minister who approved the grant” stresses who was responsible. The passive also manages flow, by letting the topic stay in subject position: “The bridge was built in 1932. It was designed by…”"
+       ],
+       "check": [
+        [
+         "What is highlighted by the cleft sentence “It was in 2020 that the policy changed”?",
+         "The time, “in 2020”."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a ceremonial speech",
+       "p": [
+        "Extract from a principal’s graduation address: “Graduates, tonight we honour not only what you have achieved, but who you have become. You arrived as children; you leave as young adults. May you carry with you the curiosity, the courage and the kindness that have defined this year level.”",
+        "The vocative “Graduates” and the inclusive “we” establish the occasion and unite the audience. Antithesis in “not only what you have achieved, but who you have become” and in “You arrived as children; you leave as young adults” gives balance and a sense of transformation; the second is also parallelism. The listing of three abstract nouns with alliteration (“curiosity”, “courage”, “kindness”) is memorable when heard. The modal “May” in “May you carry” is a formal way of expressing a wish. Together these features meet the conventions of a ceremonial speech and serve its purposes of celebrating, marking a transition and building rapport."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Equating formal with “long words”. Calling every “was” a passive. Spotting nominalisation without saying what it does (condenses, depersonalises, sounds authoritative). Forgetting that formal texts are also spoken, and missing prosodic and rhetorical features in speeches."
        ]
       }
      ]
@@ -300,6 +604,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be able to identify the features of formal language and understand positive and negative face.",
+        "The big idea: formal language is a tool of public life. It can make things clear, show respect and hold a diverse society together, and it can also be used to keep people out, avoid blame or make an unpleasant truth disappear. Your job is to decide which is happening in a given text, and to show how."
+       ]
+      },
+      {
        "h": "Social purposes to look for",
        "p": [
         "Formal language can: maintain and challenge positive and negative face needs; reinforce social distance and authority; establish expertise; promote social harmony and negotiate social taboos; build rapport; and clarify, manipulate or obfuscate. Always decide which of these the text is doing and who gains."
@@ -315,6 +626,12 @@
        "h": "Clarifying, manipulating and obfuscating",
        "p": [
         "Formal language can make meaning precise, as in a contract that defines every term. It can also hide meaning. Jargon excludes outsiders. Euphemism replaces an unpleasant or taboo term with a milder one (“passed away”, “let go”). Doublespeak is language that deliberately disguises or distorts the truth, often by institutions (“negative growth” for a loss; “enhanced interrogation” for torture). Bureaucratic language with long nominalised sentences can obscure responsibility. Ask: is the complexity serving the reader or protecting the writer?"
+       ],
+       "check": [
+        [
+         "Is “pre-owned vehicle” for “used car” a euphemism or doublespeak?",
+         "A euphemism: it softens the idea with a more positive expression but does not hide the meaning."
+        ]
        ]
       },
       {
@@ -334,6 +651,46 @@
        "p": [
         "A company statement: “Following a strategic review, the organisation has made the difficult decision to realign its workforce, impacting approximately 200 roles.”",
         "“Realign its workforce” is a euphemism for sacking staff, and “roles” in place of “people” depersonalises those affected. The nominalisation “decision” and the abstract subject “the organisation” hide who decided. “Difficult” appeals for sympathy and protects the company’s positive face. The purpose is to obfuscate responsibility while appearing professional."
+       ]
+      },
+      {
+       "h": "Politeness in formal settings",
+       "p": [
+        "Formal contexts usually involve social distance or unequal power, so negative politeness dominates: indirect requests (“I would be grateful if you could…”), hedging, apologies, modal verbs, and respectful forms of address. These protect the other person’s freedom from imposition.",
+        "Positive face is attended to as well: thanking, acknowledging contributions and expressing shared goals. A formal letter of complaint has to threaten the reader’s face while staying courteous; the usual solution is to state facts impersonally and frame the demand as a request."
+       ],
+       "check": [
+        [
+         "“I would be grateful if you could forward the documents at your earliest convenience.” Which face need is being respected, and how?",
+         "Negative face. The request is made indirectly, with a modal verb and a phrase that leaves the timing to the reader, so it imposes as little as possible."
+        ]
+       ]
+      },
+      {
+       "h": "Plain English",
+       "p": [
+        "The plain English movement argues that public documents should be written so their audience can understand them the first time: familiar words, shorter sentences, active voice, clear headings and “you” and “we”. Many governments and companies have adopted plain-language guidelines.",
+        "This matters for social purpose. Dense legal or bureaucratic language can leave people unable to understand their rights or obligations, which excludes them. Rewriting it reduces the power difference between institution and citizen. In an essay, plain English is a good counter-example to the claim that formal language always clarifies."
+       ],
+       "check": [
+        [
+         "How can plain English affect the relationship between an institution and the public?",
+         "It makes information accessible, reducing the power imbalance and including people who would be shut out by complex formal language."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a public apology",
+       "p": [
+        "A statement from a fictional airline: “We sincerely apologise to passengers affected by yesterday’s cancellations. Unforeseen operational issues impacted a number of services. We recognise this fell short of the standard our customers expect, and affected travellers will be contacted regarding compensation.”",
+        "The performative verb “apologise” with the adverb “sincerely” attends to passengers’ positive face. “Unforeseen operational issues” is vague, abstract and nominalised: it names no cause and no person, protecting the airline. “A number of services” avoids stating how many. “Fell short of the standard” is a euphemism for failure. The agentless passive “will be contacted” promises action without saying by whom or when.",
+        "The text repairs the relationship with customers while limiting the admission of fault: it both clarifies (there will be compensation) and obfuscates (what went wrong). A balanced analysis says both."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Assuming formal language is always used to deceive, or always to be clear. Confusing euphemism (softening) with doublespeak (deliberately misleading). Describing jargon only as exclusionary and forgetting its efficiency for insiders. Discussing purpose without quoting evidence."
        ]
       }
      ]
@@ -388,6 +745,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the features and purposes of informal and formal language from Unit 3.",
+        "The big idea: Unit 4 turns from register to identity. Australian English is the first case study: a national variety that grew from the dialects of early settlers and contact with First Nations and migrant languages, and that Australians use to say who they are. It is also not one thing; it varies with region, culture, age and background."
+       ]
+      },
+      {
        "h": "What makes Australian English distinct",
        "p": [
         "Australian English is a national variety with its own accent, vocabulary and conventions. It is codified in the Macquarie Dictionary. Its features reflect national values that Australians like to claim: egalitarianism, informality, mateship, humour and anti-authoritarianism."
@@ -398,6 +762,12 @@
        "p": [
         "Australian accents are traditionally described on a continuum: Broad, General and Cultivated. Broad has the longest diphthongs and the strongest association with rural and working-class identity; Cultivated is closest to British Received Pronunciation; General sits between and is by far the most common. Over recent decades speakers have moved toward General from both ends. Accent varies more with social factors than with region, although some regional differences exist (for example, the vowel in “dance” and “castle”, or “celery” and “salary” sounding alike in Victoria).",
         "Other phonological features: a non-rhotic accent (no “r” sound after a vowel in “car”), flapping of “t” between vowels, and the high rising terminal, where a statement ends with rising pitch, often to check the listener is following."
+       ],
+       "check": [
+        [
+         "Is the Broad–General–Cultivated continuum mainly regional or social?",
+         "Mainly social: it relates to factors such as background, education and identity more than to where a speaker lives."
+        ]
        ]
       },
       {
@@ -423,6 +793,50 @@
        "p": [
         "A politician at a press conference says, “Look, we’re fair dinkum about backing our tradies.”",
         "“Fair dinkum” and the diminutive “tradies” are Australian colloquialisms used in a formal setting. The purpose is to reduce social distance and present the speaker as an ordinary, trustworthy Australian, drawing on egalitarian values. The discourse marker “Look” claims the floor and signals directness."
+       ]
+      },
+      {
+       "h": "Where Australian English came from",
+       "p": [
+        "The first generation of children born in the colony grew up hearing a mixture of dialects from south-east England, Ireland and elsewhere. They levelled these into a new, fairly uniform accent within a few decades. Words were borrowed from Aboriginal languages for unfamiliar animals, plants and landscape, and some British dialect and convict slang survived here after fading in Britain. Gold rushes, post-war migration and American media each added further layers."
+       ]
+      },
+      {
+       "h": "Features by subsystem",
+       "p": [
+        "Phonology: non-rhotic; a distinctive set of vowels along the Broad to Cultivated continuum; flapped /t/ in words like “water”; high rising terminal; a tendency to elide and reduce syllables. Morphology: shortening with -ie/-y, -o and -a/-za. Lexis: Australianisms (“ute”, “esky”, “doona”, “bogan”, “larrikin”), borrowings from Aboriginal languages, and idioms (“flat out like a lizard drinking”). Syntax: generally the same as other standard varieties, with informal non-standard forms such as “youse”. Discourse and pragmatics: “yeah nah”, “no worries”, understatement (“not bad” meaning very good), irony and self-deprecating humour, and a preference for first names and informality across status differences.",
+        "Each feature can be tied to a value. Diminutives and first names express egalitarianism. Understatement and teasing reflect a dislike of boasting, sometimes called the tall poppy syndrome. “No worries” projects easygoing friendliness."
+       ],
+       "check": [
+        [
+         "Which Australian value is often linked to the use of diminutives and first names with people of higher status?",
+         "Egalitarianism: treating everyone as an equal and reducing social distance."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: selling with Australian English",
+       "p": [
+        "A fictional hardware store advertisement: “Got a job that needs doing this arvo? Pop into Barry’s. We’ve got the gear, the know-how and a sausage sizzle out the front. Too easy.”",
+        "The elliptical interrogative (“Got a job…?”) and the diminutive “arvo” mimic a chat over the fence. “Pop into”, “gear” and “know-how” are colloquial. The cultural reference to a “sausage sizzle” invokes a shared weekend ritual, and the fragment “Too easy.” is a characteristic Australian expression of relaxed competence. The store presents itself as a helpful local mate, not a corporation: the language builds rapport by appealing to national identity, and through that it persuades."
+       ],
+       "check": [
+        [
+         "Why would a national brand use words like “arvo” and “too easy” in an advertisement?",
+         "To build rapport by sounding like a friendly local and appealing to a shared Australian identity, which helps persuade the audience."
+        ]
+       ]
+      },
+      {
+       "h": "Is there still one Australian English?",
+       "p": [
+        "Arguments for a shared national variety: the General accent dominates, national media and schooling spread common forms, and Australianisms remain a source of pride. Arguments for increasing diversity: Aboriginal Englishes and ethnolects are widely spoken and increasingly visible in media; younger speakers adopt global and American features online; and attitudes to Broad features are mixed. A strong essay accepts both: a recognisable national standard exists alongside growing variation, and speakers move between them according to context."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Treating stereotypes (“G’day mate”) as how all Australians speak. Describing Broad, General and Cultivated as regional accents: the variation is mainly social. Calling ethnolects or Aboriginal Englishes “incorrect”. Using only old examples; look for current ones in advertising, sport, politics and social media."
        ]
       }
      ]
@@ -471,6 +885,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the features of Australian English and the idea of prestige.",
+        "The big idea: every time you speak or write you give off information about who you are and who you want to be seen as. People belong to many groups at once, and they shift their language to bring different identities forward. This lesson is about reading those signals and about how society judges them."
+       ]
+      },
+      {
        "h": "How language builds identity",
        "p": [
         "People do not have one fixed way of speaking. They have a repertoire and choose from it, usually without thinking, to present themselves and to relate to others. Identity is therefore partly performed through language, and it has layers: individual (idiolect), group (sociolect, ethnolect) and national."
@@ -487,6 +908,12 @@
        "p": [
         "Communication accommodation theory says speakers adjust their language according to how they feel about the listener. Convergence is moving toward the other person’s style to reduce social distance and win approval. Divergence is emphasising difference to assert identity or show distance. A teenager may converge toward friends’ slang at school and diverge from a parent by using it at home.",
         "Style-shifting is changing register within one language; code-switching is changing language or variety. Both let a speaker show different sides of their identity in different settings."
+       ],
+       "check": [
+        [
+         "A shop assistant starts using a customer’s slang and speech rhythm. What is this called, and why might they do it?",
+         "Convergence: reducing social distance to build rapport and gain approval."
+        ]
        ]
       },
       {
@@ -507,6 +934,53 @@
        "p": [
         "A Lebanese Australian teenager says to a friend, “Wallah bro, that exam was cooked.”",
         "“Wallah” is an Arabic borrowing used as an intensifier, marking ethnolect and shared heritage. “Bro” is a solidarity vocative; “cooked” is current youth slang. Together they show a layered identity: young, Australian and Lebanese. Speaking to a teacher, the same student would likely shift toward the standard, which shows awareness of overt prestige."
+       ]
+      },
+      {
+       "h": "Age and generation",
+       "p": [
+        "Teenspeak is marked by fast-changing slang, intensifiers, discourse particles such as “like”, initialisms, and playful spelling online. Its functions are to bond with peers and to draw a line between the peer group and adults. Older generations keep the slang of their own youth (“grouse”, “daggy”), so vocabulary can date a speaker quite precisely.",
+        "Generational labels themselves (“boomer”, “Gen Z”) and the stereotypes attached to them show language being used to construct group identities, sometimes dismissively."
+       ]
+      },
+      {
+       "h": "Occupation and interests",
+       "p": [
+        "Every workplace and hobby has its jargon. Among insiders it is precise and fast: a nurse’s “obs”, a builder’s “noggin”, a gamer’s “nerf” or “GG”. It also signals competence and belonging; a new member learns the language as part of joining. Used with outsiders, the same terms can confuse, exclude or impress.",
+        "People style-shift as they move between these communities. The same person may use medical jargon at work, sporting slang at training and an ethnolect at home, and none of these is the “real” one."
+       ],
+       "check": [
+        [
+         "Give two functions of jargon within a group.",
+         "It allows precise, efficient communication and signals expertise and membership of the group."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: shifting identities",
+       "p": [
+        "A student sends two messages on the same day. To a teacher: “Dear Ms Rossi, I was unable to complete the task due to illness. Could I please have an extension until Friday? Kind regards, Amir.” To a friend: “bro im so cooked, havent even started rossi’s thing 💀”.",
+        "The first uses a formal salutation and closing, a title and surname, standard punctuation, Latinate lexis (“unable”, “complete”), a nominalised reason (“due to illness”) and a modal interrogative as an indirect request. These attend to the teacher’s negative face and present Amir as a responsible student, drawing on the overt prestige of the standard.",
+        "The second uses a solidarity vocative, slang, missing apostrophes, hyperbole and an emoji, and drops the teacher’s title. It presents Amir as a relaxed peer and builds solidarity through shared complaint. The topic is the same; the identity performed is different. This is style-shifting, and it shows that speakers control more than one variety."
+       ],
+       "check": [
+        [
+         "What is the term for changing your register within one language to suit the audience?",
+         "Style-shifting."
+        ]
+       ]
+      },
+      {
+       "h": "Language as a social marker",
+       "p": [
+        "Listeners make rapid judgments about education, class, ethnicity and trustworthiness from a few words. Studies in which the same content is delivered in different accents find that listeners rate the speakers differently. Such judgments reflect attitudes to groups, and they affect hiring, housing and treatment by authorities.",
+        "Individuals respond in different ways: by converging on the prestige variety to avoid prejudice, by keeping their variety as a matter of pride, or by switching between the two."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Writing as though each person has one fixed identity. Confusing idiolect (individual) with sociolect (group). Explaining a feature as “to be informal” when the question is about identity: say what identity it projects and to whom. Presenting prejudice against a variety as a fact about the variety."
        ]
       }
      ]
@@ -550,6 +1024,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should have studied all of Units 3 and 4. Use it together with the worked commentary in the next lesson.",
+        "The big idea: the exam rewards one skill above all: linking a specific language feature to what it does in a specific context. Every section tests that, at different lengths. Knowing the format and practising a method for each section means your knowledge turns into marks."
+       ]
+      },
+      {
        "h": "How the exam is built",
        "p": [
         "The exam has three sections: short-answer questions on a text (Section A), an analytical commentary on a text (Section B), and an essay (Section C). Check the current exam specifications on the VCAA website for marks and timing. In all three, marks come from accurate metalanguage, relevant evidence and explanation of how language relates to context and purpose."
@@ -573,6 +1054,12 @@
        "p": [
         "Read the prompt and its stimulus material, then settle a contention that answers the exact question. Each body paragraph needs a topic sentence that advances the contention, a contemporary Australian example, linguistic analysis of that example with metalanguage, and a link back. A quote from a linguist can support a point but cannot replace an example.",
         "Collect examples through the year: a politician’s phrasing, a new slang term, a public debate about a word, an advertisement, a change to a style guide. Record the exact wording, who said it, when, and what it shows. Examples from the current year are the most valuable."
+       ],
+       "check": [
+        [
+         "Can a quote from a linguist replace a contemporary example in an essay?",
+         "No. It can support a point, but the essay needs real language examples that you analyse."
+        ]
        ]
       },
       {
@@ -582,10 +1069,193 @@
        ]
       },
       {
+       "h": "Model short answers",
+       "p": [
+        "Question (2 marks): “Identify an example of ellipsis in lines 1 to 5 and explain its function.” Answer: “‘Coming tonight?’ (line 3) omits the auxiliary and subject ‘Are you’. The ellipsis reflects the spontaneous, informal register and the close relationship between the speakers, who can recover the missing words from context.”",
+        "Question (3 marks): “How does the speaker use prosodic features to engage the audience in lines 10 to 16?” Answer with two features, each quoted and explained: for example, emphatic stress on a key word to highlight a contrast, and a slowed tempo with pauses before a punchline to build anticipation.",
+        "Notice that each answer names the feature, quotes it with a line number and explains the effect in this text. Nothing else is needed, and nothing less will do."
+       ],
+       "check": [
+        [
+         "What three things should a short answer about a language feature include?",
+         "The feature named with metalanguage, a quoted example with a line number, and an explanation of its effect in this text."
+        ]
+       ]
+      },
+      {
+       "h": "Building an examples bank for the essay",
+       "p": [
+        "For each example record five things: the exact words; who said or wrote them, and where; the date; the metalanguage that describes them; and the idea they support. Aim for a spread across the course: informal language, formal language, Australian English, identity, attitudes, and language change.",
+        "Sources: political speeches and interviews, advertising, social media, sports commentary, public health campaigns, dictionary announcements of new words, and public debates about language. Your own observations of how people around you speak are valid evidence when described precisely. Never invent a quotation or a source: an accurate, modest example is worth more than an impressive false one."
+       ],
+       "check": [
+        [
+         "What five details should you record for each essay example?",
+         "The exact wording, the speaker or writer and source, the date, the relevant metalanguage, and the idea it supports."
+        ]
+       ]
+      },
+      {
+       "h": "Planning an essay in five minutes",
+       "p": [
+        "1. Underline the key terms of the prompt and decide what it is really asking. 2. Read the stimulus material and choose at least one item to refer to. 3. Write a contention that takes a position, usually a qualified one (“largely”, “in some contexts”). 4. Choose three ideas that support or complicate the contention; give each one or two examples from your bank. 5. Order them so that the essay builds.",
+        "Paragraph shape: topic sentence that states the idea; example with exact wording; analysis using metalanguage; link to the contention. A short conclusion restates the position in light of the evidence."
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Feature-spotting: naming ten features and explaining none. Retelling what the text says. Using invented or decades-old examples in the essay. Leaving out line numbers. Writing a memorised essay that does not answer the prompt."
        ]
+      }
+     ]
+    },
+    {
+     "id": "commentary",
+     "title": "A fully worked analytical commentary",
+     "points": [
+      "Read the text twice: once for context and purpose, once for features.",
+      "Plan by social purpose or by subsystem, with three or four body paragraphs.",
+      "The introduction covers mode, field, participants, register, function and social purpose.",
+      "Each point: metalanguage, quote with line number, effect, link to context.",
+      "Cover a range of subsystems and include discourse features."
+     ],
+     "explain": "After reading the model, choose a short real text (an advertisement or a notice) and write just the introduction of a commentary on it.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should have studied Units 3 and 4 and read the exam lesson.",
+        "The big idea: the quickest way to learn a writing task is to watch it done. This lesson takes one short text and walks through reading it, planning and writing a commentary, with notes on why each part earns marks. The text is invented for practice."
+       ]
+      },
+      {
+       "h": "The text",
+       "p": [
+        "A notice emailed by a local council to residents and posted on its website.",
+        "1 Dear residents,",
+        "2 Heads up: from Monday 3 March, bin day in your street is moving to Thursdays.",
+        "3 We know change can be a pain, so we’ve kept things as simple as possible.",
+        "4 Recycling and general waste will continue to be collected on alternate weeks.",
+        "5 Bins must be placed on the kerb by 6 am. Bins put out late cannot be collected.",
+        "6 Not sure which week is which? Check the calendar at the link below, or give us a buzz on 9000 0000.",
+        "7 Thanks for helping us keep our neighbourhood clean and green.",
+        "8 Waste Services Team"
+       ]
+      },
+      {
+       "h": "First reading: context",
+       "p": [
+        "Mode: written, digital. Field: household waste collection. Author: a council team; audience: all residents, a broad public of varied ages and backgrounds. Tenor: the council has authority, but depends on residents’ cooperation. Function: mainly referential, with a strong conative element. Register: mixed, with formal and informal features. Social purposes: to inform clearly, to direct behaviour, and to maintain a friendly relationship with the community.",
+        "The interesting question, which should drive the commentary, is why an authority chooses to mix registers."
+       ]
+      },
+      {
+       "h": "Second reading: features",
+       "p": [
+        "Informal: “Heads up” (line 2), “a pain” (line 3), “give us a buzz” (line 6); contractions “we’ve” (line 3); the interrogative fragment “Not sure which week is which?” (line 6); first- and second-person pronouns throughout.",
+        "Formal: the salutation “Dear residents” (line 1); agentless passives “will continue to be collected” (line 4) and “cannot be collected” (line 5); the modal of obligation “must” (line 5); precise dates and times.",
+        "Discourse: clear ordering from the change, to reassurance, to rules, to help, to thanks; short paragraphs; the colon in line 2; the closing thanks and sign-off. Semantics: the rhyming phrase “clean and green” (line 7)."
+       ]
+      },
+      {
+       "h": "The plan",
+       "p": [
+        "Introduction: context and the two-sided purpose. Paragraph 1: informal features that reduce social distance and build rapport. Paragraph 2: formal features that give clear information and assert authority. Paragraph 3: discourse features that make the text coherent and promote community. Organising by purpose keeps the analysis from turning into a list."
+       ]
+      },
+      {
+       "h": "Model introduction",
+       "p": [
+        "“This written notice from a council’s Waste Services Team informs residents of a change to their bin collection day. Its primary function is referential, conveying the new day and the rules, alongside a conative function of ensuring residents comply. Although the council holds authority, the notice adopts a mixed register, combining colloquial features with the formal conventions of official correspondence. This reflects its social purposes: to give clear, authoritative instructions while reducing social distance and maintaining goodwill with a broad audience of local residents.”",
+        "Why it works: it covers mode, author, audience, field, function, register and purpose in four sentences, and it sets up an argument about the mixed register."
+       ]
+      },
+      {
+       "h": "Model body paragraph: building rapport",
+       "p": [
+        "“The council uses informal lexis to lessen the social distance between an institution and its residents. The colloquial opening ‘Heads up’ (line 2) frames the announcement as a friendly warning, not a directive, and the idiom ‘give us a buzz’ (line 6) invites contact in the manner of a neighbour. In line 3, ‘We know change can be a pain’ acknowledges the inconvenience in everyday terms, attending to residents’ negative face by recognising the imposition before the rules are stated. The contraction ‘we’ve’ and the first-person plural pronoun ‘we’ personalise the council, while the second-person ‘your street’ (line 2) addresses each reader directly. Together these choices present the council as approachable and considerate, which encourages cooperation.”",
+        "Why it works: every claim has a quote and line number; metalanguage is precise (colloquial, idiom, contraction, pronoun, negative face); each feature is tied to an effect and then to the purpose."
+       ]
+      },
+      {
+       "h": "Model body paragraph: clarity and authority",
+       "p": [
+        "“Where compliance matters, the register shifts. In line 5 the modal verb of obligation ‘must’ in ‘Bins must be placed on the kerb by 6 am’ leaves no room for negotiation, and the agentless passive removes any personal agent, so the rule reads as an impersonal requirement. The following sentence, ‘Bins put out late cannot be collected’, states the consequence with the same passive construction, avoiding a direct threat to residents’ face while making the outcome plain. The specific temporal details ‘Monday 3 March’ (line 2) and ‘6 am’ (line 5) ensure the notice is unambiguous. These formal features establish the council’s authority and serve the referential function.”",
+        "A third paragraph would deal with coherence: the logical ordering of information, the interrogative fragment in line 6 that anticipates a reader’s question, and the inclusive ‘our neighbourhood’ with the rhyming ‘clean and green’ in line 7, which promotes a shared community identity."
+       ]
+      },
+      {
+       "h": "Checklist for your own commentary",
+       "p": [
+        "Does the introduction state mode, participants, register, function and social purpose? Does every paragraph have a clear focus? Is each point supported by a short quote with a line number? Have you used accurate metalanguage from at least three subsystems? Have you explained effects in this context, not in general? Have you discussed discourse features or coherence? Is there no retelling of content?"
+       ],
+       "check": [
+        [
+         "In the model, why does the commentary describe the register as “mixed” instead of choosing formal or informal?",
+         "The text contains both: colloquial lexis and contractions alongside passives, the modal “must” and official conventions. Describing the mix accurately allows the commentary to explain why each register is used."
+        ],
+        [
+         "What makes “Bins must be placed on the kerb” an agentless passive?",
+         "The subject “bins” receives the action, the verb is “be placed”, and the doer (residents) is not stated."
+        ]
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Starting to write without a plan. An introduction that only repeats the question. Paragraphs organised line by line. Quoting whole sentences. Using a term such as “colloquial” ten times and no other metalanguage. Running out of time before discussing discourse."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which is the best way to organise the body of an analytical commentary?",
+       "o": [
+        "Line by line",
+        "By social purpose or subsystem",
+        "In order of the longest quotes",
+        "As a single paragraph"
+       ],
+       "a": 1,
+       "e": "It keeps the analysis focused and avoids retelling."
+      },
+      {
+       "t": "m",
+       "q": "Which element belongs in the introduction?",
+       "o": [
+        "A list of every feature",
+        "The register, function and social purpose",
+        "A personal opinion of the text",
+        "The longest quote"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What four things does each analytical point need?",
+       "a": "Metalanguage, a quoted example with a line number, an explanation of its effect, and a link to the context or purpose.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is “The writer uses informal language to be friendly” a weak sentence?",
+       "a": "It names no specific feature, gives no quote or line number, and explains the effect only vaguely.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In the model text, “Not sure which week is which?” functions to…",
+       "o": [
+        "give an order",
+        "anticipate a reader’s question and introduce help",
+        "state a rule",
+        "close the notice"
+       ],
+       "a": 1,
+       "e": "The interrogative fragment mimics conversation and leads to the solution."
       }
      ]
     }
