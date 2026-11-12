@@ -37,6 +37,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the Units 1 and 2 data lessons: types of data, displays, the five-number summary, mean and standard deviation. If you are starting at Unit 3, work through the Units 1 and 2 univariate data lesson first.",
+        "The big idea: when a distribution is bell-shaped, the mean and standard deviation tell you almost everything about where the data lie. The 68–95–99.7% rule and standardised scores let you estimate proportions and compare results from completely different scales."
+       ]
+      },
+      {
        "h": "Summary statistics and when to use them",
        "p": [
         "The mean and standard deviation suit symmetric distributions without outliers. The median and IQR suit skewed distributions or those with outliers. Learn to read both from a histogram, a boxplot and a stem plot, and from a log scale: on a \\(\\log_{10}\\) axis, a value of 3 means \\(10^3 = 1000\\)."
@@ -46,6 +53,12 @@
        "h": "The 68–95–99.7% rule",
        "p": [
         "For a bell-shaped (approximately normal) distribution, about 68% of values lie within one standard deviation of the mean, 95% within two, and 99.7% within three. Split the remainders evenly between the tails: 16% lie below one standard deviation under the mean, 2.5% below two, and 0.15% below three."
+       ],
+       "check": [
+        [
+         "What percentage of values lie between one standard deviation below the mean and two above?",
+         "34 + 34 + 13.5 = 81.5%."
+        ]
        ]
       },
       {
@@ -69,10 +82,160 @@
        ]
       },
       {
+       "h": "Worked example: from a z-score back to a value",
+       "p": [
+        "A test has mean 65 and standard deviation 8. A student with \\(z = -1.5\\) scored \\(65 - 1.5 \\times 8 = 53\\). A student with \\(z = 2\\) scored \\(65 + 2 \\times 8 = 81\\).",
+        "Interpret: a \\(z\\)-score of \\(-1.5\\) means one and a half standard deviations below the mean. Values with \\(z\\) beyond about \\(\\pm 2\\) are unusual, and beyond \\(\\pm 3\\) very rare, for bell-shaped data."
+       ],
+       "check": [
+        [
+         "A distribution has mean 40 and standard deviation 5. What value has a z-score of 2.4?",
+         "40 + 2.4 × 5 = 52."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: using the rule twice",
+       "p": [
+        "Adult heights in a group are bell-shaped with mean 170 cm and standard deviation 6 cm. What percentage are between 158 cm and 176 cm? 158 cm is \\(z = -2\\) and 176 cm is \\(z = 1\\). From \\(z = -2\\) to 0 is 47.5%; from 0 to 1 is 34%. Total: 81.5%.",
+        "Draw the bell curve with the mean and the points one, two and three standard deviations either side, and write the percentages in each section (34, 13.5, 2.35, 0.15 on each side). Then add up the sections you need."
+       ],
+       "check": [
+        [
+         "For a bell-shaped distribution, what percentage of values lie more than one standard deviation above the mean?",
+         "16%."
+        ]
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Applying the 68–95–99.7% rule to a skewed distribution. Subtracting in the wrong order in a \\(z\\)-score. Forgetting to halve the percentage outside the interval when one tail is needed. Reading a log scale as if it were linear."
        ]
+      }
+     ]
+    },
+    {
+     "id": "association34",
+     "title": "Investigating associations between two variables",
+     "points": [
+      "Choose the display by variable types: two-way table and segmented bar chart (categorical–categorical), parallel boxplots (numerical–categorical), scatterplot (numerical–numerical).",
+      "Identify the explanatory and response variables before analysing.",
+      "Describe a scatterplot by direction, form, strength and outliers.",
+      "Pearson’s correlation coefficient \\(r\\) measures the strength and direction of a linear association, from \\(-1\\) to \\(1\\).",
+      "Association does not imply causation: consider confounding variables, common response and coincidence."
+     ],
+     "explain": "Explain why a strong correlation between the number of fire trucks at a fire and the damage caused does not mean the trucks cause the damage.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with univariate data and the 68–95–99.7% rule (previous lesson). If you are starting at Unit 3, the Units 1 and 2 lesson on investigating relationships is a useful introduction.",
+        "The big idea: the questions people most often ask of data are about relationships. Is income related to education? Does the amount of fertiliser affect yield? This lesson shows how to choose the right analysis for each pair of variable types, and how to describe an association without overclaiming."
+       ]
+      },
+      {
+       "h": "Variables and displays",
+       "p": [
+        "The explanatory variable is the one that may explain or predict changes in the other; the response variable is the one being explained. In “Is age related to reaction time?”, age is explanatory.",
+        "Two categorical variables: a two-way frequency table, converted to percentages, and a segmented bar chart. A numerical response and a categorical explanatory variable: parallel boxplots or back-to-back stem plots. Two numerical variables: a scatterplot, with the explanatory variable on the horizontal axis."
+       ],
+       "check": [
+        [
+         "Which display suits the relationship between type of school (government, independent) and weekly homework hours?",
+         "Parallel boxplots: homework hours is numerical and school type is categorical."
+        ]
+       ]
+      },
+      {
+       "h": "Two-way frequency tables",
+       "p": [
+        "Calculate percentages within each category of the explanatory variable. If the explanatory variable is in the columns, use column percentages, so each column adds to 100%.",
+        "Example: of 80 students who walk to school, 20 (25%) report high fitness; of 120 who are driven, 18 (15%) report high fitness. The percentages differ (25% and 15%), so there is an association between mode of travel and fitness. Write it as: “Students who walk to school are more likely to report high fitness (25%) than those who are driven (15%).”"
+       ]
+      },
+      {
+       "h": "Comparing groups with boxplots",
+       "p": [
+        "When the response is numerical and the explanatory variable is categorical, compare the medians: if they differ noticeably across groups, there is an association. Also compare spread and shape.",
+        "Example: median daily screen time is 3.5 hours for Year 7 and 5 hours for Year 11. Since the medians differ, screen time is associated with year level: older students tend to have more screen time."
+       ]
+      },
+      {
+       "h": "Scatterplots and correlation",
+       "p": [
+        "Direction: positive (both increase together) or negative (one decreases as the other increases). Form: linear or non-linear. Strength: strong, moderate or weak, judged from how closely the points follow the form. Outliers: points that clearly do not follow the pattern.",
+        "Pearson’s \\(r\\) applies only to linear associations with no clear outliers, and is calculated with technology. As a guide: \\(|r| \\ge 0.75\\) strong; 0.5 to 0.75 moderate; 0.25 to 0.5 weak; below 0.25 no association. The sign gives the direction. An outlier can change \\(r\\) a lot, and a curved association can have a small \\(r\\) even when the relationship is strong."
+       ],
+       "check": [
+        [
+         "A scatterplot shows a clear curved pattern but \\(r = 0.3\\). Does this mean the association is weak?",
+         "Not necessarily. \\(r\\) only measures linear association, so it understates a strong non-linear relationship."
+        ]
+       ]
+      },
+      {
+       "h": "Association and causation",
+       "p": [
+        "An association between two variables can arise without one causing the other. A confounding variable is mixed up with the explanatory variable, so its effect cannot be separated: students who do more homework may also have more support at home. Common response: both variables respond to a third, as ice-cream sales and drownings both rise in hot weather. Coincidence: unrelated variables can trend together by chance, especially over time.",
+        "Only a well-designed experiment, with random allocation to groups, gives strong evidence of causation. In an exam, when asked about a conclusion from observational data, say that causation cannot be concluded and name a possible non-causal explanation."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Comparing counts instead of percentages in a two-way table. Calculating percentages across the wrong variable. Quoting r for a non-linear scatterplot. Saying “causes” or “leads to” for observational data. Leaving out context in a description."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which display is most suitable for two categorical variables?",
+       "o": [
+        "Scatterplot",
+        "Parallel boxplots",
+        "Segmented bar chart",
+        "Histogram"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "\\(r = -0.85\\) indicates…",
+       "o": [
+        "a strong positive linear association",
+        "a strong negative linear association",
+        "a weak negative association",
+        "no association"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain what a confounding variable is, with an example.",
+       "a": "A variable whose effect on the response cannot be separated from that of the explanatory variable. For example, in a study of coffee drinking and heart disease, smoking may be confounded with coffee drinking.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "In a two-way table, why should percentages be compared instead of counts?",
+       "a": "Group sizes are often different, so counts can mislead. Percentages put each group on the same scale.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "When investigating whether hours of training affect race time, the explanatory variable is…",
+       "o": [
+        "race time",
+        "hours of training",
+        "the runner",
+        "the race distance"
+       ],
+       "a": 1,
+       "e": ""
       }
      ]
     },
@@ -115,6 +278,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should have worked through the lesson on investigating associations, including scatterplots and the correlation coefficient.",
+        "The big idea: when two numerical variables have a linear association, the least squares line summarises it as an equation that can be interpreted and used for prediction. The skills tested most are interpreting the slope, intercept and coefficient of determination in context, and judging whether a linear model is appropriate."
+       ]
+      },
+      {
        "h": "Least squares regression",
        "p": [
         "The least squares line minimises the sum of the squares of the residuals. Its slope and intercept come from summary statistics: \\(b = r\\dfrac{s_y}{s_x}\\) and \\(a = \\bar{y} - b\\bar{x}\\). The line always passes through \\((\\bar{x}, \\bar{y})\\). It assumes the variables are numerical, the association is linear and there are no clear outliers."
@@ -131,6 +301,12 @@
        "h": "Interpreting the line",
        "p": [
         "Slope: “On average, sales increase by 18 ice-creams for each additional hour of sunshine.” Intercept: “When there are 0 hours of sunshine, predicted sales are 42 ice-creams.” Coefficient of determination: \\(r^2 = 0.81\\), so “81% of the variation in sales can be explained by the variation in hours of sunshine.” Always name the variables and include units."
+       ],
+       "check": [
+        [
+         "The line is cost = 25 + 0.8 × distance. Interpret the slope.",
+         "On average, the cost increases by $0.80 for each additional unit of distance."
+        ]
        ]
       },
       {
@@ -145,6 +321,32 @@
        "p": [
         "Transformations change the scale of one axis to straighten a curve. Squaring stretches large values; \\(\\log\\) and reciprocal compress them. Use the shape of the scatterplot to pick candidates, apply one, then re-check the residual plot and \\(r^2\\).",
         "After a transformation the equation uses the transformed variable. Example: \\(\\text{weight} = 2.1 + 14 \\times \\log_{10}(\\text{age})\\). For age 100: \\(\\log_{10}100 = 2\\), so weight \\(= 30.1\\). If the response was transformed, undo it at the end: \\(\\log_{10} y = 1.5\\) gives \\(y = 10^{1.5} \\approx 31.6\\)."
+       ]
+      },
+      {
+       "h": "Worked example: residuals by hand",
+       "p": [
+        "Data: \\(x\\) = 1, 2, 3, 4, 5 and \\(y\\) = 3, 5, 6, 9, 11. The least squares line is \\(y = 0.8 + 2x\\). Predicted values: 2.8, 4.8, 6.8, 8.8, 10.8. Residuals (actual − predicted): 0.2, 0.2, −0.8, 0.2, 0.2.",
+        "The residuals add to zero, as they always do for a least squares line. The coefficient of determination is \\(r^2 \\approx 0.98\\): 98% of the variation in \\(y\\) is explained by the variation in \\(x\\). With so few points the residual plot shows no clear pattern."
+       ],
+       "check": [
+        [
+         "For the line y = 0.8 + 2x, what is the residual for the point (4, 7)?",
+         "Predicted 8.8, so the residual is 7 − 8.8 = −1.8."
+        ]
+       ]
+      },
+      {
+       "h": "Writing a regression report",
+       "p": [
+        "A full report covers, in order: the association (direction, form, strength, outliers); the equation of the least squares line using the variable names; the slope interpreted in context; the intercept, if it is meaningful; the coefficient of determination interpreted; whether the residual plot supports a linear model; and any prediction, stating whether it is interpolation or extrapolation and how reliable it is.",
+        "Example sentences: “On average, house price increases by $12,500 for each additional square metre of floor area.” “43% of the variation in house price can be explained by the variation in floor area.” “The residual plot shows no clear pattern, so a linear model is appropriate.”"
+       ],
+       "check": [
+        [
+         "If r = 0.6, what percentage of the variation in the response is explained by the explanatory variable?",
+         "r² = 0.36, so 36%."
+        ]
        ]
       },
       {
@@ -188,6 +390,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the least squares line from the regression lesson.",
+        "The big idea: data collected over time, such as monthly sales or daily temperatures, have patterns that ordinary scatterplots ignore. Separating the trend from seasonal and random variation lets a business or government see what is really changing and forecast what comes next."
+       ]
+      },
+      {
        "h": "Describing a time series plot",
        "p": [
         "Trend: a long-term increase or decrease. Seasonality: a pattern that repeats over a fixed period of a year or less, linked to the calendar. Cycles: rises and falls over periods longer than a year, without fixed length. Irregular fluctuations: random variation. Also note structural change (a sudden change in level or trend) and outliers."
@@ -213,6 +422,38 @@
         "Deseasonalise by dividing by the index: a third-quarter value of 165 becomes \\(165 \\div 1.5 = 110\\). Deseasonalised data shows the underlying trend. Fit a least squares line to it, with time as the explanatory variable, to forecast.",
         "To forecast an actual value, predict the deseasonalised value from the trend line and then reseasonalise by multiplying by the index: a predicted 120 for a third quarter gives \\(120 \\times 1.5 = 180\\).",
         "To correct for seasonality in words: an index of 0.8 means actual figures should be increased by 25% (since \\(1 \\div 0.8 = 1.25\\)) to deseasonalise."
+       ],
+       "check": [
+        [
+         "A trend line predicts deseasonalised sales of 200 for a quarter with index 0.8. What is the forecast of actual sales?",
+         "200 × 0.8 = 160."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a centred four-point moving mean",
+       "p": [
+        "Quarterly values: 10, 14, 18, 12, 11. The first four-point mean is (10 + 14 + 18 + 12) ÷ 4 = 13.5, which sits between quarters 2 and 3. The next is (14 + 18 + 12 + 11) ÷ 4 = 13.75, between quarters 3 and 4.",
+        "To centre, average the two: (13.5 + 13.75) ÷ 2 = 13.625, which belongs to quarter 3. With an even number of points, always centre before plotting or using the smoothed value."
+       ],
+       "check": [
+        [
+         "Why must a four-point moving mean be centred?",
+         "Its value falls between two time periods; averaging two adjacent four-point means places the smoothed value on an actual time period."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: seasonal indices over two years",
+       "p": [
+        "Year 1 quarterly sales: 20, 30, 40, 30 (mean 30). Indices: 0.667, 1.000, 1.333, 1.000. Year 2: 24, 33, 48, 35 (mean 35). Indices: 0.686, 0.943, 1.371, 1.000.",
+        "Average for each quarter: 0.676, 0.971, 1.352, 1.000. They add to 4, as quarterly indices must. Quarter 3 is typically 35% above an average quarter, and quarter 1 about 32% below it."
+       ],
+       "check": [
+        [
+         "The seasonal index for December is 1.4 and actual December sales are $70,000. Find the deseasonalised sales.",
+         "70,000 ÷ 1.4 = $50,000."
+        ]
        ]
       },
       {
@@ -261,6 +502,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with recurrence relations from Units 1 and 2.",
+        "The big idea: every financial model in Unit 3 is the same recurrence relation with different numbers. Recognise whether a fixed amount or a fixed percentage is added or taken each period, write the relation, and you can model depreciation, interest, loans and investments."
+       ]
+      },
+      {
        "h": "Recurrence relations for money",
        "p": [
         "Every model has the form \\(V_0 = \\text{starting value},\\ V_{n+1} = R \\times V_n \\pm d\\). Adding or subtracting a fixed amount with \\(R = 1\\) gives linear growth or decay. Multiplying by \\(R \\ne 1\\) with \\(d = 0\\) gives geometric growth or decay. \\(V_n\\) is the value after \\(n\\) periods, and one period must match the compounding period."
@@ -284,12 +532,50 @@
        "p": [
         "The nominal rate is the quoted annual rate. The effective rate is the rate that would give the same interest if compounding were annual, so it allows fair comparison. More frequent compounding gives a higher effective rate.",
         "Example: 6% p.a. compounding monthly. \\(r_{\\text{eff}} = \\left(1.005^{12} - 1\\right) \\times 100 = 6.17\\%\\)."
+       ],
+       "check": [
+        [
+         "Which gives a higher effective rate: 6% p.a. compounding monthly, or 6% p.a. compounding annually?",
+         "Monthly compounding."
+        ]
        ]
       },
       {
        "h": "Using the finance solver",
        "p": [
         "Enter money you pay out or invest as negative and money you receive as positive. For compound interest without payments set PMT to 0. Example: how long for $8000 to reach $10 000 at 4.8% p.a. compounding monthly? N = ?, I% = 4.8, PV = −8000, PMT = 0, FV = 10 000, P/Y = C/Y = 12 gives N ≈ 55.9, so 56 months."
+       ]
+      },
+      {
+       "h": "Worked example: unit cost depreciation",
+       "p": [
+        "A delivery car costs $24,000 and depreciates by $0.15 per kilometre travelled. It travels 20,000 km a year, so it loses \\(0.15 \\times 20\\,000 = \\$3000\\) per year. Recurrence relation: \\(V_0 = 24\\,000,\\ V_{n+1} = V_n - 3000\\). After 3 years it is worth \\(24\\,000 - 3 \\times 3000 = \\$15\\,000\\).",
+        "Unit cost depreciation depends on use, not on time: a car that travels more loses value faster. Its graph against time is linear only if usage is the same each year."
+       ],
+       "check": [
+        [
+         "A machine costing $50,000 depreciates by $2 per hour of use and is used 1500 hours a year. What is it worth after 4 years?",
+         "Annual depreciation $3000, so 50,000 − 12,000 = $38,000."
+        ]
+       ]
+      },
+      {
+       "h": "Finding the time",
+       "p": [
+        "A $30,000 asset depreciates by 18% per year (reducing balance). When is it first worth less than $10,000? \\(30\\,000 \\times 0.82^n < 10\\,000\\). By trial or technology, \\(n = 5\\) gives about $11,122 and \\(n = 6\\) about $9,120, so it first falls below $10,000 after 6 years.",
+        "When the question asks “after how many years”, check the values either side and give a whole number of periods that meets the condition."
+       ]
+      },
+      {
+       "h": "From recurrence relation to rule",
+       "p": [
+        "A recurrence relation gives one step at a time; a rule gives any term directly. Linear: \\(V_n = V_0 \\pm nd\\). Geometric: \\(V_n = R^nV_0\\). Example: \\(V_0 = 5000,\\ V_{n+1} = 1.04V_n\\) has rule \\(V_n = 5000 \\times 1.04^n\\), so \\(V_{10} = 5000 \\times 1.04^{10} \\approx \\$7401.22\\)."
+       ],
+       "check": [
+        [
+         "Write the rule for \\(V_0 = 800,\\ V_{n+1} = V_n - 60\\).",
+         "\\(V_n = 800 - 60n\\)."
+        ]
        ]
       },
       {
@@ -333,6 +619,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with compound interest recurrence relations and the finance solver.",
+        "The big idea: loans, annuities and regular savings are compound interest with a regular payment added or subtracted. They are the financial decisions most people make in their lives (a mortgage, a car loan, superannuation), and the same recurrence relation and the same solver handle them all."
+       ]
+      },
+      {
        "h": "One recurrence relation, four products",
        "p": [
         "\\(V_{n+1} = RV_n \\pm d\\) with \\(R = 1 + \\dfrac{r}{100p}\\) covers them all. Reducing-balance loan: interest is added, a payment is subtracted, and the balance falls to zero. Annuity: an invested sum earns interest while regular payments are withdrawn until it runs out. Perpetuity: the payment equals the interest, so the balance stays constant for ever. Annuity investment: regular deposits are added to a growing balance."
@@ -343,6 +636,12 @@
        "p": [
         "Each payment first covers the interest for that period; the remainder reduces the principal. Early in a loan most of the payment is interest; later most of it is principal.",
         "Example: a $20 000 loan at 6% p.a. compounding monthly with payments of $400. \\(R = 1.005\\). Month 1 interest \\(= 0.005 \\times 20\\,000 = \\$100\\); principal reduction \\(= 400 - 100 = \\$300\\); balance $19 700. Month 2 interest \\(= 0.005 \\times 19\\,700 = \\$98.50\\); principal reduction $301.50; balance $19 398.50. This is what an amortisation table records."
+       ],
+       "check": [
+        [
+         "A loan balance is $10,000 at 1% interest per month and the payment is $500. How much of the payment reduces the principal?",
+         "Interest is $100, so $400 reduces the principal."
+        ]
        ]
       },
       {
@@ -361,6 +660,32 @@
        "h": "Finance solver set-ups",
        "p": [
         "Loan: PV positive (you receive it), PMT negative, FV zero or negative. Annuity: PV negative (you invest it), PMT positive, FV zero. Annuity investment: PV negative, PMT negative, FV positive. To see the effect of a rate change or an extra payment, first find the balance at that time, then start a new calculation with that balance as PV."
+       ]
+      },
+      {
+       "h": "Worked example: an annuity running down",
+       "p": [
+        "A retiree invests $300,000 at 4.8% p.a. compounding monthly and withdraws $2000 at the end of each month. \\(R = 1 + \\dfrac{4.8}{1200} = 1.004\\). \\(V_0 = 300\\,000,\\ V_{n+1} = 1.004V_n - 2000\\).",
+        "\\(V_1 = 300\\,000 \\times 1.004 - 2000 = \\$299\\,200\\). \\(V_2 = \\$298\\,396.80\\). The monthly interest at the start is $1200, less than the $2000 withdrawn, so the balance falls, slowly at first and then faster. The solver shows the money lasts about 230 months. If only $1200 were withdrawn, the investment would be a perpetuity."
+       ],
+       "check": [
+        [
+         "An investment of $400,000 earns 3% p.a. compounding monthly. What monthly payment would make it a perpetuity?",
+         "0.0025 × 400,000 = $1000 per month."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a home loan",
+       "p": [
+        "A $250,000 loan is repaid monthly over 25 years at 6% p.a. Solver: N = 300, I% = 6, PV = 250 000, PMT = ?, FV = 0, P/Y = C/Y = 12. The result is PMT ≈ −1610.75: a monthly repayment of $1610.75.",
+        "Total repaid ≈ 300 × 1610.75 = $483,225, so total interest is about $233,225. If the borrower pays more each month, the loan finishes sooner and total interest falls. To analyse a change partway through, first find the balance at that time, then start a new calculation with that balance as PV."
+       ],
+       "check": [
+        [
+         "Monthly repayments of $900 are made for 10 years on a $70,000 loan. How much interest is paid in total?",
+         "900 × 120 = $108,000 repaid, so $38,000 interest."
+        ]
        ]
       },
       {
@@ -409,6 +734,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with matrix multiplication from Units 1 and 2.",
+        "The big idea: in Unit 4, matrices model relationships and change. Square matrices record who is connected to whom or who beat whom, and transition matrices track how a population moves between states over time. Most of the arithmetic is done with technology; the marks come from setting up and interpreting the matrices."
+       ]
+      },
+      {
        "h": "Matrices that describe relationships",
        "p": [
         "A binary matrix has only 0s and 1s. A permutation matrix has exactly one 1 in each row and column and rearranges the elements of another matrix. A communication matrix shows direct links; its square shows two-step links. A dominance matrix records winners in a round robin: a 1 in row A, column B means A defeated B. One-step dominance is the row sum; add the two-step dominances from the squared matrix to separate ties."
@@ -425,6 +757,12 @@
        "h": "Steady state",
        "p": [
         "In the long run the state matrix stops changing. Estimate it with a large power, such as \\(T^{50}S_0\\), and confirm that the next step gives the same result. For the example the steady state is 300 at A and 200 at B: check \\(0.8 \\times 300 + 0.3 \\times 200 = 300\\). The steady state does not depend on the starting numbers, only on their total."
+       ],
+       "check": [
+        [
+         "How can you estimate the steady state with technology?",
+         "Calculate \\(T^nS_0\\) for a large \\(n\\), such as 50, and check that a further step does not change it."
+        ]
        ]
       },
       {
@@ -437,6 +775,32 @@
        "h": "Leslie matrices",
        "p": [
         "A Leslie matrix models a population by age group. The first row holds the birth rates of each age group, and the entries just below the leading diagonal hold the survival rates from each group to the next. \\(S_{n+1} = LS_n\\). Only females are usually counted."
+       ]
+      },
+      {
+       "h": "Worked example: dominance ranking",
+       "p": [
+        "In a round robin: A beat B and C; B beat C and D; C beat D; D beat A. In the dominance matrix, a 1 in row X, column Y means X beat Y. One-step dominances (row sums): A 2, B 2, C 1, D 1. A and B are tied, and C and D are tied.",
+        "Two-step dominances come from the squared matrix. Row sums of D²: A 3, B 2, C 1, D 2. Total dominance (D + D²): A 5, B 4, D 3, C 2. Ranking: A, B, D, C. Two-step dominance credits A for beating B, who in turn beat others."
+       ],
+       "check": [
+        [
+         "Why is two-step dominance used?",
+         "To separate ties in one-step dominance, by giving credit for beating players who themselves beat others."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: setting up a transition matrix",
+       "p": [
+        "Each week, 70% of commuters who drive keep driving and 30% switch to the train; 20% of train users switch to driving and 80% stay. With states ordered (drive, train), the transition matrix has “from” columns and “to” rows: column 1 is (0.7, 0.3) and column 2 is (0.2, 0.8).",
+        "If 1000 drive and 500 take the train this week, next week \\(0.7 \\times 1000 + 0.2 \\times 500 = 800\\) drive and \\(0.3 \\times 1000 + 0.8 \\times 500 = 700\\) take the train. Check: the total is still 1500."
+       ],
+       "check": [
+        [
+         "In a transition matrix, what must each column add to?",
+         "1."
+        ]
        ]
       },
       {
@@ -492,6 +856,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the Units 1 and 2 networks lesson: vocabulary, Eulerian and Hamiltonian paths, spanning trees and Prim’s algorithm.",
+        "The big idea: Unit 4 uses networks to make decisions: the quickest route, how much can flow through a system, who should do which job, and how fast a project can be finished. Each has a standard algorithm, and the exam tests carrying it out carefully and explaining what the result means."
+       ]
+      },
+      {
        "h": "Shortest path and minimum spanning tree",
        "p": [
         "A shortest path connects two particular vertices with the least total weight. Dijkstra’s algorithm labels each vertex with the shortest distance found so far from the start, always moving next to the unvisited vertex with the smallest label. A minimum spanning tree connects every vertex with the least total weight and contains no cycles; use Prim’s algorithm and stop after \\(n - 1\\) edges."
@@ -514,6 +885,12 @@
        "h": "Critical path analysis",
        "p": [
         "An activity network shows which activities must finish before others start. The earliest start time (EST) of an activity is the longest path leading to it, found by a forward scan taking the largest value where paths meet. The latest start time (LST) is found by a backward scan from the project completion time, taking the smallest value. Float (slack) \\(= \\text{LST} - \\text{EST}\\). Activities with zero float are critical; the critical path is the longest path through the network and gives the minimum completion time. A dummy activity has zero duration and only shows a dependency."
+       ],
+       "check": [
+        [
+         "What is the float of an activity on the critical path?",
+         "Zero."
+        ]
        ]
       },
       {
@@ -530,10 +907,158 @@
        ]
       },
       {
+       "h": "Worked example: Dijkstra’s algorithm",
+       "p": [
+        "Edges: S–A 4, S–B 1, B–A 2, A–T 5, B–C 8, C–T 3. Start at S with label 0. Visit S: label A 4 and B 1. The smallest unvisited label is B (1): from B, A could be 1 + 2 = 3, better than 4, so update A to 3; C becomes 1 + 8 = 9. Next smallest is A (3): T becomes 3 + 5 = 8. Next is T (8), so stop.",
+        "Shortest path S–B–A–T, length 8. Other routes such as S–A–T (9) and S–B–C–T (12) are longer. The key step is updating a label whenever a shorter route is found."
+       ],
+       "check": [
+        [
+         "In Dijkstra’s algorithm, which vertex is visited next?",
+         "The unvisited vertex with the smallest current label."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a minimum cut",
+       "p": [
+        "Directed edges with capacities: S→A 7, S→B 5, A→B 3, A→T 4, B→T 8. Cut 1 separates {S}: S→A + S→B = 12. Cut 2 separates {S, A}: S→B + A→B + A→T = 5 + 3 + 4 = 12. Cut 3 separates {S, B}: S→A + B→T = 15 (A→B runs from the sink side to the source side, so it counts 0). Cut 4 separates {S, A, B}: A→T + B→T = 12.",
+        "The minimum cut is 12, so the maximum flow is 12. Check it can be achieved: send 7 to A, of which 4 goes to T and 3 to B; send 5 to B; B then sends 8 to T."
+       ],
+       "check": [
+        [
+         "A cut crosses an edge of capacity 6 that runs from the sink side to the source side. How much does it add to the cut’s capacity?",
+         "Nothing: only edges from the source side to the sink side count."
+        ]
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Counting an edge that crosses a cut from the sink side to the source side. Taking the smallest value in the forward scan. Forgetting that reducing a non-critical activity saves no time. Stopping the Hungarian algorithm before the minimum number of covering lines equals the number of rows."
        ]
+      }
+     ]
+    },
+    {
+     "id": "exam-general",
+     "title": "Exam technique for General Mathematics",
+     "points": [
+      "Both examinations allow approved technology and a bound reference; check the current specifications for format and timing.",
+      "Answer in context: name the variables, include units and answer the question asked.",
+      "Round only at the end, to the accuracy requested; money to the nearest cent unless told otherwise.",
+      "Write recurrence relations, solver inputs and matrix set-ups so the method is visible.",
+      "Use the standard sentence structures for interpreting slope, intercept, r² and seasonal indices."
+     ],
+     "explain": "Write a one-sentence interpretation for each of: a slope, an intercept, a coefficient of determination and a seasonal index, using a context of your choice.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Read this lesson once you have covered most of Units 3 and 4, and return to it before each practice exam.",
+        "The big idea: General Mathematics exams reward clear interpretation as much as calculation. Many marks are for a sentence that says what a number means in the situation described. Learning the standard phrasings, and setting out your working so the method is visible, gains marks quickly."
+       ]
+      },
+      {
+       "h": "The examinations",
+       "p": [
+        "There are two examinations, and both allow approved technology and a bound reference (notes). Examination 1 is multiple choice; Examination 2 has extended-answer questions built around contexts. Formats, timing and the formula sheet can change, so check the current VCAA examination specifications and sample papers.",
+        "Your bound reference is only useful if you can find things in it quickly. Organise it by topic, with worked examples of each question type and the standard sentences below."
+       ]
+      },
+      {
+       "h": "Standard interpretations",
+       "p": [
+        "Slope: “On average, [response] increases/decreases by [slope and units] for each one-unit increase in [explanatory variable].” Intercept: “When [explanatory] is zero, the predicted [response] is [value]”, adding a comment if that is outside the data. Coefficient of determination: “[r² as a %] of the variation in [response] can be explained by the variation in [explanatory variable].”",
+        "Seasonal index: “[Season] values are typically [x]% above/below the seasonal average.” Residual: “The model over-estimates/under-estimates the actual value by [amount].” Steady state: “In the long term, about [number or %] will be in [state].”"
+       ],
+       "check": [
+        [
+         "A seasonal index for summer is 0.85. Interpret it.",
+         "Summer values are typically 15% below the seasonal average."
+        ]
+       ]
+      },
+      {
+       "h": "Setting out",
+       "p": [
+        "Recursion and finance: write the recurrence relation with its starting value, and list the solver inputs (N, I%, PV, PMT, FV, P/Y, C/Y) with their signs. Matrices: write the matrix product you calculated, such as T⁴S₀, before the result. Networks: show the order of edges chosen or the labels at each step.",
+        "If a later part depends on an earlier answer you could not find, make a sensible estimate, state it, and continue: consequential marks are often available."
+       ]
+      },
+      {
+       "h": "Accuracy and rounding",
+       "p": [
+        "Round only the final answer, to the accuracy the question asks for. Money is normally to the nearest cent. Numbers of people, items or periods must be whole numbers, and “how many months until…” usually needs rounding up. A percentage asked for “correct to one decimal place” means exactly that."
+       ]
+      },
+      {
+       "h": "Traps by topic",
+       "p": [
+        "Data: describing the shape the wrong way round; quoting r for curved data; confusing r and r². Recursion and finance: using an annual rate per month; wrong signs in the solver; mismatched P/Y and C/Y. Matrices: rows and columns of a transition matrix swapped. Networks: counting edges in a cut that run backwards; confusing a shortest path with a minimum spanning tree."
+       ]
+      },
+      {
+       "h": "Planning revision",
+       "p": [
+        "Use Review on this site daily through the year. Build your bound reference as you go, not in the final weeks. In the last months, complete past papers under timed conditions and mark them with the examination reports. Keep a list of every mark lost and its cause, and repeat those question types a week later."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Answers with no context or units. Giving a number when an interpretation is asked for. Rounding during working. Spending too long on one question. Leaving multiple-choice questions blank."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which is a correct interpretation of r² = 0.64 for weight against height?",
+       "o": [
+        "64% of people are tall",
+        "64% of the variation in weight can be explained by the variation in height",
+        "Height causes 64% of weight",
+        "The correlation is 0.64"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Money in a finance question should normally be given…",
+       "o": [
+        "to the nearest dollar",
+        "to the nearest cent",
+        "to two significant figures",
+        "as a fraction"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What should you write down when using the finance solver?",
+       "a": "Each input with its sign (N, I%, PV, PMT, FV, P/Y, C/Y) and the value found.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A loan needs 47.3 payments to be repaid. How many payments are made?",
+       "a": "48: the last one is a smaller final payment.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A residual of −3 means the model…",
+       "o": [
+        "under-estimates by 3",
+        "over-estimates by 3",
+        "is exact",
+        "has r = −3"
+       ],
+       "a": 1,
+       "e": "Residual = actual − predicted, so the prediction was 3 too high."
       }
      ]
     }

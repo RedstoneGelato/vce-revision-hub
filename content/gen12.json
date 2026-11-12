@@ -5,6 +5,117 @@
    "name": "Data analysis",
    "topics": [
     {
+     "id": "investigation",
+     "title": "The statistical investigation process",
+     "points": [
+      "The investigation cycle: pose a question, collect data, analyse the data, interpret and communicate the results.",
+      "A population is the whole group of interest; a sample is the part that is measured.",
+      "Random sampling reduces bias; a biased sample does not represent the population.",
+      "Observational studies record what happens; experiments change one variable and observe the effect.",
+      "Conclusions should answer the question, use the evidence and state limitations."
+     ],
+     "explain": "Design a short investigation into whether students at your school who play sport sleep more. Describe each stage of the cycle.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "This is the first lesson in General Mathematics, and you need nothing before it.",
+        "The big idea: statistics is about answering questions with data. The calculations in the following lessons only matter because they help answer a question. This lesson sets out the process every data analysis follows, so that you always know why you are calculating something."
+       ]
+      },
+      {
+       "h": "The investigation cycle",
+       "p": [
+        "1. Pose a question that data can answer. “Do Year 11 students spend more time on homework than Year 9 students?” is specific and measurable; “Is homework good?” is not. 2. Plan and collect data: decide who to ask, which variables to record and how. 3. Analyse: organise, display and summarise the data. 4. Interpret and communicate: answer the question in context, using the evidence, and note any limitations.",
+        "The cycle often repeats: the results may suggest a new or sharper question."
+       ],
+       "check": [
+        [
+         "Rewrite “Is social media bad?” as a statistical question.",
+         "For example: “Do students who spend more than 3 hours a day on social media have lower average test scores than those who spend less?”"
+        ]
+       ]
+      },
+      {
+       "h": "Populations and samples",
+       "p": [
+        "The population is everyone or everything the question is about, such as all Year 11 students in Victoria. A census measures the whole population; it is complete but usually too costly. A sample measures part of it, and the results are used to make conclusions about the population.",
+        "A good sample is representative. Random sampling, where every member has an equal chance of selection, is the main protection against bias. A sample can be biased if it is self-selected (only people who choose to answer an online poll), convenient (only your own friends) or drawn from the wrong group. Larger samples give more reliable estimates, but a large biased sample is still biased."
+       ]
+      },
+      {
+       "h": "Collecting data",
+       "p": [
+        "Surveys ask questions; good questions are clear, neutral and have answer options that cover all cases. “Don’t you agree that school starts too early?” is a leading question. Observations record behaviour directly. Measurements record quantities such as heights or times. Secondary data, collected by someone else such as the Australian Bureau of Statistics, can answer questions at a scale you could not reach yourself.",
+        "An observational study records variables without changing anything. An experiment deliberately changes the explanatory variable, ideally assigning subjects at random to groups, and measures the response. Only a well-designed experiment can provide strong evidence of cause and effect."
+       ]
+      },
+      {
+       "h": "Interpreting and communicating",
+       "p": [
+        "Answer the original question directly, using statistics as evidence: “The median homework time for Year 11 (12 hours per week) was higher than for Year 9 (7 hours per week), so the data suggest Year 11 students spend more time on homework.” Then note limitations: sample size, how the sample was chosen, whether the data were self-reported, and whether the result can be generalised.",
+        "Avoid claiming more than the data show. A difference in a small sample may be due to chance; an association in an observational study does not prove causation."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Questions that cannot be answered with data. Samples chosen for convenience then treated as representative. Leading survey questions. Conclusions that ignore the original question or that claim causation from an observational study."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which sampling method is most likely to give a representative sample?",
+       "o": [
+        "Asking your friends",
+        "An online poll anyone can answer",
+        "Choosing names at random from the full school list",
+        "Asking the first 20 students to arrive"
+       ],
+       "a": 2,
+       "e": "Random selection from the whole population reduces bias."
+      },
+      {
+       "t": "m",
+       "q": "An investigation records students’ screen time and sleep without changing anything. This is…",
+       "o": [
+        "an experiment",
+        "an observational study",
+        "a census",
+        "a simulation"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "List the four stages of the statistical investigation cycle.",
+       "a": "Pose a question; collect data; analyse the data; interpret and communicate the results.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is wrong with the survey question “How much do you love our new canteen menu?”",
+       "a": "It is a leading question: it assumes the respondent loves the menu and pushes towards a positive answer.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Measuring every member of a population is called a…",
+       "o": [
+        "sample",
+        "census",
+        "trial",
+        "survey bias"
+       ],
+       "a": 1,
+       "e": ""
+      }
+     ]
+    },
+    {
      "id": "univariate",
      "title": "Univariate data",
      "points": [
@@ -55,6 +166,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should have read the lesson on the statistical investigation process, and be able to calculate a mean and a median.",
+        "The big idea: a single variable, such as the heights of a class or the prices of houses, is summarised by its shape, centre and spread. Choosing the right display and the right statistics, and then describing what they show in context, is the core skill of the data analysis area of study."
+       ]
+      },
+      {
        "h": "Types of data decide everything",
        "p": [
         "Before choosing a display or a statistic, classify the variable. Categorical variables put individuals into groups: nominal if the groups have no order (eye colour), ordinal if they do (satisfaction rating). Numerical variables are counts or measurements: discrete if only separate values are possible (number of siblings), continuous if any value in a range is possible (height). A variable recorded with digits is not always numerical: postcodes and jersey numbers are nominal."
@@ -65,6 +183,12 @@
        "p": [
         "Median: the middle value of the ordered data, at position \\(\\dfrac{n + 1}{2}\\). Quartiles split the data into four equal parts; \\(\\text{IQR} = Q_3 - Q_1\\) is the spread of the middle 50%. Range is the maximum minus the minimum. The standard deviation measures the typical distance of values from the mean.",
         "Use the median and IQR when the distribution is skewed or has outliers, because they are not affected by extreme values. Use the mean and standard deviation when the distribution is roughly symmetric with no outliers."
+       ],
+       "check": [
+        [
+         "Find the median of 3, 8, 9, 12.",
+         "The middle two values are 8 and 9, so the median is 8.5."
+        ]
        ]
       },
       {
@@ -79,6 +203,39 @@
        "p": [
         "A full description covers shape (symmetric, positively or negatively skewed, number of modes), centre (median or mean), spread (IQR, range or standard deviation) and outliers, always with values and in context. In a boxplot the whisker ends at the last data value inside the fence, and outliers are drawn as separate points.",
         "To compare groups with parallel boxplots, compare medians and IQRs and quote them: “The median for group A (24) is higher than for group B (18), and its IQR is smaller (5 compared with 9), so A’s values are higher and more consistent.”"
+       ]
+      },
+      {
+       "h": "Choosing a display",
+       "p": [
+        "Categorical data: a bar chart for one variable, a segmented (stacked) percentage bar chart for comparing groups. Small sets of numerical data: a dot plot or stem plot, which show every value. Larger sets of numerical data: a histogram, which groups values into intervals. Comparing a numerical variable across groups: parallel boxplots or a back-to-back stem plot.",
+        "A histogram has no gaps between columns, because the intervals are continuous; a bar chart has gaps, because categories are separate. When data cover several orders of magnitude, such as city populations, a log scale on the horizontal axis can make the distribution readable."
+       ],
+       "check": [
+        [
+         "Which display suits the favourite sport of 30 students?",
+         "A bar chart (or a segmented bar chart): the variable is categorical."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: mean and standard deviation",
+       "p": [
+        "Data: 4, 7, 7, 8, 9. Mean \\(= \\dfrac{35}{5} = 7\\). Deviations from the mean: \\(-3, 0, 0, 1, 2\\). Squared: 9, 0, 0, 1, 4, which total 14. Standard deviation \\(s = \\sqrt{\\dfrac{14}{5 - 1}} = \\sqrt{3.5} \\approx 1.87\\).",
+        "In practice technology calculates s, but knowing what it measures (the typical distance of values from the mean) lets you interpret it. A larger standard deviation means more spread."
+       ],
+       "check": [
+        [
+         "An outlier is removed from a data set. Which changes more, the mean or the median?",
+         "The mean, because it uses the value of every data point; the median depends only on the middle position."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: writing a comparison",
+       "p": [
+        "Parallel boxplots show test results for two classes. Class A: median 72, IQR 10, no outliers, roughly symmetric. Class B: median 65, IQR 18, one low outlier at 20, negatively skewed.",
+        "Model answer: “The median score for Class A (72) is higher than for Class B (65), so Class A students typically scored higher. The IQR for Class A (10) is smaller than for Class B (18), so Class A’s results are more consistent. Class A’s distribution is approximately symmetric, while Class B’s is negatively skewed with a low outlier at 20.” Each sentence names both groups, quotes both values and says what they mean."
        ]
       },
       {
@@ -122,6 +279,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with univariate data and with straight-line graphs.",
+        "The big idea: often we want to know whether two variables are related, such as study time and results, or age and preferred music. This lesson shows how to display a relationship, describe it in words, and summarise it with a line, while being careful not to claim that one variable causes the other."
+       ]
+      },
+      {
        "h": "Which variable goes where",
        "p": [
         "The explanatory variable is the one used to explain or predict; the response variable is the one being explained. In “does study time affect test score?”, study time is explanatory. Put the explanatory variable on the horizontal axis."
@@ -152,6 +316,45 @@
        "h": "Association is not causation",
        "p": [
         "A strong association does not show that one variable causes the other. The explanation could be a common response to a third variable (ice-cream sales and drownings both rise with temperature), confounding (several possible causes mixed together) or coincidence."
+       ],
+       "check": [
+        [
+         "Ice-cream sales and sunburn cases rise together. Suggest a reason that does not involve one causing the other.",
+         "Both are responses to a third variable: hot, sunny weather."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: describing a scatterplot",
+       "p": [
+        "A scatterplot of hours of sleep (explanatory) against reaction time in milliseconds (response) for 20 students shows points falling from left to right in a roughly straight band, with no outliers; \\(r = -0.82\\).",
+        "Description: “There is a strong, negative, linear association between hours of sleep and reaction time, with no outliers. Students who sleep more tend to have shorter reaction times.” Then a caution: this is an observational study, so it does not show that extra sleep causes faster reactions."
+       ],
+       "check": [
+        [
+         "What four features should a description of a scatterplot include?",
+         "Direction, form, strength and any outliers, stated in context."
+        ]
+       ]
+      },
+      {
+       "h": "Fitting a line by eye",
+       "p": [
+        "Draw a line through the middle of the points so that roughly equal numbers lie above and below it. Choose two points on the line far apart, for example \\((2, 50)\\) and \\((10, 90)\\). Slope \\(= \\dfrac{90 - 50}{10 - 2} = 5\\). Intercept: \\(50 = a + 5 \\times 2\\), so \\(a = 40\\). Equation: \\(\\text{score} = 40 + 5 \\times \\text{hours}\\).",
+        "Use it to predict within the range of the data, and be cautious outside it. The least squares line from technology does the same job more objectively; it is developed in Units 3 and 4."
+       ],
+       "check": [
+        [
+         "A line passes through (0, 12) and (4, 20). What is its equation?",
+         "Slope \\(= \\dfrac{20 - 12}{4} = 2\\), intercept 12: \\(y = 12 + 2x\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a two-way table",
+       "p": [
+        "200 students are surveyed. Of 100 Year 11 students, 60 play sport; of 100 Year 12 students, 35 play sport. As column percentages: Year 11, 60% play and 40% do not; Year 12, 35% play and 65% do not.",
+        "Because the percentage who play sport is noticeably different between the year levels (60% and 35%), there is an association between year level and sport participation. Always compare percentages, not counts, because group sizes are often unequal."
        ]
       },
       {
@@ -212,6 +415,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with percentages and with substituting into formulas.",
+        "The big idea: money grows or shrinks in one of two ways. Either the same amount is added or taken each period (linear), or the same percentage is (geometric). Recurrence relations describe both, step by step, and the same idea runs right through the financial mathematics in Units 3 and 4."
+       ]
+      },
+      {
        "h": "Percentages in money problems",
        "p": [
         "To increase by \\(r\\%\\), multiply by \\(1 + \\dfrac{r}{100}\\); to decrease, multiply by \\(1 - \\dfrac{r}{100}\\). To undo a percentage change, divide by the same multiplier.",
@@ -230,6 +440,12 @@
        "p": [
         "A recurrence relation gives a starting value and a rule for getting each term from the one before. \\(u_0 = 5000,\\ u_{n+1} = u_n + 300\\) models simple interest (add the same amount). \\(u_0 = 5000,\\ u_{n+1} = 1.06u_n\\) models compound interest (multiply by the same factor). A first-order linear recurrence \\(u_{n+1} = Ru_n + d\\) combines both, for example a savings account with regular deposits.",
         "Generate terms one at a time and write each one down: \\(u_1 = 1.06 \\times 5000 = 5300\\), \\(u_2 = 1.06 \\times 5300 = 5618\\)."
+       ],
+       "check": [
+        [
+         "Generate the first three terms of \\(u_0 = 10,\\ u_{n+1} = 3u_n - 4\\).",
+         "u₁ = 26, u₂ = 74, u₃ = 218."
+        ]
        ]
       },
       {
@@ -242,6 +458,39 @@
        "h": "Purchasing options",
        "p": [
         "Compare cash, credit and buy-now-pay-later by total cost. Example: a $1200 laptop bought with a $200 deposit and 24 monthly payments of $50 costs \\(200 + 1200 = \\$1400\\); the extra $200 is interest on the $1000 borrowed. Flat rate over 2 years \\(= \\dfrac{200}{1000 \\times 2} \\times 100 = 10\\%\\) per annum."
+       ]
+      },
+      {
+       "h": "Comparing simple and compound growth",
+       "p": [
+        "$1000 earns 10% per annum. Simple interest adds $100 each year: $1100, $1200, $1300. Compound interest adds 10% of the current balance: $1100, $1210, $1331. On a graph, simple interest gives points on a straight line; compound interest gives points on an upward curve that pulls further ahead each year.",
+        "The longer the term and the higher the rate, the bigger the difference. This is why compounding is described as earning “interest on interest”."
+       ],
+       "check": [
+        [
+         "$2000 is invested at 5% per annum. What is the balance after 2 years with simple interest, and with annual compounding?",
+         "Simple: $2200. Compound: 2000 × 1.05² = $2205."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a savings plan",
+       "p": [
+        "A student has $1000 in an account paying 0.5% interest per month and deposits $100 at the end of each month. Recurrence relation: \\(u_0 = 1000,\\ u_{n+1} = 1.005u_n + 100\\).",
+        "\\(u_1 = 1.005 \\times 1000 + 100 = 1105\\). \\(u_2 = 1.005 \\times 1105 + 100 = 1210.53\\) (to the nearest cent). \\(u_3 = 1.005 \\times 1210.525 + 100 = 1316.58\\). Keep full accuracy in the calculator between steps."
+       ],
+       "check": [
+        [
+         "Write a recurrence relation for $500 invested at 2% per year with $50 added each year.",
+         "\\(u_0 = 500,\\ u_{n+1} = 1.02u_n + 50\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Inflation and purchasing power",
+       "p": [
+        "Inflation is the general rise in prices. With 3% inflation per year, an item costing $100 today will cost about \\(100 \\times 1.03^5 = \\$115.93\\) in five years. If a wage rises by only 2% per year over the same period, the wage buys less each year: its purchasing power falls.",
+        "To compare amounts from different years fairly, convert them to the same year’s dollars by applying the inflation rate."
        ]
       },
       {
@@ -290,6 +539,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with basic arithmetic and with solving simultaneous equations.",
+        "The big idea: a matrix is a table of numbers that can be calculated with. Matrices store data neatly, combine quantities with prices in one step, and solve systems of equations. In Units 3 and 4 they model networks and populations that change over time."
+       ]
+      },
+      {
        "h": "Reading and writing matrices",
        "p": [
         "A matrix is a rectangular array of numbers. Its order is rows by columns, and element \\(a_{ij}\\) is in row \\(i\\) and column \\(j\\). Row matrices have one row, column matrices one column, and square matrices the same number of each. The identity matrix \\(I\\) has ones on the leading diagonal and zeros elsewhere, and \\(AI = IA = A\\)."
@@ -313,12 +569,44 @@
        "p": [
         "The inverse \\(A^{-1}\\) satisfies \\(AA^{-1} = I\\). It exists only for square matrices with a non-zero determinant. For a \\(2 \\times 2\\) matrix, swap the leading diagonal, change the signs of the other diagonal and divide by the determinant.",
         "Example: \\(A = \\begin{bmatrix} 3 & 1 \\\\ 5 & 2 \\end{bmatrix}\\). \\(\\det A = 6 - 5 = 1\\), so \\(A^{-1} = \\begin{bmatrix} 2 & -1 \\\\ -5 & 3 \\end{bmatrix}\\)."
+       ],
+       "check": [
+        [
+         "Find the determinant of \\(\\begin{bmatrix} 4 & 2 \\\\ 3 & 2 \\end{bmatrix}\\).",
+         "\\(4 \\times 2 - 2 \\times 3 = 2\\)."
+        ]
        ]
       },
       {
        "h": "Solving simultaneous equations",
        "p": [
         "Write the system as \\(AX = B\\), then \\(X = A^{-1}B\\). Example: \\(3x + y = 7\\) and \\(5x + 2y = 12\\). \\(X = \\begin{bmatrix} 2 & -1 \\\\ -5 & 3 \\end{bmatrix}\\begin{bmatrix} 7 \\\\ 12 \\end{bmatrix} = \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix}\\), so \\(x = 2\\), \\(y = 1\\). If the determinant is zero there is no unique solution."
+       ]
+      },
+      {
+       "h": "Worked example: multiplying two 2 × 2 matrices",
+       "p": [
+        "\\(\\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}\\begin{bmatrix} 0 & 1 \\\\ 5 & 2 \\end{bmatrix}\\). Row 1 times column 1: \\(1 \\times 0 + 2 \\times 5 = 10\\). Row 1 times column 2: \\(1 \\times 1 + 2 \\times 2 = 5\\). Row 2 times column 1: \\(3 \\times 0 + 4 \\times 5 = 20\\). Row 2 times column 2: \\(3 \\times 1 + 4 \\times 2 = 11\\). Result: \\(\\begin{bmatrix} 10 & 5 \\\\ 20 & 11 \\end{bmatrix}\\).",
+        "In the other order, \\(\\begin{bmatrix} 0 & 1 \\\\ 5 & 2 \\end{bmatrix}\\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} = \\begin{bmatrix} 3 & 4 \\\\ 11 & 18 \\end{bmatrix}\\), a different answer. The order of multiplication matters."
+       ],
+       "check": [
+        [
+         "Find \\(\\begin{bmatrix} 2 & 0 \\\\ 1 & 3 \\end{bmatrix}\\begin{bmatrix} 1 \\\\ 4 \\end{bmatrix}\\).",
+         "\\(\\begin{bmatrix} 2 \\\\ 13 \\end{bmatrix}\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Special matrices",
+       "p": [
+        "Zero matrix: every element 0. Identity matrix \\(I\\): ones on the leading diagonal, zeros elsewhere. Diagonal matrix: non-zero elements only on the leading diagonal. Symmetric matrix: equal to its transpose, so \\(a_{ij} = a_{ji}\\). Triangular matrix: all elements above (or below) the leading diagonal are zero. Binary matrix: only 0s and 1s.",
+        "The transpose \\(A^T\\) swaps rows and columns: the first row becomes the first column. If \\(A\\) is \\(2 \\times 3\\), \\(A^T\\) is \\(3 \\times 2\\)."
+       ],
+       "check": [
+        [
+         "What is the order of \\(A^T\\) if \\(A\\) is a \\(3 \\times 1\\) matrix?",
+         "\\(1 \\times 3\\)."
+        ]
        ]
       },
       {
@@ -362,6 +650,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "You can start this lesson with no prerequisites beyond basic arithmetic.",
+        "The big idea: a network reduces a real situation (roads, friendships, pipes, a project) to dots and lines, so that questions such as “what is the shortest route?” or “can every street be travelled once?” can be answered systematically. The vocabulary is precise, so learn it carefully."
+       ]
+      },
+      {
        "h": "Vocabulary",
        "p": [
         "A graph is a set of vertices joined by edges. A loop joins a vertex to itself and adds 2 to its degree. The sum of all degrees is twice the number of edges. A connected graph has a path between every pair of vertices. A bridge is an edge whose removal disconnects the graph. A planar graph can be drawn with no edges crossing; its regions, including the outside one, are faces."
@@ -379,6 +674,12 @@
        "p": [
         "Count the degree of every vertex. All even: an Eulerian circuit exists, starting anywhere. Exactly two odd: an Eulerian trail exists, starting at one odd vertex and ending at the other. Any other number of odd vertices: neither exists.",
         "Example: degrees 2, 3, 3, 4, 4. Two odd vertices, so there is an Eulerian trail but no Eulerian circuit. To make a circuit possible, add an edge joining the two odd vertices. There is no quick test for Hamiltonian paths; find one by trial."
+       ],
+       "check": [
+        [
+         "A connected graph has vertex degrees 2, 2, 4, 3, 3. Does it have an Eulerian circuit, an Eulerian trail, or neither?",
+         "An Eulerian trail (exactly two odd vertices), but not a circuit."
+        ]
        ]
       },
       {
@@ -392,6 +693,39 @@
        "p": [
         "A tree is a connected graph with no cycles; a tree with \\(n\\) vertices has \\(n - 1\\) edges. A spanning tree connects all the vertices of a graph. A minimum spanning tree has the smallest total weight and gives the cheapest way to connect every location, such as laying cable. Prim’s algorithm: start at any vertex, repeatedly add the smallest-weight edge that connects a new vertex, and stop when every vertex is included.",
         "A shortest path is the route of least total weight between two given vertices. It need not use every vertex."
+       ]
+      },
+      {
+       "h": "Adjacency matrices",
+       "p": [
+        "An adjacency matrix records how many edges join each pair of vertices. Rows and columns are labelled with the vertices in the same order. For an undirected graph the matrix is symmetric. A loop is shown on the leading diagonal. A row of zeros shows an isolated vertex.",
+        "Reading a graph from a matrix: for each non-zero entry above the leading diagonal, draw that many edges between the two vertices."
+       ],
+       "check": [
+        [
+         "In an adjacency matrix, what does a 2 in row B, column C mean?",
+         "There are two edges joining B and C."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: Prim’s algorithm",
+       "p": [
+        "Edges and weights: AB 4, AC 2, BC 1, BD 5, CD 8, CE 10, DE 2. Start at A. The cheapest edge from A is AC (2). From {A, C}, the cheapest edge to a new vertex is CB (1). From {A, B, C}, the options to new vertices are BD (5), CD (8) and CE (10): choose BD (5). From {A, B, C, D}, the cheapest edge to E is DE (2).",
+        "The minimum spanning tree is AC, CB, BD, DE, with total weight 2 + 1 + 5 + 2 = 10. It has 4 edges for 5 vertices, as every spanning tree must. AB was never chosen because it would join two vertices already connected, creating a cycle."
+       ],
+       "check": [
+        [
+         "How many edges does a spanning tree of a connected graph with 8 vertices have?",
+         "7."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a shortest path by inspection",
+       "p": [
+        "In the same network, find the shortest path from A to E. List candidate routes: A–C–E = 12; A–C–D–E = 12; A–B–D–E = 11; A–C–B–D–E = 2 + 1 + 5 + 2 = 10. The shortest path is A–C–B–D–E, length 10.",
+        "For larger networks, list systematically or use Dijkstra’s algorithm (Units 3 and 4). Note that the shortest path need not visit every vertex; here it happens to."
        ]
       },
       {
@@ -442,6 +776,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with substituting into formulas and solving linear equations.",
+        "The big idea: many everyday situations follow straight-line rules (costs, charges, conversions), and many practical problems involve lengths, angles, areas and volumes. This lesson brings together linear modelling and measurement, both of which reward careful setting out and correct units."
+       ]
+      },
+      {
        "h": "Linear models",
        "p": [
         "A linear model has a constant rate of change. In \\(y = a + bx\\), the intercept \\(a\\) is the starting value and the slope \\(b\\) is the rate. Example: a plumber charges an $80 call-out fee plus $60 per hour: \\(C = 80 + 60t\\). A 2.5-hour job costs \\(80 + 150 = \\$230\\). Models only apply over the range for which they make sense."
@@ -471,6 +812,12 @@
        "h": "Similarity and scale",
        "p": [
         "Similar shapes have equal angles and sides in the same ratio \\(k\\). Example: a model is built at a scale of 1 : 20. Lengths are multiplied by 20, areas by \\(20^2 = 400\\) and volumes by \\(20^3 = 8000\\). A model tank holding 0.5 L corresponds to a real tank of 4000 L."
+       ],
+       "check": [
+        [
+         "Two similar cylinders have a length scale factor of 3. How do their volumes compare?",
+         "The larger volume is 27 times the smaller."
+        ]
        ]
       },
       {
@@ -480,10 +827,160 @@
        ]
       },
       {
+       "h": "Worked example: a line from two points",
+       "p": [
+        "A taxi charges $13 for a 2 km trip and $29 for a 6 km trip. Slope \\(= \\dfrac{29 - 13}{6 - 2} = 4\\) dollars per km. Intercept: \\(13 = a + 4 \\times 2\\), so \\(a = 5\\). Model: \\(C = 5 + 4d\\).",
+        "Interpretation: the flag fall is $5 and each kilometre costs $4. A 10 km trip would cost $45."
+       ],
+       "check": [
+        [
+         "A plumber charges $150 for 1 hour and $270 for 3 hours. Find the linear model.",
+         "Slope \\(= \\dfrac{270 - 150}{2} = 60\\); intercept \\(150 - 60 = 90\\): \\(C = 90 + 60t\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: bearings and the cosine rule",
+       "p": [
+        "A boat sails 8 km on a bearing of 040°, then 5 km on a bearing of 100°. At the turning point the angle between the two legs is 180° − (100° − 40°) = 120°.",
+        "Distance from the start: \\(d^2 = 8^2 + 5^2 - 2 \\times 8 \\times 5 \\times \\cos 120^\\circ = 89 + 40 = 129\\), so \\(d \\approx 11.36\\) km. Always draw a diagram with north lines at each point; most errors in bearing questions come from the angle at the turn."
+       ],
+       "check": [
+        [
+         "What is the bearing of due west?",
+         "270°."
+        ]
+       ]
+      },
+      {
+       "h": "Composite shapes",
+       "p": [
+        "Break a shape into parts you know. A water tank is a cylinder of radius 1 m and height 3 m with a hemispherical top. Volume \\(= \\pi(1)^2(3) + \\tfrac{1}{2} \\times \\tfrac{4}{3}\\pi(1)^3 = 3\\pi + \\tfrac{2}{3}\\pi \\approx 11.52\\ \\mathrm{m^3}\\), which is about 11 520 litres.",
+        "For surface area, add only the faces that are exposed; the circle where the hemisphere joins the cylinder is inside the tank and is not counted."
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Calculator in radian mode. Using the sine rule when the cosine rule is needed. Scaling an area by \\(k\\) instead of \\(k^2\\). Forgetting the bearing is measured clockwise from north."
        ]
+      }
+     ]
+    },
+    {
+     "id": "variation",
+     "title": "Variation and non-linear relations",
+     "points": [
+      "Direct variation: \\(y = kx\\); the graph is a straight line through the origin.",
+      "Inverse variation: \\(y = \\dfrac{k}{x}\\); as \\(x\\) doubles, \\(y\\) halves.",
+      "Variation with powers: \\(y = kx^2\\), \\(y = kx^3\\), \\(y = \\dfrac{k}{x^2}\\).",
+      "Find \\(k\\) from one known pair of values, then use the rule.",
+      "Plotting \\(y\\) against a transformed \\(x\\) (such as \\(x^2\\) or \\(\\dfrac{1}{x}\\)) gives a straight line through the origin when the variation model fits."
+     ],
+     "explain": "Explain why the time a trip takes varies inversely with average speed, using a 120 km trip as your example.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with linear models and with substituting into formulas.",
+        "The big idea: not every relationship is a straight line. Many follow a simple rule in which one variable is proportional to another, to its square, or to its reciprocal. Recognising which rule fits, and finding its constant, lets you make predictions from just one pair of measurements."
+       ]
+      },
+      {
+       "h": "Direct variation",
+       "p": [
+        "\\(y\\) varies directly as \\(x\\) if \\(y = kx\\) for some constant \\(k\\), the constant of variation. Doubling \\(x\\) doubles \\(y\\). The graph is a straight line through the origin with gradient \\(k\\).",
+        "Example: the cost of fuel varies directly with the number of litres. 40 L cost $76, so \\(k = \\dfrac{76}{40} = 1.9\\) dollars per litre, and 55 L cost \\(1.9 \\times 55 = \\$104.50\\)."
+       ],
+       "check": [
+        [
+         "\\(y\\) varies directly as \\(x\\), and \\(y = 12\\) when \\(x = 3\\). Find \\(y\\) when \\(x = 10\\).",
+         "\\(k = 4\\), so \\(y = 40\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Inverse variation",
+       "p": [
+        "\\(y\\) varies inversely as \\(x\\) if \\(y = \\dfrac{k}{x}\\). Doubling \\(x\\) halves \\(y\\), and the product \\(xy\\) is constant. The graph is a hyperbola that approaches both axes without touching them.",
+        "Example: the time for a 120 km trip is \\(t = \\dfrac{120}{v}\\). At 60 km/h it takes 2 hours; at 80 km/h, 1.5 hours; at 120 km/h, 1 hour."
+       ],
+       "check": [
+        [
+         "\\(y\\) varies inversely as \\(x\\), and \\(y = 6\\) when \\(x = 4\\). Find \\(y\\) when \\(x = 8\\).",
+         "\\(k = 24\\), so \\(y = 3\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Variation with powers",
+       "p": [
+        "The stopping distance of a car varies roughly as the square of its speed: \\(d = kv^2\\). If \\(d = 20\\) m at 50 km/h, then \\(k = \\dfrac{20}{2500} = 0.008\\), and at 100 km/h \\(d = 0.008 \\times 10\\,000 = 80\\) m. Doubling the speed multiplies the distance by four.",
+        "The volume of similar containers varies as the cube of a length: \\(V = kl^3\\). The intensity of light varies inversely as the square of the distance from the source: \\(I = \\dfrac{k}{d^2}\\), so doubling the distance gives a quarter of the intensity."
+       ]
+      },
+      {
+       "h": "Testing a model with data",
+       "p": [
+        "To check whether data follow \\(y = kx^2\\), make a new column of \\(x^2\\) values and plot \\(y\\) against \\(x^2\\). If the points lie close to a straight line through the origin, the model fits, and its gradient is \\(k\\). The same method tests \\(y = \\dfrac{k}{x}\\) by plotting \\(y\\) against \\(\\dfrac{1}{x}\\).",
+        "This idea, straightening a curve by transforming a variable, returns in Units 3 and 4 as data transformation in regression."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Assuming any relationship that increases is direct variation. Forgetting that inverse variation means the product is constant, not the difference. Squaring the wrong quantity when finding \\(k\\). Using a linear model with a non-zero intercept when the question says “varies directly”, which requires the line to pass through the origin."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "If \\(y\\) varies inversely as \\(x\\), and \\(x\\) is tripled, \\(y\\) is…",
+       "o": [
+        "tripled",
+        "divided by 3",
+        "unchanged",
+        "multiplied by 9"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "If \\(y = kx^2\\) and \\(x\\) doubles, \\(y\\) is multiplied by…",
+       "o": [
+        "2",
+        "4",
+        "8",
+        "1/2"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "The area of a circle varies as the square of its radius. A circle of radius 2 cm has area 12.57 cm². Find the area when the radius is 6 cm.",
+       "a": "The radius triples, so the area is multiplied by 9: about 113.1 cm².",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What graph would you plot to test whether \\(y\\) varies inversely as \\(x\\)?",
+       "a": "Plot \\(y\\) against \\(\\dfrac{1}{x}\\). A straight line through the origin supports the model.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The graph of direct variation is…",
+       "o": [
+        "a hyperbola",
+        "a straight line through the origin",
+        "a parabola",
+        "a horizontal line"
+       ],
+       "a": 1,
+       "e": ""
       }
      ]
     }
