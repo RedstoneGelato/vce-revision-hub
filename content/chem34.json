@@ -52,6 +52,45 @@
        ],
        "a": 2,
        "e": "Biogas comes from decomposing organic matter."
+      },
+      {
+       "t": "c",
+       "q": "How much energy is released when 32 g of methane burns completely? (ΔH = −890 kJ mol⁻¹, M = 16.0)",
+       "a": "1780 kJ",
+       "e": "",
+       "s": [
+        "n = 32 ÷ 16.0 = 2.0 mol.",
+        "Energy = 2.0 × 890 = 1780 kJ."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Incomplete combustion of a hydrocarbon can produce…",
+       "o": [
+        "carbon monoxide",
+        "only CO₂ and H₂O",
+        "hydrogen",
+        "oxygen"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Write the balanced equation for the complete combustion of butane, C₄H₁₀.",
+       "a": "2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(l)",
+       "e": "",
+       "s": [
+        "Carbon: 4CO₂ per butane. Hydrogen: 5H₂O per butane.",
+        "Oxygen atoms needed: 8 + 5 = 13, which is 6.5 O₂.",
+        "Double everything to clear the half."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Ethanol has a molar heat of combustion of 1360 kJ mol⁻¹ and M = 46.0. What is its heat of combustion in kJ g⁻¹?",
+       "a": "29.6 kJ g⁻¹",
+       "e": "1360 ÷ 46.0."
       }
      ],
      "notes": [
@@ -184,6 +223,45 @@
        "t": "c",
        "q": "What volume of \\(\\mathrm{CO_2}\\) at SLC forms when \\(0.50\\ \\mathrm{mol}\\) of \\(\\mathrm{CH_4}\\) burns completely?",
        "a": "\\(1 : 1\\) ratio, so \\(0.50\\ \\mathrm{mol\\ CO_2}\\); \\(V = 0.50 \\times 24.8 = 12.4\\ \\mathrm{L}\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A calorimeter is calibrated with 5.0 V and 2.0 A for 60 s, raising the temperature by 1.2 °C. Find the calibration factor.",
+       "a": "500 J °C⁻¹",
+       "e": "",
+       "s": [
+        "E = VIt = 5.0 × 2.0 × 60 = 600 J.",
+        "CF = 600 ÷ 1.2 = 500 J °C⁻¹."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "50 mL of 0.50 M HCl and 50 mL of 0.50 M NaOH are mixed; the temperature rises by 3.4 °C. Find ΔH of neutralisation.",
+       "a": "−56.8 kJ mol⁻¹",
+       "e": "",
+       "s": [
+        "q = mcΔT = 100 × 4.18 × 3.4 = 1421 J.",
+        "n(water formed) = 0.050 × 0.50 = 0.025 mol.",
+        "ΔH = −1.421 ÷ 0.025 = −56.8 kJ mol⁻¹ (negative: exothermic)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Heat lost to the surroundings makes the experimental heat of combustion…",
+       "o": [
+        "lower than the true value",
+        "higher than the true value",
+        "unaffected",
+        "negative"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is the solution stirred in solution calorimetry?",
+       "a": "So the temperature is even throughout, giving an accurate reading of the temperature change.",
        "e": ""
       }
      ],
@@ -324,6 +402,36 @@
        ],
        "a": 1,
        "e": "Top-left reacts with bottom-right."
+      },
+      {
+       "t": "c",
+       "q": "Find the cell voltage for a Zn/Cu cell. (Cu²⁺/Cu +0.34 V; Zn²⁺/Zn −0.76 V)",
+       "a": "1.10 V",
+       "e": "0.34 − (−0.76)."
+      },
+      {
+       "t": "m",
+       "q": "In a galvanic cell, the anode is…",
+       "o": [
+        "negative, where oxidation occurs",
+        "positive, where oxidation occurs",
+        "negative, where reduction occurs",
+        "positive, where reduction occurs"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Will silver metal react with Cu²⁺ ions? (Ag⁺/Ag +0.80 V; Cu²⁺/Cu +0.34 V)",
+       "a": "No. The oxidising agent Cu²⁺ is lower on the series than the reducing agent Ag.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What does the salt bridge do?",
+       "a": "It completes the circuit and keeps each half-cell electrically neutral by allowing ions to move between them.",
+       "e": ""
       }
      ],
      "notes": [
@@ -468,6 +576,54 @@
        "q": "Explain why increasing temperature increases the rate of a reaction.",
        "a": "Particles have more kinetic energy, so they collide more often and, more importantly, a greater proportion of collisions have energy equal to or greater than the activation energy.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A catalyst increases the rate of reaction by…",
+       "o": [
+        "providing a pathway with lower activation energy",
+        "increasing the temperature",
+        "increasing ΔH",
+        "shifting the equilibrium"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why increasing the temperature increases the rate of reaction.",
+       "a": "Particles move faster, so they collide more often, and a much greater proportion of collisions have energy at least equal to the activation energy.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Powdered calcium carbonate reacts faster with acid than a lump because…",
+       "o": [
+        "it has a larger surface area",
+        "it is more concentrated",
+        "it is hotter",
+        "it has lower activation energy"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A reaction has Eₐ = 75 kJ mol⁻¹ and ΔH = −40 kJ mol⁻¹. Find Eₐ for the reverse reaction.",
+       "a": "115 kJ mol⁻¹",
+       "e": "75 − (−40)."
+      },
+      {
+       "t": "m",
+       "q": "Adding a catalyst to a reversible reaction changes the equilibrium yield by…",
+       "o": [
+        "nothing",
+        "increasing it",
+        "decreasing it",
+        "doubling it"
+       ],
+       "a": 0,
+       "e": "It speeds up both directions equally."
       }
      ],
      "notes": [
@@ -603,6 +759,40 @@
        "t": "c",
        "q": "\\(K\\) for \\(\\mathrm{A} \\rightleftharpoons \\mathrm{B}\\) is \\(4.0\\). What is \\(K\\) for \\(\\mathrm{B} \\rightleftharpoons \\mathrm{A}\\)?",
        "a": "\\(K' = \\dfrac{1}{4.0} = 0.25\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Write the expression for K for N₂(g) + 3H₂(g) ⇌ 2NH₃(g).",
+       "a": "\\(K = \\dfrac{[\\mathrm{NH_3}]^2}{[\\mathrm{N_2}][\\mathrm{H_2}]^3}\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "For A(g) ⇌ 2B(g), equilibrium concentrations are [A] = 0.20 M and [B] = 0.40 M. Find K.",
+       "a": "0.80 M",
+       "e": "",
+       "s": [
+        "\\(K = \\dfrac{[\\mathrm{B}]^2}{[\\mathrm{A}]}\\).",
+        "\\(\\dfrac{0.40^2}{0.20} = \\dfrac{0.16}{0.20} = 0.80\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Adding more reactant to a system at equilibrium causes…",
+       "o": [
+        "a net forward reaction",
+        "a net reverse reaction",
+        "no change",
+        "K to increase"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "If the reaction quotient Q is greater than K, which way does the reaction proceed?",
+       "a": "In the reverse direction, until Q falls to K.",
        "e": ""
       }
      ],
@@ -753,6 +943,41 @@
        "t": "c",
        "q": "What makes hydrogen “green”?",
        "a": "It is made by electrolysis of water using electricity from renewable sources, so no CO₂ is released in production.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What mass of silver is deposited by a current of 0.50 A for 1930 s? (Ag⁺ + e⁻ → Ag; M = 107.9)",
+       "a": "1.08 g",
+       "e": "",
+       "s": [
+        "Q = It = 0.50 × 1930 = 965 C.",
+        "n(e⁻) = 965 ÷ 96 500 = 0.0100 mol.",
+        "n(Ag) = 0.0100 mol, so m = 0.0100 × 107.9 = 1.08 g."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "In an electrolytic cell, the cathode is…",
+       "o": [
+        "negative, where reduction occurs",
+        "positive, where reduction occurs",
+        "negative, where oxidation occurs",
+        "positive, where oxidation occurs"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What are the products when molten sodium chloride is electrolysed?",
+       "a": "Sodium at the cathode and chlorine gas at the anode.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is sodium not produced when aqueous sodium chloride is electrolysed?",
+       "a": "Water is a stronger oxidising agent than Na⁺, so water is reduced to hydrogen at the cathode instead.",
        "e": ""
       }
      ],
@@ -910,6 +1135,42 @@
        "q": "Name CH₃CH₂COOCH₃.",
        "a": "Methyl propanoate",
        "e": "Alcohol part (methyl) first, acid part (propanoate) second."
+      },
+      {
+       "t": "m",
+       "q": "CH₃CH₂COOH is named…",
+       "o": [
+        "propanoic acid",
+        "ethanoic acid",
+        "propan-1-ol",
+        "propanal"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Is butan-2-ol a primary, secondary or tertiary alcohol?",
+       "a": "Secondary",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A chiral centre is a carbon atom bonded to…",
+       "o": [
+        "four different groups",
+        "a double bond",
+        "two oxygen atoms",
+        "three hydrogens"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the ester formed from methanol and ethanoic acid.",
+       "a": "Methyl ethanoate",
+       "e": ""
       }
      ],
      "notes": [
@@ -1057,6 +1318,36 @@
        ],
        "a": 1,
        "e": "All reactant atoms end up in one product."
+      },
+      {
+       "t": "c",
+       "q": "Propan-1-ol is heated with excess acidified potassium dichromate. What is the organic product?",
+       "a": "Propanoic acid",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Ethene reacts with steam (acid catalyst) to form…",
+       "o": [
+        "ethanol",
+        "ethane",
+        "ethanoic acid",
+        "chloroethane"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the atom economy for C₂H₄ + H₂O → C₂H₅OH.",
+       "a": "100%",
+       "e": "Addition: every reactant atom is in the product."
+      },
+      {
+       "t": "c",
+       "q": "A two-step synthesis has yields of 70% and 80%. Find the overall yield.",
+       "a": "56%",
+       "e": "0.70 × 0.80 = 0.56."
       }
      ],
      "notes": [
@@ -1192,6 +1483,54 @@
        "t": "c",
        "q": "Why does an enzyme stop working at very low pH?",
        "a": "Changes in pH disrupt the hydrogen bonds and ionic interactions holding the tertiary structure, so the active site changes shape (denatures) and the substrate no longer fits.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Amino acids in a protein are joined by…",
+       "o": [
+        "amide (peptide) links",
+        "ester links",
+        "glycosidic links",
+        "hydrogen bonds only"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Fat provides about 37 kJ g⁻¹. How much energy is in 10 g of fat?",
+       "a": "370 kJ",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Saturated fats are solid at room temperature because…",
+       "o": [
+        "their straight chains pack closely, giving stronger dispersion forces",
+        "they contain double bonds",
+        "they are ionic",
+        "they contain water"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between denaturing and hydrolysing a protein?",
+       "a": "Denaturing changes the shape (secondary and tertiary structure) without breaking peptide links. Hydrolysis breaks the peptide links into amino acids.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Vitamin C is water-soluble because…",
+       "o": [
+        "it has several –OH groups that hydrogen bond with water",
+        "it is a large hydrocarbon",
+        "it is a fat",
+        "it is ionic"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -1439,6 +1778,24 @@
        ],
        "a": 1,
        "e": "Each double bond adds one I₂: 0.040 ÷ 0.020 = 2."
+      },
+      {
+       "t": "c",
+       "q": "How could acidified potassium dichromate distinguish propanal from propanone?",
+       "a": "Propanal (an aldehyde) is oxidised and turns the solution from orange to green; propanone (a ketone) does not.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A sharp melting point close to the literature value suggests a sample is…",
+       "o": [
+        "pure",
+        "impure",
+        "a mixture",
+        "wet"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     },
@@ -1501,6 +1858,30 @@
        "t": "c",
        "q": "What does adding bromine water show about an organic compound?",
        "a": "If the orange colour disappears quickly, the compound has a C=C double bond (an addition reaction occurs).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In a mass spectrum, the molecular ion peak gives…",
+       "o": [
+        "the molar mass",
+        "the functional groups",
+        "the number of carbon environments",
+        "the boiling point"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How many peaks are in the ¹³C NMR spectrum of propanone, CH₃COCH₃?",
+       "a": "2",
+       "e": "The two CH₃ carbons are equivalent."
+      },
+      {
+       "t": "c",
+       "q": "In ¹H NMR, what is the splitting pattern of a CH₃ group next to a CH₂ group?",
+       "a": "A triplet (n + 1 = 3).",
        "e": ""
       }
      ],
@@ -1732,6 +2113,36 @@
        "q": "Explain why enzyme activity falls when the pH moves away from the optimum.",
        "a": "The change in pH alters the charges on acidic and basic side chains, disrupting the ionic and hydrogen bonding that maintain the tertiary structure. The shape of the active site changes, so the substrate binds less well.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "An enzyme’s specificity comes from…",
+       "o": [
+        "the shape of its active site and the interactions it can form",
+        "its size",
+        "its colour",
+        "the temperature"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why does adding more substrate reduce the effect of a competitive inhibitor?",
+       "a": "Substrate and inhibitor compete for the same active site; more substrate makes it more likely the substrate binds.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which solvent is best for extracting a non-polar compound from plant material?",
+       "o": [
+        "Hexane",
+        "Water",
+        "Ethanol",
+        "Salt water"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     },
@@ -1855,6 +2266,36 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The data book gives the heat of combustion of propane as 2220 kJ mol⁻¹. ΔH for its combustion is…",
+       "o": [
+        "−2220 kJ mol⁻¹",
+        "+2220 kJ mol⁻¹",
+        "0",
+        "−2220 kJ"
+       ],
+       "a": 0,
+       "e": "Combustion is exothermic."
+      },
+      {
+       "t": "c",
+       "q": "What must an answer to an “explain” question include?",
+       "a": "A reason linked to the result, not just a description.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "How many significant figures does 0.0250 have?",
+       "o": [
+        "3",
+        "2",
+        "4",
+        "5"
+       ],
+       "a": 0,
+       "e": "Leading zeros do not count; the trailing zero does."
       }
      ]
     }

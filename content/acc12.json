@@ -136,6 +136,24 @@
        ],
        "a": 1,
        "e": "They can lose only the amount they invested."
+      },
+      {
+       "t": "m",
+       "q": "Which is an internal source of finance?",
+       "o": [
+        "A capital contribution from the owner",
+        "A bank loan",
+        "A bank overdraft",
+        "Trade credit from a supplier"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name two users of a business’s accounting reports and what each wants to know.",
+       "a": "For example: the owner (is the business profitable?) and a bank (can the business repay a loan?).",
+       "e": ""
       }
      ]
     },
@@ -277,6 +295,18 @@
        ],
        "a": 1,
        "e": "The revenue was recorded when the sale was made. Now one asset replaces another."
+      },
+      {
+       "t": "c",
+       "q": "A business has assets of $50,000 and liabilities of $18,000. What is owner’s equity?",
+       "a": "$32,000",
+       "e": "Owner’s equity = Assets − Liabilities."
+      },
+      {
+       "t": "c",
+       "q": "The owner takes home inventory that cost $500. What is the effect on the accounting equation?",
+       "a": "Assets (inventory) decrease by $500 and owner’s equity decreases by $500 (drawings).",
+       "e": ""
       }
      ]
     },
@@ -327,6 +357,46 @@
        "t": "c",
        "q": "GST collected is $700 and GST paid is $900. What is the GST position?",
        "a": "GST receivable (refund due) of $200, a current asset.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A tax invoice shows a total of $1,320 including GST. Find the GST and the amount before GST.",
+       "a": "GST $120; $1,200 before GST",
+       "e": "",
+       "s": [
+        "GST = 1,320 ÷ 11 = $120.",
+        "Before GST = 1,320 − 120 = $1,200."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which source document records cash received?",
+       "o": [
+        "Receipt",
+        "Purchase invoice",
+        "Cheque butt",
+        "Memo"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "For a quarter, GST collected on sales is $2,500 and GST paid on purchases is $1,800. What is the result?",
+       "a": "$700 owed to the ATO (GST settlement)",
+       "e": "2,500 − 1,800 = 700."
+      },
+      {
+       "t": "m",
+       "q": "GST does not apply to…",
+       "o": [
+        "wages",
+        "advertising",
+        "inventory purchases",
+        "electricity"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -468,6 +538,47 @@
        "q": "Record a $6 600 credit purchase of inventory (incl. GST) in the Purchases Journal.",
        "a": "Inventory 6 000, GST 600, Accounts Payable 6 600",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A credit sale of inventory is recorded in the…",
+       "o": [
+        "Sales Journal",
+        "Cash Receipts Journal",
+        "Purchases Journal",
+        "Cash Payments Journal"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Record a cash sale of $330 including GST, with a cost of $180, in the Cash Receipts Journal columns.",
+       "a": "Bank 330; Sales 300; GST 30; Cost of Sales 180",
+       "e": "",
+       "s": [
+        "GST = 330 ÷ 11 = 30; Sales = 300.",
+        "Bank records the cash received: 330.",
+        "Cost of Sales (from the inventory card) = 180; it is not part of the Bank total."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A payment to a supplier for goods bought on credit last month is recorded in the Cash Payments Journal under…",
+       "o": [
+        "Accounts Payable",
+        "Inventory",
+        "GST",
+        "Drawings"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is there no GST on a receipt from an Account Receivable?",
+       "a": "The GST was recorded when the credit sale was made; the receipt only collects the debt.",
+       "e": ""
       }
      ],
      "notes": [
@@ -593,6 +704,53 @@
         "the stocktake value"
        ],
        "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "An inventory card shows 10 units at $5 then 10 units at $6. Under FIFO, 15 units are sold. Find the Cost of Sales and the balance.",
+       "a": "Cost of Sales $80; balance 5 units at $6 = $30",
+       "e": "",
+       "s": [
+        "FIFO takes the oldest units first: 10 at $5 = $50.",
+        "Then 5 at $6 = $30. Cost of Sales = $80.",
+        "Remaining: 5 units at $6 = $30."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A stocktake counts fewer units than the inventory card shows. This is…",
+       "o": [
+        "an inventory loss (expense)",
+        "an inventory gain (revenue)",
+        "drawings",
+        "a sales return"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "At what value are entries recorded on an inventory card?",
+       "a": "At cost price, excluding GST.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "The owner takes 3 units costing $12 each for personal use. How is this recorded?",
+       "a": "OUT 3 units at $12 = $36 on the inventory card, recorded as drawings (a decrease in owner’s equity, not an expense).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Identified Cost is most suitable for…",
+       "o": [
+        "distinguishable, high-value items such as cars",
+        "identical low-cost items such as screws",
+        "services",
+        "cash"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -725,6 +883,50 @@
        ],
        "a": 2,
        "e": "Revenue increases with a credit."
+      },
+      {
+       "t": "c",
+       "q": "An Account Receivable has an opening balance of $2,200. Credit sales are $3,300 and receipts $2,750. Find the closing balance.",
+       "a": "$2,750",
+       "e": "2,200 + 3,300 − 2,750."
+      },
+      {
+       "t": "c",
+       "q": "Equipment costs $15,000, with residual value $3,000 and useful life 4 years. Find the annual straight-line depreciation.",
+       "a": "$3,000",
+       "e": "",
+       "s": [
+        "Depreciable amount = 15,000 − 3,000 = $12,000.",
+        "12,000 ÷ 4 = $3,000 per year."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A vehicle costing $16,000 is depreciated at 25% reducing balance. Find the depreciation in years 1 and 2.",
+       "a": "Year 1 $4,000; year 2 $3,000",
+       "e": "",
+       "s": [
+        "Year 1: 25% × 16,000 = $4,000; carrying value $12,000.",
+        "Year 2: 25% × 12,000 = $3,000; carrying value $9,000."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "An increase in an asset is recorded on the…",
+       "o": [
+        "debit side",
+        "credit side",
+        "either side",
+        "neither side"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A machine cost $40,000 and has accumulated depreciation of $14,500. Find its carrying value.",
+       "a": "$25,500",
+       "e": ""
       }
      ],
      "notes": [
@@ -887,6 +1089,34 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A cash purchase of equipment appears in the Cash Flow Statement under…",
+       "o": [
+        "Investing activities",
+        "Operating activities",
+        "Financing activities",
+        "It does not appear"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Sales $50,000; Cost of Goods Sold $28,000; other expenses $15,000. Find the Net Profit.",
+       "a": "$7,000",
+       "e": "",
+       "s": [
+        "Gross Profit = 50,000 − 28,000 = $22,000.",
+        "Net Profit = 22,000 − 15,000 = $7,000."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Opening capital $40,000, Net Profit $7,000, drawings $9,000. Find closing capital.",
+       "a": "$38,000",
+       "e": "40,000 + 7,000 − 9,000."
       }
      ],
      "notes": [
@@ -1028,6 +1258,40 @@
         "Quick Asset Ratio"
        ],
        "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Gross Profit is $30,000 and Net Sales are $120,000. Find the Gross Profit Margin.",
+       "a": "25%",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Current assets are $45,000 and current liabilities $30,000. Find the Working Capital Ratio.",
+       "a": "1.5 : 1",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Average Accounts Receivable is $11,000 and credit sales including GST are $132,000. Find the Accounts Receivable Turnover in days.",
+       "a": "About 30 days",
+       "e": "",
+       "s": [
+        "AR Turnover = Average AR ÷ Credit sales (incl. GST) × 365.",
+        "11,000 ÷ 132,000 × 365 ≈ 30.4 days."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "An increasing Debt Ratio means the business…",
+       "o": [
+        "relies more on borrowing",
+        "is more profitable",
+        "has more cash",
+        "has less risk"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -1172,6 +1436,46 @@
        "q": "Budgeted wages $1 000, actual $1 200. State the variance.",
        "a": "$200 Unfavourable",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Recording a credit sale as revenue when the invoice is issued applies the…",
+       "o": [
+        "accrual basis assumption",
+        "going concern assumption",
+        "period assumption",
+        "accounting entity assumption"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Fixed costs are $9,000, the selling price is $30 and the variable cost is $18 per unit. Find the break-even point.",
+       "a": "750 units",
+       "e": "",
+       "s": [
+        "Contribution margin = 30 − 18 = $12 per unit.",
+        "Break-even = 9,000 ÷ 12 = 750 units."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The owner pays her personal phone bill from the business account. Recording it as drawings follows the…",
+       "o": [
+        "accounting entity assumption",
+        "going concern assumption",
+        "timeliness characteristic",
+        "period assumption"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Budgeted wages are $8,000 and actual wages are $8,600. State the variance.",
+       "a": "$600 unfavourable",
+       "e": "The expense was higher than budgeted."
       }
      ],
      "notes": [

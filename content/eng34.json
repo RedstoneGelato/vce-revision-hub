@@ -51,6 +51,42 @@
        "q": "Why might a writer use “sooo” instead of “so” in a text message?",
        "a": "Reduplicating letters imitates stress or lengthening in speech, adding emphasis or emotion that writing usually lacks.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Coming tonight?” shows…",
+       "o": [
+        "ellipsis",
+        "nominalisation",
+        "passive voice",
+        "clefting"
+       ],
+       "a": 0,
+       "e": "The words “Are you” are left out."
+      },
+      {
+       "t": "c",
+       "q": "Give one informal feature from each of lexis, syntax and discourse.",
+       "a": "For example: slang (lexis); a sentence fragment (syntax); discourse particles such as “like” (discourse).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“um” and “er” are…",
+       "o": [
+        "filled pauses (non-fluency features)",
+        "discourse particles only",
+        "minimal responses",
+        "adjacency pairs"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What does an emoji often do in a written message?",
+       "a": "It stands in for facial expression and tone of voice, clarifying the writer’s attitude.",
+       "e": ""
       }
      ],
      "notes": [
@@ -297,6 +333,24 @@
        ],
        "a": 1,
        "e": "Check the key, but transcripts normally use it for rising intonation."
+      },
+      {
+       "t": "m",
+       "q": "“mm”, “yeah” and “right” said while another person talks are…",
+       "o": [
+        "minimal responses (backchannels)",
+        "interruptions",
+        "repairs",
+        "fillers"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What three things should you look at to judge who controls a conversation?",
+       "a": "Who takes the most turns and holds the floor, who asks the questions, and who starts and changes topics.",
+       "e": ""
       }
      ]
     },
@@ -335,6 +389,54 @@
        "q": "What is covert prestige?",
        "a": "Hidden status given to non-standard language within a group, because it signals belonging or toughness, even if wider society judges it negatively.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A compliment mainly attends to the listener’s…",
+       "o": [
+        "positive face",
+        "negative face",
+        "overt prestige",
+        "register"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How does shared slang both include and exclude?",
+       "a": "It builds solidarity among those who know it and marks outsiders who do not.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Non-standard forms valued within a group have…",
+       "o": [
+        "covert prestige",
+        "overt prestige",
+        "no prestige",
+        "negative face"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why might friends insult each other affectionately?",
+       "a": "Mock insults show closeness: only people in a secure relationship can joke this way without causing offence.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Any chance you could…” is a request using…",
+       "o": [
+        "negative politeness",
+        "a dysphemism",
+        "doublespeak",
+        "jargon"
+       ],
+       "a": 0,
+       "e": "It is indirect and hedged, limiting the imposition."
       }
      ],
      "notes": [
@@ -471,6 +573,54 @@
        "q": "What is jargon?",
        "a": "Specialised vocabulary of a profession or field, understood by insiders.",
        "e": "It can show expertise or exclude outsiders."
+      },
+      {
+       "t": "m",
+       "q": "“The decision was made” contains…",
+       "o": [
+        "nominalisation and an agentless passive",
+        "a contraction",
+        "slang",
+        "ellipsis"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Rewrite “We fixed the problem” formally, using nominalisation.",
+       "a": "For example: “The resolution of the problem has been achieved.”",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“We will listen, we will learn, we will act” uses…",
+       "o": [
+        "parallelism",
+        "clefting",
+        "a tag question",
+        "elision"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the effect of a cleft sentence such as “It was the council that approved the plan”?",
+       "a": "It highlights one element (the council) by placing it in focus.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Latinate words such as “commence” and “terminate” usually…",
+       "o": [
+        "raise the register",
+        "lower the register",
+        "mark an ethnolect",
+        "show non-fluency"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -599,6 +749,54 @@
        "t": "c",
        "q": "How can formal language promote social harmony?",
        "a": "Polite, neutral, inclusive wording avoids offence and shows respect, helping people with different views cooperate.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Collateral damage” for civilian deaths is an example of…",
+       "o": [
+        "doublespeak",
+        "slang",
+        "a dysphemism",
+        "a minimal response"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give one way formal language can exclude people.",
+       "a": "Dense jargon or complex legal language can leave people unable to understand their rights or obligations.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Passed away” is a…",
+       "o": [
+        "euphemism",
+        "dysphemism",
+        "doublespeak",
+        "jargon term"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the plain English movement trying to achieve?",
+       "a": "Public documents that their audience can understand on first reading: familiar words, short sentences, active voice and clear structure.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Inclusive language such as “chairperson” mainly reflects…",
+       "o": [
+        "changing social values about gender",
+        "laziness",
+        "covert prestige",
+        "phonological change"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -741,6 +939,54 @@
        ],
        "a": 1,
        "e": "The r after a vowel is not pronounced (car)."
+      },
+      {
+       "t": "m",
+       "q": "“Arvo” and “servo” show which feature of Australian English?",
+       "o": [
+        "Shortening with the -o suffix",
+        "Borrowing from French",
+        "The high rising terminal",
+        "Nominalisation"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What was the cultural cringe?",
+       "a": "The belief that Australian English was inferior to British English.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which accent type is most common in Australia today?",
+       "o": [
+        "General",
+        "Broad",
+        "Cultivated",
+        "Received Pronunciation"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the dictionary that codifies Australian English.",
+       "a": "The Macquarie Dictionary.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Rising intonation at the end of a statement is called…",
+       "o": [
+        "the high rising terminal",
+        "a tag question",
+        "assimilation",
+        "end focus"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -881,6 +1127,54 @@
        "q": "How can slang exclude people?",
        "a": "Only in-group members understand it, so outsiders are marked as not belonging.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Speaking more like the person you are talking to is called…",
+       "o": [
+        "convergence",
+        "divergence",
+        "code-switching",
+        "fossilisation"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between an idiolect and a sociolect?",
+       "a": "An idiolect is one person’s individual way of speaking; a sociolect is shared by a social group.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "An ethnolect is shaped by…",
+       "o": [
+        "a community’s heritage language and culture",
+        "a profession",
+        "a person’s age only",
+        "a dictionary"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why might a teenager avoid the standard variety with friends?",
+       "a": "Covert prestige: non-standard forms signal group loyalty and authenticity, while sounding “posh” could cost status.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Judging a speaker as less intelligent because of their accent is…",
+       "o": [
+        "linguistic prejudice",
+        "descriptivism",
+        "style-shifting",
+        "convergence"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -1019,6 +1313,48 @@
         "A historical date"
        ],
        "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What should the introduction of an analytical commentary cover?",
+       "a": "Context (mode, field, setting, participants and their relationship), register, function and social purpose.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In the essay, the best evidence is…",
+       "o": [
+        "contemporary Australian language examples analysed with metalanguage",
+        "a dictionary definition",
+        "a linguist’s quote alone",
+        "a personal opinion"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What five details should you record for each essay example?",
+       "a": "The exact wording, the speaker or writer and source, the date, the relevant metalanguage, and the idea it supports.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A two-mark short answer usually needs…",
+       "o": [
+        "a named feature with a quoted example and one explanation",
+        "a full paragraph with three features",
+        "only the feature name",
+        "a definition"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is “feature-spotting”, and why does it lose marks?",
+       "a": "Listing features without explaining what each does in the text; the marks are for explaining effect and purpose.",
        "e": ""
       }
      ],
@@ -1256,6 +1592,36 @@
        ],
        "a": 1,
        "e": "The interrogative fragment mimics conversation and leads to the solution."
+      },
+      {
+       "t": "m",
+       "q": "An analytical commentary is best organised…",
+       "o": [
+        "by social purpose or by subsystem",
+        "line by line",
+        "by length of quote",
+        "alphabetically"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Rewrite this weak sentence as analysis: “The text uses informal language.”",
+       "a": "For example: “The colloquial idiom ‘give us a buzz’ (line 6) invites contact in a friendly, neighbourly way, reducing the social distance between the council and residents.”",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Every analytical point should include…",
+       "o": [
+        "metalanguage, a quote with a line number, the effect and a link to purpose",
+        "a definition from a dictionary",
+        "a personal reaction",
+        "a summary of the text"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     }

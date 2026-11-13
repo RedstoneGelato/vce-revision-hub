@@ -64,6 +64,35 @@
        "q": "Why do elements produce line emission spectra?",
        "a": "Electrons absorb energy and jump to higher energy levels. When they fall back they emit light with exact energies (the differences between levels), so only certain wavelengths appear.",
        "e": "Each element has its own set of energy levels, so its spectrum is a fingerprint (flame tests)."
+      },
+      {
+       "t": "m",
+       "q": "How many electrons does a Mg²⁺ ion have? (Z = 12)",
+       "o": [
+        "10",
+        "12",
+        "14",
+        "2"
+       ],
+       "a": 0,
+       "e": "12 protons; two electrons lost."
+      },
+      {
+       "t": "c",
+       "q": "Write the electron configuration of sulfur (Z = 16).",
+       "a": "1s² 2s² 2p⁶ 3s² 3p⁴",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Copper is 69.17% copper-63 (relative isotopic mass 62.93) and 30.83% copper-65 (64.93). Calculate its relative atomic mass.",
+       "a": "63.55",
+       "e": "",
+       "s": [
+        "\\(A_r = \\dfrac{62.93 \\times 69.17 + 64.93 \\times 30.83}{100}\\).",
+        "\\(= \\dfrac{4352.87 + 2001.79}{100} \\approx 63.55\\).",
+        "Check: closer to 63 because copper-63 is more abundant."
+       ]
       }
      ],
      "notes": [
@@ -202,6 +231,42 @@
        ],
        "a": 1,
        "e": "Valence electrons are further from the nucleus, so bonding electrons are attracted less."
+      },
+      {
+       "t": "m",
+       "q": "Which of K, Na, Mg and Cl has the largest atomic radius?",
+       "o": [
+        "K",
+        "Na",
+        "Mg",
+        "Cl"
+       ],
+       "a": 0,
+       "e": "K has the most occupied shells."
+      },
+      {
+       "t": "c",
+       "q": "Explain why fluorine is more electronegative than chlorine.",
+       "a": "Both have a core charge of +7, but fluorine’s valence shell is closer to the nucleus, so it attracts bonding electrons more strongly.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which has the highest first ionisation energy?",
+       "o": [
+        "Ne",
+        "Na",
+        "Mg",
+        "Ar"
+       ],
+       "a": 0,
+       "e": "Highest core charge in the earliest period listed."
+      },
+      {
+       "t": "c",
+       "q": "What is the core charge of magnesium (2, 8, 2)?",
+       "a": "+2",
+       "e": "12 protons − 10 inner-shell electrons."
       }
      ],
      "notes": [
@@ -351,6 +416,36 @@
        "q": "When water boils, what is broken: covalent bonds or hydrogen bonds?",
        "a": "Hydrogen bonds between molecules. The O–H covalent bonds inside each molecule stay intact.",
        "e": "A very common exam trap."
+      },
+      {
+       "t": "m",
+       "q": "What is the shape of a PH₃ molecule?",
+       "o": [
+        "Pyramidal",
+        "Trigonal planar",
+        "Tetrahedral",
+        "Linear"
+       ],
+       "a": 0,
+       "e": "Three bonding pairs and one lone pair."
+      },
+      {
+       "t": "c",
+       "q": "CCl₄ has polar C–Cl bonds. Is the molecule polar? Explain.",
+       "a": "No. It is tetrahedral and symmetrical, so the bond dipoles cancel.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The strongest intermolecular force between NH₃ molecules is…",
+       "o": [
+        "hydrogen bonding",
+        "dispersion forces only",
+        "ionic bonding",
+        "covalent bonding"
+       ],
+       "a": 0,
+       "e": "H is bonded to N."
       }
      ],
      "notes": [
@@ -483,6 +578,54 @@
        ],
        "a": 1,
        "e": "Cations stay fixed; the electrons carry charge."
+      },
+      {
+       "t": "m",
+       "q": "Which property of metals is explained by delocalised electrons that are free to move?",
+       "o": [
+        "Electrical conductivity",
+        "High density",
+        "Brittleness",
+        "Colour of ions"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why metals are malleable.",
+       "a": "Layers of cations can slide past each other while the delocalised electrons keep attracting them, so the metal changes shape without breaking.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Quenching a hot metal (cooling it quickly) makes it…",
+       "o": [
+        "harder but more brittle",
+        "softer and more ductile",
+        "a better conductor",
+        "less dense"
+       ],
+       "a": 0,
+       "e": "Small crystals form."
+      },
+      {
+       "t": "c",
+       "q": "Write the balanced equation for potassium reacting with water.",
+       "a": "2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Alloys are usually harder than the pure metal because…",
+       "o": [
+        "different-sized atoms disrupt the layers, so they slide less easily",
+        "alloys have no delocalised electrons",
+        "alloys are ionic",
+        "alloys have stronger covalent bonds"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -628,6 +771,36 @@
        ],
        "a": 2,
        "e": "Fe³⁺ and O²⁻: swap and simplify, 2 : 3."
+      },
+      {
+       "t": "m",
+       "q": "The formula of magnesium nitride is…",
+       "o": [
+        "Mg₃N₂",
+        "MgN",
+        "Mg₂N₃",
+        "MgN₂"
+       ],
+       "a": 0,
+       "e": "Mg²⁺ and N³⁻: 3 × (+2) balances 2 × (−3)."
+      },
+      {
+       "t": "c",
+       "q": "Barium chloride and sodium sulfate solutions are mixed. Write the ionic equation for the reaction.",
+       "a": "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)",
+       "e": "Na⁺ and Cl⁻ are spectator ions."
+      },
+      {
+       "t": "m",
+       "q": "Ionic compounds conduct electricity when…",
+       "o": [
+        "molten or dissolved in water",
+        "solid",
+        "cooled",
+        "powdered"
+       ],
+       "a": 0,
+       "e": "The ions must be free to move."
       }
      ],
      "notes": [
@@ -841,6 +1014,29 @@
        ],
        "a": 1,
        "e": "One compound breaks into two simpler substances."
+      },
+      {
+       "t": "c",
+       "q": "Balance: Al + O₂ → Al₂O₃.",
+       "a": "4Al + 3O₂ → 2Al₂O₃",
+       "e": "",
+       "s": [
+        "Oxygen: 2 on the left and 3 on the right; the lowest common multiple is 6.",
+        "So 3O₂ and 2Al₂O₃.",
+        "Then 4 aluminium atoms are needed: 4Al."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The state symbol for a substance dissolved in water is…",
+       "o": [
+        "(aq)",
+        "(l)",
+        "(s)",
+        "(g)"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     },
@@ -885,6 +1081,58 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A spot moves 2.4 cm and the solvent front 6.0 cm from the origin. Calculate Rf.",
+       "a": "0.40",
+       "e": "",
+       "s": [
+        "\\(R_f = \\dfrac{\\text{distance moved by spot}}{\\text{distance moved by solvent}}\\).",
+        "\\(\\dfrac{2.4}{6.0} = 0.40\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A component with a higher Rf is…",
+       "o": [
+        "more strongly attracted to the mobile phase",
+        "more strongly adsorbed to the stationary phase",
+        "always heavier",
+        "insoluble"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The origin line is drawn in pencil because…",
+       "o": [
+        "graphite does not dissolve in the solvent",
+        "it is easier to erase",
+        "ink is too dark",
+        "pencil is more accurate"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why sodium chloride dissolves in water.",
+       "a": "The partial charges on water molecules attract the Na⁺ and Cl⁻ ions (ion–dipole attraction) strongly enough to pull them out of the lattice, and the ions become surrounded by water molecules.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which substance is most soluble in hexane?",
+       "o": [
+        "Iodine, I₂",
+        "Sodium chloride",
+        "Glucose",
+        "Ethanoic acid"
+       ],
+       "a": 0,
+       "e": "Non-polar dissolves in non-polar."
       }
      ],
      "notes": [
@@ -1022,6 +1270,37 @@
        "q": "A compound has empirical formula \\(\\mathrm{CH_2O}\\) and \\(M = 180\\ \\mathrm{g\\ mol^{-1}}\\). What is its molecular formula?",
        "a": "\\(M(\\mathrm{CH_2O}) = 30.0\\); \\(\\dfrac{180}{30.0} = 6\\), so \\(\\mathrm{C_6H_{12}O_6}\\).",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How many moles are in 11 g of CO₂ (M = 44.0 g mol⁻¹)?",
+       "a": "0.25 mol",
+       "e": "",
+       "s": [
+        "\\(n = \\dfrac{m}{M} = \\dfrac{11}{44.0}\\).",
+        "= 0.25 mol."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "How many atoms in total are in 0.50 mol of water, H₂O?",
+       "a": "\\(9.0 \\times 10^{23}\\)",
+       "e": "",
+       "s": [
+        "Molecules: \\(0.50 \\times 6.02 \\times 10^{23} = 3.01 \\times 10^{23}\\).",
+        "Each molecule has 3 atoms: \\(3 \\times 3.01 \\times 10^{23} \\approx 9.0 \\times 10^{23}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A compound is 75% carbon and 25% hydrogen by mass. Find its empirical formula.",
+       "a": "CH₄",
+       "e": "",
+       "s": [
+        "In 100 g: 75 g C and 25 g H.",
+        "Moles: C = 75 ÷ 12.0 = 6.25; H = 25 ÷ 1.0 = 25.",
+        "Divide by the smallest: C 1, H 4. Empirical formula CH₄."
+       ]
       }
      ],
      "notes": [
@@ -1164,6 +1443,42 @@
        ],
        "a": 1,
        "e": "Both are C₄H₁₀."
+      },
+      {
+       "t": "m",
+       "q": "CH₃CH₂CH₂CH₃ is named…",
+       "o": [
+        "butane",
+        "propane",
+        "butene",
+        "pentane"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name CH₃CH=CHCH₃.",
+       "a": "But-2-ene",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which observation shows a compound is an alkene?",
+       "o": [
+        "It quickly decolourises bromine water",
+        "It burns",
+        "It dissolves in water",
+        "It turns litmus red"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the two structural isomers of C₃H₈O that are alcohols.",
+       "a": "Propan-1-ol and propan-2-ol",
+       "e": ""
       }
      ],
      "notes": [
@@ -1307,6 +1622,42 @@
        ],
        "a": 2,
        "e": "Cross-links stop chains moving apart."
+      },
+      {
+       "t": "m",
+       "q": "The monomer of polypropene is…",
+       "o": [
+        "propene",
+        "propane",
+        "ethene",
+        "propanol"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between a thermoplastic and a thermosetting polymer?",
+       "a": "Thermoplastics have no cross-links and soften on heating, so they can be remoulded. Thermosetting polymers have covalent cross-links and char instead of melting.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "When a condensation polymer forms, a small molecule is released. It is usually…",
+       "o": [
+        "water",
+        "oxygen",
+        "carbon dioxide",
+        "hydrogen"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is low-density polyethene softer than high-density polyethene?",
+       "a": "Its chains have many branches, so they cannot pack closely; the total dispersion forces between chains are weaker.",
+       "e": ""
       }
      ],
      "notes": [
@@ -1506,6 +1857,36 @@
        ],
        "a": 2,
        "e": "Peer review means other experts have checked the methods and conclusions."
+      },
+      {
+       "t": "m",
+       "q": "Which type of reaction has an atom economy of 100%?",
+       "o": [
+        "Addition",
+        "Substitution",
+        "Condensation",
+        "Combustion"
+       ],
+       "a": 0,
+       "e": "All reactant atoms end up in the single product."
+      },
+      {
+       "t": "c",
+       "q": "Give one disadvantage of bioplastics.",
+       "a": "For example: growing the feedstock uses farmland and water; many need industrial composting to break down.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which is a renewable feedstock?",
+       "o": [
+        "Starch from corn",
+        "Crude oil",
+        "Natural gas",
+        "Coal"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     }
@@ -1561,6 +1942,44 @@
        ],
        "a": 1,
        "e": "Energy goes into breaking hydrogen bonds, not raising temperature."
+      },
+      {
+       "t": "c",
+       "q": "How much energy is needed to heat 150 g of water from 20 °C to 45 °C?",
+       "a": "15.7 kJ",
+       "e": "",
+       "s": [
+        "\\(q = mc\\Delta T = 150 \\times 4.18 \\times 25\\).",
+        "= 15 675 J ≈ 15.7 kJ."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Ice floats on water because…",
+       "o": [
+        "hydrogen bonding holds ice molecules in an open structure, making it less dense",
+        "ice contains air",
+        "ice is a different substance",
+        "water is less dense than ice"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain how water’s high specific heat capacity moderates the climate near the coast.",
+       "a": "Oceans absorb and release large amounts of energy with only small temperature changes, so nearby land has smaller temperature swings.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How much energy is needed to vaporise 36 g of water at 100 °C? (Latent heat 40.7 kJ mol⁻¹)",
+       "a": "81.4 kJ",
+       "e": "",
+       "s": [
+        "n = 36 ÷ 18.0 = 2.0 mol.",
+        "q = 2.0 × 40.7 = 81.4 kJ."
+       ]
       }
      ],
      "notes": [
@@ -1703,6 +2122,24 @@
        ],
        "a": 1,
        "e": "It can donate (→ CO₃²⁻) or accept (→ H₂CO₃) a proton."
+      },
+      {
+       "t": "c",
+       "q": "What is the pH of 0.001 M HCl?",
+       "a": "3",
+       "e": "\\(-\\log_{10}(0.001) = 3\\)."
+      },
+      {
+       "t": "c",
+       "q": "What is the conjugate base of H₂PO₄⁻?",
+       "a": "HPO₄²⁻",
+       "e": "Remove one H⁺."
+      },
+      {
+       "t": "c",
+       "q": "Find [H₃O⁺] in a solution with pH 4.5.",
+       "a": "\\(3.2 \\times 10^{-5}\\) M",
+       "e": "\\(10^{-4.5}\\)."
       }
      ],
      "notes": [
@@ -1854,6 +2291,48 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The oxidation number of sulfur in SO₄²⁻ is…",
+       "o": [
+        "+6",
+        "+4",
+        "−2",
+        "+2"
+       ],
+       "a": 0,
+       "e": "4 × (−2) + S = −2."
+      },
+      {
+       "t": "c",
+       "q": "Write the half-equation for the reduction of Fe³⁺ to Fe²⁺.",
+       "a": "Fe³⁺(aq) + e⁻ → Fe²⁺(aq)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s), the reducing agent is…",
+       "o": [
+        "Zn",
+        "Cu²⁺",
+        "Zn²⁺",
+        "Cu"
+       ],
+       "a": 0,
+       "e": "Zinc is oxidised, so it is the reducing agent."
+      },
+      {
+       "t": "c",
+       "q": "Balance the half-equation for Cr₂O₇²⁻ → Cr³⁺ in acidic solution.",
+       "a": "Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O",
+       "e": "",
+       "s": [
+        "Balance Cr: 2Cr³⁺.",
+        "Balance O with water: 7H₂O on the right.",
+        "Balance H with H⁺: 14H⁺ on the left.",
+        "Charge: left +12, right +6, so add 6e⁻ to the left."
+       ]
       }
      ],
      "notes": [
@@ -1985,6 +2464,50 @@
        "q": "How many moles of NaCl are in \\(250\\ \\mathrm{mL}\\) of \\(0.40\\ \\mathrm{M}\\) solution?",
        "a": "\\(n = cV = 0.40 \\times 0.250 = 0.10\\ \\mathrm{mol}\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "0.20 mol of solute is dissolved to make 500 mL of solution. Find the concentration.",
+       "a": "0.40 M",
+       "e": "0.20 ÷ 0.500 = 0.40 M."
+      },
+      {
+       "t": "c",
+       "q": "What mass of NaCl (M = 58.5) is needed for 250 mL of 0.20 M solution?",
+       "a": "2.93 g",
+       "e": "",
+       "s": [
+        "n = cV = 0.20 × 0.250 = 0.050 mol.",
+        "m = nM = 0.050 × 58.5 = 2.93 g."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "50 mL of 2.0 M acid is diluted to 0.50 M. What is the final volume?",
+       "a": "200 mL",
+       "e": "",
+       "s": [
+        "\\(c_1V_1 = c_2V_2\\).",
+        "\\(V_2 = \\dfrac{2.0 \\times 50}{0.50} = 200\\) mL."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "3 mg of lead is found in 2 L of water. Its concentration is…",
+       "o": [
+        "1.5 ppm",
+        "6 ppm",
+        "3 ppm",
+        "0.67 ppm"
+       ],
+       "a": 0,
+       "e": "3 mg ÷ 2 L = 1.5 mg L⁻¹."
+      },
+      {
+       "t": "c",
+       "q": "What is the concentration of chloride ions in 0.30 M AlCl₃?",
+       "a": "0.90 M",
+       "e": "Each AlCl₃ gives three Cl⁻."
       }
      ],
      "notes": [
@@ -2128,6 +2651,45 @@
        ],
        "a": 1,
        "e": "0.25 mol CH₄ needs 0.50 mol O₂ but only 0.3125 mol is present."
+      },
+      {
+       "t": "c",
+       "q": "A 20.00 mL aliquot of HCl needs a titre of 22.40 mL of 0.100 M NaOH. Find the HCl concentration.",
+       "a": "0.112 M",
+       "e": "",
+       "s": [
+        "n(NaOH) = 0.100 × 0.02240 = 2.240 × 10⁻³ mol.",
+        "HCl + NaOH: 1 : 1, so n(HCl) = 2.240 × 10⁻³ mol.",
+        "c(HCl) = 2.240 × 10⁻³ ÷ 0.02000 = 0.112 M."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Concordant titres agree within…",
+       "o": [
+        "0.10 mL",
+        "1 mL",
+        "0.5 mL",
+        "2 mL"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A burette is rinsed with water before being filled with standard NaOH. How does this affect the calculated concentration of the acid in the flask?",
+       "a": "It is too high: the NaOH is diluted, so a larger titre is needed, which suggests more acid than is really present.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "2 mol of H₂ reacts with 2 mol of O₂ (2H₂ + O₂ → 2H₂O). Which reactant is limiting?",
+       "a": "H₂",
+       "e": "",
+       "s": [
+        "2 mol of H₂ needs only 1 mol of O₂.",
+        "2 mol of O₂ is available, so O₂ is in excess and H₂ is limiting."
+       ]
       }
      ],
      "notes": [
@@ -2268,6 +2830,40 @@
        "q": "Use \\(pV = nRT\\) to find \\(V\\) for \\(0.100\\ \\mathrm{mol}\\) at \\(25\\,{}^\\circ\\mathrm{C}\\) and \\(100\\ \\mathrm{kPa}\\).",
        "a": "\\(V = \\dfrac{nRT}{p} = \\dfrac{0.100 \\times 8.31 \\times 298}{100} = 2.48\\ \\mathrm{L}\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What volume does 0.50 mol of gas occupy at SLC?",
+       "a": "12.4 L",
+       "e": "0.50 × 24.8."
+      },
+      {
+       "t": "c",
+       "q": "Convert 25 °C to kelvin.",
+       "a": "298 K",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the volume of 2.0 mol of gas at 300 K and 200 kPa.",
+       "a": "24.9 L",
+       "e": "",
+       "s": [
+        "\\(V = \\dfrac{nRT}{p} = \\dfrac{2.0 \\times 8.31 \\times 300}{200}\\).",
+        "≈ 24.9 L."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which is a greenhouse gas?",
+       "o": [
+        "Methane, CH₄",
+        "Nitrogen, N₂",
+        "Oxygen, O₂",
+        "Argon, Ar"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -2404,6 +3000,53 @@
        ],
        "a": 0,
        "e": "The extra mass is water."
+      },
+      {
+       "t": "c",
+       "q": "A 1.000 g sample gives 1.435 g of AgCl (M = 143.4) when excess AgNO₃ is added. Find the percentage of chloride (35.45 g mol⁻¹) in the sample.",
+       "a": "35.5%",
+       "e": "",
+       "s": [
+        "n(AgCl) = 1.435 ÷ 143.4 = 0.01001 mol = n(Cl⁻).",
+        "m(Cl⁻) = 0.01001 × 35.45 = 0.3547 g.",
+        "Percentage = 0.3547 ÷ 1.000 × 100 ≈ 35.5%."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "If a precipitate is not dried completely, the calculated result is…",
+       "o": [
+        "too high",
+        "too low",
+        "unaffected",
+        "zero"
+       ],
+       "a": 0,
+       "e": "Water adds to the mass."
+      },
+      {
+       "t": "c",
+       "q": "What does electrical conductivity tell you about a water sample, and what does it not tell you?",
+       "a": "It estimates the total concentration of dissolved ions, but it does not identify which ions are present.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A sample’s absorbance is higher than the most concentrated standard. You should…",
+       "o": [
+        "dilute the sample and measure again",
+        "extend the calibration line by eye",
+        "report the highest standard",
+        "ignore it"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is a blank used in colorimetry?",
+       "a": "To set the instrument to zero with the solvent alone, so that only the absorbance of the substance being measured is recorded.",
+       "e": ""
       }
      ],
      "notes": [
@@ -2625,6 +3268,24 @@
        ],
        "a": 1,
        "e": "12.3 has three significant figures, the fewest in the data."
+      },
+      {
+       "t": "m",
+       "q": "Which is a well-written hypothesis?",
+       "o": [
+        "If the temperature increases, then the reaction rate will increase because more collisions will have enough energy",
+        "Temperature is interesting",
+        "Reactions happen",
+        "I will heat the acid"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A student’s titres are 18.20, 18.22 and 18.21 mL, but the true value is 20.00 mL. Describe the results.",
+       "a": "Precise (close together) but not accurate. A systematic error is likely.",
+       "e": ""
       }
      ]
     }

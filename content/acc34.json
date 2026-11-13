@@ -153,6 +153,24 @@
        ],
        "a": 1,
        "e": "Consistent methods allow results to be compared between periods."
+      },
+      {
+       "t": "m",
+       "q": "A liability is…",
+       "o": [
+        "a present obligation of the entity to transfer an economic resource as a result of past events",
+        "anything the business owns",
+        "an expense not yet paid in cash",
+        "the owner’s claim on assets"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give an example of information that is verifiable.",
+       "a": "An amount supported by a source document, such as the purchase price on a supplier’s tax invoice.",
+       "e": ""
       }
      ]
     },
@@ -203,6 +221,46 @@
         "no effect"
        ],
        "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Record a credit purchase of inventory for $2,200 including GST as a double entry.",
+       "a": "Dr Inventory 2,000; Dr GST Clearing 200; Cr Accounts Payable 2,200",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "An increase in an expense is recorded on the…",
+       "o": [
+        "debit side",
+        "credit side",
+        "either side",
+        "Balance Sheet"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Record a cash sale of $1,100 including GST, with a cost of $600, as double entries.",
+       "a": "Dr Bank 1,100; Cr Sales 1,000; Cr GST Clearing 100. Dr Cost of Sales 600; Cr Inventory 600",
+       "e": "",
+       "s": [
+        "Revenue side: GST = 1,100 ÷ 11 = 100; Sales = 1,000; Bank receives 1,100.",
+        "Inventory side: the cost of the goods sold moves from Inventory (asset) to Cost of Sales (expense)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which error will not be revealed by the Trial Balance?",
+       "o": [
+        "A transaction omitted entirely",
+        "A debit recorded without a credit",
+        "An addition error in one account",
+        "A debit recorded as two different amounts"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -347,6 +405,53 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "10 units cost $30 each. They can now be sold for $28 each with selling costs of $3 each. Find the write-down.",
+       "a": "$50",
+       "e": "",
+       "s": [
+        "NRV = 28 − 3 = $25 per unit.",
+        "NRV is below cost, so write down by 30 − 25 = $5 per unit.",
+        "10 × 5 = $50."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "100 units are bought at $12 each, with $150 freight for this delivery only. Find the unit cost for the inventory card.",
+       "a": "$13.50",
+       "e": "(1,200 + 150) ÷ 100."
+      },
+      {
+       "t": "m",
+       "q": "A period cost is…",
+       "o": [
+        "expensed in the period it is incurred",
+        "added to the unit cost of inventory",
+        "a liability",
+        "recorded as drawings"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A customer owing $1,000 pays early and takes a 2% settlement discount. Record the receipt.",
+       "a": "Dr Bank 980; Dr Discount Expense 20; Cr Accounts Receivable 1,000",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Reporting inventory at the lower of cost and NRV supports…",
+       "o": [
+        "faithful representation",
+        "timeliness",
+        "the period assumption",
+        "understandability"
+       ],
+       "a": 0,
+       "e": "Otherwise assets and profit would be overstated."
       }
      ],
      "notes": [
@@ -479,6 +584,53 @@
        "t": "c",
        "q": "Net Profit is $10 000 but Accounts Receivable rose by $3 000. Effect on operating cash?",
        "a": "Cash from operations is $3 000 lower than profit, because some sales have not been collected.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Net Sales $80,000; Cost of Sales $44,000; Freight In (period cost) $1,000. Find Gross Profit.",
+       "a": "$35,000",
+       "e": "80,000 − 45,000."
+      },
+      {
+       "t": "m",
+       "q": "Depreciation appears in the Cash Flow Statement…",
+       "o": [
+        "not at all, because it is not a cash flow",
+        "under operating activities",
+        "under investing activities",
+        "under financing activities"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Net Profit is $15,000, depreciation is $3,000 and Accounts Receivable rose by $4,000 (no other changes). Estimate the net cash flow from operating activities.",
+       "a": "$14,000",
+       "e": "",
+       "s": [
+        "Depreciation reduced profit without using cash: add 3,000.",
+        "The rise in AR is revenue not yet collected: subtract 4,000.",
+        "15,000 + 3,000 − 4,000 = $14,000."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Repayment of loan principal is reported as…",
+       "o": [
+        "a financing outflow",
+        "an operating outflow",
+        "an expense",
+        "an investing outflow"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give one reason a profitable business can run short of cash.",
+       "a": "For example: sales on credit not yet collected, cash tied up in inventory, loan repayments or large drawings.",
        "e": ""
       }
      ],
@@ -629,6 +781,41 @@
        "q": "A debtor owing $400 goes bankrupt. Record the write-off.",
        "a": "Dr Bad Debts 400; Cr Accounts Receivable 400",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Wages of $1,200 are owing at balance day. Record the adjustment.",
+       "a": "Dr Wages 1,200; Cr Accrued Wages 1,200",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Rent of $4,800 for 12 months was paid on 1 April and recorded as Prepaid Rent. Balance day is 30 June. Record the adjustment.",
+       "a": "Dr Rent Expense 1,200; Cr Prepaid Rent 1,200",
+       "e": "",
+       "s": [
+        "Three months (April to June) have been used.",
+        "4,800 × 3/12 = $1,200 consumed.",
+        "Prepaid Rent of $3,600 remains as a current asset."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Revenue received in advance is reported as…",
+       "o": [
+        "a current liability",
+        "revenue",
+        "a current asset",
+        "owner’s equity"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A $10,000 term deposit earns 6% per annum. Two months of interest are earned but not received at balance day. Record the adjustment.",
+       "a": "Dr Accrued Interest Revenue 100; Cr Interest Revenue 100",
+       "e": "10,000 × 6% × 2/12 = 100."
       }
      ],
      "notes": [
@@ -867,6 +1054,29 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A vehicle cost $18,000, has accumulated depreciation of $12,000 and is sold for $5,000 (excluding GST). Find the profit or loss on disposal.",
+       "a": "Loss of $1,000",
+       "e": "",
+       "s": [
+        "Carrying value = 18,000 − 12,000 = $6,000.",
+        "Proceeds $5,000 are less than the carrying value.",
+        "Loss on disposal = $1,000."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "GST paid when buying a non-current asset is…",
+       "o": [
+        "claimed back, not part of the asset’s cost",
+        "added to the cost",
+        "an expense",
+        "depreciated"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     },
@@ -911,6 +1121,48 @@
        ],
        "a": 2,
        "e": "Liabilities are carried forward."
+      },
+      {
+       "t": "c",
+       "q": "Write the closing entry for Sales with a balance of $60,000.",
+       "a": "Dr Sales 60,000; Cr Profit and Loss Summary 60,000",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Why is Drawings not closed to the Profit and Loss Summary?",
+       "o": [
+        "It is not an expense, so it does not affect profit",
+        "It is an asset",
+        "It is closed to Bank",
+        "It is never closed"
+       ],
+       "a": 0,
+       "e": "Drawings reduce capital directly."
+      },
+      {
+       "t": "c",
+       "q": "The Profit and Loss Summary has credits of $80,000 and debits of $92,000. What is the result and the transfer entry?",
+       "a": "Net loss $12,000; Dr Capital 12,000, Cr Profit and Loss Summary 12,000",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which accounts are balanced and carried forward, not closed?",
+       "o": [
+        "Asset accounts",
+        "Revenue accounts",
+        "Expense accounts",
+        "Drawings"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Opening capital $30,000; Net Profit $8,000; drawings $5,000. Find closing capital.",
+       "a": "$33,000",
+       "e": ""
       }
      ],
      "notes": [
@@ -1039,6 +1291,52 @@
        "t": "c",
        "q": "Budgeted sales $80 000, actual $74 000. State the variance.",
        "a": "$6 000 Unfavourable",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Opening Accounts Receivable $6,600; budgeted credit sales $44,000 including GST; expected closing AR $8,800. Find budgeted cash receipts from AR.",
+       "a": "$41,800",
+       "e": "",
+       "s": [
+        "Opening + credit sales − closing = cash collected.",
+        "6,600 + 44,000 − 8,800 = $41,800."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Depreciation appears in the budgeted Cash Flow Statement…",
+       "o": [
+        "not at all",
+        "as an operating outflow",
+        "as an investing outflow",
+        "as a financing outflow"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Opening inventory $12,000; budgeted Cost of Sales $40,000; desired closing inventory $15,000. Find budgeted purchases.",
+       "a": "$43,000",
+       "e": "40,000 + 15,000 − 12,000."
+      },
+      {
+       "t": "c",
+       "q": "Budgeted sales are $30,000 and actual sales are $33,000. State the variance.",
+       "a": "$3,000 favourable",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The budgeted Income Statement excludes…",
+       "o": [
+        "GST",
+        "depreciation",
+        "credit sales",
+        "Cost of Sales"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -1174,6 +1472,48 @@
         "low gearing"
        ],
        "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Net Profit Margin fell while Gross Profit Margin stayed the same. What is the most likely cause?",
+       "a": "Other expenses rose faster than sales (or other revenue fell); the mark-up did not change.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Net Profit is $18,000 and average capital is $120,000. Find the Return on Owner’s Investment.",
+       "a": "15%",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which strategy improves liquidity most directly?",
+       "o": [
+        "Collecting Accounts Receivable sooner",
+        "Buying a new vehicle",
+        "Increasing drawings",
+        "Paying suppliers early"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Net Sales are $300,000 and average total assets $150,000. Find the Asset Turnover.",
+       "a": "2 times",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Inventory Turnover rose from 30 days to 45 days. This means inventory is…",
+       "o": [
+        "selling more slowly",
+        "selling faster",
+        "cheaper",
+        "more profitable"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -1389,6 +1729,36 @@
         "a full Income Statement"
        ],
        "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which report is headed “as at” a date?",
+       "o": [
+        "Balance Sheet",
+        "Income Statement",
+        "Cash Flow Statement",
+        "Budgeted Income Statement"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Depreciation of $2,000 was not recorded. What is the effect on Net Profit?",
+       "a": "Overstated by $2,000.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "An “evaluate” question requires…",
+       "o": [
+        "a judgment based on weighing the evidence",
+        "a definition only",
+        "a calculation only",
+        "a list of points"
+       ],
+       "a": 0,
        "e": ""
       }
      ]

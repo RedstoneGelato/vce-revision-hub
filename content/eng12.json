@@ -51,6 +51,42 @@
        "q": "Define register.",
        "a": "The variety of language used for a particular situation, placed on a scale from formal to informal.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Please switch off your phones” mainly serves which function?",
+       "o": [
+        "Conative (directive)",
+        "Phatic",
+        "Poetic",
+        "Metalinguistic"
+       ],
+       "a": 0,
+       "e": "It aims to get the audience to act."
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between the field and the mode of a text?",
+       "a": "Field is the subject matter; mode is the channel (spoken, written, signed, digital).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“What does ‘ubiquitous’ mean?” is an example of the…",
+       "o": [
+        "metalinguistic function",
+        "phatic function",
+        "expressive function",
+        "poetic function"
+       ],
+       "a": 0,
+       "e": "It is language about language."
+      },
+      {
+       "t": "c",
+       "q": "Two friends text each other, then one speaks at a job interview. Which contextual factors change, and what happens to the register?",
+       "a": "The tenor (relationship and status) and setting change, and the purpose becomes more formal, so the register rises.",
+       "e": ""
       }
      ],
      "notes": [
@@ -198,6 +234,36 @@
        "t": "c",
        "q": "Name the three steps in analysing a language feature.",
        "a": "Identify the feature using metalanguage, give a quoted example, explain its effect or function in the context.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which subsystem deals with how words combine into phrases, clauses and sentences?",
+       "o": [
+        "Syntax",
+        "Morphology",
+        "Phonology",
+        "Semantics"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the four parts of a strong analytical sentence.",
+       "a": "The metalanguage, a quoted example with a line number, the effect, and a link to context or purpose.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which feature belongs to discourse?",
+       "o": [
+        "Cohesion through anaphoric reference",
+        "A bound morpheme",
+        "A fricative sound",
+        "A modal verb"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -447,6 +513,24 @@
        ],
        "a": 1,
        "e": "It comes before a noun and specifies it. In “I want those”, it would be a pronoun."
+      },
+      {
+       "t": "c",
+       "q": "Identify the word class of each word in “She quickly opened the heavy door.”",
+       "a": "She: pronoun; quickly: adverb; opened: verb; the: determiner; heavy: adjective; door: noun.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In “She has been working”, the main (lexical) verb is…",
+       "o": [
+        "working",
+        "has",
+        "been",
+        "She"
+       ],
+       "a": 0,
+       "e": "“has” and “been” are auxiliaries."
       }
      ]
     },
@@ -601,6 +685,24 @@
        ],
        "a": 1,
        "e": "A main clause (“I stayed home”) and a subordinate clause (“because I was tired”)."
+      },
+      {
+       "t": "c",
+       "q": "Identify the sentence structure of “I wanted to go, but it was raining, so we stayed home.”",
+       "a": "Compound: three main clauses joined by the coordinating conjunctions “but” and “so”.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which sentence contains a subordinate clause?",
+       "o": [
+        "“Although she was tired, she finished the race.”",
+        "“She was tired.”",
+        "“She ran and she won.”",
+        "“Run!”"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     },
@@ -744,6 +846,24 @@
        ],
        "a": 2,
        "e": "Air passes through the nose."
+      },
+      {
+       "t": "m",
+       "q": "“Fish ’n’ chips” is an example of…",
+       "o": [
+        "elision",
+        "assimilation",
+        "insertion",
+        "onomatopoeia"
+       ],
+       "a": 0,
+       "e": "The sounds of “and” are dropped."
+      },
+      {
+       "t": "c",
+       "q": "Give one way speakers use stress and one way they use intonation to create meaning.",
+       "a": "Stress emphasises a word to contrast or highlight it; rising intonation can turn a statement into a question or check understanding.",
+       "e": ""
       }
      ]
     },
@@ -900,6 +1020,24 @@
        ],
        "a": 1,
        "e": "A hyponym is a specific member of a broader category."
+      },
+      {
+       "t": "c",
+       "q": "“It’s freezing in here.” What might the speaker imply, and what does the listener need to infer it?",
+       "a": "A request to close a window or turn on the heater; the listener uses shared knowledge of the situation to infer the implied meaning.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A reply that deliberately gives too little information to imply something flouts the maxim of…",
+       "o": [
+        "quantity",
+        "quality",
+        "manner",
+        "relation"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     }
@@ -955,6 +1093,42 @@
        "t": "c",
        "q": "What is the critical age hypothesis?",
        "a": "The idea that there is a window, ending around puberty, in which a first language can be fully acquired; after it, acquisition is much harder.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A child says “Daddy car”. Which stage is this?",
+       "o": [
+        "Two-word stage",
+        "Babbling",
+        "Holophrastic",
+        "Post-telegraphic"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A child calls all men “Daddy”. What is this called, and what does it show?",
+       "a": "Overextension: the child is using a word more widely than adults do while working out its meaning.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which theory stresses imitation and reinforcement?",
+       "o": [
+        "Behaviourism",
+        "Nativism",
+        "Cognitive theory",
+        "Interactionism"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give two features of child-directed speech.",
+       "a": "Any two of: higher and more varied pitch, slower pace, short simple sentences, repetition, questions, expansions of the child’s utterances.",
        "e": ""
       }
      ],
@@ -1080,6 +1254,54 @@
        "t": "c",
        "q": "What is interlanguage?",
        "a": "The in-between system a learner builds while acquiring an additional language, mixing rules from both languages and their own hypotheses.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A learner’s developing, rule-governed system is called…",
+       "o": [
+        "interlanguage",
+        "a creole",
+        "a sociolect",
+        "a pidgin"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A Spanish speaker says “I have 16 years.” Explain this feature.",
+       "a": "Negative transfer: Spanish expresses age with the verb “have” (tener), and that structure is carried into English.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Moving between two languages within one conversation is…",
+       "o": [
+        "code-switching",
+        "transfer",
+        "fossilisation",
+        "accommodation"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give two factors that affect how successfully someone learns an additional language.",
+       "a": "Any two of: age of first exposure, amount and quality of input, motivation, attitudes, similarity to the first language, literacy in the first language.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "When a non-standard feature becomes permanent in a learner’s language, it is called…",
+       "o": [
+        "fossilisation",
+        "assimilation",
+        "broadening",
+        "codification"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -1210,6 +1432,54 @@
        "t": "c",
        "q": "How did the printing press help standardise English?",
        "a": "Printers chose fixed spellings and forms so texts could be read widely, spreading one written standard (largely London English).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which period of English followed the Norman Conquest of 1066?",
+       "o": [
+        "Middle English",
+        "Old English",
+        "Early Modern English",
+        "Modern English"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why does English have word pairs such as “cow” and “beef”?",
+       "a": "After 1066, French was the language of the ruling class: the Old English word names the animal and the French-derived word the meat served at the table.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The Great Vowel Shift changed…",
+       "o": [
+        "the pronunciation of long vowels",
+        "word order",
+        "the alphabet",
+        "verb endings"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give two ways the printing press helped standardise English.",
+       "a": "Printers had to choose one spelling and dialect (largely London English), and printed texts spread those choices widely.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Words such as “sky” and “egg” were borrowed from…",
+       "o": [
+        "Old Norse",
+        "French",
+        "Latin",
+        "Greek"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -1354,6 +1624,42 @@
        "q": "Define prescriptivism.",
        "a": "The view that there are correct and incorrect ways to use a language and that people should follow the rules of a standard.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Brunch” was formed by…",
+       "o": [
+        "blending",
+        "compounding",
+        "clipping",
+        "conversion"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "“Nice” once meant foolish. What type of semantic change is this?",
+       "a": "Elevation (amelioration): the meaning became more positive.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Using “google” as a verb is an example of…",
+       "o": [
+        "conversion",
+        "borrowing",
+        "backformation",
+        "an acronym"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between prescriptivism and descriptivism?",
+       "a": "Prescriptivism says how language should be used and judges some forms as wrong; descriptivism describes how it is actually used without judging.",
+       "e": ""
       }
      ],
      "notes": [
@@ -1487,6 +1793,54 @@
        "t": "c",
        "q": "Why is language death a loss for a community?",
        "a": "A language carries culture, knowledge, identity and ways of seeing the world; when it dies these are hard to pass on.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A pidgin that children acquire as their first language becomes…",
+       "o": [
+        "a creole",
+        "a dialect",
+        "an ethnolect",
+        "a lingua franca"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "In Kachru’s model, which circle includes Australia, and which includes India?",
+       "a": "Australia is in the inner circle; India is in the outer circle.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The language that supplies most of a pidgin’s vocabulary is called the…",
+       "o": [
+        "lexifier",
+        "substrate",
+        "standard",
+        "creole"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give one reason language revival matters to a community.",
+       "a": "A language carries knowledge, culture, law and identity that cannot be fully translated.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Deadly” meaning excellent is a feature of…",
+       "o": [
+        "Aboriginal English",
+        "Old English",
+        "Received Pronunciation",
+        "Tok Pisin only"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
