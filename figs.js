@@ -75,13 +75,15 @@ function plot(d) {
 
 // Network graph: nodes on a 0–100 grid; edges [a, b, weight]; hl lists highlighted edges as "AB".
 function graph(d) {
-  const W = 520, H = 320, X = (v) => 30 + v * 4.6, Y = (v) => 30 + v * 2.6, at = (k) => d.nodes[k], hl = new Set(d.hl || []), id = "a" + ++uid;
-  const edges = (d.edges || []).map(([a, b, w]) => { const [ax, ay] = at(a), [bx, by] = at(b), on = hl.has(a + b) || hl.has(b + a);
-    const mx = (X(ax) + X(bx)) / 2, my = (Y(ay) + Y(by)) / 2;
-    return `<line class="edge${on ? " on" : ""}" x1="${X(ax)}" y1="${Y(ay)}" x2="${X(bx)}" y2="${Y(by)}"${d.dir ? ` marker-end="url(#${id})"` : ""}/>` +
+  const W = 520, H = 320, X = (v) => 30 + v * 4.6, Y = (v) => 30 + v * 2.6, hl = new Set(d.hl || []), id = "a" + ++uid;
+  const R = (k) => Math.max(17, 6 + 4.2 * k.length), at = (k) => [X(d.nodes[k][0]), Y(d.nodes[k][1])];
+  const edges = (d.edges || []).map(([a, b, w]) => {
+    const [ax, ay] = at(a), [bx, by] = at(b), len = Math.hypot(bx - ax, by - ay), ux = (bx - ax) / len, uy = (by - ay) / len, on = hl.has(a + b) || hl.has(b + a);
+    const mx = (ax + bx) / 2, my = (ay + by) / 2; // edges stop at the circle edge so arrowheads stay visible
+    return `<line class="edge${on ? " on" : ""}" x1="${ax + ux * R(a)}" y1="${ay + uy * R(a)}" x2="${bx - ux * R(b)}" y2="${by - uy * R(b)}"${d.dir ? ` marker-end="url(#${id})"` : ""}/>` +
       (w != null ? `<rect class="wbg" x="${mx - 5 - 4 * String(w).length}" y="${my - 11}" width="${10 + 8 * String(w).length}" height="20" rx="5"/><text class="lbl" x="${mx}" y="${my + 4}" text-anchor="middle">${esc(w)}</text>` : ""); }).join("");
-  const nodes = Object.entries(d.nodes).map(([k, [x, y]]) => `<circle class="vtx" cx="${X(x)}" cy="${Y(y)}" r="17"/><text class="vlbl" x="${X(x)}" y="${Y(y) + 5}" text-anchor="middle">${esc(k)}</text>`).join("");
-  const defs = d.dir ? `<defs><marker id="${id}" viewBox="0 0 10 10" refX="27" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0,0L10,5L0,10z"/></marker></defs>` : "";
+  const nodes = Object.keys(d.nodes).map((k) => { const [x, y] = at(k); return `<circle class="vtx" cx="${x}" cy="${y}" r="${R(k)}"/><text class="vlbl" x="${x}" y="${y + 5}" text-anchor="middle">${esc(k)}</text>`; }).join("");
+  const defs = d.dir ? `<defs><marker id="${id}" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0,0L10,5L0,10z"/></marker></defs>` : "";
   return frame(`<svg class="net" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(d.alt || d.cap || "Network")}">${defs}${edges}${nodes}</svg>`, d.cap);
 }
 
