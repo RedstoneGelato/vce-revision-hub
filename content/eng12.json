@@ -55,6 +55,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "You need nothing before this lesson: it is the starting point for English Language.",
+        "The big idea: English Language is not about whether language is “good” or “correct”. It is the study of how language works and why people make the choices they do. Every text, from a text message to a courtroom speech, was shaped by who made it, who it was for, where, and why. This lesson gives you the questions to ask of any text."
+       ]
+      },
+      {
        "h": "What makes language a system",
        "p": [
         "Language is not a random pile of words. Every variety, including slang and texting, follows rules its users share. Those rules sit in the subsystems (sounds, word parts, words, sentence structure, meaning, and discourse), and speakers follow them without being taught. That is why “the big red dog” sounds right and “the red big dog” sounds odd, even though nobody taught you the order of adjectives.",
@@ -74,6 +81,12 @@
        "p": [
         "Work through the same checklist every time. Field: the subject matter, which drives vocabulary (a cricket commentary and a legal contract draw on different semantic fields). Mode: spoken, written, signed or digital, which decides whether you will see prosody, punctuation or emoji. Setting: where and when. Tenor (relationship between participants): how well they know each other, and who has more status or power. Mode and tenor together push the register up or down.",
         "Cultural context is wider. It covers the values and attitudes a community brings to the text, such as Australian egalitarianism (preferring first names and informality, even with a boss) or expectations about respect for Elders."
+       ],
+       "check": [
+        [
+         "Two colleagues chat at lunch and later present to their manager. Which contextual factor changes most, and what happens to the register?",
+         "The tenor and setting change: there is now a participant with higher status and a more formal purpose, so the register rises."
+        ]
        ]
       },
       {
@@ -81,6 +94,41 @@
        "p": [
         "Text: a teacher writes on a class forum, “Hi all, just a reminder that SACs are on Thursday. Please bring a pen! Any questions, give me a shout.”",
         "Function: mainly referential (the date) with a conative element (“Please bring”). Mode: written and digital. Field: school assessment, shown by the jargon “SACs”. Tenor: the teacher has more authority but lowers the social distance with “Hi all” and the idiom “give me a shout”. Register: fairly informal. Social purpose: to inform while keeping a friendly relationship with the class."
+       ]
+      },
+      {
+       "h": "Speech and writing compared",
+       "p": [
+        "Spoken language is usually spontaneous, happens in real time, and disappears unless recorded. Speakers share a setting, so they can rely on gesture, facial expression, tone of voice and immediate feedback. It tends to have looser structure, repetition, pauses and overlaps.",
+        "Written language is usually planned and can be edited. The reader is often absent, so the writer must be explicit and rely on punctuation, layout and careful structure. It tends to have more complex sentences and a wider vocabulary.",
+        "These are tendencies, not rules. A prepared speech is spoken but planned; an instant message is written but spontaneous. Many digital texts blend features of both modes, which is why the mode should be described, not just named."
+       ],
+       "check": [
+        [
+         "Give two features you would expect in spontaneous speech that you would not expect in an edited written report.",
+         "Any two of: pauses and fillers, false starts and repairs, overlapping speech, repetition, reliance on tone of voice and gesture."
+        ]
+       ]
+      },
+      {
+       "h": "Finding more than one function",
+       "p": [
+        "Text: a sign at a café counter reads, “Our milk comes from happy Gippsland cows. Please order here. Have a lovely day!”",
+        "“Our milk comes from happy Gippsland cows” gives information (referential), but the adjective “happy” is chosen to make customers feel good about buying, so it is also persuasive. “Please order here” is an imperative softened by “please”: conative. “Have a lovely day!” is phatic, maintaining a friendly relationship. The dominant function is conative, since the sign exists to direct customers, while the other functions support the café’s social purpose of appearing friendly and ethical.",
+        "When you write about function, name the dominant one, then show how the minor functions serve it."
+       ],
+       "check": [
+        [
+         "What is the main function of “Mind the step”?",
+         "Conative (directive): it aims to get the audience to act. It also carries information, so it has a secondary referential function."
+        ]
+       ]
+      },
+      {
+       "h": "Audience, purpose and text type",
+       "p": [
+        "Audience is who the text is aimed at: one friend, a class, the general public. A text can have a wider audience than the person addressed, as when a politician answers a journalist but is really speaking to voters. Purpose is what the author intends to achieve. Text type is the recognised form the text takes, such as a recipe, eulogy, interview, advertisement or group chat. Each type has conventions that readers expect, and breaking them is noticeable.",
+        "Authorial intent is the reason behind a specific choice. Asking “Why this word and not another?” is the heart of analysis: “passed away” in place of “died” shows an intent to soften."
        ]
       },
       {
@@ -155,6 +203,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the ideas of function, context and register from the first lesson.",
+        "The big idea: to analyse language you need a way to take it apart. Linguists divide it into subsystems, each with its own vocabulary of terms, called metalanguage. This lesson is the map. The four lessons after it explore each area in detail, so read this one for the overall picture and come back to it when you need to see how the parts fit together."
+       ]
+      },
+      {
        "h": "Why the subsystems matter",
        "p": [
         "The subsystems are the levels at which language can be described. Any feature you notice in a text belongs to at least one of them, and naming the subsystem is the first step in analysing it. Think of them as going from smallest unit to largest: sounds, word parts, words, sentences, meanings, whole texts."
@@ -179,6 +234,12 @@
        "p": [
         "A phrase is a group of words built around a head word (noun phrase: “the old house”). A clause has a subject and a verb. Clauses are main (independent) or subordinate (dependent). Sentence structures: simple (one main clause), compound (two or more main clauses joined by a coordinating conjunction: for, and, nor, but, or, yet, so), complex (a main clause plus at least one subordinate clause), compound-complex (at least two main clauses and one subordinate clause), and sentence fragments.",
         "Sentence types are declarative (statement), interrogative (question), imperative (command) and exclamative. Active voice puts the doer first (“The dog bit the man”); passive voice puts the receiver first and can drop the doer (“The man was bitten”)."
+       ],
+       "check": [
+        [
+         "Is “Because it was raining” a sentence fragment, a simple sentence or a complex sentence?",
+         "A sentence fragment: it is a subordinate clause standing alone, with no main clause."
+        ]
        ]
       },
       {
@@ -196,10 +257,649 @@
        ]
       },
       {
+       "h": "A routine for annotating any text",
+       "p": [
+        "First reading: decide the context. Who, to whom, where, in what mode, about what, and why? Write one sentence on register and one on function and social purpose.",
+        "Second reading: go through with a subsystem in mind each time. Circle sound features if it is spoken or poetic. Underline striking word choices. Bracket long or unusually short sentences and label their structure and type. Mark links between sentences. Note anything that relies on shared knowledge.",
+        "Third step: for each feature you marked, write what it does here. A feature with no effect you can explain is not worth including in an answer."
+       ],
+       "check": [
+        [
+         "What should you establish before looking for individual language features?",
+         "The context: participants and their relationship, setting, mode, field, and the function and purpose of the text."
+        ]
+       ]
+      },
+      {
+       "h": "Writing an analytical sentence",
+       "p": [
+        "Good analysis packs four things into one or two sentences: the metalanguage, the example, the effect, and the link to context or purpose.",
+        "Weak: “The writer uses imperatives.” Better: “The imperatives ‘Slip’, ‘Slop’ and ‘Slap’ (line 2) directly instruct the audience, reflecting the campaign’s conative function, and their monosyllabic, alliterative form makes the message memorable for children.”",
+        "A sentence frame to practise with: “The [metalanguage] ‘[quote]’ (line X) [verb: creates, signals, reduces, reinforces…] [effect], which [link to purpose, audience or context].”"
+       ],
+       "check": [
+        [
+         "What four elements should an analytical sentence contain?",
+         "Metalanguage naming the feature, a quoted example (with a line number), its effect, and a link to the context or purpose."
+        ]
+       ]
+      },
+      {
+       "h": "A second worked example",
+       "p": [
+        "Text: a school newsletter item. “Congratulations to our Year 9 debaters, who were crowned regional champions on Friday. What a result! We couldn’t be prouder.”",
+        "Lexis: “Congratulations” and “champions” belong to a semantic field of achievement; “crowned” is a metaphor that elevates the win. Syntax: the first sentence is complex, with the relative clause “who were crowned regional champions on Friday” adding detail; “What a result!” is an exclamative and a sentence fragment that conveys excitement. Morphology: the contraction “couldn’t” and the comparative “prouder” keep the tone warm and slightly informal. Discourse: the inclusive pronouns “our” and “We” build a sense of community, serving the social purpose of promoting school pride."
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Confusing a phrase with a clause (a clause needs a verb). Calling any long sentence complex (count the clauses and look at the conjunctions instead). Mixing up cohesion and coherence: cohesion is the ties you can underline, coherence is the overall sense."
        ]
+      }
+     ]
+    },
+    {
+     "id": "word-classes",
+     "title": "Morphology and word classes",
+     "points": [
+      "Morphemes are the smallest units of meaning: free or bound; bound morphemes are inflectional or derivational.",
+      "Content words: nouns, verbs, adjectives, adverbs. Function words: pronouns, prepositions, conjunctions, determiners, auxiliary and modal verbs, interjections.",
+      "Identify a word’s class from its job in the sentence, not from the word alone.",
+      "Verbs carry tense and aspect; modal verbs express possibility, obligation and permission.",
+      "Word choice (lexis) drives register: Latinate or everyday, technical or colloquial."
+     ],
+     "explain": "Take the sentence “The tired students quickly finished their difficult exam.” Name the word class of each word and say how you know.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should have read the overview of the subsystems.",
+        "The big idea: words are the most visible part of language, and they are built from smaller parts. If you can break a word into morphemes and say which class it belongs to, you have the basic tools for every analysis you will write. This lesson is about recognition; later lessons use it to explain effects."
+       ]
+      },
+      {
+       "h": "Inside the word: morphemes",
+       "p": [
+        "Split a word into its meaningful parts. “Unhelpful” has three morphemes: un- (not), help, and -ful (full of). “Help” is a free morpheme and is the root. “Un-” and “-ful” are bound morphemes; they are affixes. An affix before the root is a prefix and one after it is a suffix. English occasionally uses an infix inside a word for emphasis, as in “abso-bloody-lutely”.",
+        "Derivational affixes make a new word, often of a different class: “teach” (verb) to “teacher” (noun); “happy” (adjective) to “happiness” (noun) and “unhappy” (adjective with a new meaning). Inflectional affixes only adjust grammar: “walk” to “walks”, “walked” and “walking” are all forms of one verb. English has just eight inflections, and all are suffixes."
+       ],
+       "check": [
+        [
+         "How many morphemes are in “replayed”, and what type is each?",
+         "Three: re- (bound, derivational prefix), play (free root), -ed (bound, inflectional suffix)."
+        ]
+       ]
+      },
+      {
+       "h": "Nouns, pronouns and determiners",
+       "p": [
+        "Nouns name people, places, things and ideas. Proper nouns name particular ones and take capitals (“Melbourne”); common nouns do not. Concrete nouns can be perceived (“table”); abstract nouns cannot (“freedom”). Collective nouns name groups (“team”). Test: a noun can usually follow “the” and can often be made plural.",
+        "Pronouns stand in for noun phrases. Personal pronouns vary by person (first: I, we; second: you; third: he, she, it, they), number and role (“she” as subject, “her” as object). Others include possessive (mine, yours), demonstrative (this, those), relative (who, which, that), interrogative (who? what?), reflexive (myself) and indefinite (someone, anything). Pronoun choice signals relationships: “we” can include the audience, and “you” can address them directly.",
+        "Determiners come before a noun and specify it: articles (a, an, the), demonstratives (this book), possessives (my book), quantifiers (some, many) and numbers."
+       ]
+      },
+      {
+       "h": "Verbs",
+       "p": [
+        "Verbs express actions, events and states. A main (lexical) verb carries the meaning: “run”, “believe”, “seem”. Auxiliary verbs help it. The primary auxiliaries are “be”, “have” and “do”: “is running”, “has eaten”, “did not go”. Modal auxiliaries express attitude to the action: possibility (may, might, could), ability (can), obligation (must, should), prediction (will, would) and permission (may, can). Modals are important in analysis because they show how certain or forceful a speaker is being: “You must leave” against “You might like to leave”.",
+        "Tense locates an event in time. English verbs inflect for present (“walks”) and past (“walked”); the future is expressed with “will” or “going to”. Aspect shows how the event unfolds: progressive, with “be” and -ing, for something ongoing (“is walking”); perfect, with “have” and the past participle, for something completed with present relevance (“has walked”)."
+       ],
+       "check": [
+        [
+         "In “She might have been waiting”, which word is the modal verb and which is the main verb?",
+         "“Might” is the modal; “waiting” is the main verb. “Have” and “been” are primary auxiliaries."
+        ]
+       ]
+      },
+      {
+       "h": "Adjectives and adverbs",
+       "p": [
+        "Adjectives describe nouns. They appear before the noun (“a cold day”) or after a linking verb (“the day was cold”). Many have comparative and superlative forms: “colder”, “coldest”; “more useful”, “most useful”.",
+        "Adverbs modify verbs, adjectives, other adverbs or whole sentences. They tell how (“quickly”), when (“yesterday”), where (“here”), how often (“never”) and to what degree (“very”, “really”). Adverbs of degree that strengthen are intensifiers. A sentence adverb comments on the whole statement: “Frankly, it failed.” Many adverbs end in -ly, but not all, and not every -ly word is an adverb (“friendly” is an adjective)."
+       ]
+      },
+      {
+       "h": "Prepositions, conjunctions and interjections",
+       "p": [
+        "Prepositions show relationships of place, time and direction between a noun phrase and the rest of the sentence: in, on, at, under, before, with, to.",
+        "Conjunctions join. Coordinating conjunctions (for, and, nor, but, or, yet, so) join units of equal status. Subordinating conjunctions (because, although, if, when, while, since, unless) introduce a clause that depends on another.",
+        "Interjections express emotion or reaction and stand apart from the grammar of the sentence: “oh”, “wow”, “ouch”, “yuck”."
+       ]
+      },
+      {
+       "h": "Class depends on function",
+       "p": [
+        "Many words belong to more than one class. Decide by the job the word does in its sentence. “We walked round the lake” (preposition). “She bought the next round” (noun). “A round table” (adjective). “They round the corner” (verb).",
+        "Worked example: “The tired students quickly finished their difficult exam.” The: determiner. tired: adjective. students: noun. quickly: adverb. finished: verb, past tense. their: determiner (possessive). difficult: adjective. exam: noun."
+       ],
+       "check": [
+        [
+         "What is the word class of “light” in “a light meal” and in “Light the candle”?",
+         "An adjective in “a light meal”; a verb in “Light the candle”."
+        ]
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Calling “my”, “this” or “some” before a noun a pronoun: there they are determiners. Calling any -ing word a verb: in “Swimming is fun”, “swimming” acts as a noun. Mixing up inflection and derivation: ask whether a new word has been made. Labelling a word’s class without looking at the sentence it is in."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which word contains a derivational suffix?",
+       "o": [
+        "dogs",
+        "walked",
+        "kindness",
+        "taller"
+       ],
+       "a": 2,
+       "e": "-ness turns the adjective “kind” into a noun. The others are inflectional."
+      },
+      {
+       "t": "m",
+       "q": "In “You should apologise”, the word “should” is a…",
+       "o": [
+        "main verb",
+        "modal auxiliary",
+        "adverb",
+        "conjunction"
+       ],
+       "a": 1,
+       "e": "It expresses obligation and comes before the main verb."
+      },
+      {
+       "t": "m",
+       "q": "Which is a subordinating conjunction?",
+       "o": [
+        "and",
+        "but",
+        "although",
+        "or"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "List the eight inflectional morphemes of English.",
+       "a": "Plural -s, possessive -’s, third-person singular -s, -ing, past tense -ed, past participle -en/-ed, comparative -er, superlative -est.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between a content word and a function word?",
+       "a": "Content words (nouns, verbs, adjectives, adverbs) carry the main meaning and readily accept new members. Function words (such as pronouns, prepositions, conjunctions, determiners and auxiliaries) express grammatical relationships.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In “those shoes”, the word “those” is a…",
+       "o": [
+        "pronoun",
+        "determiner",
+        "adjective",
+        "preposition"
+       ],
+       "a": 1,
+       "e": "It comes before a noun and specifies it. In “I want those”, it would be a pronoun."
+      }
+     ]
+    },
+    {
+     "id": "syntax",
+     "title": "Syntax: phrases, clauses and sentences",
+     "points": [
+      "Words group into phrases; phrases fill the roles in a clause: subject, verb, object, complement, adverbial.",
+      "A clause needs a subject and a verb. Main clauses stand alone; subordinate clauses cannot.",
+      "Sentence structures: simple, compound, complex, compound-complex, plus sentence fragments.",
+      "Sentence types: declarative, interrogative, imperative, exclamative.",
+      "Active voice puts the doer as subject; passive voice puts the receiver as subject."
+     ],
+     "explain": "Write one simple, one compound and one complex sentence about your weekend, and explain what makes each one that type.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the word classes, especially verbs and conjunctions.",
+        "The big idea: syntax is how words are arranged into larger units. English relies heavily on word order: “The dog bit the man” and “The man bit the dog” use the same words and mean different things. Writers and speakers choose sentence structures for a reason, and being able to name those structures lets you explain the reason."
+       ]
+      },
+      {
+       "h": "Phrases",
+       "p": [
+        "A phrase is a group of words that works as a unit around a head word. Noun phrase: “the old house on the hill” (head: house). Verb phrase: “has been sleeping” (head: sleeping). Adjective phrase: “very pleased with the result”. Adverb phrase: “quite slowly”. Prepositional phrase: “in the morning”, a preposition followed by a noun phrase.",
+        "Test for a phrase: it can usually be replaced by a single word (“the old house on the hill” by “it”) or moved as a block."
+       ]
+      },
+      {
+       "h": "The parts of a clause",
+       "p": [
+        "Subject: who or what the clause is about; it usually comes before the verb. Verb: the action or state. Object: who or what receives the action. A direct object is directly affected (“She kicked the ball”); an indirect object is the receiver (“She gave him the ball”). Complement: describes or renames the subject or object after a linking verb (“She is a doctor”; “They seem tired”). Adverbial: adds information about how, when, where or why, and can often be moved (“In the morning, we left”).",
+        "Common patterns: subject–verb (“Birds fly”); subject–verb–object (“Mia read the book”); subject–verb–complement (“The soup smells good”); subject–verb–adverbial (“He lives in Geelong”)."
+       ],
+       "check": [
+        [
+         "Identify the subject, verb and object in “The committee approved the plan yesterday.”",
+         "Subject: The committee. Verb: approved. Object: the plan. “Yesterday” is an adverbial."
+        ]
+       ]
+      },
+      {
+       "h": "Main and subordinate clauses",
+       "p": [
+        "A main (independent) clause makes sense alone: “The rain stopped.” A subordinate (dependent) clause has a subject and verb but cannot stand alone; it begins with a subordinating conjunction or a relative pronoun: “when the rain stopped”, “which surprised everyone”.",
+        "Coordination joins clauses of equal status with a coordinating conjunction: “The rain stopped and the sun came out.” Subordination makes one clause depend on another: “We went outside when the rain stopped.”"
+       ]
+      },
+      {
+       "h": "Sentence structures",
+       "p": [
+        "Simple: one main clause. “The crowd cheered.” It can still be long if its phrases are long. Compound: two or more main clauses joined by coordination. “The crowd cheered and the players waved.” Complex: one main clause with at least one subordinate clause. “The crowd cheered when the players arrived.” Compound-complex: at least two main clauses and at least one subordinate clause. “The crowd cheered when the players arrived, and the band began to play.” Sentence fragment: a unit punctuated as a sentence that lacks a main clause. “Absolutely not.” “Because I said so.”",
+        "Method: underline each verb group, count the clauses, then look at the conjunctions joining them.",
+        "Effects: simple sentences and fragments give impact, clarity or a conversational feel. Compound sentences add ideas of equal weight and are common in speech. Complex sentences show relationships such as cause, condition and time, so they suit explanation and argument."
+       ],
+       "check": [
+        [
+         "What is the structure of “Although it was late, we kept working”?",
+         "Complex: a subordinate clause (“Although it was late”) and one main clause (“we kept working”)."
+        ],
+        [
+         "What is the structure of “I rang the bell but nobody answered”?",
+         "Compound: two main clauses joined by the coordinating conjunction “but”."
+        ]
+       ]
+      },
+      {
+       "h": "Sentence types",
+       "p": [
+        "Declarative: makes a statement; subject before verb. “The shop is open.” Interrogative: asks a question; often the auxiliary comes before the subject or a question word is used. “Is the shop open?” Imperative: gives a command or instruction; the verb comes first with no stated subject. “Open the shop.” Exclamative: expresses strong feeling, typically beginning with “what” or “how”. “What a day!”",
+        "Form and function do not always match. “Could you close the window?” is an interrogative in form but works as a polite request. Noticing that mismatch is often the key to analysing politeness."
+       ]
+      },
+      {
+       "h": "Active and passive voice",
+       "p": [
+        "Active: the subject does the action. “The council closed the pool.” Passive: the subject receives the action; it uses a form of “be” and a past participle. “The pool was closed by the council.” The doer can be left out: “The pool was closed.” This agentless passive is useful when the doer is unknown, unimportant or better not mentioned.",
+        "Other ways of arranging a sentence affect emphasis. Front focus moves something to the start for prominence (“Never have I seen such a mess”). End focus places new or important information last. Parallelism repeats a structure for rhythm and emphasis (“We came, we saw, we conquered”). Listing piles up items. Antithesis sets contrasting ideas in a balanced structure."
+       ],
+       "check": [
+        [
+         "Rewrite “The dog chased the cat” in the passive voice.",
+         "“The cat was chased by the dog.”"
+        ]
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Judging structure by length. Calling a sentence with “and” compound when “and” only joins two nouns (“Tom and Mia left” is simple). Confusing sentence type (declarative, interrogative…) with sentence structure (simple, compound…). Calling any sentence with “was” passive: “She was tired” is active with a complement."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "“When the bell rang, the students left.” This sentence is…",
+       "o": [
+        "simple",
+        "compound",
+        "complex",
+        "a fragment"
+       ],
+       "a": 2,
+       "e": "One subordinate clause and one main clause."
+      },
+      {
+       "t": "m",
+       "q": "Which sentence is in the passive voice?",
+       "o": [
+        "The chef burnt the toast.",
+        "The toast was burnt.",
+        "The toast is black.",
+        "Burn the toast."
+       ],
+       "a": 1,
+       "e": "The subject receives the action; “was” plus a past participle."
+      },
+      {
+       "t": "m",
+       "q": "“Close the door.” is which sentence type?",
+       "o": [
+        "Declarative",
+        "Interrogative",
+        "Imperative",
+        "Exclamative"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between a phrase and a clause?",
+       "a": "A clause contains a subject and a verb. A phrase is a group of words around a head word that does not have both.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why might a writer choose an agentless passive?",
+       "a": "To leave out who performed the action, because the doer is unknown, unimportant or better not named, or to sound objective and impersonal.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“I stayed home because I was tired.” How many clauses are there?",
+       "o": [
+        "One",
+        "Two",
+        "Three",
+        "None"
+       ],
+       "a": 1,
+       "e": "A main clause (“I stayed home”) and a subordinate clause (“because I was tired”)."
+      }
+     ]
+    },
+    {
+     "id": "phonology",
+     "title": "Phonetics and phonology",
+     "points": [
+      "The International Phonetic Alphabet (IPA) has one symbol for each sound, because English spelling is inconsistent.",
+      "Consonants are described by voicing, place and manner of articulation; vowels are monophthongs or diphthongs.",
+      "Prosodic features: pitch, intonation, stress, tempo and volume.",
+      "Connected speech processes: assimilation, elision, vowel reduction and insertion.",
+      "Phonological patterning: alliteration, assonance, consonance, onomatopoeia, rhythm and rhyme."
+     ],
+     "explain": "Say “I don’t know” slowly, then as you would to a friend. Describe what changed, using the terms elision, assimilation and vowel reduction where they fit.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should have read the overview of the subsystems.",
+        "The big idea: speech is made of sounds, not letters. English has about 44 sounds but only 26 letters, and the spelling “ough” is pronounced differently in “though”, “through”, “cough” and “bough”. To describe speech accurately, linguists use a separate alphabet and a set of terms for how sounds are made and how the voice is used."
+       ]
+      },
+      {
+       "h": "Sounds and symbols",
+       "p": [
+        "A phoneme is the smallest unit of sound that can change meaning: swapping the first sound of “pat” gives “bat”. Phonemes are written between slashes using the International Phonetic Alphabet. Most consonant symbols look familiar: /p/, /b/, /t/, /d/, /k/, /g/, /f/, /v/, /s/, /z/, /m/, /n/, /l/, /r/, /w/, /h/.",
+        "Some need special symbols: /ʃ/ as in “ship”, /ʒ/ as in the middle of “measure”, /θ/ as in “thin”, /ð/ as in “this”, /ŋ/ as in “sing”, /tʃ/ as in “chip”, /dʒ/ as in “judge”, and /j/ as in “yes”. The most common vowel in English is schwa, /ə/, the weak sound at the start of “about” and the end of “sofa”.",
+        "You are not expected to transcribe long passages, but you should be able to read simple transcriptions and use them to show a pronunciation precisely."
+       ],
+       "check": [
+        [
+         "Which two sounds does the spelling “th” represent in “thin” and “this”?",
+         "/θ/ in “thin” (voiceless) and /ð/ in “this” (voiced)."
+        ]
+       ]
+      },
+      {
+       "h": "Describing consonants",
+       "p": [
+        "Three questions describe any consonant. Voicing: do the vocal cords vibrate? /b/, /d/, /g/, /v/ and /z/ are voiced; /p/, /t/, /k/, /f/ and /s/ are voiceless. Put your fingers on your throat and compare “sss” with “zzz”.",
+        "Place: where is the airflow blocked or narrowed? At the lips (/p/, /b/, /m/); lip and teeth (/f/, /v/); tongue and teeth (/θ/, /ð/); the ridge behind the top teeth (/t/, /d/, /s/, /z/, /n/, /l/); further back on the palate (/ʃ/, /ʒ/); the soft palate (/k/, /g/, /ŋ/).",
+        "Manner: how is the air released? Stops (plosives) block it completely and release it: /p/, /b/, /t/, /d/, /k/, /g/. Fricatives force it through a narrow gap with friction: /f/, /v/, /s/, /z/, /ʃ/, /θ/. Affricates are a stop released as a fricative: /tʃ/, /dʒ/. Nasals send air through the nose: /m/, /n/, /ŋ/. Approximants narrow the passage without friction: /l/, /r/, /w/, /j/."
+       ]
+      },
+      {
+       "h": "Vowels",
+       "p": [
+        "Vowels are made with an open vocal tract and are always voiced. They differ in how high the tongue is, how far forward it is, and whether the lips are rounded. A monophthong is a single steady vowel, as in “bed”. A diphthong glides from one vowel position to another within a syllable, as in “boy” or “how”. Differences between accents are mostly differences in vowels, which is why vowels matter in the study of Australian English."
+       ]
+      },
+      {
+       "h": "Prosodic features and vocal effects",
+       "p": [
+        "Prosody is how something is said. Pitch is how high or low the voice is. Intonation is the pattern of pitch across an utterance: falling for statements, rising for many questions. Stress is the emphasis on a syllable or word: “I didn’t take your book” changes meaning as the stress moves from word to word. Tempo is speed. Volume is loudness.",
+        "Speakers use these to show emotion, emphasise what is important, signal that a turn is finishing and express attitude, including sarcasm. Vocal effects such as laughter, whispering, breathiness and creaky voice add further meaning. In transcripts these features are shown with symbols explained in a key."
+       ],
+       "check": [
+        [
+         "How can stress change the meaning of “She said she liked it”?",
+         "Stressing “she” (the first) suggests someone else did not say it; stressing “said” suggests she may not have meant it; stressing “liked” contrasts with loving or hating it."
+        ]
+       ]
+      },
+      {
+       "h": "Connected speech",
+       "p": [
+        "In fluent speech, sounds affect their neighbours. Assimilation: a sound becomes more like the next one. “Ten boys” is often said “tem boys”, because /n/ moves to the lips ready for /b/. Elision: a sound is left out. “Next day” becomes “nex day”; “library” becomes “libry”. Vowel reduction: an unstressed vowel weakens to schwa. “To” in “going to school” is /tə/. Insertion: a sound is added to ease the link between two others, as in “drawring” for “drawing”.",
+        "Worked example: “Did you eat yet?” said quickly becomes something like “Djeet yet?”. The /d/ and /j/ of “did you” merge into /dʒ/ (assimilation), the vowels of “did” and “you” are lost (elision), and the result is two syllables instead of four. These processes are regular and efficient; they are a normal part of all speech, most frequent in informal contexts."
+       ]
+      },
+      {
+       "h": "Sound patterning",
+       "p": [
+        "Texts designed to be memorable or pleasing play with sound. Alliteration repeats initial consonant sounds (“Peter Piper picked”). Assonance repeats vowel sounds (“the rain in Spain”). Consonance repeats consonant sounds within or at the end of words (“blank and think”). Onomatopoeia imitates a sound (“buzz”, “splash”). Rhyme matches the ends of words, and rhythm is the pattern of stressed and unstressed syllables. Advertising slogans, headlines, poetry, political speeches and children’s books all rely on these."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Counting letters instead of sounds: “ship” has three phonemes. Finding alliteration in repeated letters that make different sounds (“city cat” does not alliterate). Calling connected speech processes “lazy”: explain what they do. Describing prosody without saying what it conveys."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "How many phonemes are in the word “fish”?",
+       "o": [
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "a": 1,
+       "e": "/f/, /ɪ/, /ʃ/."
+      },
+      {
+       "t": "m",
+       "q": "“Handbag” pronounced “hambag” shows…",
+       "o": [
+        "insertion",
+        "assimilation",
+        "vowel reduction",
+        "onomatopoeia"
+       ],
+       "a": 1,
+       "e": "The /n/ becomes /m/ to match the lip position of /b/ (with the /d/ elided)."
+      },
+      {
+       "t": "m",
+       "q": "Which is a prosodic feature?",
+       "o": [
+        "Alliteration",
+        "Intonation",
+        "Elision",
+        "Schwa"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What three features are used to describe a consonant?",
+       "a": "Voicing (voiced or voiceless), place of articulation and manner of articulation.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is schwa, and where does it occur?",
+       "a": "A short, weak central vowel, /ə/, found in unstressed syllables, such as the first syllable of “about”.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "/m/, /n/ and /ŋ/ are all…",
+       "o": [
+        "stops",
+        "fricatives",
+        "nasals",
+        "affricates"
+       ],
+       "a": 2,
+       "e": "Air passes through the nose."
+      }
+     ]
+    },
+    {
+     "id": "discourse",
+     "title": "Semantics, discourse and pragmatics",
+     "points": [
+      "Semantics: denotation and connotation, semantic fields, lexical relations and figurative language.",
+      "Cohesion links a text through its wording; coherence is the overall sense a text makes.",
+      "Pragmatics is meaning in context: what is implied by the speaker and inferred by the listener.",
+      "Deixis: words whose meaning depends on who is speaking, where and when (I, here, tomorrow).",
+      "Conversation depends on cooperation: say enough, be truthful, be relevant, be clear."
+     ],
+     "explain": "Someone asks, “Do you want to come to the party?” and the reply is “I’ve got an exam tomorrow.” Explain how the listener works out the answer.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the word classes and basic syntax.",
+        "The big idea: meaning does not stop at the dictionary. Words carry associations, sentences connect into texts, and what people mean is often different from what they literally say. These three areas, semantics, discourse and pragmatics, explain how a text holds together and how listeners get from words to intentions."
+       ]
+      },
+      {
+       "h": "Word meaning",
+       "p": [
+        "Denotation is the literal meaning of a word; connotation is the feeling or association it carries. “Home” and “residence” denote the same thing, but “home” connotes warmth. Choosing between near-synonyms is rarely neutral: compare “protester”, “activist” and “rioter”.",
+        "A semantic field (or domain) is a set of words related in meaning, such as “goal”, “tackle”, “umpire” and “siren” for football. Identifying the semantic fields in a text quickly reveals its topic and often its attitude, as when a debate is described with words from the field of war.",
+        "Lexical relations: synonyms have similar meanings; antonyms have opposite meanings; a hyponym is a more specific term within a broader one (“poodle” is a hyponym of “dog”); an idiom is a fixed expression whose meaning cannot be worked out from its parts (“under the weather”)."
+       ],
+       "check": [
+        [
+         "“Thrifty” and “stingy” both describe someone careful with money. How do they differ?",
+         "In connotation: “thrifty” is positive and “stingy” is negative. Their denotation is similar."
+        ]
+       ]
+      },
+      {
+       "h": "Figurative language",
+       "p": [
+        "Metaphor describes one thing as another (“time is money”). Simile compares using “like” or “as”. Personification gives human qualities to something non-human. Hyperbole exaggerates (“I’ve told you a million times”). Irony says the opposite of what is meant. A pun plays on two meanings or similar sounds. An oxymoron joins contradictory terms (“deafening silence”). Animation gives life to something inanimate.",
+        "In analysis, always say what the figure achieves: a metaphor can simplify a complex idea, persuade by association, or entertain."
+       ]
+      },
+      {
+       "h": "Cohesion",
+       "p": [
+        "Cohesion is created by words that tie parts of a text together. Reference: pronouns and other words point to something elsewhere in the text. Anaphoric reference points back (“Mia arrived. She was early.”). Cataphoric reference points forward (“This is what I want: silence.”). Repetition and synonymy keep a topic in view. Substitution replaces a word or phrase with a general one (“I’d like a coffee.” “I’ll have one too.”). Ellipsis leaves out what is understood (“Coming?”). Conjunctions and adverbials show the logical link between sentences: “however”, “therefore”, “first”, “meanwhile”. Collocation, words that commonly go together (“heavy rain”), also helps a text feel connected."
+       ],
+       "check": [
+        [
+         "In “When he arrived, Sam was exhausted”, what kind of reference is “he”?",
+         "Cataphoric: it points forward to “Sam”."
+        ]
+       ]
+      },
+      {
+       "h": "Coherence",
+       "p": [
+        "A text is coherent when it makes sense as a whole. Contributing factors: cohesion; logical ordering, such as chronological order or problem then solution; consistency of topic, tense and register; formatting, such as headings, paragraphs, bullet points and typography; conventions of the text type, which tell readers what to expect; and inference, the reader’s ability to fill gaps using background knowledge.",
+        "A text can be cohesive without being coherent: “I bought a car. Cars have wheels. Wheels are round. Round shapes are found in nature.” Each sentence links to the last, yet the passage goes nowhere."
+       ]
+      },
+      {
+       "h": "Meaning in context",
+       "p": [
+        "Pragmatics studies how context shapes meaning. An implicature is what a speaker implies without saying. “It’s cold in here” may imply “please close the window”. Inference is the listener’s work of reaching that meaning. Both rely on shared knowledge of the situation and of each other.",
+        "Deictic expressions can only be understood from the context of the utterance: person (“I”, “you”), place (“here”, “that one”), and time (“now”, “yesterday”). A note saying “Back in five minutes” is unhelpful if you do not know when it was written. Heavy use of deixis is typical of spoken, face-to-face language."
+       ],
+       "check": [
+        [
+         "Why is “Put it over there tomorrow” hard to understand out of context?",
+         "It relies on deixis: “it”, “there” and “tomorrow” depend on what, where and when the speaker is."
+        ]
+       ]
+      },
+      {
+       "h": "Cooperation in conversation",
+       "p": [
+        "Conversation works because people generally assume each other is cooperating. The cooperative principle has four maxims. Quantity: give as much information as needed and no more. Quality: say what you believe to be true. Relation: be relevant. Manner: be clear and orderly.",
+        "Speakers often break (flout) a maxim on purpose, and listeners look for the reason. Asked “How was the film?”, the reply “Well, the popcorn was good” flouts relevance and implies the film was poor. Sarcasm flouts quality. Recognising a flouted maxim is a neat way to explain how an implied meaning arises."
+       ]
+      },
+      {
+       "h": "Worked example",
+       "p": [
+        "Exchange between housemates. A: “The bin’s full again.” B: “I did it last week.” A: “Fine. I’ll just do everything, shall I?”",
+        "A’s declarative is in form a statement, but it implies a request that B empty the bin. B infers this and refuses indirectly by flouting relevance: the reply implies it is A’s turn. A’s final turn is sarcastic; “Fine” and the tag “shall I?” flout quality, and the hyperbole “everything” expresses annoyance. Nothing is asked or refused directly, yet both understand each other because they share the context of household chores."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Using “cohesion” and “coherence” as if they were the same. Identifying a metaphor without explaining its effect. Saying a speaker “implies” when you mean the listener “infers”, or the reverse. Treating indirect language as vague: it is often a deliberate, polite strategy."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "“Could you pass the salt?” is understood as a request because of…",
+       "o": [
+        "denotation",
+        "implicature and inference",
+        "assonance",
+        "ellipsis"
+       ],
+       "a": 1,
+       "e": "Literally it asks about ability; the request is implied and inferred."
+      },
+      {
+       "t": "m",
+       "q": "Which is an example of anaphoric reference?",
+       "o": [
+        "“Here it is: the winning ticket.”",
+        "“Liam left early. He had a train to catch.”",
+        "“Heavy rain”",
+        "“Coming?”"
+       ],
+       "a": 1,
+       "e": "“He” points back to “Liam”."
+      },
+      {
+       "t": "m",
+       "q": "Words such as “here”, “now” and “you” are examples of…",
+       "o": [
+        "idioms",
+        "deixis",
+        "hyponyms",
+        "collocations"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between cohesion and coherence?",
+       "a": "Cohesion is the linking of a text through language features such as reference, repetition and conjunctions. Coherence is whether the text makes sense as a whole to its audience.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the four maxims of the cooperative principle.",
+       "a": "Quantity, quality, relation (relevance) and manner.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Rose” is a hyponym of…",
+       "o": [
+        "tulip",
+        "flower",
+        "petal",
+        "garden"
+       ],
+       "a": 1,
+       "e": "A hyponym is a specific member of a broader category."
       }
      ]
     }
@@ -260,6 +960,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the subsystems, especially basic morphology and syntax.",
+        "The big idea: almost every child learns to speak without lessons, in the same order as every other child, and with errors that follow rules. Explaining how that is possible is one of the central questions in linguistics. This lesson gives you the stages, the evidence, and the theories that try to account for it."
+       ]
+      },
+      {
        "h": "What children acquire, in order",
        "p": [
         "Children everywhere move through the same stages in the same order, although the ages vary. That regularity is one of the main pieces of evidence that acquisition is not simple copying.",
@@ -272,6 +979,12 @@
        "p": [
         "Overgeneralisation is applying a regular rule where an exception is needed: “goed”, “mouses”, “I runned”. No adult says these, so the child cannot have copied them. The child has worked out a rule and applied it. Often a child first says “went” (copied), then “goed” (rule found), then “went” again (exception learned).",
         "Overextension stretches a word too widely (“dog” for every four-legged animal). Underextension uses it too narrowly (“dog” only for the family pet)."
+       ],
+       "check": [
+        [
+         "A child calls every round fruit “apple”. What is this called?",
+         "Overextension."
+        ]
        ]
       },
       {
@@ -287,6 +1000,42 @@
        "p": [
         "A two-and-a-half-year-old says, “Me falled over. Doggy runned away!”",
         "Stage: telegraphic moving to multi-word (some function words present, auxiliary missing). “falled” and “runned” overgeneralise the regular past tense -ed, which supports nativist and usage-based ideas that the child extracts rules. “Me” for “I” shows the pronoun system is still developing. “Doggy” is a diminutive typical of child-directed speech, so interactionists would point to carer input."
+       ]
+      },
+      {
+       "h": "Development in each subsystem",
+       "p": [
+        "Phonology: babbling begins with repeated syllables (“bababa”) and becomes more varied. Children understand sound contrasts before they can make them, so a child may say “fis” for fish but object when an adult copies them.",
+        "Lexis and semantics: first words are usually nouns for people, food, toys and animals, plus social words such as “bye” and “no”. Vocabulary grows slowly to about 50 words, then very quickly. Children understand far more words than they produce.",
+        "Morphology: inflections appear in a fairly fixed order, with -ing and plural -s early and third-person -s late. In the well-known “wug” study, young children shown a made-up creature called a wug could say that two of them were “wugs”. They had never heard the word, so they must have applied a rule.",
+        "Syntax: questions first rely on rising intonation (“Daddy gone?”), then add question words without inversion (“Where Daddy is going?”), then gain auxiliary inversion (“Where is Daddy going?”). Negatives develop similarly: “No bed”, then “I no want bed”, then “I don’t want bed”.",
+        "Discourse and pragmatics: children learn to take turns, stay on topic, be polite and adjust to their listener over many years; these skills continue developing well into school age."
+       ],
+       "check": [
+        [
+         "What does the “wug” study show?",
+         "That children apply grammatical rules, such as adding -s for plurals, to words they have never heard, so they are not simply imitating."
+        ]
+       ]
+      },
+      {
+       "h": "Child-directed speech",
+       "p": [
+        "Carers in many cultures speak to young children in a special way. Features: higher and more varied pitch, slower pace with longer pauses, short simple sentences, repetition, many questions and commands, concrete vocabulary about the here and now, diminutives (“doggy”, “tummy”), and use of names in place of pronouns (“Mummy’s coming”).",
+        "Carers also expand and recast. Child: “Dog run.” Adult: “Yes, the dog is running!” The adult models the full form without correcting the child directly. Interactionists see this as scaffolding: support pitched just beyond what the child can do alone. It is not universal, though: in some cultures adults address infants much less, and children still acquire language, which nativists use as evidence that special input is helpful but not essential."
+       ],
+       "check": [
+        [
+         "A child says “Mummy shoe” and the adult replies “Yes, that’s Mummy’s shoe.” What is the adult doing?",
+         "Expanding (recasting): repeating the child’s meaning in a fuller, grammatical form."
+        ]
+       ]
+      },
+      {
+       "h": "A second worked example",
+       "p": [
+        "Transcript. Adult: “What’s the teddy doing?” Child (age 2;3): “Teddy sleep.” Adult: “Yes, teddy’s sleeping. Is he tired?” Child: “He tired. Night-night teddy.”",
+        "The child’s utterances are two words long with content words only, so the child is at the two-word stage moving toward telegraphic. The auxiliary “is” and the inflection -ing are missing from “Teddy sleep”. The adult’s reply is an expansion, modelling “teddy’s sleeping”, and the follow-up question keeps the child in the conversation: both are features of child-directed speech that interactionists point to. The child’s “He tired” partly imitates the adult’s question but leaves out the verb “is”, showing that the child reproduces what their current grammar allows, not simply what they hear. “Night-night” shows reduplication."
        ]
       },
       {
@@ -336,6 +1085,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know how a first language is acquired (previous lesson).",
+        "The big idea: most of the world’s people use more than one language. Learning a second or later language is a different process from acquiring a first, and the results tell us a lot about how languages are stored and used. Australia, with hundreds of community and First Nations languages, is a rich source of examples."
+       ]
+      },
+      {
        "h": "First language and additional languages",
        "p": [
         "An additional language is any language learned after the first. Learning it is different from first-language acquisition: the learner already has a full language, is often older, may learn through formal teaching, and outcomes vary much more from person to person.",
@@ -354,12 +1110,51 @@
        "p": [
         "Code-switching is moving between languages or varieties within a conversation or even a sentence. It is a skilled behaviour, not a sign of weak language. Reasons include: a word has no good equivalent, quoting someone, marking a change of topic, including or excluding a listener, and showing a shared identity.",
         "Example: “We’re going to Yiayia’s for Easter, and she’s making koulourakia.” The Greek kinship term and food name signal family and cultural identity that the English equivalents would lose."
+       ],
+       "check": [
+        [
+         "Is code-switching a sign that a speaker has poor command of their languages?",
+         "No. It is a skilled, rule-governed practice used for purposes such as expressing identity, filling a lexical gap or including a listener."
+        ]
        ]
       },
       {
        "h": "Factors that affect learning",
        "p": [
         "Age of first exposure (younger learners usually end up with more native-like pronunciation), amount and quality of input, motivation, attitudes towards the language, similarity between the two languages, literacy in the first language, and opportunities to use the language for real communication."
+       ]
+      },
+      {
+       "h": "First and additional language learning compared",
+       "p": [
+        "Age and starting point: a first language is acquired from birth by a learner with no language; an additional language is learned by someone who already has one, at any age. Process: a first language is acquired without instruction through interaction; an additional language is often taught, with explicit rules, although it can also be picked up through immersion. Outcome: every typically developing child becomes a fluent speaker of their first language; outcomes for additional languages vary widely. Errors: children’s errors come from overgeneralising rules; learners’ errors come from overgeneralising and also from first-language transfer. Motivation matters little for a first language and a great deal for an additional one."
+       ],
+       "check": [
+        [
+         "Give one way learning an additional language differs from acquiring a first language.",
+         "Any one of: the learner already has a language, so transfer occurs; it often involves formal teaching; outcomes vary much more; motivation plays a large role."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: analysing a learner’s language",
+       "p": [
+        "A learner whose first language is Mandarin writes: “Yesterday I go to shop and buy three book. My sister she is very happy.”",
+        "“go” and “buy” lack past tense marking: Mandarin shows time with words such as “yesterday” and does not inflect the verb, so this is likely negative transfer. “three book” lacks the plural -s for the same reason: the number already shows plurality. “to shop” omits the article “the”; Mandarin has no articles. “My sister she is” repeats the subject with a pronoun, a topic-then-comment structure common in Mandarin.",
+        "The text is fully understandable and its errors are systematic, which is what the term interlanguage captures. Notice that the analysis explains each feature by reference to the first language; it does not just list mistakes."
+       ],
+       "check": [
+        [
+         "A French speaker says “I have hunger” for “I am hungry”. What is this an example of?",
+         "Negative transfer: the structure of the first language (French uses the verb “have” here) is carried into English."
+        ]
+       ]
+      },
+      {
+       "h": "Growing up with two languages",
+       "p": [
+        "Children who hear two languages from birth acquire both, passing through the same stages. They may mix languages in one utterance early on, which reflects using all their resources, not confusion. Their vocabulary in each language may be smaller than a monolingual child’s at first, but their total vocabulary is comparable.",
+        "Bilingualism brings advantages: communication with family and community, connection to culture and identity, wider opportunities for study and work, and greater awareness of how language works. A heritage language is easily lost if children stop using it once school begins, which is why families and communities run language schools and why language maintenance matters."
        ]
       },
       {
@@ -420,6 +1215,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the subsystems, especially morphology, lexis and syntax.",
+        "The big idea: English has not always looked or sounded as it does now. A speaker from 1,000 years ago would be unintelligible to you. Tracing how English changed shows that change is normal and constant, and explains many oddities of the modern language, from silent letters to having three words for one idea."
+       ]
+      },
+      {
        "h": "Why English changed",
        "p": [
         "English has been shaped by who its speakers met, who ruled them and what technology they used. Each period is marked by contact with another group. For each period, learn one cause, a few language effects and a few example words.",
@@ -455,6 +1257,52 @@
        "p": [
         "Compare the Lord’s Prayer: Old English “Fæder ure þu þe eart on heofonum” with Early Modern “Our father which art in heaven”.",
         "Letters have been lost (þ, æ). Word order has shifted from “father our” to “our father”. The endings in “heofonum” (dative plural) have gone, replaced by the preposition “in”. “Art” and “which” show Early Modern forms that have since changed again."
+       ]
+      },
+      {
+       "h": "Layers of vocabulary",
+       "p": [
+        "English often has several words for one idea, each from a different source and each with a different feel. Old English gives short, plain, everyday words. French gives words associated with power, law and refinement. Latin and Greek give learned and technical words.",
+        "Compare “ask” (Old English), “question” (French) and “interrogate” (Latin); “kingly”, “royal” and “regal”; “rise”, “mount” and “ascend”. This history is the reason formal English leans on Latinate vocabulary and informal English on Germanic words, a point you will use constantly in Units 3 and 4."
+       ],
+       "check": [
+        [
+         "Of “begin”, “commence” and “initiate”, which is from Old English, and how does its register differ?",
+         "“Begin” is from Old English and is the plainest and least formal. “Commence” (French) and “initiate” (Latin) are more formal."
+        ]
+       ]
+      },
+      {
+       "h": "Standardisation and codification",
+       "p": [
+        "In Middle English there was no standard: people wrote as they spoke, so spelling varied by region and even within one document. Several developments fixed a standard. The printing press (from 1476) meant printers had to choose spellings, and they largely chose the dialect of London, the centre of government and trade. The King James Bible (1611) and Shakespeare spread a shared written form. Dictionaries, notably Samuel Johnson’s in 1755, and grammar books in the 1700s codified spelling, meaning and usage; some of their rules were borrowed from Latin and never matched how English was spoken.",
+        "Codification is recording a variety in dictionaries and grammars. Once a standard existed, other dialects began to be judged against it."
+       ],
+       "check": [
+        [
+         "How did the printing press contribute to standardisation?",
+         "Printers had to choose one spelling and dialect for texts that would be read across the country, which spread a consistent written form."
+        ]
+       ]
+      },
+      {
+       "h": "A method for reading an older text",
+       "p": [
+        "Compare the text with its modern equivalent one subsystem at a time. Spelling and letters: lost letters, inconsistent spelling, a final -e. Lexis: words that have died out, changed meaning or been borrowed. Morphology: endings on nouns and verbs, such as -eth and -est, and pronouns such as “thou”. Syntax: word order, and how questions and negatives are formed (“I know not”). Then link each feature to a cause.",
+        "Example, from the opening of Chaucer’s Canterbury Tales (about 1390): “Whan that Aprill with his shoures soote / The droghte of March hath perced to the roote”. Modern sense: “When April with its sweet showers has pierced the drought of March to the root”.",
+        "Spelling is unstandardised (“whan”, “shoures”, “roote”). “soote” (sweet) follows its noun, an order that was possible in Middle English verse. “hath” has the third-person ending -th, later replaced by -s. “perced” comes from French. “his” is used where Modern English uses “its”, a form that did not yet exist."
+       ],
+       "check": [
+        [
+         "In “The lady doth protest too much”, which feature shows this is Early Modern English?",
+         "The verb form “doth”, with the third-person ending -th, now replaced by “does”."
+        ]
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Calling Shakespeare “Old English”: he wrote Early Modern English. Treating dates as exact boundaries; the periods blend into one another. Listing borrowings without saying what contact produced them. Describing older forms as “wrong” or “bad spelling” when no standard existed."
        ]
       }
      ]
@@ -510,6 +1358,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know the periods of English (previous lesson) and basic morphology.",
+        "The big idea: English is changing right now, in the same ways it always has. New words are built by a small set of processes, old words shift in meaning, and people argue about whether the changes are acceptable. If you can name the process behind a new word and discuss attitudes to it, you can analyse any example of change."
+       ]
+      },
+      {
        "h": "How new words are made",
        "p": [
         "Most new words come from material the language already has. Affixation adds prefixes or suffixes (“unfriend”, “doomscrolling”). Compounding joins free morphemes (“livestream”). Blending merges parts of words (“hangry”, “podcast”). Shortening or clipping cuts a word (“app”, “servo”). Acronyms are said as a word (“ANZAC”); initialisms are said letter by letter (“ATM”). Conversion changes word class with no change of form (“to google”, “a big ask”). Backformation removes a supposed affix (“edit” from “editor”). Borrowing takes a word from another language (“sushi”, “yakka”). Commonisation turns a brand or name into a common noun (“esky”, “hoover”). Neologism is the general term for a new word; an archaism is one that has fallen out of use; obsolescence is the process of dying out."
@@ -519,6 +1374,12 @@
        "h": "How meanings shift",
        "p": [
         "Broadening: a meaning widens (“dog” once meant a specific breed). Narrowing: it tightens (“meat” once meant any food; “deer” any animal). Elevation: it becomes more positive (“nice” once meant foolish). Deterioration: it becomes more negative (“silly” once meant blessed; “villain” once meant farm worker). Shift: it moves to something new (“mouse” for a computer device). Euphemisms often wear out and need replacing, because the unpleasant association transfers to the new word."
+       ],
+       "check": [
+        [
+         "“Girl” once meant a young person of either sex. What kind of semantic change is this?",
+         "Narrowing."
+        ]
        ]
       },
       {
@@ -532,12 +1393,51 @@
        "p": [
         "Prescriptivism holds that some forms are correct and others are errors, usually judged against the standard. Descriptivism records what speakers do, without ranking it. Linguists work descriptively, but prescriptive attitudes are real social facts: people are judged on their language in job interviews and exams, so the standard carries prestige.",
         "Aitchison’s three metaphors summarise complaints about change, and her replies to them. Damp spoon: change comes from laziness (reply: elision and assimilation are efficient and systematic). Crumbling castle: English was once perfect and is decaying (reply: there was never a perfect stage). Infectious disease: change is caught from others (reply: people adopt changes because they want to sound like the people who use them)."
+       ],
+       "check": [
+        [
+         "Someone complains that using “literally” for emphasis is “ruining English”. Is this a prescriptive or descriptive attitude?",
+         "Prescriptive. A descriptivist would record that the word has gained an intensifying use."
+        ]
        ]
       },
       {
        "h": "Worked example",
        "p": [
         "“Gonna” for “going to”. Process: assimilation and elision in speech, then respelling. A prescriptivist calls it sloppy; a descriptivist notes it is rule-governed (you can say “I’m gonna leave” but not “I’m gonna the shops”), so it marks a real grammatical change: “going to” has become a future marker."
+       ]
+      },
+      {
+       "h": "Why language changes",
+       "p": [
+        "New things and ideas need names: technology (“streaming”, “chatbot”), social change (“gig economy”), and events (“lockdown”). Contact with other languages and cultures brings borrowings. Speakers save effort, shortening words and simplifying sounds. Groups, especially the young, create new terms to mark their identity. Changing social values make some words unacceptable and others necessary, such as gender-neutral job titles. Prestige matters too: people adopt the forms of those they admire.",
+        "Changes spread unevenly. They often start in speech among younger speakers, are noticed and criticised, and are gradually accepted, at which point dictionaries record them."
+       ]
+      },
+      {
+       "h": "Practice set: name the process",
+       "p": [
+        "“Brunch”: blend of breakfast and lunch. “Photobomb”: compound. “Avo”: shortening with the Australian suffix -o. “To friend someone”: conversion from noun to verb. “PIN”: acronym. “FYI”: initialism. “Declutter”: affixation with the prefix de-. “Babysit” from “babysitter”: backformation. “Biro” for any ballpoint pen: commonisation. “Emoji”: borrowing from Japanese.",
+        "Meaning changes: “wicked” used to mean excellent (elevation). “Awful” once meant inspiring awe (deterioration). “Guys” for a mixed group (broadening). “Tablet” for a touchscreen device (shift)."
+       ],
+       "check": [
+        [
+         "What word-formation process produced “podcast” (iPod + broadcast)?",
+         "Blending."
+        ]
+       ]
+      },
+      {
+       "h": "Change in Australian English today",
+       "p": [
+        "Lexis: Americanisms through media (“trash”, “movie”), new diminutives (“devo” for devastated), and words from Australian life. Phonology: the high rising terminal and ongoing vowel shifts among younger speakers. Syntax and discourse: “like” as a discourse marker and quotative, “so” as a sentence opener, and “yeah nah”. Writing: lower-case styles and emoji in digital communication.",
+        "Dictionaries respond to change by adding words and by choosing a “word of the year”. These announcements, and the public reactions to them, are useful evidence in essays about attitudes."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Confusing acronyms (said as a word) with initialisms (said as letters). Confusing a blend (parts of words merged) with a compound (whole words joined). Presenting prescriptivism as simply wrong: it is an attitude with real social consequences, and you should explain it, not dismiss it. Giving examples that are decades old when recent ones are available."
        ]
       }
      ]
@@ -592,6 +1492,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know how English changed over time and what code-switching and language transfer are.",
+        "The big idea: wherever English travelled it met other languages, and both sides were changed. The results range from new national varieties to entirely new languages, and, for many communities, the loss of their own languages. This lesson looks at what happens when languages are in contact, and at who gains and who loses."
+       ]
+      },
+      {
        "h": "How English spread",
        "p": [
         "Colonisation, trade, and later media and the internet took English across the world. English now has more additional-language users than native speakers, and it works as a lingua franca: a shared language between people who have different first languages. There is no single owner of English, which is why linguists talk about Englishes in the plural."
@@ -602,6 +1509,12 @@
        "p": [
         "A pidgin arises when groups with no common language need to communicate, usually for trade or work. It has a small vocabulary drawn mostly from the more powerful language (the lexifier), simplified grammar, and nobody speaks it as a first language. If a community’s children grow up using it as their main language, it expands in vocabulary and grammar and becomes a creole: a full language with native speakers. Tok Pisin in Papua New Guinea and Kriol in northern Australia are creoles.",
         "A creole is not “broken English”. Kriol, for example, marks distinctions English does not, such as whether “we” includes the listener."
+       ],
+       "check": [
+        [
+         "What must happen for a pidgin to become a creole?",
+         "Children must acquire it as their first language, after which it expands in vocabulary and grammar."
+        ]
        ]
       },
       {
@@ -615,6 +1528,39 @@
        "h": "Standard and non-standard",
        "p": [
         "A standard variety is the one that has been codified in dictionaries and grammars and is used in education, government and the media. It has overt prestige. Its status is social, not linguistic: every variety is equally rule-governed. National standards differ (“colour” and “color”; “thongs” mean different things in Australia and the United States)."
+       ]
+      },
+      {
+       "h": "English as a global language: effects",
+       "p": [
+        "Benefits: a shared language for trade, science, aviation, the internet and travel; access to education and employment for those who learn it. Costs: pressure on smaller languages, as families shift to English for economic reasons; advantage for native speakers; and the spread of cultural values along with the language.",
+        "When a language dies, a community loses a carrier of knowledge, stories, law and identity that cannot be fully translated. That is why revival matters to the communities concerned, and why it is more than a question of vocabulary."
+       ],
+       "check": [
+        [
+         "Give one benefit and one cost of the global spread of English.",
+         "Benefit: a shared language for international communication, trade and science. Cost: pressure on smaller languages, contributing to language shift and death."
+        ]
+       ]
+      },
+      {
+       "h": "How a pidgin builds meaning",
+       "p": [
+        "A pidgin makes a small vocabulary go a long way through compounding and description. In Tok Pisin, which has since become a creole, “haus” is house and “bilong” marks possession, so “haus bilong mi” is “my house”. “Gras” is grass, so “gras bilong het” is hair. Most words come from English, the lexifier, but the grammar follows patterns from local languages, and some words come from elsewhere: “pikinini” (child) is from Portuguese.",
+        "Features typical of pidgins: few inflections, a small set of prepositions, tense shown by separate words instead of endings, and repetition for emphasis or plurality."
+       ],
+       "check": [
+        [
+         "What is a lexifier?",
+         "The language that supplies most of the vocabulary of a pidgin or creole."
+        ]
+       ]
+      },
+      {
+       "h": "Features of Aboriginal Englishes",
+       "p": [
+        "Aboriginal Englishes vary from place to place, from varieties close to Standard Australian English to ones close to Kriol. Features that may appear include: lexis with distinct meanings (“deadly” for excellent, “mob” for one’s group, “Country” for land to which a person belongs, “yarn” for a talk, “gammon” for pretending or joking); kinship terms extended beyond the immediate family (“Aunty”, “Uncle”, “cousin”, “brother”); the tag “eh”; and grammatical patterns such as leaving out the verb “to be” (“He tall”) or not marking the plural where it is clear from context.",
+        "Pragmatic conventions can differ as well. Silence may be a comfortable part of conversation, not a sign of difficulty. Direct questions, especially about personal matters, may be avoided; information is shared when the relationship is right. When these conventions are misread in classrooms, health settings and courts, speakers can be seriously disadvantaged. The features are systematic and express identity and connection to community."
        ]
       },
       {

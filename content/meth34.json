@@ -55,6 +55,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the Units 1 and 2 lessons on functions, polynomials, exponentials, logarithms and circular functions.",
+        "The big idea: Units 3 and 4 treat functions as objects that can be combined, reversed and transformed. Questions are more precise than in Units 1 and 2: every function comes with a domain, and many marks depend on stating domains and ranges exactly. This lesson is the language that the calculus and probability lessons rely on."
+       ]
+      },
+      {
        "h": "Domain, range and notation",
        "p": [
         "A function is written with its domain and rule: \\(f: [0, \\infty) \\to \\mathbb{R},\\ f(x) = \\sqrt{x}\\). If no domain is given, use the maximal (implied) domain: all \\(x\\) for which the rule is defined. Watch for three restrictions: no division by zero, no even root of a negative, no logarithm of a non-positive number.",
@@ -66,6 +73,12 @@
        "p": [
         "\\(f \\circ g\\) means apply \\(g\\) first, then \\(f\\): \\((f \\circ g)(x) = f(g(x))\\). It is defined only if every output of \\(g\\) is an allowed input of \\(f\\), that is \\(\\operatorname{ran} g \\subseteq \\operatorname{dom} f\\). When defined, its domain is the domain of \\(g\\).",
         "Example: \\(f(x) = \\log_e x\\) (domain \\(x > 0\\)) and \\(g(x) = x - 2\\) (range \\(\\mathbb{R}\\)). \\(f \\circ g\\) is not defined, because \\(g\\) outputs negative numbers. Restrict \\(g\\) to \\(x > 2\\): then its range is \\((0, \\infty)\\) and \\(f(g(x)) = \\log_e(x - 2)\\) with domain \\((2, \\infty)\\)."
+       ],
+       "check": [
+        [
+         "\\(f(x) = x^2\\) and \\(g(x) = x + 3\\). Find \\(f(g(2))\\) and \\(g(f(2))\\).",
+         "\\(f(5) = 25\\) and \\(g(4) = 7\\). Order matters."
+        ]
        ]
       },
       {
@@ -87,6 +100,39 @@
        "h": "Families and other operations",
        "p": [
         "Sum, difference and product functions are defined only where both functions are defined. Graphs can be built by adding ordinates. A piecewise (hybrid) function has different rules on different parts of its domain; check each endpoint for an open or closed circle and for continuity."
+       ]
+      },
+      {
+       "h": "Worked example: inverse of an exponential",
+       "p": [
+        "Find the inverse of \\(f: \\mathbb{R} \\to \\mathbb{R},\\ f(x) = 2e^{x - 1} + 3\\). First, the range of \\(f\\): \\(e^{x - 1} > 0\\), so \\(f(x) > 3\\), giving range \\((3, \\infty)\\).",
+        "Swap and solve: \\(x = 2e^{y - 1} + 3 \\Rightarrow e^{y - 1} = \\dfrac{x - 3}{2} \\Rightarrow y = 1 + \\log_e\\!\\left(\\dfrac{x - 3}{2}\\right)\\). So \\(f^{-1}: (3, \\infty) \\to \\mathbb{R},\\ f^{-1}(x) = 1 + \\log_e\\!\\left(\\dfrac{x - 3}{2}\\right)\\). The asymptote \\(y = 3\\) of \\(f\\) becomes the asymptote \\(x = 3\\) of \\(f^{-1}\\)."
+       ],
+       "check": [
+        [
+         "Find the inverse of \\(f(x) = e^x + 2\\) and its domain.",
+         "\\(f^{-1}(x) = \\log_e(x - 2)\\), with domain \\((2, \\infty)\\), the range of \\(f\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Images of points under transformations",
+       "p": [
+        "A sequence of transformations can be written as a mapping of points. Dilating by factor 3 from the \\(x\\)-axis and then translating 1 unit right sends \\((x, y)\\) to \\((x + 1, 3y)\\). Under this mapping \\(y = x^2\\) becomes \\(y = 3(x - 1)^2\\): the point \\((2, 4)\\) moves to \\((3, 12)\\), and \\(3(3 - 1)^2 = 12\\) confirms it.",
+        "To find the rule of an image from a mapping \\((x, y) \\to (x', y')\\), solve for \\(x\\) and \\(y\\) in terms of \\(x'\\) and \\(y'\\) and substitute into the original rule. Here \\(x = x' - 1\\) and \\(y = \\dfrac{y'}{3}\\), so \\(\\dfrac{y'}{3} = (x' - 1)^2\\)."
+       ],
+       "check": [
+        [
+         "Find the image of \\((1, 1)\\) under the mapping \\((x, y) \\to (x - 2, 4y)\\).",
+         "\\((-1, 4)\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Functional equations",
+       "p": [
+        "Some questions ask whether a function satisfies a property for all values. Substitute into both sides and compare. \\(f(x) = \\log_e x\\): \\(f(xy) = \\log_e(xy) = \\log_e x + \\log_e y = f(x) + f(y)\\), so \\(f(xy) = f(x) + f(y)\\) holds. \\(f(x) = e^x\\): \\(f(x + y) = e^{x + y} = e^x e^y = f(x)f(y)\\). \\(f(x) = x^2\\): \\(f(-x) = f(x)\\), so the function is even.",
+        "To show a property is false, one counterexample is enough. For \\(f(x) = x + 1\\), \\(f(1 \\times 1) = 2\\) but \\(f(1) + f(1) = 4\\), so \\(f(xy) = f(x) + f(y)\\) does not hold."
        ]
       },
       {
@@ -136,6 +182,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the functions lesson, log laws and exact values of circular functions.",
+        "The big idea: most questions in Methods end in an equation. This lesson collects the methods for each family, shows how to handle parameters and restricted domains, and explains when to use technology. Accuracy here is what turns understanding into marks."
+       ]
+      },
+      {
        "h": "Polynomial equations",
        "p": [
         "Bring everything to one side and factorise. For cubics and quartics, find a root with the factor theorem, divide, and continue. A literal equation contains parameters; solve it in terms of them and state any restrictions.",
@@ -147,6 +200,12 @@
        "p": [
         "Example: \\(e^{2x} - 3e^x - 4 = 0\\). Let \\(u = e^x\\): \\((u - 4)(u + 1) = 0\\). \\(e^x = -1\\) has no solution because \\(e^x > 0\\), so \\(x = \\log_e 4\\).",
         "Example: \\(2\\log_e x - \\log_e(x + 6) = 0\\). \\(\\log_e\\dfrac{x^2}{x + 6} = 0 \\Rightarrow x^2 = x + 6 \\Rightarrow x = 3\\) or \\(x = -2\\). Reject \\(-2\\), since \\(\\log_e(-2)\\) is undefined."
+       ],
+       "check": [
+        [
+         "Solve \\(e^{2x} = 9\\).",
+         "\\(2x = \\log_e 9\\), so \\(x = \\tfrac{1}{2}\\log_e 9 = \\log_e 3\\)."
+        ]
        ]
       },
       {
@@ -171,10 +230,175 @@
        ]
       },
       {
+       "h": "Worked example: a shifted circular equation",
+       "p": [
+        "Solve \\(2\\cos\\left(2x - \\tfrac{\\pi}{3}\\right) = 1\\) for \\(0 \\le x \\le \\pi\\). Let \\(\\theta = 2x - \\tfrac{\\pi}{3}\\). Since \\(0 \\le x \\le \\pi\\), \\(-\\tfrac{\\pi}{3} \\le \\theta \\le \\tfrac{5\\pi}{3}\\).",
+        "\\(\\cos\\theta = \\tfrac{1}{2}\\) on that interval gives \\(\\theta = -\\tfrac{\\pi}{3}, \\tfrac{\\pi}{3}, \\tfrac{5\\pi}{3}\\). Then \\(2x = \\theta + \\tfrac{\\pi}{3}\\), so \\(x = 0, \\tfrac{\\pi}{3}, \\pi\\). Changing the domain for \\(\\theta\\) first is what stops solutions being missed or wrongly included."
+       ],
+       "check": [
+        [
+         "Solve \\(\\sin\\left(x + \\tfrac{\\pi}{6}\\right) = 1\\) for \\(0 \\le x \\le 2\\pi\\).",
+         "\\(x + \\tfrac{\\pi}{6} = \\tfrac{\\pi}{2}\\), so \\(x = \\tfrac{\\pi}{3}\\). (\\(\\tfrac{5\\pi}{2}\\) is outside the shifted domain.)"
+        ]
+       ]
+      },
+      {
+       "h": "Equations with a parameter",
+       "p": [
+        "How many solutions does \\(x^2 - 4x = k\\) have? Think graphically: \\(y = x^2 - 4x\\) is a parabola with turning point \\((2, -4)\\), and \\(y = k\\) is a horizontal line. Two solutions if \\(k > -4\\), one if \\(k = -4\\), none if \\(k < -4\\).",
+        "The same thinking works for any family: \\(e^x = k\\) has one solution if \\(k > 0\\) and none otherwise; \\(\\sin x = k\\) on \\([0, 2\\pi]\\) has two solutions for \\(-1 < k < 1\\) except \\(k = 0\\), which has three (\\(0, \\pi, 2\\pi\\)), and one each for \\(k = \\pm 1\\)."
+       ],
+       "check": [
+        [
+         "For what values of \\(k\\) does \\(x^2 + k = 0\\) have two solutions?",
+         "\\(k < 0\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Using technology well",
+       "p": [
+        "In the technology-active exam, a CAS solves most equations quickly, but marks are still lost. Always enter the domain restriction so that only valid solutions are returned. Give exact answers when the question asks for them. Check that the number of solutions makes sense by graphing. In extended answers, write the equation you solved before the result, so the method is visible."
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Cancelling a factor that could be zero. Accepting solutions outside the domain of a log. Missing solutions when the domain is not \\([0, 2\\pi]\\). Giving decimals when an exact answer is asked for."
        ]
+      }
+     ]
+    },
+    {
+     "id": "pseudocode",
+     "title": "Algorithms and pseudocode",
+     "points": [
+      "Pseudocode describes an algorithm in structured plain language: assignment (←), decisions (if … then … else … end if) and loops (for, while).",
+      "Trace an algorithm with a table that records each variable after every step.",
+      "Bisection: if \\(f(a)\\) and \\(f(b)\\) have opposite signs, a root lies between; halve the interval and keep the half where the sign changes.",
+      "Newton’s method: \\(x_{n+1} = x_n - \\dfrac{f(x_n)}{f'(x_n)}\\); it converges quickly near a root but can fail near a stationary point.",
+      "The trapezium rule is a loop that adds the areas of trapezia to approximate a definite integral."
+     ],
+     "explain": "Explain, as if to a friend, how the bisection method finds a root, and why it always works if the function is continuous and the starting values have opposite signs.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with solving equations, derivatives and definite integrals.",
+        "The big idea: many equations cannot be solved exactly, and many integrals cannot be found with an antiderivative. Numerical methods get as close as you like by repeating a simple step. The study design asks you to read, trace and write these methods as algorithms in pseudocode, a structured way of writing steps that is independent of any programming language."
+       ]
+      },
+      {
+       "h": "Reading pseudocode",
+       "p": [
+        "Assignment uses an arrow: “x ← 3” stores 3 in x; “x ← x + 1” increases x by 1. Conditionals: “if … then … else … end if”. A for loop repeats a fixed number of times: “for i from 1 to 10 … end for”. A while loop repeats until a condition fails: “while … do … end while”. Functions are defined with “define f(x)” and give a result with “return”. Output uses “print”.",
+        "Indentation shows which lines belong inside a loop or condition. Read pseudocode one line at a time, as the computer would, and never skip ahead."
+       ]
+      },
+      {
+       "h": "Tracing an algorithm",
+       "p": [
+        "Trace this algorithm:\nx ← 1\nfor i from 1 to 4\n    x ← 2 × x + 1\nend for\nprint x",
+        "Keep a table with a column for each variable. After i = 1, x = 3. After i = 2, x = 7. After i = 3, x = 15. After i = 4, x = 31. The output is 31. Tracing by hand like this is exactly what exam questions ask for, so practise writing the table neatly."
+       ],
+       "check": [
+        [
+         "Trace: s ← 0; for k from 1 to 3: s ← s + k²; end for; print s. What is printed?",
+         "s becomes 1, then 5, then 14. The output is 14."
+        ]
+       ]
+      },
+      {
+       "h": "The bisection method",
+       "p": [
+        "If a continuous function changes sign between \\(a\\) and \\(b\\), there is a root between them. Bisection repeatedly halves the interval. Compute the midpoint \\(m\\); if \\(f(a)\\) and \\(f(m)\\) have opposite signs, the root is in \\([a, m]\\); otherwise it is in \\([m, b]\\). Repeat until the interval is as small as required.",
+        "Example: \\(f(x) = x^3 - x - 1\\) on \\([1, 2]\\). \\(f(1) = -1\\) and \\(f(2) = 5\\). \\(f(1.5) = 0.875 > 0\\), so the root is in \\([1, 1.5]\\). \\(f(1.25) \\approx -0.297 < 0\\): \\([1.25, 1.5]\\). \\(f(1.375) \\approx 0.225 > 0\\): \\([1.25, 1.375]\\). \\(f(1.3125) \\approx -0.052 < 0\\): \\([1.3125, 1.375]\\). The root is about 1.32. Each step halves the uncertainty, so bisection is reliable but slow.",
+        "In pseudocode:\ndefine f(x)\n    return x³ − x − 1\na ← 1\nb ← 2\nwhile b − a > 0.001\n    m ← (a + b) ÷ 2\n    if f(a) × f(m) < 0 then\n        b ← m\n    else\n        a ← m\n    end if\nend while\nprint (a + b) ÷ 2"
+       ],
+       "check": [
+        [
+         "Using bisection on \\(f(x) = x^2 - 2\\) starting with \\([1, 2]\\), what is the interval after one step?",
+         "\\(f(1.5) = 0.25 > 0\\) and \\(f(1) < 0\\), so the root is in \\([1, 1.5]\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Newton’s method",
+       "p": [
+        "Newton’s method uses the tangent line. From an estimate \\(x_n\\), follow the tangent to where it meets the \\(x\\)-axis: \\(x_{n+1} = x_n - \\dfrac{f(x_n)}{f'(x_n)}\\).",
+        "Example: \\(f(x) = x^3 - x - 1\\), \\(f'(x) = 3x^2 - 1\\), \\(x_0 = 1.5\\). \\(x_1 = 1.5 - \\dfrac{0.875}{5.75} \\approx 1.34783\\); \\(x_2 \\approx 1.32520\\); \\(x_3 \\approx 1.32472\\). Three steps give five accurate decimal places, far faster than bisection.",
+        "It can fail. If \\(f'(x_n)\\) is close to zero (near a stationary point), the tangent is nearly flat and the next estimate is thrown far away; if \\(f'(x_n) = 0\\) the formula is undefined. A poor starting value can also lead to a different root.",
+        "In pseudocode:\ndefine f(x)\n    return x³ − x − 1\ndefine df(x)\n    return 3x² − 1\nx ← 1.5\nfor i from 1 to 5\n    x ← x − f(x) ÷ df(x)\nend for\nprint x"
+       ],
+       "check": [
+        [
+         "Apply one step of Newton’s method to \\(f(x) = x^2 - 2\\) from \\(x_0 = 1\\).",
+         "\\(x_1 = 1 - \\dfrac{-1}{2} = 1.5\\)."
+        ]
+       ]
+      },
+      {
+       "h": "The trapezium rule as an algorithm",
+       "p": [
+        "To approximate \\(\\displaystyle\\int_a^b f(x)\\,dx\\) with \\(n\\) strips of width \\(h = \\dfrac{b - a}{n}\\), add the areas of the trapezia: each is \\(\\dfrac{h}{2}\\big(f(x_{i}) + f(x_{i+1})\\big)\\).",
+        "In pseudocode:\nh ← (b − a) ÷ n\ntotal ← 0\nfor i from 0 to n − 1\n    x ← a + i × h\n    total ← total + (h ÷ 2) × (f(x) + f(x + h))\nend for\nprint total"
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Updating a variable in the trace table before the line that changes it. Running a loop one time too many or too few. In bisection, keeping the wrong half. In Newton’s method, using f instead of f′ in the denominator, or forgetting that the method needs a non-zero derivative."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "In pseudocode, “t ← t × 2” means…",
+       "o": [
+        "t equals 2",
+        "t is compared with t × 2",
+        "t is replaced by twice its current value",
+        "t is printed twice"
+       ],
+       "a": 2,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "For bisection on \\([a, b]\\), the method requires that…",
+       "o": [
+        "\\(f(a) = f(b)\\)",
+        "\\(f(a)\\) and \\(f(b)\\) have opposite signs",
+        "\\(f'(a) = 0\\)",
+        "\\(a\\) and \\(b\\) are integers"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Trace: x ← 10; while x > 1: x ← x ÷ 2; end while; print x. What is printed?",
+       "a": "x becomes 5, 2.5, 1.25, then 0.625, which stops the loop. The output is 0.625.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "When can Newton’s method fail?",
+       "a": "When the derivative at an estimate is zero or close to zero (near a stationary point), or when a poor starting value leads away from the wanted root.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "One Newton step for \\(f(x) = x^2 - 5\\) from \\(x_0 = 2\\) gives…",
+       "o": [
+        "2.25",
+        "2.5",
+        "1.75",
+        "2.2"
+       ],
+       "a": 0,
+       "e": "\\(2 - \\dfrac{-1}{4} = 2.25\\)."
       }
      ]
     }
@@ -235,6 +459,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the Units 1 and 2 differentiation lesson and with exponential, logarithmic and circular functions.",
+        "The big idea: three rules, chain, product and quotient, extend differentiation from powers of \\(x\\) to every function in the course. With them, you can find the gradient of any curve and solve optimisation problems that were out of reach before."
+       ]
+      },
+      {
        "h": "Choosing the rule",
        "p": [
         "A function inside another function needs the chain rule. Two functions multiplied need the product rule. One function divided by another needs the quotient rule. Simplify first where you can, since expanding or dividing through is often quicker than a rule."
@@ -271,6 +502,50 @@
        "h": "Absolute maximum and minimum",
        "p": [
         "On a closed interval, compare the values of the function at the stationary points inside the interval and at both endpoints. The largest is the absolute maximum."
+       ]
+      },
+      {
+       "h": "More derivatives to know",
+       "p": [
+        "\\(\\dfrac{d}{dx}\\tan(kx) = \\dfrac{k}{\\cos^2(kx)}\\). Example: at \\(x = \\tfrac{\\pi}{8}\\), the derivative of \\(\\tan(2x)\\) is \\(\\dfrac{2}{\\cos^2\\tfrac{\\pi}{4}} = \\dfrac{2}{\\tfrac{1}{2}} = 4\\).",
+        "For logarithms of a function, combine with the chain rule: \\(\\dfrac{d}{dx}\\log_e\\!\\big(f(x)\\big) = \\dfrac{f'(x)}{f(x)}\\). Example: \\(\\dfrac{d}{dx}\\log_e(x^2 + 1) = \\dfrac{2x}{x^2 + 1}\\)."
+       ],
+       "check": [
+        [
+         "Differentiate \\(\\tan(3x)\\).",
+         "\\(\\dfrac{3}{\\cos^2(3x)}\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: tangent and normal",
+       "p": [
+        "Find the tangent and normal to \\(y = x\\log_e x\\) at \\(x = e\\). At \\(x = e\\), \\(y = e\\). Product rule: \\(\\dfrac{dy}{dx} = \\log_e x + 1 = 2\\).",
+        "Tangent: \\(y - e = 2(x - e)\\), so \\(y = 2x - e\\). The normal is perpendicular to the tangent, with gradient \\(-\\tfrac{1}{2}\\): \\(y - e = -\\tfrac{1}{2}(x - e)\\), so \\(y = -\\tfrac{1}{2}x + \\tfrac{3e}{2}\\)."
+       ],
+       "check": [
+        [
+         "What is the gradient of the normal to \\(y = x^2\\) at \\(x = 1\\)?",
+         "The tangent gradient is 2, so the normal gradient is \\(-\\tfrac{1}{2}\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a stationary point with the product rule",
+       "p": [
+        "\\(y = xe^{-x}\\). \\(\\dfrac{dy}{dx} = e^{-x} - xe^{-x} = e^{-x}(1 - x)\\). Since \\(e^{-x}\\) is never zero, the only stationary point is at \\(x = 1\\), where \\(y = \\tfrac{1}{e}\\). The derivative is positive for \\(x < 1\\) and negative for \\(x > 1\\), so \\(\\left(1, \\tfrac{1}{e}\\right)\\) is a local maximum. Factorising the derivative is what makes this easy."
+       ],
+       "check": [
+        [
+         "Differentiate \\(x\\sin x\\).",
+         "\\(\\sin x + x\\cos x\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Linear approximation in practice",
+       "p": [
+        "\\(f(x + h) \\approx f(x) + hf'(x)\\) estimates a value near one you know. Estimate \\(\\sqrt{16.2}\\) with \\(f(x) = \\sqrt{x}\\), \\(x = 16\\), \\(h = 0.2\\): \\(f'(x) = \\dfrac{1}{2\\sqrt{x}} = \\tfrac{1}{8}\\), so \\(\\sqrt{16.2} \\approx 4 + 0.2 \\times \\tfrac{1}{8} = 4.025\\). The true value is 4.0249. The approximation uses the tangent line, so it is good only for small \\(h\\)."
        ]
       },
       {
@@ -320,6 +595,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the differentiation rules and with anti-differentiation from Units 1 and 2.",
+        "The big idea: integration adds up small pieces. Its most visible use is area under a curve, but the same tool gives total change from a rate, average values and, in the probability lessons, probabilities for continuous variables. The fundamental theorem of calculus makes it calculable with antiderivatives."
+       ]
+      },
+      {
        "h": "Antiderivatives to know",
        "p": [
         "\\(\\displaystyle\\int (ax + b)^n dx = \\frac{(ax + b)^{n+1}}{a(n + 1)} + c\\) for \\(n \\ne -1\\). \\(\\displaystyle\\int \\frac{1}{ax + b}\\,dx = \\frac{1}{a}\\log_e(ax + b) + c\\) for \\(ax + b > 0\\). \\(\\displaystyle\\int \\sin(kx)\\,dx = -\\frac{1}{k}\\cos(kx) + c\\). \\(\\displaystyle\\int \\cos(kx)\\,dx = \\frac{1}{k}\\sin(kx) + c\\). These reverse the chain rule only when the inside function is linear."
@@ -336,6 +618,12 @@
        "h": "The definite integral",
        "p": [
         "The fundamental theorem of calculus links area and antiderivatives: \\(\\displaystyle\\int_a^b f(x)\\,dx = F(b) - F(a)\\). The definite integral gives signed area: regions below the \\(x\\)-axis count as negative. Properties: \\(\\displaystyle\\int_a^b f = -\\int_b^a f\\); \\(\\displaystyle\\int_a^b f + \\int_b^c f = \\int_a^c f\\); \\(\\displaystyle\\int_a^b (kf + g) = k\\int_a^b f + \\int_a^b g\\)."
+       ],
+       "check": [
+        [
+         "Evaluate \\(\\displaystyle\\int_1^2 2x\\,dx\\).",
+         "\\(\\big[x^2\\big]_1^2 = 4 - 1 = 3\\)."
+        ]
        ]
       },
       {
@@ -351,6 +639,39 @@
        "p": [
         "If you integrate a rate of change, you get the total change: \\(\\displaystyle\\int_a^b v(t)\\,dt\\) is the change in position (displacement); the distance travelled is \\(\\displaystyle\\int_a^b |v(t)|\\,dt\\). The average value of a function is the height of the rectangle with the same area over the interval.",
         "The trapezium rule estimates an area with \\(n\\) strips of width \\(h\\): \\(\\dfrac{h}{2}\\big(f(x_0) + 2f(x_1) + \\dots + 2f(x_{n-1}) + f(x_n)\\big)\\). It overestimates when the curve is concave up."
+       ]
+      },
+      {
+       "h": "Worked example: curves that cross",
+       "p": [
+        "Find the area enclosed between \\(y = \\sin x\\) and \\(y = \\cos x\\) for \\(0 \\le x \\le \\pi\\). They meet where \\(\\tan x = 1\\), at \\(x = \\tfrac{\\pi}{4}\\). Before that, cosine is on top; after it, sine is.",
+        "\\(\\displaystyle\\int_0^{\\pi/4} (\\cos x - \\sin x)\\,dx = \\big[\\sin x + \\cos x\\big]_0^{\\pi/4} = \\sqrt{2} - 1\\). \\(\\displaystyle\\int_{\\pi/4}^{\\pi} (\\sin x - \\cos x)\\,dx = \\big[-\\cos x - \\sin x\\big]_{\\pi/4}^{\\pi} = 1 + \\sqrt{2}\\). Total area \\(= 2\\sqrt{2}\\). Integrating across the crossing without splitting would subtract one region from the other."
+       ],
+       "check": [
+        [
+         "Why must an area integral be split where the curves cross?",
+         "The signed integral would subtract the region where the ‘top’ function is actually below, giving less than the true area."
+        ]
+       ]
+      },
+      {
+       "h": "Functions with a linear inside",
+       "p": [
+        "\\(\\displaystyle\\int e^{3x - 1}\\,dx = \\tfrac{1}{3}e^{3x - 1} + c\\). \\(\\displaystyle\\int \\frac{1}{2x + 5}\\,dx = \\tfrac{1}{2}\\log_e(2x + 5) + c\\) for \\(x > -\\tfrac{5}{2}\\). \\(\\displaystyle\\int_0^{\\pi/4} \\cos(2x)\\,dx = \\left[\\tfrac{1}{2}\\sin(2x)\\right]_0^{\\pi/4} = \\tfrac{1}{2}\\).",
+        "In each case, divide by the coefficient of \\(x\\) inside the function. Check by differentiating: the chain rule should multiply that coefficient back in."
+       ],
+       "check": [
+        [
+         "Find \\(\\displaystyle\\int e^{2x}\\,dx\\).",
+         "\\(\\tfrac{1}{2}e^{2x} + c\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: displacement and distance",
+       "p": [
+        "A particle has velocity \\(v = t^2 - 4t + 3\\) m/s for \\(0 \\le t \\le 3\\). Velocity is zero at \\(t = 1\\) and \\(t = 3\\), and negative between them.",
+        "Displacement \\(= \\displaystyle\\int_0^3 v\\,dt = \\left[\\tfrac{t^3}{3} - 2t^2 + 3t\\right]_0^3 = 0\\): the particle ends where it started. Distance travelled \\(= \\displaystyle\\int_0^1 v\\,dt + \\left|\\int_1^3 v\\,dt\\right| = \\tfrac{4}{3} + \\tfrac{4}{3} = \\tfrac{8}{3}\\) m."
        ]
       },
       {
@@ -405,6 +726,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the Units 1 and 2 probability lesson, including combinations.",
+        "The big idea: a random variable turns the outcomes of an experiment into numbers, so that you can calculate averages and spreads. The binomial distribution is the model for counting successes in repeated independent trials, and it is the bridge to the sampling lesson at the end of the course."
+       ]
+      },
+      {
        "h": "Random variables",
        "p": [
         "A random variable assigns a number to each outcome of an experiment. It is discrete if its values can be listed. Its probability distribution is a table, graph or rule giving \\(\\Pr(X = x)\\) for each value. Two checks: every probability is between 0 and 1, and they add to 1."
@@ -423,6 +751,12 @@
        "p": [
         "All four conditions must hold: a fixed number \\(n\\) of trials; each trial has two outcomes (success or failure); the probability of success \\(p\\) is the same in every trial; the trials are independent. Sampling without replacement from a small group fails the last two.",
         "\\(\\Pr(X = x) = \\dbinom{n}{x}p^x(1 - p)^{n - x}\\). The coefficient counts the number of orders in which the successes can occur."
+       ],
+       "check": [
+        [
+         "Is the number of aces in 5 cards dealt from one deck binomial?",
+         "No. The cards are dealt without replacement, so the probability changes from card to card and the trials are not independent."
+        ]
        ]
       },
       {
@@ -442,6 +776,39 @@
        "h": "Shape and conditional questions",
        "p": [
         "The binomial distribution is symmetric when \\(p = 0.5\\), positively skewed when \\(p < 0.5\\) and negatively skewed when \\(p > 0.5\\); it becomes more symmetric as \\(n\\) grows. Conditional example: \\(\\Pr(X = 2 \\mid X \\ge 1) = \\dfrac{\\Pr(X = 2)}{\\Pr(X \\ge 1)}\\)."
+       ]
+      },
+      {
+       "h": "Building a distribution from an experiment",
+       "p": [
+        "Toss two fair coins and let \\(X\\) be the number of heads. Outcomes HH, HT, TH, TT are equally likely, so \\(\\Pr(X = 0) = \\tfrac{1}{4}\\), \\(\\Pr(X = 1) = \\tfrac{1}{2}\\), \\(\\Pr(X = 2) = \\tfrac{1}{4}\\).",
+        "\\(\\operatorname{E}(X) = 0 + \\tfrac{1}{2} + \\tfrac{2}{4} = 1\\). \\(\\operatorname{E}(X^2) = 0 + \\tfrac{1}{2} + \\tfrac{4}{4} = 1.5\\), so \\(\\operatorname{Var}(X) = 1.5 - 1 = 0.5\\). This matches the binomial formulas with \\(n = 2\\), \\(p = 0.5\\): \\(np = 1\\) and \\(np(1 - p) = 0.5\\)."
+       ],
+       "check": [
+        [
+         "Three fair coins are tossed. What is the expected number of heads?",
+         "\\(np = 3 \\times 0.5 = 1.5\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: an unknown constant",
+       "p": [
+        "\\(\\Pr(X = x) = kx\\) for \\(x = 1, 2, 3, 4\\). The probabilities add to 1: \\(k(1 + 2 + 3 + 4) = 10k = 1\\), so \\(k = 0.1\\).",
+        "\\(\\operatorname{E}(X) = 0.1(1 + 4 + 9 + 16) = 3\\). \\(\\operatorname{E}(X^2) = 0.1(1 + 8 + 27 + 64) = 10\\). \\(\\operatorname{Var}(X) = 10 - 9 = 1\\)."
+       ],
+       "check": [
+        [
+         "\\(\\Pr(X = x) = k\\) for \\(x = 1, 2, 3, 4, 5\\). Find \\(k\\).",
+         "\\(5k = 1\\), so \\(k = 0.2\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Binomial calculations with technology",
+       "p": [
+        "Write the distribution first, for example \\(X \\sim \\operatorname{Bi}(10, 0.3)\\), then the probability needed. Use the probability function for a single value, \\(\\Pr(X = 3)\\), and the cumulative function for ranges, \\(\\Pr(X \\le 2)\\) or \\(\\Pr(2 \\le X \\le 5)\\).",
+        "Translate words carefully: “at least 3” is \\(\\Pr(X \\ge 3) = 1 - \\Pr(X \\le 2)\\); “more than 3” is \\(\\Pr(X \\ge 4)\\); “at most 3” is \\(\\Pr(X \\le 3)\\); “fewer than 3” is \\(\\Pr(X \\le 2)\\)."
        ]
       },
       {
@@ -491,6 +858,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with definite integrals and with discrete random variables.",
+        "The big idea: when a variable can take any value in an interval, such as a time, a mass or a height, probabilities come from areas under a curve instead of from a table. The normal distribution is the most important continuous model, because so many measurements cluster symmetrically around an average."
+       ]
+      },
+      {
        "h": "Probability as area",
        "p": [
         "A continuous random variable can take any value in an interval, so probabilities are given by areas under a probability density function (pdf). The height of the pdf is not a probability and can be greater than 1. \\(\\Pr(a < X < b) = \\displaystyle\\int_a^b f(x)\\,dx\\). The probability of any single exact value is zero, so \\(<\\) and \\(\\le\\) give the same answer."
@@ -528,6 +902,43 @@
        "h": "Finding an unknown mean or standard deviation",
        "p": [
         "If \\(\\Pr(X < 60) = 0.2\\) and \\(\\sigma = 5\\), then \\(\\dfrac{60 - \\mu}{5} = -0.8416\\), so \\(\\mu \\approx 64.2\\). With both unknown, two probabilities give two simultaneous equations."
+       ]
+      },
+      {
+       "h": "Worked example: median, mean and variance",
+       "p": [
+        "\\(f(x) = 2x\\) for \\(0 \\le x \\le 1\\), and 0 elsewhere. Median: \\(\\displaystyle\\int_0^m 2x\\,dx = m^2 = 0.5\\), so \\(m = \\tfrac{1}{\\sqrt{2}} \\approx 0.707\\).",
+        "Mean: \\(\\operatorname{E}(X) = \\displaystyle\\int_0^1 2x^2\\,dx = \\tfrac{2}{3}\\). \\(\\operatorname{E}(X^2) = \\displaystyle\\int_0^1 2x^3\\,dx = \\tfrac{1}{2}\\). Variance: \\(\\tfrac{1}{2} - \\tfrac{4}{9} = \\tfrac{1}{18}\\). The mean is below the median because the distribution has a longer tail to the left."
+       ],
+       "check": [
+        [
+         "\\(f(x) = \\tfrac{1}{4}\\) for \\(0 \\le x \\le 4\\). What is the median?",
+         "2, by symmetry: \\(\\tfrac{1}{4}m = 0.5\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Conditional probability with a pdf",
+       "p": [
+        "For the same pdf, \\(\\Pr(X > a) = 1 - a^2\\). So \\(\\Pr(X > 0.5 \\mid X > 0.25) = \\dfrac{\\Pr(X > 0.5)}{\\Pr(X > 0.25)} = \\dfrac{0.75}{0.9375} = 0.8\\). The intersection of the two events is just \\(X > 0.5\\), because that event lies inside the other."
+       ],
+       "check": [
+        [
+         "For \\(f(x) = 2x\\) on \\([0, 1]\\), find \\(\\Pr(X < 0.5)\\).",
+         "\\(0.5^2 = 0.25\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Using the symmetry of the normal curve",
+       "p": [
+        "If \\(X \\sim N(50, \\sigma^2)\\) and \\(\\Pr(X < 40) = 0.3\\), then by symmetry about 50, \\(\\Pr(X > 60) = 0.3\\), and \\(\\Pr(40 < X < 60) = 1 - 0.6 = 0.4\\). Symmetry arguments often answer technology-free questions without any calculation."
+       ],
+       "check": [
+        [
+         "\\(X \\sim N(100, 15^2)\\) and \\(\\Pr(X > 120) = 0.09\\). Find \\(\\Pr(X < 80)\\).",
+         "0.09, by symmetry about 100."
+        ]
        ]
       },
       {
@@ -571,6 +982,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the binomial and normal distributions.",
+        "The big idea: we rarely know the true proportion of a population with some property, so we estimate it from a sample. Different samples give different estimates. This lesson describes how much they vary, and turns one sample into an interval that is likely to contain the true value."
+       ]
+      },
+      {
        "h": "Population and sample",
        "p": [
         "A population proportion \\(p\\) is a fixed number, usually unknown. A sample proportion \\(\\hat{p} = \\dfrac{\\text{number in sample with the attribute}}{n}\\) is calculated from one random sample and varies from sample to sample. The random variable \\(\\hat{P}\\) describes that variation; its distribution is the sampling distribution.",
@@ -588,6 +1006,12 @@
        "h": "Mean and standard deviation",
        "p": [
         "\\(\\operatorname{E}(\\hat{P}) = p\\), so sample proportions centre on the true value. \\(\\operatorname{sd}(\\hat{P}) = \\sqrt{\\dfrac{p(1 - p)}{n}}\\), so larger samples vary less. To halve the standard deviation, the sample size must be multiplied by four. When \\(n\\) is large, \\(\\hat{P}\\) is approximately normal with this mean and standard deviation."
+       ],
+       "check": [
+        [
+         "Find \\(\\operatorname{sd}(\\hat{P})\\) when \\(p = 0.5\\) and \\(n = 100\\).",
+         "\\(\\sqrt{\\dfrac{0.25}{100}} = 0.05\\)."
+        ]
        ]
       },
       {
@@ -611,10 +1035,165 @@
        ]
       },
       {
+       "h": "Seeing the sampling distribution",
+       "p": [
+        "Imagine taking thousands of random samples of the same size and recording \\(\\hat{p}\\) for each. Plotted, the values form a roughly bell-shaped distribution centred on the true \\(p\\). Simulation on a calculator or computer shows this directly. As \\(n\\) increases, the distribution becomes narrower and more symmetric: larger samples give estimates that are more consistently close to \\(p\\)."
+       ],
+       "check": [
+        [
+         "What happens to the standard deviation of the sample proportion when the sample size is multiplied by 4?",
+         "It halves, because the sample size appears under a square root."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: a normal approximation",
+       "p": [
+        "In a population, \\(p = 0.4\\). For random samples of \\(n = 100\\), \\(\\operatorname{sd}(\\hat{P}) = \\sqrt{\\dfrac{0.4 \\times 0.6}{100}} \\approx 0.049\\).",
+        "\\(\\Pr(\\hat{P} > 0.5) \\approx \\Pr\\!\\left(Z > \\dfrac{0.5 - 0.4}{0.049}\\right) = \\Pr(Z > 2.04) \\approx 0.021\\). The exact binomial value is about 0.017; the normal model is an approximation that improves as \\(n\\) grows. Use whichever method the question asks for."
+       ]
+      },
+      {
+       "h": "Worked example: from an interval back to the sample",
+       "p": [
+        "An approximate 95% confidence interval for \\(p\\) is \\((0.32, 0.48)\\). The sample proportion is the midpoint, \\(\\hat{p} = 0.40\\), and the margin of error is 0.08.",
+        "\\(1.96\\sqrt{\\dfrac{0.4 \\times 0.6}{n}} = 0.08 \\Rightarrow \\dfrac{0.24}{n} = \\left(\\dfrac{0.08}{1.96}\\right)^2 \\Rightarrow n \\approx 144\\)."
+       ],
+       "check": [
+        [
+         "A 95% confidence interval is (0.55, 0.65). What are the sample proportion and margin of error?",
+         "Sample proportion 0.60, margin of error 0.05."
+        ]
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Using \\(p\\) in place of \\(\\hat{p}\\) in a confidence interval. Saying a wider interval is more precise. Treating \\(\\hat{P}\\) as continuous for a small sample. Rounding a sample size down."
        ]
+      }
+     ]
+    },
+    {
+     "id": "exam-methods",
+     "title": "Exam technique for Methods",
+     "points": [
+      "Examination 1 is technology-free (short answers, exact values); Examination 2 is technology-active (multiple choice and extended response). Check the current specifications.",
+      "Give exact answers unless a decimal is asked for; follow the required number of decimal places.",
+      "Show the working that leads to each result, especially in “show that” and “hence” questions.",
+      "State domains, coordinates and units; label graphs fully.",
+      "Use technology for long calculations but write down what you solved."
+     ],
+     "explain": "Pick a past exam question you lost marks on. Write the full-mark solution and list the specific things the marking scheme rewarded.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Read this lesson once you have covered most of Units 3 and 4, and return to it before each practice exam.",
+        "The big idea: Methods exams reward precise communication as well as correct mathematics. Many students who understand the content lose marks to missing domains, unsimplified answers or invisible working. These habits are easy to fix with deliberate practice."
+       ]
+      },
+      {
+       "h": "The two examinations",
+       "p": [
+        "Examination 1 is completed without a calculator or notes. Questions are short and test core skills: algebra, exact values, differentiation and integration rules, and probability set-ups. Fluency matters, so practise by hand regularly through the year.",
+        "Examination 2 allows approved technology and a bound reference. It has a multiple-choice section and extended-response questions that build on one context across several parts. Formats, timing and the formula sheet can change, so check the current VCAA examination specifications and sample papers."
+       ]
+      },
+      {
+       "h": "Exact answers and accuracy",
+       "p": [
+        "Unless a question asks for a decimal, give exact values: \\(\\log_e 3\\), \\(\\tfrac{\\pi}{6}\\), \\(2\\sqrt{5}\\), \\(\\tfrac{1}{e}\\). Simplify fully. When a decimal is required, round only at the end, to the number of places asked for; rounding early can change the final digit and cost the mark.",
+        "Coordinates are written as \\((x, y)\\). Domains and ranges use correct notation. Answers to contextual questions need units and a sentence that answers the question asked."
+       ],
+       "check": [
+        [
+         "A question asks for the exact solution of \\(e^{x} = 5\\). Is 1.609 acceptable?",
+         "No. The exact answer is \\(\\log_e 5\\)."
+        ]
+       ]
+      },
+      {
+       "h": "“Show that” and “hence”",
+       "p": [
+        "In a “show that” question the answer is given, so every mark is for the working. Start from the given information and reach the result through clear, logical steps; do not start from the answer.",
+        "“Hence” means use the previous result. “Hence, or otherwise” allows another method, but the previous result is usually the quickest route. Even if you could not complete an earlier part, you may use its stated result in a later part."
+       ]
+      },
+      {
+       "h": "Using technology in Examination 2",
+       "p": [
+        "Define functions once and reuse them, to avoid retyping errors. Restrict domains when solving. Use the graph to check the number and approximate values of solutions. For multiple-choice questions, technology can test each option, but be wary of time.",
+        "Write the mathematics you entered. “\\(\\Pr(X > 120)\\) where \\(X \\sim N(100, 15^2)\\) is 0.0912” earns method marks that “0.0912” alone does not."
+       ]
+      },
+      {
+       "h": "Traps by topic",
+       "p": [
+        "Functions: missing the domain of an inverse; composite functions that are not defined. Calculus: forgetting the chain rule; not splitting area at an intercept; leaving out \\(+c\\) where needed. Probability: “at least” and “more than” confused; variance and standard deviation confused; conditional probability with the wrong denominator. Equations: solutions outside the domain; missing solutions of circular equations."
+       ]
+      },
+      {
+       "h": "Planning revision",
+       "p": [
+        "Through the year, use Review on this site daily and do mixed quizzes across topics. In the last months, do complete past papers under timed conditions, then mark them using the examination reports, which explain what earned marks. Keep a list of every mark lost and why. Repeat questions you got wrong a week later."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Spending too long on one hard part. Giving decimals when exact values are required. Not reading the final sentence of a question, which often specifies the form of the answer. Leaving multiple-choice questions blank."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "In a “show that” question, the marks are mainly for…",
+       "o": [
+        "the final answer",
+        "the working that reaches the given result",
+        "a graph",
+        "using technology"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which is an exact value?",
+       "o": [
+        "0.693",
+        "\\(\\log_e 2\\)",
+        "0.69",
+        "approximately 0.7"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What does “hence” require in a question?",
+       "a": "Using the result of the previous part to answer this part.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why should you write the equation or probability you entered into technology?",
+       "a": "It shows the method, which earns marks even if the final value is wrong, and lets the marker follow your reasoning.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "When should a decimal answer be rounded?",
+       "o": [
+        "At every step",
+        "Only at the end, to the required accuracy",
+        "Before substituting",
+        "Never"
+       ],
+       "a": 1,
+       "e": ""
       }
      ]
     }

@@ -106,7 +106,7 @@ main.wrap { padding-block: 28px 40px; display: flex; flex-direction: column; gap
 .learn ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; max-width: 70ch; }
 .learn li::marker { color: var(--c); }
 .notes h3 { margin: 10px 0 0; font-size: 1.05rem; }
-.notes p { margin: 0; max-width: 70ch; }
+.notes p { margin: 0; max-width: 70ch; white-space: pre-wrap; } /* pre-wrap keeps line breaks and indentation in pseudocode */
 .glossary { margin: 0; display: flex; flex-direction: column; gap: 4px; max-width: 75ch; }
 .glossary dt { font-weight: 600; margin-top: 12px; }
 .glossary dd { margin: 0; }
@@ -160,3 +160,4 @@ select, input[type=number] { border: 1px solid var(--line); background: var(--bg
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 [hidden] { display: none !important; }
 @media (max-width: 600px) { .nav { order: 3; flex: 1 1 100%; flex-wrap: nowrap; overflow-x: auto; } .account { margin-left: auto; } .nav a { white-space: nowrap; } }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; } /* wide formulas scroll in place on phones instead of widening the page */

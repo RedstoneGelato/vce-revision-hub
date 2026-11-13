@@ -5,6 +5,306 @@
    "name": "Functions, relations and graphs",
    "topics": [
     {
+     "id": "algebra",
+     "title": "Algebra skills for Methods",
+     "points": [
+      "Expand with the distributive law; factorise by taking out common factors, then by recognising patterns.",
+      "Perfect squares: \\((a \\pm b)^2 = a^2 \\pm 2ab + b^2\\). Difference of two squares: \\(a^2 - b^2 = (a - b)(a + b)\\).",
+      "Index laws: \\(a^m a^n = a^{m+n}\\), \\(\\dfrac{a^m}{a^n} = a^{m-n}\\), \\((a^m)^n = a^{mn}\\), \\(a^0 = 1\\), \\(a^{-n} = \\dfrac{1}{a^n}\\).",
+      "Surds: \\(\\sqrt{ab} = \\sqrt{a}\\sqrt{b}\\); rationalise a denominator by multiplying by a suitable form of 1.",
+      "Rearrange formulas by doing the same thing to both sides; when an inequality is multiplied or divided by a negative number, reverse the sign."
+     ],
+     "explain": "Explain why \\(\\sqrt{9 + 16}\\) is not equal to \\(\\sqrt{9} + \\sqrt{16}\\), and what rule people are wrongly applying when they think it is.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "This is the first lesson in Methods. It reviews the algebra from Years 9 and 10 that every later lesson assumes.",
+        "The big idea: Methods is mostly about functions and calculus, but most lost marks come from algebra slips. Fluent, accurate algebra frees your attention for the new ideas. Work through every example by hand, without a calculator."
+       ]
+      },
+      {
+       "h": "Expanding",
+       "p": [
+        "Multiply every term in one bracket by every term in the other: \\((2x - 3)(x + 4) = 2x^2 + 8x - 3x - 12 = 2x^2 + 5x - 12\\).",
+        "Patterns save time: \\((x + 5)^2 = x^2 + 10x + 25\\); \\((3x - 2)^2 = 9x^2 - 12x + 4\\); \\((x - 7)(x + 7) = x^2 - 49\\). For three brackets, expand two first, then multiply by the third."
+       ],
+       "check": [
+        [
+         "Expand \\((x - 4)(2x + 1)\\).",
+         "\\(2x^2 + x - 8x - 4 = 2x^2 - 7x - 4\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Factorising",
+       "p": [
+        "Always take out the highest common factor first: \\(6x^2 - 9x = 3x(2x - 3)\\).",
+        "Then look for a pattern. Difference of two squares: \\(4x^2 - 25 = (2x - 5)(2x + 5)\\). Perfect square: \\(x^2 - 8x + 16 = (x - 4)^2\\). Monic quadratic \\(x^2 + bx + c\\): find two numbers that multiply to \\(c\\) and add to \\(b\\): \\(x^2 - x - 12 = (x - 4)(x + 3)\\).",
+        "Non-monic quadratic, \\(6x^2 + x - 2\\): find two numbers that multiply to \\(6 \\times (-2) = -12\\) and add to 1: 4 and \\(-3\\). Split the middle term: \\(6x^2 + 4x - 3x - 2 = 2x(3x + 2) - (3x + 2) = (2x - 1)(3x + 2)\\).",
+        "Grouping, for four terms: \\(x^3 + 2x^2 - 9x - 18 = x^2(x + 2) - 9(x + 2) = (x + 2)(x - 3)(x + 3)\\)."
+       ],
+       "check": [
+        [
+         "Factorise \\(2x^2 - 18\\).",
+         "\\(2(x^2 - 9) = 2(x - 3)(x + 3)\\)."
+        ],
+        [
+         "Factorise \\(3x^2 + 10x - 8\\).",
+         "Numbers multiplying to \\(-24\\) and adding to 10 are 12 and \\(-2\\): \\(3x^2 + 12x - 2x - 8 = 3x(x + 4) - 2(x + 4) = (3x - 2)(x + 4)\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Indices and surds",
+       "p": [
+        "Simplify \\(\\dfrac{12a^5b^2}{4a^2b^3} = 3a^3b^{-1} = \\dfrac{3a^3}{b}\\). A fractional index is a root: \\(x^{\\frac{1}{2}} = \\sqrt{x}\\), \\(x^{\\frac{3}{2}} = \\left(\\sqrt{x}\\right)^3\\).",
+        "Simplify surds by taking out square factors: \\(\\sqrt{72} = \\sqrt{36 \\times 2} = 6\\sqrt{2}\\). Only like surds can be added: \\(3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2}\\), but \\(\\sqrt{2} + \\sqrt{3}\\) cannot be simplified.",
+        "Rationalise: \\(\\dfrac{6}{\\sqrt{3}} = \\dfrac{6\\sqrt{3}}{3} = 2\\sqrt{3}\\). For a binomial denominator use the conjugate: \\(\\dfrac{1}{\\sqrt{5} - 1} \\times \\dfrac{\\sqrt{5} + 1}{\\sqrt{5} + 1} = \\dfrac{\\sqrt{5} + 1}{4}\\)."
+       ],
+       "check": [
+        [
+         "Simplify \\(\\sqrt{50} - \\sqrt{8}\\).",
+         "\\(5\\sqrt{2} - 2\\sqrt{2} = 3\\sqrt{2}\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Linear equations, inequalities and formulas",
+       "p": [
+        "Solve \\(\\dfrac{2x - 1}{3} = \\dfrac{x + 4}{2}\\): multiply both sides by 6: \\(2(2x - 1) = 3(x + 4)\\), so \\(4x - 2 = 3x + 12\\) and \\(x = 14\\).",
+        "Inequalities work the same way, except that multiplying or dividing by a negative number reverses the sign: \\(5 - 2x > 11 \\Rightarrow -2x > 6 \\Rightarrow x < -3\\).",
+        "Rearranging a formula (a literal equation) uses the same steps with letters. Make \\(r\\) the subject of \\(A = \\pi r^2\\): \\(r = \\sqrt{\\dfrac{A}{\\pi}}\\) (taking the positive root because \\(r\\) is a length). Make \\(x\\) the subject of \\(y = \\dfrac{x + 2}{x - 1}\\): \\(y(x - 1) = x + 2 \\Rightarrow xy - x = y + 2 \\Rightarrow x(y - 1) = y + 2 \\Rightarrow x = \\dfrac{y + 2}{y - 1}\\)."
+       ],
+       "check": [
+        [
+         "Solve \\(3 - 4x \\le 15\\).",
+         "\\(-4x \\le 12\\), so \\(x \\ge -3\\) (the sign reverses)."
+        ]
+       ]
+      },
+      {
+       "h": "Simultaneous linear equations",
+       "p": [
+        "Elimination: \\(3x + 2y = 16\\) and \\(x - 2y = 0\\). Adding removes \\(y\\): \\(4x = 16\\), so \\(x = 4\\) and \\(y = 2\\).",
+        "Substitution suits an equation already solved for one variable: \\(y = 2x - 1\\) and \\(3x + y = 9\\) gives \\(3x + 2x - 1 = 9\\), so \\(x = 2\\), \\(y = 3\\). Check the solution in both original equations."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "\\((a + b)^2 = a^2 + b^2\\): the middle term \\(2ab\\) is missing. \\(\\sqrt{a + b} = \\sqrt{a} + \\sqrt{b}\\): false. Cancelling terms instead of factors: \\(\\dfrac{x + 6}{x}\\) is not 7. Forgetting to reverse an inequality. Dropping a negative sign when expanding \\(-(x - 3)\\)."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "\\((x - 3)^2\\) expands to…",
+       "o": [
+        "\\(x^2 - 9\\)",
+        "\\(x^2 - 6x + 9\\)",
+        "\\(x^2 + 9\\)",
+        "\\(x^2 - 3x + 9\\)"
+       ],
+       "a": 1,
+       "e": "Perfect square: the middle term is twice the product."
+      },
+      {
+       "t": "m",
+       "q": "Factorise \\(x^2 - 5x - 14\\).",
+       "o": [
+        "\\((x - 7)(x + 2)\\)",
+        "\\((x + 7)(x - 2)\\)",
+        "\\((x - 14)(x + 1)\\)",
+        "\\((x - 7)(x - 2)\\)"
+       ],
+       "a": 0,
+       "e": "\\(-7 \\times 2 = -14\\) and \\(-7 + 2 = -5\\)."
+      },
+      {
+       "t": "m",
+       "q": "Simplify \\(\\dfrac{x^7}{x^{-2}}\\).",
+       "o": [
+        "\\(x^5\\)",
+        "\\(x^9\\)",
+        "\\(x^{-14}\\)",
+        "\\(x^{-5}\\)"
+       ],
+       "a": 1,
+       "e": "\\(7 - (-2) = 9\\)."
+      },
+      {
+       "t": "c",
+       "q": "Make \\(t\\) the subject of \\(v = u + at\\).",
+       "a": "\\(t = \\dfrac{v - u}{a}\\).",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Rationalise the denominator of \\(\\dfrac{10}{\\sqrt{5}}\\).",
+       "a": "\\(\\dfrac{10\\sqrt{5}}{5} = 2\\sqrt{5}\\).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Solve \\(-3x > 12\\).",
+       "o": [
+        "\\(x > -4\\)",
+        "\\(x < -4\\)",
+        "\\(x > 4\\)",
+        "\\(x < 4\\)"
+       ],
+       "a": 1,
+       "e": "Dividing by a negative reverses the inequality."
+      }
+     ]
+    },
+    {
+     "id": "functions12",
+     "title": "Relations, functions and notation",
+     "points": [
+      "A relation is a set of ordered pairs; a function is a relation in which each input gives exactly one output.",
+      "Vertical line test: a graph is a function if no vertical line meets it more than once.",
+      "Function notation: \\(f(x)\\) is the output when the input is \\(x\\); \\(f: D \\to \\mathbb{R}\\) states the domain \\(D\\).",
+      "The domain is the set of allowed inputs; the range is the set of outputs. Use interval notation: \\([a, b]\\), \\((a, b)\\), \\([a, \\infty)\\).",
+      "The implied (maximal) domain excludes inputs that cause division by zero or the square root of a negative number."
+     ],
+     "explain": "Explain to a friend why a circle is not the graph of a function, but the top half of a circle is.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the algebra skills lesson.",
+        "The big idea: a function is a rule that turns each input into exactly one output. Almost everything in Methods is a function, so the language of this lesson (domain, range, notation) is used in every later lesson. Getting it precise now prevents a lot of lost marks."
+       ]
+      },
+      {
+       "h": "Relations and functions",
+       "p": [
+        "A relation is any set of ordered pairs, such as \\(\\{(1, 2), (2, 4), (3, 6)\\}\\) or all the points on a circle. A function is a special relation: no input is paired with two different outputs. \\(\\{(1, 2), (1, 3)\\}\\) is not a function because 1 has two outputs.",
+        "Relations are classified by how inputs and outputs pair up: one-to-one (\\(y = 2x\\)), many-to-one (\\(y = x^2\\), since 2 and \\(-2\\) both give 4), one-to-many (\\(x = y^2\\)) and many-to-many (a circle). Only one-to-one and many-to-one relations are functions.",
+        "The vertical line test checks a graph: if any vertical line cuts it more than once, some input has two outputs, so it is not a function."
+       ],
+       "check": [
+        [
+         "Is \\(y^2 = x\\) a function? Explain.",
+         "No. For \\(x = 4\\), \\(y = 2\\) or \\(y = -2\\), so one input has two outputs (it fails the vertical line test)."
+        ]
+       ]
+      },
+      {
+       "h": "Function notation",
+       "p": [
+        "If \\(f(x) = x^2 - 3x\\), then \\(f(5) = 25 - 15 = 10\\), \\(f(-1) = 1 + 3 = 4\\) and \\(f(a + 1) = (a + 1)^2 - 3(a + 1) = a^2 - a - 2\\). Replace every \\(x\\) with the input, using brackets.",
+        "Solving \\(f(x) = 4\\) means finding the inputs that give an output of 4: \\(x^2 - 3x - 4 = 0\\), so \\(x = 4\\) or \\(x = -1\\).",
+        "The full description of a function names its domain: \\(f: [0, 5] \\to \\mathbb{R},\\ f(x) = x^2 - 3x\\). The arrow notation says “\\(f\\) maps numbers in \\([0, 5]\\) to real numbers”."
+       ]
+      },
+      {
+       "h": "Domain and range",
+       "p": [
+        "Interval notation: square brackets include an endpoint, round brackets exclude it. \\([2, 5)\\) means \\(2 \\le x < 5\\). \\((-\\infty, 3]\\) means \\(x \\le 3\\). \\(\\mathbb{R}\\) is all real numbers; \\(\\mathbb{R} \\setminus \\{1\\}\\) is all real numbers except 1.",
+        "To find the range, sketch the graph over the domain and read the lowest and highest \\(y\\)-values, watching for turning points inside the domain. Example: \\(f: [-1, 4] \\to \\mathbb{R},\\ f(x) = (x - 1)^2\\). The minimum is 0 at \\(x = 1\\); the endpoints give \\(f(-1) = 4\\) and \\(f(4) = 9\\). Range: \\([0, 9]\\). The range is not simply \\([f(-1), f(4)]\\)."
+       ],
+       "check": [
+        [
+         "State the range of \\(f: (-2, 3] \\to \\mathbb{R},\\ f(x) = 2x + 1\\).",
+         "The function is increasing: \\(f(-2) = -3\\) (excluded) and \\(f(3) = 7\\) (included), so the range is \\((-3, 7]\\)."
+        ]
+       ]
+      },
+      {
+       "h": "The implied domain",
+       "p": [
+        "When no domain is stated, use the largest set of real numbers for which the rule works. Two restrictions matter in Units 1 and 2: no division by zero, and no square root of a negative number.",
+        "\\(f(x) = \\dfrac{1}{x - 2}\\): domain \\(\\mathbb{R} \\setminus \\{2\\}\\). \\(g(x) = \\sqrt{3 - x}\\): need \\(3 - x \\ge 0\\), so domain \\((-\\infty, 3]\\). \\(h(x) = \\dfrac{1}{\\sqrt{x + 1}}\\): need \\(x + 1 > 0\\), so domain \\((-1, \\infty)\\). Logarithms add a third restriction later: the input must be positive."
+       ]
+      },
+      {
+       "h": "Hybrid functions",
+       "p": [
+        "A hybrid (piecewise) function uses different rules on different parts of its domain: \\(f(x) = \\begin{cases} x + 2, & x < 0 \\\\ x^2, & x \\ge 0 \\end{cases}\\).",
+        "To evaluate, first choose the right piece: \\(f(-3) = -1\\), \\(f(3) = 9\\), and \\(f(0) = 0\\) because 0 belongs to the second piece. Sketch each piece only over its own interval, with a closed circle for an included endpoint and an open circle for an excluded one. This function has a break at \\(x = 0\\): the first piece approaches 2 but the second starts at 0."
+       ]
+      },
+      {
+       "h": "Inverse relations",
+       "p": [
+        "The inverse of a relation swaps every input and output, which reflects its graph in the line \\(y = x\\). The inverse of \\(y = 2x + 1\\) is \\(x = 2y + 1\\), or \\(y = \\dfrac{x - 1}{2}\\). The inverse is itself a function only if the original was one-to-one. Units 3 and 4 develop this in detail."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Finding the range from the endpoints alone when there is a turning point in between. Using a round bracket for an included endpoint. Writing \\(f(a + 1) = f(a) + 1\\). Forgetting the brackets when substituting a negative number: \\(f(-1)\\) for \\(x^2\\) is \\((-1)^2 = 1\\), not \\(-1\\)."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "Which relation is a function?",
+       "o": [
+        "\\(x^2 + y^2 = 9\\)",
+        "\\(x = y^2\\)",
+        "\\(y = x^3\\)",
+        "\\(x = 4\\)"
+       ],
+       "a": 2,
+       "e": "Each input of a cubic has one output."
+      },
+      {
+       "t": "m",
+       "q": "The implied domain of \\(f(x) = \\sqrt{x - 5}\\) is…",
+       "o": [
+        "\\(\\mathbb{R}\\)",
+        "\\((5, \\infty)\\)",
+        "\\([5, \\infty)\\)",
+        "\\((-\\infty, 5]\\)"
+       ],
+       "a": 2,
+       "e": "Need \\(x - 5 \\ge 0\\)."
+      },
+      {
+       "t": "m",
+       "q": "If \\(f(x) = 3 - x^2\\), then \\(f(-2) =\\)…",
+       "o": [
+        "7",
+        "−1",
+        "1",
+        "−7"
+       ],
+       "a": 1,
+       "e": "\\(3 - (-2)^2 = 3 - 4\\)."
+      },
+      {
+       "t": "c",
+       "q": "State the range of \\(f: [-3, 2] \\to \\mathbb{R},\\ f(x) = x^2\\).",
+       "a": "Minimum 0 at \\(x = 0\\); maximum \\(f(-3) = 9\\). Range \\([0, 9]\\).",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What does the vertical line test check, and why does it work?",
+       "a": "Whether a graph represents a function. If a vertical line meets the graph more than once, one input has more than one output.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "\\([-1, 4)\\) means…",
+       "o": [
+        "\\(-1 < x < 4\\)",
+        "\\(-1 \\le x \\le 4\\)",
+        "\\(-1 \\le x < 4\\)",
+        "\\(-1 < x \\le 4\\)"
+       ],
+       "a": 2,
+       "e": "Square bracket includes, round bracket excludes."
+      }
+     ]
+    },
+    {
      "id": "linear-quadratic",
      "title": "Linear and quadratic functions",
      "points": [
@@ -68,6 +368,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with the algebra skills lesson: expanding, factorising and rearranging.",
+        "The big idea: linear and quadratic functions are the simplest curves in Methods, and almost every technique you will use later (finding intercepts, solving equations, finding where graphs meet, modelling a situation) appears here first in its simplest form. Master them and the harder functions feel familiar."
+       ]
+      },
+      {
        "h": "Straight lines",
        "p": [
         "A straight line is fixed by its gradient and one point. Gradient–intercept form \\(y = mx + c\\) shows the gradient and \\(y\\)-intercept. Point–gradient form \\(y - y_1 = m(x - x_1)\\) is quickest when you know a point. The gradient is also \\(\\tan\\theta\\), where \\(\\theta\\) is the angle the line makes with the positive \\(x\\)-axis.",
@@ -99,6 +406,46 @@
        "p": [
         "The discriminant tells you how many times a parabola meets the \\(x\\)-axis, and more generally how many solutions any quadratic equation has. It is the tool for “find the values of \\(k\\) for which…” questions.",
         "Example: for what values of \\(k\\) does \\(x^2 + kx + 9 = 0\\) have no real solutions? \\(\\Delta = k^2 - 36 < 0\\), so \\(-6 < k < 6\\). To find where a line is tangent to a parabola, set the two equal and require \\(\\Delta = 0\\)."
+       ],
+       "check": [
+        [
+         "How many \\(x\\)-intercepts does \\(y = x^2 - 4x + 4\\) have?",
+         "\\(\\Delta = 16 - 16 = 0\\), so one: the graph touches the axis at \\(x = 2\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Solving quadratic equations three ways",
+       "p": [
+        "Factorising is quickest when it works: \\(x^2 - 5x + 6 = 0 \\Rightarrow (x - 2)(x - 3) = 0 \\Rightarrow x = 2\\) or \\(x = 3\\). It relies on the null factor law: if a product is zero, one of the factors is zero.",
+        "Completing the square works for any quadratic and shows the turning point: \\(x^2 + 6x + 2 = 0 \\Rightarrow (x + 3)^2 - 7 = 0 \\Rightarrow x = -3 \\pm \\sqrt{7}\\).",
+        "The quadratic formula always works: for \\(2x^2 + 3x - 4 = 0\\), \\(x = \\dfrac{-3 \\pm \\sqrt{9 + 32}}{4} = \\dfrac{-3 \\pm \\sqrt{41}}{4}\\). Try factorising first; if the discriminant is not a perfect square, the quadratic will not factorise over the rationals, so use the formula."
+       ],
+       "check": [
+        [
+         "Solve \\(x^2 + 2x - 15 = 0\\).",
+         "\\((x + 5)(x - 3) = 0\\), so \\(x = -5\\) or \\(x = 3\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Where lines and parabolas meet",
+       "p": [
+        "To find intersection points, set the rules equal and solve. Example: \\(y = x + 1\\) and \\(y = x^2 - 1\\). \\(x^2 - 1 = x + 1 \\Rightarrow x^2 - x - 2 = 0 \\Rightarrow (x - 2)(x + 1) = 0\\). The points are \\((2, 3)\\) and \\((-1, 0)\\): substitute each \\(x\\) back into either rule to get \\(y\\).",
+        "The discriminant of the combined equation tells you how many times they meet. Example: for what value of \\(k\\) is \\(y = 2x + k\\) a tangent to \\(y = x^2\\)? \\(x^2 - 2x - k = 0\\) must have exactly one solution, so \\(\\Delta = 4 + 4k = 0\\) and \\(k = -1\\). The point of contact is \\((1, 1)\\)."
+       ],
+       "check": [
+        [
+         "Find where \\(y = 2x\\) meets \\(y = x^2 - 3\\).",
+         "\\(x^2 - 2x - 3 = 0 \\Rightarrow (x - 3)(x + 1) = 0\\). The points are \\((3, 6)\\) and \\((-1, -2)\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Modelling with a quadratic",
+       "p": [
+        "A ball is thrown so that its height is \\(h = -5t^2 + 20t + 1.5\\) metres after \\(t\\) seconds. Completing the square: \\(h = -5(t - 2)^2 + 21.5\\), so the maximum height is 21.5 m at \\(t = 2\\) s.",
+        "It lands when \\(h = 0\\): \\(t = \\dfrac{-20 \\pm \\sqrt{400 + 30}}{-10}\\). The positive solution is \\(t = \\dfrac{20 + \\sqrt{430}}{10} \\approx 4.07\\) s. The model only makes sense for \\(0 \\le t \\le 4.07\\); outside that domain the rule gives meaningless heights. Always state a sensible domain for a model."
        ]
       },
       {
@@ -161,6 +508,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with quadratics, including factorising and sketching.",
+        "The big idea: higher-degree polynomials behave like quadratics with more turns. Once you can find one factor, the rest reduces to a quadratic you already know how to handle, and the factors tell you almost everything about the graph."
+       ]
+      },
+      {
        "h": "Working with polynomials",
        "p": [
         "The degree of a polynomial is its highest power. A polynomial of degree \\(n\\) has at most \\(n\\) real roots and at most \\(n - 1\\) turning points. To divide by a linear factor, use long division or equate coefficients: \\(P(x) = (x - a)Q(x) + R\\)."
@@ -197,6 +551,45 @@
        "h": "Other power functions",
        "p": [
         "\\(y = \\dfrac{a}{x - h} + k\\) is a hyperbola with asymptotes \\(x = h\\) and \\(y = k\\). \\(y = \\dfrac{a}{(x - h)^2} + k\\) is a truncus with the same asymptotes but both branches on the same side. \\(y = a\\sqrt{x - h} + k\\) starts at \\((h, k)\\) and has domain \\(x \\ge h\\). Always label asymptotes with their equations and give intercepts as coordinates."
+       ]
+      },
+      {
+       "h": "Polynomial long division",
+       "p": [
+        "Divide \\(x^3 + 2x^2 - 5x - 6\\) by \\(x + 1\\). \\(x^3 \\div x = x^2\\); multiply back \\(x^2(x + 1) = x^3 + x^2\\) and subtract to get \\(x^2 - 5x\\). \\(x^2 \\div x = x\\); subtract \\(x(x + 1)\\) to get \\(-6x - 6\\). \\(-6x \\div x = -6\\); subtract \\(-6(x + 1)\\) to get 0.",
+        "So \\(x^3 + 2x^2 - 5x - 6 = (x + 1)(x^2 + x - 6) = (x + 1)(x + 3)(x - 2)\\). Check by expanding. A zero remainder confirms that \\(x + 1\\) is a factor, which the factor theorem predicts because \\(P(-1) = -1 + 2 + 5 - 6 = 0\\)."
+       ],
+       "check": [
+        [
+         "Find the remainder when \\(P(x) = x^3 - 3x + 5\\) is divided by \\(x - 2\\).",
+         "By the remainder theorem, \\(P(2) = 8 - 6 + 5 = 7\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Finding a rule from a graph",
+       "p": [
+        "A cubic has \\(x\\)-intercepts at \\(-2\\), 1 and 3 and a \\(y\\)-intercept of 12. Its rule is \\(y = a(x + 2)(x - 1)(x - 3)\\). Substitute \\(x = 0\\): \\(a(2)(-1)(-3) = 6a = 12\\), so \\(a = 2\\).",
+        "If the graph touches the axis at \\(x = 1\\) and crosses at \\(x = -3\\), the factors are \\((x - 1)^2(x + 3)\\). If it flattens as it crosses at \\(x = 2\\), the factor is \\((x - 2)^3\\). Read the behaviour at each intercept, write the factors, then use one other point to find \\(a\\)."
+       ],
+       "check": [
+        [
+         "A cubic has \\(x\\)-intercepts 0, 2 and 5 and passes through \\((1, 8)\\). Find its rule.",
+         "\\(y = ax(x - 2)(x - 5)\\). At \\(x = 1\\): \\(a(1)(-1)(-4) = 4a = 8\\), so \\(a = 2\\) and \\(y = 2x(x - 2)(x - 5)\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Sum and difference of two cubes",
+       "p": [
+        "\\(a^3 - b^3 = (a - b)(a^2 + ab + b^2)\\) and \\(a^3 + b^3 = (a + b)(a^2 - ab + b^2)\\).",
+        "Example: \\(x^3 - 8 = (x - 2)(x^2 + 2x + 4)\\). The quadratic factor has \\(\\Delta = 4 - 16 < 0\\), so it has no real roots and \\(x^3 - 8 = 0\\) has only the solution \\(x = 2\\)."
+       ],
+       "check": [
+        [
+         "Factorise \\(27x^3 + 1\\).",
+         "\\((3x + 1)(9x^2 - 3x + 1)\\)."
+        ]
        ]
       },
       {
@@ -258,6 +651,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with index laws and with transformations of graphs.",
+        "The big idea: exponential functions model anything that grows or shrinks by the same factor in equal time steps, such as populations, investments and radioactive decay. Logarithms are the tool for undoing an exponential, so that you can solve for the time or the rate."
+       ]
+      },
+      {
        "h": "Exponentials and logs are inverses",
        "p": [
         "\\(y = a^x\\) asks “what do I get when I raise \\(a\\) to the power \\(x\\)?” \\(y = \\log_a x\\) asks “what power of \\(a\\) gives \\(x\\)?” So \\(\\log_a(a^x) = x\\) and \\(a^{\\log_a x} = x\\). Their graphs are reflections of each other in the line \\(y = x\\): the exponential has a horizontal asymptote, the logarithm a vertical one.",
@@ -276,6 +676,12 @@
        "h": "Solving log equations",
        "p": [
         "Combine logs with the log laws, then rewrite in index form. Example: \\(\\log_2 x + \\log_2 (x - 2) = 3\\). \\(\\log_2\\big(x(x - 2)\\big) = 3 \\Rightarrow x^2 - 2x = 8 \\Rightarrow (x - 4)(x + 2) = 0\\). \\(x = -2\\) is rejected because \\(\\log_2(-2)\\) is undefined, so \\(x = 4\\)."
+       ],
+       "check": [
+        [
+         "Solve \\(\\log_3 x = 4\\).",
+         "\\(x = 3^4 = 81\\)."
+        ]
        ]
       },
       {
@@ -289,6 +695,39 @@
        "p": [
         "\\(A = A_0 e^{kt}\\) models growth when \\(k > 0\\) and decay when \\(k < 0\\). \\(A_0\\) is the initial amount.",
         "Example: a population doubles every 5 years. \\(2 = e^{5k} \\Rightarrow k = \\dfrac{\\log_e 2}{5} \\approx 0.139\\). The time to triple is \\(t = \\dfrac{\\log_e 3}{k} \\approx 7.9\\) years."
+       ]
+      },
+      {
+       "h": "Index laws in practice",
+       "p": [
+        "Simplify \\((2x^3y^{-1})^2 \\times 3xy^4\\). Square each factor: \\(4x^6y^{-2}\\). Multiply: \\(12x^7y^2\\).",
+        "Fractional indices: \\(8^{\\frac{2}{3}} = \\left(\\sqrt[3]{8}\\right)^2 = 4\\); take the root first to keep numbers small. Negative indices: \\(27^{-\\frac{1}{3}} = \\dfrac{1}{3}\\). Write answers with positive indices unless asked otherwise."
+       ],
+       "check": [
+        [
+         "Evaluate \\(16^{\\frac{3}{4}}\\).",
+         "\\(\\left(\\sqrt[4]{16}\\right)^3 = 2^3 = 8\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Euler’s number, e",
+       "p": [
+        "The number \\(e \\approx 2.718\\) is the base for which the gradient of \\(y = e^x\\) at any point equals its \\(y\\)-value. That property makes \\(e^x\\) the natural choice for calculus and modelling, and its inverse, \\(\\log_e x\\), is the natural logarithm.",
+        "Any positive number can be written as a power of \\(e\\): \\(5 = e^{\\log_e 5}\\). So any exponential \\(y = A \\cdot b^x\\) can be rewritten as \\(y = Ae^{kx}\\) with \\(k = \\log_e b\\)."
+       ]
+      },
+      {
+       "h": "Worked example: finding a rule",
+       "p": [
+        "An exponential \\(y = Ae^{kx}\\) passes through \\((0, 3)\\) and \\((2, 12)\\). At \\(x = 0\\), \\(y = A = 3\\). Then \\(12 = 3e^{2k}\\), so \\(e^{2k} = 4\\), \\(2k = \\log_e 4\\) and \\(k = \\tfrac{1}{2}\\log_e 4 = \\log_e 2\\).",
+        "The rule is \\(y = 3e^{x\\log_e 2}\\), which is the same as \\(y = 3 \\times 2^x\\): the quantity doubles each time \\(x\\) increases by 1."
+       ],
+       "check": [
+        [
+         "\\(y = Ae^{kx}\\) passes through \\((0, 5)\\) and \\((1, 5e^2)\\). Find \\(A\\) and \\(k\\).",
+         "\\(A = 5\\), and \\(5e^k = 5e^2\\) gives \\(k = 2\\)."
+        ]
        ]
       },
       {
@@ -350,6 +789,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know sine, cosine and tangent in right-angled triangles (SOH CAH TOA) and how transformations change a graph.",
+        "The big idea: circular functions describe anything that repeats: tides, sound waves, daylight hours, a Ferris wheel. The unit circle extends the triangle ratios to every angle, and radians make the functions behave well in calculus."
+       ]
+      },
+      {
        "h": "The unit circle",
        "p": [
         "An angle \\(\\theta\\) is measured anticlockwise from the positive \\(x\\)-axis. The point on the unit circle at that angle has coordinates \\((\\cos\\theta, \\sin\\theta)\\), and \\(\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}\\). One radian is the angle that cuts off an arc equal in length to the radius, so a full turn is \\(2\\pi\\) radians. To convert, multiply degrees by \\(\\dfrac{\\pi}{180}\\)."
@@ -384,6 +830,45 @@
        ]
       },
       {
+       "h": "From triangles to the unit circle",
+       "p": [
+        "In a right-angled triangle, \\(\\sin\\theta = \\dfrac{\\text{opposite}}{\\text{hypotenuse}}\\), which only makes sense for acute angles. On the unit circle the hypotenuse is the radius, 1, so \\(\\sin\\theta\\) is simply the \\(y\\)-coordinate of the point. That definition works for any angle, including obtuse, reflex and negative ones.",
+        "A radian is defined by arc length: on a circle of radius \\(r\\), an angle of \\(\\theta\\) radians cuts off an arc of length \\(s = r\\theta\\). Example: \\(r = 5\\), \\(\\theta = 1.2\\) gives \\(s = 6\\). The area of the sector is \\(\\tfrac{1}{2}r^2\\theta\\)."
+       ],
+       "check": [
+        [
+         "Convert \\(150^\\circ\\) to radians.",
+         "\\(150 \\times \\dfrac{\\pi}{180} = \\dfrac{5\\pi}{6}\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: sketching",
+       "p": [
+        "Sketch \\(y = 2\\sin(2x) + 1\\) for \\(0 \\le x \\le \\pi\\). Amplitude 2, period \\(\\dfrac{2\\pi}{2} = \\pi\\), mean line \\(y = 1\\), range \\([-1, 3]\\). Divide one period into quarters: \\((0, 1)\\), \\(\\left(\\tfrac{\\pi}{4}, 3\\right)\\), \\(\\left(\\tfrac{\\pi}{2}, 1\\right)\\), \\(\\left(\\tfrac{3\\pi}{4}, -1\\right)\\), \\((\\pi, 1)\\).",
+        "\\(x\\)-intercepts: \\(\\sin 2x = -\\tfrac{1}{2}\\). With \\(0 \\le 2x \\le 2\\pi\\), \\(2x = \\tfrac{7\\pi}{6}\\) or \\(\\tfrac{11\\pi}{6}\\), so \\(x = \\tfrac{7\\pi}{12}\\) or \\(\\tfrac{11\\pi}{12}\\). Label the endpoints, the maximum, the minimum and the intercepts."
+       ],
+       "check": [
+        [
+         "What is the period of \\(y = 3\\cos(4x)\\)?",
+         "\\(\\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2}\\)."
+        ]
+       ]
+      },
+      {
+       "h": "The tangent function",
+       "p": [
+        "\\(\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}\\). It is the gradient of the line from the origin to the point on the unit circle. It is undefined wherever \\(\\cos\\theta = 0\\), giving vertical asymptotes at \\(\\theta = \\tfrac{\\pi}{2} + k\\pi\\). Exact values: \\(\\tan\\tfrac{\\pi}{6} = \\tfrac{1}{\\sqrt{3}}\\), \\(\\tan\\tfrac{\\pi}{4} = 1\\), \\(\\tan\\tfrac{\\pi}{3} = \\sqrt{3}\\).",
+        "Solve \\(\\tan x = -1\\) for \\(0 \\le x \\le 2\\pi\\): the reference angle is \\(\\tfrac{\\pi}{4}\\), and tangent is negative in quadrants 2 and 4, so \\(x = \\tfrac{3\\pi}{4}\\) or \\(\\tfrac{7\\pi}{4}\\)."
+       ],
+       "check": [
+        [
+         "What is the exact value of \\(\\tan\\tfrac{5\\pi}{4}\\)?",
+         "1. The reference angle is \\(\\tfrac{\\pi}{4}\\), and tangent is positive in the third quadrant."
+        ]
+       ]
+      },
+      {
        "h": "Common mistakes",
        "p": [
         "Calculator in degree mode. Finding only one solution in the domain. Dividing both sides by \\(\\sin x\\) and losing solutions where \\(\\sin x = 0\\). Giving the period of tangent as \\(2\\pi\\)."
@@ -396,6 +881,123 @@
   {
    "name": "Calculus",
    "topics": [
+    {
+     "id": "rates",
+     "title": "Rates of change",
+     "points": [
+      "Average rate of change between two points is the gradient of the chord (secant) joining them.",
+      "Instantaneous rate of change is the gradient of the tangent at a point.",
+      "The instantaneous rate is found as the limit of average rates over smaller and smaller intervals.",
+      "Rates have units: the units of the output per unit of the input.",
+      "On a distance–time graph the gradient is speed; on a displacement–time graph it is velocity."
+     ],
+     "explain": "A car travels 120 km in 2 hours. Explain why its average speed is 60 km/h even though the speedometer may never have shown exactly 60.",
+     "notes": [
+      {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should know how to find the gradient of a straight line and be comfortable with function notation.",
+        "The big idea: calculus begins with one question: how fast is something changing at a particular moment? For a straight line the answer is its gradient. For a curve the gradient keeps changing, so we approach it through average rates over shorter and shorter intervals. This lesson builds the idea that the next lesson turns into a rule."
+       ]
+      },
+      {
+       "h": "Average rate of change",
+       "p": [
+        "The average rate of change of \\(f\\) from \\(x = a\\) to \\(x = b\\) is \\(\\dfrac{f(b) - f(a)}{b - a}\\). It is the gradient of the straight line (chord) joining the two points on the graph.",
+        "Example: a population is \\(P(t) = 200 + 10t^2\\) after \\(t\\) years. From \\(t = 1\\) to \\(t = 3\\): \\(\\dfrac{P(3) - P(1)}{3 - 1} = \\dfrac{290 - 210}{2} = 40\\) people per year. The population did not grow by exactly 40 each year; 40 is the steady rate that would give the same overall change."
+       ],
+       "check": [
+        [
+         "Find the average rate of change of \\(f(x) = x^3\\) from \\(x = 1\\) to \\(x = 2\\).",
+         "\\(\\dfrac{8 - 1}{2 - 1} = 7\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Instantaneous rate of change",
+       "p": [
+        "The instantaneous rate at a point is the gradient of the tangent there. From a graph, draw a tangent by eye, pick two points on it and find its gradient. This gives an estimate.",
+        "For a better answer, take average rates over shrinking intervals. For \\(P(t) = 200 + 10t^2\\) at \\(t = 1\\): from 1 to 2, the rate is 30; from 1 to 1.1, it is 21; from 1 to 1.01, it is 20.1; from 1 to 1.001, it is 20.01. The values approach 20, so the instantaneous rate at \\(t = 1\\) is 20 people per year."
+       ],
+       "check": [
+        [
+         "For \\(f(x) = x^2\\), the average rates from \\(x = 3\\) to \\(3.1\\), \\(3.01\\) and \\(3.001\\) are 6.1, 6.01 and 6.001. What is the instantaneous rate at \\(x = 3\\)?",
+         "6."
+        ]
+       ]
+      },
+      {
+       "h": "Limits",
+       "p": [
+        "The process above is a limit. Writing \\(h\\) for the width of the interval, the average rate from \\(x\\) to \\(x + h\\) is \\(\\dfrac{f(x + h) - f(x)}{h}\\), and the instantaneous rate is the value this approaches as \\(h \\to 0\\).",
+        "We cannot simply put \\(h = 0\\), because that gives \\(\\dfrac{0}{0}\\). Instead simplify first. For \\(f(x) = x^2\\): \\(\\dfrac{(x + h)^2 - x^2}{h} = \\dfrac{2xh + h^2}{h} = 2x + h\\), which approaches \\(2x\\) as \\(h \\to 0\\). At \\(x = 3\\) this gives 6, matching the numerical estimate. This is differentiation from first principles, covered in full in the next lesson."
+       ]
+      },
+      {
+       "h": "Rates in context",
+       "p": [
+        "The units of a rate are output units per input unit: litres per minute, dollars per item, metres per second. On a displacement–time graph the gradient is velocity; on a velocity–time graph it is acceleration.",
+        "Reading graphs: a steeper section means a faster rate; a horizontal section means zero rate (the quantity is momentarily not changing); a negative gradient means the quantity is decreasing. A curve that gets steeper is increasing at an increasing rate."
+       ]
+      },
+      {
+       "h": "Common mistakes",
+       "p": [
+        "Subtracting in different orders on the top and bottom of the rate formula. Leaving out units. Confusing average and instantaneous rates. Substituting \\(h = 0\\) before simplifying."
+       ]
+      }
+     ],
+     "qs": [
+      {
+       "t": "m",
+       "q": "The average rate of change of \\(f(x) = x^2\\) from \\(x = 1\\) to \\(x = 4\\) is…",
+       "o": [
+        "3",
+        "5",
+        "15",
+        "16"
+       ],
+       "a": 1,
+       "e": "\\(\\dfrac{16 - 1}{4 - 1} = 5\\)."
+      },
+      {
+       "t": "m",
+       "q": "The instantaneous rate of change at a point is the gradient of the…",
+       "o": [
+        "chord",
+        "tangent",
+        "normal",
+        "axis"
+       ],
+       "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Simplify \\(\\dfrac{(x + h)^2 - x^2}{h}\\) and state its limit as \\(h \\to 0\\).",
+       "a": "\\(2x + h\\), with limit \\(2x\\).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "On a displacement–time graph, a horizontal section means…",
+       "o": [
+        "constant acceleration",
+        "the object is at rest",
+        "the object is moving fastest",
+        "the object is turning around"
+       ],
+       "a": 1,
+       "e": "Zero gradient means zero velocity."
+      },
+      {
+       "t": "c",
+       "q": "Water volume \\(V\\) (litres) is measured against time \\(t\\) (minutes). What are the units of the rate of change?",
+       "a": "Litres per minute.",
+       "e": ""
+      }
+     ]
+    },
     {
      "id": "differentiation",
      "title": "Differentiation",
@@ -441,6 +1043,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should have worked through the rates of change lesson and be confident with gradients and index laws.",
+        "The big idea: the derivative gives the rate of change of a function at every point. With one rule for powers of \\(x\\), you can find gradients, tangents, maximums and minimums, and answer real questions about speed, growth and optimal design."
+       ]
+      },
+      {
        "h": "What a derivative is",
        "p": [
         "The average rate of change between two points is the gradient of the chord joining them. As the second point moves closer to the first, the chord approaches the tangent, and its gradient approaches the instantaneous rate of change. That limit is the derivative. \\(f'(x)\\) and \\(\\dfrac{dy}{dx}\\) both mean the gradient function."
@@ -465,6 +1074,12 @@
         "Example: \\(f(x) = x^3 - 3x^2 - 9x + 5\\). \\(f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1)\\), so stationary points are at \\(x = -1\\) and \\(x = 3\\).",
         "Nature, using a sign diagram of \\(f'\\): for \\(x < -1\\) the gradient is positive, between \\(-1\\) and \\(3\\) it is negative, and for \\(x > 3\\) positive. So \\((-1, 10)\\) is a local maximum and \\((3, -22)\\) is a local minimum. If the gradient has the same sign on both sides, the point is a stationary point of inflection.",
         "Tangent at \\(x = 0\\): \\(f(0) = 5\\) and \\(f'(0) = -9\\), so \\(y = -9x + 5\\)."
+       ],
+       "check": [
+        [
+         "What is the gradient of the tangent to \\(y = x^3\\) at \\(x = 2\\)?",
+         "\\(\\dfrac{dy}{dx} = 3x^2 = 12\\)."
+        ]
        ]
       },
       {
@@ -473,6 +1088,39 @@
         "To maximise or minimise: write the quantity as a function of one variable (use the constraint to eliminate the other), differentiate, solve \\(f'(x) = 0\\), justify the nature, check endpoints of the domain, and answer in words with units.",
         "Example: a rectangle with perimeter 20 m. \\(A = x(10 - x) = 10x - x^2\\). \\(A' = 10 - 2x = 0\\) at \\(x = 5\\); the parabola is inverted, so this is a maximum of 25 m².",
         "For motion in a straight line, velocity is \\(v = \\dfrac{dx}{dt}\\) and acceleration is \\(a = \\dfrac{dv}{dt}\\). The particle is at rest when \\(v = 0\\)."
+       ]
+      },
+      {
+       "h": "Notation and meaning",
+       "p": [
+        "\\(f'(x)\\) and \\(\\dfrac{dy}{dx}\\) both mean the derivative. Its units are the units of \\(y\\) per unit of \\(x\\). If \\(V\\) litres of water remain in a tank after \\(t\\) minutes, \\(\\dfrac{dV}{dt}\\) is in litres per minute, and a negative value means the volume is decreasing.",
+        "Example: \\(V = 100 - 4t^2\\). \\(\\dfrac{dV}{dt} = -8t\\). At \\(t = 3\\), the rate is \\(-24\\) L/min: water is draining at 24 litres per minute at that instant."
+       ],
+       "check": [
+        [
+         "The height of a ball is \\(h = 20t - 5t^2\\) metres. What is its vertical velocity at \\(t = 1\\)?",
+         "\\(\\dfrac{dh}{dt} = 20 - 10t\\), so 10 m/s upwards."
+        ]
+       ]
+      },
+      {
+       "h": "Sketching the gradient function",
+       "p": [
+        "Given \\(f\\), you can sketch \\(f'\\) without a rule. Wherever \\(f\\) has a stationary point, \\(f'\\) crosses or touches the \\(x\\)-axis. Where \\(f\\) increases, \\(f'\\) is above the axis; where it decreases, \\(f'\\) is below.",
+        "Example: \\(f(x) = x^3 - 3x\\) has stationary points at \\(x = \\pm 1\\). \\(f'(x) = 3x^2 - 3\\) is a parabola that is zero at \\(x = \\pm 1\\), positive outside them and negative between. In general the derivative of a degree \\(n\\) polynomial has degree \\(n - 1\\)."
+       ]
+      },
+      {
+       "h": "Worked example: a full curve sketch",
+       "p": [
+        "Sketch \\(f(x) = x^3 - 6x^2 + 9x\\). Factorise: \\(f(x) = x(x - 3)^2\\), so it crosses at \\(x = 0\\) and touches at \\(x = 3\\).",
+        "\\(f'(x) = 3x^2 - 12x + 9 = 3(x - 1)(x - 3)\\). Stationary points at \\(x = 1\\) and \\(x = 3\\). \\(f(1) = 4\\) and \\(f(3) = 0\\). The sign of \\(f'\\) is positive, then negative, then positive, so \\((1, 4)\\) is a local maximum and \\((3, 0)\\) a local minimum. A positive cubic rises from bottom left to top right, which agrees."
+       ],
+       "check": [
+        [
+         "Find the stationary point of \\(y = x^2 - 6x + 1\\) and state its nature.",
+         "\\(\\dfrac{dy}{dx} = 2x - 6 = 0\\) at \\(x = 3\\); \\(y = -8\\). It is a local minimum (an upright parabola)."
+        ]
        ]
       },
       {
@@ -515,6 +1163,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be confident with differentiation and with rewriting expressions as powers of \\(x\\).",
+        "The big idea: anti-differentiation works backwards from a rate of change to the original quantity. If you know how fast something is changing and where it started, you can reconstruct it. In Units 3 and 4 this becomes integration and the area under a curve."
+       ]
+      },
+      {
        "h": "Reversing differentiation",
        "p": [
         "Anti-differentiation asks: which function has this derivative? Because the derivative of any constant is zero, there is a whole family of answers that differ by a constant, so the general antiderivative includes \\(+ c\\). Each value of \\(c\\) gives a vertical translation of the same curve."
@@ -531,6 +1186,12 @@
        "h": "Finding the constant",
        "p": [
         "A condition, such as a point on the curve, fixes \\(c\\). Example: \\(f'(x) = 3x^2 - 4\\) and \\(f(1) = 2\\). \\(f(x) = x^3 - 4x + c\\); \\(1 - 4 + c = 2\\) gives \\(c = 5\\), so \\(f(x) = x^3 - 4x + 5\\)."
+       ],
+       "check": [
+        [
+         "\\(f'(x) = 2x\\) and \\(f(3) = 10\\). Find \\(f(x)\\).",
+         "\\(f(x) = x^2 + c\\); \\(9 + c = 10\\), so \\(f(x) = x^2 + 1\\)."
+        ]
        ]
       },
       {
@@ -543,6 +1204,33 @@
        "h": "Graphs of antiderivatives",
        "p": [
         "Given the graph of \\(f'\\), sketch \\(f\\): where \\(f'\\) is positive, \\(f\\) increases; where \\(f'\\) is zero, \\(f\\) has a stationary point; where \\(f'\\) changes from positive to negative, \\(f\\) has a local maximum. Without a given point, any vertical translation is acceptable."
+       ]
+      },
+      {
+       "h": "Rewriting before anti-differentiating",
+       "p": [
+        "Expand products: \\(\\displaystyle\\int (x + 1)^2\\,dx = \\int (x^2 + 2x + 1)\\,dx = \\frac{x^3}{3} + x^2 + x + c\\).",
+        "Split fractions over a single term: \\(\\displaystyle\\int \\frac{x^2 + 3}{x^2}\\,dx = \\int \\left(1 + 3x^{-2}\\right)dx = x - 3x^{-1} + c\\).",
+        "Convert roots: \\(\\displaystyle\\int \\sqrt{x}(x - 1)\\,dx = \\int \\left(x^{\\frac{3}{2}} - x^{\\frac{1}{2}}\\right)dx = \\tfrac{2}{5}x^{\\frac{5}{2}} - \\tfrac{2}{3}x^{\\frac{3}{2}} + c\\)."
+       ],
+       "check": [
+        [
+         "Find an antiderivative of \\(4x^3 - 2\\).",
+         "\\(x^4 - 2x + c\\)."
+        ]
+       ]
+      },
+      {
+       "h": "A first look at area under a curve",
+       "p": [
+        "The area under a curve can be estimated with rectangles. For \\(y = x^2\\) on \\([0, 2]\\) with four strips of width 0.5, using the right endpoint of each strip as the height: \\(0.5(0.25 + 1 + 2.25 + 4) = 3.75\\).",
+        "The exact area turns out to be \\(\\tfrac{8}{3} \\approx 2.67\\). Right endpoints overestimate for an increasing function; left endpoints underestimate. Narrower strips give better estimates, and in Units 3 and 4 the limit of this process is the definite integral, which is calculated with antiderivatives."
+       ],
+       "check": [
+        [
+         "For an increasing function, do left-endpoint rectangles overestimate or underestimate the area?",
+         "Underestimate: each rectangle uses the lowest height on its strip."
+        ]
        ]
       },
       {
@@ -609,6 +1297,13 @@
      ],
      "notes": [
       {
+       "h": "Start here",
+       "p": [
+        "Before this lesson you should be comfortable with fractions, decimals and percentages.",
+        "The big idea: probability measures how likely an event is on a scale from 0 to 1. A few rules, and a few ways of organising information (tables, diagrams and counting), let you calculate the probability of complicated events from simple ones. This is the foundation for the statistics in Units 3 and 4."
+       ]
+      },
+      {
        "h": "Language and notation",
        "p": [
         "The sample space is the set of all outcomes; an event is a subset of it. \\(A \\cap B\\) is “\\(A\\) and \\(B\\)”; \\(A \\cup B\\) is “\\(A\\) or \\(B\\) or both”; \\(A'\\) is “not \\(A\\)”. Mutually exclusive events cannot happen together, so \\(\\Pr(A \\cap B) = 0\\). Independent events do not affect each other, so \\(\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)\\). These are different ideas: mutually exclusive events with non-zero probabilities are never independent."
@@ -626,6 +1321,12 @@
        "p": [
         "\\(\\Pr(A \\mid B)\\) is the probability of \\(A\\) given that \\(B\\) has happened: the sample space shrinks to \\(B\\). From the example above, \\(\\Pr(A \\mid B) = \\dfrac{0.1}{0.4} = 0.25\\). Since this is not equal to \\(\\Pr(A) = 0.5\\), the events are not independent.",
         "Tree diagrams suit multi-stage experiments. Multiply along branches for “and”; add between branches for “or”. Second-stage branches carry conditional probabilities."
+       ],
+       "check": [
+        [
+         "\\(\\Pr(A \\cap B) = 0.12\\) and \\(\\Pr(B) = 0.4\\). Find \\(\\Pr(A \\mid B)\\).",
+         "\\(\\dfrac{0.12}{0.4} = 0.3\\)."
+        ]
        ]
       },
       {
@@ -640,6 +1341,38 @@
        "p": [
         "Multiplication principle: if one choice can be made in \\(m\\) ways and the next in \\(n\\) ways, there are \\(mn\\) ways together. Use arrangements when order matters and selections (combinations) when it does not.",
         "Example: choose a committee of 3 from 8 people: \\({}^8C_3 = \\dfrac{8!}{3!\\,5!} = 56\\). Choose a president, secretary and treasurer from 8: \\(8 \\times 7 \\times 6 = 336\\). Probability a random committee of 3 includes two particular people: choose 1 more from the other 6, so \\(\\dfrac{6}{56} = \\tfrac{3}{28}\\)."
+       ]
+      },
+      {
+       "h": "Experimental probability",
+       "p": [
+        "When outcomes are not equally likely, estimate probability from experiments or data: relative frequency \\(= \\dfrac{\\text{number of times the event occurs}}{\\text{number of trials}}\\). Example: a drawing pin lands point up 124 times in 200 tosses, so \\(\\Pr(\\text{up}) \\approx 0.62\\).",
+        "The more trials, the closer the relative frequency tends to be to the true probability. Simulation, using random numbers on a calculator or computer, applies the same idea when real trials would be slow or expensive."
+       ]
+      },
+      {
+       "h": "Combinations in probability",
+       "p": [
+        "When all selections are equally likely, \\(\\Pr = \\dfrac{\\text{number of favourable selections}}{\\text{total number of selections}}\\). Example: 3 balls are chosen from a bag of 10, of which 4 are red. \\(\\Pr(\\text{all red}) = \\dfrac{{}^4C_3}{{}^{10}C_3} = \\dfrac{4}{120} = \\dfrac{1}{30}\\).",
+        "Useful facts: \\({}^nC_r = {}^nC_{n-r}\\), and the values of \\({}^nC_r\\) form Pascal’s triangle, where each entry is the sum of the two above it."
+       ],
+       "check": [
+        [
+         "Evaluate \\({}^5C_2\\).",
+         "\\(\\dfrac{5!}{2!\\,3!} = 10\\)."
+        ]
+       ]
+      },
+      {
+       "h": "Worked example: testing for independence",
+       "p": [
+        "\\(\\Pr(A) = 0.4\\), \\(\\Pr(B) = 0.5\\), \\(\\Pr(A \\cap B) = 0.2\\). Since \\(0.4 \\times 0.5 = 0.2\\), the events are independent. Also \\(\\Pr(A \\cup B) = 0.4 + 0.5 - 0.2 = 0.7\\), and \\(\\Pr(A \\mid B) = \\dfrac{0.2}{0.5} = 0.4 = \\Pr(A)\\), which confirms it: knowing \\(B\\) occurred does not change the probability of \\(A\\)."
+       ],
+       "check": [
+        [
+         "\\(\\Pr(A) = 0.3\\), \\(\\Pr(B) = 0.6\\), \\(\\Pr(A \\cap B) = 0.2\\). Are \\(A\\) and \\(B\\) independent?",
+         "No: \\(0.3 \\times 0.6 = 0.18\\), which is not 0.2."
+        ]
        ]
       },
       {
