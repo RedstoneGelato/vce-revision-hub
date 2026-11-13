@@ -34,6 +34,30 @@
          "Rewrite “Is social media bad?” as a statistical question.",
          "For example: “Do students who spend more than 3 hours a day on social media have lower average test scores than those who spend less?”"
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "The statistical investigation cycle. Results often lead to a new, sharper question.",
+         "steps": [
+          [
+           "Pose a question",
+           "one that data can answer"
+          ],
+          [
+           "Collect data",
+           "who, what, how"
+          ],
+          [
+           "Analyse",
+           "display and summarise"
+          ],
+          [
+           "Interpret",
+           "answer in context, note limits"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -41,6 +65,14 @@
        "p": [
         "The population is everyone or everything the question is about, such as all Year 11 students in Victoria. A census measures the whole population; it is complete but usually too costly. A sample measures part of it, and the results are used to make conclusions about the population.",
         "A good sample is representative. Random sampling, where every member has an equal chance of selection, is the main protection against bias. A sample can be biased if it is self-selected (only people who choose to answer an online poll), convenient (only your own friends) or drawn from the wrong group. Larger samples give more reliable estimates, but a large biased sample is still biased."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A random sample (filled) drawn from a population. Every member had an equal chance of being chosen.",
+         "svg": "<rect class=\"fp\" x=\"20\" y=\"20\" width=\"500\" height=\"250\" rx=\"16\"/><circle cx=\"60\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"110\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"160\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"210\" cy=\"55\" r=\"13\" class=\"fa\" opacity=\"1\"/><circle cx=\"260\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"310\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"360\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"410\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"460\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"510\" cy=\"55\" r=\"13\" class=\"s\" /><circle cx=\"60\" cy=\"100\" r=\"13\" class=\"fa\" opacity=\"1\"/><circle cx=\"110\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"160\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"210\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"260\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"310\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"360\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"410\" cy=\"100\" r=\"13\" class=\"fa\" opacity=\"1\"/><circle cx=\"460\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"510\" cy=\"100\" r=\"13\" class=\"s\" /><circle cx=\"60\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"110\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"160\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"210\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"260\" cy=\"145\" r=\"13\" class=\"fa\" opacity=\"1\"/><circle cx=\"310\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"360\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"410\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"460\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"510\" cy=\"145\" r=\"13\" class=\"s\" /><circle cx=\"60\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"110\" cy=\"190\" r=\"13\" class=\"fa\" opacity=\"1\"/><circle cx=\"160\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"210\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"260\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"310\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"360\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"410\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"460\" cy=\"190\" r=\"13\" class=\"fa\" opacity=\"1\"/><circle cx=\"510\" cy=\"190\" r=\"13\" class=\"s\" /><circle cx=\"60\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"110\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"160\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"210\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"260\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"310\" cy=\"235\" r=\"13\" class=\"fa\" opacity=\"1\"/><circle cx=\"360\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"410\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"460\" cy=\"235\" r=\"13\" class=\"s\" /><circle cx=\"510\" cy=\"235\" r=\"13\" class=\"s\" /><text class=\"t\" x=\"34\" y=\"262\">population</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -161,6 +193,45 @@
        "a": 0,
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Question",
+       [
+        "specific and measurable",
+        "anticipates variation"
+       ]
+      ],
+      [
+       "Collect",
+       [
+        "population or sample",
+        "random sampling",
+        "unbiased questions"
+       ]
+      ],
+      [
+       "Study type",
+       [
+        "observational: records",
+        "experiment: changes one variable"
+       ]
+      ],
+      [
+       "Analyse",
+       [
+        "displays",
+        "summary statistics"
+       ]
+      ],
+      [
+       "Interpret",
+       [
+        "answer the question",
+        "use evidence",
+        "state limitations"
+       ]
+      ]
      ]
     },
     {
@@ -333,6 +404,51 @@
          "Which display suits the favourite sport of 30 students?",
          "A bar chart (or a segmented bar chart): the variable is categorical."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "A histogram of 40 test scores: columns touch because the intervals are continuous. This one is slightly negatively skewed.",
+         "x": [
+          35,
+          105
+         ],
+         "y": [
+          0,
+          12
+         ],
+         "xstep": 10,
+         "ystep": 2,
+         "bw": 10,
+         "bars": [
+          [
+           45,
+           1
+          ],
+          [
+           55,
+           3
+          ],
+          [
+           65,
+           7
+          ],
+          [
+           75,
+           11
+          ],
+          [
+           85,
+           12
+          ],
+          [
+           95,
+           6
+          ]
+         ],
+         "xl": "score",
+         "yl": "frequency"
+        }
        ]
       },
       {
@@ -353,6 +469,14 @@
        "p": [
         "Parallel boxplots show test results for two classes. Class A: median 72, IQR 10, no outliers, roughly symmetric. Class B: median 65, IQR 18, one low outlier at 20, negatively skewed.",
         "Model answer: “The median score for Class A (72) is higher than for Class B (65), so Class A students typically scored higher. The IQR for Class A (10) is smaller than for Class B (18), so Class A’s results are more consistent. Class A’s distribution is approximately symmetric, while Class B’s is negatively skewed with a low outlier at 20.” Each sentence names both groups, quotes both values and says what they mean."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Parallel boxplots. Class A has a higher median (72 vs 65) and smaller IQR (10 vs 18); Class B has a low outlier at 20.",
+         "svg": "<line class=\"s\" x1=\"60\" y1=\"250\" x2=\"500\" y2=\"250\"/><line class=\"s\" x1=\"60.0\" y1=\"250\" x2=\"60.0\" y2=\"256\"/><text class=\"t\" x=\"52.0\" y=\"274\">0</text><line class=\"s\" x1=\"148.0\" y1=\"250\" x2=\"148.0\" y2=\"256\"/><text class=\"t\" x=\"140.0\" y=\"274\">20</text><line class=\"s\" x1=\"236.0\" y1=\"250\" x2=\"236.0\" y2=\"256\"/><text class=\"t\" x=\"228.0\" y=\"274\">40</text><line class=\"s\" x1=\"324.0\" y1=\"250\" x2=\"324.0\" y2=\"256\"/><text class=\"t\" x=\"316.0\" y=\"274\">60</text><line class=\"s\" x1=\"412.0\" y1=\"250\" x2=\"412.0\" y2=\"256\"/><text class=\"t\" x=\"404.0\" y=\"274\">80</text><line class=\"s\" x1=\"500.00000000000006\" y1=\"250\" x2=\"500.00000000000006\" y2=\"256\"/><text class=\"t\" x=\"492.00000000000006\" y=\"274\">100</text><text class=\"t\" x=\"14\" y=\"85\">A</text><line class=\"s\" x1=\"302\" y1=\"80\" x2=\"354.8\" y2=\"80\"/><rect class=\"fp\" x=\"354.8\" y=\"60\" width=\"44\" height=\"40\"/><rect class=\"fa\" x=\"354.8\" y=\"60\" width=\"44\" height=\"40\"/><line class=\"a\" x1=\"376.8\" y1=\"60\" x2=\"376.8\" y2=\"100\"/><line class=\"s\" x1=\"398.8\" y1=\"80\" x2=\"456\" y2=\"80\"/><text class=\"t\" x=\"14\" y=\"175\">B</text><line class=\"s\" x1=\"236\" y1=\"170\" x2=\"302\" y2=\"170\"/><rect class=\"fp\" x=\"302\" y=\"150\" width=\"79.2\" height=\"40\"/><rect class=\"fa\" x=\"302\" y=\"150\" width=\"79.2\" height=\"40\"/><line class=\"a\" x1=\"346\" y1=\"150\" x2=\"346\" y2=\"190\"/><line class=\"s\" x1=\"381.2\" y1=\"170\" x2=\"447.2\" y2=\"170\"/><circle class=\"s\" cx=\"148\" cy=\"170\" r=\"5\"/><text class=\"t\" x=\"130\" y=\"200\">outlier</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -361,6 +485,45 @@
         "Finding the median of unordered data. Describing skew the wrong way: the name follows the tail. Calling a value an outlier without calculating the fence. Quoting the mean for strongly skewed data."
        ]
       }
+     ],
+     "map": [
+      [
+       "Variable types",
+       [
+        "categorical: nominal, ordinal",
+        "numerical: discrete, continuous"
+       ]
+      ],
+      [
+       "Displays",
+       [
+        "bar chart",
+        "histogram, dot plot, stem plot",
+        "boxplot"
+       ]
+      ],
+      [
+       "Centre",
+       [
+        "mean (sensitive to outliers)",
+        "median (resistant)"
+       ]
+      ],
+      [
+       "Spread",
+       [
+        "range",
+        "IQR = Q₃ − Q₁",
+        "standard deviation"
+       ]
+      ],
+      [
+       "Shape and outliers",
+       [
+        "symmetric or skewed",
+        "fences: Q₁ − 1.5 IQR, Q₃ + 1.5 IQR"
+       ]
+      ]
      ]
     },
     {
@@ -537,6 +700,111 @@
          "What four features should a description of a scatterplot include?",
          "Direction, form, strength and any outliers, stated in context."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Hours of sleep and reaction time: a strong, negative, linear association with no outliers (r ≈ −0.82).",
+         "x": [
+          4,
+          10
+         ],
+         "y": [
+          200,
+          400
+         ],
+         "xstep": 1,
+         "ystep": 50,
+         "dots": [
+          [
+           4.5,
+           370
+          ],
+          [
+           5,
+           360
+          ],
+          [
+           5.2,
+           330
+          ],
+          [
+           5.5,
+           345
+          ],
+          [
+           6,
+           320
+          ],
+          [
+           6,
+           300
+          ],
+          [
+           6.3,
+           315
+          ],
+          [
+           6.5,
+           290
+          ],
+          [
+           7,
+           300
+          ],
+          [
+           7,
+           275
+          ],
+          [
+           7.2,
+           285
+          ],
+          [
+           7.5,
+           260
+          ],
+          [
+           7.8,
+           275
+          ],
+          [
+           8,
+           250
+          ],
+          [
+           8.2,
+           240
+          ],
+          [
+           8.5,
+           255
+          ],
+          [
+           8.8,
+           230
+          ],
+          [
+           9,
+           225
+          ],
+          [
+           9.2,
+           240
+          ],
+          [
+           9.5,
+           215
+          ]
+         ],
+         "fns": [
+          {
+           "f": "520-32*x"
+          }
+         ],
+         "xl": "sleep (h)",
+         "yl": "reaction (ms)"
+        }
        ]
       },
       {
@@ -557,6 +825,34 @@
        "p": [
         "200 students are surveyed. Of 100 Year 11 students, 60 play sport; of 100 Year 12 students, 35 play sport. As column percentages: Year 11, 60% play and 40% do not; Year 12, 35% play and 65% do not.",
         "Because the percentage who play sport is noticeably different between the year levels (60% and 35%), there is an association between year level and sport participation. Always compare percentages, not counts, because group sizes are often unequal."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Column percentages: 60% of Year 11 and 35% of Year 12 students play sport, so participation is associated with year level.",
+         "head": [
+          "Plays sport?",
+          "Year 11",
+          "Year 12"
+         ],
+         "rows": [
+          [
+           "Yes",
+           "60 (60%)",
+           "35 (35%)"
+          ],
+          [
+           "No",
+           "40 (40%)",
+           "65 (65%)"
+          ],
+          [
+           "Total",
+           "100 (100%)",
+           "100 (100%)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -565,6 +861,52 @@
         "Reversing the variables. Using causal language (“causes”, “leads to”) from observational data. Comparing counts instead of percentages in a two-way table. Describing strength without direction and form."
        ]
       }
+     ],
+     "map": [
+      [
+       "Variables",
+       [
+        "explanatory on the x-axis",
+        "response on the y-axis"
+       ]
+      ],
+      [
+       "Describe",
+       [
+        "direction",
+        "form",
+        "strength",
+        "outliers"
+       ]
+      ],
+      [
+       "Correlation r",
+       [
+        "−1 ≤ r ≤ 1",
+        "linear only"
+       ]
+      ],
+      [
+       "Lines",
+       [
+        "fit by eye",
+        "slope and intercept in context",
+        "predict within the data"
+       ]
+      ],
+      [
+       "Categorical pairs",
+       [
+        "two-way tables",
+        "compare percentages"
+       ]
+      ],
+      [
+       "Caution",
+       [
+        "association is not causation"
+       ]
+      ]
      ]
     }
    ]
@@ -733,6 +1075,124 @@
          "$2000 is invested at 5% per annum. What is the balance after 2 years with simple interest, and with annual compounding?",
          "Simple: $2200. Compound: 2000 × 1.05² = $2205."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "$1000 at 10% per annum: simple interest grows by $100 a year (straight line); compound interest grows by 10% a year and pulls ahead.",
+         "x": [
+          0,
+          10.5
+         ],
+         "y": [
+          900,
+          2700
+         ],
+         "xstep": 1,
+         "ystep": 200,
+         "fns": [
+          {
+           "f": "1000+100*x",
+           "label": "simple"
+          },
+          {
+           "f": "1000*1.1**x",
+           "label": "compound"
+          }
+         ],
+         "dots": [
+          [
+           0,
+           1000.0
+          ],
+          [
+           1,
+           1100.0
+          ],
+          [
+           2,
+           1210.0000000000002
+          ],
+          [
+           3,
+           1331.0000000000005
+          ],
+          [
+           4,
+           1464.1000000000004
+          ],
+          [
+           5,
+           1610.5100000000004
+          ],
+          [
+           6,
+           1771.5610000000008
+          ],
+          [
+           7,
+           1948.7171000000012
+          ],
+          [
+           8,
+           2143.5888100000016
+          ],
+          [
+           9,
+           2357.947691000002
+          ],
+          [
+           10,
+           2593.7424601000025
+          ],
+          [
+           0,
+           1000
+          ],
+          [
+           1,
+           1100
+          ],
+          [
+           2,
+           1200
+          ],
+          [
+           3,
+           1300
+          ],
+          [
+           4,
+           1400
+          ],
+          [
+           5,
+           1500
+          ],
+          [
+           6,
+           1600
+          ],
+          [
+           7,
+           1700
+          ],
+          [
+           8,
+           1800
+          ],
+          [
+           9,
+           1900
+          ],
+          [
+           10,
+           2000
+          ]
+         ],
+         "xl": "years",
+         "yl": "$"
+        }
        ]
       },
       {
@@ -761,6 +1221,46 @@
         "Using the annual rate without dividing by the number of compounding periods. Subtracting a percentage from the final price to undo an increase. Mixing up \\(u_0\\) and \\(u_1\\). Rounding before the final step."
        ]
       }
+     ],
+     "map": [
+      [
+       "Percentages",
+       [
+        "× (1 ± r/100)",
+        "undo by dividing",
+        "GST: ÷ 11"
+       ]
+      ],
+      [
+       "Simple interest",
+       [
+        "I = PrT ÷ 100",
+        "linear growth"
+       ]
+      ],
+      [
+       "Compound interest",
+       [
+        "A = P(1 + r/100)ⁿ",
+        "geometric growth"
+       ]
+      ],
+      [
+       "Recurrence relations",
+       [
+        "uₙ₊₁ = uₙ + d",
+        "uₙ₊₁ = Ruₙ",
+        "uₙ₊₁ = Ruₙ + d"
+       ]
+      ],
+      [
+       "Decisions",
+       [
+        "inflation",
+        "purchase options",
+        "total cost"
+       ]
+      ]
      ]
     }
    ]
@@ -903,6 +1403,14 @@
        "h": "Matrices for real data",
        "p": [
         "Store quantities in one matrix and prices in another, and the product gives totals. Example: a shop sells 3 pies and 2 drinks on Monday and 5 pies and 4 drinks on Tuesday; pies cost $6 and drinks $3. \\(\\begin{bmatrix} 3 & 2 \\\\ 5 & 4 \\end{bmatrix}\\begin{bmatrix} 6 \\\\ 3 \\end{bmatrix} = \\begin{bmatrix} 24 \\\\ 42 \\end{bmatrix}\\): takings of $24 and $42. The labels on the columns of the first matrix must match the labels on the rows of the second."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Quantities times prices: the labels on the columns of the first matrix match the labels on the rows of the second.",
+         "svg": "<text class=\"t\" x=\"20\" y=\"60\">pies drinks</text><text class=\"t\" x=\"20\" y=\"100\">Mon [ 3   2 ]</text><text class=\"t\" x=\"20\" y=\"130\">Tue [ 5   4 ]</text><text class=\"t\" x=\"190\" y=\"115\">×</text><text class=\"t\" x=\"230\" y=\"100\">[ $6 ] pies</text><text class=\"t\" x=\"230\" y=\"130\">[ $3 ] drinks</text><text class=\"t\" x=\"350\" y=\"115\">=</text><text class=\"t\" x=\"390\" y=\"100\">[ $24 ] Mon</text><text class=\"t\" x=\"390\" y=\"130\">[ $42 ] Tue</text><path class=\"a\" d=\"M70,140 C120,220 240,220 280,140\"/><text class=\"t\" x=\"110\" y=\"230\">labels must match</text>",
+         "vb": "0 0 540 250"
+        }
        ]
       },
       {
@@ -935,6 +1443,39 @@
          "Find \\(\\begin{bmatrix} 2 & 0 \\\\ 1 & 3 \\end{bmatrix}\\begin{bmatrix} 1 \\\\ 4 \\end{bmatrix}\\).",
          "\\(\\begin{bmatrix} 2 \\\\ 13 \\end{bmatrix}\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Each element of AB is a row of A times a column of B, added up. Here A = [1 2; 3 4] and B = [0 1; 5 2].",
+         "head": [
+          "Element",
+          "Row of A × column of B",
+          "Value"
+         ],
+         "rows": [
+          [
+           "row 1, column 1",
+           "1 × 0 + 2 × 5",
+           "10"
+          ],
+          [
+           "row 1, column 2",
+           "1 × 1 + 2 × 2",
+           "5"
+          ],
+          [
+           "row 2, column 1",
+           "3 × 0 + 4 × 5",
+           "20"
+          ],
+          [
+           "row 2, column 2",
+           "3 × 1 + 4 × 2",
+           "11"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -956,6 +1497,46 @@
         "Multiplying in the wrong order: \\(A^{-1}B\\) is not \\(BA^{-1}\\). Multiplying matrices element by element. Attempting a product whose orders do not match. Forgetting to divide by the determinant."
        ]
       }
+     ],
+     "map": [
+      [
+       "Describing",
+       [
+        "order: rows × columns",
+        "element aᵢⱼ",
+        "special matrices"
+       ]
+      ],
+      [
+       "Operations",
+       [
+        "add same-order matrices",
+        "scalar multiple",
+        "row × column products"
+       ]
+      ],
+      [
+       "Multiplication rules",
+       [
+        "inner orders must match",
+        "AB ≠ BA usually"
+       ]
+      ],
+      [
+       "Inverse",
+       [
+        "det = ad − bc",
+        "swap, negate, divide",
+        "det 0: no inverse"
+       ]
+      ],
+      [
+       "Uses",
+       [
+        "costs and totals",
+        "simultaneous equations X = A⁻¹B"
+       ]
+      ]
      ]
     },
     {
@@ -1103,6 +1684,64 @@
          "A connected graph has vertex degrees 2, 2, 4, 3, 3. Does it have an Eulerian circuit, an Eulerian trail, or neither?",
          "An Eulerian trail (exactly two odd vertices), but not a circuit."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Degrees A 2, B 3, C 4, D 3, E 2. Exactly two odd vertices (B and D), so an Eulerian trail exists from B to D, but no circuit.",
+         "nodes": {
+          "A": [
+           5,
+           30
+          ],
+          "B": [
+           40,
+           5
+          ],
+          "C": [
+           45,
+           70
+          ],
+          "D": [
+           85,
+           20
+          ],
+          "E": [
+           90,
+           90
+          ]
+         },
+         "edges": [
+          [
+           "A",
+           "B"
+          ],
+          [
+           "A",
+           "C"
+          ],
+          [
+           "B",
+           "C"
+          ],
+          [
+           "B",
+           "D"
+          ],
+          [
+           "C",
+           "D"
+          ],
+          [
+           "C",
+           "E"
+          ],
+          [
+           "D",
+           "E"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1142,6 +1781,77 @@
          "How many edges does a spanning tree of a connected graph with 8 vertices have?",
          "7."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Prim’s algorithm from A picks AC (2), CB (1), BD (5), DE (2): a minimum spanning tree of weight 10 (highlighted).",
+         "nodes": {
+          "A": [
+           5,
+           50
+          ],
+          "B": [
+           35,
+           5
+          ],
+          "C": [
+           35,
+           95
+          ],
+          "D": [
+           70,
+           30
+          ],
+          "E": [
+           98,
+           70
+          ]
+         },
+         "edges": [
+          [
+           "A",
+           "B",
+           4
+          ],
+          [
+           "A",
+           "C",
+           2
+          ],
+          [
+           "B",
+           "C",
+           1
+          ],
+          [
+           "B",
+           "D",
+           5
+          ],
+          [
+           "C",
+           "D",
+           8
+          ],
+          [
+           "C",
+           "E",
+           10
+          ],
+          [
+           "D",
+           "E",
+           2
+          ]
+         ],
+         "hl": [
+          "AC",
+          "CB",
+          "BD",
+          "DE"
+         ]
+        }
        ]
       },
       {
@@ -1157,6 +1867,53 @@
         "Forgetting the outside face. Counting a loop as degree 1. Mixing up Eulerian and Hamiltonian. Giving a shortest path when a minimum spanning tree is asked for, or the reverse."
        ]
       }
+     ],
+     "map": [
+      [
+       "Vocabulary",
+       [
+        "vertices, edges, degree",
+        "loops, bridges",
+        "connected, planar"
+       ]
+      ],
+      [
+       "Walks",
+       [
+        "trail: no repeated edge",
+        "path: no repeated vertex",
+        "circuits and cycles"
+       ]
+      ],
+      [
+       "Euler",
+       [
+        "all even: circuit",
+        "two odd: trail",
+        "v − e + f = 2"
+       ]
+      ],
+      [
+       "Hamilton",
+       [
+        "every vertex once"
+       ]
+      ],
+      [
+       "Trees",
+       [
+        "n − 1 edges",
+        "minimum spanning tree",
+        "Prim’s algorithm"
+       ]
+      ],
+      [
+       "Shortest path",
+       [
+        "list routes",
+        "least total weight"
+       ]
+      ]
      ]
     },
     {
@@ -1288,6 +2045,43 @@
        "p": [
         "Example: a stall has fixed costs of $120 and each item costs $4 to make and sells for $10. Cost \\(C = 120 + 4n\\); revenue \\(R = 10n\\). Break-even when \\(10n = 120 + 4n\\), so \\(n = 20\\) items. Selling more than 20 makes a profit.",
         "Elimination example: \\(2x + 3y = 13\\) and \\(x - 3y = -1\\). Adding gives \\(3x = 12\\), so \\(x = 4\\) and \\(y = \\tfrac{5}{3}\\)."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Cost C = 120 + 4n and revenue R = 10n meet at the break-even point (20, 200). Beyond 20 items the stall makes a profit.",
+         "x": [
+          0,
+          35
+         ],
+         "y": [
+          0,
+          350
+         ],
+         "xstep": 5,
+         "ystep": 50,
+         "fns": [
+          {
+           "f": "120+4*x",
+           "label": "cost"
+          },
+          {
+           "f": "10*x",
+           "label": "revenue"
+          }
+         ],
+         "pts": [
+          [
+           20,
+           200,
+           "break-even (20, 200)",
+           10,
+           16
+          ]
+         ],
+         "xl": "items",
+         "yl": "$"
+        }
        ]
       },
       {
@@ -1345,6 +2139,14 @@
          "What is the bearing of due west?",
          "270°."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "8 km on 040°, then 5 km on 100°. The angle at the turn is 180° − 60° = 120°, so the cosine rule gives d ≈ 11.36 km.",
+         "svg": "<line class=\"s\" x1=\"80\" y1=\"270\" x2=\"80\" y2=\"170\" stroke-dasharray=\"5 4\"/><line class=\"s\" x1=\"250\" y1=\"110\" x2=\"250\" y2=\"20\" stroke-dasharray=\"5 4\"/><text class=\"t\" x=\"74\" y=\"162\">N</text><text class=\"t\" x=\"244\" y=\"16\">N</text><line class=\"a\" x1=\"80\" y1=\"270\" x2=\"250\" y2=\"110\"/><line class=\"a\" x1=\"250\" y1=\"110\" x2=\"400\" y2=\"137\"/><line class=\"s\" x1=\"80\" y1=\"270\" x2=\"400\" y2=\"137\"/><text class=\"t\" x=\"128\" y=\"180\">8 km</text><text class=\"t\" x=\"318\" y=\"110\">5 km</text><text class=\"t\" x=\"250\" y=\"230\">d ≈ 11.36 km</text><text class=\"t\" x=\"232\" y=\"140\">120°</text><text class=\"t\" x=\"86\" y=\"230\">40°</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -1360,6 +2162,45 @@
         "Calculator in radian mode. Using the sine rule when the cosine rule is needed. Scaling an area by \\(k\\) instead of \\(k^2\\). Forgetting the bearing is measured clockwise from north."
        ]
       }
+     ],
+     "map": [
+      [
+       "Linear models",
+       [
+        "y = a + bx",
+        "intercept = start, slope = rate"
+       ]
+      ],
+      [
+       "Simultaneous equations",
+       [
+        "elimination, substitution",
+        "break-even point"
+       ]
+      ],
+      [
+       "Graphs",
+       [
+        "piecewise",
+        "step graphs"
+       ]
+      ],
+      [
+       "Triangles",
+       [
+        "Pythagoras, SOH CAH TOA",
+        "sine and cosine rules",
+        "area ½ab sin C"
+       ]
+      ],
+      [
+       "Measurement",
+       [
+        "similar figures: k, k², k³",
+        "unit conversions",
+        "bearings from north"
+       ]
+      ]
      ]
     },
     {
@@ -1405,6 +2246,46 @@
          "\\(y\\) varies inversely as \\(x\\), and \\(y = 6\\) when \\(x = 4\\). Find \\(y\\) when \\(x = 8\\).",
          "\\(k = 24\\), so \\(y = 3\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Direct variation y = 2x is a straight line through the origin; inverse variation y = 12/x is a hyperbola where doubling x halves y.",
+         "x": [
+          0,
+          9
+         ],
+         "y": [
+          0,
+          16
+         ],
+         "fns": [
+          {
+           "f": "2*x",
+           "label": "direct: y = 2x"
+          },
+          {
+           "f": "12/x",
+           "label": "inverse: y = 12/x",
+           "dom": [
+            0.6,
+            9
+           ]
+          }
+         ],
+         "pts": [
+          [
+           2,
+           6,
+           "(2, 6)"
+          ],
+          [
+           4,
+           3,
+           "(4, 3)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1531,6 +2412,44 @@
        "a": 0,
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Direct",
+       [
+        "y = kx",
+        "line through origin",
+        "double x → double y"
+       ]
+      ],
+      [
+       "Inverse",
+       [
+        "y = k/x",
+        "xy constant",
+        "hyperbola"
+       ]
+      ],
+      [
+       "Powers",
+       [
+        "y = kx², kx³",
+        "y = k/x²"
+       ]
+      ],
+      [
+       "Finding k",
+       [
+        "substitute one known pair"
+       ]
+      ],
+      [
+       "Testing",
+       [
+        "plot y against x² or 1/x",
+        "straight through origin"
+       ]
+      ]
      ]
     }
    ]

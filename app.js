@@ -1,4 +1,5 @@
 import { firebaseConfig, tutorUids, reportUrl } from "./config.js";
+import { figure, mindmap } from "./figs.js";
 
 /* ---------- subjects ---------- */
 const SUBJECTS = [
@@ -324,9 +325,10 @@ function viewTopic(uk, tid) {
     el("div", {}, el("p", { class: "muted small" }, `Lesson ${i + 1} of ${all.length}${learned ? " · Learned ✓" : ""}`), el("h1", {}, t.title)),
     el("section", { class: "learn " + s.cls }, el("h2", {}, "Key points"), el("ul", {}, t.points.map((p) => el("li", {}, p))),
       t.explain ? el("p", { class: "explain" }, el("b", {}, "Explain it back: "), t.explain) : null),
+    t.map ? el("section", { class: "learn " + s.cls }, el("h2", {}, "Mind map"), mindmap(t.title, t.map)) : null,
     t.notes ? el("section", { class: "learn notes " + s.cls }, el("h2", {}, "Lesson"),
       heads.length > 3 ? el("nav", { class: "toc", "aria-label": "In this lesson" }, heads.map((h) => el("button", { class: "btn small", onclick: () => { h.scrollIntoView({ behavior: "smooth", block: "start" }); h.focus({ preventScroll: true }); } }, h.textContent))) : null,
-      t.notes.flatMap((n, k) => [heads[k], ...n.p.map((p) => el("p", {}, p)),
+      t.notes.flatMap((n, k) => [heads[k], ...n.p.map((p) => el("p", {}, p)), ...(n.fig || []).map(figure),
         ...(n.check || []).map(([q, a]) => el("details", { class: "selfcheck" }, el("summary", {}, el("b", {}, "Check yourself: "), q), el("p", {}, a)))])) : null,
     el("div", { class: "row" },
       el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...ids]), t.title, `#${here}`) }, `Practise ${ids.length} questions`),

@@ -134,6 +134,84 @@
          "What percentage of values lie between one standard deviation below the mean and two above?",
          "34 + 34 + 13.5 = 81.5%."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Percentages in each band of a bell-shaped distribution: 34%, 13.5%, 2.35% and 0.15% on each side of the mean.",
+         "x": [
+          -3.6,
+          3.6
+         ],
+         "y": [
+          0,
+          0.45
+         ],
+         "xstep": 1,
+         "ystep": 0.1,
+         "fns": [
+          {
+           "f": "exp(-x*x/2)/sqrt(2*PI)"
+          }
+         ],
+         "shade": [
+          {
+           "f": 0,
+           "from": -1,
+           "to": 1
+          },
+          {
+           "f": 0,
+           "from": -2,
+           "to": 2
+          }
+         ],
+         "pts": [
+          [
+           -0.5,
+           0.2,
+           "34%",
+           -14,
+           0
+          ],
+          [
+           0.5,
+           0.2,
+           "34%",
+           -10,
+           0
+          ],
+          [
+           -1.5,
+           0.06,
+           "13.5%",
+           -22,
+           0
+          ],
+          [
+           1.5,
+           0.06,
+           "13.5%",
+           -16,
+           0
+          ],
+          [
+           -2.5,
+           0.012,
+           "2.35%",
+           -24,
+           -6
+          ],
+          [
+           2.5,
+           0.012,
+           "2.35%",
+           -16,
+           -6
+          ]
+         ],
+         "xl": "standard deviations from the mean"
+        }
        ]
       },
       {
@@ -188,6 +266,38 @@
         "Applying the 68–95–99.7% rule to a skewed distribution. Subtracting in the wrong order in a \\(z\\)-score. Forgetting to halve the percentage outside the interval when one tail is needed. Reading a log scale as if it were linear."
        ]
       }
+     ],
+     "map": [
+      [
+       "Summary statistics",
+       [
+        "mean and sd: symmetric data",
+        "median and IQR: skewed data"
+       ]
+      ],
+      [
+       "68–95–99.7% rule",
+       [
+        "68% within 1 sd",
+        "95% within 2 sd",
+        "99.7% within 3 sd"
+       ]
+      ],
+      [
+       "z-scores",
+       [
+        "z = (x − x̄) ÷ s",
+        "x = x̄ + zs",
+        "compare across scales"
+       ]
+      ],
+      [
+       "Reports",
+       [
+        "shape, centre, spread, outliers",
+        "values with units"
+       ]
+      ]
      ]
     },
     {
@@ -220,6 +330,34 @@
          "Which display suits the relationship between type of school (government, independent) and weekly homework hours?",
          "Parallel boxplots: homework hours is numerical and school type is categorical."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Choose the display from the types of the two variables.",
+         "head": [
+          "Explanatory",
+          "Response",
+          "Display"
+         ],
+         "rows": [
+          [
+           "Categorical",
+           "Categorical",
+           "Two-way table, segmented bar chart"
+          ],
+          [
+           "Categorical",
+           "Numerical",
+           "Parallel boxplots, back-to-back stem plot"
+          ],
+          [
+           "Numerical",
+           "Numerical",
+           "Scatterplot"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -247,6 +385,70 @@
          "A scatterplot shows a clear curved pattern but \\(r = 0.3\\). Does this mean the association is weak?",
          "Not necessarily. \\(r\\) only measures linear association, so it understates a strong non-linear relationship."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Two patterns: a strong positive linear association (r ≈ 0.95) and a clear curve, where r would understate a strong relationship.",
+         "x": [
+          0,
+          10
+         ],
+         "y": [
+          0,
+          12
+         ],
+         "xstep": 1,
+         "ystep": 2,
+         "dots": [
+          [
+           1,
+           1.5
+          ],
+          [
+           2,
+           2.2
+          ],
+          [
+           3,
+           3.4
+          ],
+          [
+           4,
+           3.9
+          ],
+          [
+           5,
+           5.3
+          ],
+          [
+           6,
+           6.1
+          ],
+          [
+           7,
+           6.8
+          ],
+          [
+           8,
+           8.2
+          ],
+          [
+           9,
+           9.1
+          ]
+         ],
+         "fns": [
+          {
+           "f": "0.12*(x-5)**2+8",
+           "label": "curved",
+           "dom": [
+            1,
+            9
+           ]
+          }
+         ]
+        }
        ]
       },
       {
@@ -365,6 +567,45 @@
        "a": 0,
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Displays",
+       [
+        "two categorical: two-way table",
+        "numerical + categorical: boxplots",
+        "two numerical: scatterplot"
+       ]
+      ],
+      [
+       "Two-way tables",
+       [
+        "percentages within the explanatory variable",
+        "compare across columns"
+       ]
+      ],
+      [
+       "Boxplots",
+       [
+        "compare medians",
+        "then spread and shape"
+       ]
+      ],
+      [
+       "Scatterplots",
+       [
+        "direction, form, strength, outliers",
+        "Pearson’s r: linear only"
+       ]
+      ],
+      [
+       "Causation",
+       [
+        "confounding",
+        "common response",
+        "coincidence"
+       ]
+      ]
      ]
     },
     {
@@ -535,6 +776,90 @@
          "For the line y = 0.8 + 2x, what is the residual for the point (4, 7)?",
          "Predicted 8.8, so the residual is 7 − 8.8 = −1.8."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Data points, the least squares line y = 0.8 + 2x, and residuals (dashed): 0.2, 0.2, −0.8, 0.2, 0.2. They add to zero.",
+         "x": [
+          0,
+          6
+         ],
+         "y": [
+          0,
+          13
+         ],
+         "xstep": 1,
+         "ystep": 2,
+         "fns": [
+          {
+           "f": "0.8+2*x"
+          }
+         ],
+         "dots": [
+          [
+           1,
+           3
+          ],
+          [
+           2,
+           5
+          ],
+          [
+           3,
+           6
+          ],
+          [
+           4,
+           9
+          ],
+          [
+           5,
+           11
+          ]
+         ],
+         "segs": [
+          [
+           1,
+           3,
+           1,
+           2.8
+          ],
+          [
+           2,
+           5,
+           2,
+           4.8
+          ],
+          [
+           3,
+           6,
+           3,
+           6.8
+          ],
+          [
+           4,
+           9,
+           4,
+           8.8
+          ],
+          [
+           5,
+           11,
+           5,
+           10.8
+          ]
+         ],
+         "pts": [
+          [
+           3,
+           6,
+           "residual −0.8",
+           8,
+           16
+          ]
+         ]
+        }
        ]
       },
       {
@@ -556,6 +881,46 @@
         "Writing the equation with \\(x\\) and \\(y\\) when the question names the variables. Interpreting \\(r\\) as a percentage. Calculating the residual as predicted minus actual. Forgetting to back-transform a prediction."
        ]
       }
+     ],
+     "map": [
+      [
+       "Least squares line",
+       [
+        "b = r sy ÷ sx",
+        "a = ȳ − b x̄",
+        "passes through (x̄, ȳ)"
+       ]
+      ],
+      [
+       "Interpret",
+       [
+        "slope in context",
+        "intercept if meaningful",
+        "r² as a percentage"
+       ]
+      ],
+      [
+       "Residuals",
+       [
+        "actual − predicted",
+        "sum to zero",
+        "random plot: linear OK"
+       ]
+      ],
+      [
+       "Predictions",
+       [
+        "interpolation reliable",
+        "extrapolation risky"
+       ]
+      ],
+      [
+       "Transformations",
+       [
+        "x², log x, 1/x",
+        "back-transform answers"
+       ]
+      ]
      ]
     },
     {
@@ -676,6 +1041,84 @@
        "h": "Describing a time series plot",
        "p": [
         "Trend: a long-term increase or decrease. Seasonality: a pattern that repeats over a fixed period of a year or less, linked to the calendar. Cycles: rises and falls over periods longer than a year, without fixed length. Irregular fluctuations: random variation. Also note structural change (a sudden change in level or trend) and outliers."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Three years of quarterly sales: an upward trend (dashed line) with seasonality peaking every third quarter.",
+         "x": [
+          0.5,
+          12.5
+         ],
+         "y": [
+          10,
+          45
+         ],
+         "xstep": 1,
+         "ystep": 5,
+         "lines": [
+          {
+           "pts": [
+            [
+             1,
+             17.5
+            ],
+            [
+             2,
+             25
+            ],
+            [
+             3,
+             30.5
+            ],
+            [
+             4,
+             22
+            ],
+            [
+             5,
+             23.5
+            ],
+            [
+             6,
+             31
+            ],
+            [
+             7,
+             36.5
+            ],
+            [
+             8,
+             28
+            ],
+            [
+             9,
+             29.5
+            ],
+            [
+             10,
+             37
+            ],
+            [
+             11,
+             42.5
+            ],
+            [
+             12,
+             34
+            ]
+           ],
+           "label": "sales"
+          }
+         ],
+         "fns": [
+          {
+           "f": "20+1.5*x",
+           "label": "trend"
+          }
+         ],
+         "xl": "quarter"
+        }
        ]
       },
       {
@@ -738,6 +1181,46 @@
         "Calling any up-and-down pattern seasonal. Forgetting to centre an even-point moving mean. Multiplying when you should divide by the index. Using the wrong numbering for time periods in the trend line."
        ]
       }
+     ],
+     "map": [
+      [
+       "Features",
+       [
+        "trend",
+        "seasonality",
+        "cycles",
+        "irregular variation",
+        "structural change"
+       ]
+      ],
+      [
+       "Smoothing",
+       [
+        "moving means",
+        "centre even-point means",
+        "median smoothing"
+       ]
+      ],
+      [
+       "Seasonal indices",
+       [
+        "value ÷ seasonal average",
+        "sum to number of seasons"
+       ]
+      ],
+      [
+       "Deseasonalise",
+       [
+        "divide by the index"
+       ]
+      ],
+      [
+       "Forecast",
+       [
+        "trend line on deseasonalised data",
+        "multiply back by the index"
+       ]
+      ]
      ]
     }
    ]
@@ -861,6 +1344,108 @@
        "p": [
         "Flat rate: the same amount is lost each year, a fixed percentage of the purchase price. Rule: \\(V_n = V_0 - nD\\). Unit cost: the value falls by a fixed amount per unit of use (per kilometre, per page). Reducing balance: a fixed percentage of the current value is lost each year. Rule: \\(V_n = R^n V_0\\) with \\(R = 1 - \\dfrac{r}{100}\\).",
         "Example: a $30 000 car. Flat rate at 12% p.a. loses $3600 a year: after 5 years it is worth $12 000. Reducing balance at 18% p.a.: \\(V_5 = 0.82^5 \\times 30\\,000 = \\$11\\,122\\). Reducing balance loses most in the first years and never reaches zero."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "A $30,000 car: flat-rate depreciation at 12% falls in a straight line; reducing balance at 18% falls steeply at first, then slows, never reaching zero.",
+         "x": [
+          0,
+          8.5
+         ],
+         "y": [
+          0,
+          32000
+         ],
+         "xstep": 1,
+         "ystep": 5000,
+         "fns": [
+          {
+           "f": "30000-3600*x",
+           "label": "flat rate"
+          },
+          {
+           "f": "30000*0.82**x",
+           "label": "reducing balance"
+          }
+         ],
+         "dots": [
+          [
+           0,
+           30000.0
+          ],
+          [
+           1,
+           24600.0
+          ],
+          [
+           2,
+           20171.999999999996
+          ],
+          [
+           3,
+           16541.039999999997
+          ],
+          [
+           4,
+           13563.652799999996
+          ],
+          [
+           5,
+           11122.195295999996
+          ],
+          [
+           6,
+           9120.200142719998
+          ],
+          [
+           7,
+           7478.564117030396
+          ],
+          [
+           8,
+           6132.422575964925
+          ],
+          [
+           0,
+           30000
+          ],
+          [
+           1,
+           26400
+          ],
+          [
+           2,
+           22800
+          ],
+          [
+           3,
+           19200
+          ],
+          [
+           4,
+           15600
+          ],
+          [
+           5,
+           12000
+          ],
+          [
+           6,
+           8400
+          ],
+          [
+           7,
+           4800
+          ],
+          [
+           8,
+           1200
+          ]
+         ],
+         "xl": "years",
+         "yl": "value ($)"
+        }
        ]
       },
       {
@@ -926,6 +1511,44 @@
         "Using the annual rate as the per-period rate. Giving \\(R\\) as the percentage instead of the multiplier. Rounding the number of periods down when a target must be reached. Getting the signs of PV and FV the same."
        ]
       }
+     ],
+     "map": [
+      [
+       "Recurrence",
+       [
+        "Vₙ₊₁ = RVₙ ± d",
+        "one period = one step"
+       ]
+      ],
+      [
+       "Depreciation",
+       [
+        "flat rate: −D each year",
+        "unit cost: per use",
+        "reducing balance: × R"
+       ]
+      ],
+      [
+       "Interest",
+       [
+        "R = 1 + r ÷ (100 × periods)",
+        "effective vs nominal"
+       ]
+      ],
+      [
+       "Rules",
+       [
+        "Vₙ = V₀ ± nd",
+        "Vₙ = RⁿV₀"
+       ]
+      ],
+      [
+       "Finance solver",
+       [
+        "N, I%, PV, PMT, FV",
+        "signs: out −, in +"
+       ]
+      ]
      ]
     },
     {
@@ -1044,6 +1667,39 @@
        "h": "One recurrence relation, four products",
        "p": [
         "\\(V_{n+1} = RV_n \\pm d\\) with \\(R = 1 + \\dfrac{r}{100p}\\) covers them all. Reducing-balance loan: interest is added, a payment is subtracted, and the balance falls to zero. Annuity: an invested sum earns interest while regular payments are withdrawn until it runs out. Perpetuity: the payment equals the interest, so the balance stays constant for ever. Annuity investment: regular deposits are added to a growing balance."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Four products, one recurrence relation.",
+         "head": [
+          "Product",
+          "Recurrence relation",
+          "Balance over time"
+         ],
+         "rows": [
+          [
+           "Reducing-balance loan",
+           "Vₙ₊₁ = RVₙ − d",
+           "falls to zero"
+          ],
+          [
+           "Annuity",
+           "Vₙ₊₁ = RVₙ − d",
+           "falls to zero"
+          ],
+          [
+           "Perpetuity",
+           "Vₙ₊₁ = RVₙ − d, with d = interest",
+           "stays constant"
+          ],
+          [
+           "Annuity investment",
+           "Vₙ₊₁ = RVₙ + d",
+           "grows"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1057,6 +1713,33 @@
          "A loan balance is $10,000 at 1% interest per month and the payment is $500. How much of the payment reduces the principal?",
          "Interest is $100, so $400 reduces the principal."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Balance of a $20,000 loan at 6% p.a. (monthly) with $400 payments: it falls slowly at first, while most of each payment is interest, then faster. It is repaid after about 58 months.",
+         "x": [
+          0,
+          60
+         ],
+         "y": [
+          0,
+          21000
+         ],
+         "xstep": 6,
+         "ystep": 5000,
+         "fns": [
+          {
+           "f": "80000-60000*1.005**x",
+           "dom": [
+            0,
+            57.7
+           ]
+          }
+         ],
+         "xl": "months",
+         "yl": "balance ($)"
+        }
        ]
       },
       {
@@ -1109,6 +1792,48 @@
         "Mismatching P/Y and C/Y with the payment frequency. Leaving N as years. Forgetting that paying only the interest never reduces the loan. Reporting total interest as the total repaid."
        ]
       }
+     ],
+     "map": [
+      [
+       "One relation",
+       [
+        "Vₙ₊₁ = RVₙ ± d"
+       ]
+      ],
+      [
+       "Loans",
+       [
+        "interest first, then principal",
+        "balance falls to zero",
+        "final payment adjusts"
+       ]
+      ],
+      [
+       "Annuities",
+       [
+        "withdrawals run it down"
+       ]
+      ],
+      [
+       "Perpetuities",
+       [
+        "payment = interest",
+        "balance never changes"
+       ]
+      ],
+      [
+       "Investments",
+       [
+        "regular deposits added"
+       ]
+      ],
+      [
+       "Solver signs",
+       [
+        "loan: PV +, PMT −",
+        "annuity: PV −, PMT +"
+       ]
+      ]
      ]
     }
    ]
@@ -1281,6 +2006,57 @@
          "Why is two-step dominance used?",
          "To separate ties in one-step dominance, by giving credit for beating players who themselves beat others."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Dominance in a round robin: an arrow from X to Y means X beat Y. A beat B and C; B beat C and D; C beat D; D beat A.",
+         "nodes": {
+          "A": [
+           10,
+           10
+          ],
+          "B": [
+           90,
+           10
+          ],
+          "C": [
+           90,
+           90
+          ],
+          "D": [
+           10,
+           90
+          ]
+         },
+         "edges": [
+          [
+           "A",
+           "B"
+          ],
+          [
+           "A",
+           "C"
+          ],
+          [
+           "B",
+           "C"
+          ],
+          [
+           "B",
+           "D"
+          ],
+          [
+           "C",
+           "D"
+          ],
+          [
+           "D",
+           "A"
+          ]
+         ],
+         "dir": true
+        }
        ]
       },
       {
@@ -1294,6 +2070,14 @@
          "In a transition matrix, what must each column add to?",
          "1."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Transition diagram for commuters each week: 70% of drivers keep driving, 30% switch to the train; 80% of train users stay, 20% switch to driving.",
+         "svg": "<circle class=\"fp\" cx=\"140\" cy=\"150\" r=\"48\"/><circle class=\"fp\" cx=\"400\" cy=\"150\" r=\"48\"/><text class=\"t\" x=\"120\" y=\"155\">Drive</text><text class=\"t\" x=\"382\" y=\"155\">Train</text><path class=\"a\" d=\"M182,128 C240,80 300,80 358,128\"/><path class=\"a\" d=\"M358,172 C300,220 240,220 182,172\"/><path class=\"s\" d=\"M352,128 l8,1 l-4,7\"/><path class=\"s\" d=\"M188,172 l-8,-1 l4,-7\"/><text class=\"t\" x=\"250\" y=\"82\">0.3</text><text class=\"t\" x=\"250\" y=\"232\">0.2</text><path class=\"a\" d=\"M110,110 C70,40 210,40 170,110\"/><path class=\"a\" d=\"M370,110 C330,40 470,40 430,110\"/><text class=\"t\" x=\"128\" y=\"48\">0.7</text><text class=\"t\" x=\"388\" y=\"48\">0.8</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -1302,6 +2086,38 @@
         "Writing the transition matrix with rows adding to 1 instead of columns. Multiplying \\(S_0T\\) in the wrong order. Using \\(T^nS_0\\) for a model with an added matrix \\(B\\). Reading a transition diagram’s arrows backwards."
        ]
       }
+     ],
+     "map": [
+      [
+       "Relationships",
+       [
+        "binary and permutation",
+        "communication: C²",
+        "dominance: D + D²"
+       ]
+      ],
+      [
+       "Transition matrices",
+       [
+        "columns ‘from’, rows ‘to’",
+        "columns sum to 1",
+        "Sₙ = TⁿS₀"
+       ]
+      ],
+      [
+       "Steady state",
+       [
+        "stops changing",
+        "large powers of T"
+       ]
+      ],
+      [
+       "Extensions",
+       [
+        "Sₙ₊₁ = TSₙ + B",
+        "Leslie matrices"
+       ]
+      ]
      ]
     },
     {
@@ -1455,6 +2271,67 @@
          "What is the float of an activity on the critical path?",
          "Zero."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Activity network: A (4) and B (3) start; C (5) follows A; D (2) follows B; E (4) follows C and D. The critical path A–C–E (highlighted) takes 13 days.",
+         "nodes": {
+          "S": [
+           0,
+           50
+          ],
+          "1": [
+           33,
+           15
+          ],
+          "2": [
+           33,
+           85
+          ],
+          "3": [
+           66,
+           50
+          ],
+          "F": [
+           100,
+           50
+          ]
+         },
+         "edges": [
+          [
+           "S",
+           "1",
+           "A 4"
+          ],
+          [
+           "S",
+           "2",
+           "B 3"
+          ],
+          [
+           "1",
+           "3",
+           "C 5"
+          ],
+          [
+           "2",
+           "3",
+           "D 2"
+          ],
+          [
+           "3",
+           "F",
+           "E 4"
+          ]
+         ],
+         "hl": [
+          "S1",
+          "13",
+          "3F"
+         ],
+         "dir": true
+        }
        ]
       },
       {
@@ -1494,6 +2371,58 @@
          "A cut crosses an edge of capacity 6 that runs from the sink side to the source side. How much does it add to the cut’s capacity?",
          "Nothing: only edges from the source side to the sink side count."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Capacities on a directed network. The minimum cut (12) gives the maximum flow from S to T.",
+         "nodes": {
+          "S": [
+           0,
+           50
+          ],
+          "A": [
+           50,
+           10
+          ],
+          "B": [
+           50,
+           90
+          ],
+          "T": [
+           100,
+           50
+          ]
+         },
+         "edges": [
+          [
+           "S",
+           "A",
+           7
+          ],
+          [
+           "S",
+           "B",
+           5
+          ],
+          [
+           "A",
+           "B",
+           3
+          ],
+          [
+           "A",
+           "T",
+           4
+          ],
+          [
+           "B",
+           "T",
+           8
+          ]
+         ],
+         "dir": true
+        }
        ]
       },
       {
@@ -1502,6 +2431,45 @@
         "Counting an edge that crosses a cut from the sink side to the source side. Taking the smallest value in the forward scan. Forgetting that reducing a non-critical activity saves no time. Stopping the Hungarian algorithm before the minimum number of covering lines equals the number of rows."
        ]
       }
+     ],
+     "map": [
+      [
+       "Shortest path",
+       [
+        "Dijkstra’s algorithm",
+        "update smaller labels"
+       ]
+      ],
+      [
+       "Spanning trees",
+       [
+        "Prim’s algorithm",
+        "n − 1 edges"
+       ]
+      ],
+      [
+       "Flow",
+       [
+        "cut: separate source from sink",
+        "count forward edges only",
+        "max flow = min cut"
+       ]
+      ],
+      [
+       "Allocation",
+       [
+        "Hungarian algorithm",
+        "bipartite graphs"
+       ]
+      ],
+      [
+       "Projects",
+       [
+        "EST forward, LST backward",
+        "float = LST − EST",
+        "critical path, crashing"
+       ]
+      ]
      ]
     },
     {
@@ -1541,6 +2509,38 @@
          "A seasonal index for summer is 0.85. Interpret it.",
          "Summer values are typically 15% below the seasonal average."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Sentence patterns that earn interpretation marks.",
+         "head": [
+          "Quantity",
+          "Model sentence"
+         ],
+         "rows": [
+          [
+           "Slope",
+           "On average, [response] increases by [b] for each one-unit increase in [explanatory]."
+          ],
+          [
+           "Intercept",
+           "When [explanatory] is 0, the predicted [response] is [a]."
+          ],
+          [
+           "r²",
+           "[r² as %] of the variation in [response] is explained by the variation in [explanatory]."
+          ],
+          [
+           "Seasonal index",
+           "[Season] values are typically [x]% above/below the seasonal average."
+          ],
+          [
+           "Residual",
+           "The model over/under-estimates the actual value by [amount]."
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1672,6 +2672,38 @@
        "a": 0,
        "e": "Residual = actual − predicted."
       }
+     ],
+     "map": [
+      [
+       "Examinations",
+       [
+        "technology and bound reference",
+        "multiple choice + extended answer"
+       ]
+      ],
+      [
+       "Interpretations",
+       [
+        "slope, intercept, r²",
+        "seasonal index, residual"
+       ]
+      ],
+      [
+       "Setting out",
+       [
+        "recurrence with V₀",
+        "solver inputs with signs",
+        "matrix product written"
+       ]
+      ],
+      [
+       "Accuracy",
+       [
+        "round at the end",
+        "money to the cent",
+        "whole periods: round up"
+       ]
+      ]
      ]
     }
    ]

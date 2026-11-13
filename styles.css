@@ -164,3 +164,31 @@ select, input[type=number] { border: 1px solid var(--line); background: var(--bg
 .report { color: var(--soft); margin-left: auto; }
 .solution { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
 .steps { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 6px; max-width: 70ch; white-space: pre-wrap; }
+/* figures (figs.js) */
+.fig { margin: 6px 0; display: flex; flex-direction: column; gap: 6px; max-width: 70ch; }
+.fig svg { width: 100%; height: auto; font: 14px var(--font-body, sans-serif); }
+.fig figcaption { font-size: 0.88rem; color: var(--soft); }
+.fig .grid { stroke: var(--line); } .fig .axis { stroke: var(--soft); stroke-width: 1.5; }
+.fig .tick, .fig .axl { fill: var(--soft); font-size: 12px; } .fig .axl { font-style: italic; }
+.fig .curve { fill: none; stroke-width: 2.5; } .fig .s0 { stroke: var(--c); } .fig .s1 { stroke: #d97706; } .fig .s2 { stroke: #2563eb; stroke-dasharray: 6 4; }
+.fig .k0 { fill: var(--c); } .fig .k1 { fill: #d97706; } .fig .k2 { fill: #2563eb; }
+.fig .shade { fill: var(--c); opacity: 0.18; } .fig .dash { stroke: var(--soft); stroke-dasharray: 5 5; }
+.fig .col { fill: var(--c); opacity: 0.7; } .fig .dot { fill: var(--soft); } .fig .pt { fill: var(--c); } .fig .lbl, .fig .t { fill: var(--ink); font-size: 13px; }
+.fig .edge { stroke: var(--soft); stroke-width: 2; } .fig .edge.on { stroke: var(--c); stroke-width: 4; } .fig .arrow { fill: var(--soft); }
+.fig .wbg { fill: var(--panel); } .fig .vtx { fill: var(--panel); stroke: var(--c); stroke-width: 2.5; } .fig .vlbl { fill: var(--ink); font-weight: 600; }
+.fig .s { stroke: var(--ink); stroke-width: 2; fill: none; } .fig .a { stroke: var(--c); stroke-width: 2.5; fill: none; } .fig .fa { fill: var(--c); opacity: 0.25; } .fig .fp { fill: var(--panel); stroke: var(--ink); stroke-width: 2; }
+.fig-table { overflow-x: auto; } .fig-table table { border-collapse: collapse; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.fig-table th, .fig-table td { border: 1px solid var(--line); padding: 5px 9px; text-align: left; } .fig-table th { background: var(--bg); }
+.flow { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 26px; }
+.flow li { position: relative; background: var(--bg); border: 1px solid var(--line); border-top: 3px solid var(--c); border-radius: 8px; padding: 8px 12px; display: flex; flex-direction: column; gap: 2px; max-width: 220px; }
+.flow li span { font-size: 0.85rem; color: var(--soft); } .flow li + li::before { content: "→"; position: absolute; left: -20px; top: 50%; transform: translateY(-50%); color: var(--c); font-weight: 700; }
+.flow.down { flex-direction: column; gap: 22px; } .flow.down li { max-width: 60ch; } .flow.down li + li::before { content: "↓"; left: 14px; top: -20px; transform: none; }
+.mindmap .mm-link { fill: none; stroke: var(--c); stroke-width: 2; opacity: 0.6; } .mindmap .mm-box { fill: var(--bg); stroke: var(--c); stroke-width: 1.5; }
+.mindmap .mm-centre { fill: var(--c); } .mindmap .mm-title { fill: var(--panel); font-weight: 700; font-size: 17px; } .mindmap text { fill: var(--ink); } .mindmap .mm-h { font-weight: 700; fill: var(--c); }
+.mindmap { max-width: none; } .learn .mm-list { display: none; }
+@media (max-width: 640px) { .mm-svg { display: none; } .learn .mm-list { display: flex; } }
+
+@media (max-width: 640px) {
+  .fig .tick { font-size: 17px; } .fig .lbl, .fig .t, .fig .vlbl, .fig .axl { font-size: 19px; }
+  .flow { flex-direction: column; gap: 22px; } .flow li { max-width: none; } .flow li + li::before { content: "↓"; left: 14px; top: -20px; transform: none; }
+}

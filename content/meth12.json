@@ -34,6 +34,14 @@
          "Expand \\((x - 4)(2x + 1)\\).",
          "\\(2x^2 + x - 8x - 4 = 2x^2 - 7x - 4\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Area model: (x + 3)(x + 2) = x² + 3x + 2x + 6 = x² + 5x + 6. Each rectangle is one term of the expansion.",
+         "svg": "<rect class=\"fp\" x=\"140\" y=\"40\" width=\"200\" height=\"150\"/><rect class=\"fp\" x=\"340\" y=\"40\" width=\"90\" height=\"150\"/><rect class=\"fp\" x=\"140\" y=\"190\" width=\"200\" height=\"60\"/><rect class=\"fp\" x=\"340\" y=\"190\" width=\"90\" height=\"60\"/><rect class=\"fa\" x=\"140\" y=\"40\" width=\"200\" height=\"150\"/><text class=\"t\" x=\"232\" y=\"120\">x²</text><text class=\"t\" x=\"374\" y=\"120\">3x</text><text class=\"t\" x=\"230\" y=\"226\">2x</text><text class=\"t\" x=\"380\" y=\"226\">6</text><text class=\"t\" x=\"236\" y=\"30\">x</text><text class=\"t\" x=\"374\" y=\"30\">+3</text><text class=\"t\" x=\"118\" y=\"120\">x</text><text class=\"t\" x=\"112\" y=\"226\">+2</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -53,6 +61,34 @@
          "Factorise \\(3x^2 + 10x - 8\\).",
          "Numbers multiplying to \\(-24\\) and adding to 10 are 12 and \\(-2\\): \\(3x^2 + 12x - 2x - 8 = 3x(x + 4) - 2(x + 4) = (3x - 2)(x + 4)\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "A checklist to run on any expression you need to factorise.",
+         "steps": [
+          [
+           "1. Common factor?",
+           "take out the HCF"
+          ],
+          [
+           "2. Two terms?",
+           "difference of two squares"
+          ],
+          [
+           "3. Three terms?",
+           "perfect square or trinomial"
+          ],
+          [
+           "4. Four terms?",
+           "group in pairs"
+          ],
+          [
+           "5. Check",
+           "expand to confirm"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -205,6 +241,49 @@
         "Divide: \\(x = \\dfrac{-(2y + 1)}{y - 3} = \\dfrac{2y + 1}{3 - y}\\)."
        ]
       }
+     ],
+     "map": [
+      [
+       "Expanding",
+       [
+        "every term × every term",
+        "(a ± b)² = a² ± 2ab + b²",
+        "(a − b)(a + b) = a² − b²"
+       ]
+      ],
+      [
+       "Factorising",
+       [
+        "take out the HCF first",
+        "difference of two squares",
+        "trinomials: split the middle",
+        "grouping for four terms"
+       ]
+      ],
+      [
+       "Indices and surds",
+       [
+        "add, subtract, multiply indices",
+        "fractional index = root",
+        "rationalise denominators"
+       ]
+      ],
+      [
+       "Equations",
+       [
+        "same operation both sides",
+        "inequality: flip sign for negatives",
+        "rearrange to change the subject"
+       ]
+      ],
+      [
+       "Simultaneous",
+       [
+        "elimination",
+        "substitution",
+        "check in both equations"
+       ]
+      ]
      ]
     },
     {
@@ -238,6 +317,45 @@
          "Is \\(y^2 = x\\) a function? Explain.",
          "No. For \\(x = 4\\), \\(y = 2\\) or \\(y = -2\\), so one input has two outputs (it fails the vertical line test)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Vertical line test: the line x = 1 meets the circle x² + y² = 9 twice, so the circle is not a function. Each half of the circle is.",
+         "x": [
+          -4,
+          4
+         ],
+         "y": [
+          -4,
+          4
+         ],
+         "fns": [
+          {
+           "f": "sqrt(9-x*x)"
+          },
+          {
+           "f": "-sqrt(9-x*x)"
+          }
+         ],
+         "dash": [
+          {
+           "x": 1
+          }
+         ],
+         "pts": [
+          [
+           1,
+           2.83,
+           "(1, 2.83)"
+          ],
+          [
+           1,
+           -2.83,
+           "(1, −2.83)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -273,6 +391,50 @@
        "p": [
         "A hybrid (piecewise) function uses different rules on different parts of its domain: \\(f(x) = \\begin{cases} x + 2, & x < 0 \\\\ x^2, & x \\ge 0 \\end{cases}\\).",
         "To evaluate, first choose the right piece: \\(f(-3) = -1\\), \\(f(3) = 9\\), and \\(f(0) = 0\\) because 0 belongs to the second piece. Sketch each piece only over its own interval, with a closed circle for an included endpoint and an open circle for an excluded one. This function has a break at \\(x = 0\\): the first piece approaches 2 but the second starts at 0."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "The hybrid function f(x) = x + 2 for x < 0 and x² for x ≥ 0. There is a break at x = 0: the left piece approaches 2 but f(0) = 0.",
+         "x": [
+          -4,
+          3
+         ],
+         "y": [
+          -3,
+          9
+         ],
+         "fns": [
+          {
+           "f": "x+2",
+           "dom": [
+            -4,
+            -0.001
+           ]
+          },
+          {
+           "f": "x*x",
+           "dom": [
+            0,
+            3
+           ]
+          }
+         ],
+         "pts": [
+          [
+           0,
+           2,
+           "(0, 2) not included"
+          ],
+          [
+           0,
+           0,
+           "(0, 0) included",
+           8,
+           18
+          ]
+         ]
+        }
        ]
       },
       {
@@ -395,6 +557,47 @@
         "\\(1 + 9 = 10\\)."
        ]
       }
+     ],
+     "map": [
+      [
+       "Relations",
+       [
+        "sets of ordered pairs",
+        "one-to-one, many-to-one",
+        "one-to-many, many-to-many"
+       ]
+      ],
+      [
+       "Functions",
+       [
+        "one output per input",
+        "vertical line test",
+        "f(x) notation"
+       ]
+      ],
+      [
+       "Domain and range",
+       [
+        "interval notation [ ] ( )",
+        "implied domain",
+        "range from the graph"
+       ]
+      ],
+      [
+       "Hybrid functions",
+       [
+        "different rule on each part",
+        "open and closed circles"
+       ]
+      ],
+      [
+       "Inverses",
+       [
+        "swap x and y",
+        "reflect in y = x",
+        "function only if one-to-one"
+       ]
+      ]
      ]
     },
     {
@@ -542,6 +745,56 @@
        "h": "Three forms of a quadratic",
        "p": [
         "General form \\(y = ax^2 + bx + c\\) shows the \\(y\\)-intercept \\(c\\). Factorised form \\(y = a(x - p)(x - q)\\) shows the \\(x\\)-intercepts \\(p\\) and \\(q\\). Turning point form \\(y = a(x - h)^2 + k\\) shows the turning point \\((h, k)\\). The axis of symmetry is \\(x = -\\dfrac{b}{2a}\\). If \\(a > 0\\) the parabola has a minimum; if \\(a < 0\\), a maximum."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "y = 2x² − 12x + 10 = 2(x − 1)(x − 5) = 2(x − 3)² − 8. Each form shows a different feature: intercepts, roots, turning point.",
+         "x": [
+          -1,
+          7
+         ],
+         "y": [
+          -9,
+          12
+         ],
+         "fns": [
+          {
+           "f": "2*x*x-12*x+10"
+          }
+         ],
+         "dash": [
+          {
+           "x": 3
+          }
+         ],
+         "pts": [
+          [
+           3,
+           -8,
+           "turning point (3, −8)",
+           10,
+           4
+          ],
+          [
+           1,
+           0,
+           "(1, 0)",
+           -8,
+           -8
+          ],
+          [
+           5,
+           0,
+           "(5, 0)"
+          ],
+          [
+           0,
+           10,
+           "(0, 10)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -562,6 +815,34 @@
          "How many \\(x\\)-intercepts does \\(y = x^2 - 4x + 4\\) have?",
          "\\(\\Delta = 16 - 16 = 0\\), so one: the graph touches the axis at \\(x = 2\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Same shape, different constant: Δ > 0 crosses twice, Δ = 0 touches once, Δ < 0 never meets the x-axis.",
+         "x": [
+          -2,
+          4
+         ],
+         "y": [
+          -5,
+          8
+         ],
+         "fns": [
+          {
+           "f": "x*x-2*x-3",
+           "label": "Δ > 0: x² − 2x − 3"
+          },
+          {
+           "f": "x*x-2*x+1",
+           "label": "Δ = 0: x² − 2x + 1"
+          },
+          {
+           "f": "x*x-2*x+3",
+           "label": "Δ < 0: x² − 2x + 3"
+          }
+         ]
+        }
        ]
       },
       {
@@ -604,6 +885,48 @@
         "Forgetting to factor out \\(a\\) before completing the square. Losing the \\(\\pm\\) when taking a square root. Dividing an equation by \\(x\\) and losing the solution \\(x = 0\\). Writing a perpendicular gradient as the reciprocal without changing the sign."
        ]
       }
+     ],
+     "map": [
+      [
+       "Straight lines",
+       [
+        "gradient m = rise ÷ run",
+        "y − y₁ = m(x − x₁)",
+        "parallel: equal m; perpendicular: m₁m₂ = −1"
+       ]
+      ],
+      [
+       "Three forms",
+       [
+        "general: ax² + bx + c",
+        "factorised: a(x − p)(x − q)",
+        "turning point: a(x − h)² + k"
+       ]
+      ],
+      [
+       "Solving",
+       [
+        "factorise + null factor law",
+        "complete the square",
+        "quadratic formula"
+       ]
+      ],
+      [
+       "Discriminant Δ = b² − 4ac",
+       [
+        "Δ > 0: two solutions",
+        "Δ = 0: one (touches)",
+        "Δ < 0: none"
+       ]
+      ],
+      [
+       "Applications",
+       [
+        "where graphs meet",
+        "tangents: Δ = 0",
+        "models need a domain"
+       ]
+      ]
      ]
     },
     {
@@ -744,6 +1067,46 @@
        "h": "Sketching from factorised form",
        "p": [
         "Mark the \\(x\\)-intercepts from the factors and the \\(y\\)-intercept from \\(P(0)\\). Use the sign of the leading coefficient for the end behaviour: a positive cubic goes from bottom left to top right; a positive quartic goes up at both ends. At a single factor the graph crosses the axis. At a squared factor it touches and turns. At a cubed factor it flattens as it crosses (a stationary point of inflection)."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "y = (x + 2)(x − 1)²: it crosses at x = −2 (single factor) and touches and turns at x = 1 (squared factor).",
+         "x": [
+          -3,
+          3
+         ],
+         "y": [
+          -6,
+          10
+         ],
+         "fns": [
+          {
+           "f": "(x+2)*(x-1)**2"
+          }
+         ],
+         "pts": [
+          [
+           -2,
+           0,
+           "crosses (−2, 0)",
+           -8,
+           -10
+          ],
+          [
+           1,
+           0,
+           "touches (1, 0)",
+           8,
+           18
+          ],
+          [
+           0,
+           2,
+           "(0, 2)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -751,6 +1114,44 @@
        "p": [
         "Three kinds change a graph. A dilation stretches or compresses it from an axis. A reflection flips it in an axis. A translation shifts it. For \\(y = a f\\big(n(x - h)\\big) + k\\): dilation by factor \\(a\\) from the \\(x\\)-axis, dilation by factor \\(\\tfrac{1}{n}\\) from the \\(y\\)-axis, then translation \\(h\\) units in the positive \\(x\\) direction and \\(k\\) units in the positive \\(y\\) direction. A negative \\(a\\) reflects in the \\(x\\)-axis; a negative \\(n\\) reflects in the \\(y\\)-axis.",
         "Changes inside the bracket act on \\(x\\) and work in the opposite way to how they look: \\(f(x - 3)\\) moves the graph right, and \\(f(2x)\\) halves the horizontal distances."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "y = x³ (dashed) becomes y = 2(x − 1)³ + 4: dilated by 2 from the x-axis, moved 1 right and 4 up. The point of inflection moves from (0, 0) to (1, 4).",
+         "x": [
+          -3,
+          4
+         ],
+         "y": [
+          -6,
+          10
+         ],
+         "fns": [
+          {
+           "f": "x**3",
+           "label": "y = x³"
+          },
+          {
+           "f": "2*(x-1)**3+4",
+           "label": "y = 2(x − 1)³ + 4"
+          }
+         ],
+         "pts": [
+          [
+           1,
+           4,
+           "(1, 4)"
+          ],
+          [
+           0,
+           0,
+           "(0, 0)",
+           -8,
+           16
+          ]
+         ]
+        }
        ]
       },
       {
@@ -811,6 +1212,48 @@
         "Writing a translation of \\(f(x + 2)\\) as 2 to the right. Listing transformations in an order that does not produce the rule. Drawing a graph that touches or crosses an asymptote it should approach."
        ]
       }
+     ],
+     "map": [
+      [
+       "Factor theorem",
+       [
+        "P(a) = 0 ⇔ (x − a) is a factor",
+        "try factors of the constant",
+        "remainder theorem: P(a)"
+       ]
+      ],
+      [
+       "Division",
+       [
+        "long division",
+        "equate coefficients",
+        "cubic → linear × quadratic"
+       ]
+      ],
+      [
+       "Graph shape",
+       [
+        "single factor: crosses",
+        "squared factor: touches",
+        "cubed factor: flattens"
+       ]
+      ],
+      [
+       "Transformations",
+       [
+        "dilations a, n",
+        "reflections in axes",
+        "translations h, k"
+       ]
+      ],
+      [
+       "Power functions",
+       [
+        "hyperbola y = 1/x",
+        "truncus y = 1/x²",
+        "square root y = √x"
+       ]
+      ]
      ]
     },
     {
@@ -938,6 +1381,54 @@
        "p": [
         "\\(y = a^x\\) asks “what do I get when I raise \\(a\\) to the power \\(x\\)?” \\(y = \\log_a x\\) asks “what power of \\(a\\) gives \\(x\\)?” So \\(\\log_a(a^x) = x\\) and \\(a^{\\log_a x} = x\\). Their graphs are reflections of each other in the line \\(y = x\\): the exponential has a horizontal asymptote, the logarithm a vertical one.",
         "Useful facts: \\(a^0 = 1\\) so \\(\\log_a 1 = 0\\); \\(a^1 = a\\) so \\(\\log_a a = 1\\); \\(a^{-n} = \\dfrac{1}{a^n}\\); \\(a^{\\frac{1}{n}} = \\sqrt[n]{a}\\). The logarithm of zero or a negative number is undefined."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "y = eˣ and y = logₑx are reflections of each other in y = x. Their asymptotes swap too: y = 0 and x = 0.",
+         "x": [
+          -3,
+          5
+         ],
+         "y": [
+          -3,
+          5
+         ],
+         "fns": [
+          {
+           "f": "exp(x)",
+           "label": "y = eˣ"
+          },
+          {
+           "f": "log(x)",
+           "label": "y = logₑ x",
+           "dom": [
+            0.005,
+            5
+           ]
+          },
+          {
+           "f": "x",
+           "label": "y = x"
+          }
+         ],
+         "pts": [
+          [
+           0,
+           1,
+           "(0, 1)",
+           -8,
+           -8
+          ],
+          [
+           1,
+           0,
+           "(1, 0)",
+           8,
+           16
+          ]
+         ]
+        }
        ]
       },
       {
@@ -971,6 +1462,41 @@
        "p": [
         "\\(A = A_0 e^{kt}\\) models growth when \\(k > 0\\) and decay when \\(k < 0\\). \\(A_0\\) is the initial amount.",
         "Example: a population doubles every 5 years. \\(2 = e^{5k} \\Rightarrow k = \\dfrac{\\log_e 2}{5} \\approx 0.139\\). The time to triple is \\(t = \\dfrac{\\log_e 3}{k} \\approx 7.9\\) years."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Growth P = 500e^(0.1t) and decay A = 500e^(−0.2t). The growth curve doubles every 6.93 years.",
+         "x": [
+          0,
+          15
+         ],
+         "y": [
+          0,
+          2400
+         ],
+         "fns": [
+          {
+           "f": "500*exp(0.1*x)",
+           "label": "growth k = 0.1"
+          },
+          {
+           "f": "500*exp(-0.2*x)",
+           "label": "decay k = −0.2"
+          }
+         ],
+         "pts": [
+          [
+           6.93,
+           1000,
+           "doubled at t ≈ 6.93",
+           8,
+           4
+          ]
+         ],
+         "xl": "t",
+         "yl": "amount"
+        }
        ]
       },
       {
@@ -1012,6 +1538,49 @@
         "Writing \\(\\log(a + b) = \\log a + \\log b\\). Forgetting to reject solutions that make a log undefined. Treating \\((2^x)^2\\) as \\(2^{x^2}\\). Leaving an asymptote off a sketch."
        ]
       }
+     ],
+     "map": [
+      [
+       "Index laws",
+       [
+        "aᵐaⁿ = aᵐ⁺ⁿ",
+        "a⁰ = 1, a⁻ⁿ = 1/aⁿ",
+        "a^(1/n) = ⁿ√a"
+       ]
+      ],
+      [
+       "Logarithms",
+       [
+        "logₐx = y ⇔ aʸ = x",
+        "log of product = sum",
+        "change of base"
+       ]
+      ],
+      [
+       "Graphs",
+       [
+        "y = aˣ: asymptote y = 0",
+        "y = logₐx: asymptote x = 0",
+        "inverses: reflect in y = x"
+       ]
+      ],
+      [
+       "Solving",
+       [
+        "match bases",
+        "take logs of both sides",
+        "hidden quadratic: u = aˣ",
+        "reject invalid logs"
+       ]
+      ],
+      [
+       "Modelling",
+       [
+        "A = A₀e^(kt)",
+        "k > 0 growth, k < 0 decay",
+        "doubling and half-life"
+       ]
+      ]
      ]
     },
     {
@@ -1144,6 +1713,14 @@
        "h": "The unit circle",
        "p": [
         "An angle \\(\\theta\\) is measured anticlockwise from the positive \\(x\\)-axis. The point on the unit circle at that angle has coordinates \\((\\cos\\theta, \\sin\\theta)\\), and \\(\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}\\). One radian is the angle that cuts off an arc equal in length to the radius, so a full turn is \\(2\\pi\\) radians. To convert, multiply degrees by \\(\\dfrac{\\pi}{180}\\)."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "On the unit circle, the point at angle θ is (cos θ, sin θ): cosine is the horizontal distance, sine the vertical.",
+         "svg": "<line class=\"s\" x1=\"80\" y1=\"150\" x2=\"460\" y2=\"150\" opacity=\".5\"/><line class=\"s\" x1=\"270\" y1=\"20\" x2=\"270\" y2=\"280\" opacity=\".5\"/><circle class=\"s\" cx=\"270\" cy=\"150\" r=\"120\"/><line class=\"a\" x1=\"270\" y1=\"150\" x2=\"374\" y2=\"90\"/><line class=\"s\" x1=\"374\" y1=\"90\" x2=\"374\" y2=\"150\" stroke-dasharray=\"5 4\"/><line class=\"s\" x1=\"270\" y1=\"150\" x2=\"374\" y2=\"150\" stroke-width=\"4\"/><circle cx=\"374\" cy=\"90\" r=\"5\" class=\"fa\" opacity=\"1\"/><path class=\"a\" d=\"M305,150 A35,35 0 0 0 300,133\"/><text class=\"t\" x=\"310\" y=\"142\">θ</text><text class=\"t\" x=\"382\" y=\"84\">(cos θ, sin θ)</text><text class=\"t\" x=\"300\" y=\"170\">cos θ</text><text class=\"t\" x=\"380\" y=\"124\">sin θ</text><text class=\"t\" x=\"394\" y=\"166\">1</text><text class=\"t\" x=\"276\" y=\"26\">1</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -1165,6 +1742,33 @@
        "p": [
         "For \\(y = a\\sin\\big(n(x - h)\\big) + k\\): amplitude \\(|a|\\), period \\(\\dfrac{2\\pi}{n}\\), horizontal translation \\(h\\), mean position \\(y = k\\), range \\([k - |a|, k + |a|]\\). The tangent graph \\(y = a\\tan(nx)\\) has period \\(\\dfrac{\\pi}{n}\\) and vertical asymptotes where \\(\\cos(nx) = 0\\).",
         "To sketch, mark the mean line, the maximum and minimum, divide one period into four equal parts and plot the key points, then label endpoints and intercepts."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "y = sin x and y = cos x over one period. Each has amplitude 1 and period 2π; cosine is sine shifted π/2 to the left.",
+         "x": [
+          0,
+          6.6
+         ],
+         "y": [
+          -1.5,
+          1.5
+         ],
+         "xpi": true,
+         "xstep": 1.5707963267948966,
+         "ystep": 0.5,
+         "fns": [
+          {
+           "f": "sin(x)",
+           "label": "y = sin x"
+          },
+          {
+           "f": "cos(x)",
+           "label": "y = cos x"
+          }
+         ]
+        }
        ]
       },
       {
@@ -1219,6 +1823,48 @@
         "Calculator in degree mode. Finding only one solution in the domain. Dividing both sides by \\(\\sin x\\) and losing solutions where \\(\\sin x = 0\\). Giving the period of tangent as \\(2\\pi\\)."
        ]
       }
+     ],
+     "map": [
+      [
+       "Unit circle",
+       [
+        "point (cos θ, sin θ)",
+        "radians: π = 180°",
+        "arc length s = rθ"
+       ]
+      ],
+      [
+       "Exact values",
+       [
+        "π/6, π/4, π/3",
+        "reference angle",
+        "ASTC for signs"
+       ]
+      ],
+      [
+       "Graphs",
+       [
+        "amplitude |a|",
+        "period 2π ÷ n",
+        "mean line y = k"
+       ]
+      ],
+      [
+       "Solving",
+       [
+        "base angle first",
+        "change domain for nx",
+        "list every solution"
+       ]
+      ],
+      [
+       "Tangent",
+       [
+        "tan = sin ÷ cos",
+        "period π ÷ n",
+        "asymptotes where cos = 0"
+       ]
+      ]
      ]
     }
    ]
@@ -1256,6 +1902,50 @@
          "Find the average rate of change of \\(f(x) = x^3\\) from \\(x = 1\\) to \\(x = 2\\).",
          "\\(\\dfrac{8 - 1}{2 - 1} = 7\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "For y = x²: the chord from x = 1 to x = 3 has gradient 4 (average rate); the tangent at x = 1 has gradient 2 (instantaneous rate).",
+         "x": [
+          -0.5,
+          3.8
+         ],
+         "y": [
+          -1,
+          12
+         ],
+         "fns": [
+          {
+           "f": "x*x",
+           "label": "y = x²"
+          },
+          {
+           "f": "4*x-3",
+           "label": "chord, gradient 4"
+          },
+          {
+           "f": "2*x-1",
+           "label": "tangent at x = 1, gradient 2"
+          }
+         ],
+         "pts": [
+          [
+           1,
+           1,
+           "(1, 1)",
+           10,
+           14
+          ],
+          [
+           3,
+           9,
+           "(3, 9)",
+           -10,
+           -8
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1397,6 +2087,37 @@
         "\\(\\dfrac{136 - 119}{20 - 10} = 1.7\\) dollars per item."
        ]
       }
+     ],
+     "map": [
+      [
+       "Average rate",
+       [
+        "[f(b) − f(a)] ÷ (b − a)",
+        "gradient of the chord"
+       ]
+      ],
+      [
+       "Instantaneous rate",
+       [
+        "gradient of the tangent",
+        "shrink the interval"
+       ]
+      ],
+      [
+       "Limits",
+       [
+        "h → 0",
+        "simplify before setting h = 0"
+       ]
+      ],
+      [
+       "In context",
+       [
+        "units: output per input",
+        "velocity, acceleration",
+        "steeper = faster"
+       ]
+      ]
      ]
     },
     {
@@ -1576,6 +2297,54 @@
        "p": [
         "Given \\(f\\), you can sketch \\(f'\\) without a rule. Wherever \\(f\\) has a stationary point, \\(f'\\) crosses or touches the \\(x\\)-axis. Where \\(f\\) increases, \\(f'\\) is above the axis; where it decreases, \\(f'\\) is below.",
         "Example: \\(f(x) = x^3 - 3x\\) has stationary points at \\(x = \\pm 1\\). \\(f'(x) = 3x^2 - 3\\) is a parabola that is zero at \\(x = \\pm 1\\), positive outside them and negative between. In general the derivative of a degree \\(n\\) polynomial has degree \\(n - 1\\)."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "f(x) = x³ − 3x and its derivative f′(x) = 3x² − 3. Where f has turning points (x = ±1), f′ crosses the x-axis.",
+         "x": [
+          -2.5,
+          2.5
+         ],
+         "y": [
+          -5,
+          8
+         ],
+         "fns": [
+          {
+           "f": "x**3-3*x",
+           "label": "f(x) = x³ − 3x"
+          },
+          {
+           "f": "3*x*x-3",
+           "label": "f′(x) = 3x² − 3"
+          }
+         ],
+         "dash": [
+          {
+           "x": -1
+          },
+          {
+           "x": 1
+          }
+         ],
+         "pts": [
+          [
+           -1,
+           2,
+           "max (−1, 2)",
+           -8,
+           -10
+          ],
+          [
+           1,
+           -2,
+           "min (1, −2)",
+           10,
+           16
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1589,6 +2358,46 @@
          "Find the stationary point of \\(y = x^2 - 6x + 1\\) and state its nature.",
          "\\(\\dfrac{dy}{dx} = 2x - 6 = 0\\) at \\(x = 3\\); \\(y = -8\\). It is a local minimum (an upright parabola)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "f(x) = x(x − 3)²: local maximum (1, 4), touching the axis at the local minimum (3, 0).",
+         "x": [
+          -0.8,
+          4.5
+         ],
+         "y": [
+          -3,
+          7
+         ],
+         "fns": [
+          {
+           "f": "x*(x-3)**2"
+          }
+         ],
+         "pts": [
+          [
+           1,
+           4,
+           "local max (1, 4)"
+          ],
+          [
+           3,
+           0,
+           "local min (3, 0)",
+           8,
+           18
+          ],
+          [
+           0,
+           0,
+           "(0, 0)",
+           -8,
+           18
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1597,6 +2406,46 @@
         "Differentiating a constant to itself instead of 0. Dropping the limit notation in first principles. Stating a maximum without showing the sign of the gradient either side. Forgetting to find the \\(y\\)-coordinate."
        ]
       }
+     ],
+     "map": [
+      [
+       "Meaning",
+       [
+        "gradient of the tangent",
+        "instantaneous rate",
+        "f′(x), dy/dx"
+       ]
+      ],
+      [
+       "Rules",
+       [
+        "power rule: nxⁿ⁻¹",
+        "constant → 0",
+        "rewrite roots and fractions"
+       ]
+      ],
+      [
+       "Tangents",
+       [
+        "point + gradient",
+        "y − y₁ = m(x − x₁)"
+       ]
+      ],
+      [
+       "Stationary points",
+       [
+        "f′(x) = 0",
+        "max, min, inflection",
+        "sign diagram of f′"
+       ]
+      ],
+      [
+       "Applications",
+       [
+        "optimisation",
+        "velocity and acceleration"
+       ]
+      ]
      ]
     },
     {
@@ -1729,6 +2578,34 @@
        "h": "Reversing differentiation",
        "p": [
         "Anti-differentiation asks: which function has this derivative? Because the derivative of any constant is zero, there is a whole family of answers that differ by a constant, so the general antiderivative includes \\(+ c\\). Each value of \\(c\\) gives a vertical translation of the same curve."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Antiderivatives of 2x form a family y = x² + c: the same curve shifted up or down. A known point picks out one of them.",
+         "x": [
+          -3,
+          3
+         ],
+         "y": [
+          -3,
+          10
+         ],
+         "fns": [
+          {
+           "f": "x*x+2",
+           "label": "c = 2"
+          },
+          {
+           "f": "x*x",
+           "label": "c = 0"
+          },
+          {
+           "f": "x*x-2",
+           "label": "c = −2"
+          }
+         ]
+        }
        ]
       },
       {
@@ -1787,6 +2664,79 @@
          "For an increasing function, do left-endpoint rectangles overestimate or underestimate the area?",
          "Underestimate: each rectangle uses the lowest height on its strip."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Four right-endpoint rectangles under y = x² on [0, 2] total 3.75, overestimating the true area of 8/3 ≈ 2.67 (shaded).",
+         "x": [
+          0,
+          2.4
+         ],
+         "y": [
+          0,
+          4.5
+         ],
+         "fns": [
+          {
+           "f": "x*x"
+          }
+         ],
+         "shade": [
+          {
+           "f": 0,
+           "from": 0,
+           "to": 2
+          }
+         ],
+         "lines": [
+          {
+           "pts": [
+            [
+             0,
+             0
+            ],
+            [
+             0,
+             0.25
+            ],
+            [
+             0.5,
+             0.25
+            ],
+            [
+             0.5,
+             1
+            ],
+            [
+             1,
+             1
+            ],
+            [
+             1,
+             2.25
+            ],
+            [
+             1.5,
+             2.25
+            ],
+            [
+             1.5,
+             4
+            ],
+            [
+             2,
+             4
+            ],
+            [
+             2,
+             0
+            ]
+           ]
+          }
+         ],
+         "ystep": 1
+        }
        ]
       },
       {
@@ -1795,6 +2745,44 @@
         "Leaving out \\(+ c\\). Dividing by the old power. Integrating a product or quotient term by term without expanding first. Trying to use the rule for \\(x^{-1}\\); that case gives a logarithm, covered in Units 3 and 4."
        ]
       }
+     ],
+     "map": [
+      [
+       "Idea",
+       [
+        "reverse of differentiating",
+        "family of curves + c"
+       ]
+      ],
+      [
+       "Rule",
+       [
+        "xⁿ → xⁿ⁺¹ ÷ (n + 1)",
+        "term by term",
+        "rewrite first"
+       ]
+      ],
+      [
+       "The constant",
+       [
+        "use a known point",
+        "each c is a vertical shift"
+       ]
+      ],
+      [
+       "Motion",
+       [
+        "position from velocity",
+        "use the starting position"
+       ]
+      ],
+      [
+       "Area preview",
+       [
+        "rectangles estimate area",
+        "narrower strips are better"
+       ]
+      ]
      ]
     }
    ]
@@ -1937,6 +2925,38 @@
        "p": [
         "A probability table with \\(A\\) and \\(A'\\) as columns and \\(B\\) and \\(B'\\) as rows. Rows and columns add to the marginal totals, and the grand total is 1. Fill in what is given and complete the rest by adding or subtracting.",
         "Example: \\(\\Pr(A) = 0.5\\), \\(\\Pr(B) = 0.4\\), \\(\\Pr(A \\cap B) = 0.1\\). Then \\(\\Pr(A \\cap B') = 0.4\\), \\(\\Pr(A' \\cap B) = 0.3\\), \\(\\Pr(A' \\cap B') = 0.2\\), and \\(\\Pr(A \\cup B) = 0.8\\)."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Karnaugh map for Pr(A) = 0.5, Pr(B) = 0.4, Pr(A ∩ B) = 0.1. Rows and columns add to their totals; the corner is 1.",
+         "head": [
+          "",
+          "A",
+          "A′",
+          "Total"
+         ],
+         "rows": [
+          [
+           "B",
+           "0.1",
+           "0.3",
+           "0.4"
+          ],
+          [
+           "B′",
+           "0.4",
+           "0.2",
+           "0.6"
+          ],
+          [
+           "Total",
+           "0.5",
+           "0.5",
+           "1"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1957,6 +2977,14 @@
        "p": [
         "A bag has 3 red and 2 blue marbles. Two are drawn without replacement. Find the probability they are different colours.",
         "\\(\\Pr(RB) = \\tfrac{3}{5} \\times \\tfrac{2}{4} = \\tfrac{3}{10}\\) and \\(\\Pr(BR) = \\tfrac{2}{5} \\times \\tfrac{3}{4} = \\tfrac{3}{10}\\). Total \\(= \\tfrac{3}{5}\\). Given that the second is red, the probability the first was blue is \\(\\dfrac{\\Pr(BR)}{\\Pr(\\text{second red})} = \\dfrac{3/10}{3/10 + 3/10} = \\tfrac{1}{2}\\)."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Two marbles drawn without replacement from 3 red and 2 blue. Multiply along branches; the second-stage probabilities depend on the first draw.",
+         "svg": "<line class=\"s\" x1=\"40\" y1=\"150\" x2=\"190\" y2=\"80\"/><line class=\"s\" x1=\"40\" y1=\"150\" x2=\"190\" y2=\"220\"/><line class=\"s\" x1=\"230\" y1=\"80\" x2=\"380\" y2=\"40\"/><line class=\"s\" x1=\"230\" y1=\"80\" x2=\"380\" y2=\"120\"/><line class=\"s\" x1=\"230\" y1=\"220\" x2=\"380\" y2=\"180\"/><line class=\"s\" x1=\"230\" y1=\"220\" x2=\"380\" y2=\"260\"/><text class=\"t\" x=\"196\" y=\"85\">R</text><text class=\"t\" x=\"196\" y=\"225\">B</text><text class=\"t\" x=\"96\" y=\"104\">3/5</text><text class=\"t\" x=\"96\" y=\"206\">2/5</text><text class=\"t\" x=\"386\" y=\"45\">R  2/4 → RR 6/20</text><text class=\"t\" x=\"386\" y=\"125\">B  2/4 → RB 6/20</text><text class=\"t\" x=\"386\" y=\"185\">R  3/4 → BR 6/20</text><text class=\"t\" x=\"386\" y=\"265\">B  1/4 → BB 2/20</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -2004,6 +3032,47 @@
         "Adding probabilities of events that overlap without subtracting the intersection. Confusing \\(\\Pr(A \\mid B)\\) with \\(\\Pr(B \\mid A)\\). Treating draws without replacement as independent. Using permutations when order does not matter."
        ]
       }
+     ],
+     "map": [
+      [
+       "Basics",
+       [
+        "0 ≤ Pr ≤ 1",
+        "Pr(A′) = 1 − Pr(A)",
+        "sample space, events"
+       ]
+      ],
+      [
+       "Rules",
+       [
+        "addition rule",
+        "mutually exclusive: Pr(A ∩ B) = 0",
+        "independent: Pr(A)Pr(B)"
+       ]
+      ],
+      [
+       "Conditional",
+       [
+        "Pr(A|B) = Pr(A ∩ B) ÷ Pr(B)",
+        "the sample space shrinks to B"
+       ]
+      ],
+      [
+       "Tools",
+       [
+        "Venn diagrams",
+        "Karnaugh maps",
+        "tree diagrams"
+       ]
+      ],
+      [
+       "Counting",
+       [
+        "n!",
+        "ⁿPᵣ when order matters",
+        "ⁿCᵣ when it does not"
+       ]
+      ]
      ]
     }
    ]
