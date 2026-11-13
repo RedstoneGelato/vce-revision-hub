@@ -112,6 +112,54 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which is a statistical question?",
+       "o": [
+        "How many hours per week do Year 11 students at this school spend on homework?",
+        "How many hours did I sleep last night?",
+        "Is homework good?",
+        "What is 12 × 4?"
+       ],
+       "a": 0,
+       "e": "It anticipates variation and can be answered with data."
+      },
+      {
+       "t": "c",
+       "q": "50 randomly chosen Year 12 students in Victoria are surveyed about their sleep. Identify the population and the sample.",
+       "a": "Population: all Year 12 students in Victoria. Sample: the 50 students surveyed.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A radio station asks listeners to phone in their opinion. The main problem with this sample is that it is…",
+       "o": [
+        "self-selected, so likely biased",
+        "too large",
+        "a census",
+        "randomly selected"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why can an observational study not show that one variable causes another?",
+       "a": "Other variables may be confounded with the explanatory variable, so the effect cannot be separated. Only a randomised experiment controls for this.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In an experiment, subjects are allocated to groups at random so that…",
+       "o": [
+        "the groups are similar apart from the treatment",
+        "the experiment is quicker",
+        "everyone gets the treatment",
+        "the results are always significant"
+       ],
+       "a": 0,
+       "e": ""
       }
      ]
     },
@@ -161,6 +209,75 @@
        "t": "c",
        "q": "Find the mean and median of \\(2, 4, 6, 8, 10\\).",
        "a": "\\(\\bar{x} = \\dfrac{30}{5} = 6\\); median \\(= 6\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the five-number summary of 2, 4, 5, 7, 8, 10, 12.",
+       "a": "Min 2, Q₁ 4, median 7, Q₃ 10, max 12",
+       "e": "",
+       "s": [
+        "There are 7 values, so the median is the 4th: 7.",
+        "Lower half 2, 4, 5: Q₁ = 4. Upper half 8, 10, 12: Q₃ = 10.",
+        "Minimum 2 and maximum 12."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "For the data 2, 4, 5, 7, 8, 10, 12, find the IQR and the outlier fences. Are there any outliers?",
+       "a": "IQR 6; fences −5 and 19; no outliers",
+       "e": "",
+       "s": [
+        "IQR = Q₃ − Q₁ = 10 − 4 = 6.",
+        "Lower fence = 4 − 1.5 × 6 = −5. Upper fence = 10 + 9 = 19.",
+        "Every value lies between −5 and 19, so there are no outliers."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "For a positively skewed distribution, the mean is usually…",
+       "o": [
+        "greater than the median",
+        "less than the median",
+        "equal to the median",
+        "zero"
+       ],
+       "a": 0,
+       "e": "The long right tail pulls the mean up."
+      },
+      {
+       "t": "m",
+       "q": "A postcode is which type of variable?",
+       "o": [
+        "Categorical (nominal)",
+        "Numerical (discrete)",
+        "Numerical (continuous)",
+        "Categorical (ordinal)"
+       ],
+       "a": 0,
+       "e": "The digits are labels, not quantities."
+      },
+      {
+       "t": "c",
+       "q": "Find the mean, median and mode of 3, 5, 8, 12, 12.",
+       "a": "Mean 8, median 8, mode 12",
+       "e": "",
+       "s": [
+        "Mean = 40 ÷ 5 = 8.",
+        "Median: middle (3rd) value = 8.",
+        "Mode: the most frequent value = 12."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which statistic is least affected by an outlier?",
+       "o": [
+        "Median",
+        "Mean",
+        "Range",
+        "Standard deviation"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -274,6 +391,91 @@
        "t": "c",
        "q": "Height and shoe size: which is explanatory if you want to predict shoe size?",
        "a": "Height (explanatory), shoe size (response)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In “Does temperature affect ice-cream sales?”, the explanatory variable is…",
+       "o": [
+        "temperature",
+        "ice-cream sales",
+        "the shop",
+        "the season"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Describe the association shown by \\(r = 0.45\\).",
+       "a": "A moderate, positive, linear association (assuming the scatterplot is linear with no outliers).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which value of \\(r\\) shows the strongest linear association?",
+       "o": [
+        "−0.9",
+        "0.8",
+        "0.3",
+        "0"
+       ],
+       "a": 0,
+       "e": "Strength depends on the size of r, not its sign."
+      },
+      {
+       "t": "c",
+       "q": "A line of good fit is score = 40 + 5 × hours. Predict the score for 7 hours of study and interpret the slope.",
+       "a": "75; the score increases by 5 marks, on average, for each extra hour of study",
+       "e": "",
+       "s": [
+        "40 + 5 × 7 = 75.",
+        "The slope 5 is the average increase in score for each additional hour."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "30 of 50 boys and 20 of 50 girls prefer online games. Is preference associated with gender?",
+       "a": "Yes: 60% of boys compared with 40% of girls",
+       "e": "",
+       "s": [
+        "Convert to percentages: 30 ÷ 50 = 60%; 20 ÷ 50 = 40%.",
+        "The percentages differ noticeably, so there is an association."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A study finds people who drink more coffee earn more. Which conclusion is justified?",
+       "o": [
+        "Coffee drinking and income are associated",
+        "Coffee makes people earn more",
+        "Earning more makes people drink coffee",
+        "There is no relationship"
+       ],
+       "a": 0,
+       "e": "Observational data show association, not causation."
+      },
+      {
+       "t": "c",
+       "q": "Find the equation of the line through (2, 10) and (6, 22).",
+       "a": "\\(y = 4 + 3x\\)",
+       "e": "",
+       "s": [
+        "Slope \\(= \\dfrac{22 - 10}{6 - 2} = 3\\).",
+        "\\(10 = a + 3 \\times 2\\), so \\(a = 4\\).",
+        "\\(y = 4 + 3x\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A prediction made well outside the range of the data is…",
+       "o": [
+        "extrapolation, and less reliable",
+        "interpolation, and reliable",
+        "always exact",
+        "a residual"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -411,6 +613,66 @@
        "q": "A $80 item rises to $92. Find the percentage increase.",
        "a": "\\(\\dfrac{12}{80} \\times 100\\% = 15\\%\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the simple interest on $4000 at 3.5% per annum for 3 years.",
+       "a": "$420",
+       "e": "",
+       "s": [
+        "\\(I = \\dfrac{PrT}{100} = \\dfrac{4000 \\times 3.5 \\times 3}{100}\\).",
+        "= $420."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "$4000 is invested at 3.5% per annum compounding annually. Find its value after 3 years.",
+       "a": "$4434.87",
+       "e": "",
+       "s": [
+        "\\(A = 4000 \\times 1.035^3\\).",
+        "\\(1.035^3 \\approx 1.108718\\).",
+        "A ≈ $4434.87."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "\\(u_0 = 3000,\\ u_{n+1} = u_n - 200\\) models…",
+       "o": [
+        "linear decay, such as flat-rate depreciation",
+        "compound interest",
+        "geometric growth",
+        "a perpetuity"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "An item costs $85. Find its price after a 20% discount.",
+       "a": "$68",
+       "e": "85 × 0.8 = 68."
+      },
+      {
+       "t": "c",
+       "q": "A price rises from $50 to $62. Find the percentage increase.",
+       "a": "24%",
+       "e": "",
+       "s": [
+        "Change = 62 − 50 = 12.",
+        "12 ÷ 50 × 100 = 24%."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Find \\(u_3\\) for \\(u_0 = 2000,\\ u_{n+1} = 1.1u_n\\).",
+       "a": "2662",
+       "e": "",
+       "s": [
+        "\\(u_1 = 2200\\).",
+        "\\(u_2 = 2420\\).",
+        "\\(u_3 = 2662\\)."
+       ]
       }
      ],
      "notes": [
@@ -535,6 +797,85 @@
        "q": "Find \\(\\det\\begin{bmatrix} 3 & 2 \\\\ 1 & 4 \\end{bmatrix}\\).",
        "a": "\\(3 \\times 4 - 2 \\times 1 = 10\\)",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The order of \\(\\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix}\\) is…",
+       "o": [
+        "\\(2 \\times 3\\)",
+        "\\(3 \\times 2\\)",
+        "6",
+        "\\(2 \\times 2\\)"
+       ],
+       "a": 0,
+       "e": "Rows by columns."
+      },
+      {
+       "t": "c",
+       "q": "Find \\(\\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix} + \\begin{bmatrix} 0 & -1 \\\\ 5 & 2 \\end{bmatrix}\\).",
+       "a": "\\(\\begin{bmatrix} 1 & 1 \\\\ 8 & 6 \\end{bmatrix}\\)",
+       "e": "Add corresponding elements."
+      },
+      {
+       "t": "c",
+       "q": "Find \\(3\\begin{bmatrix} 2 & -1 \\\\ 0 & 4 \\end{bmatrix}\\).",
+       "a": "\\(\\begin{bmatrix} 6 & -3 \\\\ 0 & 12 \\end{bmatrix}\\)",
+       "e": "Multiply every element by 3."
+      },
+      {
+       "t": "m",
+       "q": "A \\(2 \\times 3\\) matrix multiplied by a \\(3 \\times 1\\) matrix gives a matrix of order…",
+       "o": [
+        "\\(2 \\times 1\\)",
+        "\\(3 \\times 3\\)",
+        "\\(1 \\times 2\\)",
+        "The product is not defined"
+       ],
+       "a": 0,
+       "e": "The inner numbers match; the outer numbers give the order."
+      },
+      {
+       "t": "c",
+       "q": "Find the determinant and inverse of \\(\\begin{bmatrix} 3 & 4 \\\\ 2 & 5 \\end{bmatrix}\\).",
+       "a": "\\(\\det = 7\\); inverse \\(\\tfrac{1}{7}\\begin{bmatrix} 5 & -4 \\\\ -2 & 3 \\end{bmatrix}\\)",
+       "e": "",
+       "s": [
+        "\\(\\det = 3 \\times 5 - 4 \\times 2 = 7\\).",
+        "Swap the leading diagonal, negate the other diagonal.",
+        "Divide by 7: \\(\\tfrac{1}{7}\\begin{bmatrix} 5 & -4 \\\\ -2 & 3 \\end{bmatrix}\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "For two square matrices A and B, AB and BA are…",
+       "o": [
+        "usually different",
+        "always equal",
+        "always zero",
+        "always the identity"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Use a matrix inverse to solve \\(2x + y = 5\\) and \\(x + y = 3\\).",
+       "a": "\\(x = 2,\\ y = 1\\)",
+       "e": "",
+       "s": [
+        "\\(A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 1 \\end{bmatrix}\\), \\(\\det A = 1\\), \\(A^{-1} = \\begin{bmatrix} 1 & -1 \\\\ -1 & 2 \\end{bmatrix}\\).",
+        "\\(X = A^{-1}\\begin{bmatrix} 5 \\\\ 3 \\end{bmatrix} = \\begin{bmatrix} 5 - 3 \\\\ -5 + 6 \\end{bmatrix} = \\begin{bmatrix} 2 \\\\ 1 \\end{bmatrix}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A customer buys 2 pies and 3 drinks. Pies cost $4 and drinks $5. Write this as a matrix product and find the total.",
+       "a": "\\(\\begin{bmatrix} 2 & 3 \\end{bmatrix}\\begin{bmatrix} 4 \\\\ 5 \\end{bmatrix} = [23]\\): $23",
+       "e": "",
+       "s": [
+        "Quantities as a row matrix, prices as a column matrix.",
+        "2 × 4 + 3 × 5 = 23."
+       ]
       }
      ],
      "notes": [
@@ -645,6 +986,88 @@
        "t": "c",
        "q": "A connected planar graph has 6 vertices and 9 edges. How many faces?",
        "a": "\\(6 - 9 + f = 2 \\Rightarrow f = 5\\)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A graph has 7 edges. The sum of the degrees of its vertices is…",
+       "o": [
+        "14",
+        "7",
+        "21",
+        "It depends on the vertices"
+       ],
+       "a": 0,
+       "e": "Each edge adds 2 to the total degree."
+      },
+      {
+       "t": "c",
+       "q": "A connected planar graph has 5 vertices and 4 faces. How many edges does it have?",
+       "a": "7",
+       "e": "",
+       "s": [
+        "Euler’s formula: \\(v - e + f = 2\\).",
+        "\\(5 - e + 4 = 2\\), so \\(e = 7\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A connected graph where every vertex has degree 2 has…",
+       "o": [
+        "an Eulerian circuit",
+        "an Eulerian trail but no circuit",
+        "neither",
+        "no edges"
+       ],
+       "a": 0,
+       "e": "All degrees are even."
+      },
+      {
+       "t": "c",
+       "q": "How many edges does a tree with 10 vertices have?",
+       "a": "9",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A Hamiltonian cycle…",
+       "o": [
+        "visits every vertex once and returns to the start",
+        "uses every edge once",
+        "is the shortest path",
+        "visits only odd vertices"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "In the adjacency matrix of a graph with no loops, what does the sum of a row give?",
+       "a": "The degree of that vertex.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Edges: PQ 3, PR 1, QR 4, QS 2, RS 5. Use Prim’s algorithm from P to find a minimum spanning tree and its weight.",
+       "a": "PR, PQ, QS; weight 6",
+       "e": "",
+       "s": [
+        "From P, the cheapest edge is PR (1).",
+        "From {P, R}, the cheapest edge to a new vertex is PQ (3).",
+        "From {P, Q, R}, the cheapest edge to S is QS (2).",
+        "Total weight 1 + 3 + 2 = 6."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A bridge is an edge that…",
+       "o": [
+        "disconnects the graph if removed",
+        "joins a vertex to itself",
+        "has the largest weight",
+        "crosses another edge"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -772,6 +1195,78 @@
        "q": "Cost \\(C = 200 + 5n\\) and revenue \\(R = 15n\\). Find the break-even point.",
        "a": "\\(200 + 5n = 15n \\Rightarrow n = 20\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A right-angled triangle has hypotenuse 10 cm and an angle of 30°. Find the side opposite the 30° angle.",
+       "a": "5 cm",
+       "e": "",
+       "s": [
+        "\\(\\sin 30^\\circ = \\dfrac{\\text{opposite}}{10}\\).",
+        "Opposite \\(= 10 \\times 0.5 = 5\\) cm."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "The two shorter sides of a right-angled triangle are 6 m and 8 m. Find the hypotenuse.",
+       "a": "10 m",
+       "e": "\\(\\sqrt{36 + 64} = 10\\)."
+      },
+      {
+       "t": "m",
+       "q": "The sine rule is used when you know…",
+       "o": [
+        "a side and its opposite angle, plus one more side or angle",
+        "only three sides",
+        "two sides and the included angle only",
+        "only angles"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A triangle has sides 5, 7 and 8. Find the angle opposite the side of length 7.",
+       "a": "60°",
+       "e": "",
+       "s": [
+        "\\(\\cos C = \\dfrac{5^2 + 8^2 - 7^2}{2 \\times 5 \\times 8}\\).",
+        "\\(= \\dfrac{40}{80} = 0.5\\).",
+        "\\(C = 60^\\circ\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Find the area of a triangle with sides 6 cm and 9 cm and an included angle of 40°.",
+       "a": "17.36 cm²",
+       "e": "",
+       "s": [
+        "Area \\(= \\tfrac{1}{2}ab\\sin C = \\tfrac{1}{2} \\times 6 \\times 9 \\times \\sin 40^\\circ\\).",
+        "\\(= 27 \\times 0.6428 \\approx 17.36\\) cm²."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A model is built to a scale of 1 : 50. A surface on the model has area 12 cm². What is the real area?",
+       "a": "30 000 cm², which is 3 m²",
+       "e": "",
+       "s": [
+        "Areas scale by 50² = 2500.",
+        "12 × 2500 = 30 000 cm².",
+        "1 m² = 10 000 cm², so this is 3 m²."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "2.5 m³ is how many litres?",
+       "o": [
+        "2500",
+        "250",
+        "25 000",
+        "25"
+       ],
+       "a": 0,
+       "e": "1 m³ = 1000 L."
       }
      ],
      "notes": [
@@ -980,6 +1475,60 @@
         "a horizontal line"
        ],
        "a": 1,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "\\(y\\) varies directly as \\(x\\), and \\(y = 15\\) when \\(x = 5\\). Find \\(y\\) when \\(x = 8\\).",
+       "a": "24",
+       "e": "",
+       "s": [
+        "\\(15 = k \\times 5\\), so \\(k = 3\\).",
+        "\\(y = 3 \\times 8 = 24\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "\\(y\\) varies inversely as \\(x\\), and \\(y = 10\\) when \\(x = 3\\). Find \\(y\\) when \\(x = 6\\).",
+       "a": "5",
+       "e": "",
+       "s": [
+        "\\(10 = \\dfrac{k}{3}\\), so \\(k = 30\\).",
+        "\\(y = \\dfrac{30}{6} = 5\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "If \\(y\\) varies as \\(x^3\\) and \\(x\\) doubles, \\(y\\) is multiplied by…",
+       "o": [
+        "8",
+        "2",
+        "3",
+        "6"
+       ],
+       "a": 0,
+       "e": "\\(2^3 = 8\\)."
+      },
+      {
+       "t": "c",
+       "q": "Distance fallen varies as the square of time: \\(d = kt^2\\). If \\(d = 20\\) m when \\(t = 2\\) s, find \\(d\\) when \\(t = 3\\) s.",
+       "a": "45 m",
+       "e": "",
+       "s": [
+        "\\(20 = k \\times 4\\), so \\(k = 5\\).",
+        "\\(d = 5 \\times 9 = 45\\) m."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A graph of \\(y\\) against \\(x^2\\) is a straight line through the origin. This shows that…",
+       "o": [
+        "\\(y = kx^2\\)",
+        "\\(y = kx\\)",
+        "\\(y = \\tfrac{k}{x}\\)",
+        "\\(y = x + k\\)"
+       ],
+       "a": 0,
        "e": ""
       }
      ]
