@@ -110,6 +110,49 @@
         "Most texts have one dominant function and several minor ones. To find the dominant one, ask what the text would fail to do if you deleted its key lines. A weather report with the jokes removed still works (referential); a greeting card with the feelings removed does not (expressive or emotive).",
         "Referential language shares information and tends to use declaratives and specific nouns. Emotive language shows the speaker’s feelings and tends to use interjections, intensifiers and exclamatives. Conative language aims at the audience and uses imperatives, second-person pronouns and vocatives. Phatic language keeps the social channel open: greetings, small talk, “no worries”. Metalinguistic language talks about language itself (“What does that word mean?”). Poetic language draws attention to its own form through rhyme, puns, alliteration or rhythm.",
         "Function and social purpose are different things. Function is what the language is doing in the text (informing, directing). Social purpose is what it achieves between people (building rapport, showing authority, maintaining face). Strong answers name both."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The six functions, with typical features and an example.",
+         "head": [
+          "Function",
+          "Focus",
+          "Example"
+         ],
+         "rows": [
+          [
+           "Referential",
+           "information",
+           "“The train leaves at 8.”"
+          ],
+          [
+           "Expressive (emotive)",
+           "the speaker’s feelings",
+           "“I’m so excited!”"
+          ],
+          [
+           "Conative (directive)",
+           "the listener",
+           "“Close the door, please.”"
+          ],
+          [
+           "Phatic",
+           "social contact",
+           "“How’s it going?”"
+          ],
+          [
+           "Poetic",
+           "the form itself",
+           "“Snap, crackle, pop.”"
+          ],
+          [
+           "Metalinguistic",
+           "language itself",
+           "“What does ‘ubiquitous’ mean?”"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -123,6 +166,14 @@
          "Two colleagues chat at lunch and later present to their manager. Which contextual factor changes most, and what happens to the register?",
          "The tenor and setting change: there is now a participant with higher status and a more formal purpose, so the register rises."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Register is a scale, not two boxes. The same request moves along it as the context changes.",
+         "svg": "<line class=\"a\" x1=\"30\" y1=\"120\" x2=\"510\" y2=\"120\" stroke-width=\"4\"/><text class=\"t\" x=\"30\" y=\"150\">informal</text><text class=\"t\" x=\"510\" y=\"150\" text-anchor=\"end\">formal</text><circle class=\"pt\" fill=\"currentColor\" cx=\"60\" cy=\"120\" r=\"7\"/><text class=\"t\" x=\"60\" y=\"95\" text-anchor=\"middle\">“gimme a sec”</text><circle class=\"pt\" fill=\"currentColor\" cx=\"190\" cy=\"120\" r=\"7\"/><text class=\"t\" x=\"190\" y=\"70\" text-anchor=\"middle\">“hang on a minute”</text><circle class=\"pt\" fill=\"currentColor\" cx=\"330\" cy=\"120\" r=\"7\"/><text class=\"t\" x=\"330\" y=\"95\" text-anchor=\"middle\">“could you wait, please?”</text><circle class=\"pt\" fill=\"currentColor\" cx=\"470\" cy=\"120\" r=\"7\"/><text class=\"t\" x=\"470\" y=\"70\" text-anchor=\"middle\">“kindly remain on hold”</text><text class=\"t\" x=\"270\" y=\"200\" text-anchor=\"middle\">context pushes it: tenor, setting, mode, purpose</text>",
+         "vb": "0 0 540 220"
+        }
        ]
       },
       {
@@ -173,6 +224,45 @@
         "Naming a function without evidence. Always quote the words that show it. Calling every friendly phrase phatic: “How are you?” to a patient from a doctor may be a real question (referential). Treating register as only two boxes. It is a scale, and one text can move along it."
        ]
       }
+     ],
+     "map": [
+      [
+       "Language is",
+       [
+        "rule-governed",
+        "arbitrary",
+        "creative and changing"
+       ]
+      ],
+      [
+       "Functions",
+       [
+        "referential, expressive",
+        "conative, phatic",
+        "poetic, metalinguistic"
+       ]
+      ],
+      [
+       "Situational context",
+       [
+        "field, mode, setting",
+        "participants, tenor",
+        "purpose"
+       ]
+      ],
+      [
+       "Cultural context",
+       [
+        "values and attitudes"
+       ]
+      ],
+      [
+       "Register",
+       [
+        "informal ↔ formal",
+        "shifts with context"
+       ]
+      ]
      ]
     },
     {
@@ -279,6 +369,14 @@
        "h": "Why the subsystems matter",
        "p": [
         "The subsystems are the levels at which language can be described. Any feature you notice in a text belongs to at least one of them, and naming the subsystem is the first step in analysing it. Think of them as going from smallest unit to largest: sounds, word parts, words, sentences, meanings, whole texts."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The subsystems, from the smallest unit to the whole text. Any feature you notice belongs to at least one layer.",
+         "svg": "<rect class=\"fp\" x=\"160.0\" y=\"15\" width=\"220\" height=\"40\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"40.0\" text-anchor=\"middle\">sounds: phonology</text><rect class=\"fp\" x=\"130.0\" y=\"63\" width=\"280\" height=\"40\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"88.0\" text-anchor=\"middle\">word parts: morphology</text><rect class=\"fp\" x=\"105.0\" y=\"111\" width=\"330\" height=\"40\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"136.0\" text-anchor=\"middle\">words: lexicology</text><rect class=\"fp\" x=\"80.0\" y=\"159\" width=\"380\" height=\"40\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"184.0\" text-anchor=\"middle\">sentences: syntax</text><rect class=\"fp\" x=\"55.0\" y=\"207\" width=\"430\" height=\"40\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"232.0\" text-anchor=\"middle\">meaning: semantics</text><rect class=\"fa\" x=\"20.0\" y=\"255\" width=\"500\" height=\"40\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"280.0\" text-anchor=\"middle\">whole texts: discourse and pragmatics</text>",
+         "vb": "0 0 540 310"
+        }
        ]
       },
       {
@@ -348,6 +446,30 @@
          "What four elements should an analytical sentence contain?",
          "Metalanguage naming the feature, a quoted example (with a line number), its effect, and a link to the context or purpose."
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "The four links in every analytical point.",
+         "steps": [
+          [
+           "Metalanguage",
+           "name the feature"
+          ],
+          [
+           "Example",
+           "quote with a line number"
+          ],
+          [
+           "Effect",
+           "what it does here"
+          ],
+          [
+           "Context",
+           "link to purpose and audience"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -363,6 +485,49 @@
         "Confusing a phrase with a clause (a clause needs a verb). Calling any long sentence complex (count the clauses and look at the conjunctions instead). Mixing up cohesion and coherence: cohesion is the ties you can underline, coherence is the overall sense."
        ]
       }
+     ],
+     "map": [
+      [
+       "Phonetics and phonology",
+       [
+        "speech sounds",
+        "prosody"
+       ]
+      ],
+      [
+       "Morphology and lexicology",
+       [
+        "morphemes",
+        "word classes, word formation"
+       ]
+      ],
+      [
+       "Syntax",
+       [
+        "phrases, clauses",
+        "sentence types and structures"
+       ]
+      ],
+      [
+       "Semantics",
+       [
+        "meaning, connotation",
+        "figurative language"
+       ]
+      ],
+      [
+       "Discourse and pragmatics",
+       [
+        "cohesion, coherence",
+        "implied meaning"
+       ]
+      ],
+      [
+       "Analysis",
+       [
+        "feature → quote → effect → context"
+       ]
+      ]
      ]
     },
     {
@@ -395,6 +560,14 @@
          "How many morphemes are in “replayed”, and what type is each?",
          "Three: re- (bound, derivational prefix), play (free root), -ed (bound, inflectional suffix)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "“Unhelpfulness” split into morphemes: one free root and three bound derivational affixes.",
+         "svg": "<rect class=\"fp\" x=\"40\" y=\"60\" width=\"90\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"85.0\" y=\"90.0\" text-anchor=\"middle\">un-</text><rect class=\"fa\" x=\"140\" y=\"60\" width=\"120\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"200.0\" y=\"90.0\" text-anchor=\"middle\">help</text><rect class=\"fp\" x=\"270\" y=\"60\" width=\"90\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"315.0\" y=\"90.0\" text-anchor=\"middle\">-ful</text><rect class=\"fp\" x=\"370\" y=\"60\" width=\"120\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"430.0\" y=\"90.0\" text-anchor=\"middle\">-ness</text><text class=\"t\" x=\"85\" y=\"140\" text-anchor=\"middle\">prefix: not</text><text class=\"t\" x=\"200\" y=\"140\" text-anchor=\"middle\">free root</text><text class=\"t\" x=\"315\" y=\"140\" text-anchor=\"middle\">adj. suffix</text><text class=\"t\" x=\"430\" y=\"140\" text-anchor=\"middle\">noun suffix</text><text class=\"t\" x=\"270\" y=\"30\" text-anchor=\"middle\">un + help + ful + ness</text>",
+         "vb": "0 0 540 170"
+        }
        ]
       },
       {
@@ -444,6 +617,59 @@
          "What is the word class of “light” in “a light meal” and in “Light the candle”?",
          "An adjective in “a light meal”; a verb in “Light the candle”."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Word classes in “The tired students quickly finished their difficult exam.”",
+         "head": [
+          "Word",
+          "Class",
+          "Clue"
+         ],
+         "rows": [
+          [
+           "The",
+           "determiner",
+           "before a noun"
+          ],
+          [
+           "tired",
+           "adjective",
+           "describes students"
+          ],
+          [
+           "students",
+           "noun",
+           "follows “the”; plural -s"
+          ],
+          [
+           "quickly",
+           "adverb",
+           "says how"
+          ],
+          [
+           "finished",
+           "verb",
+           "past tense -ed"
+          ],
+          [
+           "their",
+           "determiner (possessive)",
+           "before a noun"
+          ],
+          [
+           "difficult",
+           "adjective",
+           "describes exam"
+          ],
+          [
+           "exam",
+           "noun",
+           "head of the phrase"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -532,6 +758,43 @@
        "a": 0,
        "e": "“has” and “been” are auxiliaries."
       }
+     ],
+     "map": [
+      [
+       "Morphemes",
+       [
+        "free and bound",
+        "prefix, suffix, root"
+       ]
+      ],
+      [
+       "Derivational vs inflectional",
+       [
+        "derivation makes new words",
+        "inflection marks grammar (8)"
+       ]
+      ],
+      [
+       "Content words",
+       [
+        "nouns, verbs",
+        "adjectives, adverbs"
+       ]
+      ],
+      [
+       "Function words",
+       [
+        "pronouns, determiners",
+        "prepositions, conjunctions",
+        "auxiliaries, modals"
+       ]
+      ],
+      [
+       "Rule",
+       [
+        "class depends on function in the sentence"
+       ]
+      ]
      ]
     },
     {
@@ -578,6 +841,14 @@
        "p": [
         "A main (independent) clause makes sense alone: “The rain stopped.” A subordinate (dependent) clause has a subject and verb but cannot stand alone; it begins with a subordinating conjunction or a relative pronoun: “when the rain stopped”, “which surprised everyone”.",
         "Coordination joins clauses of equal status with a coordinating conjunction: “The rain stopped and the sun came out.” Subordination makes one clause depend on another: “We went outside when the rain stopped.”"
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A complex sentence: a subordinate clause (introduced by “when”) attached to a main clause that could stand alone.",
+         "svg": "<text class=\"t\" x=\"270\" y=\"40\" text-anchor=\"middle\">When the bell rang, the students left.</text><path class=\"a\" d=\"M95,55 v12 h185 v-12\"/><path class=\"a\" d=\"M295,55 v12 h155 v-12\"/><rect class=\"fp\" x=\"90\" y=\"85\" width=\"200\" height=\"46\" rx=\"8\"/><text class=\"t\" x=\"190.0\" y=\"113.0\" text-anchor=\"middle\">subordinate clause</text><rect class=\"fa\" x=\"300\" y=\"85\" width=\"160\" height=\"46\" rx=\"8\"/><text class=\"t\" x=\"380.0\" y=\"113.0\" text-anchor=\"middle\">main clause</text><text class=\"t\" x=\"190\" y=\"160\" text-anchor=\"middle\">cannot stand alone</text><text class=\"t\" x=\"380\" y=\"160\" text-anchor=\"middle\">makes sense alone</text>",
+         "vb": "0 0 540 180"
+        }
        ]
       },
       {
@@ -596,6 +867,44 @@
          "What is the structure of “I rang the bell but nobody answered”?",
          "Compound: two main clauses joined by the coordinating conjunction “but”."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Sentence structures, with how to recognise each.",
+         "head": [
+          "Structure",
+          "Clauses",
+          "Example"
+         ],
+         "rows": [
+          [
+           "Simple",
+           "one main",
+           "The crowd cheered."
+          ],
+          [
+           "Compound",
+           "two or more main, coordinated",
+           "The crowd cheered and the players waved."
+          ],
+          [
+           "Complex",
+           "main + subordinate",
+           "The crowd cheered when the players arrived."
+          ],
+          [
+           "Compound-complex",
+           "2+ main + subordinate",
+           "The crowd cheered when they arrived, and the band played."
+          ],
+          [
+           "Fragment",
+           "no main clause",
+           "Absolutely not."
+          ]
+         ]
+        }
        ]
       },
       {
@@ -704,6 +1013,46 @@
        "a": 0,
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Phrases",
+       [
+        "noun, verb, adjective",
+        "adverb, prepositional"
+       ]
+      ],
+      [
+       "Clause parts",
+       [
+        "subject, verb",
+        "object, complement",
+        "adverbial"
+       ]
+      ],
+      [
+       "Clauses",
+       [
+        "main (independent)",
+        "subordinate (dependent)"
+       ]
+      ],
+      [
+       "Structures",
+       [
+        "simple, compound",
+        "complex, compound-complex",
+        "fragments"
+       ]
+      ],
+      [
+       "Types and voice",
+       [
+        "declarative, interrogative",
+        "imperative, exclamative",
+        "active vs passive"
+       ]
+      ]
      ]
     },
     {
@@ -745,6 +1094,62 @@
         "Three questions describe any consonant. Voicing: do the vocal cords vibrate? /b/, /d/, /g/, /v/ and /z/ are voiced; /p/, /t/, /k/, /f/ and /s/ are voiceless. Put your fingers on your throat and compare “sss” with “zzz”.",
         "Place: where is the airflow blocked or narrowed? At the lips (/p/, /b/, /m/); lip and teeth (/f/, /v/); tongue and teeth (/θ/, /ð/); the ridge behind the top teeth (/t/, /d/, /s/, /z/, /n/, /l/); further back on the palate (/ʃ/, /ʒ/); the soft palate (/k/, /g/, /ŋ/).",
         "Manner: how is the air released? Stops (plosives) block it completely and release it: /p/, /b/, /t/, /d/, /k/, /g/. Fricatives force it through a narrow gap with friction: /f/, /v/, /s/, /z/, /ʃ/, /θ/. Affricates are a stop released as a fricative: /tʃ/, /dʒ/. Nasals send air through the nose: /m/, /n/, /ŋ/. Approximants narrow the passage without friction: /l/, /r/, /w/, /j/."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Some English consonants by place and manner of articulation (voiceless / voiced).",
+         "head": [
+          "Manner",
+          "Lips",
+          "Teeth",
+          "Ridge",
+          "Palate",
+          "Soft palate"
+         ],
+         "rows": [
+          [
+           "Stop",
+           "p / b",
+           "",
+           "t / d",
+           "",
+           "k / g"
+          ],
+          [
+           "Fricative",
+           "f / v",
+           "θ / ð",
+           "s / z",
+           "ʃ / ʒ",
+           ""
+          ],
+          [
+           "Affricate",
+           "",
+           "",
+           "",
+           "tʃ / dʒ",
+           ""
+          ],
+          [
+           "Nasal",
+           "m",
+           "",
+           "n",
+           "",
+           "ŋ"
+          ],
+          [
+           "Approximant",
+           "w",
+           "",
+           "l, r",
+           "j",
+           ""
+          ]
+         ]
+        }
        ]
       },
       {
@@ -764,6 +1169,34 @@
          "How can stress change the meaning of “She said she liked it”?",
          "Stressing “she” (the first) suggests someone else did not say it; stressing “said” suggests she may not have meant it; stressing “liked” contrasts with loving or hating it."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Intonation: falling pitch usually ends a statement; rising pitch often marks a question or the high rising terminal.",
+         "x": [
+          0,
+          10
+         ],
+         "y": [
+          0,
+          10
+         ],
+         "xstep": 2,
+         "ystep": 2,
+         "fns": [
+          {
+           "f": "7-0.04*x*x",
+           "label": "statement: falling"
+          },
+          {
+           "f": "3+0.05*x*x",
+           "label": "question: rising"
+          }
+         ],
+         "xl": "time",
+         "yl": "pitch"
+        }
        ]
       },
       {
@@ -865,6 +1298,52 @@
        "a": "Stress emphasises a word to contrast or highlight it; rising intonation can turn a statement into a question or check understanding.",
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Phonemes",
+       [
+        "smallest sound that changes meaning",
+        "IPA symbols",
+        "schwa /ə/"
+       ]
+      ],
+      [
+       "Consonants",
+       [
+        "voicing",
+        "place",
+        "manner"
+       ]
+      ],
+      [
+       "Vowels",
+       [
+        "monophthongs",
+        "diphthongs"
+       ]
+      ],
+      [
+       "Prosody",
+       [
+        "pitch, intonation",
+        "stress, tempo, volume"
+       ]
+      ],
+      [
+       "Connected speech",
+       [
+        "assimilation, elision",
+        "vowel reduction, insertion"
+       ]
+      ],
+      [
+       "Patterning",
+       [
+        "alliteration, assonance",
+        "rhyme, onomatopoeia"
+       ]
+      ]
      ]
     },
     {
@@ -917,6 +1396,14 @@
          "In “When he arrived, Sam was exhausted”, what kind of reference is “he”?",
          "Cataphoric: it points forward to “Sam”."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Reference ties a text together. Anaphoric reference points back; cataphoric reference points forward.",
+         "svg": "<text class=\"t\" x=\"40\" y=\"60\">Mia arrived early. She had a train to catch.</text><path class=\"a\" d=\"M162,70 C158,110 56,110 52,70\"/><text class=\"t\" x=\"80\" y=\"120\">anaphoric: “She” → Mia</text><text class=\"t\" x=\"40\" y=\"200\">When he arrived, Sam was exhausted.</text><path class=\"a\" d=\"M74,210 C78,250 154,250 158,210\"/><text class=\"t\" x=\"80\" y=\"262\">cataphoric: “he” → Sam</text>",
+         "vb": "0 0 540 280"
+        }
        ]
       },
       {
@@ -944,6 +1431,39 @@
        "p": [
         "Conversation works because people generally assume each other is cooperating. The cooperative principle has four maxims. Quantity: give as much information as needed and no more. Quality: say what you believe to be true. Relation: be relevant. Manner: be clear and orderly.",
         "Speakers often break (flout) a maxim on purpose, and listeners look for the reason. Asked “How was the film?”, the reply “Well, the popcorn was good” flouts relevance and implies the film was poor. Sarcasm flouts quality. Recognising a flouted maxim is a neat way to explain how an implied meaning arises."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The cooperative principle. Flouting a maxim on purpose creates an implied meaning.",
+         "head": [
+          "Maxim",
+          "Expectation",
+          "Flouted example"
+         ],
+         "rows": [
+          [
+           "Quantity",
+           "say enough, not too much",
+           "“How was the film?” “The popcorn was good.”"
+          ],
+          [
+           "Quality",
+           "say what is true",
+           "Sarcasm: “Great weather!” in a storm"
+          ],
+          [
+           "Relation",
+           "be relevant",
+           "Changing the subject to avoid a question"
+          ],
+          [
+           "Manner",
+           "be clear and orderly",
+           "Deliberately vague answers"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1039,6 +1559,47 @@
        "a": 0,
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Semantics",
+       [
+        "denotation, connotation",
+        "semantic fields",
+        "lexical relations"
+       ]
+      ],
+      [
+       "Figurative language",
+       [
+        "metaphor, simile",
+        "irony, hyperbole, puns"
+       ]
+      ],
+      [
+       "Cohesion",
+       [
+        "reference: anaphoric, cataphoric",
+        "ellipsis, substitution",
+        "conjunctions"
+       ]
+      ],
+      [
+       "Coherence",
+       [
+        "logical order",
+        "formatting, conventions",
+        "inference"
+       ]
+      ],
+      [
+       "Pragmatics",
+       [
+        "implicature, inference",
+        "deixis",
+        "cooperative maxims"
+       ]
+      ]
      ]
     }
    ]
@@ -1146,6 +1707,38 @@
         "Children everywhere move through the same stages in the same order, although the ages vary. That regularity is one of the main pieces of evidence that acquisition is not simple copying.",
         "Sounds come in a predictable order: vowels and the stops and nasals made at the front of the mouth (p, b, m, d) arrive early, while fricatives and clusters (th, r, “str”) arrive late. Early simplifications include deletion of a final consonant (“ca” for cat), cluster reduction (“poon” for spoon), substitution (“wabbit”) and reduplication (“wawa”).",
         "In the holophrastic stage one word carries the meaning of a sentence, so “milk” may mean “I want milk” or “I spilt the milk”, with intonation and context doing the work. Two-word utterances already follow word order (“Daddy go”, not “go Daddy”). Telegraphic speech keeps content words and drops function words and inflections (“Mummy read book”). From about three, inflections, auxiliaries, questions and negatives fill in."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "Stages of first-language acquisition. Ages are approximate; the order is what stays the same.",
+         "steps": [
+          [
+           "Crying, cooing",
+           "0–4 months"
+          ],
+          [
+           "Babbling",
+           "6–12 months"
+          ],
+          [
+           "Holophrastic",
+           "about 12 months: one word"
+          ],
+          [
+           "Two-word",
+           "about 18 months"
+          ],
+          [
+           "Telegraphic",
+           "2–3 years"
+          ],
+          [
+           "Post-telegraphic",
+           "3+ years"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1167,6 +1760,44 @@
         "Behaviourism (Skinner): children imitate and are reinforced by praise or getting what they asked for. It explains accent and vocabulary well, but not overgeneralisation or the speed of acquisition. Nativism (Chomsky): humans are born with a capacity for grammar, sometimes described as a language acquisition device and universal grammar. It explains the shared stages and novel errors, but says little about the role of interaction.",
         "Cognitive theory (Piaget): language depends on thinking. A child must understand a concept such as object permanence or size before using the words for it. Social interactionism (Bruner, Vygotsky): language grows through interaction with carers, who provide scaffolding and child-directed speech (higher pitch, slower pace, repetition, simple syntax, questions). Usage-based accounts add that children build grammar from patterns they hear often.",
         "The critical period hypothesis (Lenneberg) says a first language must be acquired within a window in childhood. Evidence comes from cases of extreme deprivation such as Genie, who learned vocabulary after rescue but never full syntax. No single theory is complete; good answers use each one to explain the evidence it fits best."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The main theories and the evidence each explains best.",
+         "head": [
+          "Theory",
+          "Key figure",
+          "Big idea",
+          "Explains well"
+         ],
+         "rows": [
+          [
+           "Behaviourism",
+           "Skinner",
+           "imitation and reinforcement",
+           "accent, vocabulary"
+          ],
+          [
+           "Nativism",
+           "Chomsky",
+           "innate capacity for grammar",
+           "shared stages, overgeneralisation"
+          ],
+          [
+           "Cognitive",
+           "Piaget",
+           "language follows thinking",
+           "timing of concept words"
+          ],
+          [
+           "Interactionism",
+           "Bruner, Vygotsky",
+           "carers scaffold learning",
+           "role of conversation"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1218,6 +1849,47 @@
         "Giving ages as fixed limits; say “around”. Describing a theory without tying it to a piece of the data. Calling overgeneralisation a “mistake caused by poor teaching”: it is a sign of progress."
        ]
       }
+     ],
+     "map": [
+      [
+       "Stages",
+       [
+        "cooing, babbling",
+        "holophrastic, two-word",
+        "telegraphic, post-telegraphic"
+       ]
+      ],
+      [
+       "Evidence of rules",
+       [
+        "overgeneralisation",
+        "“wug” test",
+        "over- and underextension"
+       ]
+      ],
+      [
+       "Theories",
+       [
+        "behaviourism",
+        "nativism",
+        "cognitive",
+        "interactionism"
+       ]
+      ],
+      [
+       "Input",
+       [
+        "child-directed speech",
+        "expansions, scaffolding"
+       ]
+      ],
+      [
+       "Critical period",
+       [
+        "window in childhood",
+        "Genie case"
+       ]
+      ]
      ]
     },
     {
@@ -1356,6 +2028,44 @@
          "Give one way learning an additional language differs from acquiring a first language.",
          "Any one of: the learner already has a language, so transfer occurs; it often involves formal teaching; outcomes vary much more; motivation plays a large role."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "First-language acquisition and additional-language learning compared.",
+         "head": [
+          "",
+          "First language",
+          "Additional language"
+         ],
+         "rows": [
+          [
+           "Starting point",
+           "no language",
+           "already has one"
+          ],
+          [
+           "Process",
+           "interaction, no lessons",
+           "often taught, sometimes immersion"
+          ],
+          [
+           "Outcome",
+           "fluent for all",
+           "varies widely"
+          ],
+          [
+           "Errors",
+           "overgeneralisation",
+           "overgeneralisation and transfer"
+          ],
+          [
+           "Motivation",
+           "matters little",
+           "matters a lot"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1385,6 +2095,46 @@
         "Describing transfer errors as carelessness; explain the first-language pattern behind them. Saying bilingual children are “confused”: mixing is normal and rule-governed. Treating accent as a measure of proficiency."
        ]
       }
+     ],
+     "map": [
+      [
+       "Additional language",
+       [
+        "learner already has one",
+        "often taught",
+        "varied outcomes"
+       ]
+      ],
+      [
+       "Interlanguage",
+       [
+        "systematic",
+        "changes as learning grows",
+        "fossilisation"
+       ]
+      ],
+      [
+       "Transfer",
+       [
+        "positive",
+        "negative (interference)"
+       ]
+      ],
+      [
+       "Code-switching",
+       [
+        "identity",
+        "fills gaps",
+        "includes or excludes"
+       ]
+      ],
+      [
+       "Factors",
+       [
+        "age, input, motivation",
+        "attitudes, similarity"
+       ]
+      ]
      ]
     }
    ]
@@ -1496,6 +2246,30 @@
        "p": [
         "English has been shaped by who its speakers met, who ruled them and what technology they used. Each period is marked by contact with another group. For each period, learn one cause, a few language effects and a few example words.",
         "English is a Germanic language of the Indo-European family, so its core vocabulary (“mother”, “water”, “night”) has cousins in German and Dutch."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "A timeline of English. Each period is marked by contact with another group or a new technology.",
+         "steps": [
+          [
+           "Old English",
+           "450–1100: Germanic settlers, Norse"
+          ],
+          [
+           "Middle English",
+           "1100–1500: Norman French"
+          ],
+          [
+           "Early Modern",
+           "1500–1800: printing, vowel shift"
+          ],
+          [
+           "Modern",
+           "1800 on: science, empire, internet"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1540,6 +2314,39 @@
          "Of “begin”, “commence” and “initiate”, which is from Old English, and how does its register differ?",
          "“Begin” is from Old English and is the plainest and least formal. “Commence” (French) and “initiate” (Latin) are more formal."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "One idea, three layers of vocabulary. Germanic words feel plain; Latinate words feel formal.",
+         "head": [
+          "Old English",
+          "French",
+          "Latin"
+         ],
+         "rows": [
+          [
+           "ask",
+           "question",
+           "interrogate"
+          ],
+          [
+           "kingly",
+           "royal",
+           "regal"
+          ],
+          [
+           "rise",
+           "mount",
+           "ascend"
+          ],
+          [
+           "begin",
+           "commence",
+           "initiate"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1575,6 +2382,47 @@
         "Calling Shakespeare “Old English”: he wrote Early Modern English. Treating dates as exact boundaries; the periods blend into one another. Listing borrowings without saying what contact produced them. Describing older forms as “wrong” or “bad spelling” when no standard existed."
        ]
       }
+     ],
+     "map": [
+      [
+       "Old English",
+       [
+        "Angles, Saxons, Jutes",
+        "inflections",
+        "Norse words"
+       ]
+      ],
+      [
+       "Middle English",
+       [
+        "Norman Conquest 1066",
+        "French words",
+        "fixed word order"
+       ]
+      ],
+      [
+       "Early Modern",
+       [
+        "printing press",
+        "Great Vowel Shift",
+        "dictionaries"
+       ]
+      ],
+      [
+       "Modern",
+       [
+        "science, empire",
+        "global spread"
+       ]
+      ],
+      [
+       "Layers of vocabulary",
+       [
+        "Germanic: plain",
+        "French: power",
+        "Latin and Greek: learned"
+       ]
+      ]
      ]
     },
     {
@@ -1674,6 +2522,64 @@
        "h": "How new words are made",
        "p": [
         "Most new words come from material the language already has. Affixation adds prefixes or suffixes (“unfriend”, “doomscrolling”). Compounding joins free morphemes (“livestream”). Blending merges parts of words (“hangry”, “podcast”). Shortening or clipping cuts a word (“app”, “servo”). Acronyms are said as a word (“ANZAC”); initialisms are said letter by letter (“ATM”). Conversion changes word class with no change of form (“to google”, “a big ask”). Backformation removes a supposed affix (“edit” from “editor”). Borrowing takes a word from another language (“sushi”, “yakka”). Commonisation turns a brand or name into a common noun (“esky”, “hoover”). Neologism is the general term for a new word; an archaism is one that has fallen out of use; obsolescence is the process of dying out."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Word-formation processes with examples.",
+         "head": [
+          "Process",
+          "How",
+          "Example"
+         ],
+         "rows": [
+          [
+           "Affixation",
+           "add prefix or suffix",
+           "unfriend"
+          ],
+          [
+           "Compounding",
+           "join two words",
+           "livestream"
+          ],
+          [
+           "Blending",
+           "merge parts of words",
+           "brunch"
+          ],
+          [
+           "Clipping",
+           "shorten",
+           "app, uni"
+          ],
+          [
+           "Acronym / initialism",
+           "first letters",
+           "ANZAC / ATM"
+          ],
+          [
+           "Conversion",
+           "change word class",
+           "to google"
+          ],
+          [
+           "Backformation",
+           "remove a supposed affix",
+           "edit from editor"
+          ],
+          [
+           "Borrowing",
+           "from another language",
+           "sushi"
+          ],
+          [
+           "Commonisation",
+           "brand becomes common noun",
+           "esky"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1686,6 +2592,14 @@
          "“Girl” once meant a young person of either sex. What kind of semantic change is this?",
          "Narrowing."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Semantic change: a word’s range of meaning can widen, narrow, or move up or down in value.",
+         "svg": "<circle class=\"s\" cx=\"90\" cy=\"110\" r=\"35\"/><circle class=\"a\" cx=\"90\" cy=\"110\" r=\"65\"/><text class=\"t\" x=\"90\" y=\"205\" text-anchor=\"middle\">broadening: holiday</text><circle class=\"s\" cx=\"270\" cy=\"110\" r=\"65\"/><circle class=\"a\" cx=\"270\" cy=\"110\" r=\"30\"/><text class=\"t\" x=\"270\" y=\"205\" text-anchor=\"middle\">narrowing: meat</text><line class=\"a\" x1=\"400\" y1=\"160\" x2=\"400.0\" y2=\"59.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"400,50 395.0,59.0 405.0,59.0\"/><text class=\"t\" x=\"400\" y=\"190\" text-anchor=\"middle\">elevation:</text><text class=\"t\" x=\"400\" y=\"208\" text-anchor=\"middle\">nice</text><line class=\"a\" x1=\"500\" y1=\"50\" x2=\"500.0\" y2=\"151.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"500,160 505.0,151.0 495.0,151.0\"/><text class=\"t\" x=\"500\" y=\"190\" text-anchor=\"middle\">deterioration:</text><text class=\"t\" x=\"500\" y=\"208\" text-anchor=\"middle\">silly</text>",
+         "vb": "0 0 560 220"
+        }
        ]
       },
       {
@@ -1746,6 +2660,48 @@
         "Confusing acronyms (said as a word) with initialisms (said as letters). Confusing a blend (parts of words merged) with a compound (whole words joined). Presenting prescriptivism as simply wrong: it is an attitude with real social consequences, and you should explain it, not dismiss it. Giving examples that are decades old when recent ones are available."
        ]
       }
+     ],
+     "map": [
+      [
+       "Word formation",
+       [
+        "affixation, compounding",
+        "blending, clipping",
+        "acronyms, initialisms",
+        "conversion, borrowing"
+       ]
+      ],
+      [
+       "Meaning change",
+       [
+        "broadening, narrowing",
+        "elevation, deterioration",
+        "shift"
+       ]
+      ],
+      [
+       "Other subsystems",
+       [
+        "sound change",
+        "grammar change"
+       ]
+      ],
+      [
+       "Why",
+       [
+        "new things",
+        "contact",
+        "identity, efficiency"
+       ]
+      ],
+      [
+       "Attitudes",
+       [
+        "prescriptivism",
+        "descriptivism",
+        "Aitchison’s metaphors"
+       ]
+      ]
      ]
     }
    ]
@@ -1856,6 +2812,14 @@
        "h": "How English spread",
        "p": [
         "Colonisation, trade, and later media and the internet took English across the world. English now has more additional-language users than native speakers, and it works as a lingua franca: a shared language between people who have different first languages. There is no single owner of English, which is why linguists talk about Englishes in the plural."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Kachru’s three circles of English.",
+         "svg": "<circle class=\"fa\" cx=\"270\" cy=\"150\" r=\"140\" opacity=\".12\"/><circle class=\"fa\" cx=\"270\" cy=\"150\" r=\"95\" opacity=\".22\"/><circle class=\"fa\" cx=\"270\" cy=\"150\" r=\"48\" opacity=\".4\"/><text class=\"t\" x=\"270\" y=\"146\" text-anchor=\"middle\">Inner</text><text class=\"t\" x=\"270\" y=\"164\" text-anchor=\"middle\">UK, US, Australia</text><text class=\"t\" x=\"270\" y=\"85\" text-anchor=\"middle\">Outer: India, Nigeria, Singapore</text><text class=\"t\" x=\"270\" y=\"30\" text-anchor=\"middle\">Expanding: China, Japan, Brazil</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -1869,6 +2833,26 @@
          "What must happen for a pidgin to become a creole?",
          "Children must acquire it as their first language, after which it expands in vocabulary and grammar."
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "From contact to a new language.",
+         "steps": [
+          [
+           "Contact",
+           "groups with no shared language"
+          ],
+          [
+           "Pidgin",
+           "simplified, no native speakers"
+          ],
+          [
+           "Creole",
+           "children acquire it as a first language"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1923,6 +2907,45 @@
         "Calling a pidgin or creole simplified or incorrect English. Mixing up the terms: no native speakers means pidgin; native speakers means creole. Treating language loss as natural drift without mentioning the policies that caused it."
        ]
       }
+     ],
+     "map": [
+      [
+       "Spread",
+       [
+        "colonisation, trade",
+        "media, internet",
+        "lingua franca"
+       ]
+      ],
+      [
+       "Kachru’s circles",
+       [
+        "inner",
+        "outer",
+        "expanding"
+       ]
+      ],
+      [
+       "Contact languages",
+       [
+        "pidgin: no native speakers",
+        "creole: native speakers"
+       ]
+      ],
+      [
+       "First Nations languages",
+       [
+        "language shift and loss",
+        "maintenance and revival"
+       ]
+      ],
+      [
+       "Aboriginal Englishes",
+       [
+        "distinct features",
+        "identity and community"
+       ]
+      ]
      ]
     }
    ]

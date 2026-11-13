@@ -60,6 +60,11 @@ Each subject and unit has its own file in `content/`, for example `chem12.json` 
 - `"s": ["Step 1", "Step 2", …]` is optional on any question: a worked solution the student reveals one step at a time after answering.
 - Add new questions **at the end** of a topic's `qs` list, and don't change topic `id`s. Progress is tracked by topic id and question position, so reordering would mix up saved progress.
 - `notes` is optional: each entry is a heading and its paragraphs, shown under "Lesson". `check` is optional: quick questions with hidden answers shown after that section.
+- `map` is optional: a mind map as a list of `["Branch", ["leaf", "leaf"]]`, shown under the key points (as an outline on phones).
+- `fig` is optional on any `notes` section: a list of figures drawn by `figs.js`, each with a `cap` (caption) and a type `t`:
+  - `plot`: graphs of functions written in JavaScript (`"fns": [{"f": "x*x - 4"}]`, using `**` for powers and brackets around negative powers), with `x` and `y` ranges, plus optional `shade`, `bars`, `lines`, `dots`, `pts` (labelled points), `dash` and `segs`.
+  - `table` (`head`, `rows`), `flow` (`steps`), `graph` (networks: `nodes`, `edges`, `hl`, `dir`) and `svg` (hand-drawn SVG markup).
+  - Text inside `plot`, `graph`, `svg` and mind maps must be plain Unicode (x², π): KaTeX cannot typeset inside SVG.
 - Topics are taught in the order they appear in the file. New topics can be inserted anywhere; give each a new `id`.
 
 ### Glossary
