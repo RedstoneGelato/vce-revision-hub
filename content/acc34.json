@@ -70,6 +70,42 @@
        "p": [
         "Relevance: information is capable of making a difference to a decision. It includes materiality: information is material if leaving it out or misstating it could influence a decision. Faithful representation: information is complete, neutral (free from bias) and free from material error. These two are the fundamental characteristics.",
         "The other four enhance usefulness. Verifiability: independent observers could agree the information is faithfully represented, usually by checking source documents. Comparability: information can be compared over time and with other entities, which requires consistent methods. Timeliness: information is available in time to influence decisions. Understandability: information is presented clearly and concisely."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The qualitative characteristics and a quick test for each.",
+         "head": [
+          "Characteristic",
+          "Ask yourself"
+         ],
+         "rows": [
+          [
+           "Relevance",
+           "Could it change a decision? (materiality)"
+          ],
+          [
+           "Faithful representation",
+           "Is it complete, neutral and free from material error?"
+          ],
+          [
+           "Verifiability",
+           "Could someone check it against evidence?"
+          ],
+          [
+           "Comparability",
+           "Are methods consistent over time and between businesses?"
+          ],
+          [
+           "Timeliness",
+           "Is it available in time to be used?"
+          ],
+          [
+           "Understandability",
+           "Is it clear and concise?"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -172,6 +208,47 @@
        "a": "An amount supported by a source document, such as the purchase price on a supplier’s tax invoice.",
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Elements",
+       [
+        "asset, liability",
+        "owner’s equity",
+        "revenue, expense"
+       ]
+      ],
+      [
+       "Assumptions",
+       [
+        "entity",
+        "going concern",
+        "period",
+        "accrual basis"
+       ]
+      ],
+      [
+       "Fundamental characteristics",
+       [
+        "relevance (materiality)",
+        "faithful representation"
+       ]
+      ],
+      [
+       "Enhancing characteristics",
+       [
+        "verifiability",
+        "comparability",
+        "timeliness, understandability"
+       ]
+      ],
+      [
+       "Answers",
+       [
+        "identify, define, apply",
+        "use the case details"
+       ]
+      ]
      ]
     },
     {
@@ -302,6 +379,14 @@
        "p": [
         "Credit sale of inventory for $1,100 including GST; cost $600.",
         "Debit Accounts Receivable $1,100; credit Sales $1,000; credit GST Clearing $100. Debit Cost of Sales $600; credit Inventory $600. Two things happened, so there are two pairs of entries: revenue was earned, and inventory was given up."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A credit sale of $1,100 including GST (cost $600) in T-accounts: two pairs of entries, one for the revenue and one for the inventory given up.",
+         "svg": "<line class=\"s\" x1=\"10\" y1=\"36\" x2=\"250\" y2=\"36\"/><line class=\"s\" x1=\"130\" y1=\"36\" x2=\"130\" y2=\"74\"/><text class=\"t\" x=\"130\" y=\"28\" text-anchor=\"middle\">Accounts Receivable</text><text class=\"t\" x=\"16\" y=\"58\">Sales/GST 1,100</text><line class=\"s\" x1=\"280\" y1=\"36\" x2=\"520\" y2=\"36\"/><line class=\"s\" x1=\"400\" y1=\"36\" x2=\"400\" y2=\"74\"/><text class=\"t\" x=\"400\" y=\"28\" text-anchor=\"middle\">Sales</text><text class=\"t\" x=\"406\" y=\"58\">AR 1,000</text><line class=\"s\" x1=\"10\" y1=\"136\" x2=\"250\" y2=\"136\"/><line class=\"s\" x1=\"130\" y1=\"136\" x2=\"130\" y2=\"174\"/><text class=\"t\" x=\"130\" y=\"128\" text-anchor=\"middle\">GST Clearing</text><text class=\"t\" x=\"136\" y=\"158\">AR 100</text><line class=\"s\" x1=\"280\" y1=\"136\" x2=\"520\" y2=\"136\"/><line class=\"s\" x1=\"400\" y1=\"136\" x2=\"400\" y2=\"174\"/><text class=\"t\" x=\"400\" y=\"128\" text-anchor=\"middle\">Cost of Sales</text><text class=\"t\" x=\"286\" y=\"158\">Inventory 600</text><line class=\"s\" x1=\"145\" y1=\"236\" x2=\"385\" y2=\"236\"/><line class=\"s\" x1=\"265\" y1=\"236\" x2=\"265\" y2=\"274\"/><text class=\"t\" x=\"265\" y=\"228\" text-anchor=\"middle\">Inventory</text><text class=\"t\" x=\"271\" y=\"258\">Cost of Sales 600</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -347,6 +432,14 @@
          "Accounts Payable has credits totalling $12,000 and debits totalling $9,500. What is the balance and on which side is it brought down?",
          "$2,500, brought down as a credit balance."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Balancing the Bank account: total the larger side, insert the balance on the smaller side, and bring it down.",
+         "svg": "<line class=\"s\" x1=\"150\" y1=\"36\" x2=\"390\" y2=\"36\"/><line class=\"s\" x1=\"270\" y1=\"36\" x2=\"270\" y2=\"170\"/><text class=\"t\" x=\"270\" y=\"28\" text-anchor=\"middle\">Bank</text><text class=\"t\" x=\"156\" y=\"58\">Balance 5,000</text><text class=\"t\" x=\"156\" y=\"82\">Receipts 42,000</text><text class=\"t\" x=\"156\" y=\"106\"></text><text class=\"t\" x=\"156\" y=\"130\">Total 47,000</text><text class=\"t\" x=\"156\" y=\"154\">Balance b/d 8,500</text><text class=\"t\" x=\"276\" y=\"58\">Payments 38,500</text><text class=\"t\" x=\"276\" y=\"82\">Balance c/d 8,500</text><text class=\"t\" x=\"276\" y=\"106\"></text><text class=\"t\" x=\"276\" y=\"130\">Total 47,000</text>",
+         "vb": "0 0 540 190"
+        }
        ]
       },
       {
@@ -362,6 +455,45 @@
         "Forgetting the Cost of Sales and Inventory entry on a sale. Writing “Bank” as the cross-reference in the Bank account itself. Leaving out the narration in the General Journal."
        ]
       }
+     ],
+     "map": [
+      [
+       "Ledger",
+       [
+        "one account per item",
+        "posting from journals",
+        "cross-references"
+       ]
+      ],
+      [
+       "Rules",
+       [
+        "Dr: assets, expenses, drawings",
+        "Cr: liabilities, OE, revenue"
+       ]
+      ],
+      [
+       "General Journal",
+       [
+        "non-routine entries",
+        "narration"
+       ]
+      ],
+      [
+       "GST Clearing",
+       [
+        "Cr GST on sales",
+        "Dr GST on purchases"
+       ]
+      ],
+      [
+       "Checking",
+       [
+        "Trial Balance",
+        "errors it misses",
+        "correcting entries"
+       ]
+      ]
      ]
     },
     {
@@ -480,6 +612,30 @@
          "An item cost $50. It can now be sold for $55 with $8 selling costs. At what value is it reported?",
          "NRV = 55 − 8 = $47, which is lower than cost, so it is reported at $47."
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "Deciding the value of inventory at balance day.",
+         "steps": [
+          [
+           "Find cost",
+           "unit cost on the card"
+          ],
+          [
+           "Find NRV",
+           "selling price − selling costs"
+          ],
+          [
+           "Compare",
+           "use the lower"
+          ],
+          [
+           "If NRV < cost",
+           "write down: Dr Write-down, Cr Inventory"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -542,6 +698,45 @@
         "Comparing cost with the selling price and forgetting the selling costs. Writing inventory up when NRV is above cost; inventory is never valued above cost. Recording a sales return at selling price on the inventory card."
        ]
       }
+     ],
+     "map": [
+      [
+       "Product costs",
+       [
+        "purchase price",
+        "freight in, duties",
+        "added to unit cost"
+       ]
+      ],
+      [
+       "Period costs",
+       [
+        "can’t allocate to units",
+        "expensed now"
+       ]
+      ],
+      [
+       "NRV",
+       [
+        "selling price − selling costs",
+        "lower of cost and NRV",
+        "write-down expense"
+       ]
+      ],
+      [
+       "Returns and discounts",
+       [
+        "sales returns at cost",
+        "discount expense / revenue"
+       ]
+      ],
+      [
+       "Management",
+       [
+        "min and max levels",
+        "turnover, obsolescence"
+       ]
+      ]
      ]
     },
     {
@@ -693,6 +888,69 @@
          "Net Sales $90,000, Cost of Sales $52,000, Freight In $2,000. What is Gross Profit?",
          "90,000 − (52,000 + 2,000) = $36,000."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "A classified Income Statement for the year.",
+         "head": [
+          "",
+          "$",
+          "$"
+         ],
+         "rows": [
+          [
+           "Sales",
+           "180,000",
+           ""
+          ],
+          [
+           "Less Sales Returns",
+           "5,000",
+           ""
+          ],
+          [
+           "Net Sales",
+           "",
+           "175,000"
+          ],
+          [
+           "Less Cost of Goods Sold (COS 100,000 + Freight In 3,000)",
+           "",
+           "103,000"
+          ],
+          [
+           "Gross Profit",
+           "",
+           "72,000"
+          ],
+          [
+           "Less Inventory Loss",
+           "",
+           "1,000"
+          ],
+          [
+           "Adjusted Gross Profit",
+           "",
+           "71,000"
+          ],
+          [
+           "Add Discount Revenue",
+           "",
+           "500"
+          ],
+          [
+           "Less Other expenses",
+           "",
+           "46,500"
+          ],
+          [
+           "Net Profit",
+           "",
+           "25,000"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -726,6 +984,40 @@
         "Including loan principal or drawings as expenses. Showing only the carrying value of non-current assets. Explaining a difference between profit and cash with “because of depreciation” when the question’s data points to credit sales or inventory."
        ]
       }
+     ],
+     "map": [
+      [
+       "Income Statement",
+       [
+        "Gross Profit",
+        "Adjusted Gross Profit",
+        "Net Profit"
+       ]
+      ],
+      [
+       "Balance Sheet",
+       [
+        "cost − acc. depreciation",
+        "split loans",
+        "liquidity, stability"
+       ]
+      ],
+      [
+       "Cash Flow Statement",
+       [
+        "operating",
+        "investing",
+        "financing"
+       ]
+      ],
+      [
+       "Profit ≠ cash",
+       [
+        "credit sales and purchases",
+        "inventory, depreciation",
+        "loans, drawings, GST"
+       ]
+      ]
      ]
     }
    ]
@@ -837,6 +1129,29 @@
        "h": "The four timing cases",
        "p": [
         "Prepaid expense: paid before it is consumed. It starts as a current asset; the amount used up by balance day becomes an expense. Accrued expense: consumed before it is paid. Recognise the expense and a current liability. Unearned revenue: cash received before the goods or service are provided. It is a current liability until earned. Accrued revenue: earned before the cash is received. Recognise the revenue and a current asset."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The four balance day adjustments: cash and the revenue or expense fall in different periods.",
+         "head": [
+          "",
+          "Cash first",
+          "Revenue or expense first"
+         ],
+         "rows": [
+          [
+           "Expense",
+           "Prepaid expense (current asset)",
+           "Accrued expense (current liability)"
+          ],
+          [
+           "Revenue",
+           "Unearned revenue (current liability)",
+           "Accrued revenue (current asset)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -870,6 +1185,63 @@
          "Prepaid Insurance of $1,800 was paid on 1 October for 12 months. Balance day is 31 December. What is the adjusting entry?",
          "Three months used: 1,800 × 3/12 = $450. Debit Insurance Expense $450; credit Prepaid Insurance $450."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Prepaid rent of $6,000 for six months from 1 November. By balance day (31 December), $2,000 has been used and $4,000 remains as an asset.",
+         "x": [
+          0,
+          6.5
+         ],
+         "y": [
+          0,
+          7000
+         ],
+         "xstep": 1,
+         "ystep": 1000,
+         "bars": [
+          [
+           1,
+           1000
+          ],
+          [
+           2,
+           1000
+          ]
+         ],
+         "lines": [
+          {
+           "pts": [
+            [
+             0,
+             6000
+            ],
+            [
+             6,
+             0
+            ]
+           ],
+           "label": "prepaid balance"
+          }
+         ],
+         "dash": [
+          {
+           "x": 2
+          }
+         ],
+         "pts": [
+          [
+           2,
+           4000,
+           "balance day: $4,000 left",
+           10,
+           -6
+          ]
+         ],
+         "xl": "months",
+         "yl": "$"
+        }
        ]
       },
       {
@@ -911,6 +1283,44 @@
         "Adjusting for the unused amount when the question asks for the amount consumed, or the reverse. Using Bank in an adjustment. Forgetting to state the effect on both reports when asked for the effect of leaving an adjustment out."
        ]
       }
+     ],
+     "map": [
+      [
+       "Why",
+       [
+        "accrual basis",
+        "period assumption",
+        "match revenue and expenses"
+       ]
+      ],
+      [
+       "Expenses",
+       [
+        "prepaid: asset used up",
+        "accrued: liability owed"
+       ]
+      ],
+      [
+       "Revenue",
+       [
+        "unearned: liability",
+        "accrued: asset"
+       ]
+      ],
+      [
+       "Other",
+       [
+        "depreciation",
+        "bad and doubtful debts"
+       ]
+      ],
+      [
+       "Effects",
+       [
+        "one report item each side",
+        "never Bank"
+       ]
+      ]
      ]
     },
     {
@@ -957,6 +1367,84 @@
          "An asset has a carrying value of $16,000 and is depreciated at 25% reducing balance. What is this year’s depreciation?",
          "25% × 16,000 = $4,000."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Equipment costing $30,000: straight-line ($5,400 a year) against reducing balance at 30%.",
+         "x": [
+          0,
+          5.3
+         ],
+         "y": [
+          0,
+          31000
+         ],
+         "xstep": 1,
+         "ystep": 5000,
+         "lines": [
+          {
+           "pts": [
+            [
+             0,
+             30000
+            ],
+            [
+             1,
+             24600
+            ],
+            [
+             2,
+             19200
+            ],
+            [
+             3,
+             13800
+            ],
+            [
+             4,
+             8400
+            ],
+            [
+             5,
+             3000
+            ]
+           ],
+           "label": "straight-line"
+          },
+          {
+           "pts": [
+            [
+             0,
+             30000
+            ],
+            [
+             1,
+             21000
+            ],
+            [
+             2,
+             14700
+            ],
+            [
+             3,
+             10290
+            ],
+            [
+             4,
+             7203
+            ],
+            [
+             5,
+             5042
+            ]
+           ],
+           "label": "reducing balance 30%"
+          }
+         ],
+         "xl": "years",
+         "yl": "carrying value ($)"
+        }
        ]
       },
       {
@@ -978,6 +1466,14 @@
          "An asset cost $25,000, has accumulated depreciation of $19,000 and is sold for $7,500 excluding GST. What is the result?",
          "Carrying value = $6,000. Proceeds exceed it by $1,500, so there is a profit on disposal of $1,500."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The Disposal of Van account: transfer in the cost, transfer out the accumulated depreciation and proceeds; the balancing figure is the loss.",
+         "svg": "<line class=\"s\" x1=\"150\" y1=\"36\" x2=\"390\" y2=\"36\"/><line class=\"s\" x1=\"270\" y1=\"36\" x2=\"270\" y2=\"122\"/><text class=\"t\" x=\"270\" y=\"28\" text-anchor=\"middle\">Disposal of Van</text><text class=\"t\" x=\"156\" y=\"58\">Van 40,000</text><text class=\"t\" x=\"276\" y=\"58\">Acc. Dep. 28,000</text><text class=\"t\" x=\"276\" y=\"82\">Bank 10,000</text><text class=\"t\" x=\"276\" y=\"106\">Loss 2,000</text>",
+         "vb": "0 0 540 140"
+        }
        ]
       },
       {
@@ -1078,6 +1574,44 @@
        "a": 0,
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Cost",
+       [
+        "price + set-up costs",
+        "no GST",
+        "running costs are expenses"
+       ]
+      ],
+      [
+       "Methods",
+       [
+        "straight-line: equal",
+        "reducing balance: % of carrying value"
+       ]
+      ],
+      [
+       "Recording",
+       [
+        "Dr Depreciation",
+        "Cr Accumulated Depreciation"
+       ]
+      ],
+      [
+       "Disposal",
+       [
+        "remove cost and acc. dep.",
+        "proceeds vs carrying value"
+       ]
+      ],
+      [
+       "Meaning",
+       [
+        "loss: under-depreciated",
+        "profit: over-depreciated"
+       ]
+      ]
      ]
     },
     {
@@ -1190,6 +1724,30 @@
          "What is the entry to close a Wages account with a balance of $18,000?",
          "Debit Profit and Loss Summary $18,000; credit Wages $18,000."
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "Closing entries, in order.",
+         "steps": [
+          [
+           "Revenue",
+           "Dr each revenue, Cr P&L Summary"
+          ],
+          [
+           "Expenses",
+           "Dr P&L Summary, Cr each expense"
+          ],
+          [
+           "Profit",
+           "Dr P&L Summary, Cr Capital"
+          ],
+          [
+           "Drawings",
+           "Dr Capital, Cr Drawings"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1203,6 +1761,14 @@
        "p": [
         "Sales $90,000; Cost of Sales $50,000; Wages $20,000; Rent $8,000; Drawings $6,000; opening Capital $40,000.",
         "Close revenue: debit Sales 90,000, credit P&L Summary 90,000. Close expenses: debit P&L Summary 78,000; credit Cost of Sales 50,000, Wages 20,000, Rent 8,000. Net Profit = $12,000: debit P&L Summary 12,000, credit Capital 12,000. Drawings: debit Capital 6,000, credit Drawings 6,000. Closing Capital = 40,000 + 12,000 − 6,000 = $46,000."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The Profit and Loss Summary for the worked example: revenue on the credit side, expenses on the debit side, and the $12,000 profit transferred to Capital.",
+         "svg": "<line class=\"s\" x1=\"150\" y1=\"36\" x2=\"390\" y2=\"36\"/><line class=\"s\" x1=\"270\" y1=\"36\" x2=\"270\" y2=\"146\"/><text class=\"t\" x=\"270\" y=\"28\" text-anchor=\"middle\">Profit and Loss Summary</text><text class=\"t\" x=\"156\" y=\"58\">Cost of Sales 50,000</text><text class=\"t\" x=\"156\" y=\"82\">Wages 20,000</text><text class=\"t\" x=\"156\" y=\"106\">Rent 8,000</text><text class=\"t\" x=\"156\" y=\"130\">Capital 12,000</text><text class=\"t\" x=\"276\" y=\"58\">Sales 90,000</text>",
+         "vb": "0 0 540 150"
+        }
        ]
       },
       {
@@ -1250,6 +1816,38 @@
         "Closing Drawings to the Profit and Loss Summary. Closing asset or liability accounts. Getting the debit and credit the wrong way round: to close an account, make the entry on the side opposite to its balance."
        ]
       }
+     ],
+     "map": [
+      [
+       "Temporary accounts",
+       [
+        "revenue, expenses",
+        "P&L Summary",
+        "drawings"
+       ]
+      ],
+      [
+       "Permanent accounts",
+       [
+        "assets, liabilities, capital",
+        "balanced, carried forward"
+       ]
+      ],
+      [
+       "Order",
+       [
+        "close revenue",
+        "close expenses",
+        "profit to capital",
+        "drawings to capital"
+       ]
+      ],
+      [
+       "Capital",
+       [
+        "opening + profit − drawings"
+       ]
+      ]
      ]
     }
    ]
@@ -1391,6 +1989,89 @@
          "Opening bank balance $4,000, budgeted receipts $30,000, budgeted payments $36,500. What is the estimated closing balance?",
          "4,000 + 30,000 − 36,500 = −$2,500: an overdraft of $2,500."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Estimated bank balance by month (illustrative). A budget shows the dip below zero in advance, so the owner can arrange an overdraft or delay spending.",
+         "x": [
+          0.5,
+          6.5
+         ],
+         "y": [
+          -4000,
+          10000
+         ],
+         "xstep": 1,
+         "ystep": 2000,
+         "lines": [
+          {
+           "pts": [
+            [
+             1,
+             3000
+            ],
+            [
+             2,
+             9300
+            ],
+            [
+             3,
+             4200
+            ],
+            [
+             4,
+             -2500
+            ],
+            [
+             5,
+             1800
+            ],
+            [
+             6,
+             6400
+            ]
+           ]
+          }
+         ],
+         "dots": [
+          [
+           1,
+           3000
+          ],
+          [
+           2,
+           9300
+          ],
+          [
+           3,
+           4200
+          ],
+          [
+           4,
+           -2500
+          ],
+          [
+           5,
+           1800
+          ],
+          [
+           6,
+           6400
+          ]
+         ],
+         "pts": [
+          [
+           4,
+           -2500,
+           "shortfall in month 4",
+           10,
+           4
+          ]
+         ],
+         "xl": "month",
+         "yl": "bank ($)"
+        }
        ]
       },
       {
@@ -1403,6 +2084,49 @@
          "Name two items that appear in a budgeted Cash Flow Statement but not in a budgeted Income Statement.",
          "Any two of: GST, loan principal repayments, drawings, capital contributions, purchase of non-current assets."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Where each item belongs.",
+         "head": [
+          "Item",
+          "Budgeted Cash Flow Statement",
+          "Budgeted Income Statement"
+         ],
+         "rows": [
+          [
+           "Credit sales",
+           "only when cash collected",
+           "yes, when made"
+          ],
+          [
+           "GST",
+           "yes",
+           "no"
+          ],
+          [
+           "Depreciation",
+           "no",
+           "yes"
+          ],
+          [
+           "Loan principal",
+           "yes",
+           "no"
+          ],
+          [
+           "Drawings",
+           "yes",
+           "no"
+          ],
+          [
+           "Interest",
+           "yes",
+           "yes"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1429,6 +2153,37 @@
         "Putting depreciation in the cash budget. Leaving GST out of receipts from customers. Calling every “higher than budget” result favourable; a higher expense is unfavourable."
        ]
       }
+     ],
+     "map": [
+      [
+       "Purpose",
+       [
+        "plan ahead",
+        "control: compare with actual"
+       ]
+      ],
+      [
+       "Three budgets",
+       [
+        "Cash Flow: cash only",
+        "Income Statement: accrual",
+        "Balance Sheet: position"
+       ]
+      ],
+      [
+       "Reconstructing",
+       [
+        "AR, AP, Inventory accounts",
+        "find the missing figure"
+       ]
+      ],
+      [
+       "Variances",
+       [
+        "favourable / unfavourable",
+        "explain and respond"
+       ]
+      ]
      ]
     },
     {
@@ -1537,6 +2292,14 @@
         "Return on Assets depends on both margin and turnover: Return on Assets = Net Profit Margin × Asset Turnover. A fall in Return on Assets with a steady Net Profit Margin means assets are generating fewer sales, perhaps after buying a new asset that is not yet fully used.",
         "Return on Owner’s Investment can rise while profit falls, if the owner has withdrawn capital and the business relies more on debt. Check the Debt Ratio before praising the increase.",
         "Liquidity links to efficiency. Slower Inventory Turnover and slower Accounts Receivable Turnover mean cash is tied up for longer, which weakens the ability to pay Accounts Payable on time."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Return on Assets breaks into margin and turnover. A change in ROA can come from either.",
+         "svg": "<rect class=\"fa\" x=\"180\" y=\"20\" width=\"180\" height=\"60\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"55.0\" text-anchor=\"middle\">Return on Assets</text><rect class=\"fp\" x=\"20\" y=\"170\" width=\"200\" height=\"60\" rx=\"8\"/><text class=\"t\" x=\"120.0\" y=\"205.0\" text-anchor=\"middle\">Net Profit Margin</text><rect class=\"fp\" x=\"320\" y=\"170\" width=\"200\" height=\"60\" rx=\"8\"/><text class=\"t\" x=\"420.0\" y=\"205.0\" text-anchor=\"middle\">Asset Turnover</text><line class=\"a\" x1=\"230\" y1=\"80\" x2=\"146.4\" y2=\"163.6\"/><polygon class=\"fa\" opacity=\"1\" points=\"140,170 149.9,167.2 142.8,160.1\"/><line class=\"a\" x1=\"310\" y1=\"80\" x2=\"393.6\" y2=\"163.6\"/><polygon class=\"fa\" opacity=\"1\" points=\"400,170 397.2,160.1 390.1,167.2\"/><text class=\"t\" x=\"270\" y=\"145\" text-anchor=\"middle\">×</text>",
+         "vb": "0 0 540 250"
+        }
        ]
       },
       {
@@ -1603,6 +2366,43 @@
         "Describing the change without explaining it. Recommending “increase sales” with no method. Treating a higher Working Capital Ratio or a favourable variance as good without checking the cause. Ignoring non-financial and ethical factors when the question asks for a discussion."
        ]
       }
+     ],
+     "map": [
+      [
+       "Method",
+       [
+        "choose indicators",
+        "trend with figures",
+        "explain, link, recommend"
+       ]
+      ],
+      [
+       "Links",
+       [
+        "ROA = NPM × Asset Turnover",
+        "GPM vs NPM: price or expenses?"
+       ]
+      ],
+      [
+       "Strategies",
+       [
+        "price, supplier, advertising",
+        "credit terms, inventory levels"
+       ]
+      ],
+      [
+       "Cash vs profit",
+       [
+        "different fixes"
+       ]
+      ],
+      [
+       "Limits",
+       [
+        "past data",
+        "non-financial factors"
+       ]
+      ]
      ]
     },
     {
@@ -1654,6 +2454,38 @@
          "A credit sale of $1,000 (ignore GST and cost) was not recorded. State the effect on assets, liabilities and owner’s equity.",
          "Assets understated $1,000 (Accounts Receivable); liabilities no effect; owner’s equity understated $1,000 (revenue and so profit)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Effect of failing to record $3,000 of depreciation.",
+         "head": [
+          "Item",
+          "Effect"
+         ],
+         "rows": [
+          [
+           "Expenses",
+           "understated $3,000"
+          ],
+          [
+           "Net Profit",
+           "overstated $3,000"
+          ],
+          [
+           "Assets",
+           "overstated $3,000"
+          ],
+          [
+           "Liabilities",
+           "no effect"
+          ],
+          [
+           "Owner’s equity",
+           "overstated $3,000"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1761,6 +2593,44 @@
        "a": 0,
        "e": ""
       }
+     ],
+     "map": [
+      [
+       "Command words",
+       [
+        "state, calculate",
+        "explain, justify",
+        "discuss, evaluate"
+       ]
+      ],
+      [
+       "Theory",
+       [
+        "identify, define, apply"
+       ]
+      ],
+      [
+       "Effects",
+       [
+        "over- or understated",
+        "A = L + OE still balances"
+       ]
+      ],
+      [
+       "Discussion",
+       [
+        "for and against",
+        "ethics",
+        "decision"
+       ]
+      ],
+      [
+       "Presentation",
+       [
+        "three-part titles",
+        "debits before credits"
+       ]
+      ]
      ]
     }
    ]
