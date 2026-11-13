@@ -1,4 +1,4 @@
-import { firebaseConfig, tutorUids } from "./config.js";
+import { firebaseConfig, tutorUids, reportUrl } from "./config.js";
 
 /* ---------- subjects ---------- */
 const SUBJECTS = [
@@ -175,7 +175,20 @@ const isLearned = (uk, tid) => (state.learned?.[`${uk}.${tid}`] || 0) > 0;
 const topicQids = (uk, t) => t.qs.map((_, i) => `${uk}.${t.id}.${i}`);
 
 /* ---------- quiz engine ---------- */
-function runQuiz(qids, title, back) {
+// shortcut: GitHub issue params only; a Google Form or mailto: link needs its own parameter names.
+const reportLink = (what, detail) => el("a", { class: "report small", target: "_blank", rel: "noopener",
+  href: `${reportUrl}?title=${encodeURIComponent("Problem: " + what)}&body=${encodeURIComponent(`Page: ${location.href}\n${detail}\n\nWhat is wrong:\n`)}` }, "Report a problem");
+// Worked solution revealed one step at a time, so a student can stop as soon as they see the way forward.
+function stepsFor(q) {
+  if (!q.s?.length) return null;
+  const list = el("ol", { class: "steps" }); let k = 0;
+  const btn = el("button", { class: "btn small", onclick: () => {
+    list.append(el("li", {}, q.s[k++]));
+    if (k < q.s.length) btn.textContent = `Next step (${k + 1} of ${q.s.length})`; else btn.remove();
+  } }, `Show worked solution (step 1 of ${q.s.length})`);
+  return el("div", { class: "solution" }, list, btn);
+}
+function runQuiz(qids, title, back, onDone) {
   if (!qids.length) { show(el("div", { class: "panel" }, el("p", {}, "No questions to show."), back && el("a", { class: "btn", href: back }, "Back"))); return; }
   let i = 0, right = 0; const missed = [];
   const box = el("section", { class: "quiz", "aria-live": "polite" });
@@ -198,17 +211,18 @@ function runQuiz(qids, title, back) {
         [...area.children].forEach((b, j) => { b.disabled = true; if (j === correctPos) b.classList.add("right"); });
         if (!ok) { ev.currentTarget.classList.add("wrong"); missed.push(qid); } else right++;
         grade(qid, ok);
-        area.after(el("div", { class: "feedback " + (ok ? "ok" : "no") }, el("b", {}, ok ? "Correct." : `Not quite. The answer is ${"ABCDEF"[correctPos]}: ${q.o[q.a]}`), q.e || ""));
-        after.append(nextBtn); nextBtn.focus();
+        const fb = el("div", { class: "feedback " + (ok ? "ok" : "no") }, el("b", {}, ok ? "Correct." : `Not quite. The answer is ${"ABCDEF"[correctPos]}: ${q.o[q.a]}`), q.e || "");
+        area.after(fb); fb.after(stepsFor(q) || "");
+        after.append(nextBtn, reportLink(topic.title, `Question ${qid}: ${q.q}`)); nextBtn.focus();
       } }, el("span", { class: "k" }, "ABCDEF"[pos]), el("span", {}, q.o[k]))));
     } else {
       const reveal = el("button", { class: "btn primary", onclick: () => {
         reveal.remove();
-        area.append(el("div", { class: "answer" }, el("b", {}, "Answer: "), q.a, q.e ? "\n\n" + q.e : ""));
+        area.append(el("div", { class: "answer" }, el("b", {}, "Answer: "), q.a, q.e ? "\n\n" + q.e : ""), stepsFor(q));
         const rate = (ok) => () => { ok ? right++ : missed.push(qid); grade(qid, ok); next(); };
         after.append(el("span", { class: "muted small" }, "Did you get it?"),
           el("button", { class: "btn", onclick: rate(false) }, "Not yet"),
-          el("button", { class: "btn primary", onclick: rate(true) }, "Got it"));
+          el("button", { class: "btn primary", onclick: rate(true) }, "Got it"), reportLink(topic.title, `Question ${qid}: ${q.q}`));
         after.querySelector(".btn.primary").focus();
       } }, "Show answer");
       area.append(el("p", { class: "muted small" }, "Answer in your head or on paper first."));
@@ -221,6 +235,7 @@ function runQuiz(qids, title, back) {
     box.className = "quiz";
     box.replaceChildren(
       el("h2", {}, `${right} of ${qids.length} correct (${pct}%)`),
+      onDone ? onDone(missed) : null,
       el("p", { class: "muted" }, missed.length ? `${missed.length} question${missed.length > 1 ? "s" : ""} went to your error log and will come back in review tomorrow.` : "Clean sweep. These questions will come back later so they stick."),
       el("div", { class: "row" },
         missed.length ? el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...missed]), "Retry missed questions", back) }, "Retry the ones I missed") : null,
@@ -273,13 +288,30 @@ function viewUnit(uk) {
       el("div", {}, el("h1", {}, `${s.name} ${unitName(uk)}`), el("p", { class: "muted" }, `${nLearned}/${ls.length} lessons learned · ${st.total} questions · ${st.seen} tried · ${st.mastered} mastered${st.acc != null ? ` · ${st.acc}% correct so far` : ""}`)),
       el("div", { class: "row" },
         nextUp ? el("a", { class: "btn primary", href: `#t-${uk}-${nextUp.id}` }, `${nLearned ? "Continue" : "Start"}: ${nextUp.title}`) : null,
-        el("button", { class: "btn" + (nextUp ? "" : " primary"), onclick: () => runQuiz(shuffle([...all]).slice(0, 20), `${s.name} ${unitName(uk)}: mixed 20`, `#u-${uk}`) }, "Quiz 20 from this unit"))),
+        el("button", { class: "btn" + (nextUp ? "" : " primary"), onclick: () => runQuiz(shuffle([...all]).slice(0, 20), `${s.name} ${unitName(uk)}: mixed 20`, `#u-${uk}`) }, "Quiz 20 from this unit"),
+        el("button", { class: "btn", onclick: () => placement(uk) }, "Where should I start?"))),
     ...c.aos.map((a) => el("section", { class: "aos " + s.cls }, el("h3", {}, a.name),
       el("div", { class: "topics" }, a.topics.map((t) => {
         const ids = topicQids(uk, t), n = ids.filter((q) => state.cards[q]).length, m = ids.filter((q) => state.cards[q]?.b >= 3).length, d = ids.filter((q) => state.cards[q] && state.cards[q].due <= today()).length;
         return el("a", { class: "topic", href: `#t-${uk}-${t.id}` }, el("span", { class: "muted small" }, `Lesson ${ls.indexOf(t) + 1}${isLearned(uk, t.id) ? " · Learned ✓" : ""}`), el("h3", {}, t.title),
           el("div", { class: "meta" }, el("span", {}, `${n}/${ids.length} tried · ${m} mastered${d ? ` · ${d} due` : ""}`), pbar(n, m, ids.length)));
       })))));
+}
+// One question from each lesson, in teaching order; the first lesson missed is where to start.
+const upTo = (n) => (n === 1 ? "lesson 1" : `lessons 1–${n}`);
+function placement(uk) {
+  const ls = lessons(uk), pick = ls.map((t) => { const ids = topicQids(uk, t); return ids[Math.floor(Math.random() * ids.length)]; });
+  runQuiz(pick, `${ukLabel(uk)}: where should I start?`, `#u-${uk}`, (missed) => {
+    const wrong = ls.filter((_, k) => missed.includes(pick[k])), first = ls.indexOf(wrong[0]);
+    const markTo = (n) => el("button", { class: "btn", onclick: (ev) => { ls.slice(0, n).forEach((t) => { (state.learned ||= {})[`${uk}.${t.id}`] = Date.now(); }); save(); ev.currentTarget.replaceWith(el("span", { class: "muted small" }, "Marked as learned.")); } },
+      n === ls.length ? "Mark every lesson as learned" : `Mark ${upTo(n)} as learned`);
+    if (!wrong.length) return el("div", { class: "panel" }, el("p", {}, "You answered a question from every lesson correctly. Use “Quiz 20 from this unit” and Review to keep it fresh, and dip into any lesson you feel less sure about."), el("div", { class: "row" }, markTo(ls.length)));
+    return el("div", { class: "panel" },
+      el("p", {}, el("b", {}, `Start at Lesson ${first + 1}: ${wrong[0].title}.`), first ? ` You got the question${first > 1 ? "s" : ""} from ${upTo(first)} right, so you can skim ${first > 1 ? "those" : "it"}.` : " It is the first lesson, so start at the beginning."),
+      wrong.length > 1 ? el("p", { class: "muted small" }, "Also missed: " + wrong.slice(1).map((t) => `Lesson ${ls.indexOf(t) + 1} (${t.title})`).join(", ") + ".") : null,
+      el("p", { class: "muted small" }, "This is one question per lesson, so treat it as a guide, not a verdict."),
+      el("div", { class: "row" }, el("a", { class: "btn primary", href: `#t-${uk}-${wrong[0].id}` }, `Go to Lesson ${first + 1}`), first ? markTo(first) : null));
+  });
 }
 function viewTopic(uk, tid) {
   const c = content[uk]; const all = c ? lessons(uk) : [], i = all.findIndex((x) => x.id === tid), t = all[i]; if (!t) return notFound();
@@ -299,7 +331,8 @@ function viewTopic(uk, tid) {
     el("div", { class: "row" },
       el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...ids]), t.title, `#${here}`) }, `Practise ${ids.length} questions`),
       el("button", { class: "btn", "aria-pressed": String(learned), onclick: () => { (state.learned ||= {})[`${uk}.${tid}`] = learned ? -Date.now() : Date.now(); save(); route(); } }, learned ? "Learned ✓ (undo)" : "Mark as learned")),
-    el("div", { class: "row" }, link(all[i - 1], "← "), link(all[i + 1], "Next lesson: "), el("a", { class: "btn", href: `#u-${uk}` }, "All lessons")));
+    el("div", { class: "row" }, link(all[i - 1], "← "), link(all[i + 1], "Next lesson: "), el("a", { class: "btn", href: `#u-${uk}` }, "All lessons")),
+    el("p", { class: "muted small" }, "Spotted a mistake in this lesson? ", reportLink(t.title, `Lesson: ${ukLabel(uk)}, ${t.title}`)));
 }
 function viewGlossary() {
   const q = el("input", { type: "search", id: "gl-q", placeholder: "Search terms", "aria-label": "Search terms" });

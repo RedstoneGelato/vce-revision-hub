@@ -57,6 +57,7 @@ Each subject and unit has its own file in `content/`, for example `chem12.json` 
 
 - `"t": "m"` is multiple choice. `a` is the index of the correct option, counting from 0.
 - `"t": "c"` is a flashcard the student marks themselves.
+- `"s": ["Step 1", "Step 2", …]` is optional on any question: a worked solution the student reveals one step at a time after answering.
 - Add new questions **at the end** of a topic's `qs` list, and don't change topic `id`s. Progress is tracked by topic id and question position, so reordering would mix up saved progress.
 - `notes` is optional: each entry is a heading and its paragraphs, shown under "Lesson". `check` is optional: quick questions with hidden answers shown after that section.
 - Topics are taught in the order they appear in the file. New topics can be inserted anywhere; give each a new `id`.
@@ -71,3 +72,7 @@ Each subject and unit has its own file in `content/`, for example `chem12.json` 
 
 - `s` is the subject key: `chem`, `eng`, `acc`, `meth` or `gen`.
 - `src` is optional. Add it only when `d` is copied word for word from a VCAA document, and name the document. Entries without `src` are shown as "Study-note wording".
+
+## Report a problem
+
+Every lesson and every answered question has a "Report a problem" link. It opens a new GitHub issue on this repo, pre-filled with the page and the question, so reporters need a free GitHub account. To send reports somewhere else, change `reportUrl` in `config.js` (the link adds GitHub's `?title=…&body=…` parameters, so a Google Form or `mailto:` link needs a small change in `app.js`).
