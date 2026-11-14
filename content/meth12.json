@@ -240,6 +240,33 @@
         "Factorise: \\(x(y - 3) = -(2y + 1)\\).",
         "Divide: \\(x = \\dfrac{-(2y + 1)}{y - 3} = \\dfrac{2y + 1}{3 - y}\\)."
        ]
+      },
+      {
+       "t": "n",
+       "q": "Solve \\([[a]]x + [[b]] = [[c]]\\) for \\(x\\).",
+       "vars": {
+        "a": [
+         2,
+         9,
+         1
+        ],
+        "b": [
+         -12,
+         12,
+         1
+        ],
+        "c": [
+         -20,
+         20,
+         1
+        ]
+       },
+       "ans": "(c-b)/a",
+       "dp": 2,
+       "s": [
+        "Subtract [[b]] from both sides: \\([[a]]x = [[=c-b]]\\).",
+        "Divide by [[a]]: \\(x = [[=(c-b)/a|2]]\\) (to 2 d.p.)."
+       ]
       }
      ],
      "map": [
@@ -447,6 +474,18 @@
        "h": "Common mistakes",
        "p": [
         "Finding the range from the endpoints alone when there is a turning point in between. Using a round bracket for an included endpoint. Writing \\(f(a + 1) = f(a) + 1\\). Forgetting the brackets when substituting a negative number: \\(f(-1)\\) for \\(x^2\\) is \\((-1)^2 = 1\\), not \\(-1\\)."
+       ]
+      },
+      {
+       "h": "Try it: the graph explorer",
+       "p": [
+        "Move a, n, h and k one at a time and watch what each does to the parabola. The full explorer is also in the menu under Graph explorer."
+       ],
+       "fig": [
+        {
+         "t": "explore",
+         "f": "x²"
+        }
        ]
       }
      ],
@@ -716,6 +755,88 @@
         "Midpoint: \\(\\left(\\dfrac{-1 + 5}{2}, \\dfrac{3 + (-5)}{2}\\right) = (2, -1)\\).",
         "Differences: \\(5 - (-1) = 6\\) and \\(-5 - 3 = -8\\).",
         "Distance \\(= \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\)."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the gradient of the line through \\(([[p]], [[q]])\\) and \\(([[r]], [[t]])\\).",
+       "vars": {
+        "p": [
+         -6,
+         0,
+         1
+        ],
+        "q": [
+         -8,
+         8,
+         1
+        ],
+        "r": [
+         1,
+         7,
+         1
+        ],
+        "t": [
+         -8,
+         8,
+         1
+        ]
+       },
+       "ans": "(t-q)/(r-p)",
+       "dp": 2,
+       "s": [
+        "\\(m = \\dfrac{y_2 - y_1}{x_2 - x_1} = \\dfrac{[[t]] - ([[q]])}{[[r]] - ([[p]])}\\)",
+        "\\(= \\dfrac{[[=t-q]]}{[[=r-p]]} = [[=(t-q)/(r-p)|2]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the discriminant of \\(x^2 + [[b]]x + [[c]]\\).",
+       "vars": {
+        "b": [
+         -10,
+         10,
+         1
+        ],
+        "c": [
+         -12,
+         12,
+         1
+        ]
+       },
+       "ans": "b*b-4*c",
+       "dp": 0,
+       "e": "If Δ > 0 there are two x-intercepts, Δ = 0 one, Δ < 0 none.",
+       "s": [
+        "\\(\\Delta = b^2 - 4ac = ([[b]])^2 - 4(1)([[c]])\\)",
+        "\\(= [[=b*b]] - ([[=4*c]]) = [[=b*b-4*c]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the x-coordinate of the turning point of \\(y = [[a]]x^2 + [[b]]x + 3\\).",
+       "vars": {
+        "a": {
+         "pick": [
+          1,
+          2,
+          -1,
+          3,
+          -2,
+          4
+         ]
+        },
+        "b": [
+         -12,
+         12,
+         2
+        ]
+       },
+       "ans": "-b/(2*a)",
+       "dp": 2,
+       "s": [
+        "The axis of symmetry is \\(x = -\\dfrac{b}{2a}\\).",
+        "\\(x = -\\dfrac{[[b]]}{2 \\times [[a]]} = [[=-b/(2*a)|2]]\\)"
        ]
       }
      ],
@@ -1039,6 +1160,34 @@
         "Bring everything to one side: \\(x^3 - 4x = 0\\). Do not divide by \\(x\\), which would lose \\(x = 0\\).",
         "Factorise: \\(x(x^2 - 4) = x(x - 2)(x + 2) = 0\\).",
         "Null factor law: \\(x = 0\\), \\(x = 2\\) or \\(x = -2\\)."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the remainder when \\(p(x) = x^3 + [[b]]x + [[c]]\\) is divided by \\((x - [[k]])\\).",
+       "vars": {
+        "b": [
+         -6,
+         6,
+         1
+        ],
+        "c": [
+         -9,
+         9,
+         1
+        ],
+        "k": [
+         1,
+         4,
+         1
+        ]
+       },
+       "ans": "k**3+b*k+c",
+       "dp": 0,
+       "e": "Remainder theorem: the remainder is p(k).",
+       "s": [
+        "By the remainder theorem the remainder is \\(p([[k]])\\).",
+        "\\(p([[k]]) = [[k]]^3 + [[b]]([[k]]) + [[c]] = [[=k**3+b*k+c]]\\)"
        ]
       }
      ],
@@ -1366,6 +1515,53 @@
         "Take natural logs: \\(0.1t = \\log_e 2\\).",
         "\\(t = 10\\log_e 2 \\approx 6.93\\) years."
        ]
+      },
+      {
+       "t": "n",
+       "q": "Solve \\(2^x = [[m]]\\). Give \\(x\\) to 3 decimal places.",
+       "vars": {
+        "m": {
+         "pick": [
+          3,
+          5,
+          6,
+          7,
+          10,
+          12,
+          20,
+          30,
+          50
+         ]
+        }
+       },
+       "ans": "log(m)/log(2)",
+       "dp": 3,
+       "s": [
+        "Take logs of both sides: \\(x \\log_e 2 = \\log_e [[m]]\\).",
+        "\\(x = \\dfrac{\\log_e [[m]]}{\\log_e 2} = [[=log(m)/log(2)|3]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Solve \\(e^{[[k]]x} = [[m]]\\). Give \\(x\\) to 3 decimal places.",
+       "vars": {
+        "k": [
+         2,
+         5,
+         1
+        ],
+        "m": [
+         2,
+         15,
+         1
+        ]
+       },
+       "ans": "log(m)/k",
+       "dp": 3,
+       "s": [
+        "Take \\(\\log_e\\) of both sides: \\([[k]]x = \\log_e [[m]]\\).",
+        "\\(x = \\dfrac{\\log_e [[m]]}{[[k]]} = [[=log(m)/k|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1537,6 +1733,18 @@
        "p": [
         "Writing \\(\\log(a + b) = \\log a + \\log b\\). Forgetting to reject solutions that make a log undefined. Treating \\((2^x)^2\\) as \\(2^{x^2}\\). Leaving an asymptote off a sketch."
        ]
+      },
+      {
+       "h": "Try it: the graph explorer",
+       "p": [
+        "Watch the horizontal asymptote move with k, and the graph reflect when a or n is negative. The full explorer is also in the menu under Graph explorer."
+       ],
+       "fig": [
+        {
+         "t": "explore",
+         "f": "eˣ"
+        }
+       ]
       }
      ],
      "map": [
@@ -1699,6 +1907,31 @@
         "\\(\\sin\\theta = \\tfrac{\\sqrt{3}}{2}\\) gives \\(\\theta = \\tfrac{\\pi}{3}\\) or \\(\\tfrac{2\\pi}{3}\\).",
         "Halve: \\(x = \\tfrac{\\pi}{6}\\) or \\(\\tfrac{\\pi}{3}\\)."
        ]
+      },
+      {
+       "t": "n",
+       "q": "Convert \\([[d]]^\\circ\\) to radians, to 3 decimal places.",
+       "vars": {
+        "d": {
+         "pick": [
+          20,
+          35,
+          50,
+          75,
+          100,
+          140,
+          200,
+          250,
+          310
+         ]
+        }
+       },
+       "ans": "d*PI/180",
+       "dp": 3,
+       "s": [
+        "Multiply by \\(\\dfrac{\\pi}{180}\\): \\([[d]] \\times \\dfrac{\\pi}{180}\\)",
+        "\\(= [[=d*PI/180|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1821,6 +2054,26 @@
        "h": "Common mistakes",
        "p": [
         "Calculator in degree mode. Finding only one solution in the domain. Dividing both sides by \\(\\sin x\\) and losing solutions where \\(\\sin x = 0\\). Giving the period of tangent as \\(2\\pi\\)."
+       ]
+      },
+      {
+       "h": "Try it: the graph explorer",
+       "p": [
+        "a changes the amplitude, n the period (2π ÷ n), h the phase and k the mean value. The full explorer is also in the menu under Graph explorer."
+       ],
+       "fig": [
+        {
+         "t": "explore",
+         "f": "sin x",
+         "x": [
+          -7,
+          7
+         ],
+         "y": [
+          -4,
+          4
+         ]
+        }
        ]
       }
      ],
@@ -2086,6 +2339,28 @@
         "\\(C(10) = 100 + 20 - 1 = 119\\).",
         "\\(\\dfrac{136 - 119}{20 - 10} = 1.7\\) dollars per item."
        ]
+      },
+      {
+       "t": "n",
+       "q": "Find the average rate of change of \\(f(x) = x^2\\) from \\(x = [[a]]\\) to \\(x = [[b]]\\).",
+       "vars": {
+        "a": [
+         -3,
+         2,
+         1
+        ],
+        "b": [
+         3,
+         8,
+         1
+        ]
+       },
+       "ans": "a+b",
+       "dp": 2,
+       "s": [
+        "\\(\\dfrac{f([[b]]) - f([[a]])}{[[b]] - ([[a]])} = \\dfrac{[[=b*b]] - [[=a*a]]}{[[=b-a]]}\\)",
+        "\\(= [[=a+b]]\\)"
+       ]
       }
      ],
      "map": [
@@ -2228,6 +2503,33 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "If \\(f(x) = [[a]]x^3 + [[b]]x^2\\), find \\(f'([[p]])\\).",
+       "vars": {
+        "a": [
+         1,
+         5,
+         1
+        ],
+        "b": [
+         -6,
+         6,
+         1
+        ],
+        "p": [
+         -3,
+         3,
+         1
+        ]
+       },
+       "ans": "3*a*p*p+2*b*p",
+       "dp": 0,
+       "s": [
+        "\\(f'(x) = [[=3*a]]x^2 + [[=2*b]]x\\)",
+        "\\(f'([[p]]) = [[=3*a]]([[p]])^2 + [[=2*b]]([[p]]) = [[=3*a*p*p+2*b*p]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -2564,6 +2866,33 @@
        ],
        "a": 0,
        "e": "\\(f'(x) = 0\\) at \\(x = 2\\)."
+      },
+      {
+       "t": "n",
+       "q": "Evaluate \\(\\displaystyle\\int_0^{[[b]]} ([[a]]x + [[c]])\\,dx\\).",
+       "vars": {
+        "a": [
+         1,
+         6,
+         1
+        ],
+        "b": [
+         1,
+         5,
+         1
+        ],
+        "c": [
+         -4,
+         6,
+         1
+        ]
+       },
+       "ans": "a*b*b/2+c*b",
+       "dp": 2,
+       "s": [
+        "An antiderivative is \\(\\dfrac{[[a]]x^2}{2} + [[c]]x\\).",
+        "\\(\\left[\\dfrac{[[a]]x^2}{2} + [[c]]x\\right]_0^{[[b]]} = \\dfrac{[[a]] \\times [[=b*b]]}{2} + [[=c*b]] = [[=a*b*b/2+c*b|2]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -2903,6 +3232,33 @@
        "s": [
         "\\(\\Pr(A \\mid B) = \\dfrac{\\Pr(A \\cap B)}{\\Pr(B)}\\).",
         "\\(\\dfrac{0.15}{0.6} = 0.25\\)."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "\\(\\Pr(A) = [[pa]]\\), \\(\\Pr(B) = [[pb]]\\) and \\(\\Pr(A \\cap B) = [[pab]]\\). Find \\(\\Pr(A \\cup B)\\).",
+       "vars": {
+        "pa": [
+         0.3,
+         0.6,
+         0.05
+        ],
+        "pb": [
+         0.2,
+         0.5,
+         0.05
+        ],
+        "pab": [
+         0.05,
+         0.15,
+         0.05
+        ]
+       },
+       "ans": "pa+pb-pab",
+       "dp": 2,
+       "s": [
+        "Addition rule: \\(\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)\\)",
+        "\\(= [[pa]] + [[pb]] - [[pab]] = [[=pa+pb-pab|2]]\\)"
        ]
       }
      ],

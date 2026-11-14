@@ -454,6 +454,82 @@
        "p": [
         "Forgetting the Cost of Sales and Inventory entry on a sale. Writing “Bank” as the cross-reference in the Bank account itself. Leaving out the narration in the General Journal."
        ]
+      },
+      {
+       "h": "Worksheet: Trial balance",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Trial balance: find capital and the totals",
+         "head": [
+          "Account",
+          "Dr",
+          "Cr"
+         ],
+         "rows": [
+          [
+           "Cash at bank",
+           "12,000",
+           ""
+          ],
+          [
+           "Inventory",
+           "18,000",
+           ""
+          ],
+          [
+           "Equipment",
+           "35,000",
+           ""
+          ],
+          [
+           "Accounts payable",
+           "",
+           "9,500"
+          ],
+          [
+           "Loan",
+           "",
+           "20,000"
+          ],
+          [
+           "Sales",
+           "",
+           "48,000"
+          ],
+          [
+           "Wages",
+           "6,000",
+           ""
+          ],
+          [
+           "Cost of sales",
+           "22,000",
+           ""
+          ],
+          [
+           "Capital",
+           "",
+           {
+            "a": 15500
+           }
+          ],
+          [
+           "Totals",
+           {
+            "a": 93000
+           },
+           {
+            "a": 93000
+           }
+          ]
+         ],
+         "cap": "Total the debits first; capital is the amount that makes the credits equal the debits."
+        }
+       ]
       }
      ],
      "map": [
@@ -584,6 +660,44 @@
        ],
        "a": 0,
        "e": "Otherwise assets and profit would be overstated."
+      },
+      {
+       "t": "n",
+       "q": "The opening inventory is [[q1]] units costing $[[c1]] each; [[q2]] more units are bought at $[[c2]] each. Using FIFO, find the cost of sales when [[s]] units are sold.",
+       "vars": {
+        "q1": [
+         20,
+         50,
+         5
+        ],
+        "c1": [
+         8,
+         12,
+         1
+        ],
+        "q2": [
+         60,
+         100,
+         10
+        ],
+        "c2": [
+         13,
+         16,
+         1
+        ],
+        "s": [
+         55,
+         80,
+         5
+        ]
+       },
+       "ans": "q1*c1+(s-q1)*c2",
+       "dp": 0,
+       "s": [
+        "FIFO: the oldest [[q1]] units go first at $[[c1]] = $[[=q1*c1|,0]]",
+        "The other [[=s-q1]] units come from the purchase at $[[c2]] = $[[=(s-q1)*c2|,0]]",
+        "Cost of sales = [[=q1*c1|,0]] + [[=(s-q1)*c2|,0]] = $[[=q1*c1+(s-q1)*c2|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -696,6 +810,67 @@
        "h": "Common mistakes",
        "p": [
         "Comparing cost with the selling price and forgetting the selling costs. Writing inventory up when NRV is above cost; inventory is never valued above cost. Recording a sales return at selling price on the inventory card."
+       ]
+      },
+      {
+       "h": "Worksheet: Inventory card (FIFO)",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Inventory card (FIFO)",
+         "head": [
+          "Date",
+          "Detail",
+          "In",
+          "Out",
+          "Cost of sales",
+          "Balance (units)",
+          "Balance ($)"
+         ],
+         "rows": [
+          [
+           "1 Jul",
+           "Opening: 40 @ $10",
+           "",
+           "",
+           "",
+           "40",
+           "$400"
+          ],
+          [
+           "6 Jul",
+           "Purchase: 60 @ $12",
+           "60",
+           "",
+           "",
+           {
+            "a": 100
+           },
+           {
+            "a": 1120
+           }
+          ],
+          [
+           "15 Jul",
+           "Sale",
+           "",
+           "70",
+           {
+            "a": 760
+           },
+           {
+            "a": 30
+           },
+           {
+            "a": 360
+           }
+          ]
+         ],
+         "cap": "The 70 units sold are 40 at $10 then 30 at $12."
+        }
        ]
       }
      ],
@@ -1108,6 +1283,23 @@
        "q": "A $10,000 term deposit earns 6% per annum. Two months of interest are earned but not received at balance day. Record the adjustment.",
        "a": "Dr Accrued Interest Revenue 100; Cr Interest Revenue 100",
        "e": "10,000 × 6% × 2/12 = 100."
+      },
+      {
+       "t": "n",
+       "q": "Rent of $[[=P|,0]] was paid on 1 April for 12 months in advance. How much of it is prepaid (an asset) at balance date, 30 June?",
+       "vars": {
+        "P": [
+         6000,
+         36000,
+         1200
+        ]
+       },
+       "ans": "P*9/12",
+       "dp": 0,
+       "s": [
+        "1 April to 30 June is 3 months used, so 9 months remain prepaid.",
+        "Prepaid rent = [[=P|,0]] × 9/12 = $[[=P*9/12|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -1281,6 +1473,61 @@
        "h": "Common mistakes",
        "p": [
         "Adjusting for the unused amount when the question asks for the amount consumed, or the reverse. Using Bank in an adjustment. Forgetting to state the effect on both reports when asked for the effect of leaving an adjustment out."
+       ]
+      },
+      {
+       "h": "Worksheet: Balance day adjustments at 30 June",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Balance day adjustments at 30 June",
+         "head": [
+          "Situation",
+          "Find",
+          "$"
+         ],
+         "rows": [
+          [
+           "$12,000 rent paid 1 April for 12 months",
+           "Rent expense to 30 June",
+           {
+            "a": 3000
+           }
+          ],
+          [
+           "",
+           "Prepaid rent (asset) at 30 June",
+           {
+            "a": 9000
+           }
+          ],
+          [
+           "3 days of wages owing at $400 a day",
+           "Accrued wages (liability)",
+           {
+            "a": 1200
+           }
+          ],
+          [
+           "$6,000 received 1 May for 6 months of service",
+           "Revenue earned to 30 June",
+           {
+            "a": 2000
+           }
+          ],
+          [
+           "",
+           "Unearned revenue (liability) at 30 June",
+           {
+            "a": 4000
+           }
+          ]
+         ],
+         "cap": "Count the months used or earned up to balance date; the rest is still an asset or liability."
+        }
        ]
       }
      ],
@@ -1488,6 +1735,63 @@
        "p": [
         "Including GST or running costs in the asset’s cost. Subtracting residual value before applying the reducing balance rate. Crediting the asset account with depreciation. Comparing sale proceeds with the original cost instead of the carrying value. Forgetting depreciation for the part-year up to the date of sale."
        ]
+      },
+      {
+       "h": "Worksheet: Depreciation schedule",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Depreciation schedule: cost $50,000, residual $5,000, life 5 years (straight line)",
+         "head": [
+          "Year",
+          "Depreciation",
+          "Accumulated depreciation",
+          "Carrying amount"
+         ],
+         "rows": [
+          [
+           "1",
+           {
+            "a": 9000
+           },
+           {
+            "a": 9000
+           },
+           {
+            "a": 41000
+           }
+          ],
+          [
+           "2",
+           {
+            "a": 9000
+           },
+           {
+            "a": 18000
+           },
+           {
+            "a": 32000
+           }
+          ],
+          [
+           "3",
+           {
+            "a": 9000
+           },
+           {
+            "a": 27000
+           },
+           {
+            "a": 23000
+           }
+          ]
+         ],
+         "cap": "Straight line: (50,000 − 5,000) ÷ 5 each year."
+        }
+       ]
       }
      ],
      "qs": [
@@ -1573,6 +1877,62 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Equipment cost $[[=C|,0]], has a residual value of $[[=Rv|,0]] and a useful life of [[n]] years. Find the annual straight-line depreciation.",
+       "vars": {
+        "C": [
+         20000,
+         90000,
+         1000
+        ],
+        "Rv": [
+         0,
+         10000,
+         1000
+        ],
+        "n": {
+         "pick": [
+          4,
+          5,
+          8,
+          10
+         ]
+        }
+       },
+       "ans": "(C-Rv)/n",
+       "dp": 0,
+       "s": [
+        "Depreciation = (Cost − Residual value) ÷ Useful life",
+        "= ([[=C|,0]] − [[=Rv|,0]]) ÷ [[n]] = $[[=(C-Rv)/n|,0]] per year"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "A vehicle has a carrying amount of $[[=V|,0]] at the start of the year and is depreciated at [[r]]% reducing balance. Find this year's depreciation expense.",
+       "vars": {
+        "V": [
+         10000,
+         60000,
+         1000
+        ],
+        "r": {
+         "pick": [
+          10,
+          15,
+          20,
+          25,
+          30
+         ]
+        }
+       },
+       "ans": "V*r/100",
+       "dp": 0,
+       "s": [
+        "Reducing balance: depreciation = carrying amount × rate",
+        "= [[=V|,0]] × [[r]]% = $[[=V*r/100|,0]]"
+       ]
       }
      ],
      "map": [
@@ -1697,6 +2057,33 @@
        "q": "Opening capital $30,000; Net Profit $8,000; drawings $5,000. Find closing capital.",
        "a": "$33,000",
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Opening capital was $[[=C|,0]], net profit was $[[=NP|,0]] and drawings were $[[=D|,0]]. Find closing capital.",
+       "vars": {
+        "C": [
+         50000,
+         150000,
+         5000
+        ],
+        "NP": [
+         -10000,
+         60000,
+         1000
+        ],
+        "D": [
+         5000,
+         25000,
+         1000
+        ]
+       },
+       "ans": "C+NP-D",
+       "dp": 0,
+       "s": [
+        "Closing capital = Opening capital + Net profit − Drawings",
+        "= [[=C|,0]] + ([[=NP|,0]]) − [[=D|,0]] = $[[=C+NP-D|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -1814,6 +2201,53 @@
        "h": "Common mistakes",
        "p": [
         "Closing Drawings to the Profit and Loss Summary. Closing asset or liability accounts. Getting the debit and credit the wrong way round: to close an account, make the entry on the side opposite to its balance."
+       ]
+      },
+      {
+       "h": "Worksheet: Closing the ledger",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Closing the ledger",
+         "head": [
+          "Item",
+          "$"
+         ],
+         "rows": [
+          [
+           "Revenue",
+           "90,000"
+          ],
+          [
+           "Expenses",
+           "61,500"
+          ],
+          [
+           "Net profit (Profit and loss summary)",
+           {
+            "a": 28500
+           }
+          ],
+          [
+           "Opening capital",
+           "80,000"
+          ],
+          [
+           "Drawings",
+           "12,000"
+          ],
+          [
+           "Closing capital",
+           {
+            "a": 96500
+           }
+          ]
+         ],
+         "cap": "Profit and loss summary closes revenue and expenses; capital takes the net profit and the drawings."
+        }
        ]
       }
      ],
@@ -1936,6 +2370,33 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Opening cash is $[[=O|,0]]. Budgeted receipts are $[[=R|,0]] and budgeted payments are $[[=P|,0]]. Find the budgeted closing cash balance.",
+       "vars": {
+        "O": [
+         -5000,
+         20000,
+         500
+        ],
+        "R": [
+         20000,
+         80000,
+         1000
+        ],
+        "P": [
+         15000,
+         85000,
+         1000
+        ]
+       },
+       "ans": "O+R-P",
+       "dp": 0,
+       "s": [
+        "Closing = Opening + Receipts − Payments",
+        "= [[=O|,0]] + [[=R|,0]] − [[=P|,0]] = $[[=O+R-P|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -2152,6 +2613,73 @@
        "p": [
         "Putting depreciation in the cash budget. Leaving GST out of receipts from customers. Calling every “higher than budget” result favourable; a higher expense is unfavourable."
        ]
+      },
+      {
+       "h": "Worksheet: Cash budget for August",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Cash budget for August",
+         "head": [
+          "Item",
+          "$"
+         ],
+         "rows": [
+          [
+           "Opening cash",
+           "5,000"
+          ],
+          [
+           "Cash sales",
+           "20,000"
+          ],
+          [
+           "Receipts from accounts receivable",
+           "12,000"
+          ],
+          [
+           "Total receipts",
+           {
+            "a": 32000
+           }
+          ],
+          [
+           "Payments to accounts payable",
+           "18,000"
+          ],
+          [
+           "Wages",
+           "9,000"
+          ],
+          [
+           "Rent",
+           "2,000"
+          ],
+          [
+           "Total payments",
+           {
+            "a": 29000
+           }
+          ],
+          [
+           "Net cash flow",
+           {
+            "a": 3000
+           }
+          ],
+          [
+           "Closing cash",
+           {
+            "a": 8000
+           }
+          ]
+         ],
+         "cap": "Closing cash = Opening cash + Net cash flow."
+        }
+       ]
       }
      ],
      "map": [
@@ -2270,6 +2798,57 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Net profit was $[[=NP|,0]]. Owner's equity was $[[=E1|,0]] at the start of the year and $[[=E2|,0]] at the end. Find the return on owner's investment, to 1 decimal place.",
+       "vars": {
+        "NP": [
+         10000,
+         60000,
+         1000
+        ],
+        "E1": [
+         80000,
+         150000,
+         5000
+        ],
+        "E2": [
+         90000,
+         180000,
+         5000
+        ]
+       },
+       "ans": "NP/((E1+E2)/2)*100",
+       "dp": 1,
+       "unit": "%",
+       "s": [
+        "Average owner's equity = ([[=E1|,0]] + [[=E2|,0]]) ÷ 2 = $[[=(E1+E2)/2|,0]]",
+        "ROI = [[=NP|,0]] ÷ [[=(E1+E2)/2|,0]] × 100 = [[=NP/((E1+E2)/2)*100|1]]%"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Average inventory was $[[=I|,0]] and cost of sales was $[[=C|,0]]. Find the inventory turnover in days, to the nearest day.",
+       "vars": {
+        "I": [
+         10000,
+         50000,
+         1000
+        ],
+        "C": [
+         100000,
+         400000,
+         10000
+        ]
+       },
+       "ans": "I/C*365",
+       "dp": 0,
+       "unit": "days",
+       "s": [
+        "Inventory turnover = Average inventory ÷ Cost of sales × 365",
+        "= [[=I|,0]] ÷ [[=C|,0]] × 365 = [[=I/C*365|0]] days"
+       ]
       }
      ],
      "notes": [
@@ -2364,6 +2943,56 @@
        "h": "Common mistakes",
        "p": [
         "Describing the change without explaining it. Recommending “increase sales” with no method. Treating a higher Working Capital Ratio or a favourable variance as good without checking the cause. Ignoring non-financial and ethical factors when the question asks for a discussion."
+       ]
+      },
+      {
+       "h": "Worksheet: Profitability and efficiency indicators",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Profitability and efficiency indicators",
+         "head": [
+          "Indicator",
+          "Working",
+          "Answer"
+         ],
+         "rows": [
+          [
+           "Return on owner's investment (%)",
+           "$30,000 ÷ average OE ($100,000 and $140,000) × 100",
+           {
+            "a": 25,
+            "dp": 1
+           }
+          ],
+          [
+           "Asset turnover (times)",
+           "Sales $360,000 ÷ average total assets $240,000",
+           {
+            "a": 1.5,
+            "dp": 2
+           }
+          ],
+          [
+           "Inventory turnover (days)",
+           "Average inventory $30,000 ÷ cost of sales $219,000 × 365",
+           {
+            "a": 50
+           }
+          ],
+          [
+           "Accounts receivable turnover (days)",
+           "Average AR $20,000 ÷ credit sales $292,000 × 365",
+           {
+            "a": 25
+           }
+          ]
+         ],
+         "cap": "Use average balances where the indicator needs them."
+        }
        ]
       }
      ],

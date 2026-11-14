@@ -1,5 +1,6 @@
 import { firebaseConfig, tutorUids, reportUrl } from "./config.js";
 import { figure, mindmap } from "./figs.js";
+import { variant, parse, check } from "./numeric.js";
 
 /* ---------- subjects ---------- */
 const SUBJECTS = [
@@ -26,10 +27,33 @@ let mathFrame = 0;
 const mathObserver = new MutationObserver(() => { if (!mathFrame) mathFrame = requestAnimationFrame(typeset); });
 function typeset() {
   mathFrame = 0;
-  if (!window.renderMathInElement) return; // CDN blocked: the raw LaTeX stays readable
   mathObserver.disconnect();
-  window.renderMathInElement(app, MATH_OPTS);
+  glossify(); // before typesetting, so maths inside definitions is rendered too
+  if (window.renderMathInElement) window.renderMathInElement(app, MATH_OPTS); // CDN blocked: the raw LaTeX stays readable
   mathObserver.observe(app, { childList: true, subtree: true });
+}
+// The first mention of each glossary term in a lesson becomes a button that shows its definition.
+function glossify() {
+  const m = location.hash.match(/^#t-([a-z]+)\d\d-/), roots = m ? [...app.querySelectorAll(".learn:not([data-gl])")] : [];
+  if (!roots.length) return;
+  const terms = glossary.filter((g) => g.s === m[1]).sort((a, b) => b.t.length - a.t.length).map((g) => ({ ...g,
+    re: new RegExp(`(^|[^\\p{L}])(${g.t.replace(/\s*\(.*\)$/, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:s|es)?)(?![\\p{L}])`, "iu") }));
+  const used = new Set();
+  for (const root of roots) {
+    root.dataset.gl = "1";
+    // skip maths (its delimiters must stay intact for KaTeX), figures, headings and controls
+    const walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: (n) =>
+      n.parentElement.closest(".katex, svg, a, button, h1, h2, h3, summary, .fig, .gl-def, .toc, .mindmap") || /\\[([]/.test(n.data) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+    const nodes = []; while (walk.nextNode()) nodes.push(walk.currentNode);
+    for (let node of nodes) for (const g of terms) {
+      const hit = !used.has(g.t) && node.data.match(g.re); if (!hit) continue;
+      used.add(g.t);
+      const word = node.splitText(hit.index + hit[1].length), rest = word.splitText(hit[2].length);
+      const def = el("span", { class: "gl-def", hidden: true }, el("b", {}, g.t + ": "), g.d);
+      const btn = el("button", { class: "gl", "aria-expanded": "false", title: "Show definition", onclick: () => { def.hidden = !def.hidden; btn.setAttribute("aria-expanded", String(!def.hidden)); } }, word.data);
+      word.replaceWith(btn, def); node = rest; // shortcut: only text after a matched term is scanned for further terms; fine for first-mention highlighting
+    }
+  }
 }
 mathObserver.observe(app, { childList: true, subtree: true });
 function el(tag, attrs = {}, ...kids) {
@@ -199,12 +223,28 @@ function runQuiz(qids, title, back, onDone) {
     box.className = "quiz " + s.cls;
     const bar = el("div", { class: "progress-line" }, el("i", { style: `width:${(100 * i) / qids.length}%` }));
     const head = el("div", { class: "qhead" }, el("span", {}, el("span", { class: "qtag" }, ukLabel(uk)), " · ", topic.title), el("span", {}, `${i + 1} of ${qids.length}`));
-    const qtext = el("p", { class: "qtext" }, q.q);
+    const r = q.t === "n" ? variant(q) : null; // typed answer: fresh numbers each attempt
+    const qtext = el("p", { class: "qtext" }, r ? r.q : q.q);
     const area = el("div", { class: "opts" });
     const after = el("div", { class: "row" });
     const next = () => { i++; i < qids.length ? showQ() : done(); };
     const nextBtn = el("button", { class: "btn primary", onclick: next }, i + 1 < qids.length ? "Next question" : "See results");
-    if (q.t === "m") {
+    if (r) {
+      const input = el("input", { type: "text", inputmode: "decimal", class: "num", "aria-label": "Your answer", autocomplete: "off" });
+      const submit = el("button", { class: "btn primary", onclick: () => {
+        const x = parse(input.value);
+        if (Number.isNaN(x)) { toast("Type a number, for example 12.5"); return input.focus(); }
+        const ok = check(x, r.ans, r.dp), shown = r.ans.toLocaleString("en-AU", { minimumFractionDigits: r.dp, maximumFractionDigits: r.dp }) + (r.unit ? " " + r.unit : "");
+        input.disabled = true; submit.remove(); ok ? right++ : missed.push(qid); grade(qid, ok);
+        const fb = el("div", { class: "feedback " + (ok ? "ok" : "no") }, el("b", {}, ok ? `Correct: ${shown}.` : `Not quite. The answer is ${shown}.`), r.e);
+        area.after(fb); fb.after(stepsFor(r) || "");
+        after.append(nextBtn, reportLink(topic.title, `Question ${qid}: ${r.q}`)); nextBtn.focus();
+      } }, "Check");
+      input.addEventListener("keydown", (ev) => { if (ev.key === "Enter") submit.click(); });
+      area.append(el("label", { class: "numrow" }, input, r.unit ? el("span", {}, r.unit) : null),
+        el("p", { class: "muted small" }, `Type a number${r.dp ? `, to ${r.dp} decimal place${r.dp > 1 ? "s" : ""}` : ", rounded to a whole number"}. The numbers change on every attempt.`));
+      after.append(submit); setTimeout(() => input.focus());
+    } else if (q.t === "m") {
       const order = shuffle([...q.o.keys()]); // options shuffled each time so the answer letter can't be memorised
       const correctPos = order.indexOf(q.a);
       order.forEach((k, pos) => area.append(el("button", { class: "opt", onclick: (ev) => {
@@ -256,6 +296,18 @@ function viewHome() {
   // resume at the last lesson opened, or the next unlearned one after it
   const lm = (state.last || "").match(/^t-(\w+?\d\d)-(.+)$/), ll = lm && content[lm[1]] ? lessons(lm[1]) : [], li = ll.findIndex((t) => t.id === lm?.[2]);
   const rt = li < 0 ? null : ll.slice(li).find((t) => !isLearned(lm[1], t.id)) || ll[li], resume = rt && { uk: lm[1], t: rt };
+  // What to do next: due reviews, the lesson in progress, and the topics with the most open errors
+  const weak = Object.values(openErrors().reduce((acc, [, e]) => { const { uk, topic } = QS[e.qid]; (acc[uk + topic.id] ||= { uk, topic, qids: [] }).qids.push(e.qid); return acc; }, {}))
+    .sort((a, b) => b.qids.length - a.qids.length).slice(0, 3);
+  const todo = [
+    due && [`Review ${due} question${due > 1 ? "s" : ""} due today`, "Five to ten minutes. It is the fastest way to remember more.", el("a", { class: "btn small primary", href: "#review" }, "Start review")],
+    resume && [`Continue: ${resume.t.title}`, ukLabel(resume.uk), el("a", { class: "btn small", href: `#t-${resume.uk}-${resume.t.id}` }, "Continue lesson")],
+    ...weak.map((w) => [`Weak spot: ${w.topic.title}`, `${ukLabel(w.uk)} · ${w.qids.length} missed question${w.qids.length > 1 ? "s" : ""}`,
+      el("span", { class: "row" }, el("a", { class: "btn small", href: `#t-${w.uk}-${w.topic.id}` }, "Re-read"), el("button", { class: "btn small", onclick: () => runQuiz(shuffle([...w.qids]), `Weak spot: ${w.topic.title}`, "#home") }, "Retry these"))]),
+  ].filter(Boolean);
+  const next = el("section", { class: "panel" }, el("h2", {}, "What to do next"), todo.length
+    ? el("ol", { class: "todo" }, todo.map(([h, sub, act]) => el("li", {}, el("div", {}, el("b", {}, h), el("br"), el("span", { class: "muted small" }, sub)), act)))
+    : el("p", {}, "Choose a subject below, open a unit, and press “Where should I start?” to find your first lesson."));
   const grid = el("div", { class: "grid" }, SUBJECTS.map((s) => el("article", { class: "subj " + s.cls },
     el("h2", {}, s.name),
     el("div", { class: "units" }, UNITS.map((u) => {
@@ -274,8 +326,7 @@ function viewHome() {
         el("div", { class: "stat" }, el("b", {}, Object.keys(state.cards).length), el("span", {}, "Questions tried")),
         el("div", { class: "stat" }, el("b", {}, mastered), el("span", {}, "Mastered")),
         el("div", { class: "stat" }, el("b", {}, errs), el("span", {}, "Open errors")))),
-    resume ? el("div", { class: "panel" }, el("p", {}, `Pick up where you left off: ${ukLabel(resume.uk)}, ${resume.t.title}.`), el("div", { class: "row" }, el("a", { class: "btn primary", href: `#t-${resume.uk}-${resume.t.id}` }, "Continue lesson"))) : null,
-    due ? el("div", { class: "panel" }, el("p", {}, `You have ${due} question${due > 1 ? "s" : ""} due for review. Start there: it is the fastest way to remember more.`), el("div", { class: "row" }, el("a", { class: "btn primary", href: "#review" }, "Start review"))) : null,
+    next,
     grid,
     el("div", { class: "notice" }, "How to use this: 1. Read a topic’s key points and explain them out loud. 2. Practise its questions without notes. 3. Do Review every day (5–10 minutes). 4. Before an exam, use Mixed quiz across topics and redo your error log."));
 }
@@ -392,11 +443,12 @@ function viewErrors() {
     const note = el("textarea", { id: "note-" + id, placeholder: "Why did I get this wrong? What will I do differently?", "aria-label": "Note" });
     note.value = e.note || "";
     let t; note.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { state.errors[id].note = note.value; save(); }, 600); });
-    const ans = q.t === "m" ? q.o[q.a] : q.a;
+    const r = q.t === "n" ? variant(q) : null; // typed questions are shown with one set of numbers
+    const ans = r ? `${r.ans.toLocaleString("en-AU", { minimumFractionDigits: r.dp, maximumFractionDigits: r.dp })} ${r.unit} (the numbers change when you redo it)` : q.t === "m" ? q.o[q.a] : q.a;
     return el("article", { class: "panel err " + s.cls },
       el("div", { class: "qhead" }, el("span", {}, el("span", { class: "qtag" }, ukLabel(uk)), " · ", topic.title), el("span", {}, `Missed ${e.n}×${e.done ? " · fixed" : ""}`)),
-      el("p", { class: "qtext" }, q.q),
-      el("details", {}, el("summary", {}, "Show answer"), el("p", { class: "answer" }, ans + (q.e ? "\n\n" + q.e : ""))),
+      el("p", { class: "qtext" }, r ? r.q : q.q),
+      el("details", {}, el("summary", {}, "Show answer"), el("p", { class: "answer" }, ans + ((r ? r.e : q.e) ? "\n\n" + (r ? r.e : q.e) : ""))),
       note,
       el("div", { class: "row" },
         el("button", { class: "btn small primary", onclick: () => runQuiz([e.qid], "Redo one question", "#errors") }, "Redo it"),
@@ -467,6 +519,7 @@ function route() {
   else if (h === "mix") viewMix();
   else if (h === "errors" || h === "errors-all") viewErrors();
   else if (h === "glossary") viewGlossary();
+  else if (h === "explore") show(el("h1", {}, "Graph explorer"), el("p", { class: "muted" }, "Pick a function, then move the sliders to see what each number in y = a·f(n(x − h)) + k does to its graph."), el("section", { class: "learn c-meth" }, figure({ t: "explore" })));
   else if (h === "progress") viewProgress();
   else if (h === "tutor") viewTutor();
   else notFound();

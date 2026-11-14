@@ -394,6 +394,51 @@
        "p": [
         "Treating a capital contribution as revenue or drawings as an expense. Treating the purchase of an asset as an expense. Forgetting that every transaction has two effects. Thinking owner’s equity is cash: it is a claim on all the assets, most of which are not cash."
        ]
+      },
+      {
+       "h": "Worksheet: Find the missing amount",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Find the missing amount",
+         "head": [
+          "Business",
+          "Assets",
+          "Liabilities",
+          "Owner's equity"
+         ],
+         "rows": [
+          [
+           "A",
+           "$50,000",
+           "$20,000",
+           {
+            "a": 30000
+           }
+          ],
+          [
+           "B",
+           {
+            "a": 84000
+           },
+           "$36,000",
+           "$48,000"
+          ],
+          [
+           "C",
+           "$12,500",
+           {
+            "a": 4700
+           },
+           "$7,800"
+          ]
+         ],
+         "cap": "A = L + OE, so each missing amount is found by adding or subtracting the other two."
+        }
+       ]
       }
      ],
      "qs": [
@@ -468,6 +513,28 @@
        "q": "The owner takes home inventory that cost $500. What is the effect on the accounting equation?",
        "a": "Assets (inventory) decrease by $500 and owner’s equity decreases by $500 (drawings).",
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A business has assets of $[[=A|,0]] and liabilities of $[[=L|,0]]. Find owner's equity.",
+       "vars": {
+        "A": [
+         40000,
+         200000,
+         1000
+        ],
+        "L": [
+         5000,
+         39000,
+         500
+        ]
+       },
+       "ans": "A-L",
+       "dp": 0,
+       "s": [
+        "Owner's equity = Assets − Liabilities",
+        "= [[=A|,0]] − [[=L|,0]] = $[[=A-L|,0]]"
+       ]
       }
      ],
      "map": [
@@ -837,6 +904,23 @@
        "q": "Why is there no GST on a receipt from an Account Receivable?",
        "a": "The GST was recorded when the credit sale was made; the receipt only collects the debt.",
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A cash sale is $[[p]] including GST (10%). How much of it is GST? Give the nearest cent.",
+       "vars": {
+        "p": [
+         110,
+         2200,
+         11
+        ]
+       },
+       "ans": "p/11",
+       "dp": 2,
+       "s": [
+        "GST in a GST-inclusive price = price ÷ 11",
+        "= [[p]] ÷ 11 = $[[=p/11|2]]"
+       ]
       }
      ],
      "notes": [
@@ -1016,6 +1100,59 @@
        "p": [
         "Including Cost of Sales when cross-adding to Bank. Recording a credit purchase of a non-current asset in the Purchases Journal: that journal is only for inventory bought on credit; other credit purchases go in the General Journal. Forgetting the document number, which is the evidence that supports verifiability."
        ]
+      },
+      {
+       "h": "Worksheet: Cash receipts with GST (10%)",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Cash receipts with GST (10%)",
+         "head": [
+          "Receipt",
+          "Sales (excl. GST)",
+          "GST",
+          "Bank"
+         ],
+         "rows": [
+          [
+           "Cash sale 1",
+           "$400",
+           {
+            "a": 40
+           },
+           {
+            "a": 440
+           }
+          ],
+          [
+           "Cash sale 2",
+           "$1,250",
+           {
+            "a": 125
+           },
+           {
+            "a": 1375
+           }
+          ],
+          [
+           "Totals",
+           {
+            "a": 1650
+           },
+           {
+            "a": 165
+           },
+           {
+            "a": 1815
+           }
+          ]
+         ],
+         "cap": "GST is 10% of the GST-exclusive price; Bank is the total received."
+        }
+       ]
       }
      ],
      "map": [
@@ -1146,6 +1283,38 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A business buys [[q]] units at $[[c]] each and sells [[s]] of them for $[[p]] each. Find the gross profit on the units sold.",
+       "vars": {
+        "q": [
+         50,
+         100,
+         10
+        ],
+        "c": [
+         4,
+         20,
+         1
+        ],
+        "s": [
+         10,
+         50,
+         5
+        ],
+        "p": [
+         25,
+         40,
+         1
+        ]
+       },
+       "ans": "s*(p-c)",
+       "dp": 0,
+       "s": [
+        "Sales = [[s]] × [[p]] = $[[=s*p|,0]]; cost of sales = [[s]] × [[c]] = $[[=s*c|,0]]",
+        "Gross profit = [[=s*p|,0]] − [[=s*c|,0]] = $[[=s*(p-c)|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -1288,6 +1457,67 @@
        "h": "Common mistakes",
        "p": [
         "Using the selling price in the card. Including GST in the unit cost. Under FIFO, taking all the units from the latest batch. Showing the balance as one blended line when two cost prices are still on hand; keep each cost on its own line."
+       ]
+      },
+      {
+       "h": "Worksheet: Inventory card (FIFO)",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Inventory card (FIFO)",
+         "head": [
+          "Date",
+          "Detail",
+          "In",
+          "Out",
+          "Cost of sales",
+          "Balance (units)",
+          "Balance ($)"
+         ],
+         "rows": [
+          [
+           "1 Mar",
+           "Opening: 10 @ $5",
+           "",
+           "",
+           "",
+           "10",
+           "$50"
+          ],
+          [
+           "5 Mar",
+           "Purchase: 20 @ $6",
+           "20",
+           "",
+           "",
+           {
+            "a": 30
+           },
+           {
+            "a": 170
+           }
+          ],
+          [
+           "9 Mar",
+           "Sale",
+           "",
+           "15",
+           {
+            "a": 80
+           },
+           {
+            "a": 15
+           },
+           {
+            "a": 90
+           }
+          ]
+         ],
+         "cap": "FIFO: the 15 units sold are the 10 oldest at $5 and then 5 at $6."
+        }
        ]
       }
      ],
@@ -1620,6 +1850,62 @@
        "p": [
         "Including GST in the cost of the asset. Forgetting to subtract the residual value. Depreciating for a full year when the asset was owned for only part of the reporting period: multiply by the fraction of the year."
        ]
+      },
+      {
+       "h": "Worksheet: Accounts receivable ledger",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Accounts receivable ledger: J. Lee",
+         "head": [
+          "Date",
+          "Detail",
+          "Dr",
+          "Cr",
+          "Balance"
+         ],
+         "rows": [
+          [
+           "1 May",
+           "Balance",
+           "",
+           "",
+           "$1,200"
+          ],
+          [
+           "4 May",
+           "Sales",
+           "$800",
+           "",
+           {
+            "a": 2000
+           }
+          ],
+          [
+           "12 May",
+           "Cash receipt",
+           "",
+           "$1,500",
+           {
+            "a": 500
+           }
+          ],
+          [
+           "20 May",
+           "Sales",
+           "$650",
+           "",
+           {
+            "a": 1150
+           }
+          ]
+         ],
+         "cap": "Debits increase what the customer owes; credits (receipts) decrease it."
+        }
+       ]
       }
      ],
      "map": [
@@ -1756,6 +2042,28 @@
        "q": "Opening capital $40,000, Net Profit $7,000, drawings $9,000. Find closing capital.",
        "a": "$38,000",
        "e": "40,000 + 7,000 − 9,000."
+      },
+      {
+       "t": "n",
+       "q": "Revenue for the period was $[[=R|,0]] and expenses were $[[=E|,0]]. Find the net profit.",
+       "vars": {
+        "R": [
+         60000,
+         150000,
+         1000
+        ],
+        "E": [
+         20000,
+         59000,
+         500
+        ]
+       },
+       "ans": "R-E",
+       "dp": 0,
+       "s": [
+        "Net profit = Revenue − Expenses",
+        "= [[=R|,0]] − [[=E|,0]] = $[[=R-E|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -1873,6 +2181,63 @@
        "h": "Common mistakes",
        "p": [
         "Headings without a period or date: the Income Statement and Cash Flow Statement are “for the period ended”, the Balance Sheet is “as at”. Putting drawings in the Income Statement. Classifying the whole loan as non-current. Listing GST received as revenue."
+       ]
+      },
+      {
+       "h": "Worksheet: Income statement for March",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Income statement for March",
+         "head": [
+          "Item",
+          "$"
+         ],
+         "rows": [
+          [
+           "Sales",
+           "80,000"
+          ],
+          [
+           "less Cost of sales",
+           "32,000"
+          ],
+          [
+           "Gross profit",
+           {
+            "a": 48000
+           }
+          ],
+          [
+           "Wages",
+           "15,000"
+          ],
+          [
+           "Rent",
+           "9,000"
+          ],
+          [
+           "Advertising",
+           "2,500"
+          ],
+          [
+           "Total expenses",
+           {
+            "a": 26500
+           }
+          ],
+          [
+           "Net profit",
+           {
+            "a": 21500
+           }
+          ]
+         ],
+         "cap": "Gross profit = Sales − Cost of sales; Net profit = Gross profit − Expenses."
+        }
        ]
       }
      ],
@@ -2005,6 +2370,52 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Sales were $[[=S|,0]] and gross profit was $[[=G|,0]]. Find the gross profit margin, to 1 decimal place.",
+       "vars": {
+        "S": [
+         50000,
+         200000,
+         5000
+        ],
+        "G": [
+         10000,
+         45000,
+         1000
+        ]
+       },
+       "ans": "G/S*100",
+       "dp": 1,
+       "unit": "%",
+       "s": [
+        "Gross profit margin = Gross profit ÷ Sales × 100",
+        "= [[=G|,0]] ÷ [[=S|,0]] × 100 = [[=G/S*100|1]]%"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Current assets are $[[=CA|,0]] and current liabilities are $[[=CL|,0]]. Find the working capital ratio, to 2 decimal places.",
+       "vars": {
+        "CA": [
+         20000,
+         90000,
+         1000
+        ],
+        "CL": [
+         10000,
+         40000,
+         1000
+        ]
+       },
+       "ans": "CA/CL",
+       "dp": 2,
+       "unit": ": 1",
+       "s": [
+        "Working capital ratio = Current assets ÷ Current liabilities",
+        "= [[=CA|,0]] ÷ [[=CL|,0]] = [[=CA/CL|2]] : 1"
+       ]
       }
      ],
      "notes": [
@@ -2145,6 +2556,50 @@
        "h": "Common mistakes",
        "p": [
         "Saying a ratio is “good” or “bad” with no benchmark. Using closing figures where the formula needs an average. Forgetting to add GST to credit sales for Accounts Receivable Turnover. Stating that faster turnover is better without saying why it helps cash flow. Describing the change and stopping before explaining its cause."
+       ]
+      },
+      {
+       "h": "Worksheet: Calculate the indicators",
+       "p": [
+        "Type each missing amount (no $ or commas needed), then press Check. Red cells need another look."
+       ],
+       "fig": [
+        {
+         "t": "sheet",
+         "title": "Calculate the indicators",
+         "head": [
+          "Indicator",
+          "Working",
+          "Answer"
+         ],
+         "rows": [
+          [
+           "Gross profit margin (%)",
+           "$48,000 ÷ $80,000 × 100",
+           {
+            "a": 60,
+            "dp": 1
+           }
+          ],
+          [
+           "Net profit margin (%)",
+           "$21,500 ÷ $80,000 × 100",
+           {
+            "a": 26.875,
+            "dp": 1
+           }
+          ],
+          [
+           "Working capital ratio (: 1)",
+           "$36,000 ÷ $16,000",
+           {
+            "a": 2.25,
+            "dp": 2
+           }
+          ]
+         ],
+         "cap": "Percentages to 1 decimal place, the ratio to 2."
+        }
        ]
       }
      ],

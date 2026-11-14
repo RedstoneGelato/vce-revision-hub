@@ -350,6 +350,43 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Find the mean of these scores: [[a]], [[b]], [[c]], [[d]], [[f]].",
+       "vars": {
+        "a": [
+         10,
+         30,
+         1
+        ],
+        "b": [
+         10,
+         30,
+         1
+        ],
+        "c": [
+         10,
+         30,
+         1
+        ],
+        "d": [
+         10,
+         30,
+         1
+        ],
+        "f": [
+         10,
+         30,
+         1
+        ]
+       },
+       "ans": "(a+b+c+d+f)/5",
+       "dp": 1,
+       "s": [
+        "Add the scores: [[=a+b+c+d+f]].",
+        "Divide by 5: [[=a+b+c+d+f]] ÷ 5 = [[=(a+b+c+d+f)/5|1]]."
+       ]
       }
      ],
      "notes": [
@@ -640,6 +677,34 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "The least squares line is \\(\\text{height} = [[a]] + [[b]] \\times \\text{age}\\). Predict the height (cm) at age [[x]].",
+       "vars": {
+        "a": [
+         70,
+         90,
+         1
+        ],
+        "b": [
+         4,
+         7,
+         0.5
+        ],
+        "x": [
+         3,
+         12,
+         1
+        ]
+       },
+       "ans": "a+b*x",
+       "dp": 1,
+       "unit": "cm",
+       "s": [
+        "Substitute age = [[x]]: [[a]] + [[b]] × [[x]]",
+        "= [[=a+b*x|1]] cm"
+       ]
       }
      ],
      "notes": [
@@ -1015,6 +1080,83 @@
         "\\(u_2 = 2420\\).",
         "\\(u_3 = 2662\\)."
        ]
+      },
+      {
+       "t": "n",
+       "q": "Find the simple interest earned on $[[=P|,0]] at [[r]]% per annum for [[t]] years.",
+       "vars": {
+        "P": [
+         1000,
+         20000,
+         500
+        ],
+        "r": [
+         2,
+         8,
+         0.5
+        ],
+        "t": [
+         1,
+         6,
+         1
+        ]
+       },
+       "ans": "P*r*t/100",
+       "dp": 2,
+       "s": [
+        "\\(I = \\dfrac{Prt}{100} = \\dfrac{[[=P|,0]] \\times [[r]] \\times [[t]]}{100}\\)",
+        "I = $[[=P*r*t/100|,2]]"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "$[[=P|,0]] is invested at [[r]]% per annum compounding monthly. Find its value after [[t]] years, to the nearest cent.",
+       "vars": {
+        "P": [
+         1000,
+         10000,
+         500
+        ],
+        "r": [
+         2,
+         7,
+         0.5
+        ],
+        "t": [
+         1,
+         5,
+         1
+        ]
+       },
+       "ans": "P*(1+r/1200)**(12*t)",
+       "dp": 2,
+       "s": [
+        "Monthly rate: \\(\\dfrac{[[r]]}{12}\\%\\); periods: \\(12 \\times [[t]] = [[=12*t]]\\).",
+        "\\(A = [[=P|,0]]\\left(1 + \\dfrac{[[r]]}{1200}\\right)^{[[=12*t]]}\\) = $[[=P*(1+r/1200)**(12*t)|,2]]"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "A price rises from $[[a]] to $[[b]]. Find the percentage increase, to 1 decimal place.",
+       "vars": {
+        "a": [
+         40,
+         90,
+         5
+        ],
+        "b": [
+         95,
+         150,
+         5
+        ]
+       },
+       "ans": "(b-a)/a*100",
+       "dp": 1,
+       "unit": "%",
+       "s": [
+        "Increase: [[b]] − [[a]] = [[=b-a]].",
+        "Percentage: [[=b-a]] ÷ [[a]] × 100 = [[=(b-a)/a*100|1]]%"
+       ]
       }
      ],
      "notes": [
@@ -1376,6 +1518,38 @@
         "Quantities as a row matrix, prices as a column matrix.",
         "2 × 4 + 3 × 5 = 23."
        ]
+      },
+      {
+       "t": "n",
+       "q": "Find the determinant of \\(\\begin{bmatrix} [[a]] & [[b]] \\\\ [[c]] & [[d]] \\end{bmatrix}\\).",
+       "vars": {
+        "a": [
+         -5,
+         9,
+         1
+        ],
+        "b": [
+         -5,
+         9,
+         1
+        ],
+        "c": [
+         -5,
+         9,
+         1
+        ],
+        "d": [
+         -5,
+         9,
+         1
+        ]
+       },
+       "ans": "a*d-b*c",
+       "dp": 0,
+       "s": [
+        "\\(\\det = ad - bc = ([[a]])([[d]]) - ([[b]])([[c]])\\)",
+        "\\(= [[=a*d]] - ([[=b*c]]) = [[=a*d-b*c]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1650,6 +1824,29 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A connected planar graph has [[v]] vertices and [[e]] edges. How many faces does it have?",
+       "vars": {
+        "v": [
+         4,
+         10,
+         1
+        ],
+        "e": [
+         10,
+         16,
+         1
+        ]
+       },
+       "ans": "2-v+e",
+       "dp": 0,
+       "unit": "faces",
+       "s": [
+        "Euler's formula: \\(v - e + f = 2\\)",
+        "\\(f = 2 - [[v]] + [[e]] = [[=2-v+e]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -2024,6 +2221,34 @@
        ],
        "a": 0,
        "e": "1 m³ = 1000 L."
+      },
+      {
+       "t": "n",
+       "q": "A business has fixed costs of $[[=(p-c)*m|,0]]. Each item costs $[[c]] to make and sells for $[[p]]. How many items must it sell to break even?",
+       "vars": {
+        "p": [
+         20,
+         40,
+         1
+        ],
+        "c": [
+         5,
+         15,
+         1
+        ],
+        "m": [
+         100,
+         600,
+         50
+        ]
+       },
+       "ans": "m",
+       "dp": 0,
+       "unit": "items",
+       "s": [
+        "Each item contributes [[p]] − [[c]] = $[[=p-c]] towards fixed costs.",
+        "Break-even: [[=(p-c)*m|,0]] ÷ [[=p-c]] = [[m]] items."
+       ]
       }
      ],
      "notes": [
@@ -2411,6 +2636,33 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(y\\) varies directly as \\(x^2\\). When \\(x = [[a]]\\), \\(y = [[y]]\\). Find \\(y\\) when \\(x = [[b]]\\).",
+       "vars": {
+        "a": [
+         2,
+         5,
+         1
+        ],
+        "y": [
+         10,
+         80,
+         5
+        ],
+        "b": [
+         3,
+         9,
+         1
+        ]
+       },
+       "ans": "y*(b/a)**2",
+       "dp": 2,
+       "s": [
+        "\\(y = kx^2\\), so \\(k = \\dfrac{[[y]]}{[[=a*a]]} = [[=y/(a*a)|4]]\\).",
+        "\\(y = [[=y/(a*a)|4]] \\times [[=b*b]] = [[=y*(b/a)**2|2]]\\)"
+       ]
       }
      ],
      "map": [

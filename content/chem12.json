@@ -1568,6 +1568,25 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(2\\text{H}_2 + \\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}\\). What mass of water forms from [[m]] g of hydrogen gas? (M(H₂) = 2.0, M(H₂O) = 18.0)",
+       "vars": {
+        "m": [
+         1,
+         12,
+         0.5
+        ]
+       },
+       "ans": "m/2*18",
+       "dp": 1,
+       "unit": "g",
+       "s": [
+        "\\(n(\\text{H}_2) = \\dfrac{[[m]]}{2.0} = [[=m/2|2]]\\) mol",
+        "Mole ratio 2 : 2, so \\(n(\\text{H}_2\\text{O}) = [[=m/2|2]]\\) mol",
+        "\\(m = [[=m/2|2]] \\times 18.0 = [[=m/2*18|1]]\\) g"
+       ]
       }
      ],
      "map": [
@@ -1916,6 +1935,35 @@
         "In 100 g: 75 g C and 25 g H.",
         "Moles: C = 75 ÷ 12.0 = 6.25; H = 25 ÷ 1.0 = 25.",
         "Divide by the smallest: C 1, H 4. Empirical formula CH₄."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the amount, in mol, of [[m]] g of a substance with molar mass [[M]] g mol⁻¹. Give 3 decimal places.",
+       "vars": {
+        "m": [
+         2,
+         60,
+         0.5
+        ],
+        "M": {
+         "pick": [
+          18.0,
+          44.0,
+          58.5,
+          100.1,
+          16.0,
+          98.1,
+          40.0
+         ]
+        }
+       },
+       "ans": "m/M",
+       "dp": 3,
+       "unit": "mol",
+       "s": [
+        "\\(n = \\dfrac{m}{M} = \\dfrac{[[m]]}{[[M]]}\\)",
+        "= [[=m/M|3]] mol"
        ]
       }
      ],
@@ -3190,6 +3238,30 @@
        "q": "Find [H₃O⁺] in a solution with pH 4.5.",
        "a": "\\(3.2 \\times 10^{-5}\\) M",
        "e": "\\(10^{-4.5}\\)."
+      },
+      {
+       "t": "n",
+       "q": "Find the pH of a solution with \\([\\text{H}_3\\text{O}^+] = [[c]]\\) M, to 2 decimal places.",
+       "vars": {
+        "c": {
+         "pick": [
+          0.1,
+          0.05,
+          0.02,
+          0.01,
+          0.005,
+          0.002,
+          0.001,
+          0.0004
+         ]
+        }
+       },
+       "ans": "-log(c)/log(10)",
+       "dp": 2,
+       "s": [
+        "\\(\\text{pH} = -\\log_{10}[\\text{H}_3\\text{O}^+] = -\\log_{10}([[c]])\\)",
+        "= [[=-log(c)/log(10)|2]]"
+       ]
       }
      ],
      "notes": [
@@ -3661,6 +3733,64 @@
        "q": "What is the concentration of chloride ions in 0.30 M AlCl₃?",
        "a": "0.90 M",
        "e": "Each AlCl₃ gives three Cl⁻."
+      },
+      {
+       "t": "n",
+       "q": "[[m]] g of NaCl (M = 58.5 g mol⁻¹) is dissolved to make [[V]] mL of solution. Find the concentration, to 3 decimal places.",
+       "vars": {
+        "m": [
+         1,
+         20,
+         0.5
+        ],
+        "V": [
+         100,
+         500,
+         50
+        ]
+       },
+       "ans": "m/58.5/(V/1000)",
+       "dp": 3,
+       "unit": "M",
+       "s": [
+        "\\(n = \\dfrac{[[m]]}{58.5} = [[=m/58.5|4]]\\) mol",
+        "\\(V = [[V]] \\text{ mL} = [[=V/1000|3]]\\) L",
+        "\\(c = \\dfrac{n}{V} = [[=m/58.5/(V/1000)|3]]\\) M"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "What volume of [[c1]] M stock solution is needed to make [[V2]] mL of [[c2]] M solution? Give 1 decimal place.",
+       "vars": {
+        "c1": {
+         "pick": [
+          1.0,
+          2.0,
+          2.5,
+          5.0
+         ]
+        },
+        "V2": [
+         100,
+         500,
+         50
+        ],
+        "c2": {
+         "pick": [
+          0.1,
+          0.2,
+          0.25,
+          0.5
+         ]
+        }
+       },
+       "ans": "c2*V2/c1",
+       "dp": 1,
+       "unit": "mL",
+       "s": [
+        "\\(c_1V_1 = c_2V_2\\), so \\(V_1 = \\dfrac{c_2V_2}{c_1} = \\dfrac{[[c2]] \\times [[V2]]}{[[c1]]}\\)",
+        "= [[=c2*V2/c1|1]] mL"
+       ]
       }
      ],
      "notes": [
@@ -3967,6 +4097,39 @@
         "2 mol of H₂ needs only 1 mol of O₂.",
         "2 mol of O₂ is available, so O₂ is in excess and H₂ is limiting."
        ]
+      },
+      {
+       "t": "n",
+       "q": "[[V1]] mL of [[c1]] M NaOH exactly neutralises [[V2]] mL of HCl. Find the concentration of the HCl, to 3 decimal places.",
+       "vars": {
+        "V1": [
+         15,
+         30,
+         0.5
+        ],
+        "c1": {
+         "pick": [
+          0.1,
+          0.12,
+          0.15,
+          0.2
+         ]
+        },
+        "V2": {
+         "pick": [
+          20,
+          25
+         ]
+        }
+       },
+       "ans": "c1*V1/V2",
+       "dp": 3,
+       "unit": "M",
+       "s": [
+        "\\(n(\\text{NaOH}) = cV = [[c1]] \\times [[=V1/1000|4]] = [[=c1*V1/1000|5]]\\) mol",
+        "1 : 1 ratio, so \\(n(\\text{HCl}) = [[=c1*V1/1000|5]]\\) mol",
+        "\\(c(\\text{HCl}) = \\dfrac{[[=c1*V1/1000|5]]}{[[=V2/1000|3]]} = [[=c1*V1/V2|3]]\\) M"
+       ]
       }
      ],
      "notes": [
@@ -4227,6 +4390,53 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Find the amount of gas in [[V]] L at SLC (molar volume 24.8 L mol⁻¹), to 3 decimal places.",
+       "vars": {
+        "V": [
+         1,
+         50,
+         0.5
+        ]
+       },
+       "ans": "V/24.8",
+       "dp": 3,
+       "unit": "mol",
+       "s": [
+        "\\(n = \\dfrac{V}{V_m} = \\dfrac{[[V]]}{24.8}\\)",
+        "= [[=V/24.8|3]] mol"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the volume of [[n]] mol of gas at [[T]] °C and [[P]] kPa, using \\(PV = nRT\\) with R = 8.31. Give 2 decimal places.",
+       "vars": {
+        "n": [
+         0.1,
+         3,
+         0.1
+        ],
+        "T": [
+         0,
+         80,
+         5
+        ],
+        "P": [
+         90,
+         200,
+         5
+        ]
+       },
+       "ans": "n*8.31*(T+273)/P",
+       "dp": 2,
+       "unit": "L",
+       "s": [
+        "Convert to kelvin: T = [[T]] + 273 = [[=T+273]] K",
+        "\\(V = \\dfrac{nRT}{P} = \\dfrac{[[n]] \\times 8.31 \\times [[=T+273]]}{[[P]]}\\)",
+        "= [[=n*8.31*(T+273)/P|2]] L (kPa with R = 8.31 gives litres)"
+       ]
       }
      ],
      "notes": [

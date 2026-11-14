@@ -108,6 +108,33 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Scores have mean [[m]] and standard deviation [[s]]. Find the standardised score (z) of a score of [[x]].",
+       "vars": {
+        "m": [
+         50,
+         70,
+         1
+        ],
+        "s": [
+         4,
+         12,
+         1
+        ],
+        "x": [
+         35,
+         90,
+         1
+        ]
+       },
+       "ans": "(x-m)/s",
+       "dp": 2,
+       "s": [
+        "\\(z = \\dfrac{x - \\bar{x}}{s} = \\dfrac{[[x]] - [[m]]}{[[s]]}\\)",
+        "\\(= [[=(x-m)/s|2]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -566,6 +593,25 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "The correlation coefficient is \\(r = [[r]]\\). Find the coefficient of determination as a percentage, to 1 decimal place.",
+       "vars": {
+        "r": [
+         -0.95,
+         0.95,
+         0.05
+        ]
+       },
+       "ans": "r*r*100",
+       "dp": 1,
+       "unit": "%",
+       "e": "Interpretation: that percentage of the variation in the response variable is explained by the variation in the explanatory variable.",
+       "s": [
+        "\\(r^2 = ([[r]])^2 = [[=r*r|4]]\\)",
+        "As a percentage: [[=r*r*100|1]]%"
+       ]
       }
      ],
      "map": [
@@ -716,6 +762,60 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(r = [[r]]\\), \\(s_x = [[sx]]\\) and \\(s_y = [[sy]]\\). Find the slope \\(b\\) of the least squares line, to 3 decimal places.",
+       "vars": {
+        "r": [
+         0.3,
+         0.95,
+         0.05
+        ],
+        "sx": [
+         2,
+         10,
+         1
+        ],
+        "sy": [
+         3,
+         20,
+         1
+        ]
+       },
+       "ans": "r*sy/sx",
+       "dp": 3,
+       "s": [
+        "\\(b = r\\dfrac{s_y}{s_x} = [[r]] \\times \\dfrac{[[sy]]}{[[sx]]}\\)",
+        "\\(= [[=r*sy/sx|3]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "The slope is \\(b = [[b]]\\), \\(\\bar{x} = [[mx]]\\) and \\(\\bar{y} = [[my]]\\). Find the intercept \\(a\\), to 2 decimal places.",
+       "vars": {
+        "b": [
+         0.5,
+         3,
+         0.25
+        ],
+        "mx": [
+         5,
+         20,
+         1
+        ],
+        "my": [
+         30,
+         80,
+         1
+        ]
+       },
+       "ans": "my-b*mx",
+       "dp": 2,
+       "s": [
+        "\\(a = \\bar{y} - b\\bar{x} = [[my]] - [[b]] \\times [[mx]]\\)",
+        "\\(= [[=my-b*mx|2]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1027,6 +1127,28 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "The seasonal index for summer is [[si]]. Summer sales were [[a]]. Find the deseasonalised sales, to 1 decimal place.",
+       "vars": {
+        "si": [
+         0.7,
+         1.4,
+         0.05
+        ],
+        "a": [
+         200,
+         900,
+         10
+        ]
+       },
+       "ans": "a/si",
+       "dp": 1,
+       "s": [
+        "\\(\\text{deseasonalised} = \\dfrac{\\text{actual}}{\\text{seasonal index}} = \\dfrac{[[a]]}{[[si]]}\\)",
+        "= [[=a/si|1]]"
+       ]
       }
      ],
      "notes": [
@@ -1323,6 +1445,60 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A machine bought for $[[=P|,0]] depreciates by [[r]]% per year (reducing balance). Find its value after [[n]] years, to the nearest cent.",
+       "vars": {
+        "P": [
+         5000,
+         40000,
+         1000
+        ],
+        "r": [
+         8,
+         25,
+         1
+        ],
+        "n": [
+         2,
+         6,
+         1
+        ]
+       },
+       "ans": "P*(1-r/100)**n",
+       "dp": 2,
+       "s": [
+        "\\(V_n = (1 - \\tfrac{r}{100})^n V_0 = [[=1-r/100|2]]^{[[n]]} \\times [[=P|,0]]\\)",
+        "= $[[=P*(1-r/100)**n|,2]]"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "A car bought for $[[=P|,0]] depreciates by $[[D]] per year (flat rate). Find its value after [[n]] years.",
+       "vars": {
+        "P": [
+         20000,
+         40000,
+         1000
+        ],
+        "D": [
+         1500,
+         3000,
+         100
+        ],
+        "n": [
+         2,
+         6,
+         1
+        ]
+       },
+       "ans": "P-n*D",
+       "dp": 0,
+       "s": [
+        "\\(V_n = V_0 - nD = [[=P|,0]] - [[n]] \\times [[D]]\\)",
+        "= $[[=P-n*D|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -1653,6 +1829,46 @@
         "Interest for the last month = 1% × 120 = $1.20.",
         "Final payment = 120 + 1.20 = $121.20."
        ]
+      },
+      {
+       "t": "n",
+       "q": "Find the effective annual interest rate for [[r]]% per annum compounding monthly, to 2 decimal places.",
+       "vars": {
+        "r": [
+         3,
+         9,
+         0.5
+        ]
+       },
+       "ans": "((1+r/1200)**12-1)*100",
+       "dp": 2,
+       "unit": "%",
+       "s": [
+        "\\(r_{\\text{eff}} = \\left[\\left(1 + \\dfrac{[[r]]}{1200}\\right)^{12} - 1\\right] \\times 100\\%\\)",
+        "= [[=((1+r/1200)**12-1)*100|2]]%"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "A perpetuity of $[[=P|,0]] earns [[r]]% per annum, compounding monthly. Find the monthly payment it can make forever, to the nearest cent.",
+       "vars": {
+        "P": [
+         100000,
+         800000,
+         50000
+        ],
+        "r": [
+         3,
+         6,
+         0.25
+        ]
+       },
+       "ans": "P*r/1200",
+       "dp": 2,
+       "s": [
+        "Monthly interest rate: [[r]] ÷ 12 = [[=r/12|4]]%",
+        "Payment = [[=P|,0]] × [[=r/1200|6]] = $[[=P*r/1200|,2]]"
+       ]
       }
      ],
      "notes": [
@@ -1948,6 +2164,44 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(T = \\begin{bmatrix} [[a]] & [[=1-b|2]] \\\\ [[=1-a|2]] & [[b]] \\end{bmatrix}\\) and \\(S_0 = \\begin{bmatrix} [[N]] \\\\ [[M]] \\end{bmatrix}\\). Find the top entry of \\(S_1 = TS_0\\).",
+       "vars": {
+        "a": {
+         "pick": [
+          0.6,
+          0.7,
+          0.8,
+          0.9
+         ]
+        },
+        "b": {
+         "pick": [
+          0.6,
+          0.7,
+          0.8,
+          0.9
+         ]
+        },
+        "N": [
+         100,
+         900,
+         100
+        ],
+        "M": [
+         100,
+         900,
+         100
+        ]
+       },
+       "ans": "a*N+(1-b)*M",
+       "dp": 0,
+       "s": [
+        "Top row of \\(T\\) times \\(S_0\\): \\([[a]] \\times [[N]] + [[=1-b|2]] \\times [[M]]\\)",
+        "\\(= [[=a*N]] + [[=(1-b)*M]] = [[=a*N+(1-b)*M]]\\)"
+       ]
       }
      ],
      "notes": [

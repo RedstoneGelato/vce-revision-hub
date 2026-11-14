@@ -1,4 +1,5 @@
 // Lesson figures, drawn in code so they stay sharp and follow the light/dark theme.
+import { parse, check } from "./numeric.js";
 // Types: mind map, function plot, table, flow chart, network graph, and hand-drawn SVG.
 // SVG labels use plain Unicode (x², π): KaTeX cannot typeset inside <svg>.
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -93,4 +94,42 @@ const flow = (d) => frame(`<ol class="flow${d.down ? " down" : ""}">${d.steps.ma
 // Hand-drawn SVG from this site's own content files; style hooks: .s (line), .a (accent line), .fa (accent fill), .fp (panel fill), .t (text).
 const svg = (d) => frame(`<svg class="draw" viewBox="${d.vb || "0 0 540 300"}" role="img" aria-label="${esc(d.alt || d.cap)}">${d.svg}</svg>`, d.cap);
 
-export const figure = (d) => ({ plot, graph, table, flow, svg })[d.t](d);
+// Graph explorer: sliders for y = a·f(n(x − h)) + k, redrawn with plot() on every change.
+const PARENTS = { "x²": "x**2", "x³": "x**3", "1/x": "1/x", "1/x²": "1/x**2", "√x": "sqrt(x)", "|x|": "abs(x)", "eˣ": "exp(x)", "logₑ x": "log(x)", "sin x": "sin(x)", "cos x": "cos(x)" };
+function explore(d) {
+  const box = frame(`<div class="explore"><label>f(x) = <select>${Object.keys(PARENTS).map((k) => `<option${k === (d.f || "x²") ? " selected" : ""}>${k}</option>`).join("")}</select></label>
+    ${[["a", 1, -3, 3], ["n", 1, -3, 3], ["h", 0, -4, 4], ["k", 0, -4, 4]].map(([v, x, lo, hi]) => `<label>${v} <input type="range" data-v="${v}" min="${lo}" max="${hi}" step="0.5" value="${d[v] ?? x}"><output></output></label>`).join("")}
+    <p class="eq"></p><div class="ex-plot"></div><button type="button" class="btn small">Reset</button></div>`, d.cap || "Dashed: the parent function y = f(x). Solid: the transformed graph. a and n stretch (negative values reflect), h and k translate.");
+  const $ = (q) => box.querySelector(q), sel = $("select"), ins = [...box.querySelectorAll("input")];
+  const draw = () => {
+    const v = Object.fromEntries(ins.map((i) => { if (+i.value === 0 && "an".includes(i.dataset.v)) i.value = 0.5; i.nextElementSibling.textContent = i.value; return [i.dataset.v, +i.value]; }));
+    const f = PARENTS[sel.value], g = `${v.a}*((x)=>(${f}))(${v.n}*(x-(${v.h})))+(${v.k})`;
+    const sg = (x) => (x < 0 ? `− ${-x}` : `+ ${x}`), inner = v.h ? `x ${sg(-v.h)}` : "x";
+    const coef = (c) => (c === 1 ? "" : c === -1 ? "−" : String(c).replace("-", "−"));
+    $(".eq").textContent = `y = ${coef(v.a)}${v.a === 1 || v.a === -1 ? "" : "·"}f(${v.n === 1 ? inner : `${coef(v.n)}${v.h ? `(${inner})` : "x"}`})${v.k ? " " + sg(v.k) : ""}`.replace("·f", " f");
+    const p = plot({ x: d.x || [-6, 6], y: d.y || [-6, 6], fns: [{ f, label: "y = f(x)" }, { f: g, label: "transformed" }], segs: [] });
+    p.querySelector("path.curve.s0").classList.add("parent");
+    $(".ex-plot").replaceChildren(p.querySelector("svg"));
+  };
+  box.addEventListener("input", draw);
+  $("button").onclick = () => { ins.forEach((i) => (i.value = "an".includes(i.dataset.v) ? 1 : 0)); draw(); };
+  draw();
+  return box;
+}
+
+// Accounting worksheet: a table where cells given as {a: number} are typed in and checked.
+function sheet(d) {
+  const box = frame(`<div class="fig-table sheet">${d.title ? `<p class="sheet-title">${esc(d.title)}</p>` : ""}<table>${d.head ? `<thead><tr>${d.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead>` : ""}<tbody>${d.rows.map((r) =>
+    `<tr>${r.map((c) => c && typeof c === "object" ? `<td><input inputmode="decimal" autocomplete="off" aria-label="Answer" data-a="${c.a}" data-dp="${c.dp ?? 0}"></td>` : `<td>${esc(c ?? "")}</td>`).join("")}</tr>`).join("")}</tbody></table>
+    <p class="row"><button type="button" class="btn small primary">Check</button><button type="button" class="btn small">Show answers</button><span class="muted small"></span></p></div>`, d.cap);
+  const ins = [...box.querySelectorAll("input")], [chk, showA] = box.querySelectorAll("button"), msg = box.querySelector(".muted");
+  chk.onclick = () => {
+    let ok = 0;
+    for (const i of ins) { const good = check(parse(i.value), +i.dataset.a, +i.dataset.dp); i.classList.toggle("right", good); i.classList.toggle("wrong", !good); ok += good; }
+    msg.textContent = ok === ins.length ? "All correct." : `${ok} of ${ins.length} correct. Red cells need another look.`;
+  };
+  showA.onclick = () => { for (const i of ins) { i.value = (+i.dataset.a).toLocaleString("en-AU", { maximumFractionDigits: +i.dataset.dp }); i.classList.remove("wrong"); } msg.textContent = "Answers filled in. Clear a cell and try it again."; };
+  return box;
+}
+
+export const figure = (d) => ({ plot, graph, table, flow, svg, explore, sheet })[d.t](d);

@@ -120,6 +120,49 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(f(x) = x^2\\) is transformed to \\(y = [[a]]f([[n]](x - [[h]])) + [[k]]\\). Find \\(y\\) when \\(x = [[p]]\\).",
+       "vars": {
+        "a": {
+         "pick": [
+          2,
+          3,
+          -1,
+          -2,
+          0.5
+         ]
+        },
+        "n": {
+         "pick": [
+          1,
+          2,
+          3
+         ]
+        },
+        "h": [
+         -3,
+         3,
+         1
+        ],
+        "k": [
+         -5,
+         5,
+         1
+        ],
+        "p": [
+         -2,
+         4,
+         1
+        ]
+       },
+       "ans": "a*(n*(p-h))**2+k",
+       "dp": 2,
+       "s": [
+        "Inside first: \\([[n]]([[p]] - ([[h]])) = [[=n*(p-h)]]\\).",
+        "\\(f([[=n*(p-h)]]) = [[=(n*(p-h))**2]]\\), so \\(y = [[a]] \\times [[=(n*(p-h))**2]] + ([[k]]) = [[=a*(n*(p-h))**2+k|2]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -248,6 +291,18 @@
        "h": "Common mistakes",
        "p": [
         "Writing \\(f^{-1}(x)\\) as \\(\\dfrac{1}{f(x)}\\). Leaving out the domain of an inverse. Choosing the wrong branch of the square root. Testing \\(\\operatorname{dom} g \\subseteq \\operatorname{dom} f\\) in place of the range condition for a composite."
+       ]
+      },
+      {
+       "h": "Try it: the graph explorer",
+       "p": [
+        "Watch the asymptotes: x = h and y = k move with the translations. The full explorer is also in the menu under Graph explorer."
+       ],
+       "fig": [
+        {
+         "t": "explore",
+         "f": "1/x"
+        }
        ]
       }
      ],
@@ -402,6 +457,23 @@
        "q": "Find the general solution of \\(\\tan x = \\sqrt{3}\\).",
        "a": "\\(x = \\tfrac{\\pi}{3} + n\\pi,\\ n \\in \\mathbb{Z}\\)",
        "e": "Tangent repeats every π."
+      },
+      {
+       "t": "n",
+       "q": "Solve \\(\\log_e(x) = [[c]]\\). Give \\(x\\) to 3 decimal places.",
+       "vars": {
+        "c": [
+         0.5,
+         3,
+         0.5
+        ]
+       },
+       "ans": "exp(c)",
+       "dp": 3,
+       "s": [
+        "Exponentiate both sides: \\(x = e^{[[c]]}\\).",
+        "\\(x = [[=exp(c)|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1054,6 +1126,54 @@
         "\\(\\dfrac{dy}{dx} = 1 - \\dfrac{1}{x} = 0\\) when \\(x = 1\\); \\(y = 1 - 0 = 1\\).",
         "\\(\\dfrac{d^2y}{dx^2} = \\dfrac{1}{x^2} > 0\\), so it is a local minimum."
        ]
+      },
+      {
+       "t": "n",
+       "q": "If \\(f(x) = [[a]]e^{[[k]]x}\\), find \\(f'(1)\\) to 2 decimal places.",
+       "vars": {
+        "a": [
+         1,
+         4,
+         1
+        ],
+        "k": {
+         "pick": [
+          0.5,
+          1,
+          1.5,
+          2
+         ]
+        }
+       },
+       "ans": "a*k*exp(k)",
+       "dp": 2,
+       "s": [
+        "Chain rule: \\(f'(x) = [[=a*k]]e^{[[k]]x}\\).",
+        "\\(f'(1) = [[=a*k]]e^{[[k]]} = [[=a*k*exp(k)|2]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the gradient of the tangent to \\(y = \\log_e([[a]]x)\\) at \\(x = [[p]]\\), to 3 decimal places.",
+       "vars": {
+        "a": [
+         2,
+         9,
+         1
+        ],
+        "p": [
+         1,
+         8,
+         1
+        ]
+       },
+       "ans": "1/p",
+       "dp": 3,
+       "e": "The derivative of log_e(ax) is 1/x for any a > 0.",
+       "s": [
+        "\\(\\dfrac{d}{dx}\\log_e([[a]]x) = \\dfrac{[[a]]}{[[a]]x} = \\dfrac{1}{x}\\)",
+        "At \\(x = [[p]]\\): gradient \\(= [[=1/p|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1367,6 +1487,51 @@
         "Intercepts: \\(x(x - 2) = 0\\), so \\(x = 0\\) and \\(x = 2\\); the curve is below the axis between them.",
         "\\(\\displaystyle\\int_0^2 (x^2 - 2x)\\,dx = \\tfrac{8}{3} - 4 = -\\tfrac{4}{3}\\).",
         "Area is the magnitude: \\(\\tfrac{4}{3}\\)."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the area under \\(y = x^2\\) from \\(x = [[a]]\\) to \\(x = [[b]]\\).",
+       "vars": {
+        "a": [
+         0,
+         2,
+         1
+        ],
+        "b": [
+         3,
+         6,
+         1
+        ]
+       },
+       "ans": "(b**3-a**3)/3",
+       "dp": 2,
+       "unit": "square units",
+       "s": [
+        "\\(\\displaystyle\\int_{[[a]]}^{[[b]]} x^2\\,dx = \\left[\\dfrac{x^3}{3}\\right]_{[[a]]}^{[[b]]}\\)",
+        "\\(= \\dfrac{[[=b**3]] - [[=a**3]]}{3} = [[=(b**3-a**3)/3|2]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Evaluate \\(\\displaystyle\\int_0^{[[b]]} e^{x}\\,dx\\) to 3 decimal places.",
+       "vars": {
+        "b": {
+         "pick": [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          3
+         ]
+        }
+       },
+       "ans": "exp(b)-1",
+       "dp": 3,
+       "s": [
+        "\\(\\left[e^x\\right]_0^{[[b]]} = e^{[[b]]} - e^0\\)",
+        "\\(= [[=exp(b)|3]] - 1 = [[=exp(b)-1|3]]\\)"
        ]
       }
      ],
@@ -1682,6 +1847,59 @@
         "\\(\\Pr(X = 1) = 3 \\times 0.4 \\times 0.6^2 = 0.432\\).",
         "Sum: \\(0.648\\)."
        ]
+      },
+      {
+       "t": "n",
+       "q": "\\(X \\sim \\text{Bi}([[n]], [[p]])\\). Find \\(\\text{Var}(X)\\).",
+       "vars": {
+        "n": [
+         10,
+         40,
+         5
+        ],
+        "p": {
+         "pick": [
+          0.1,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5
+         ]
+        }
+       },
+       "ans": "n*p*(1-p)",
+       "dp": 2,
+       "s": [
+        "\\(\\text{Var}(X) = np(1-p)\\)",
+        "\\(= [[n]] \\times [[p]] \\times [[=1-p]] = [[=n*p*(1-p)|2]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "\\(X \\sim \\text{Bi}([[n]], [[p]])\\). Find \\(\\Pr(X = 0)\\) to 4 decimal places.",
+       "vars": {
+        "n": [
+         4,
+         12,
+         1
+        ],
+        "p": {
+         "pick": [
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3
+         ]
+        }
+       },
+       "ans": "(1-p)**n",
+       "dp": 4,
+       "s": [
+        "\\(\\Pr(X = 0) = \\binom{[[n]]}{0}p^0(1-p)^{[[n]]} = [[=1-p]]^{[[n]]}\\)",
+        "\\(= [[=(1-p)**n|4]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1977,6 +2195,23 @@
        ],
        "a": 0,
        "e": "The area stays 1."
+      },
+      {
+       "t": "n",
+       "q": "\\(f(x) = kx\\) for \\(0 \\le x \\le [[a]]\\) (and 0 elsewhere) is a probability density function. Find \\(k\\) to 4 decimal places.",
+       "vars": {
+        "a": [
+         2,
+         8,
+         1
+        ]
+       },
+       "ans": "2/(a*a)",
+       "dp": 4,
+       "s": [
+        "The total area must be 1: \\(\\displaystyle\\int_0^{[[a]]} kx\\,dx = \\dfrac{k \\times [[=a*a]]}{2} = 1\\)",
+        "\\(k = \\dfrac{2}{[[=a*a]]} = [[=2/(a*a)|4]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -2313,6 +2548,50 @@
        ],
        "a": 0,
        "e": ""
+      },
+      {
+       "t": "n",
+       "q": "The population proportion is \\(p = [[p]]\\). Find the standard deviation of \\(\\hat{P}\\) for samples of size [[n]], to 4 decimal places.",
+       "vars": {
+        "p": [
+         0.1,
+         0.9,
+         0.05
+        ],
+        "n": [
+         50,
+         400,
+         50
+        ]
+       },
+       "ans": "sqrt(p*(1-p)/n)",
+       "dp": 4,
+       "s": [
+        "\\(\\text{sd}(\\hat{P}) = \\sqrt{\\dfrac{p(1-p)}{n}} = \\sqrt{\\dfrac{[[p]] \\times [[=1-p|2]]}{[[n]]}}\\)",
+        "\\(= [[=sqrt(p*(1-p)/n)|4]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "In a sample of [[n]], \\(\\hat{p} = [[p]]\\). Find the margin of error of an approximate 95% confidence interval (use \\(z = 1.96\\)), to 3 decimal places.",
+       "vars": {
+        "p": [
+         0.2,
+         0.8,
+         0.05
+        ],
+        "n": [
+         100,
+         500,
+         50
+        ]
+       },
+       "ans": "1.96*sqrt(p*(1-p)/n)",
+       "dp": 3,
+       "s": [
+        "\\(M = 1.96\\sqrt{\\dfrac{\\hat{p}(1-\\hat{p})}{n}} = 1.96\\sqrt{\\dfrac{[[p]] \\times [[=1-p|2]]}{[[n]]}}\\)",
+        "\\(= [[=1.96*sqrt(p*(1-p)/n)|3]]\\)"
+       ]
       }
      ],
      "notes": [
