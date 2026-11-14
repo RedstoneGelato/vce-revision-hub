@@ -51,6 +51,118 @@
        "q": "State the maximal domain of \\(f(x) = \\log_e(x - 2)\\).",
        "a": "\\((2, \\infty)\\)",
        "e": "Need \\(x - 2 > 0\\)."
+      },
+      {
+       "t": "m",
+       "q": "The maximal domain of \\(f(x) = \\log_e(2x - 4)\\) is…",
+       "o": [
+        "\\((2, \\infty)\\)",
+        "\\([2, \\infty)\\)",
+        "\\((4, \\infty)\\)",
+        "\\(\\mathbb{R}\\)"
+       ],
+       "a": 0,
+       "e": "Need \\(2x - 4 > 0\\)."
+      },
+      {
+       "t": "c",
+       "q": "Find the inverse of \\(f: [1, \\infty) \\to \\mathbb{R},\\ f(x) = (x - 1)^2 + 3\\), with its domain.",
+       "a": "\\(f^{-1}(x) = 1 + \\sqrt{x - 3}\\), domain \\([3, \\infty)\\)",
+       "e": "",
+       "s": [
+        "The range of \\(f\\) is \\([3, \\infty)\\); this becomes the domain of \\(f^{-1}\\).",
+        "Swap: \\(x = (y - 1)^2 + 3\\), so \\((y - 1)^2 = x - 3\\).",
+        "\\(y - 1 = \\pm\\sqrt{x - 3}\\). The range of \\(f^{-1}\\) must be \\([1, \\infty)\\), so take the positive root.",
+        "\\(f^{-1}(x) = 1 + \\sqrt{x - 3}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "\\(f(x) = \\sqrt{x}\\) and \\(g(x) = x - 5\\), each on its maximal domain. Does \\(f \\circ g\\) exist? If not, how could \\(g\\) be restricted?",
+       "a": "No; restrict \\(g\\) to \\([5, \\infty)\\).",
+       "e": "",
+       "s": [
+        "\\(f \\circ g\\) needs \\(\\operatorname{ran} g \\subseteq \\operatorname{dom} f\\).",
+        "\\(\\operatorname{ran} g = \\mathbb{R}\\) but \\(\\operatorname{dom} f = [0, \\infty)\\), so it does not exist.",
+        "Restricting \\(g\\) to \\([5, \\infty)\\) makes its range \\([0, \\infty)\\), and then \\(f(g(x)) = \\sqrt{x - 5}\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The image of \\(y = e^x\\) under a dilation by factor 2 from the \\(y\\)-axis is…",
+       "o": [
+        "\\(y = e^{\\frac{x}{2}}\\)",
+        "\\(y = e^{2x}\\)",
+        "\\(y = 2e^x\\)",
+        "\\(y = \\tfrac{1}{2}e^x\\)"
+       ],
+       "a": 0,
+       "e": "Replace \\(x\\) with \\(\\tfrac{x}{2}\\)."
+      },
+      {
+       "t": "c",
+       "q": "\\(f(x) = 2x + 1\\) and \\(g(x) = x^2\\). Find \\(g(f(x))\\) and \\(f(g(x))\\).",
+       "a": "\\(4x^2 + 4x + 1\\) and \\(2x^2 + 1\\)",
+       "e": "",
+       "s": [
+        "\\(g(f(x)) = (2x + 1)^2 = 4x^2 + 4x + 1\\).",
+        "\\(f(g(x)) = 2x^2 + 1\\). The order matters."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which function is odd, so that f(−x) = −f(x)?",
+       "o": [
+        "\\(x^3\\)",
+        "\\(x^2\\)",
+        "\\(\\cos x\\)",
+        "\\(e^x\\)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(f(x) = x^2\\) is transformed to \\(y = [[a]]f([[n]](x - [[h]])) + [[k]]\\). Find \\(y\\) when \\(x = [[p]]\\).",
+       "vars": {
+        "a": {
+         "pick": [
+          2,
+          3,
+          -1,
+          -2,
+          0.5
+         ]
+        },
+        "n": {
+         "pick": [
+          1,
+          2,
+          3
+         ]
+        },
+        "h": [
+         -3,
+         3,
+         1
+        ],
+        "k": [
+         -5,
+         5,
+         1
+        ],
+        "p": [
+         -2,
+         4,
+         1
+        ]
+       },
+       "ans": "a*(n*(p-h))**2+k",
+       "dp": 2,
+       "s": [
+        "Inside first: \\([[n]]([[p]] - ([[h]])) = [[=n*(p-h)]]\\).",
+        "\\(f([[=n*(p-h)]]) = [[=(n*(p-h))**2]]\\), so \\(y = [[a]] \\times [[=(n*(p-h))**2]] + ([[k]]) = [[=a*(n*(p-h))**2+k|2]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -113,6 +225,46 @@
          "Find the inverse of \\(f(x) = e^x + 2\\) and its domain.",
          "\\(f^{-1}(x) = \\log_e(x - 2)\\), with domain \\((2, \\infty)\\), the range of \\(f\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "f(x) = 2e^(x − 1) + 3 and its inverse f⁻¹(x) = 1 + logₑ((x − 3)/2): reflections in y = x, with asymptotes y = 3 and x = 3.",
+         "x": [
+          -3,
+          9
+         ],
+         "y": [
+          -3,
+          9
+         ],
+         "fns": [
+          {
+           "f": "2*exp(x-1)+3",
+           "label": "f"
+          },
+          {
+           "f": "1+log((x-3)/2)",
+           "label": "f⁻¹",
+           "dom": [
+            3.001,
+            9
+           ]
+          },
+          {
+           "f": "x",
+           "label": "y = x"
+          }
+         ],
+         "dash": [
+          {
+           "y": 3
+          },
+          {
+           "x": 3
+          }
+         ]
+        }
        ]
       },
       {
@@ -140,7 +292,60 @@
        "p": [
         "Writing \\(f^{-1}(x)\\) as \\(\\dfrac{1}{f(x)}\\). Leaving out the domain of an inverse. Choosing the wrong branch of the square root. Testing \\(\\operatorname{dom} g \\subseteq \\operatorname{dom} f\\) in place of the range condition for a composite."
        ]
+      },
+      {
+       "h": "Try it: the graph explorer",
+       "p": [
+        "Watch the asymptotes: x = h and y = k move with the translations. The full explorer is also in the menu under Graph explorer."
+       ],
+       "fig": [
+        {
+         "t": "explore",
+         "f": "1/x"
+        }
+       ]
       }
+     ],
+     "map": [
+      [
+       "Notation",
+       [
+        "f: D → ℝ",
+        "maximal domain",
+        "one-to-one or many-to-one"
+       ]
+      ],
+      [
+       "Composites",
+       [
+        "f(g(x)): apply g first",
+        "needs ran g ⊆ dom f",
+        "domain of g"
+       ]
+      ],
+      [
+       "Inverses",
+       [
+        "swap x and y",
+        "dom f⁻¹ = ran f",
+        "restrict to make one-to-one"
+       ]
+      ],
+      [
+       "Transformations",
+       [
+        "y = a f(b(x − h)) + k",
+        "mappings (x, y) → (x′, y′)"
+       ]
+      ],
+      [
+       "Combining",
+       [
+        "sums and products",
+        "dom f ∩ dom g",
+        "adding ordinates"
+       ]
+      ]
      ]
     },
     {
@@ -178,6 +383,97 @@
        ],
        "a": 0,
        "e": "\\(2x = \\log_e 9 = 2\\log_e 3\\), so \\(x = \\log_e 3\\)."
+      },
+      {
+       "t": "c",
+       "q": "Solve \\(\\log_e x + \\log_e(x - 3) = \\log_e 4\\).",
+       "a": "\\(x = 4\\)",
+       "e": "",
+       "s": [
+        "Combine: \\(\\log_e\\big(x(x - 3)\\big) = \\log_e 4\\), so \\(x^2 - 3x = 4\\).",
+        "\\(x^2 - 3x - 4 = 0\\), so \\((x - 4)(x + 1) = 0\\).",
+        "\\(x = -1\\) is rejected because \\(\\log_e(-1)\\) is undefined. So \\(x = 4\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Find the general solution of \\(2\\sin x = 1\\).",
+       "a": "\\(x = \\tfrac{\\pi}{6} + 2n\\pi\\) or \\(x = \\tfrac{5\\pi}{6} + 2n\\pi\\), \\(n \\in \\mathbb{Z}\\)",
+       "e": "",
+       "s": [
+        "\\(\\sin x = \\tfrac{1}{2}\\); the solutions in \\([0, 2\\pi]\\) are \\(\\tfrac{\\pi}{6}\\) and \\(\\tfrac{5\\pi}{6}\\).",
+        "Sine repeats every \\(2\\pi\\), so add \\(2n\\pi\\) to each."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The solutions of \\(e^{2x} - 5e^x + 6 = 0\\) are…",
+       "o": [
+        "\\(\\log_e 2\\) and \\(\\log_e 3\\)",
+        "2 and 3",
+        "\\(e^2\\) and \\(e^3\\)",
+        "\\(-\\log_e 2\\) and \\(-\\log_e 3\\)"
+       ],
+       "a": 0,
+       "e": "Let \\(u = e^x\\): \\((u - 2)(u - 3) = 0\\)."
+      },
+      {
+       "t": "c",
+       "q": "Solve \\(\\cos 2x = 0\\) for \\(0 \\le x \\le \\pi\\).",
+       "a": "\\(x = \\tfrac{\\pi}{4}\\) or \\(\\tfrac{3\\pi}{4}\\)",
+       "e": "",
+       "s": [
+        "Let \\(\\theta = 2x\\), with \\(0 \\le \\theta \\le 2\\pi\\).",
+        "\\(\\cos\\theta = 0\\) at \\(\\theta = \\tfrac{\\pi}{2}\\) and \\(\\tfrac{3\\pi}{2}\\).",
+        "\\(x = \\tfrac{\\pi}{4}\\) or \\(\\tfrac{3\\pi}{4}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "For which values of \\(m\\) do \\(mx + 3y = 6\\) and \\(2x + (m - 1)y = 4\\) have no solution, and for which infinitely many?",
+       "a": "No solution: \\(m = -2\\). Infinitely many: \\(m = 3\\).",
+       "e": "",
+       "s": [
+        "The lines are parallel when \\(\\dfrac{m}{2} = \\dfrac{3}{m - 1}\\), so \\(m(m - 1) = 6\\), giving \\(m = 3\\) or \\(m = -2\\).",
+        "\\(m = 3\\): the equations are \\(3x + 3y = 6\\) and \\(2x + 2y = 4\\), the same line, so infinitely many solutions.",
+        "\\(m = -2\\): \\(-2x + 3y = 6\\) and \\(2x - 3y = 4\\) are parallel and different, so no solution.",
+        "Every other value of m gives a unique solution."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The exact solution of \\(5e^x = 20\\) is…",
+       "o": [
+        "\\(\\log_e 4\\)",
+        "\\(\\log_e 15\\)",
+        "\\(4\\)",
+        "\\(e^4\\)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the general solution of \\(\\tan x = \\sqrt{3}\\).",
+       "a": "\\(x = \\tfrac{\\pi}{3} + n\\pi,\\ n \\in \\mathbb{Z}\\)",
+       "e": "Tangent repeats every π."
+      },
+      {
+       "t": "n",
+       "q": "Solve \\(\\log_e(x) = [[c]]\\). Give \\(x\\) to 3 decimal places.",
+       "vars": {
+        "c": [
+         0.5,
+         3,
+         0.5
+        ]
+       },
+       "ans": "exp(c)",
+       "dp": 3,
+       "s": [
+        "Exponentiate both sides: \\(x = e^{[[c]]}\\).",
+        "\\(x = [[=exp(c)|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -240,6 +536,56 @@
          "Solve \\(\\sin\\left(x + \\tfrac{\\pi}{6}\\right) = 1\\) for \\(0 \\le x \\le 2\\pi\\).",
          "\\(x + \\tfrac{\\pi}{6} = \\tfrac{\\pi}{2}\\), so \\(x = \\tfrac{\\pi}{3}\\). (\\(\\tfrac{5\\pi}{2}\\) is outside the shifted domain.)"
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "2cos(2x − π/3) = 1 on [0, π]: the curve meets y = 1 at x = 0, π/3 and π.",
+         "x": [
+          0,
+          3.141592653589793
+         ],
+         "y": [
+          -2.5,
+          2.5
+         ],
+         "xpi": true,
+         "xstep": 0.5235987755982988,
+         "ystep": 1,
+         "fns": [
+          {
+           "f": "2*cos(2*x-PI/3)"
+          }
+         ],
+         "dash": [
+          {
+           "y": 1
+          }
+         ],
+         "pts": [
+          [
+           0,
+           1,
+           "0",
+           6,
+           -8
+          ],
+          [
+           1.0471975511965976,
+           1,
+           "π/3",
+           6,
+           -8
+          ],
+          [
+           3.141592653589793,
+           1,
+           "π",
+           -8,
+           -8
+          ]
+         ]
+        }
        ]
       },
       {
@@ -253,6 +599,45 @@
          "For what values of \\(k\\) does \\(x^2 + k = 0\\) have two solutions?",
          "\\(k < 0\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "How many solutions does x² − 4x = k have? Count the meetings of the parabola with the line y = k: two for k > −4, one for k = −4, none for k < −4.",
+         "x": [
+          -1.5,
+          5.5
+         ],
+         "y": [
+          -7,
+          6
+         ],
+         "fns": [
+          {
+           "f": "x*x-4*x"
+          }
+         ],
+         "dash": [
+          {
+           "y": 2
+          },
+          {
+           "y": -4
+          },
+          {
+           "y": -6
+          }
+         ],
+         "pts": [
+          [
+           2,
+           -4,
+           "k = −4: one",
+           8,
+           16
+          ]
+         ]
+        }
        ]
       },
       {
@@ -267,6 +652,45 @@
         "Cancelling a factor that could be zero. Accepting solutions outside the domain of a log. Missing solutions when the domain is not \\([0, 2\\pi]\\). Giving decimals when an exact answer is asked for."
        ]
       }
+     ],
+     "map": [
+      [
+       "Polynomial",
+       [
+        "factorise, null factor law",
+        "hidden quadratics u = x²"
+       ]
+      ],
+      [
+       "Exponential and log",
+       [
+        "log laws",
+        "u = eˣ substitutions",
+        "reject invalid logs"
+       ]
+      ],
+      [
+       "Circular",
+       [
+        "base angle",
+        "adjust the domain",
+        "general solutions + 2nπ"
+       ]
+      ],
+      [
+       "Linear systems",
+       [
+        "unique, none or infinite",
+        "compare gradients"
+       ]
+      ],
+      [
+       "Parameters",
+       [
+        "count solutions graphically",
+        "Δ for tangency"
+       ]
+      ]
      ]
     },
     {
@@ -320,6 +744,54 @@
          "Using bisection on \\(f(x) = x^2 - 2\\) starting with \\([1, 2]\\), what is the interval after one step?",
          "\\(f(1.5) = 0.25 > 0\\) and \\(f(1) < 0\\), so the root is in \\([1, 1.5]\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Bisection on f(x) = x³ − x − 1: midpoints 1.5 (positive), then 1.25 (negative), then 1.375 (positive) close in on the root near 1.32.",
+         "x": [
+          0.8,
+          2.1
+         ],
+         "y": [
+          -1.5,
+          5
+         ],
+         "fns": [
+          {
+           "f": "x**3-x-1"
+          }
+         ],
+         "dash": [
+          {
+           "x": 1
+          },
+          {
+           "x": 2
+          }
+         ],
+         "pts": [
+          [
+           1.5,
+           0.875,
+           "m₁ = 1.5"
+          ],
+          [
+           1.25,
+           -0.297,
+           "m₂ = 1.25",
+           8,
+           18
+          ],
+          [
+           1.375,
+           0.225,
+           "m₃",
+           -10,
+           -10
+          ]
+         ]
+        }
        ]
       },
       {
@@ -335,6 +807,44 @@
          "Apply one step of Newton’s method to \\(f(x) = x^2 - 2\\) from \\(x_0 = 1\\).",
          "\\(x_1 = 1 - \\dfrac{-1}{2} = 1.5\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "One step of Newton’s method from x₀ = 1.5: follow the tangent down to the x-axis, landing at x₁ ≈ 1.348, much closer to the root.",
+         "x": [
+          0.9,
+          2
+         ],
+         "y": [
+          -1.2,
+          4
+         ],
+         "fns": [
+          {
+           "f": "x**3-x-1",
+           "label": "f(x) = x³ − x − 1"
+          },
+          {
+           "f": "5.75*(x-1.5)+0.875",
+           "label": "tangent at x₀"
+          }
+         ],
+         "pts": [
+          [
+           1.5,
+           0.875,
+           "(1.5, 0.875)"
+          ],
+          [
+           1.3478,
+           0,
+           "x₁ ≈ 1.348",
+           -8,
+           18
+          ]
+         ]
+        }
        ]
       },
       {
@@ -399,7 +909,104 @@
        ],
        "a": 0,
        "e": "\\(2 - \\dfrac{-1}{4} = 2.25\\)."
+      },
+      {
+       "t": "c",
+       "q": "Trace: a ← 2; b ← 5; for i from 1 to 3: a ← a + b; b ← a − b; end for; print a, b.",
+       "a": "16, 9",
+       "e": "",
+       "s": [
+        "i = 1: a = 2 + 5 = 7, then b = 7 − 5 = 2.",
+        "i = 2: a = 7 + 2 = 9, then b = 9 − 2 = 7.",
+        "i = 3: a = 9 + 7 = 16, then b = 16 − 7 = 9.",
+        "Output: 16, 9. Each line uses the value just updated above it."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Bisection on \\(f(x) = x^2 - 3\\) starts with \\([1, 2]\\). After one step the interval is…",
+       "o": [
+        "\\([1.5, 2]\\)",
+        "\\([1, 1.5]\\)",
+        "\\([1.25, 1.5]\\)",
+        "\\([1, 2]\\)"
+       ],
+       "a": 0,
+       "e": "\\(f(1.5) = -0.75 < 0\\) and \\(f(2) > 0\\)."
+      },
+      {
+       "t": "c",
+       "q": "Apply one step of Newton’s method to \\(f(x) = x^3 - 2\\) from \\(x_0 = 1\\).",
+       "a": "\\(x_1 = \\tfrac{4}{3} \\approx 1.333\\)",
+       "e": "",
+       "s": [
+        "\\(f(1) = -1\\) and \\(f'(x) = 3x^2\\), so \\(f'(1) = 3\\).",
+        "\\(x_1 = 1 - \\dfrac{-1}{3} = \\tfrac{4}{3}\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "n ← 1; while n < 20: n ← 2 × n; end while; print n. The output is…",
+       "o": [
+        "32",
+        "16",
+        "20",
+        "64"
+       ],
+       "a": 0,
+       "e": "n takes the values 1, 2, 4, 8, 16, 32; the loop stops once n is no longer below 20."
+      },
+      {
+       "t": "c",
+       "q": "Use the trapezium rule with two strips to estimate \\(\\displaystyle\\int_0^2 x^2\\,dx\\). Is it an over- or underestimate?",
+       "a": "3; an overestimate",
+       "e": "",
+       "s": [
+        "Strip width \\(h = 1\\); values \\(f(0) = 0\\), \\(f(1) = 1\\), \\(f(2) = 4\\).",
+        "\\(\\tfrac{h}{2}\\big(f(0) + 2f(1) + f(2)\\big) = \\tfrac{1}{2}(0 + 2 + 4) = 3\\).",
+        "The exact value is \\(\\tfrac{8}{3}\\). The curve is concave up, so the trapezia sit above it: an overestimate."
+       ]
       }
+     ],
+     "map": [
+      [
+       "Pseudocode",
+       [
+        "← assignment",
+        "if / else / end if",
+        "for and while loops"
+       ]
+      ],
+      [
+       "Tracing",
+       [
+        "table of variables",
+        "one line at a time"
+       ]
+      ],
+      [
+       "Bisection",
+       [
+        "sign change brackets a root",
+        "halve and keep the sign change",
+        "reliable but slow"
+       ]
+      ],
+      [
+       "Newton’s method",
+       [
+        "xₙ₊₁ = xₙ − f(xₙ) ÷ f′(xₙ)",
+        "fast near a root",
+        "fails if f′ ≈ 0"
+       ]
+      ],
+      [
+       "Trapezium rule",
+       [
+        "strips of width h",
+        "sum of trapezia"
+       ]
+      ]
      ]
     }
    ]
@@ -455,6 +1062,118 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "\\(\\dfrac{d}{dx}e^{3x} =\\)",
+       "o": [
+        "\\(3e^{3x}\\)",
+        "\\(e^{3x}\\)",
+        "\\(\\tfrac{1}{3}e^{3x}\\)",
+        "\\(3xe^{3x - 1}\\)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Differentiate \\((x^2 + 1)^4\\).",
+       "a": "\\(8x(x^2 + 1)^3\\)",
+       "e": "",
+       "s": [
+        "Chain rule: outside function \\(u^4\\), inside \\(u = x^2 + 1\\).",
+        "\\(4(x^2 + 1)^3 \\times 2x = 8x(x^2 + 1)^3\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Differentiate \\(x^2e^x\\).",
+       "a": "\\(e^x(x^2 + 2x)\\)",
+       "e": "",
+       "s": [
+        "Product rule with \\(u = x^2\\), \\(v = e^x\\): \\(u' = 2x\\), \\(v' = e^x\\).",
+        "\\(2xe^x + x^2e^x = e^x(x^2 + 2x)\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Differentiate \\(\\dfrac{\\log_e x}{x}\\).",
+       "a": "\\(\\dfrac{1 - \\log_e x}{x^2}\\)",
+       "e": "",
+       "s": [
+        "Quotient rule with \\(u = \\log_e x\\), \\(v = x\\): \\(u' = \\tfrac{1}{x}\\), \\(v' = 1\\).",
+        "\\(\\dfrac{v u' - u v'}{v^2} = \\dfrac{x \\cdot \\frac{1}{x} - \\log_e x}{x^2} = \\dfrac{1 - \\log_e x}{x^2}\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "\\(\\dfrac{d}{dx}\\sin(2x) =\\)",
+       "o": [
+        "\\(2\\cos(2x)\\)",
+        "\\(\\cos(2x)\\)",
+        "\\(-2\\cos(2x)\\)",
+        "\\(2\\sin(2x)\\)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find and classify the stationary point of \\(y = x - \\log_e x\\), \\(x > 0\\).",
+       "a": "Local minimum at \\((1, 1)\\)",
+       "e": "",
+       "s": [
+        "\\(\\dfrac{dy}{dx} = 1 - \\dfrac{1}{x} = 0\\) when \\(x = 1\\); \\(y = 1 - 0 = 1\\).",
+        "\\(\\dfrac{d^2y}{dx^2} = \\dfrac{1}{x^2} > 0\\), so it is a local minimum."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "If \\(f(x) = [[a]]e^{[[k]]x}\\), find \\(f'(1)\\) to 2 decimal places.",
+       "vars": {
+        "a": [
+         1,
+         4,
+         1
+        ],
+        "k": {
+         "pick": [
+          0.5,
+          1,
+          1.5,
+          2
+         ]
+        }
+       },
+       "ans": "a*k*exp(k)",
+       "dp": 2,
+       "s": [
+        "Chain rule: \\(f'(x) = [[=a*k]]e^{[[k]]x}\\).",
+        "\\(f'(1) = [[=a*k]]e^{[[k]]} = [[=a*k*exp(k)|2]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the gradient of the tangent to \\(y = \\log_e([[a]]x)\\) at \\(x = [[p]]\\), to 3 decimal places.",
+       "vars": {
+        "a": [
+         2,
+         9,
+         1
+        ],
+        "p": [
+         1,
+         8,
+         1
+        ]
+       },
+       "ans": "1/p",
+       "dp": 3,
+       "e": "The derivative of log_e(ax) is 1/x for any a > 0.",
+       "s": [
+        "\\(\\dfrac{d}{dx}\\log_e([[a]]x) = \\dfrac{[[a]]}{[[a]]x} = \\dfrac{1}{x}\\)",
+        "At \\(x = [[p]]\\): gradient \\(= [[=1/p|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -528,6 +1247,45 @@
          "What is the gradient of the normal to \\(y = x^2\\) at \\(x = 1\\)?",
          "The tangent gradient is 2, so the normal gradient is \\(-\\tfrac{1}{2}\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "At x = e on y = x logₑx: the tangent y = 2x − e and the perpendicular normal y = −x/2 + 3e/2.",
+         "x": [
+          0,
+          5
+         ],
+         "y": [
+          -1.5,
+          6
+         ],
+         "fns": [
+          {
+           "f": "x*log(x)",
+           "label": "y = x logₑ x",
+           "dom": [
+            0.01,
+            5
+           ]
+          },
+          {
+           "f": "2*x-E",
+           "label": "tangent"
+          },
+          {
+           "f": "-x/2+1.5*E",
+           "label": "normal"
+          }
+         ],
+         "pts": [
+          [
+           2.718281828459045,
+           2.718281828459045,
+           "(e, e)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -540,6 +1298,33 @@
          "Differentiate \\(x\\sin x\\).",
          "\\(\\sin x + x\\cos x\\)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "y = xe^(−x) has its only stationary point at (1, 1/e), a local maximum, because dy/dx = e^(−x)(1 − x).",
+         "x": [
+          -0.5,
+          5
+         ],
+         "y": [
+          -0.5,
+          0.6
+         ],
+         "ystep": 0.1,
+         "fns": [
+          {
+           "f": "x*exp(-x)"
+          }
+         ],
+         "pts": [
+          [
+           1,
+           0.368,
+           "max (1, 1/e)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -554,6 +1339,45 @@
         "Forgetting to multiply by the derivative of the inside function. Getting the order wrong in the numerator of the quotient rule. Not justifying the nature of a stationary point. Ignoring endpoints in a restricted domain."
        ]
       }
+     ],
+     "map": [
+      [
+       "Rules",
+       [
+        "chain: outside × inside′",
+        "product: u′v + uv′",
+        "quotient: (vu′ − uv′) ÷ v²"
+       ]
+      ],
+      [
+       "Standard derivatives",
+       [
+        "eᵏˣ, logₑx, sin, cos, tan",
+        "f′ ÷ f for logₑ f"
+       ]
+      ],
+      [
+       "Graphs",
+       [
+        "sign of f′: increasing or decreasing",
+        "f″: concavity",
+        "not differentiable at corners"
+       ]
+      ],
+      [
+       "Applications",
+       [
+        "tangents and normals",
+        "optimisation",
+        "absolute max/min on intervals"
+       ]
+      ],
+      [
+       "Approximation",
+       [
+        "f(x + h) ≈ f(x) + hf′(x)"
+       ]
+      ]
      ]
     },
     {
@@ -591,6 +1415,124 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "\\(\\displaystyle\\int \\cos(3x)\\,dx =\\)",
+       "o": [
+        "\\(\\tfrac{1}{3}\\sin(3x) + c\\)",
+        "\\(3\\sin(3x) + c\\)",
+        "\\(-\\tfrac{1}{3}\\sin(3x) + c\\)",
+        "\\(\\sin(3x) + c\\)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Evaluate \\(\\displaystyle\\int_0^1 e^{2x}\\,dx\\).",
+       "a": "\\(\\tfrac{1}{2}(e^2 - 1) \\approx 3.19\\)",
+       "e": "",
+       "s": [
+        "Antiderivative: \\(\\tfrac{1}{2}e^{2x}\\).",
+        "\\(\\tfrac{1}{2}e^{2} - \\tfrac{1}{2}e^{0} = \\tfrac{1}{2}(e^2 - 1)\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Find the area enclosed between \\(y = x^2\\) and \\(y = 4\\).",
+       "a": "\\(\\tfrac{32}{3}\\) square units",
+       "e": "",
+       "s": [
+        "They meet where \\(x^2 = 4\\): \\(x = \\pm 2\\). The line is on top.",
+        "\\(\\displaystyle\\int_{-2}^{2} (4 - x^2)\\,dx = \\left[4x - \\tfrac{x^3}{3}\\right]_{-2}^{2}\\).",
+        "\\(\\left(8 - \\tfrac{8}{3}\\right) - \\left(-8 + \\tfrac{8}{3}\\right) = \\tfrac{32}{3}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Evaluate \\(\\displaystyle\\int_1^e \\frac{1}{x}\\,dx\\).",
+       "a": "1",
+       "e": "\\(\\big[\\log_e x\\big]_1^e = 1 - 0\\)."
+      },
+      {
+       "t": "m",
+       "q": "If \\(\\displaystyle\\int_0^3 f(x)\\,dx = 5\\), then \\(\\displaystyle\\int_0^3 \\big(2f(x) + 1\\big)\\,dx =\\)",
+       "o": [
+        "13",
+        "11",
+        "10",
+        "16"
+       ],
+       "a": 0,
+       "e": "2 × 5 + 3 = 13."
+      },
+      {
+       "t": "c",
+       "q": "Find the average value of \\(f(x) = \\sin x\\) on \\([0, \\pi]\\).",
+       "a": "\\(\\tfrac{2}{\\pi} \\approx 0.637\\)",
+       "e": "",
+       "s": [
+        "Average value \\(= \\dfrac{1}{\\pi - 0}\\displaystyle\\int_0^{\\pi} \\sin x\\,dx\\).",
+        "\\(\\displaystyle\\int_0^{\\pi} \\sin x\\,dx = \\big[-\\cos x\\big]_0^{\\pi} = 1 + 1 = 2\\).",
+        "Average value \\(= \\tfrac{2}{\\pi}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Find the area enclosed by \\(y = x^2 - 2x\\) and the \\(x\\)-axis.",
+       "a": "\\(\\tfrac{4}{3}\\) square units",
+       "e": "",
+       "s": [
+        "Intercepts: \\(x(x - 2) = 0\\), so \\(x = 0\\) and \\(x = 2\\); the curve is below the axis between them.",
+        "\\(\\displaystyle\\int_0^2 (x^2 - 2x)\\,dx = \\tfrac{8}{3} - 4 = -\\tfrac{4}{3}\\).",
+        "Area is the magnitude: \\(\\tfrac{4}{3}\\)."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the area under \\(y = x^2\\) from \\(x = [[a]]\\) to \\(x = [[b]]\\).",
+       "vars": {
+        "a": [
+         0,
+         2,
+         1
+        ],
+        "b": [
+         3,
+         6,
+         1
+        ]
+       },
+       "ans": "(b**3-a**3)/3",
+       "dp": 2,
+       "unit": "square units",
+       "s": [
+        "\\(\\displaystyle\\int_{[[a]]}^{[[b]]} x^2\\,dx = \\left[\\dfrac{x^3}{3}\\right]_{[[a]]}^{[[b]]}\\)",
+        "\\(= \\dfrac{[[=b**3]] - [[=a**3]]}{3} = [[=(b**3-a**3)/3|2]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Evaluate \\(\\displaystyle\\int_0^{[[b]]} e^{x}\\,dx\\) to 3 decimal places.",
+       "vars": {
+        "b": {
+         "pick": [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          3
+         ]
+        }
+       },
+       "ans": "exp(b)-1",
+       "dp": 3,
+       "s": [
+        "\\(\\left[e^x\\right]_0^{[[b]]} = e^{[[b]]} - e^0\\)",
+        "\\(= [[=exp(b)|3]] - 1 = [[=exp(b)-1|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -652,6 +1594,50 @@
          "Why must an area integral be split where the curves cross?",
          "The signed integral would subtract the region where the ‘top’ function is actually below, giving less than the true area."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Between y = sin x and y = cos x on [0, π]: cos is on top until π/4, then sin. Splitting at the crossing gives total area 2√2.",
+         "x": [
+          0,
+          3.141592653589793
+         ],
+         "y": [
+          -1.2,
+          1.2
+         ],
+         "xpi": true,
+         "xstep": 0.7853981633974483,
+         "ystep": 0.5,
+         "fns": [
+          {
+           "f": "sin(x)",
+           "label": "y = sin x"
+          },
+          {
+           "f": "cos(x)",
+           "label": "y = cos x"
+          }
+         ],
+         "shade": [
+          {
+           "f": 0,
+           "g": 1,
+           "from": 0,
+           "to": 3.141592653589793
+          }
+         ],
+         "pts": [
+          [
+           0.7853981633974483,
+           0.707,
+           "π/4",
+           -6,
+           -12
+          ]
+         ]
+        }
        ]
       },
       {
@@ -672,6 +1658,34 @@
        "p": [
         "A particle has velocity \\(v = t^2 - 4t + 3\\) m/s for \\(0 \\le t \\le 3\\). Velocity is zero at \\(t = 1\\) and \\(t = 3\\), and negative between them.",
         "Displacement \\(= \\displaystyle\\int_0^3 v\\,dt = \\left[\\tfrac{t^3}{3} - 2t^2 + 3t\\right]_0^3 = 0\\): the particle ends where it started. Distance travelled \\(= \\displaystyle\\int_0^1 v\\,dt + \\left|\\int_1^3 v\\,dt\\right| = \\tfrac{4}{3} + \\tfrac{4}{3} = \\tfrac{8}{3}\\) m."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "v = t² − 4t + 3. Area above the axis (0 to 1) is 4/3 and below (1 to 3) is 4/3: displacement 0, distance 8/3.",
+         "x": [
+          0,
+          3.6
+         ],
+         "y": [
+          -1.5,
+          3.5
+         ],
+         "fns": [
+          {
+           "f": "x*x-4*x+3"
+          }
+         ],
+         "shade": [
+          {
+           "f": 0,
+           "from": 0,
+           "to": 3
+          }
+         ],
+         "xl": "t",
+         "yl": "v"
+        }
        ]
       },
       {
@@ -680,6 +1694,44 @@
         "Integrating straight across an \\(x\\)-intercept when an area is required. Leaving out \\(dx\\) or the constant \\(c\\). Dividing by the wrong coefficient. Giving a negative area."
        ]
       }
+     ],
+     "map": [
+      [
+       "Antiderivatives",
+       [
+        "(ax + b)ⁿ, eᵏˣ, 1/x",
+        "sin and cos with kx",
+        "+ c"
+       ]
+      ],
+      [
+       "Definite integral",
+       [
+        "F(b) − F(a)",
+        "signed area"
+       ]
+      ],
+      [
+       "Area",
+       [
+        "split at intercepts",
+        "top minus bottom",
+        "always positive"
+       ]
+      ],
+      [
+       "Applications",
+       [
+        "displacement vs distance",
+        "average value"
+       ]
+      ],
+      [
+       "Recognition",
+       [
+        "differentiate first, then integrate"
+       ]
+      ]
      ]
     }
    ]
@@ -722,6 +1774,132 @@
        "q": "\\(X \\sim \\operatorname{Bi}(10, 0.3)\\). Find \\(\\operatorname{Var}(X)\\).",
        "a": "\\(10 \\times 0.3 \\times 0.7 = 2.1\\)",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "\\(X \\sim \\operatorname{Bi}(4, 0.5)\\). \\(\\Pr(X = 2) =\\)",
+       "o": [
+        "\\(\\tfrac{3}{8}\\)",
+        "\\(\\tfrac{1}{4}\\)",
+        "\\(\\tfrac{1}{2}\\)",
+        "\\(\\tfrac{1}{16}\\)"
+       ],
+       "a": 0,
+       "e": "\\({}^4C_2 \\times 0.5^4 = \\tfrac{6}{16}\\)."
+      },
+      {
+       "t": "c",
+       "q": "\\(X \\sim \\operatorname{Bi}(5, 0.2)\\). Find \\(\\Pr(X \\ge 1)\\).",
+       "a": "0.67232",
+       "e": "",
+       "s": [
+        "\\(\\Pr(X \\ge 1) = 1 - \\Pr(X = 0)\\).",
+        "\\(\\Pr(X = 0) = 0.8^5 = 0.32768\\).",
+        "\\(1 - 0.32768 = 0.67232\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Find the mean, variance and standard deviation of \\(X \\sim \\operatorname{Bi}(20, 0.3)\\).",
+       "a": "Mean 6, variance 4.2, sd \\(\\approx 2.05\\)",
+       "e": "",
+       "s": [
+        "\\(\\operatorname{E}(X) = np = 6\\).",
+        "\\(\\operatorname{Var}(X) = np(1 - p) = 20 \\times 0.3 \\times 0.7 = 4.2\\).",
+        "\\(\\operatorname{sd} = \\sqrt{4.2} \\approx 2.05\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "If \\(\\operatorname{E}(X) = 4\\), then \\(\\operatorname{E}(2X + 3) =\\)",
+       "o": [
+        "11",
+        "8",
+        "7",
+        "14"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "If \\(\\operatorname{Var}(X) = 2\\), find \\(\\operatorname{Var}(3X - 1)\\).",
+       "a": "18",
+       "e": "\\(3^2 \\times 2 = 18\\); subtracting 1 does not change the spread."
+      },
+      {
+       "t": "c",
+       "q": "\\(X\\) takes values 0, 1, 2, 3 with probabilities 0.1, 0.3, \\(a\\), 0.2. Find \\(a\\) and \\(\\operatorname{E}(X)\\).",
+       "a": "\\(a = 0.4\\), \\(\\operatorname{E}(X) = 1.7\\)",
+       "e": "",
+       "s": [
+        "Probabilities add to 1: \\(0.1 + 0.3 + a + 0.2 = 1\\), so \\(a = 0.4\\).",
+        "\\(\\operatorname{E}(X) = 0(0.1) + 1(0.3) + 2(0.4) + 3(0.2) = 1.7\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "\\(X \\sim \\operatorname{Bi}(3, 0.4)\\). Find \\(\\Pr(X \\le 1)\\).",
+       "a": "0.648",
+       "e": "",
+       "s": [
+        "\\(\\Pr(X = 0) = 0.6^3 = 0.216\\).",
+        "\\(\\Pr(X = 1) = 3 \\times 0.4 \\times 0.6^2 = 0.432\\).",
+        "Sum: \\(0.648\\)."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "\\(X \\sim \\text{Bi}([[n]], [[p]])\\). Find \\(\\text{Var}(X)\\).",
+       "vars": {
+        "n": [
+         10,
+         40,
+         5
+        ],
+        "p": {
+         "pick": [
+          0.1,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5
+         ]
+        }
+       },
+       "ans": "n*p*(1-p)",
+       "dp": 2,
+       "s": [
+        "\\(\\text{Var}(X) = np(1-p)\\)",
+        "\\(= [[n]] \\times [[p]] \\times [[=1-p]] = [[=n*p*(1-p)|2]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "\\(X \\sim \\text{Bi}([[n]], [[p]])\\). Find \\(\\Pr(X = 0)\\) to 4 decimal places.",
+       "vars": {
+        "n": [
+         4,
+         12,
+         1
+        ],
+        "p": {
+         "pick": [
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3
+         ]
+        }
+       },
+       "ans": "(1-p)**n",
+       "dp": 4,
+       "s": [
+        "\\(\\Pr(X = 0) = \\binom{[[n]]}{0}p^0(1-p)^{[[n]]} = [[=1-p]]^{[[n]]}\\)",
+        "\\(= [[=(1-p)**n|4]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -757,6 +1935,50 @@
          "Is the number of aces in 5 cards dealt from one deck binomial?",
          "No. The cards are dealt without replacement, so the probability changes from card to card and the trials are not independent."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "The distribution of X ~ Bi(5, 0.2). It is positively skewed because p < 0.5; the mean np = 1.",
+         "x": [
+          -0.6,
+          5.6
+         ],
+         "y": [
+          0,
+          0.45
+         ],
+         "xstep": 1,
+         "ystep": 0.1,
+         "bars": [
+          [
+           0,
+           0.3277
+          ],
+          [
+           1,
+           0.4096
+          ],
+          [
+           2,
+           0.2048
+          ],
+          [
+           3,
+           0.0512
+          ],
+          [
+           4,
+           0.0064
+          ],
+          [
+           5,
+           0.0003
+          ]
+         ],
+         "xl": "x",
+         "yl": "Pr(X = x)"
+        }
        ]
       },
       {
@@ -817,6 +2039,47 @@
         "Reading “at least 2” as \\(\\Pr(X > 2)\\). Forgetting to square the constant in \\(\\operatorname{Var}(aX + b)\\). Using the binomial model when trials are not independent. Rounding \\(n\\) down."
        ]
       }
+     ],
+     "map": [
+      [
+       "Random variables",
+       [
+        "discrete: listable values",
+        "probabilities sum to 1"
+       ]
+      ],
+      [
+       "Mean and variance",
+       [
+        "E(X) = Σ x Pr(X = x)",
+        "Var = E(X²) − [E(X)]²",
+        "E(aX + b), Var(aX + b)"
+       ]
+      ],
+      [
+       "Binomial conditions",
+       [
+        "fixed n trials",
+        "two outcomes",
+        "same p",
+        "independent"
+       ]
+      ],
+      [
+       "Binomial formulas",
+       [
+        "ⁿCₓ pˣ(1 − p)ⁿ⁻ˣ",
+        "mean np",
+        "variance np(1 − p)"
+       ]
+      ],
+      [
+       "Wording",
+       [
+        "at least, more than",
+        "at most, fewer than"
+       ]
+      ]
      ]
     },
     {
@@ -854,6 +2117,101 @@
        "q": "\\(X \\sim N(100, 15^2)\\). Find the \\(z\\)-score of \\(x = 130\\).",
        "a": "\\(z = \\dfrac{130 - 100}{15} = 2\\)",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "For a continuous random variable, \\(\\Pr(X = 2) =\\)",
+       "o": [
+        "0",
+        "\\(f(2)\\)",
+        "1",
+        "It depends on the pdf"
+       ],
+       "a": 0,
+       "e": "A single point has no area."
+      },
+      {
+       "t": "c",
+       "q": "\\(f(x) = kx^2\\) for \\(0 \\le x \\le 3\\), and 0 elsewhere, is a pdf. Find \\(k\\).",
+       "a": "\\(k = \\tfrac{1}{9}\\)",
+       "e": "",
+       "s": [
+        "Total area must be 1: \\(k\\displaystyle\\int_0^3 x^2\\,dx = 1\\).",
+        "\\(\\displaystyle\\int_0^3 x^2\\,dx = 9\\), so \\(9k = 1\\) and \\(k = \\tfrac{1}{9}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "For \\(f(x) = \\tfrac{x^2}{9}\\) on \\([0, 3]\\), find \\(\\Pr(X < 1)\\).",
+       "a": "\\(\\tfrac{1}{27}\\)",
+       "e": "",
+       "s": [
+        "\\(\\displaystyle\\int_0^1 \\frac{x^2}{9}\\,dx = \\left[\\frac{x^3}{27}\\right]_0^1\\).",
+        "\\(= \\tfrac{1}{27}\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "If \\(Z \\sim N(0, 1)\\), then \\(\\Pr(Z < 0) =\\)",
+       "o": [
+        "0.5",
+        "0",
+        "1",
+        "0.68"
+       ],
+       "a": 0,
+       "e": "The normal curve is symmetric about its mean."
+      },
+      {
+       "t": "c",
+       "q": "\\(X \\sim N(70, 5^2)\\). Estimate \\(\\Pr(X > 80)\\) with the 68–95–99.7% rule, then give the more accurate value.",
+       "a": "About 0.025; more accurately 0.0228",
+       "e": "",
+       "s": [
+        "\\(z = \\dfrac{80 - 70}{5} = 2\\).",
+        "About 95% lies within 2 sd, so about 2.5% lies above.",
+        "Technology: \\(\\Pr(Z > 2) \\approx 0.0228\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "\\(X \\sim N(\\mu, 4^2)\\) and \\(\\Pr(X > 30) = 0.1\\). Find \\(\\mu\\).",
+       "a": "\\(\\mu \\approx 24.87\\)",
+       "e": "",
+       "s": [
+        "\\(\\Pr(Z > z) = 0.1\\) gives \\(z \\approx 1.2816\\).",
+        "\\(\\dfrac{30 - \\mu}{4} = 1.2816\\).",
+        "\\(\\mu = 30 - 5.126 \\approx 24.87\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Increasing the standard deviation of a normal distribution makes its curve…",
+       "o": [
+        "wider and lower",
+        "narrower and taller",
+        "move to the right",
+        "skewed"
+       ],
+       "a": 0,
+       "e": "The area stays 1."
+      },
+      {
+       "t": "n",
+       "q": "\\(f(x) = kx\\) for \\(0 \\le x \\le [[a]]\\) (and 0 elsewhere) is a probability density function. Find \\(k\\) to 4 decimal places.",
+       "vars": {
+        "a": [
+         2,
+         8,
+         1
+        ]
+       },
+       "ans": "2/(a*a)",
+       "dp": 4,
+       "s": [
+        "The total area must be 1: \\(\\displaystyle\\int_0^{[[a]]} kx\\,dx = \\dfrac{k \\times [[=a*a]]}{2} = 1\\)",
+        "\\(k = \\dfrac{2}{[[=a*a]]} = [[=2/(a*a)|4]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -876,6 +2234,51 @@
         "\\(f(x) = kx(2 - x)\\) for \\(0 \\le x \\le 2\\), and 0 elsewhere.",
         "Total area 1: \\(k\\displaystyle\\int_0^2 (2x - x^2)\\,dx = k\\left[x^2 - \\tfrac{x^3}{3}\\right]_0^2 = \\tfrac{4k}{3} = 1\\), so \\(k = \\tfrac{3}{4}\\).",
         "\\(\\Pr(X < 1) = \\tfrac{3}{4}\\displaystyle\\int_0^1 (2x - x^2)\\,dx = \\tfrac{3}{4} \\times \\tfrac{2}{3} = \\tfrac{1}{2}\\), as expected from symmetry. \\(\\operatorname{E}(X) = \\displaystyle\\int_0^2 x f(x)\\,dx = 1\\)."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "The pdf f(x) = 2x on [0, 1]. The median 1/√2 ≈ 0.707 splits the area into two halves.",
+         "x": [
+          -0.1,
+          1.2
+         ],
+         "y": [
+          0,
+          2.3
+         ],
+         "ystep": 0.5,
+         "fns": [
+          {
+           "f": "2*x",
+           "dom": [
+            0,
+            1
+           ]
+          }
+         ],
+         "shade": [
+          {
+           "f": 0,
+           "from": 0,
+           "to": 0.7071
+          }
+         ],
+         "dash": [
+          {
+           "x": 0.7071
+          }
+         ],
+         "pts": [
+          [
+           0.7071,
+           1.414,
+           "median ≈ 0.707",
+           -8,
+           -8
+          ]
+         ]
+        }
        ]
       },
       {
@@ -888,6 +2291,44 @@
        "h": "The normal distribution",
        "p": [
         "A normal distribution is symmetric about its mean and described completely by \\(\\mu\\) and \\(\\sigma\\). The mean, median and mode are equal. Changing \\(\\mu\\) translates the curve; increasing \\(\\sigma\\) makes it wider and lower, with the area still 1. The standard normal \\(Z\\) has mean 0 and standard deviation 1; a \\(z\\)-value is the number of standard deviations from the mean."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "The standard normal curve. About 68% of the area lies within one standard deviation of the mean (shaded).",
+         "x": [
+          -3.5,
+          3.5
+         ],
+         "y": [
+          0,
+          0.45
+         ],
+         "xstep": 1,
+         "ystep": 0.1,
+         "fns": [
+          {
+           "f": "exp(-x*x/2)/sqrt(2*PI)"
+          }
+         ],
+         "shade": [
+          {
+           "f": 0,
+           "from": -1,
+           "to": 1
+          }
+         ],
+         "pts": [
+          [
+           0,
+           0.18,
+           "68%",
+           -12,
+           0
+          ]
+         ],
+         "xl": "z"
+        }
        ]
       },
       {
@@ -947,6 +2388,45 @@
         "Writing the variance where the standard deviation is needed, or the reverse, in \\(N(\\mu, \\sigma^2)\\). Forgetting the pdf is zero outside its interval. Treating the height of the pdf as a probability. Giving the wrong tail."
        ]
       }
+     ],
+     "map": [
+      [
+       "Probability density",
+       [
+        "f(x) ≥ 0",
+        "total area 1",
+        "Pr(a < X < b) = area"
+       ]
+      ],
+      [
+       "Summaries",
+       [
+        "E(X) = ∫ x f(x) dx",
+        "median: area 0.5",
+        "variance E(X²) − μ²"
+       ]
+      ],
+      [
+       "Normal distribution",
+       [
+        "symmetric about μ",
+        "68–95–99.7%",
+        "Z = (X − μ) ÷ σ"
+       ]
+      ],
+      [
+       "Inverse problems",
+       [
+        "find x from a probability",
+        "find μ or σ"
+       ]
+      ],
+      [
+       "Conditional",
+       [
+        "divide by the given event’s probability"
+       ]
+      ]
      ]
     },
     {
@@ -978,6 +2458,140 @@
        ],
        "a": 2,
        "e": "The margin is proportional to \\(\\dfrac{1}{\\sqrt{n}}\\), and \\(\\sqrt{4} = 2\\)."
+      },
+      {
+       "t": "m",
+       "q": "36 of a random sample of 120 people own a bike. The sample proportion is…",
+       "o": [
+        "0.3",
+        "0.36",
+        "0.12",
+        "3.33"
+       ],
+       "a": 0,
+       "e": "36 ÷ 120."
+      },
+      {
+       "t": "c",
+       "q": "Find \\(\\operatorname{sd}(\\hat{P})\\) when \\(p = 0.2\\) and \\(n = 400\\).",
+       "a": "0.02",
+       "e": "",
+       "s": [
+        "\\(\\sqrt{\\dfrac{0.2 \\times 0.8}{400}} = \\sqrt{0.0004}\\).",
+        "= 0.02."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "\\(\\hat{p} = 0.3\\) from a sample of 120. Find an approximate 95% confidence interval for \\(p\\).",
+       "a": "(0.218, 0.382)",
+       "e": "",
+       "s": [
+        "Margin of error \\(= 1.96\\sqrt{\\dfrac{0.3 \\times 0.7}{120}} \\approx 1.96 \\times 0.0418 \\approx 0.082\\).",
+        "Interval: \\(0.3 \\pm 0.082\\), so about \\((0.218, 0.382)\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which change gives a wider confidence interval (other things equal)?",
+       "o": [
+        "A higher confidence level",
+        "A larger sample",
+        "A lower confidence level",
+        "A smaller margin of error"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How large a sample is needed for a 95% margin of error of at most 0.03, using \\(\\hat{p} = 0.5\\)?",
+       "a": "1068",
+       "e": "",
+       "s": [
+        "\\(1.96\\sqrt{\\dfrac{0.25}{n}} \\le 0.03\\).",
+        "\\(n \\ge \\dfrac{1.96^2 \\times 0.25}{0.03^2} \\approx 1067.1\\).",
+        "Round up: n = 1068."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which is the correct interpretation of a 95% confidence interval?",
+       "o": [
+        "About 95% of intervals made this way contain the true proportion",
+        "There is a 95% chance the sample proportion is in the interval",
+        "95% of the population lies in the interval",
+        "The true proportion changes 95% of the time"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "In a population \\(p = 0.25\\). For random samples of 10, find \\(\\Pr(\\hat{P} \\ge 0.3)\\) exactly.",
+       "a": "\\(\\approx 0.474\\)",
+       "e": "",
+       "s": [
+        "\\(\\hat{P} \\ge 0.3\\) means \\(X \\ge 3\\), where \\(X \\sim \\operatorname{Bi}(10, 0.25)\\).",
+        "\\(\\Pr(X \\ge 3) = 1 - \\Pr(X \\le 2)\\).",
+        "\\(\\Pr(X \\le 2) \\approx 0.0563 + 0.1877 + 0.2816 = 0.5256\\), so the answer is about 0.474."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The expected value of the sample proportion \\(\\hat{P}\\) is…",
+       "o": [
+        "\\(p\\)",
+        "\\(\\hat{p}\\)",
+        "\\(np\\)",
+        "\\(\\sqrt{\\tfrac{p(1 - p)}{n}}\\)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "The population proportion is \\(p = [[p]]\\). Find the standard deviation of \\(\\hat{P}\\) for samples of size [[n]], to 4 decimal places.",
+       "vars": {
+        "p": [
+         0.1,
+         0.9,
+         0.05
+        ],
+        "n": [
+         50,
+         400,
+         50
+        ]
+       },
+       "ans": "sqrt(p*(1-p)/n)",
+       "dp": 4,
+       "s": [
+        "\\(\\text{sd}(\\hat{P}) = \\sqrt{\\dfrac{p(1-p)}{n}} = \\sqrt{\\dfrac{[[p]] \\times [[=1-p|2]]}{[[n]]}}\\)",
+        "\\(= [[=sqrt(p*(1-p)/n)|4]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "In a sample of [[n]], \\(\\hat{p} = [[p]]\\). Find the margin of error of an approximate 95% confidence interval (use \\(z = 1.96\\)), to 3 decimal places.",
+       "vars": {
+        "p": [
+         0.2,
+         0.8,
+         0.05
+        ],
+        "n": [
+         100,
+         500,
+         50
+        ]
+       },
+       "ans": "1.96*sqrt(p*(1-p)/n)",
+       "dp": 3,
+       "s": [
+        "\\(M = 1.96\\sqrt{\\dfrac{\\hat{p}(1-\\hat{p})}{n}} = 1.96\\sqrt{\\dfrac{[[p]] \\times [[=1-p|2]]}{[[n]]}}\\)",
+        "\\(= [[=1.96*sqrt(p*(1-p)/n)|3]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -1026,6 +2640,14 @@
        "p": [
         "The population proportion is fixed; the interval is what varies. If many samples were taken and an interval calculated from each, about 95% of those intervals would contain \\(p\\). It is not correct to say there is a 95% probability that \\(p\\) lies in one particular calculated interval.",
         "The sample proportion is always the midpoint of the interval, which lets you recover \\(\\hat{p}\\) and \\(n\\) from a given interval."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Ten 95% confidence intervals from ten different samples. The true p (dashed) is fixed; most intervals capture it, and the one drawn faint misses.",
+         "svg": "<line class=\"s\" x1=\"270\" y1=\"15\" x2=\"270\" y2=\"285\" stroke-dasharray=\"6 5\"/><text class=\"t\" x=\"278\" y=\"290\">true p</text><line class=\"a\" x1=\"190\" y1=\"25\" x2=\"330\" y2=\"25\"/><circle class=\"pt\" cx=\"260.0\" cy=\"25\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"220\" y1=\"51\" x2=\"360\" y2=\"51\"/><circle class=\"pt\" cx=\"290.0\" cy=\"51\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"150\" y1=\"77\" x2=\"290\" y2=\"77\"/><circle class=\"pt\" cx=\"220.0\" cy=\"77\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"230\" y1=\"103\" x2=\"370\" y2=\"103\"/><circle class=\"pt\" cx=\"300.0\" cy=\"103\" r=\"4\" fill=\"currentColor\"/><line class=\"s\" x1=\"300\" y1=\"129\" x2=\"440\" y2=\"129\" opacity=\".35\"/><circle class=\"pt\" cx=\"370.0\" cy=\"129\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"200\" y1=\"155\" x2=\"340\" y2=\"155\"/><circle class=\"pt\" cx=\"270.0\" cy=\"155\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"175\" y1=\"181\" x2=\"315\" y2=\"181\"/><circle class=\"pt\" cx=\"245.0\" cy=\"181\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"240\" y1=\"207\" x2=\"380\" y2=\"207\"/><circle class=\"pt\" cx=\"310.0\" cy=\"207\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"160\" y1=\"233\" x2=\"300\" y2=\"233\"/><circle class=\"pt\" cx=\"230.0\" cy=\"233\" r=\"4\" fill=\"currentColor\"/><line class=\"a\" x1=\"210\" y1=\"259\" x2=\"350\" y2=\"259\"/><circle class=\"pt\" cx=\"280.0\" cy=\"259\" r=\"4\" fill=\"currentColor\"/>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -1044,6 +2666,78 @@
          "What happens to the standard deviation of the sample proportion when the sample size is multiplied by 4?",
          "It halves, because the sample size appears under a square root."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Distribution of the sample proportion for samples of 20 when p = 0.4: centred on 0.4 and roughly bell-shaped.",
+         "x": [
+          0,
+          0.8
+         ],
+         "y": [
+          0,
+          0.2
+         ],
+         "xstep": 0.1,
+         "ystep": 0.05,
+         "bw": 0.04,
+         "bars": [
+          [
+           0.1,
+           0.0031
+          ],
+          [
+           0.15,
+           0.0123
+          ],
+          [
+           0.2,
+           0.035
+          ],
+          [
+           0.25,
+           0.0746
+          ],
+          [
+           0.3,
+           0.1244
+          ],
+          [
+           0.35,
+           0.1659
+          ],
+          [
+           0.4,
+           0.1797
+          ],
+          [
+           0.45,
+           0.1597
+          ],
+          [
+           0.5,
+           0.1171
+          ],
+          [
+           0.55,
+           0.071
+          ],
+          [
+           0.6,
+           0.0355
+          ],
+          [
+           0.65,
+           0.0146
+          ],
+          [
+           0.7,
+           0.0049
+          ]
+         ],
+         "xl": "p̂"
+        }
        ]
       },
       {
@@ -1072,6 +2766,45 @@
         "Using \\(p\\) in place of \\(\\hat{p}\\) in a confidence interval. Saying a wider interval is more precise. Treating \\(\\hat{P}\\) as continuous for a small sample. Rounding a sample size down."
        ]
       }
+     ],
+     "map": [
+      [
+       "Population vs sample",
+       [
+        "p is fixed",
+        "p̂ varies by sample"
+       ]
+      ],
+      [
+       "Sampling distribution",
+       [
+        "centred on p",
+        "sd √(p(1 − p) ÷ n)",
+        "≈ normal for large n"
+       ]
+      ],
+      [
+       "Confidence intervals",
+       [
+        "p̂ ± 1.96 sd",
+        "margin of error",
+        "higher confidence: wider"
+       ]
+      ],
+      [
+       "Interpretation",
+       [
+        "95% of such intervals contain p",
+        "not a probability about one interval"
+       ]
+      ],
+      [
+       "Sample size",
+       [
+        "quadruple n to halve the sd",
+        "round n up"
+       ]
+      ]
      ]
     },
     {
@@ -1125,6 +2858,34 @@
        "p": [
         "Define functions once and reuse them, to avoid retyping errors. Restrict domains when solving. Use the graph to check the number and approximate values of solutions. For multiple-choice questions, technology can test each option, but be wary of time.",
         "Write the mathematics you entered. “\\(\\Pr(X > 120)\\) where \\(X \\sim N(100, 15^2)\\) is 0.0912” earns method marks that “0.0912” alone does not."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "A routine for every technology-active question.",
+         "steps": [
+          [
+           "Read",
+           "underline what is asked"
+          ],
+          [
+           "Define",
+           "enter functions once"
+          ],
+          [
+           "Solve",
+           "with the domain restriction"
+          ],
+          [
+           "Check",
+           "graph the result"
+          ],
+          [
+           "Write",
+           "the set-up, then the answer"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1194,7 +2955,97 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A question asks for the exact solution of \\(2^x = 7\\). The best answer is…",
+       "o": [
+        "\\(\\log_2 7\\)",
+        "2.807",
+        "2.81",
+        "about 3"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What does “hence, or otherwise” allow?",
+       "a": "Any valid method, although using the previous part is usually quickest.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which examination is completed without technology?",
+       "o": [
+        "Examination 1",
+        "Examination 2",
+        "Both",
+        "Neither"
+       ],
+       "a": 0,
+       "e": "Check the current specifications each year."
+      },
+      {
+       "t": "c",
+       "q": "When you use CAS in an extended-response answer, what should you write down?",
+       "a": "The equation or expression you entered (with any domain restriction) and the result, rounded as the question requires.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "1.2345 correct to two decimal places is…",
+       "o": [
+        "1.23",
+        "1.24",
+        "1.2",
+        "1.235"
+       ],
+       "a": 0,
+       "e": ""
       }
+     ],
+     "map": [
+      [
+       "Examination 1",
+       [
+        "no technology",
+        "exact values",
+        "core skills by hand"
+       ]
+      ],
+      [
+       "Examination 2",
+       [
+        "technology and bound reference",
+        "multiple choice",
+        "extended response"
+       ]
+      ],
+      [
+       "Communication",
+       [
+        "show working",
+        "domains and units",
+        "exact unless told"
+       ]
+      ],
+      [
+       "Question words",
+       [
+        "show that",
+        "hence",
+        "hence or otherwise"
+       ]
+      ],
+      [
+       "Revision",
+       [
+        "past papers, timed",
+        "examination reports",
+        "log every lost mark"
+       ]
+      ]
      ]
     }
    ]

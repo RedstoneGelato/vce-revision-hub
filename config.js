@@ -14,3 +14,7 @@ export const firebaseConfig = null;
 // Firebase user IDs (UIDs) allowed to open the Tutor page and see every student's progress.
 // Sign in once, open the Progress page, copy "Your account ID" here, and add it to firestore.rules too.
 export const tutorUids = [];
+
+// "Report a problem" opens a new GitHub issue on this repo, pre-filled with the page and question.
+// Reporters need a free GitHub account. The link adds ?title=...&body=..., which is GitHub's format.
+export const reportUrl = "https://github.com/RedstoneGelato/vce-revision-hub/issues/new";

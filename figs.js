@@ -1,0 +1,135 @@
+// Lesson figures, drawn in code so they stay sharp and follow the light/dark theme.
+import { parse, check } from "./numeric.js";
+// Types: mind map, function plot, table, flow chart, network graph, and hand-drawn SVG.
+// SVG labels use plain Unicode (x², π): KaTeX cannot typeset inside <svg>.
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const wrap = (s, n) => String(s).split(" ").reduce((out, w) => {
+  const last = out[out.length - 1];
+  if (last && (last + " " + w).length > n) out.push(w); else out[out.length - 1] = last ? last + " " + w : w;
+  return out;
+}, [""]);
+const node = (html) => { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstChild; };
+const frame = (inner, cap, cls = "") => node(`<figure class="fig ${cls}">${inner}${cap ? `<figcaption>${esc(cap)}</figcaption>` : ""}</figure>`);
+let uid = 0;
+
+// Mind map: wide screens get a two-sided SVG; narrow screens get the same content as an outline (see .mm-list in CSS).
+export function mindmap(title, branches) {
+  const W = 900, BW = 260, LH = 19, half = Math.ceil(branches.length / 2);
+  const boxes = branches.map(([h, leaves], i) => {
+    const lines = [...wrap(h, 26).map((l) => [l, 1]), ...leaves.flatMap((x) => wrap("• " + x, 31).map((l, j) => [l, 0, j > 0]))];
+    return { lines, h: 18 + lines.length * LH, side: i < half ? 0 : 1 };
+  });
+  const col = (s) => boxes.filter((b) => b.side === s), colH = (s) => col(s).reduce((a, b) => a + b.h + 16, -16);
+  const H = Math.max(colH(0), colH(1), 160) + 40, cx = W / 2, cy = H / 2, tl = wrap(title, 20);
+  for (const s of [0, 1]) { let y = (H - colH(s)) / 2; for (const b of col(s)) { b.x = s ? W - 20 - BW : 20; b.y = y; y += b.h + 16; } }
+  const links = boxes.map((b) => { const sx = cx + (b.side ? 115 : -115), ex = b.side ? b.x : b.x + BW, ey = b.y + b.h / 2;
+    return `<path class="mm-link" d="M${sx},${cy} C${(sx + ex) / 2},${cy} ${(sx + ex) / 2},${ey} ${ex},${ey}"/>`; }).join("");
+  const cards = boxes.map((b) => `<rect class="mm-box" x="${b.x}" y="${b.y}" width="${BW}" height="${b.h}" rx="10"/><text>${b.lines.map(([l, head, indent], i) =>
+    `<tspan x="${b.x + (indent ? 24 : 12)}" y="${b.y + 22 + i * LH}"${head ? ' class="mm-h"' : ""}>${esc(l)}</tspan>`).join("")}</text>`).join("");
+  const centre = `<ellipse class="mm-centre" cx="${cx}" cy="${cy}" rx="125" ry="${24 + tl.length * 11}"/><text class="mm-title" text-anchor="middle">${tl.map((l, i) =>
+    `<tspan x="${cx}" y="${cy + 6 + (i - (tl.length - 1) / 2) * 21}">${esc(l)}</tspan>`).join("")}</text>`;
+  const svg = `<svg class="mm-svg" viewBox="0 0 ${W} ${H}" aria-hidden="true">${links}${centre}${cards}</svg>`;
+  const list = `<ul class="mm-list" aria-label="Mind map: ${esc(title)}">${branches.map(([h, l]) => `<li><b>${esc(h)}</b><ul>${l.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></li>`).join("")}</ul>`;
+  return frame(svg + list, "", "mindmap");
+}
+
+// Function plot. Expressions are JavaScript using x and Math names; they come only from this site's own content files.
+function plot(d) {
+  const W = 540, H = 360, P = 40, [x0, x1] = d.x, [y0, y1] = d.y, id = "c" + ++uid;
+  const X = (x) => P + ((x - x0) / (x1 - x0)) * (W - 2 * P), Y = (y) => H - P - ((y - y0) / (y1 - y0)) * (H - 2 * P);
+  const fn = (e) => new Function("x", `const {sin,cos,tan,exp,log,sqrt,abs,PI,E}=Math; return (${e});`);
+  const step = (lo, hi) => [0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000].find((s) => (hi - lo) / s <= 10) || (hi - lo) / 10;
+  const sx = d.xstep || step(x0, x1), sy = d.ystep || step(y0, y1), fmt = (v) => +v.toFixed(4);
+  const xl = (v) => (d.xpi ? (({ 0: "0", 1: "π" })[fmt(v / Math.PI)] ?? `${fmt(v / Math.PI)}π`) : fmt(v));
+  let g = "", o = "";
+  for (let v = Math.ceil(x0 / sx) * sx; v <= x1 + 1e-9; v += sx) {
+    g += `<line class="grid" x1="${X(v)}" y1="${P}" x2="${X(v)}" y2="${H - P}"/>`;
+    if (Math.abs(v) > 1e-9) o += `<text class="tick" x="${X(v)}" y="${Y(Math.min(Math.max(0, y0), y1)) + 16}" text-anchor="middle">${xl(v)}</text>`;
+  }
+  for (let v = Math.ceil(y0 / sy) * sy; v <= y1 + 1e-9; v += sy) {
+    g += `<line class="grid" x1="${P}" y1="${Y(v)}" x2="${W - P}" y2="${Y(v)}"/>`;
+    if (Math.abs(v) > 1e-9) o += `<text class="tick" x="${X(Math.min(Math.max(0, x0), x1)) - 6}" y="${Y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
+  }
+  const ax = Y(Math.min(Math.max(0, y0), y1)), ay = X(Math.min(Math.max(0, x0), x1));
+  g += `<line class="axis" x1="${P}" y1="${ax}" x2="${W - P}" y2="${ax}"/><line class="axis" x1="${ay}" y1="${P}" x2="${ay}" y2="${H - P}"/>`;
+  if (d.xl) o += `<text class="axl" x="${W - P}" y="${ax - 8}" text-anchor="end">${esc(d.xl)}</text>`;
+  if (d.yl) o += `<text class="axl" x="${ay + 8}" y="${P - 10}">${esc(d.yl)}</text>`;
+  const curve = (f, a = x0, b = x1) => { let path = "", pen = false, prev;
+    for (let i = 0; i <= 400; i++) { const x = a + ((b - a) * i) / 400, y = f(x);
+      if (!isFinite(y) || (pen && Math.abs(y - prev) > (y1 - y0))) { pen = false; prev = y; continue; }
+      path += `${pen ? "L" : "M"}${X(x).toFixed(1)},${Y(y).toFixed(1)}`; pen = true; prev = y; }
+    return path; };
+  const fs = (d.fns || []).map((o) => ({ ...o, f: fn(o.f) }));
+  for (const s of d.shade || []) { const f = fs[s.f].f, h = s.g != null ? fs[s.g].f : () => 0, n = 120, xs = Array.from({ length: n + 1 }, (_, i) => s.from + ((s.to - s.from) * i) / n);
+    g += `<polygon class="shade" points="${[...xs.map((x) => `${X(x)},${Y(f(x))}`), ...xs.reverse().map((x) => `${X(x)},${Y(h(x))}`)].join(" ")}"/>`; }
+  for (const [x, h] of d.bars || []) { const w = (d.bw || 0.7) / 2; g += `<rect class="col" x="${X(x - w)}" y="${Y(Math.max(h, 0))}" width="${X(x + w) - X(x - w)}" height="${Math.abs(Y(h) - Y(0))}"/>`; }
+  for (const [ax, ay, bx, by] of d.segs || []) g += `<line class="dash" x1="${X(ax)}" y1="${Y(ay)}" x2="${X(bx)}" y2="${Y(by)}"/>`;
+  for (const a of d.dash || []) g += a.x != null ? `<line class="dash" x1="${X(a.x)}" y1="${P}" x2="${X(a.x)}" y2="${H - P}"/>` : `<line class="dash" x1="${P}" y1="${Y(a.y)}" x2="${W - P}" y2="${Y(a.y)}"/>`;
+  fs.forEach((o, i) => { g += `<path class="curve s${i % 3}" d="${curve(o.f, ...(o.dom || []))}"/>`; });
+  (d.lines || []).forEach((l, i) => { g += `<polyline class="curve s${(fs.length + i) % 3}" points="${l.pts.map(([x, y]) => `${X(x)},${Y(y)}`).join(" ")}"/>`; });
+  for (const [x, y] of d.dots || []) g += `<circle class="dot" cx="${X(x)}" cy="${Y(y)}" r="3.5"/>`;
+  for (const [x, y, t, dx = 8, dy = -8] of d.pts || []) o += `<circle class="pt" cx="${X(x)}" cy="${Y(y)}" r="4.5"/><text class="lbl" x="${X(x) + dx}" y="${Y(y) + dy}"${dx < 0 ? ' text-anchor="end"' : ""}>${esc(t)}</text>`;
+  const key = [...fs, ...(d.lines || [])].map((o, i) => o.label ? `<tspan class="k${i % 3}" x="${W - P - 4}" dy="${i ? 18 : 0}">${esc(o.label)}</tspan>` : "").join("");
+  if (key) o += `<text class="lbl" x="${W - P - 4}" y="${P + 14}" text-anchor="end">${key}</text>`;
+  return frame(`<svg class="plot" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(d.alt || d.cap || "Graph")}"><clipPath id="${id}"><rect x="${P}" y="${P}" width="${W - 2 * P}" height="${H - 2 * P}"/></clipPath><g clip-path="url(#${id})">${g}</g>${o}</svg>`, d.cap);
+}
+
+// Network graph: nodes on a 0–100 grid; edges [a, b, weight]; hl lists highlighted edges as "AB".
+function graph(d) {
+  const W = 520, H = 320, X = (v) => 30 + v * 4.6, Y = (v) => 30 + v * 2.6, hl = new Set(d.hl || []), id = "a" + ++uid;
+  const R = (k) => Math.max(17, 6 + 4.2 * k.length), at = (k) => [X(d.nodes[k][0]), Y(d.nodes[k][1])];
+  const edges = (d.edges || []).map(([a, b, w]) => {
+    const [ax, ay] = at(a), [bx, by] = at(b), len = Math.hypot(bx - ax, by - ay), ux = (bx - ax) / len, uy = (by - ay) / len, on = hl.has(a + b) || hl.has(b + a);
+    const mx = (ax + bx) / 2, my = (ay + by) / 2; // edges stop at the circle edge so arrowheads stay visible
+    return `<line class="edge${on ? " on" : ""}" x1="${ax + ux * R(a)}" y1="${ay + uy * R(a)}" x2="${bx - ux * R(b)}" y2="${by - uy * R(b)}"${d.dir ? ` marker-end="url(#${id})"` : ""}/>` +
+      (w != null ? `<rect class="wbg" x="${mx - 5 - 4 * String(w).length}" y="${my - 11}" width="${10 + 8 * String(w).length}" height="20" rx="5"/><text class="lbl" x="${mx}" y="${my + 4}" text-anchor="middle">${esc(w)}</text>` : ""); }).join("");
+  const nodes = Object.keys(d.nodes).map((k) => { const [x, y] = at(k); return `<circle class="vtx" cx="${x}" cy="${y}" r="${R(k)}"/><text class="vlbl" x="${x}" y="${y + 5}" text-anchor="middle">${esc(k)}</text>`; }).join("");
+  const defs = d.dir ? `<defs><marker id="${id}" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrow" d="M0,0L10,5L0,10z"/></marker></defs>` : "";
+  return frame(`<svg class="net" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(d.alt || d.cap || "Network")}">${defs}${edges}${nodes}</svg>`, d.cap);
+}
+
+const table = (d) => frame(`<div class="fig-table"><table>${d.head ? `<thead><tr>${d.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead>` : ""}<tbody>${d.rows.map((r) =>
+  `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`, d.cap);
+const flow = (d) => frame(`<ol class="flow${d.down ? " down" : ""}">${d.steps.map((s) => Array.isArray(s) ? `<li><b>${esc(s[0])}</b><span>${esc(s[1])}</span></li>` : `<li><b>${esc(s)}</b></li>`).join("")}</ol>`, d.cap);
+// Hand-drawn SVG from this site's own content files; style hooks: .s (line), .a (accent line), .fa (accent fill), .fp (panel fill), .t (text).
+const svg = (d) => frame(`<svg class="draw" viewBox="${d.vb || "0 0 540 300"}" role="img" aria-label="${esc(d.alt || d.cap)}">${d.svg}</svg>`, d.cap);
+
+// Graph explorer: sliders for y = a·f(n(x − h)) + k, redrawn with plot() on every change.
+const PARENTS = { "x²": "x**2", "x³": "x**3", "1/x": "1/x", "1/x²": "1/x**2", "√x": "sqrt(x)", "|x|": "abs(x)", "eˣ": "exp(x)", "logₑ x": "log(x)", "sin x": "sin(x)", "cos x": "cos(x)" };
+function explore(d) {
+  const box = frame(`<div class="explore"><label>f(x) = <select>${Object.keys(PARENTS).map((k) => `<option${k === (d.f || "x²") ? " selected" : ""}>${k}</option>`).join("")}</select></label>
+    ${[["a", 1, -3, 3], ["n", 1, -3, 3], ["h", 0, -4, 4], ["k", 0, -4, 4]].map(([v, x, lo, hi]) => `<label>${v} <input type="range" data-v="${v}" min="${lo}" max="${hi}" step="0.5" value="${d[v] ?? x}"><output></output></label>`).join("")}
+    <p class="eq"></p><div class="ex-plot"></div><button type="button" class="btn small">Reset</button></div>`, d.cap || "Dashed: the parent function y = f(x). Solid: the transformed graph. a and n stretch (negative values reflect), h and k translate.");
+  const $ = (q) => box.querySelector(q), sel = $("select"), ins = [...box.querySelectorAll("input")];
+  const draw = () => {
+    const v = Object.fromEntries(ins.map((i) => { if (+i.value === 0 && "an".includes(i.dataset.v)) i.value = 0.5; i.nextElementSibling.textContent = i.value; return [i.dataset.v, +i.value]; }));
+    const f = PARENTS[sel.value], g = `${v.a}*((x)=>(${f}))(${v.n}*(x-(${v.h})))+(${v.k})`;
+    const sg = (x) => (x < 0 ? `− ${-x}` : `+ ${x}`), inner = v.h ? `x ${sg(-v.h)}` : "x";
+    const coef = (c) => (c === 1 ? "" : c === -1 ? "−" : String(c).replace("-", "−"));
+    $(".eq").textContent = `y = ${coef(v.a)}${v.a === 1 || v.a === -1 ? "" : "·"}f(${v.n === 1 ? inner : `${coef(v.n)}${v.h ? `(${inner})` : "x"}`})${v.k ? " " + sg(v.k) : ""}`.replace("·f", " f");
+    const p = plot({ x: d.x || [-6, 6], y: d.y || [-6, 6], fns: [{ f, label: "y = f(x)" }, { f: g, label: "transformed" }], segs: [] });
+    p.querySelector("path.curve.s0").classList.add("parent");
+    $(".ex-plot").replaceChildren(p.querySelector("svg"));
+  };
+  box.addEventListener("input", draw);
+  $("button").onclick = () => { ins.forEach((i) => (i.value = "an".includes(i.dataset.v) ? 1 : 0)); draw(); };
+  draw();
+  return box;
+}
+
+// Accounting worksheet: a table where cells given as {a: number} are typed in and checked.
+function sheet(d) {
+  const box = frame(`<div class="fig-table sheet">${d.title ? `<p class="sheet-title">${esc(d.title)}</p>` : ""}<table>${d.head ? `<thead><tr>${d.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead>` : ""}<tbody>${d.rows.map((r) =>
+    `<tr>${r.map((c) => c && typeof c === "object" ? `<td><input inputmode="decimal" autocomplete="off" aria-label="Answer" data-a="${c.a}" data-dp="${c.dp ?? 0}"></td>` : `<td>${esc(c ?? "")}</td>`).join("")}</tr>`).join("")}</tbody></table>
+    <p class="row"><button type="button" class="btn small primary">Check</button><button type="button" class="btn small">Show answers</button><span class="muted small"></span></p></div>`, d.cap);
+  const ins = [...box.querySelectorAll("input")], [chk, showA] = box.querySelectorAll("button"), msg = box.querySelector(".muted");
+  chk.onclick = () => {
+    let ok = 0;
+    for (const i of ins) { const good = check(parse(i.value), +i.dataset.a, +i.dataset.dp); i.classList.toggle("right", good); i.classList.toggle("wrong", !good); ok += good; }
+    msg.textContent = ok === ins.length ? "All correct." : `${ok} of ${ins.length} correct. Red cells need another look.`;
+  };
+  showA.onclick = () => { for (const i of ins) { i.value = (+i.dataset.a).toLocaleString("en-AU", { maximumFractionDigits: +i.dataset.dp }); i.classList.remove("wrong"); } msg.textContent = "Answers filled in. Clear a cell and try it again."; };
+  return box;
+}
+
+export const figure = (d) => ({ plot, graph, table, flow, svg, explore, sheet })[d.t](d);

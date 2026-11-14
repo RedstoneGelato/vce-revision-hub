@@ -1,4 +1,6 @@
-import { firebaseConfig, tutorUids } from "./config.js";
+import { firebaseConfig, tutorUids, reportUrl } from "./config.js";
+import { figure, mindmap } from "./figs.js";
+import { variant, parse, check } from "./numeric.js";
 
 /* ---------- subjects ---------- */
 const SUBJECTS = [
@@ -25,10 +27,33 @@ let mathFrame = 0;
 const mathObserver = new MutationObserver(() => { if (!mathFrame) mathFrame = requestAnimationFrame(typeset); });
 function typeset() {
   mathFrame = 0;
-  if (!window.renderMathInElement) return; // CDN blocked: the raw LaTeX stays readable
   mathObserver.disconnect();
-  window.renderMathInElement(app, MATH_OPTS);
+  glossify(); // before typesetting, so maths inside definitions is rendered too
+  if (window.renderMathInElement) window.renderMathInElement(app, MATH_OPTS); // CDN blocked: the raw LaTeX stays readable
   mathObserver.observe(app, { childList: true, subtree: true });
+}
+// The first mention of each glossary term in a lesson becomes a button that shows its definition.
+function glossify() {
+  const m = location.hash.match(/^#t-([a-z]+)\d\d-/), roots = m ? [...app.querySelectorAll(".learn:not([data-gl])")] : [];
+  if (!roots.length) return;
+  const terms = glossary.filter((g) => g.s === m[1]).sort((a, b) => b.t.length - a.t.length).map((g) => ({ ...g,
+    re: new RegExp(`(^|[^\\p{L}])(${g.t.replace(/\s*\(.*\)$/, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:s|es)?)(?![\\p{L}])`, "iu") }));
+  const used = new Set();
+  for (const root of roots) {
+    root.dataset.gl = "1";
+    // skip maths (its delimiters must stay intact for KaTeX), figures, headings and controls
+    const walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: (n) =>
+      n.parentElement.closest(".katex, svg, a, button, h1, h2, h3, summary, .fig, .gl-def, .toc, .mindmap") || /\\[([]/.test(n.data) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+    const nodes = []; while (walk.nextNode()) nodes.push(walk.currentNode);
+    for (let node of nodes) for (const g of terms) {
+      const hit = !used.has(g.t) && node.data.match(g.re); if (!hit) continue;
+      used.add(g.t);
+      const word = node.splitText(hit.index + hit[1].length), rest = word.splitText(hit[2].length);
+      const def = el("span", { class: "gl-def", hidden: true }, el("b", {}, g.t + ": "), g.d);
+      const btn = el("button", { class: "gl", "aria-expanded": "false", title: "Show definition", onclick: () => { def.hidden = !def.hidden; btn.setAttribute("aria-expanded", String(!def.hidden)); } }, word.data);
+      word.replaceWith(btn, def); node = rest; // shortcut: only text after a matched term is scanned for further terms; fine for first-mention highlighting
+    }
+  }
 }
 mathObserver.observe(app, { childList: true, subtree: true });
 function el(tag, attrs = {}, ...kids) {
@@ -175,7 +200,20 @@ const isLearned = (uk, tid) => (state.learned?.[`${uk}.${tid}`] || 0) > 0;
 const topicQids = (uk, t) => t.qs.map((_, i) => `${uk}.${t.id}.${i}`);
 
 /* ---------- quiz engine ---------- */
-function runQuiz(qids, title, back) {
+// shortcut: GitHub issue params only; a Google Form or mailto: link needs its own parameter names.
+const reportLink = (what, detail) => el("a", { class: "report small", target: "_blank", rel: "noopener",
+  href: `${reportUrl}?title=${encodeURIComponent("Problem: " + what)}&body=${encodeURIComponent(`Page: ${location.href}\n${detail}\n\nWhat is wrong:\n`)}` }, "Report a problem");
+// Worked solution revealed one step at a time, so a student can stop as soon as they see the way forward.
+function stepsFor(q) {
+  if (!q.s?.length) return null;
+  const list = el("ol", { class: "steps" }); let k = 0;
+  const btn = el("button", { class: "btn small", onclick: () => {
+    list.append(el("li", {}, q.s[k++]));
+    if (k < q.s.length) btn.textContent = `Next step (${k + 1} of ${q.s.length})`; else btn.remove();
+  } }, `Show worked solution (step 1 of ${q.s.length})`);
+  return el("div", { class: "solution" }, list, btn);
+}
+function runQuiz(qids, title, back, onDone) {
   if (!qids.length) { show(el("div", { class: "panel" }, el("p", {}, "No questions to show."), back && el("a", { class: "btn", href: back }, "Back"))); return; }
   let i = 0, right = 0; const missed = [];
   const box = el("section", { class: "quiz", "aria-live": "polite" });
@@ -185,12 +223,28 @@ function runQuiz(qids, title, back) {
     box.className = "quiz " + s.cls;
     const bar = el("div", { class: "progress-line" }, el("i", { style: `width:${(100 * i) / qids.length}%` }));
     const head = el("div", { class: "qhead" }, el("span", {}, el("span", { class: "qtag" }, ukLabel(uk)), " · ", topic.title), el("span", {}, `${i + 1} of ${qids.length}`));
-    const qtext = el("p", { class: "qtext" }, q.q);
+    const r = q.t === "n" ? variant(q) : null; // typed answer: fresh numbers each attempt
+    const qtext = el("p", { class: "qtext" }, r ? r.q : q.q);
     const area = el("div", { class: "opts" });
     const after = el("div", { class: "row" });
     const next = () => { i++; i < qids.length ? showQ() : done(); };
     const nextBtn = el("button", { class: "btn primary", onclick: next }, i + 1 < qids.length ? "Next question" : "See results");
-    if (q.t === "m") {
+    if (r) {
+      const input = el("input", { type: "text", inputmode: "decimal", class: "num", "aria-label": "Your answer", autocomplete: "off" });
+      const submit = el("button", { class: "btn primary", onclick: () => {
+        const x = parse(input.value);
+        if (Number.isNaN(x)) { toast("Type a number, for example 12.5"); return input.focus(); }
+        const ok = check(x, r.ans, r.dp), shown = r.ans.toLocaleString("en-AU", { minimumFractionDigits: r.dp, maximumFractionDigits: r.dp }) + (r.unit ? " " + r.unit : "");
+        input.disabled = true; submit.remove(); ok ? right++ : missed.push(qid); grade(qid, ok);
+        const fb = el("div", { class: "feedback " + (ok ? "ok" : "no") }, el("b", {}, ok ? `Correct: ${shown}.` : `Not quite. The answer is ${shown}.`), r.e);
+        area.after(fb); fb.after(stepsFor(r) || "");
+        after.append(nextBtn, reportLink(topic.title, `Question ${qid}: ${r.q}`)); nextBtn.focus();
+      } }, "Check");
+      input.addEventListener("keydown", (ev) => { if (ev.key === "Enter") submit.click(); });
+      area.append(el("label", { class: "numrow" }, input, r.unit ? el("span", {}, r.unit) : null),
+        el("p", { class: "muted small" }, `Type a number${r.dp ? `, to ${r.dp} decimal place${r.dp > 1 ? "s" : ""}` : ", rounded to a whole number"}. The numbers change on every attempt.`));
+      after.append(submit); setTimeout(() => input.focus());
+    } else if (q.t === "m") {
       const order = shuffle([...q.o.keys()]); // options shuffled each time so the answer letter can't be memorised
       const correctPos = order.indexOf(q.a);
       order.forEach((k, pos) => area.append(el("button", { class: "opt", onclick: (ev) => {
@@ -198,17 +252,18 @@ function runQuiz(qids, title, back) {
         [...area.children].forEach((b, j) => { b.disabled = true; if (j === correctPos) b.classList.add("right"); });
         if (!ok) { ev.currentTarget.classList.add("wrong"); missed.push(qid); } else right++;
         grade(qid, ok);
-        area.after(el("div", { class: "feedback " + (ok ? "ok" : "no") }, el("b", {}, ok ? "Correct." : `Not quite. The answer is ${"ABCDEF"[correctPos]}: ${q.o[q.a]}`), q.e || ""));
-        after.append(nextBtn); nextBtn.focus();
+        const fb = el("div", { class: "feedback " + (ok ? "ok" : "no") }, el("b", {}, ok ? "Correct." : `Not quite. The answer is ${"ABCDEF"[correctPos]}: ${q.o[q.a]}`), q.e || "");
+        area.after(fb); fb.after(stepsFor(q) || "");
+        after.append(nextBtn, reportLink(topic.title, `Question ${qid}: ${q.q}`)); nextBtn.focus();
       } }, el("span", { class: "k" }, "ABCDEF"[pos]), el("span", {}, q.o[k]))));
     } else {
       const reveal = el("button", { class: "btn primary", onclick: () => {
         reveal.remove();
-        area.append(el("div", { class: "answer" }, el("b", {}, "Answer: "), q.a, q.e ? "\n\n" + q.e : ""));
+        area.append(el("div", { class: "answer" }, el("b", {}, "Answer: "), q.a, q.e ? "\n\n" + q.e : ""), stepsFor(q));
         const rate = (ok) => () => { ok ? right++ : missed.push(qid); grade(qid, ok); next(); };
         after.append(el("span", { class: "muted small" }, "Did you get it?"),
           el("button", { class: "btn", onclick: rate(false) }, "Not yet"),
-          el("button", { class: "btn primary", onclick: rate(true) }, "Got it"));
+          el("button", { class: "btn primary", onclick: rate(true) }, "Got it"), reportLink(topic.title, `Question ${qid}: ${q.q}`));
         after.querySelector(".btn.primary").focus();
       } }, "Show answer");
       area.append(el("p", { class: "muted small" }, "Answer in your head or on paper first."));
@@ -221,6 +276,7 @@ function runQuiz(qids, title, back) {
     box.className = "quiz";
     box.replaceChildren(
       el("h2", {}, `${right} of ${qids.length} correct (${pct}%)`),
+      onDone ? onDone(missed) : null,
       el("p", { class: "muted" }, missed.length ? `${missed.length} question${missed.length > 1 ? "s" : ""} went to your error log and will come back in review tomorrow.` : "Clean sweep. These questions will come back later so they stick."),
       el("div", { class: "row" },
         missed.length ? el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...missed]), "Retry missed questions", back) }, "Retry the ones I missed") : null,
@@ -240,6 +296,18 @@ function viewHome() {
   // resume at the last lesson opened, or the next unlearned one after it
   const lm = (state.last || "").match(/^t-(\w+?\d\d)-(.+)$/), ll = lm && content[lm[1]] ? lessons(lm[1]) : [], li = ll.findIndex((t) => t.id === lm?.[2]);
   const rt = li < 0 ? null : ll.slice(li).find((t) => !isLearned(lm[1], t.id)) || ll[li], resume = rt && { uk: lm[1], t: rt };
+  // What to do next: due reviews, the lesson in progress, and the topics with the most open errors
+  const weak = Object.values(openErrors().reduce((acc, [, e]) => { const { uk, topic } = QS[e.qid]; (acc[uk + topic.id] ||= { uk, topic, qids: [] }).qids.push(e.qid); return acc; }, {}))
+    .sort((a, b) => b.qids.length - a.qids.length).slice(0, 3);
+  const todo = [
+    due && [`Review ${due} question${due > 1 ? "s" : ""} due today`, "Five to ten minutes. It is the fastest way to remember more.", el("a", { class: "btn small primary", href: "#review" }, "Start review")],
+    resume && [`Continue: ${resume.t.title}`, ukLabel(resume.uk), el("a", { class: "btn small", href: `#t-${resume.uk}-${resume.t.id}` }, "Continue lesson")],
+    ...weak.map((w) => [`Weak spot: ${w.topic.title}`, `${ukLabel(w.uk)} · ${w.qids.length} missed question${w.qids.length > 1 ? "s" : ""}`,
+      el("span", { class: "row" }, el("a", { class: "btn small", href: `#t-${w.uk}-${w.topic.id}` }, "Re-read"), el("button", { class: "btn small", onclick: () => runQuiz(shuffle([...w.qids]), `Weak spot: ${w.topic.title}`, "#home") }, "Retry these"))]),
+  ].filter(Boolean);
+  const next = el("section", { class: "panel" }, el("h2", {}, "What to do next"), todo.length
+    ? el("ol", { class: "todo" }, todo.map(([h, sub, act]) => el("li", {}, el("div", {}, el("b", {}, h), el("br"), el("span", { class: "muted small" }, sub)), act)))
+    : el("p", {}, "Choose a subject below, open a unit, and press “Where should I start?” to find your first lesson."));
   const grid = el("div", { class: "grid" }, SUBJECTS.map((s) => el("article", { class: "subj " + s.cls },
     el("h2", {}, s.name),
     el("div", { class: "units" }, UNITS.map((u) => {
@@ -258,8 +326,7 @@ function viewHome() {
         el("div", { class: "stat" }, el("b", {}, Object.keys(state.cards).length), el("span", {}, "Questions tried")),
         el("div", { class: "stat" }, el("b", {}, mastered), el("span", {}, "Mastered")),
         el("div", { class: "stat" }, el("b", {}, errs), el("span", {}, "Open errors")))),
-    resume ? el("div", { class: "panel" }, el("p", {}, `Pick up where you left off: ${ukLabel(resume.uk)}, ${resume.t.title}.`), el("div", { class: "row" }, el("a", { class: "btn primary", href: `#t-${resume.uk}-${resume.t.id}` }, "Continue lesson"))) : null,
-    due ? el("div", { class: "panel" }, el("p", {}, `You have ${due} question${due > 1 ? "s" : ""} due for review. Start there: it is the fastest way to remember more.`), el("div", { class: "row" }, el("a", { class: "btn primary", href: "#review" }, "Start review"))) : null,
+    next,
     grid,
     el("div", { class: "notice" }, "How to use this: 1. Read a topic’s key points and explain them out loud. 2. Practise its questions without notes. 3. Do Review every day (5–10 minutes). 4. Before an exam, use Mixed quiz across topics and redo your error log."));
 }
@@ -273,13 +340,30 @@ function viewUnit(uk) {
       el("div", {}, el("h1", {}, `${s.name} ${unitName(uk)}`), el("p", { class: "muted" }, `${nLearned}/${ls.length} lessons learned · ${st.total} questions · ${st.seen} tried · ${st.mastered} mastered${st.acc != null ? ` · ${st.acc}% correct so far` : ""}`)),
       el("div", { class: "row" },
         nextUp ? el("a", { class: "btn primary", href: `#t-${uk}-${nextUp.id}` }, `${nLearned ? "Continue" : "Start"}: ${nextUp.title}`) : null,
-        el("button", { class: "btn" + (nextUp ? "" : " primary"), onclick: () => runQuiz(shuffle([...all]).slice(0, 20), `${s.name} ${unitName(uk)}: mixed 20`, `#u-${uk}`) }, "Quiz 20 from this unit"))),
+        el("button", { class: "btn" + (nextUp ? "" : " primary"), onclick: () => runQuiz(shuffle([...all]).slice(0, 20), `${s.name} ${unitName(uk)}: mixed 20`, `#u-${uk}`) }, "Quiz 20 from this unit"),
+        el("button", { class: "btn", onclick: () => placement(uk) }, "Where should I start?"))),
     ...c.aos.map((a) => el("section", { class: "aos " + s.cls }, el("h3", {}, a.name),
       el("div", { class: "topics" }, a.topics.map((t) => {
         const ids = topicQids(uk, t), n = ids.filter((q) => state.cards[q]).length, m = ids.filter((q) => state.cards[q]?.b >= 3).length, d = ids.filter((q) => state.cards[q] && state.cards[q].due <= today()).length;
         return el("a", { class: "topic", href: `#t-${uk}-${t.id}` }, el("span", { class: "muted small" }, `Lesson ${ls.indexOf(t) + 1}${isLearned(uk, t.id) ? " · Learned ✓" : ""}`), el("h3", {}, t.title),
           el("div", { class: "meta" }, el("span", {}, `${n}/${ids.length} tried · ${m} mastered${d ? ` · ${d} due` : ""}`), pbar(n, m, ids.length)));
       })))));
+}
+// One question from each lesson, in teaching order; the first lesson missed is where to start.
+const upTo = (n) => (n === 1 ? "lesson 1" : `lessons 1–${n}`);
+function placement(uk) {
+  const ls = lessons(uk), pick = ls.map((t) => { const ids = topicQids(uk, t); return ids[Math.floor(Math.random() * ids.length)]; });
+  runQuiz(pick, `${ukLabel(uk)}: where should I start?`, `#u-${uk}`, (missed) => {
+    const wrong = ls.filter((_, k) => missed.includes(pick[k])), first = ls.indexOf(wrong[0]);
+    const markTo = (n) => el("button", { class: "btn", onclick: (ev) => { ls.slice(0, n).forEach((t) => { (state.learned ||= {})[`${uk}.${t.id}`] = Date.now(); }); save(); ev.currentTarget.replaceWith(el("span", { class: "muted small" }, "Marked as learned.")); } },
+      n === ls.length ? "Mark every lesson as learned" : `Mark ${upTo(n)} as learned`);
+    if (!wrong.length) return el("div", { class: "panel" }, el("p", {}, "You answered a question from every lesson correctly. Use “Quiz 20 from this unit” and Review to keep it fresh, and dip into any lesson you feel less sure about."), el("div", { class: "row" }, markTo(ls.length)));
+    return el("div", { class: "panel" },
+      el("p", {}, el("b", {}, `Start at Lesson ${first + 1}: ${wrong[0].title}.`), first ? ` You got the question${first > 1 ? "s" : ""} from ${upTo(first)} right, so you can skim ${first > 1 ? "those" : "it"}.` : " It is the first lesson, so start at the beginning."),
+      wrong.length > 1 ? el("p", { class: "muted small" }, "Also missed: " + wrong.slice(1).map((t) => `Lesson ${ls.indexOf(t) + 1} (${t.title})`).join(", ") + ".") : null,
+      el("p", { class: "muted small" }, "This is one question per lesson, so treat it as a guide, not a verdict."),
+      el("div", { class: "row" }, el("a", { class: "btn primary", href: `#t-${uk}-${wrong[0].id}` }, `Go to Lesson ${first + 1}`), first ? markTo(first) : null));
+  });
 }
 function viewTopic(uk, tid) {
   const c = content[uk]; const all = c ? lessons(uk) : [], i = all.findIndex((x) => x.id === tid), t = all[i]; if (!t) return notFound();
@@ -292,14 +376,16 @@ function viewTopic(uk, tid) {
     el("div", {}, el("p", { class: "muted small" }, `Lesson ${i + 1} of ${all.length}${learned ? " · Learned ✓" : ""}`), el("h1", {}, t.title)),
     el("section", { class: "learn " + s.cls }, el("h2", {}, "Key points"), el("ul", {}, t.points.map((p) => el("li", {}, p))),
       t.explain ? el("p", { class: "explain" }, el("b", {}, "Explain it back: "), t.explain) : null),
+    t.map ? el("section", { class: "learn " + s.cls }, el("h2", {}, "Mind map"), mindmap(t.title, t.map)) : null,
     t.notes ? el("section", { class: "learn notes " + s.cls }, el("h2", {}, "Lesson"),
       heads.length > 3 ? el("nav", { class: "toc", "aria-label": "In this lesson" }, heads.map((h) => el("button", { class: "btn small", onclick: () => { h.scrollIntoView({ behavior: "smooth", block: "start" }); h.focus({ preventScroll: true }); } }, h.textContent))) : null,
-      t.notes.flatMap((n, k) => [heads[k], ...n.p.map((p) => el("p", {}, p)),
+      t.notes.flatMap((n, k) => [heads[k], ...n.p.map((p) => el("p", {}, p)), ...(n.fig || []).map(figure),
         ...(n.check || []).map(([q, a]) => el("details", { class: "selfcheck" }, el("summary", {}, el("b", {}, "Check yourself: "), q), el("p", {}, a)))])) : null,
     el("div", { class: "row" },
       el("button", { class: "btn primary", onclick: () => runQuiz(shuffle([...ids]), t.title, `#${here}`) }, `Practise ${ids.length} questions`),
       el("button", { class: "btn", "aria-pressed": String(learned), onclick: () => { (state.learned ||= {})[`${uk}.${tid}`] = learned ? -Date.now() : Date.now(); save(); route(); } }, learned ? "Learned ✓ (undo)" : "Mark as learned")),
-    el("div", { class: "row" }, link(all[i - 1], "← "), link(all[i + 1], "Next lesson: "), el("a", { class: "btn", href: `#u-${uk}` }, "All lessons")));
+    el("div", { class: "row" }, link(all[i - 1], "← "), link(all[i + 1], "Next lesson: "), el("a", { class: "btn", href: `#u-${uk}` }, "All lessons")),
+    el("p", { class: "muted small" }, "Spotted a mistake in this lesson? ", reportLink(t.title, `Lesson: ${ukLabel(uk)}, ${t.title}`)));
 }
 function viewGlossary() {
   const q = el("input", { type: "search", id: "gl-q", placeholder: "Search terms", "aria-label": "Search terms" });
@@ -357,11 +443,12 @@ function viewErrors() {
     const note = el("textarea", { id: "note-" + id, placeholder: "Why did I get this wrong? What will I do differently?", "aria-label": "Note" });
     note.value = e.note || "";
     let t; note.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { state.errors[id].note = note.value; save(); }, 600); });
-    const ans = q.t === "m" ? q.o[q.a] : q.a;
+    const r = q.t === "n" ? variant(q) : null; // typed questions are shown with one set of numbers
+    const ans = r ? `${r.ans.toLocaleString("en-AU", { minimumFractionDigits: r.dp, maximumFractionDigits: r.dp })} ${r.unit} (the numbers change when you redo it)` : q.t === "m" ? q.o[q.a] : q.a;
     return el("article", { class: "panel err " + s.cls },
       el("div", { class: "qhead" }, el("span", {}, el("span", { class: "qtag" }, ukLabel(uk)), " · ", topic.title), el("span", {}, `Missed ${e.n}×${e.done ? " · fixed" : ""}`)),
-      el("p", { class: "qtext" }, q.q),
-      el("details", {}, el("summary", {}, "Show answer"), el("p", { class: "answer" }, ans + (q.e ? "\n\n" + q.e : ""))),
+      el("p", { class: "qtext" }, r ? r.q : q.q),
+      el("details", {}, el("summary", {}, "Show answer"), el("p", { class: "answer" }, ans + ((r ? r.e : q.e) ? "\n\n" + (r ? r.e : q.e) : ""))),
       note,
       el("div", { class: "row" },
         el("button", { class: "btn small primary", onclick: () => runQuiz([e.qid], "Redo one question", "#errors") }, "Redo it"),
@@ -432,6 +519,7 @@ function route() {
   else if (h === "mix") viewMix();
   else if (h === "errors" || h === "errors-all") viewErrors();
   else if (h === "glossary") viewGlossary();
+  else if (h === "explore") show(el("h1", {}, "Graph explorer"), el("p", { class: "muted" }, "Pick a function, then move the sliders to see what each number in y = a·f(n(x − h)) + k does to its graph."), el("section", { class: "learn c-meth" }, figure({ t: "explore" })));
   else if (h === "progress") viewProgress();
   else if (h === "tutor") viewTutor();
   else notFound();

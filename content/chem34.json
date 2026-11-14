@@ -52,6 +52,63 @@
        ],
        "a": 2,
        "e": "Biogas comes from decomposing organic matter."
+      },
+      {
+       "t": "c",
+       "q": "How much energy is released when 32 g of methane burns completely? (ΔH = −890 kJ mol⁻¹, M = 16.0)",
+       "a": "1780 kJ",
+       "e": "",
+       "s": [
+        "n = 32 ÷ 16.0 = 2.0 mol.",
+        "Energy = 2.0 × 890 = 1780 kJ."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Incomplete combustion of a hydrocarbon can produce…",
+       "o": [
+        "carbon monoxide",
+        "only CO₂ and H₂O",
+        "hydrogen",
+        "oxygen"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Write the balanced equation for the complete combustion of butane, C₄H₁₀.",
+       "a": "2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(l)",
+       "e": "",
+       "s": [
+        "Carbon: 4CO₂ per butane. Hydrogen: 5H₂O per butane.",
+        "Oxygen atoms needed: 8 + 5 = 13, which is 6.5 O₂.",
+        "Double everything to clear the half."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Ethanol has a molar heat of combustion of 1360 kJ mol⁻¹ and M = 46.0. What is its heat of combustion in kJ g⁻¹?",
+       "a": "29.6 kJ g⁻¹",
+       "e": "1360 ÷ 46.0."
+      },
+      {
+       "t": "n",
+       "q": "Methane releases 890 kJ mol⁻¹ when burnt. How much energy is released by burning [[m]] g of methane (M = 16.0 g mol⁻¹)? Give a whole number.",
+       "vars": {
+        "m": [
+         8,
+         200,
+         4
+        ]
+       },
+       "ans": "m/16*890",
+       "dp": 0,
+       "unit": "kJ",
+       "s": [
+        "\\(n = \\dfrac{[[m]]}{16.0} = [[=m/16|3]]\\) mol",
+        "Energy = [[=m/16|3]] × 890 = [[=m/16*890|0]] kJ"
+       ]
       }
      ],
      "notes": [
@@ -66,6 +123,94 @@
        "h": "Energy changes in reactions",
        "p": [
         "Breaking bonds absorbs energy and forming bonds releases it. In an exothermic reaction more energy is released forming the products’ bonds than was absorbed breaking the reactants’ bonds, so the products have lower chemical energy and \\(\\Delta H\\) is negative. Combustion is always exothermic. An energy profile diagram shows the energy of reactants and products, the activation energy and \\(\\Delta H\\)."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Energy profile for an exothermic reaction: the products are lower than the reactants, so ΔH is negative. Eₐ is the climb to the transition state.",
+         "x": [
+          0,
+          10
+         ],
+         "y": [
+          0,
+          10
+         ],
+         "xstep": 2,
+         "ystep": 2,
+         "fns": [
+          {
+           "f": "6-3/(1+exp(-2*(x-5)))+4*exp(-((x-5)**2))"
+          }
+         ],
+         "dash": [
+          {
+           "y": 6
+          },
+          {
+           "y": 3
+          }
+         ],
+         "pts": [
+          [
+           1,
+           6,
+           "reactants",
+           0,
+           -10
+          ],
+          [
+           9,
+           3,
+           "products",
+           -30,
+           22
+          ],
+          [
+           4.8,
+           8.66,
+           "transition state",
+           10,
+           -6
+          ],
+          [
+           3.4,
+           7.3,
+           "Eₐ",
+           -26,
+           4
+          ],
+          [
+           8.2,
+           4.5,
+           "ΔH",
+           8,
+           4
+          ]
+         ],
+         "segs": [
+          [
+           8.2,
+           6,
+           8.2,
+           3
+          ],
+          [
+           3.4,
+           6,
+           3.4,
+           8.66
+          ],
+          [
+           3.4,
+           8.66,
+           4.8,
+           8.66
+          ]
+         ],
+         "xl": "reaction progress",
+         "yl": "energy"
+        }
        ]
       },
       {
@@ -73,6 +218,44 @@
        "p": [
         "A fuel is a substance with stored chemical energy that can be released relatively easily. Fossil fuels formed from ancient organisms over millions of years and are non-renewable. Biofuels come from recently living matter and can be replaced within a short time: bioethanol from fermenting sugars, biodiesel from fats and oils, and biogas from the breakdown of organic waste without oxygen.",
         "When comparing, consider energy content, whether the source is renewable, greenhouse gas and pollutant emissions over the whole life cycle, land and water use, and cost. Biofuels are close to carbon neutral only in principle: the CO₂ released was recently absorbed by the plants, but farming, processing and transport add emissions."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Energy and emissions per unit of energy for common fuels (approximate values).",
+         "head": [
+          "Fuel",
+          "kJ g⁻¹",
+          "g CO₂ per kJ",
+          "Renewable?"
+         ],
+         "rows": [
+          [
+           "Hydrogen",
+           "141",
+           "0 (at point of use)",
+           "depends on source"
+          ],
+          [
+           "Methane",
+           "55.6",
+           "0.049",
+           "no (natural gas)"
+          ],
+          [
+           "Octane (petrol)",
+           "47.8",
+           "0.064",
+           "no"
+          ],
+          [
+           "Ethanol",
+           "29.6",
+           "0.065",
+           "yes (bioethanol)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -141,6 +324,46 @@
         "Leaving out the negative sign on an exothermic ΔH, or adding a sign to “energy released”. Writing H₂O(g) when the data book value assumes liquid water. Calling biofuels carbon neutral without qualification."
        ]
       }
+     ],
+     "map": [
+      [
+       "Energy",
+       [
+        "exothermic: ΔH < 0",
+        "bonds broken vs formed"
+       ]
+      ],
+      [
+       "Fuels",
+       [
+        "fossil: non-renewable",
+        "biofuels: renewable",
+        "hydrogen"
+       ]
+      ],
+      [
+       "Combustion",
+       [
+        "complete: CO₂ + H₂O",
+        "incomplete: CO, soot"
+       ]
+      ],
+      [
+       "Calculations",
+       [
+        "n × ΔH",
+        "kJ g⁻¹ = kJ mol⁻¹ ÷ M",
+        "CO₂ per kJ"
+       ]
+      ],
+      [
+       "Comparing",
+       [
+        "energy content",
+        "emissions over life cycle",
+        "land, water, cost"
+       ]
+      ]
      ]
     },
     {
@@ -185,6 +408,96 @@
        "q": "What volume of \\(\\mathrm{CO_2}\\) at SLC forms when \\(0.50\\ \\mathrm{mol}\\) of \\(\\mathrm{CH_4}\\) burns completely?",
        "a": "\\(1 : 1\\) ratio, so \\(0.50\\ \\mathrm{mol\\ CO_2}\\); \\(V = 0.50 \\times 24.8 = 12.4\\ \\mathrm{L}\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A calorimeter is calibrated with 5.0 V and 2.0 A for 60 s, raising the temperature by 1.2 °C. Find the calibration factor.",
+       "a": "500 J °C⁻¹",
+       "e": "",
+       "s": [
+        "E = VIt = 5.0 × 2.0 × 60 = 600 J.",
+        "CF = 600 ÷ 1.2 = 500 J °C⁻¹."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "50 mL of 0.50 M HCl and 50 mL of 0.50 M NaOH are mixed; the temperature rises by 3.4 °C. Find ΔH of neutralisation.",
+       "a": "−56.8 kJ mol⁻¹",
+       "e": "",
+       "s": [
+        "q = mcΔT = 100 × 4.18 × 3.4 = 1421 J.",
+        "n(water formed) = 0.050 × 0.50 = 0.025 mol.",
+        "ΔH = −1.421 ÷ 0.025 = −56.8 kJ mol⁻¹ (negative: exothermic)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Heat lost to the surroundings makes the experimental heat of combustion…",
+       "o": [
+        "lower than the true value",
+        "higher than the true value",
+        "unaffected",
+        "negative"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is the solution stirred in solution calorimetry?",
+       "a": "So the temperature is even throughout, giving an accurate reading of the temperature change.",
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Heating [[m]] g of water raises its temperature by [[dT]] °C. Find the energy absorbed in kJ (c = 4.18 J g⁻¹ °C⁻¹), to 2 decimal places.",
+       "vars": {
+        "m": [
+         50,
+         500,
+         25
+        ],
+        "dT": [
+         2,
+         30,
+         0.5
+        ]
+       },
+       "ans": "m*4.18*dT/1000",
+       "dp": 2,
+       "unit": "kJ",
+       "s": [
+        "\\(q = mc\\Delta T = [[m]] \\times 4.18 \\times [[dT]]\\)",
+        "= [[=m*4.18*dT|1]] J = [[=m*4.18*dT/1000|2]] kJ"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Burning [[mf]] g of a fuel heats [[m]] g of water by [[dT]] °C. Find the energy released per gram of fuel (kJ g⁻¹), to 1 decimal place. Assume no heat loss.",
+       "vars": {
+        "mf": [
+         0.5,
+         3,
+         0.1
+        ],
+        "m": [
+         100,
+         400,
+         50
+        ],
+        "dT": [
+         10,
+         40,
+         1
+        ]
+       },
+       "ans": "m*4.18*dT/1000/mf",
+       "dp": 1,
+       "unit": "kJ/g",
+       "s": [
+        "\\(q = [[m]] \\times 4.18 \\times [[dT]] = [[=m*4.18*dT/1000|2]]\\) kJ",
+        "Per gram: \\(\\dfrac{[[=m*4.18*dT/1000|2]]}{[[mf]]} = [[=m*4.18*dT/1000/mf|1]]\\) kJ g⁻¹"
+       ]
       }
      ],
      "notes": [
@@ -232,6 +545,88 @@
        "h": "Temperature–time graphs",
        "p": [
         "In a poorly insulated calorimeter the temperature begins to fall before the reaction finishes, so the highest reading understates the true rise. Extrapolate the cooling line back to the time the reaction started to estimate the temperature change that would have occurred with no heat loss."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "A temperature–time graph. Heat loss means the highest reading (dashed) understates the rise; extrapolating the cooling line back to the start gives the true ΔT.",
+         "x": [
+          0,
+          10
+         ],
+         "y": [
+          18,
+          32
+         ],
+         "xstep": 1,
+         "ystep": 2,
+         "lines": [
+          {
+           "pts": [
+            [
+             0,
+             20
+            ],
+            [
+             2,
+             20
+            ],
+            [
+             2.4,
+             26
+            ],
+            [
+             3,
+             28.4
+            ],
+            [
+             4,
+             28
+            ],
+            [
+             6,
+             27.2
+            ],
+            [
+             8,
+             26.4
+            ],
+            [
+             10,
+             25.6
+            ]
+           ]
+          },
+          {
+           "pts": [
+            [
+             2,
+             29.2
+            ],
+            [
+             4,
+             28
+            ]
+           ]
+          }
+         ],
+         "dash": [
+          {
+           "y": 28.4
+          }
+         ],
+         "pts": [
+          [
+           2,
+           29.2,
+           "extrapolated",
+           -86,
+           -6
+          ]
+         ],
+         "xl": "time (min)",
+         "yl": "°C"
+        }
        ]
       },
       {
@@ -274,6 +669,43 @@
         "Using the mass of the fuel as m in q = mcΔT; m is the mass of water. Forgetting to convert J to kJ. Stating the sign of ΔH wrongly: a temperature rise means exothermic and negative."
        ]
       }
+     ],
+     "map": [
+      [
+       "Idea",
+       [
+        "reaction heats water",
+        "measure ΔT"
+       ]
+      ],
+      [
+       "Simple",
+       [
+        "q = mcΔT",
+        "m is mass of water"
+       ]
+      ],
+      [
+       "Calibration",
+       [
+        "CF = VIt ÷ ΔT",
+        "q = CF × ΔT"
+       ]
+      ],
+      [
+       "ΔH",
+       [
+        "−q ÷ n",
+        "negative if temperature rises"
+       ]
+      ],
+      [
+       "Errors",
+       [
+        "heat loss: too low",
+        "extrapolate cooling"
+       ]
+      ]
      ]
     },
     {
@@ -324,6 +756,59 @@
        ],
        "a": 1,
        "e": "Top-left reacts with bottom-right."
+      },
+      {
+       "t": "c",
+       "q": "Find the cell voltage for a Zn/Cu cell. (Cu²⁺/Cu +0.34 V; Zn²⁺/Zn −0.76 V)",
+       "a": "1.10 V",
+       "e": "0.34 − (−0.76)."
+      },
+      {
+       "t": "m",
+       "q": "In a galvanic cell, the anode is…",
+       "o": [
+        "negative, where oxidation occurs",
+        "positive, where oxidation occurs",
+        "negative, where reduction occurs",
+        "positive, where reduction occurs"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Will silver metal react with Cu²⁺ ions? (Ag⁺/Ag +0.80 V; Cu²⁺/Cu +0.34 V)",
+       "a": "No. The oxidising agent Cu²⁺ is lower on the series than the reducing agent Ag.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What does the salt bridge do?",
+       "a": "It completes the circuit and keeps each half-cell electrically neutral by allowing ions to move between them.",
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "In a galvanic cell the cathode half-cell has E° = [[a]] V and the anode half-cell has E° = [[b]] V. Find the cell voltage under standard conditions.",
+       "vars": {
+        "a": [
+         0.2,
+         1.5,
+         0.01
+        ],
+        "b": [
+         -2.5,
+         0.1,
+         0.01
+        ]
+       },
+       "ans": "a-b",
+       "dp": 2,
+       "unit": "V",
+       "s": [
+        "\\(E_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = [[a]] - ([[b]])\\)",
+        "= [[=a-b|2]] V"
+       ]
       }
      ],
      "notes": [
@@ -339,6 +824,62 @@
        "p": [
         "The series lists half-equations as reductions, in order of E° from most positive at the top to most negative at the bottom. Oxidising agents are on the left; the strongest is at the top left. Reducing agents are on the right; the strongest is at the bottom right.",
         "A spontaneous reaction occurs when the oxidising agent is above the reducing agent on the series, that is, the reactants are top left and bottom right. The higher half-equation runs forward as reduction; the lower one runs in reverse as oxidation."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Part of the electrochemical series (reductions, standard conditions). A species on the left reacts with any species on the right that is lower down.",
+         "head": [
+          "Oxidising agent",
+          "",
+          "Reducing agent",
+          "E° (V)"
+         ],
+         "rows": [
+          [
+           "F₂",
+           "+ 2e⁻ ⇌",
+           "2F⁻",
+           "+2.87"
+          ],
+          [
+           "Ag⁺",
+           "+ e⁻ ⇌",
+           "Ag",
+           "+0.80"
+          ],
+          [
+           "Cu²⁺",
+           "+ 2e⁻ ⇌",
+           "Cu",
+           "+0.34"
+          ],
+          [
+           "2H⁺",
+           "+ 2e⁻ ⇌",
+           "H₂",
+           "0.00"
+          ],
+          [
+           "Fe²⁺",
+           "+ 2e⁻ ⇌",
+           "Fe",
+           "−0.44"
+          ],
+          [
+           "Zn²⁺",
+           "+ 2e⁻ ⇌",
+           "Zn",
+           "−0.76"
+          ],
+          [
+           "Mg²⁺",
+           "+ 2e⁻ ⇌",
+           "Mg",
+           "−2.37"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -353,6 +894,14 @@
          "A cell uses Cu²⁺/Cu (+0.34 V) and Ni²⁺/Ni (−0.25 V). What is the cell voltage and which electrode is the anode?",
          "0.34 − (−0.25) = 0.59 V. Nickel is the anode: it is the stronger reducing agent and is oxidised."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A zinc–silver cell: zinc is oxidised at the anode, Ag⁺ is reduced at the cathode, and the cell voltage is 0.80 − (−0.76) = 1.56 V.",
+         "svg": "<rect class=\"fp\" x=\"40\" y=\"80\" width=\"170\" height=\"150\" rx=\"6\"/><rect class=\"fp\" x=\"330\" y=\"80\" width=\"170\" height=\"150\" rx=\"6\"/><rect class=\"fa\" x=\"40\" y=\"130\" width=\"170\" height=\"100\"/><rect class=\"fa\" x=\"330\" y=\"130\" width=\"170\" height=\"100\"/><line class=\"s\" x1=\"100\" y1=\"40\" x2=\"100\" y2=\"200\" stroke-width=\"6\"/><line class=\"s\" x1=\"440\" y1=\"40\" x2=\"440\" y2=\"200\" stroke-width=\"6\"/><path class=\"a\" d=\"M100,40 H440\"/><path class=\"s\" d=\"M170,130 v-28 h200 v28\"/><text class=\"t\" x=\"270\" y=\"96\" text-anchor=\"middle\">salt bridge</text><text class=\"t\" x=\"270\" y=\"32\" text-anchor=\"middle\">e⁻ →  1.56 V</text><text class=\"t\" x=\"100\" y=\"252\" text-anchor=\"middle\">Zn anode (−)</text><text class=\"t\" x=\"440\" y=\"252\" text-anchor=\"middle\">Ag cathode (+)</text><text class=\"t\" x=\"125\" y=\"180\" text-anchor=\"middle\">Zn²⁺(aq)</text><text class=\"t\" x=\"415\" y=\"180\" text-anchor=\"middle\">Ag⁺(aq)</text>",
+         "vb": "0 0 540 270"
+        }
        ]
       },
       {
@@ -420,6 +969,45 @@
         "Giving the anode a positive sign in a galvanic cell. Reversing the sign of E° and also subtracting. Writing a cell reaction in an alkaline fuel cell using H⁺."
        ]
       }
+     ],
+     "map": [
+      [
+       "Cell parts",
+       [
+        "anode (−): oxidation",
+        "cathode (+): reduction",
+        "salt bridge"
+       ]
+      ],
+      [
+       "Electrochemical series",
+       [
+        "oxidising agents left",
+        "reducing agents right",
+        "top-left reacts with bottom-right"
+       ]
+      ],
+      [
+       "Voltage",
+       [
+        "E°cathode − E°anode",
+        "standard conditions"
+       ]
+      ],
+      [
+       "Cells",
+       [
+        "primary: not rechargeable",
+        "fuel cells: continuous supply"
+       ]
+      ],
+      [
+       "Limits",
+       [
+        "non-standard conditions",
+        "says nothing about rate"
+       ]
+      ]
      ]
     }
    ]
@@ -468,6 +1056,54 @@
        "q": "Explain why increasing temperature increases the rate of a reaction.",
        "a": "Particles have more kinetic energy, so they collide more often and, more importantly, a greater proportion of collisions have energy equal to or greater than the activation energy.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A catalyst increases the rate of reaction by…",
+       "o": [
+        "providing a pathway with lower activation energy",
+        "increasing the temperature",
+        "increasing ΔH",
+        "shifting the equilibrium"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why increasing the temperature increases the rate of reaction.",
+       "a": "Particles move faster, so they collide more often, and a much greater proportion of collisions have energy at least equal to the activation energy.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Powdered calcium carbonate reacts faster with acid than a lump because…",
+       "o": [
+        "it has a larger surface area",
+        "it is more concentrated",
+        "it is hotter",
+        "it has lower activation energy"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A reaction has Eₐ = 75 kJ mol⁻¹ and ΔH = −40 kJ mol⁻¹. Find Eₐ for the reverse reaction.",
+       "a": "115 kJ mol⁻¹",
+       "e": "75 − (−40)."
+      },
+      {
+       "t": "m",
+       "q": "Adding a catalyst to a reversible reaction changes the equilibrium yield by…",
+       "o": [
+        "nothing",
+        "increasing it",
+        "decreasing it",
+        "doubling it"
+       ],
+       "a": 0,
+       "e": "It speeds up both directions equally."
       }
      ],
      "notes": [
@@ -495,6 +1131,54 @@
        "h": "Maxwell–Boltzmann curves",
        "p": [
         "The curve shows how many particles have each kinetic energy. The area under the curve is the total number of particles, and the area to the right of the activation energy is the number able to react. Raising the temperature flattens the curve and moves its peak to the right, with the same total area, so a larger area lies beyond the activation energy. Adding a catalyst leaves the curve unchanged and moves the activation energy line to the left."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Kinetic energy distributions at two temperatures. At the higher temperature, a much larger area (shaded) lies beyond the activation energy.",
+         "x": [
+          0,
+          4.5
+         ],
+         "y": [
+          0,
+          1.1
+         ],
+         "ystep": 0.25,
+         "fns": [
+          {
+           "f": "((x/1)**2)*exp(-((x/1)**2))/1*2.5",
+           "label": "lower T"
+          },
+          {
+           "f": "((x/1.5)**2)*exp(-((x/1.5)**2))/1.5*2.5",
+           "label": "higher T"
+          }
+         ],
+         "shade": [
+          {
+           "f": 1,
+           "from": 2.3,
+           "to": 4.5
+          }
+         ],
+         "dash": [
+          {
+           "x": 2.3
+          }
+         ],
+         "pts": [
+          [
+           2.3,
+           0.8,
+           "Eₐ",
+           6,
+           0
+          ]
+         ],
+         "xl": "kinetic energy",
+         "yl": "number of particles"
+        }
        ]
       },
       {
@@ -546,6 +1230,39 @@
          "A catalyst is added to a reaction producing a gas. How does the graph of gas volume against time change?",
          "The curve is steeper at the start and levels off sooner, but it reaches the same final volume, because the amount of limiting reactant has not changed."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Gas produced over time. A catalyst gives a steeper start but the same final volume, because the amount of limiting reactant is unchanged.",
+         "x": [
+          0,
+          30
+         ],
+         "y": [
+          0,
+          70
+         ],
+         "xstep": 5,
+         "ystep": 10,
+         "fns": [
+          {
+           "f": "60*(1-exp(-0.3*x))",
+           "label": "with catalyst"
+          },
+          {
+           "f": "60*(1-exp(-0.12*x))",
+           "label": "without"
+          }
+         ],
+         "dash": [
+          {
+           "y": 60
+          }
+         ],
+         "xl": "time (s)",
+         "yl": "volume (mL)"
+        }
        ]
       },
       {
@@ -554,6 +1271,47 @@
         "Saying a catalyst “gives particles more energy”. Saying temperature only makes collisions more frequent. Saying a higher concentration gives particles more energy. Confusing rate (how fast) with yield (how much)."
        ]
       }
+     ],
+     "map": [
+      [
+       "Collision theory",
+       [
+        "must collide",
+        "energy ≥ Eₐ",
+        "right orientation"
+       ]
+      ],
+      [
+       "Factors",
+       [
+        "concentration, pressure",
+        "surface area",
+        "temperature",
+        "catalyst"
+       ]
+      ],
+      [
+       "Maxwell–Boltzmann",
+       [
+        "area beyond Eₐ reacts",
+        "higher T: more beyond Eₐ"
+       ]
+      ],
+      [
+       "Catalysts",
+       [
+        "lower Eₐ",
+        "not consumed",
+        "ΔH and yield unchanged"
+       ]
+      ],
+      [
+       "Measuring",
+       [
+        "gas volume, mass loss",
+        "gradient = rate"
+       ]
+      ]
      ]
     },
     {
@@ -604,6 +1362,67 @@
        "q": "\\(K\\) for \\(\\mathrm{A} \\rightleftharpoons \\mathrm{B}\\) is \\(4.0\\). What is \\(K\\) for \\(\\mathrm{B} \\rightleftharpoons \\mathrm{A}\\)?",
        "a": "\\(K' = \\dfrac{1}{4.0} = 0.25\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Write the expression for K for N₂(g) + 3H₂(g) ⇌ 2NH₃(g).",
+       "a": "\\(K = \\dfrac{[\\mathrm{NH_3}]^2}{[\\mathrm{N_2}][\\mathrm{H_2}]^3}\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "For A(g) ⇌ 2B(g), equilibrium concentrations are [A] = 0.20 M and [B] = 0.40 M. Find K.",
+       "a": "0.80 M",
+       "e": "",
+       "s": [
+        "\\(K = \\dfrac{[\\mathrm{B}]^2}{[\\mathrm{A}]}\\).",
+        "\\(\\dfrac{0.40^2}{0.20} = \\dfrac{0.16}{0.20} = 0.80\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Adding more reactant to a system at equilibrium causes…",
+       "o": [
+        "a net forward reaction",
+        "a net reverse reaction",
+        "no change",
+        "K to increase"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "If the reaction quotient Q is greater than K, which way does the reaction proceed?",
+       "a": "In the reverse direction, until Q falls to K.",
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "For \\(\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)\\), at equilibrium \\([\\text{H}_2] = [[a]]\\) M, \\([\\text{I}_2] = [[b]]\\) M and \\([\\text{HI}] = [[c]]\\) M. Find \\(K_c\\), to 1 decimal place.",
+       "vars": {
+        "a": [
+         0.1,
+         0.5,
+         0.05
+        ],
+        "b": [
+         0.1,
+         0.5,
+         0.05
+        ],
+        "c": [
+         0.5,
+         2,
+         0.1
+        ]
+       },
+       "ans": "c*c/(a*b)",
+       "dp": 1,
+       "s": [
+        "\\(K_c = \\dfrac{[\\text{HI}]^2}{[\\text{H}_2][\\text{I}_2]} = \\dfrac{[[c]]^2}{[[a]] \\times [[b]]}\\)",
+        "\\(= \\dfrac{[[=c*c|2]]}{[[=a*b|4]]} = [[=c*c/(a*b)|1]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -657,6 +1476,34 @@
        "p": [
         "Start with only reactants. The forward reaction is fast at first, because reactant concentrations are high, and slows as they are used. The reverse reaction starts at zero and speeds up as products build up. Eventually the two rates are equal. From then on, concentrations do not change, although both reactions continue. On a concentration–time graph the lines become horizontal; on a rate–time graph the two lines meet.",
         "The same equilibrium position is reached whether you start from the reactants or from the products, provided the temperature is the same."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Starting with reactants only: the forward rate falls and the reverse rate rises until they are equal, at equilibrium.",
+         "x": [
+          0,
+          10
+         ],
+         "y": [
+          0,
+          10
+         ],
+         "xstep": 2,
+         "ystep": 2,
+         "fns": [
+          {
+           "f": "4+5*exp(-0.6*x)",
+           "label": "forward rate"
+          },
+          {
+           "f": "4-4*exp(-0.6*x)",
+           "label": "reverse rate"
+          }
+         ],
+         "xl": "time",
+         "yl": "rate"
+        }
        ]
       },
       {
@@ -690,6 +1537,93 @@
          "On a concentration–time graph, all the lines begin to curve at the same moment with no sudden jump. What change was made?",
          "The temperature was changed."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "H₂ + I₂ ⇌ 2HI. At 10 min extra H₂ is added (a jump); the system partially opposes the change: H₂ and I₂ fall and HI rises to new equilibrium levels.",
+         "x": [
+          0,
+          20
+         ],
+         "y": [
+          0,
+          1.8
+         ],
+         "xstep": 2,
+         "ystep": 0.2,
+         "lines": [
+          {
+           "pts": [
+            [
+             0,
+             0.2
+            ],
+            [
+             10,
+             0.2
+            ],
+            [
+             10,
+             0.6
+            ],
+            [
+             13,
+             0.48
+            ],
+            [
+             20,
+             0.48
+            ]
+           ],
+           "label": "H₂"
+          },
+          {
+           "pts": [
+            [
+             0,
+             0.2
+            ],
+            [
+             10,
+             0.2
+            ],
+            [
+             13,
+             0.08
+            ],
+            [
+             20,
+             0.08
+            ]
+           ],
+           "label": "I₂"
+          },
+          {
+           "pts": [
+            [
+             0,
+             1.4
+            ],
+            [
+             10,
+             1.4
+            ],
+            [
+             13,
+             1.64
+            ],
+            [
+             20,
+             1.64
+            ]
+           ],
+           "label": "HI"
+          }
+         ],
+         "xl": "time (min)",
+         "yl": "M"
+        }
        ]
       },
       {
@@ -704,6 +1638,45 @@
         "Including solids or pure liquids in K. Saying K changes when concentration or pressure changes. Saying equilibrium shifts “to oppose the change completely”. On concentration–time graphs, drawing a sudden jump for a temperature change: only adding or removing a substance, or changing the volume, gives a sudden jump."
        ]
       }
+     ],
+     "map": [
+      [
+       "Dynamic equilibrium",
+       [
+        "closed system",
+        "forward rate = reverse rate",
+        "concentrations constant"
+       ]
+      ],
+      [
+       "K",
+       [
+        "products over reactants",
+        "only temperature changes K",
+        "Q vs K"
+       ]
+      ],
+      [
+       "Le Chatelier",
+       [
+        "partially opposes change",
+        "concentration, pressure, temperature"
+       ]
+      ],
+      [
+       "Graphs",
+       [
+        "jumps: added or removed",
+        "gradual: temperature"
+       ]
+      ],
+      [
+       "Industry",
+       [
+        "rate vs yield compromise",
+        "catalysts, recycling"
+       ]
+      ]
      ]
     },
     {
@@ -754,6 +1727,66 @@
        "q": "What makes hydrogen “green”?",
        "a": "It is made by electrolysis of water using electricity from renewable sources, so no CO₂ is released in production.",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What mass of silver is deposited by a current of 0.50 A for 1930 s? (Ag⁺ + e⁻ → Ag; M = 107.9)",
+       "a": "1.08 g",
+       "e": "",
+       "s": [
+        "Q = It = 0.50 × 1930 = 965 C.",
+        "n(e⁻) = 965 ÷ 96 500 = 0.0100 mol.",
+        "n(Ag) = 0.0100 mol, so m = 0.0100 × 107.9 = 1.08 g."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "In an electrolytic cell, the cathode is…",
+       "o": [
+        "negative, where reduction occurs",
+        "positive, where reduction occurs",
+        "negative, where oxidation occurs",
+        "positive, where oxidation occurs"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What are the products when molten sodium chloride is electrolysed?",
+       "a": "Sodium at the cathode and chlorine gas at the anode.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is sodium not produced when aqueous sodium chloride is electrolysed?",
+       "a": "Water is a stronger oxidising agent than Na⁺, so water is reduced to hydrogen at the cathode instead.",
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A current of [[I]] A flows for [[t]] minutes through \\(\\text{Cu}^{2+}(aq)\\). What mass of copper is deposited? (F = 96 500 C mol⁻¹, M(Cu) = 63.5.) Give 2 decimal places.",
+       "vars": {
+        "I": [
+         0.5,
+         5,
+         0.5
+        ],
+        "t": [
+         10,
+         60,
+         5
+        ]
+       },
+       "ans": "I*t*60/96500/2*63.5",
+       "dp": 2,
+       "unit": "g",
+       "s": [
+        "\\(Q = It = [[I]] \\times [[=t*60]] = [[=I*t*60]]\\) C",
+        "\\(n(e^-) = \\dfrac{[[=I*t*60]]}{96\\,500} = [[=I*t*60/96500|5]]\\) mol",
+        "\\(\\text{Cu}^{2+} + 2e^- \\rightarrow \\text{Cu}\\): \\(n(\\text{Cu}) = [[=I*t*60/96500/2|5]]\\) mol",
+        "\\(m = [[=I*t*60/96500/2|5]] \\times 63.5 = [[=I*t*60/96500/2*63.5|2]]\\) g"
+       ]
       }
      ],
      "notes": [
@@ -814,6 +1847,14 @@
          "In an electrolytic cell, what is the polarity of the cathode and what happens there?",
          "The cathode is negative, and reduction occurs there."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Electrolysis of molten sodium chloride. The power supply drives electrons to the cathode (−), where Na⁺ is reduced; Cl⁻ is oxidised at the anode (+).",
+         "svg": "<rect class=\"fp\" x=\"90\" y=\"110\" width=\"360\" height=\"150\" rx=\"6\"/><rect class=\"fa\" x=\"90\" y=\"150\" width=\"360\" height=\"110\"/><line class=\"s\" x1=\"170\" y1=\"60\" x2=\"170\" y2=\"230\" stroke-width=\"6\"/><line class=\"s\" x1=\"370\" y1=\"60\" x2=\"370\" y2=\"230\" stroke-width=\"6\"/><path class=\"a\" d=\"M170,60 V30 H240\"/><path class=\"a\" d=\"M300,30 H370 V60\"/><rect class=\"fp\" x=\"240\" y=\"14\" width=\"60\" height=\"32\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"35.0\" text-anchor=\"middle\">power</text><text class=\"t\" x=\"170\" y=\"280\" text-anchor=\"middle\">anode (+): 2Cl⁻ → Cl₂ + 2e⁻</text><text class=\"t\" x=\"390\" y=\"280\" text-anchor=\"middle\">cathode (−): Na⁺ + e⁻ → Na</text><text class=\"t\" x=\"270\" y=\"205\" text-anchor=\"middle\">molten NaCl</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -856,6 +1897,47 @@
         "Leaving time in minutes. Forgetting the electron ratio in the half-equation. Predicting sodium metal from aqueous sodium chloride."
        ]
       }
+     ],
+     "map": [
+      [
+       "Electrolytic cell",
+       [
+        "power drives reaction",
+        "anode (+): oxidation",
+        "cathode (−): reduction"
+       ]
+      ],
+      [
+       "Predicting",
+       [
+        "strongest oxidant reduced",
+        "strongest reductant oxidised",
+        "water competes in solution"
+       ]
+      ],
+      [
+       "Faraday",
+       [
+        "Q = It",
+        "n(e⁻) = Q ÷ F",
+        "use the half-equation"
+       ]
+      ],
+      [
+       "Applications",
+       [
+        "extracting reactive metals",
+        "electroplating",
+        "recharging batteries"
+       ]
+      ],
+      [
+       "Hydrogen",
+       [
+        "electrolysis of water",
+        "green hydrogen"
+       ]
+      ]
      ]
     }
    ]
@@ -910,6 +1992,42 @@
        "q": "Name CH₃CH₂COOCH₃.",
        "a": "Methyl propanoate",
        "e": "Alcohol part (methyl) first, acid part (propanoate) second."
+      },
+      {
+       "t": "m",
+       "q": "CH₃CH₂COOH is named…",
+       "o": [
+        "propanoic acid",
+        "ethanoic acid",
+        "propan-1-ol",
+        "propanal"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Is butan-2-ol a primary, secondary or tertiary alcohol?",
+       "a": "Secondary",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A chiral centre is a carbon atom bonded to…",
+       "o": [
+        "four different groups",
+        "a double bond",
+        "two oxygen atoms",
+        "three hydrogens"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the ester formed from methanol and ethanoic acid.",
+       "a": "Methyl ethanoate",
+       "e": ""
       }
      ],
      "notes": [
@@ -925,6 +2043,62 @@
        "p": [
         "Alkene: C=C. Haloalkane: –Cl, –Br, –I. Alcohol: hydroxyl, –OH. Aldehyde: –CHO at the end of a chain. Ketone: C=O within a chain. Carboxylic acid: carboxyl, –COOH. Primary amine: amino, –NH₂. Primary amide: –CONH₂. Ester: –COO– linking two carbon chains.",
         "The functional group decides the chemical reactions; the carbon chain mainly affects physical properties."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Functional groups, their naming and an example.",
+         "head": [
+          "Group",
+          "Structure",
+          "Name ending",
+          "Example"
+         ],
+         "rows": [
+          [
+           "Hydroxyl (alcohol)",
+           "–OH",
+           "-ol",
+           "propan-1-ol"
+          ],
+          [
+           "Aldehyde",
+           "–CHO",
+           "-al",
+           "propanal"
+          ],
+          [
+           "Ketone",
+           "C=O in chain",
+           "-one",
+           "propanone"
+          ],
+          [
+           "Carboxyl (acid)",
+           "–COOH",
+           "-oic acid",
+           "propanoic acid"
+          ],
+          [
+           "Amino (amine)",
+           "–NH₂",
+           "-amine",
+           "propan-1-amine"
+          ],
+          [
+           "Amide",
+           "–CONH₂",
+           "-amide",
+           "propanamide"
+          ],
+          [
+           "Ester",
+           "–COO–",
+           "alkyl -oate",
+           "methyl propanoate"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -945,6 +2119,14 @@
          "Can but-1-ene show cis–trans isomerism?",
          "No. Carbon 1 has two identical hydrogen atoms attached. But-2-ene can."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A chiral centre: a carbon bonded to four different groups. The two arrangements are non-superimposable mirror images (enantiomers).",
+         "svg": "<line class=\"s\" x1=\"150\" y1=\"120\" x2=\"150\" y2=\"50\"/><line class=\"s\" x1=\"150\" y1=\"120\" x2=\"100\" y2=\"160\"/><line class=\"s\" x1=\"150\" y1=\"120\" x2=\"200\" y2=\"160\"/><line class=\"s\" x1=\"150\" y1=\"120\" x2=\"90\" y2=\"110\" stroke-dasharray=\"5 4\"/><circle class=\"fp\" cx=\"150\" cy=\"120\" r=\"16\"/><text class=\"t\" x=\"150\" y=\"125\" text-anchor=\"middle\">C</text><circle class=\"fp\" cx=\"150\" cy=\"45\" r=\"11\"/><text class=\"t\" x=\"150\" y=\"50\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"98\" cy=\"165\" r=\"11\"/><text class=\"t\" x=\"98\" y=\"170\" text-anchor=\"middle\">OH</text><circle class=\"fp\" cx=\"205\" cy=\"165\" r=\"11\"/><text class=\"t\" x=\"205\" y=\"170\" text-anchor=\"middle\">CH₃</text><text class=\"t\" x=\"70\" y=\"105\">C₂H₅</text><line class=\"s\" x1=\"270\" y1=\"30\" x2=\"270\" y2=\"200\" stroke-dasharray=\"6 5\"/><text class=\"t\" x=\"270\" y=\"220\" text-anchor=\"middle\">mirror</text><line class=\"s\" x1=\"390\" y1=\"120\" x2=\"390\" y2=\"50\"/><line class=\"s\" x1=\"390\" y1=\"120\" x2=\"440\" y2=\"160\"/><line class=\"s\" x1=\"390\" y1=\"120\" x2=\"340\" y2=\"160\"/><line class=\"s\" x1=\"390\" y1=\"120\" x2=\"450\" y2=\"110\" stroke-dasharray=\"5 4\"/><circle class=\"fp\" cx=\"390\" cy=\"120\" r=\"16\"/><text class=\"t\" x=\"390\" y=\"125\" text-anchor=\"middle\">C</text><circle class=\"fp\" cx=\"390\" cy=\"45\" r=\"11\"/><text class=\"t\" x=\"390\" y=\"50\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"442\" cy=\"165\" r=\"11\"/><text class=\"t\" x=\"442\" y=\"170\" text-anchor=\"middle\">OH</text><circle class=\"fp\" cx=\"335\" cy=\"165\" r=\"11\"/><text class=\"t\" x=\"335\" y=\"170\" text-anchor=\"middle\">CH₃</text><text class=\"t\" x=\"460\" y=\"105\">C₂H₅</text>",
+         "vb": "0 0 540 240"
+        }
        ]
       },
       {
@@ -1007,6 +2189,45 @@
         "Including the carbon of –COOH or –CHO as a substituent instead of carbon 1 of the chain. Saying a molecule shows cis–trans isomerism when one double-bond carbon has two identical groups. Counting CH₃ and CH₂CH₃ as the same group."
        ]
       }
+     ],
+     "map": [
+      [
+       "Functional groups",
+       [
+        "alkene, haloalkane",
+        "alcohol, aldehyde, ketone",
+        "acid, amine, amide, ester"
+       ]
+      ],
+      [
+       "Naming",
+       [
+        "longest chain with main group",
+        "priority of groups",
+        "esters: alkyl alkanoate"
+       ]
+      ],
+      [
+       "Classes",
+       [
+        "primary, secondary, tertiary"
+       ]
+      ],
+      [
+       "Isomers",
+       [
+        "chain, position, functional",
+        "cis–trans",
+        "optical: chiral centre"
+       ]
+      ],
+      [
+       "Properties",
+       [
+        "H-bonding raises boiling point",
+        "longer chain: less soluble"
+       ]
+      ]
      ]
     },
     {
@@ -1057,6 +2278,36 @@
        ],
        "a": 1,
        "e": "All reactant atoms end up in one product."
+      },
+      {
+       "t": "c",
+       "q": "Propan-1-ol is heated with excess acidified potassium dichromate. What is the organic product?",
+       "a": "Propanoic acid",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Ethene reacts with steam (acid catalyst) to form…",
+       "o": [
+        "ethanol",
+        "ethane",
+        "ethanoic acid",
+        "chloroethane"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the atom economy for C₂H₄ + H₂O → C₂H₅OH.",
+       "a": "100%",
+       "e": "Addition: every reactant atom is in the product."
+      },
+      {
+       "t": "c",
+       "q": "A two-step synthesis has yields of 70% and 80%. Find the overall yield.",
+       "a": "56%",
+       "e": "0.70 × 0.80 = 0.56."
       }
      ],
      "notes": [
@@ -1114,6 +2365,77 @@
          "What reagents convert a haloalkane into an alcohol?",
          "Aqueous sodium hydroxide or potassium hydroxide (a substitution reaction)."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Reaction map: arrows show conversions you can use to plan a pathway. Alcohols are the central hub.",
+         "nodes": {
+          "Alkane": [
+           5,
+           10
+          ],
+          "Alkene": [
+           5,
+           85
+          ],
+          "Halo": [
+           40,
+           10
+          ],
+          "Alcohol": [
+           45,
+           55
+          ],
+          "Acid": [
+           85,
+           20
+          ],
+          "Ester": [
+           95,
+           90
+          ],
+          "Amine": [
+           80,
+           55
+          ]
+         },
+         "edges": [
+          [
+           "Alkane",
+           "Halo"
+          ],
+          [
+           "Alkene",
+           "Halo"
+          ],
+          [
+           "Alkene",
+           "Alcohol"
+          ],
+          [
+           "Halo",
+           "Alcohol"
+          ],
+          [
+           "Halo",
+           "Amine"
+          ],
+          [
+           "Alcohol",
+           "Acid"
+          ],
+          [
+           "Alcohol",
+           "Ester"
+          ],
+          [
+           "Acid",
+           "Ester"
+          ]
+         ],
+         "dir": true
+        }
        ]
       },
       {
@@ -1135,6 +2457,34 @@
        "p": [
         "Target: propyl propanoate from propene as the only organic starting material. The ester needs propan-1-ol and propanoic acid. Step 1: propene + HCl → 1-chloropropane (with 2-chloropropane as the other product). Step 2: 1-chloropropane + NaOH(aq) → propan-1-ol. Step 3: oxidise half the propan-1-ol with acidified K₂Cr₂O₇ → propanoic acid. Step 4: propan-1-ol + propanoic acid, concentrated H₂SO₄ catalyst and heat → propyl propanoate + water.",
         "In practice each step is followed by separating and purifying the product, for example by fractional distillation, which separates liquids by boiling point."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "Planning propyl propanoate from propene.",
+         "steps": [
+          [
+           "Propene",
+           "+ HCl"
+          ],
+          [
+           "1-chloropropane",
+           "+ NaOH(aq)"
+          ],
+          [
+           "Propan-1-ol",
+           "split in two"
+          ],
+          [
+           "Propanoic acid",
+           "oxidise half with Cr₂O₇²⁻/H⁺"
+          ],
+          [
+           "Propyl propanoate",
+           "esterify, conc. H₂SO₄"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1149,6 +2499,47 @@
         "Leaving out reagents and conditions on the arrow. Oxidising a tertiary alcohol. Writing esterification with a single arrow or without water as a product. Adding the percentage yields of steps instead of multiplying."
        ]
       }
+     ],
+     "map": [
+      [
+       "Substitution",
+       [
+        "alkane + halogen (UV)",
+        "haloalkane + OH⁻ → alcohol",
+        "haloalkane + NH₃ → amine"
+       ]
+      ],
+      [
+       "Addition",
+       [
+        "alkene + H₂, X₂, HX",
+        "alkene + H₂O → alcohol"
+       ]
+      ],
+      [
+       "Oxidation",
+       [
+        "1° alcohol → aldehyde → acid",
+        "2° alcohol → ketone",
+        "3° not oxidised"
+       ]
+      ],
+      [
+       "Condensation",
+       [
+        "acid + alcohol → ester",
+        "acid + amine → amide",
+        "reverse: hydrolysis"
+       ]
+      ],
+      [
+       "Efficiency",
+       [
+        "yield: multiply steps",
+        "atom economy",
+        "green chemistry"
+       ]
+      ]
      ]
     },
     {
@@ -1192,6 +2583,54 @@
        "t": "c",
        "q": "Why does an enzyme stop working at very low pH?",
        "a": "Changes in pH disrupt the hydrogen bonds and ionic interactions holding the tertiary structure, so the active site changes shape (denatures) and the substrate no longer fits.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Amino acids in a protein are joined by…",
+       "o": [
+        "amide (peptide) links",
+        "ester links",
+        "glycosidic links",
+        "hydrogen bonds only"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Fat provides about 37 kJ g⁻¹. How much energy is in 10 g of fat?",
+       "a": "370 kJ",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Saturated fats are solid at room temperature because…",
+       "o": [
+        "their straight chains pack closely, giving stronger dispersion forces",
+        "they contain double bonds",
+        "they are ionic",
+        "they contain water"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between denaturing and hydrolysing a protein?",
+       "a": "Denaturing changes the shape (secondary and tertiary structure) without breaking peptide links. Hydrolysis breaks the peptide links into amino acids.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Vitamin C is water-soluble because…",
+       "o": [
+        "it has several –OH groups that hydrogen bond with water",
+        "it is a large hydrocarbon",
+        "it is a fat",
+        "it is ionic"
+       ],
+       "a": 0,
        "e": ""
       }
      ],
@@ -1254,6 +2693,30 @@
          "How many water molecules are released when a tripeptide forms from three amino acids?",
          "Two. One water molecule is released for each peptide link, and a tripeptide has two links."
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "Condensation joins two amino acids by a peptide (amide) link and releases water. Hydrolysis reverses it.",
+         "steps": [
+          [
+           "Amino acid",
+           "H₂N–CHR–COOH"
+          ],
+          [
+           "+ amino acid",
+           "H₂N–CHR′–COOH"
+          ],
+          [
+           "Dipeptide",
+           "…–CO–NH–…"
+          ],
+          [
+           "+ water",
+           "H₂O released"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1279,6 +2742,38 @@
        "h": "Comparing the three food groups",
        "p": [
         "Proteins: monomers are amino acids; amide links; hydrolysed to amino acids, which are used to build new proteins. Carbohydrates: monomers are monosaccharides; glycosidic links; hydrolysed to glucose, the main fuel for respiration. Fats and oils: glycerol and three fatty acids; ester links; hydrolysed to glycerol and fatty acids; stored as an energy reserve. Fats are not polymers, because they are not made of a long chain of repeating units."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The three food groups compared.",
+         "head": [
+          "Food group",
+          "Monomer(s)",
+          "Link",
+          "Use in the body"
+         ],
+         "rows": [
+          [
+           "Proteins",
+           "amino acids",
+           "amide (peptide)",
+           "building proteins, enzymes"
+          ],
+          [
+           "Carbohydrates",
+           "monosaccharides",
+           "glycosidic (ether)",
+           "main fuel (glucose)"
+          ],
+          [
+           "Fats and oils",
+           "glycerol + fatty acids",
+           "ester",
+           "energy store"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1287,6 +2782,47 @@
         "Calling the link in a protein an ester link. Saying denaturation breaks peptide bonds. Saying low temperature denatures enzymes. Confusing the energy content of food (how much) with glycaemic index (how fast)."
        ]
       }
+     ],
+     "map": [
+      [
+       "Proteins",
+       [
+        "amino acids",
+        "peptide (amide) links",
+        "four levels of structure"
+       ]
+      ],
+      [
+       "Enzymes",
+       [
+        "active site",
+        "specific",
+        "denature: heat, pH"
+       ]
+      ],
+      [
+       "Carbohydrates",
+       [
+        "glucose units",
+        "glycosidic links",
+        "starch, glycogen, cellulose"
+       ]
+      ],
+      [
+       "Fats and oils",
+       [
+        "glycerol + 3 fatty acids",
+        "ester links",
+        "saturated vs unsaturated"
+       ]
+      ],
+      [
+       "Energy and vitamins",
+       [
+        "kJ g⁻¹ by food type",
+        "water- vs fat-soluble vitamins"
+       ]
+      ]
      ]
     }
    ]
@@ -1329,6 +2865,39 @@
          "Which will not change the colour of acidified dichromate: propan-1-ol, propan-2-ol or 2-methylpropan-2-ol?",
          "2-methylpropan-2-ol, because it is a tertiary alcohol."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Quick tests and what a positive result looks like.",
+         "head": [
+          "Test",
+          "Detects",
+          "Positive result"
+         ],
+         "rows": [
+          [
+           "Bromine water",
+           "C=C",
+           "orange-brown → colourless"
+          ],
+          [
+           "Na₂CO₃ or NaHCO₃",
+           "–COOH",
+           "fizzing (CO₂)"
+          ],
+          [
+           "Acidified K₂Cr₂O₇, warm",
+           "1°/2° alcohol, aldehyde",
+           "orange → green"
+          ],
+          [
+           "Blue litmus",
+           "acid",
+           "turns red"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1349,6 +2918,14 @@
          "In fractional distillation of a mixture of ethanol (78 °C) and water (100 °C), which is collected first?",
          "Ethanol, because it has the lower boiling point and is more volatile."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Fractional distillation: vapour rises through the column, the more volatile component reaches the top first, and it is condensed and collected.",
+         "svg": "<circle class=\"fp\" cx=\"120\" cy=\"230\" r=\"50\"/><circle class=\"fa\" cx=\"120\" cy=\"230\" r=\"50\" opacity=\".25\"/><rect class=\"fp\" x=\"108\" y=\"60\" width=\"24\" height=\"125\"/><circle class=\"s\" cx=\"120\" cy=\"75\" r=\"7\"/><circle class=\"s\" cx=\"120\" cy=\"95\" r=\"7\"/><circle class=\"s\" cx=\"120\" cy=\"115\" r=\"7\"/><circle class=\"s\" cx=\"120\" cy=\"135\" r=\"7\"/><circle class=\"s\" cx=\"120\" cy=\"155\" r=\"7\"/><circle class=\"s\" cx=\"120\" cy=\"175\" r=\"7\"/><line class=\"s\" x1=\"132\" y1=\"70\" x2=\"400\" y2=\"170\" stroke-width=\"10\"/><line class=\"a\" x1=\"132\" y1=\"70\" x2=\"400\" y2=\"170\"/><path class=\"fp\" d=\"M390,180 L440,180 L430,250 L400,250 Z\"/><text class=\"t\" x=\"160\" y=\"50\">thermometer at the top</text><text class=\"t\" x=\"240\" y=\"150\">condenser</text><text class=\"t\" x=\"120\" y=\"300\" text-anchor=\"middle\">flask, heated</text><text class=\"t\" x=\"445\" y=\"270\" text-anchor=\"middle\">distillate</text>",
+         "vb": "0 0 540 310"
+        }
        ]
       },
       {
@@ -1439,7 +3016,85 @@
        ],
        "a": 1,
        "e": "Each double bond adds one I₂: 0.040 ÷ 0.020 = 2."
+      },
+      {
+       "t": "c",
+       "q": "How could acidified potassium dichromate distinguish propanal from propanone?",
+       "a": "Propanal (an aldehyde) is oxidised and turns the solution from orange to green; propanone (a ketone) does not.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A sharp melting point close to the literature value suggests a sample is…",
+       "o": [
+        "pure",
+        "impure",
+        "a mixture",
+        "wet"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A reaction should produce [[th]] g of product but [[ac]] g is collected. Find the percentage yield, to 1 decimal place.",
+       "vars": {
+        "th": [
+         5,
+         20,
+         0.5
+        ],
+        "ac": [
+         2,
+         4.5,
+         0.1
+        ]
+       },
+       "ans": "ac/th*100",
+       "dp": 1,
+       "unit": "%",
+       "s": [
+        "\\(\\% \\text{ yield} = \\dfrac{\\text{actual}}{\\text{theoretical}} \\times 100 = \\dfrac{[[ac]]}{[[th]]} \\times 100\\)",
+        "= [[=ac/th*100|1]]%"
+       ]
       }
+     ],
+     "map": [
+      [
+       "Functional group tests",
+       [
+        "bromine water: C=C",
+        "carbonate: COOH",
+        "dichromate: 1°/2° alcohols"
+       ]
+      ],
+      [
+       "Purity",
+       [
+        "sharp melting point",
+        "impurities lower and widen it"
+       ]
+      ],
+      [
+       "Purification",
+       [
+        "simple distillation",
+        "fractional distillation"
+       ]
+      ],
+      [
+       "Quantity",
+       [
+        "acid–base titration",
+        "redox titration"
+       ]
+      ],
+      [
+       "Unsaturation",
+       [
+        "I₂ or Br₂ per C=C"
+       ]
+      ]
      ]
     },
     {
@@ -1502,6 +3157,53 @@
        "q": "What does adding bromine water show about an organic compound?",
        "a": "If the orange colour disappears quickly, the compound has a C=C double bond (an addition reaction occurs).",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In a mass spectrum, the molecular ion peak gives…",
+       "o": [
+        "the molar mass",
+        "the functional groups",
+        "the number of carbon environments",
+        "the boiling point"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How many peaks are in the ¹³C NMR spectrum of propanone, CH₃COCH₃?",
+       "a": "2",
+       "e": "The two CH₃ carbons are equivalent."
+      },
+      {
+       "t": "c",
+       "q": "In ¹H NMR, what is the splitting pattern of a CH₃ group next to a CH₂ group?",
+       "a": "A triplet (n + 1 = 3).",
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A calibration curve gives absorbance \\(A = [[k]] \\times c\\) (c in mg L⁻¹). A sample has absorbance [[A]]. Find its concentration in mg L⁻¹, to 2 decimal places.",
+       "vars": {
+        "k": [
+         0.02,
+         0.09,
+         0.01
+        ],
+        "A": [
+         0.1,
+         0.9,
+         0.05
+        ]
+       },
+       "ans": "A/k",
+       "dp": 2,
+       "unit": "mg/L",
+       "s": [
+        "Rearrange: \\(c = \\dfrac{A}{[[k]]} = \\dfrac{[[A]]}{[[k]]}\\)",
+        "= [[=A/k|2]] mg L⁻¹"
+       ]
       }
      ],
      "notes": [
@@ -1528,12 +3230,105 @@
          "A mass spectrum has its last significant peak at m/z 46 and a large peak at m/z 31. Suggest the compound and the fragment lost.",
          "Ethanol (M = 46). Loss of CH₃ (15) gives the fragment CH₂OH⁺ at m/z 31."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Simplified mass spectrum of ethanol (M = 46). The base peak at m/z 31 is CH₂OH⁺, formed by losing CH₃.",
+         "x": [
+          24,
+          50
+         ],
+         "y": [
+          0,
+          110
+         ],
+         "xstep": 2,
+         "ystep": 20,
+         "bw": 0.8,
+         "bars": [
+          [
+           27,
+           20
+          ],
+          [
+           29,
+           25
+          ],
+          [
+           31,
+           100
+          ],
+          [
+           45,
+           50
+          ],
+          [
+           46,
+           20
+          ]
+         ],
+         "pts": [
+          [
+           31,
+           100,
+           "base peak 31"
+          ],
+          [
+           46,
+           20,
+           "M⁺ 46",
+           -48,
+           -6
+          ]
+         ],
+         "xl": "m/z",
+         "yl": "relative abundance"
+        }
        ]
       },
       {
        "h": "Infrared spectroscopy",
        "p": [
         "Covalent bonds absorb infrared radiation at characteristic wavenumbers and vibrate more strongly. Use the data book ranges. The most useful absorptions: a broad O–H band for alcohols; a very broad O–H band overlapping the C–H region for carboxylic acids; a strong, sharp C=O band near 1700 cm⁻¹; N–H bands for amines and amides. The region below about 1400 cm⁻¹ is the fingerprint region, unique to each compound."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Key infrared absorptions (use your data book ranges).",
+         "head": [
+          "Bond",
+          "Wavenumber (cm⁻¹)",
+          "Look"
+         ],
+         "rows": [
+          [
+           "O–H (alcohol)",
+           "3200–3600",
+           "broad"
+          ],
+          [
+           "O–H (acid)",
+           "2500–3000",
+           "very broad"
+          ],
+          [
+           "N–H",
+           "3350–3500",
+           "medium"
+          ],
+          [
+           "C–H",
+           "2850–3000",
+           "sharp"
+          ],
+          [
+           "C=O",
+           "1670–1750",
+           "strong, sharp"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1581,6 +3376,39 @@
          "How many peaks would the ¹³C NMR spectrum of 2-methylpropane, (CH₃)₃CH, show?",
          "Two. The three CH₃ carbons are equivalent, and the central CH is the second environment."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Common ¹H NMR patterns and what they mean.",
+         "head": [
+          "Pattern",
+          "Hydrogens",
+          "Fragment"
+         ],
+         "rows": [
+          [
+           "triplet + quartet",
+           "3H + 2H",
+           "CH₃CH₂–"
+          ],
+          [
+           "doublet + septet",
+           "6H + 1H",
+           "(CH₃)₂CH–"
+          ],
+          [
+           "singlet",
+           "3H",
+           "CH₃ next to C=O or O"
+          ],
+          [
+           "singlet",
+           "9H",
+           "(CH₃)₃C–"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1603,6 +3431,46 @@
         "Using the tallest peak as the molecular ion. Leaving the positive charge off a fragment. Counting hydrogens on the same carbon when working out splitting. Reading a concentration off a calibration curve beyond its range."
        ]
       }
+     ],
+     "map": [
+      [
+       "Mass spectrometry",
+       [
+        "molecular ion: M",
+        "fragments",
+        "base peak"
+       ]
+      ],
+      [
+       "Infrared",
+       [
+        "functional groups",
+        "O–H broad, C=O sharp",
+        "fingerprint region"
+       ]
+      ],
+      [
+       "¹³C NMR",
+       [
+        "peaks = carbon environments",
+        "symmetry reduces peaks"
+       ]
+      ],
+      [
+       "¹H NMR",
+       [
+        "environments, shift",
+        "area ratio",
+        "n + 1 splitting"
+       ]
+      ],
+      [
+       "Chromatography",
+       [
+        "HPLC retention time",
+        "peak area → amount"
+       ]
+      ]
      ]
     },
     {
@@ -1642,6 +3510,14 @@
        "p": [
         "An enzyme is a protein whose tertiary structure creates a pocket called the active site. The substrate fits into it and is held by hydrogen bonds, ionic attractions, dipole–dipole and dispersion forces with the side chains that line it. In the lock-and-key model the substrate fits exactly; in the induced-fit model the active site changes shape slightly as the substrate binds. Either way, binding provides a reaction pathway with a lower activation energy.",
         "Enzymes are highly specific: because the active site is itself chiral, an enzyme will usually accept only one enantiomer of a substrate. Enzyme activity depends on temperature and pH. Activity rises with temperature up to an optimum, then falls sharply as the enzyme denatures. Each enzyme has an optimum pH; away from it, the charges on acidic and basic side chains change, disrupting the interactions that hold the active site in shape."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Lock and key: the substrate fits the enzyme’s active site. A competitive inhibitor has a similar shape, occupies the site, and blocks the substrate.",
+         "svg": "<path class=\"fp\" d=\"M30,200 V110 H90 L110,140 L130,110 H200 V200 Z\"/><text class=\"t\" x=\"115\" y=\"230\" text-anchor=\"middle\">enzyme + substrate</text><path class=\"fa\" opacity=\"1\" d=\"M92,112 L110,138 L128,112 Z\"/><text class=\"t\" x=\"110\" y=\"95\" text-anchor=\"middle\">substrate</text><path class=\"fp\" d=\"M310,200 V110 H370 L390,140 L410,110 H480 V200 Z\"/><path class=\"s\" d=\"M372,112 L390,136 L408,112 Z\" fill=\"currentColor\"/><text class=\"t\" x=\"395\" y=\"230\" text-anchor=\"middle\">inhibitor blocks the site</text><text class=\"t\" x=\"390\" y=\"95\" text-anchor=\"middle\">inhibitor</text>",
+         "vb": "0 0 540 250"
+        }
        ]
       },
       {
@@ -1732,7 +3608,77 @@
        "q": "Explain why enzyme activity falls when the pH moves away from the optimum.",
        "a": "The change in pH alters the charges on acidic and basic side chains, disrupting the ionic and hydrogen bonding that maintain the tertiary structure. The shape of the active site changes, so the substrate binds less well.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "An enzyme’s specificity comes from…",
+       "o": [
+        "the shape of its active site and the interactions it can form",
+        "its size",
+        "its colour",
+        "the temperature"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why does adding more substrate reduce the effect of a competitive inhibitor?",
+       "a": "Substrate and inhibitor compete for the same active site; more substrate makes it more likely the substrate binds.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which solvent is best for extracting a non-polar compound from plant material?",
+       "o": [
+        "Hexane",
+        "Water",
+        "Ethanol",
+        "Salt water"
+       ],
+       "a": 0,
+       "e": ""
       }
+     ],
+     "map": [
+      [
+       "Sources",
+       [
+        "plants and traditional knowledge",
+        "solvent extraction",
+        "distillation, chromatography"
+       ]
+      ],
+      [
+       "Enzymes",
+       [
+        "active site",
+        "lock and key, induced fit",
+        "temperature and pH optimum"
+       ]
+      ],
+      [
+       "Inhibition",
+       [
+        "competitive inhibitor",
+        "blocks the active site"
+       ]
+      ],
+      [
+       "Chirality",
+       [
+        "enantiomers",
+        "receptors are chiral",
+        "single-enantiomer drugs"
+       ]
+      ],
+      [
+       "Structure → function",
+       [
+        "polar groups: soluble",
+        "non-polar: crosses membranes"
+       ]
+      ]
      ]
     },
     {
@@ -1759,6 +3705,21 @@
        "p": [
         "In Unit 4 you design or adapt and conduct an investigation related to energy, the production of chemicals or organic compounds, and report it as a scientific poster. The usual sections are: title (often the research question), introduction (background chemistry and hypothesis), methodology and methods (what was done, with variables and safety), results (tables and graphs with units), discussion (trends, explanation, errors and their effects, improvements) and conclusion (answer to the question, linked to the evidence), plus references.",
         "The highest marks go to the discussion. Link results to chemical concepts, be specific about the quality of the data (accuracy, precision, repeatability, validity), and say how each source of error would change the result and in which direction."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "The sections of a scientific poster.",
+         "steps": [
+          "Title (question)",
+          "Introduction",
+          "Methodology",
+          "Results",
+          "Discussion",
+          "Conclusion",
+          "References"
+         ]
+        }
        ]
       },
       {
@@ -1855,7 +3816,79 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The data book gives the heat of combustion of propane as 2220 kJ mol⁻¹. ΔH for its combustion is…",
+       "o": [
+        "−2220 kJ mol⁻¹",
+        "+2220 kJ mol⁻¹",
+        "0",
+        "−2220 kJ"
+       ],
+       "a": 0,
+       "e": "Combustion is exothermic."
+      },
+      {
+       "t": "c",
+       "q": "What must an answer to an “explain” question include?",
+       "a": "A reason linked to the result, not just a description.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "How many significant figures does 0.0250 have?",
+       "o": [
+        "3",
+        "2",
+        "4",
+        "5"
+       ],
+       "a": 0,
+       "e": "Leading zeros do not count; the trailing zero does."
       }
+     ],
+     "map": [
+      [
+       "Investigation poster",
+       [
+        "title, introduction",
+        "method, results",
+        "discussion, conclusion"
+       ]
+      ],
+      [
+       "Data book",
+       [
+        "series, formulas, spectra",
+        "supply ΔH signs",
+        "SLC only for 24.8"
+       ]
+      ],
+      [
+       "Command terms",
+       [
+        "identify, describe",
+        "explain, compare",
+        "evaluate, justify"
+       ]
+      ],
+      [
+       "Calculations",
+       [
+        "formula, substitution, units",
+        "round at the end",
+        "consequential marks"
+       ]
+      ],
+      [
+       "Revision",
+       [
+        "test yourself",
+        "past papers, reports",
+        "sort lost marks"
+       ]
+      ]
      ]
     }
    ]

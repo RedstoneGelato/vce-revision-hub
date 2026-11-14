@@ -64,6 +64,35 @@
        "q": "Why do elements produce line emission spectra?",
        "a": "Electrons absorb energy and jump to higher energy levels. When they fall back they emit light with exact energies (the differences between levels), so only certain wavelengths appear.",
        "e": "Each element has its own set of energy levels, so its spectrum is a fingerprint (flame tests)."
+      },
+      {
+       "t": "m",
+       "q": "How many electrons does a Mg²⁺ ion have? (Z = 12)",
+       "o": [
+        "10",
+        "12",
+        "14",
+        "2"
+       ],
+       "a": 0,
+       "e": "12 protons; two electrons lost."
+      },
+      {
+       "t": "c",
+       "q": "Write the electron configuration of sulfur (Z = 16).",
+       "a": "1s² 2s² 2p⁶ 3s² 3p⁴",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Copper is 69.17% copper-63 (relative isotopic mass 62.93) and 30.83% copper-65 (64.93). Calculate its relative atomic mass.",
+       "a": "63.55",
+       "e": "",
+       "s": [
+        "\\(A_r = \\dfrac{62.93 \\times 69.17 + 64.93 \\times 30.83}{100}\\).",
+        "\\(= \\dfrac{4352.87 + 2001.79}{100} \\approx 63.55\\).",
+        "Check: closer to 63 because copper-63 is more abundant."
+       ]
       }
      ],
      "notes": [
@@ -79,6 +108,14 @@
        "p": [
         "Almost all the mass of an atom is in its tiny nucleus; the electrons occupy the space around it and decide how the atom bonds. Because the number of protons fixes the element, changing the number of neutrons gives a different isotope of the same element, and changing the number of electrons gives an ion.",
         "Isotopes of an element have the same chemical properties because they have the same electron arrangement. They differ in mass, and some are radioactive."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A sodium atom (Z = 11) in the shell model: 2, 8, 1. The single outer electron is why sodium reacts by losing one electron.",
+         "svg": "<circle class=\"fa\" cx=\"150\" cy=\"150\" r=\"18\" opacity=\"1\"/><text class=\"t\" x=\"150\" y=\"155\" text-anchor=\"middle\">Na</text><circle class=\"s\" cx=\"150\" cy=\"150\" r=\"48\" opacity=\".5\"/><circle cx=\"150.0\" cy=\"102.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"150.0\" cy=\"198.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle class=\"s\" cx=\"150\" cy=\"150\" r=\"70\" opacity=\".5\"/><circle cx=\"150.0\" cy=\"80.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"199.5\" cy=\"100.5\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"220.0\" cy=\"150.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"199.5\" cy=\"199.5\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"150.0\" cy=\"220.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"100.5\" cy=\"199.5\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"80.0\" cy=\"150.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"100.5\" cy=\"100.5\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle class=\"s\" cx=\"150\" cy=\"150\" r=\"92\" opacity=\".5\"/><circle cx=\"150.0\" cy=\"58.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><text class=\"t\" x=\"310\" y=\"110\">nucleus: 11 protons, 12 neutrons</text><text class=\"t\" x=\"310\" y=\"145\">shells: 2, 8, 1</text><text class=\"t\" x=\"310\" y=\"180\">1 valence electron → Na⁺</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -133,6 +170,68 @@
          "Write the electron configuration of calcium (Z = 20) and of the Ca²⁺ ion.",
          "Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s². Ca²⁺ has lost the two 4s electrons: 1s² 2s² 2p⁶ 3s² 3p⁶."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Subshells fill in this order, each up to its maximum. Note that 4s fills before 3d.",
+         "head": [
+          "Order",
+          "Subshell",
+          "Holds",
+          "Running total"
+         ],
+         "rows": [
+          [
+           "1",
+           "1s",
+           "2",
+           "2"
+          ],
+          [
+           "2",
+           "2s",
+           "2",
+           "4"
+          ],
+          [
+           "3",
+           "2p",
+           "6",
+           "10"
+          ],
+          [
+           "4",
+           "3s",
+           "2",
+           "12"
+          ],
+          [
+           "5",
+           "3p",
+           "6",
+           "18"
+          ],
+          [
+           "6",
+           "4s",
+           "2",
+           "20"
+          ],
+          [
+           "7",
+           "3d",
+           "10",
+           "30"
+          ],
+          [
+           "8",
+           "4p",
+           "6",
+           "36"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -147,6 +246,47 @@
         "Writing 3d before 4s is filled for potassium and calcium. Forgetting the chromium and copper exceptions. Giving an electron configuration for an ion with the neutral atom’s electron count. An excited-state configuration has an electron in a higher subshell than expected; it is not a different element."
        ]
       }
+     ],
+     "map": [
+      [
+       "Particles",
+       [
+        "protons: +1, in nucleus",
+        "neutrons: 0, in nucleus",
+        "electrons: −1, in shells"
+       ]
+      ],
+      [
+       "Numbers",
+       [
+        "Z = protons",
+        "A = protons + neutrons",
+        "ions: change electrons only"
+       ]
+      ],
+      [
+       "Isotopes",
+       [
+        "same Z, different A",
+        "same chemistry",
+        "relative atomic mass: weighted mean"
+       ]
+      ],
+      [
+       "Electron arrangement",
+       [
+        "shells hold 2n²",
+        "subshells s, p, d",
+        "4s fills before 3d"
+       ]
+      ],
+      [
+       "Evidence",
+       [
+        "emission spectra",
+        "flame tests"
+       ]
+      ]
      ]
     },
     {
@@ -202,6 +342,42 @@
        ],
        "a": 1,
        "e": "Valence electrons are further from the nucleus, so bonding electrons are attracted less."
+      },
+      {
+       "t": "m",
+       "q": "Which of K, Na, Mg and Cl has the largest atomic radius?",
+       "o": [
+        "K",
+        "Na",
+        "Mg",
+        "Cl"
+       ],
+       "a": 0,
+       "e": "K has the most occupied shells."
+      },
+      {
+       "t": "c",
+       "q": "Explain why fluorine is more electronegative than chlorine.",
+       "a": "Both have a core charge of +7, but fluorine’s valence shell is closer to the nucleus, so it attracts bonding electrons more strongly.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which has the highest first ionisation energy?",
+       "o": [
+        "Ne",
+        "Na",
+        "Mg",
+        "Ar"
+       ],
+       "a": 0,
+       "e": "Highest core charge in the earliest period listed."
+      },
+      {
+       "t": "c",
+       "q": "What is the core charge of magnesium (2, 8, 2)?",
+       "a": "+2",
+       "e": "12 protons − 10 inner-shell electrons."
       }
      ],
      "notes": [
@@ -222,6 +398,101 @@
        "h": "Applying it",
        "p": [
         "Atomic radius: decreases across a period (stronger pull draws the shell in) and increases down a group (more shells). Electronegativity, the ability of an atom to attract electrons in a bond: increases across, decreases down. First ionisation energy, the energy needed to remove one electron from an atom in the gas phase: increases across, decreases down. Metallic character: decreases across, increases down."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "First ionisation energy across period 3 (kJ mol⁻¹). It rises overall as core charge increases; the small dips at Al and S come from subshell structure.",
+         "x": [
+          10.4,
+          18.6
+         ],
+         "y": [
+          0,
+          1700
+         ],
+         "xstep": 1,
+         "ystep": 250,
+         "bars": [
+          [
+           11,
+           496
+          ],
+          [
+           12,
+           738
+          ],
+          [
+           13,
+           578
+          ],
+          [
+           14,
+           787
+          ],
+          [
+           15,
+           1012
+          ],
+          [
+           16,
+           1000
+          ],
+          [
+           17,
+           1251
+          ],
+          [
+           18,
+           1521
+          ]
+         ],
+         "pts": [
+          [
+           11,
+           496,
+           "Na"
+          ],
+          [
+           12,
+           738,
+           "Mg"
+          ],
+          [
+           13,
+           578,
+           "Al"
+          ],
+          [
+           14,
+           787,
+           "Si"
+          ],
+          [
+           15,
+           1012,
+           "P"
+          ],
+          [
+           16,
+           1000,
+           "S"
+          ],
+          [
+           17,
+           1251,
+           "Cl"
+          ],
+          [
+           18,
+           1521,
+           "Ar",
+           -26,
+           -8
+          ]
+         ],
+         "xl": "atomic number"
+        }
        ]
       },
       {
@@ -268,6 +539,14 @@
          "What is the core charge of oxygen (Z = 8) and of sulfur (Z = 16)?",
          "Oxygen (2, 6): 8 − 2 = +6. Sulfur (2, 8, 6): 16 − 10 = +6. Same group, same core charge."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Lithium and fluorine both use the second shell, but fluorine’s core charge is +7 against lithium’s +1, so its electrons are pulled in tighter: a smaller atom.",
+         "svg": "<circle class=\"fa\" cx=\"140\" cy=\"150\" r=\"18\" opacity=\"1\"/><text class=\"t\" x=\"140\" y=\"155\" text-anchor=\"middle\">Li</text><circle class=\"s\" cx=\"140\" cy=\"150\" r=\"50\" opacity=\".5\"/><circle cx=\"140.0\" cy=\"100.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"140.0\" cy=\"200.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle class=\"s\" cx=\"140\" cy=\"150\" r=\"78\" opacity=\".5\"/><circle cx=\"140.0\" cy=\"72.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle class=\"fa\" cx=\"400\" cy=\"150\" r=\"18\" opacity=\"1\"/><text class=\"t\" x=\"400\" y=\"155\" text-anchor=\"middle\">F</text><circle class=\"s\" cx=\"400\" cy=\"150\" r=\"38\" opacity=\".5\"/><circle cx=\"400.0\" cy=\"112.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"400.0\" cy=\"188.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle class=\"s\" cx=\"400\" cy=\"150\" r=\"62\" opacity=\".5\"/><circle cx=\"400.0\" cy=\"88.0\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"448.5\" cy=\"111.3\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"460.4\" cy=\"163.8\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"426.9\" cy=\"205.9\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"373.1\" cy=\"205.9\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"339.6\" cy=\"163.8\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><circle cx=\"351.5\" cy=\"111.3\" r=\"5\" class=\"pt\" fill=\"currentColor\"/><text class=\"t\" x=\"140\" y=\"285\" text-anchor=\"middle\">core charge +1</text><text class=\"t\" x=\"400\" y=\"285\" text-anchor=\"middle\">core charge +7</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -289,6 +568,47 @@
         "Saying “more protons” alone; you must also mention the shell or shielding. Saying “more electrons means bigger” across a period. Explaining a trend by restating it."
        ]
       }
+     ],
+     "map": [
+      [
+       "Layout",
+       [
+        "period = shells",
+        "group = valence electrons",
+        "metals left, non-metals right"
+       ]
+      ],
+      [
+       "Core charge",
+       [
+        "protons − inner electrons",
+        "rises across a period",
+        "same down a group"
+       ]
+      ],
+      [
+       "Trends across",
+       [
+        "radius falls",
+        "electronegativity rises",
+        "ionisation energy rises"
+       ]
+      ],
+      [
+       "Trends down",
+       [
+        "radius rises",
+        "electronegativity falls",
+        "metals more reactive"
+       ]
+      ],
+      [
+       "Answers",
+       [
+        "shells + core charge",
+        "→ attraction → property"
+       ]
+      ]
      ]
     },
     {
@@ -351,6 +671,36 @@
        "q": "When water boils, what is broken: covalent bonds or hydrogen bonds?",
        "a": "Hydrogen bonds between molecules. The O–H covalent bonds inside each molecule stay intact.",
        "e": "A very common exam trap."
+      },
+      {
+       "t": "m",
+       "q": "What is the shape of a PH₃ molecule?",
+       "o": [
+        "Pyramidal",
+        "Trigonal planar",
+        "Tetrahedral",
+        "Linear"
+       ],
+       "a": 0,
+       "e": "Three bonding pairs and one lone pair."
+      },
+      {
+       "t": "c",
+       "q": "CCl₄ has polar C–Cl bonds. Is the molecule polar? Explain.",
+       "a": "No. It is tetrahedral and symmetrical, so the bond dipoles cancel.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The strongest intermolecular force between NH₃ molecules is…",
+       "o": [
+        "hydrogen bonding",
+        "dispersion forces only",
+        "ionic bonding",
+        "covalent bonding"
+       ],
+       "a": 0,
+       "e": "H is bonded to N."
       }
      ],
      "notes": [
@@ -378,6 +728,44 @@
        "h": "Intermolecular forces",
        "p": [
         "Melting and boiling a molecular substance breaks the forces between molecules, not the covalent bonds inside them. Dispersion forces act between all molecules and get stronger with more electrons and a larger surface area. Dipole–dipole forces act between polar molecules. Hydrogen bonds are especially strong dipole–dipole attractions that occur when hydrogen is bonded to N, O or F and is attracted to a lone pair on N, O or F of a neighbouring molecule."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Strongest intermolecular force present, and why. Stronger forces mean higher melting and boiling points.",
+         "head": [
+          "Substance",
+          "Polar?",
+          "Strongest force",
+          "Boiling point"
+         ],
+         "rows": [
+          [
+           "CH₄",
+           "no",
+           "dispersion",
+           "−162 °C"
+          ],
+          [
+           "HCl",
+           "yes",
+           "dipole–dipole",
+           "−85 °C"
+          ],
+          [
+           "NH₃",
+           "yes (N–H)",
+           "hydrogen bonding",
+           "−33 °C"
+          ],
+          [
+           "H₂O",
+           "yes (O–H)",
+           "hydrogen bonding",
+           "100 °C"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -418,6 +806,14 @@
          "What is the shape of H₂S, and is the molecule polar?",
          "Four electron groups with two lone pairs: bent (V-shaped). The bond dipoles do not cancel, so it is polar."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Shapes from electron groups: CO₂ linear (180°), CH₄ tetrahedral (109.5°), NH₃ pyramidal (one lone pair), H₂O bent (two lone pairs).",
+         "svg": "<line class=\"s\" x1=\"30\" y1=\"66\" x2=\"120\" y2=\"66\"/><line class=\"s\" x1=\"30\" y1=\"74\" x2=\"120\" y2=\"74\"/><circle class=\"fp\" cx=\"30\" cy=\"70\" r=\"16\"/><text class=\"t\" x=\"30\" y=\"75\" text-anchor=\"middle\">O</text><circle class=\"fp\" cx=\"75\" cy=\"70\" r=\"16\"/><text class=\"t\" x=\"75\" y=\"75\" text-anchor=\"middle\">C</text><circle class=\"fp\" cx=\"120\" cy=\"70\" r=\"16\"/><text class=\"t\" x=\"120\" y=\"75\" text-anchor=\"middle\">O</text><text class=\"t\" x=\"75\" y=\"115\" text-anchor=\"middle\">CO₂ linear (O=C=O)</text><line class=\"s\" x1=\"220\" y1=\"70\" x2=\"220\" y2=\"25\"/><line class=\"s\" x1=\"220\" y1=\"70\" x2=\"180\" y2=\"95\"/><line class=\"s\" x1=\"220\" y1=\"70\" x2=\"260\" y2=\"95\"/><line class=\"s\" x1=\"220\" y1=\"70\" x2=\"235\" y2=\"110\" stroke-dasharray=\"5 4\"/><circle class=\"fp\" cx=\"220\" cy=\"70\" r=\"16\"/><text class=\"t\" x=\"220\" y=\"75\" text-anchor=\"middle\">C</text><circle class=\"fp\" cx=\"220\" cy=\"25\" r=\"11\"/><text class=\"t\" x=\"220\" y=\"30\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"180\" cy=\"95\" r=\"11\"/><text class=\"t\" x=\"180\" y=\"100\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"260\" cy=\"95\" r=\"11\"/><text class=\"t\" x=\"260\" y=\"100\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"235\" cy=\"110\" r=\"11\"/><text class=\"t\" x=\"235\" y=\"115\" text-anchor=\"middle\">H</text><text class=\"t\" x=\"220\" y=\"140\" text-anchor=\"middle\">CH₄ tetrahedral</text><line class=\"s\" x1=\"360\" y1=\"80\" x2=\"325\" y2=\"110\"/><line class=\"s\" x1=\"360\" y1=\"80\" x2=\"395\" y2=\"110\"/><line class=\"s\" x1=\"360\" y1=\"80\" x2=\"360\" y2=\"120\"/><circle class=\"fp\" cx=\"360\" cy=\"80\" r=\"16\"/><text class=\"t\" x=\"360\" y=\"85\" text-anchor=\"middle\">N</text><circle class=\"fp\" cx=\"325\" cy=\"110\" r=\"11\"/><text class=\"t\" x=\"325\" y=\"115\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"395\" cy=\"110\" r=\"11\"/><text class=\"t\" x=\"395\" y=\"115\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"360\" cy=\"122\" r=\"11\"/><text class=\"t\" x=\"360\" y=\"127\" text-anchor=\"middle\">H</text><text class=\"t\" x=\"360\" y=\"61\" text-anchor=\"middle\">••</text><text class=\"t\" x=\"360\" y=\"150\" text-anchor=\"middle\">NH₃ pyramidal</text><line class=\"s\" x1=\"480\" y1=\"80\" x2=\"450\" y2=\"115\"/><line class=\"s\" x1=\"480\" y1=\"80\" x2=\"510\" y2=\"115\"/><circle class=\"fp\" cx=\"480\" cy=\"80\" r=\"16\"/><text class=\"t\" x=\"480\" y=\"85\" text-anchor=\"middle\">O</text><circle class=\"fp\" cx=\"450\" cy=\"115\" r=\"11\"/><text class=\"t\" x=\"450\" y=\"120\" text-anchor=\"middle\">H</text><circle class=\"fp\" cx=\"510\" cy=\"115\" r=\"11\"/><text class=\"t\" x=\"510\" y=\"120\" text-anchor=\"middle\">H</text><text class=\"t\" x=\"472\" y=\"63\" text-anchor=\"middle\">••</text><text class=\"t\" x=\"490\" y=\"63\" text-anchor=\"middle\">••</text><text class=\"t\" x=\"480\" y=\"150\" text-anchor=\"middle\">H₂O bent</text>",
+         "vb": "0 0 540 170"
+        }
        ]
       },
       {
@@ -440,6 +836,54 @@
         "Saying covalent bonds break when a molecular substance boils. Calling a molecule polar because it has polar bonds without checking symmetry. Claiming hydrogen bonding for any molecule that contains H."
        ]
       }
+     ],
+     "map": [
+      [
+       "Bonding",
+       [
+        "shared electron pairs",
+        "between non-metals",
+        "single, double, triple"
+       ]
+      ],
+      [
+       "Lewis structures",
+       [
+        "count valence electrons",
+        "octets (H: 2)",
+        "lone pairs"
+       ]
+      ],
+      [
+       "Shapes (VSEPR)",
+       [
+        "linear, trigonal planar",
+        "tetrahedral, pyramidal",
+        "bent"
+       ]
+      ],
+      [
+       "Polarity",
+       [
+        "electronegativity difference",
+        "symmetry can cancel dipoles"
+       ]
+      ],
+      [
+       "Intermolecular forces",
+       [
+        "dispersion",
+        "dipole–dipole",
+        "hydrogen bonding"
+       ]
+      ],
+      [
+       "Networks",
+       [
+        "diamond: hard",
+        "graphite: conducts, layers"
+       ]
+      ]
      ]
     },
     {
@@ -483,6 +927,54 @@
        ],
        "a": 1,
        "e": "Cations stay fixed; the electrons carry charge."
+      },
+      {
+       "t": "m",
+       "q": "Which property of metals is explained by delocalised electrons that are free to move?",
+       "o": [
+        "Electrical conductivity",
+        "High density",
+        "Brittleness",
+        "Colour of ions"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why metals are malleable.",
+       "a": "Layers of cations can slide past each other while the delocalised electrons keep attracting them, so the metal changes shape without breaking.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Quenching a hot metal (cooling it quickly) makes it…",
+       "o": [
+        "harder but more brittle",
+        "softer and more ductile",
+        "a better conductor",
+        "less dense"
+       ],
+       "a": 0,
+       "e": "Small crystals form."
+      },
+      {
+       "t": "c",
+       "q": "Write the balanced equation for potassium reacting with water.",
+       "a": "2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Alloys are usually harder than the pure metal because…",
+       "o": [
+        "different-sized atoms disrupt the layers, so they slide less easily",
+        "alloys have no delocalised electrons",
+        "alloys are ionic",
+        "alloys have stronger covalent bonds"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -498,6 +990,14 @@
        "p": [
         "Metal atoms lose their valence electrons into a shared “sea”. The lattice is held together by electrostatic attraction between the positive ions and the delocalised electrons. This attraction is strong and acts in all directions, which explains the usual properties.",
         "Conductivity of electricity: delocalised electrons are free to move toward a positive terminal. Conductivity of heat: the electrons carry kinetic energy quickly through the lattice. Malleability and ductility: layers of cations can slide without breaking the bonding, because the sea of electrons still holds them. Lustre: free electrons reflect light. High melting point: strong attraction needs a lot of energy to overcome."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Metallic bonding: a lattice of positive ions held together by a sea of delocalised electrons that are free to move.",
+         "svg": "<circle class=\"fp\" cx=\"70\" cy=\"60\" r=\"24\"/><text class=\"t\" x=\"70\" y=\"65\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"150\" cy=\"60\" r=\"24\"/><text class=\"t\" x=\"150\" y=\"65\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"230\" cy=\"60\" r=\"24\"/><text class=\"t\" x=\"230\" y=\"65\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"310\" cy=\"60\" r=\"24\"/><text class=\"t\" x=\"310\" y=\"65\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"390\" cy=\"60\" r=\"24\"/><text class=\"t\" x=\"390\" y=\"65\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"470\" cy=\"60\" r=\"24\"/><text class=\"t\" x=\"470\" y=\"65\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"70\" cy=\"130\" r=\"24\"/><text class=\"t\" x=\"70\" y=\"135\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"150\" cy=\"130\" r=\"24\"/><text class=\"t\" x=\"150\" y=\"135\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"230\" cy=\"130\" r=\"24\"/><text class=\"t\" x=\"230\" y=\"135\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"310\" cy=\"130\" r=\"24\"/><text class=\"t\" x=\"310\" y=\"135\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"390\" cy=\"130\" r=\"24\"/><text class=\"t\" x=\"390\" y=\"135\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"470\" cy=\"130\" r=\"24\"/><text class=\"t\" x=\"470\" y=\"135\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"70\" cy=\"200\" r=\"24\"/><text class=\"t\" x=\"70\" y=\"205\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"150\" cy=\"200\" r=\"24\"/><text class=\"t\" x=\"150\" y=\"205\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"230\" cy=\"200\" r=\"24\"/><text class=\"t\" x=\"230\" y=\"205\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"310\" cy=\"200\" r=\"24\"/><text class=\"t\" x=\"310\" y=\"205\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"390\" cy=\"200\" r=\"24\"/><text class=\"t\" x=\"390\" y=\"205\" text-anchor=\"middle\">+</text><circle class=\"fp\" cx=\"470\" cy=\"200\" r=\"24\"/><text class=\"t\" x=\"470\" y=\"205\" text-anchor=\"middle\">+</text><circle class=\"pt\" fill=\"currentColor\" cx=\"77\" cy=\"93\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"114\" cy=\"146\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"151\" cy=\"199\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"188\" cy=\"52\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"225\" cy=\"105\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"262\" cy=\"158\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"299\" cy=\"211\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"336\" cy=\"64\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"373\" cy=\"117\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"410\" cy=\"170\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"447\" cy=\"223\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"484\" cy=\"76\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"51\" cy=\"129\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"88\" cy=\"182\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"125\" cy=\"235\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"162\" cy=\"88\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"199\" cy=\"141\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"236\" cy=\"194\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"273\" cy=\"47\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"310\" cy=\"100\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"347\" cy=\"153\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"384\" cy=\"206\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"421\" cy=\"59\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"458\" cy=\"112\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"495\" cy=\"165\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"62\" cy=\"218\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"99\" cy=\"71\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"136\" cy=\"124\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"173\" cy=\"177\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"210\" cy=\"230\" r=\"4\"/><text class=\"t\" x=\"270\" y=\"285\" text-anchor=\"middle\">e⁻ move freely between the cations</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -560,6 +1060,46 @@
         "Saying metals conduct because “ions move”; in a solid metal only the electrons move. Describing delocalised electrons as “free atoms”."
        ]
       }
+     ],
+     "map": [
+      [
+       "Model",
+       [
+        "cations in a lattice",
+        "sea of delocalised electrons",
+        "non-directional bonding"
+       ]
+      ],
+      [
+       "Properties",
+       [
+        "conduct heat and electricity",
+        "malleable, ductile",
+        "lustrous, high melting point"
+       ]
+      ],
+      [
+       "Reactivity",
+       [
+        "lose electrons easily",
+        "with water, acid, oxygen",
+        "reactivity series"
+       ]
+      ],
+      [
+       "Modifying",
+       [
+        "alloys: harder",
+        "quench, anneal, temper"
+       ]
+      ],
+      [
+       "Sustainability",
+       [
+        "recycling saves energy",
+        "circular economy"
+       ]
+      ]
      ]
     },
     {
@@ -628,6 +1168,36 @@
        ],
        "a": 2,
        "e": "Fe³⁺ and O²⁻: swap and simplify, 2 : 3."
+      },
+      {
+       "t": "m",
+       "q": "The formula of magnesium nitride is…",
+       "o": [
+        "Mg₃N₂",
+        "MgN",
+        "Mg₂N₃",
+        "MgN₂"
+       ],
+       "a": 0,
+       "e": "Mg²⁺ and N³⁻: 3 × (+2) balances 2 × (−3)."
+      },
+      {
+       "t": "c",
+       "q": "Barium chloride and sodium sulfate solutions are mixed. Write the ionic equation for the reaction.",
+       "a": "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)",
+       "e": "Na⁺ and Cl⁻ are spectator ions."
+      },
+      {
+       "t": "m",
+       "q": "Ionic compounds conduct electricity when…",
+       "o": [
+        "molten or dissolved in water",
+        "solid",
+        "cooled",
+        "powdered"
+       ],
+       "a": 0,
+       "e": "The ions must be free to move."
       }
      ],
      "notes": [
@@ -643,6 +1213,14 @@
        "p": [
         "When a metal reacts with a non-metal, electrons transfer from the metal to the non-metal. The resulting cations and anions arrange in a three-dimensional lattice, held by strong electrostatic attraction between opposite charges in all directions. The formula is a ratio, not a molecule.",
         "High melting point: strong attraction throughout the lattice. Hard but brittle: a force that shifts a layer brings like charges next to each other, and repulsion shatters the crystal. Does not conduct as a solid: ions are fixed in place. Conducts when molten or dissolved: ions are free to move."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "An ionic lattice: each ion is surrounded by ions of opposite charge. Shifting a layer would bring like charges together, which is why ionic solids are brittle.",
+         "svg": "<circle class=\"fa\" opacity=\"1\" cx=\"80\" cy=\"50\" r=\"22\"/><text class=\"t\" x=\"80\" y=\"55\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"144\" cy=\"50\" r=\"27\"/><text class=\"t\" x=\"144\" y=\"55\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"208\" cy=\"50\" r=\"22\"/><text class=\"t\" x=\"208\" y=\"55\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"272\" cy=\"50\" r=\"27\"/><text class=\"t\" x=\"272\" y=\"55\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"336\" cy=\"50\" r=\"22\"/><text class=\"t\" x=\"336\" y=\"55\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"400\" cy=\"50\" r=\"27\"/><text class=\"t\" x=\"400\" y=\"55\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"464\" cy=\"50\" r=\"22\"/><text class=\"t\" x=\"464\" y=\"55\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"80\" cy=\"114\" r=\"27\"/><text class=\"t\" x=\"80\" y=\"119\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"144\" cy=\"114\" r=\"22\"/><text class=\"t\" x=\"144\" y=\"119\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"208\" cy=\"114\" r=\"27\"/><text class=\"t\" x=\"208\" y=\"119\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"272\" cy=\"114\" r=\"22\"/><text class=\"t\" x=\"272\" y=\"119\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"336\" cy=\"114\" r=\"27\"/><text class=\"t\" x=\"336\" y=\"119\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"400\" cy=\"114\" r=\"22\"/><text class=\"t\" x=\"400\" y=\"119\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"464\" cy=\"114\" r=\"27\"/><text class=\"t\" x=\"464\" y=\"119\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"80\" cy=\"178\" r=\"22\"/><text class=\"t\" x=\"80\" y=\"183\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"144\" cy=\"178\" r=\"27\"/><text class=\"t\" x=\"144\" y=\"183\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"208\" cy=\"178\" r=\"22\"/><text class=\"t\" x=\"208\" y=\"183\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"272\" cy=\"178\" r=\"27\"/><text class=\"t\" x=\"272\" y=\"183\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"336\" cy=\"178\" r=\"22\"/><text class=\"t\" x=\"336\" y=\"183\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"400\" cy=\"178\" r=\"27\"/><text class=\"t\" x=\"400\" y=\"183\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"464\" cy=\"178\" r=\"22\"/><text class=\"t\" x=\"464\" y=\"183\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"80\" cy=\"242\" r=\"27\"/><text class=\"t\" x=\"80\" y=\"247\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"144\" cy=\"242\" r=\"22\"/><text class=\"t\" x=\"144\" y=\"247\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"208\" cy=\"242\" r=\"27\"/><text class=\"t\" x=\"208\" y=\"247\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"272\" cy=\"242\" r=\"22\"/><text class=\"t\" x=\"272\" y=\"247\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"336\" cy=\"242\" r=\"27\"/><text class=\"t\" x=\"336\" y=\"247\" text-anchor=\"middle\">Cl⁻</text><circle class=\"fa\" opacity=\"1\" cx=\"400\" cy=\"242\" r=\"22\"/><text class=\"t\" x=\"400\" y=\"247\" text-anchor=\"middle\">Na⁺</text><circle class=\"fp\" cx=\"464\" cy=\"242\" r=\"27\"/><text class=\"t\" x=\"464\" y=\"247\" text-anchor=\"middle\">Cl⁻</text>",
+         "vb": "0 0 540 270"
+        }
        ]
       },
       {
@@ -655,6 +1233,39 @@
        "h": "Predicting precipitates",
        "p": [
         "A precipitation reaction occurs when two solutions are mixed and one combination of ions forms an insoluble compound. Use a solubility table. Always soluble: compounds of Na⁺, K⁺, NH₄⁺, NO₃⁻ and CH₃COO⁻. Most chlorides, bromides and iodides are soluble except those of Ag⁺ and Pb²⁺. Most sulfates are soluble except those of Ba²⁺, Pb²⁺ and Ca²⁺ (slightly). Most carbonates, phosphates, sulfides and hydroxides are insoluble."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "A simplified solubility guide. Use it to decide which combination of ions, if any, precipitates.",
+         "head": [
+          "Ions",
+          "Soluble?",
+          "Exceptions"
+         ],
+         "rows": [
+          [
+           "Na⁺, K⁺, NH₄⁺, NO₃⁻, CH₃COO⁻",
+           "always",
+           "none"
+          ],
+          [
+           "Cl⁻, Br⁻, I⁻",
+           "mostly",
+           "Ag⁺, Pb²⁺"
+          ],
+          [
+           "SO₄²⁻",
+           "mostly",
+           "Ba²⁺, Pb²⁺, Ca²⁺ (slightly)"
+          ],
+          [
+           "CO₃²⁻, PO₄³⁻, S²⁻, OH⁻",
+           "mostly not",
+           "with Na⁺, K⁺, NH₄⁺"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -709,6 +1320,47 @@
         "Leaving out state symbols, which carry the meaning in a precipitation equation. Writing PbI instead of balancing charges. Saying an ionic solid conducts because it “has electrons”."
        ]
       }
+     ],
+     "map": [
+      [
+       "Formation",
+       [
+        "metal loses electrons",
+        "non-metal gains",
+        "noble gas configurations"
+       ]
+      ],
+      [
+       "Lattice",
+       [
+        "cations and anions",
+        "strong attraction all directions"
+       ]
+      ],
+      [
+       "Properties",
+       [
+        "high melting point",
+        "brittle",
+        "conducts when molten or dissolved"
+       ]
+      ],
+      [
+       "Formulas",
+       [
+        "balance the charges",
+        "brackets for polyatomic ions",
+        "Roman numerals"
+       ]
+      ],
+      [
+       "Precipitation",
+       [
+        "solubility table",
+        "ionic equations",
+        "spectator ions"
+       ]
+      ]
      ]
     },
     {
@@ -735,6 +1387,30 @@
        "p": [
         "Step 1: write a word equation. Step 2: replace each name with its correct formula, checking ion charges and remembering the diatomic elements. Step 3: balance. Step 4: add state symbols.",
         "Example: magnesium burns in oxygen to form magnesium oxide. Word equation: magnesium + oxygen → magnesium oxide. Formulas: Mg + O₂ → MgO. Balance: there are two oxygen atoms on the left, so put 2 in front of MgO, then 2 in front of Mg. Result: 2Mg(s) + O₂(g) → 2MgO(s)."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "Four steps from a description to a balanced equation.",
+         "steps": [
+          [
+           "Word equation",
+           "magnesium + oxygen → magnesium oxide"
+          ],
+          [
+           "Formulas",
+           "Mg + O₂ → MgO"
+          ],
+          [
+           "Balance",
+           "2Mg + O₂ → 2MgO"
+          ],
+          [
+           "States",
+           "2Mg(s) + O₂(g) → 2MgO(s)"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -753,6 +1429,34 @@
          "Balance: C₂H₆ + O₂ → CO₂ + H₂O.",
          "2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O. Balancing C and H first gives 3.5 O₂, so double everything."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Balancing 2Al + 6HCl → 2AlCl₃ + 3H₂: count every element on both sides.",
+         "head": [
+          "Element",
+          "Left",
+          "Right"
+         ],
+         "rows": [
+          [
+           "Al",
+           "2",
+           "2"
+          ],
+          [
+           "H",
+           "6",
+           "6"
+          ],
+          [
+           "Cl",
+           "6",
+           "6"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -841,7 +1545,88 @@
        ],
        "a": 1,
        "e": "One compound breaks into two simpler substances."
+      },
+      {
+       "t": "c",
+       "q": "Balance: Al + O₂ → Al₂O₃.",
+       "a": "4Al + 3O₂ → 2Al₂O₃",
+       "e": "",
+       "s": [
+        "Oxygen: 2 on the left and 3 on the right; the lowest common multiple is 6.",
+        "So 3O₂ and 2Al₂O₃.",
+        "Then 4 aluminium atoms are needed: 4Al."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The state symbol for a substance dissolved in water is…",
+       "o": [
+        "(aq)",
+        "(l)",
+        "(s)",
+        "(g)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(2\\text{H}_2 + \\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}\\). What mass of water forms from [[m]] g of hydrogen gas? (M(H₂) = 2.0, M(H₂O) = 18.0)",
+       "vars": {
+        "m": [
+         1,
+         12,
+         0.5
+        ]
+       },
+       "ans": "m/2*18",
+       "dp": 1,
+       "unit": "g",
+       "s": [
+        "\\(n(\\text{H}_2) = \\dfrac{[[m]]}{2.0} = [[=m/2|2]]\\) mol",
+        "Mole ratio 2 : 2, so \\(n(\\text{H}_2\\text{O}) = [[=m/2|2]]\\) mol",
+        "\\(m = [[=m/2|2]] \\times 18.0 = [[=m/2*18|1]]\\) g"
+       ]
       }
+     ],
+     "map": [
+      [
+       "Writing",
+       [
+        "word equation",
+        "correct formulas",
+        "diatomic elements"
+       ]
+      ],
+      [
+       "Balancing",
+       [
+        "change coefficients only",
+        "count each element",
+        "simplest whole numbers"
+       ]
+      ],
+      [
+       "States",
+       [
+        "(s), (l), (g), (aq)"
+       ]
+      ],
+      [
+       "Reaction types",
+       [
+        "combination, decomposition",
+        "combustion, precipitation",
+        "acid–base, displacement"
+       ]
+      ],
+      [
+       "Meaning",
+       [
+        "mole ratios",
+        "mass conserved"
+       ]
+      ]
      ]
     },
     {
@@ -885,6 +1670,58 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A spot moves 2.4 cm and the solvent front 6.0 cm from the origin. Calculate Rf.",
+       "a": "0.40",
+       "e": "",
+       "s": [
+        "\\(R_f = \\dfrac{\\text{distance moved by spot}}{\\text{distance moved by solvent}}\\).",
+        "\\(\\dfrac{2.4}{6.0} = 0.40\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A component with a higher Rf is…",
+       "o": [
+        "more strongly attracted to the mobile phase",
+        "more strongly adsorbed to the stationary phase",
+        "always heavier",
+        "insoluble"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The origin line is drawn in pencil because…",
+       "o": [
+        "graphite does not dissolve in the solvent",
+        "it is easier to erase",
+        "ink is too dark",
+        "pencil is more accurate"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain why sodium chloride dissolves in water.",
+       "a": "The partial charges on water molecules attract the Na⁺ and Cl⁻ ions (ion–dipole attraction) strongly enough to pull them out of the lattice, and the ions become surrounded by water molecules.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which substance is most soluble in hexane?",
+       "o": [
+        "Iodine, I₂",
+        "Sodium chloride",
+        "Glucose",
+        "Ethanoic acid"
+       ],
+       "a": 0,
+       "e": "Non-polar dissolves in non-polar."
       }
      ],
      "notes": [
@@ -953,6 +1790,14 @@
          "On a polar stationary phase with a non-polar solvent, which travels further: a polar or a non-polar component?",
          "The non-polar component. It is more soluble in the mobile phase and less strongly adsorbed to the polar stationary phase, so it has the higher Rf."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A paper chromatogram. The dye splits into two spots that match tartrazine (Rf 0.25) and brilliant blue (Rf 0.70) run alongside it.",
+         "svg": "<rect class=\"fp\" x=\"120\" y=\"20\" width=\"300\" height=\"260\"/><line class=\"s\" x1=\"120\" y1=\"240\" x2=\"420\" y2=\"240\" stroke-dasharray=\"6 4\"/><line class=\"a\" x1=\"120\" y1=\"60\" x2=\"420\" y2=\"60\"/><text class=\"t\" x=\"430\" y=\"64\">solvent front</text><text class=\"t\" x=\"430\" y=\"244\">origin</text><circle class=\"fa\" opacity=\"1\" cx=\"180\" cy=\"195.0\" r=\"9\"/><circle class=\"fa\" opacity=\"1\" cx=\"180\" cy=\"114.00000000000001\" r=\"9\"/><circle class=\"fa\" opacity=\"1\" cx=\"270\" cy=\"195.0\" r=\"9\"/><circle class=\"fa\" opacity=\"1\" cx=\"360\" cy=\"114.00000000000001\" r=\"9\"/><text class=\"t\" x=\"180\" y=\"272\" text-anchor=\"middle\">dye</text><text class=\"t\" x=\"270\" y=\"272\" text-anchor=\"middle\">tartrazine</text><text class=\"t\" x=\"360\" y=\"272\" text-anchor=\"middle\">brilliant blue</text><text class=\"t\" x=\"105\" y=\"199\" text-anchor=\"end\">0.25</text><text class=\"t\" x=\"105\" y=\"118\" text-anchor=\"end\">0.70</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -961,6 +1806,44 @@
         "Measuring from the bottom of the paper instead of from the origin. Writing “absorb” for “adsorb”: adsorption is sticking to a surface. Saying a single spot proves purity; two substances may have the same Rf in that solvent."
        ]
       }
+     ],
+     "map": [
+      [
+       "Solubility",
+       [
+        "like dissolves like",
+        "ion–dipole for salts",
+        "hydrogen bonds for alcohols"
+       ]
+      ],
+      [
+       "Phases",
+       [
+        "stationary phase stays",
+        "mobile phase moves"
+       ]
+      ],
+      [
+       "Separation",
+       [
+        "adsorb vs dissolve",
+        "different speeds"
+       ]
+      ],
+      [
+       "Rf",
+       [
+        "spot ÷ solvent front",
+        "0 to 1, no units"
+       ]
+      ],
+      [
+       "Identifying",
+       [
+        "compare with standards",
+        "same conditions"
+       ]
+      ]
      ]
     }
    ]
@@ -1022,6 +1905,66 @@
        "q": "A compound has empirical formula \\(\\mathrm{CH_2O}\\) and \\(M = 180\\ \\mathrm{g\\ mol^{-1}}\\). What is its molecular formula?",
        "a": "\\(M(\\mathrm{CH_2O}) = 30.0\\); \\(\\dfrac{180}{30.0} = 6\\), so \\(\\mathrm{C_6H_{12}O_6}\\).",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How many moles are in 11 g of CO₂ (M = 44.0 g mol⁻¹)?",
+       "a": "0.25 mol",
+       "e": "",
+       "s": [
+        "\\(n = \\dfrac{m}{M} = \\dfrac{11}{44.0}\\).",
+        "= 0.25 mol."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "How many atoms in total are in 0.50 mol of water, H₂O?",
+       "a": "\\(9.0 \\times 10^{23}\\)",
+       "e": "",
+       "s": [
+        "Molecules: \\(0.50 \\times 6.02 \\times 10^{23} = 3.01 \\times 10^{23}\\).",
+        "Each molecule has 3 atoms: \\(3 \\times 3.01 \\times 10^{23} \\approx 9.0 \\times 10^{23}\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A compound is 75% carbon and 25% hydrogen by mass. Find its empirical formula.",
+       "a": "CH₄",
+       "e": "",
+       "s": [
+        "In 100 g: 75 g C and 25 g H.",
+        "Moles: C = 75 ÷ 12.0 = 6.25; H = 25 ÷ 1.0 = 25.",
+        "Divide by the smallest: C 1, H 4. Empirical formula CH₄."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the amount, in mol, of [[m]] g of a substance with molar mass [[M]] g mol⁻¹. Give 3 decimal places.",
+       "vars": {
+        "m": [
+         2,
+         60,
+         0.5
+        ],
+        "M": {
+         "pick": [
+          18.0,
+          44.0,
+          58.5,
+          100.1,
+          16.0,
+          98.1,
+          40.0
+         ]
+        }
+       },
+       "ans": "m/M",
+       "dp": 3,
+       "unit": "mol",
+       "s": [
+        "\\(n = \\dfrac{m}{M} = \\dfrac{[[m]]}{[[M]]}\\)",
+        "= [[=m/M|3]] mol"
+       ]
       }
      ],
      "notes": [
@@ -1042,6 +1985,14 @@
        "h": "The three core relationships",
        "p": [
         "\\(n = \\dfrac{m}{M}\\) converts between mass and moles. \\(n = \\dfrac{N}{N_A}\\) converts between number of particles and moles. For a compound, the subscripts give mole ratios of atoms: 1 mol of \\(\\mathrm{H_2SO_4}\\) contains 2 mol of H atoms, 1 mol of S atoms and 4 mol of O atoms."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The mole is the hub: convert to moles first, then to whatever you need.",
+         "svg": "<rect class=\"fa\" x=\"200\" y=\"110\" width=\"140\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"270.0\" y=\"140.0\" text-anchor=\"middle\">moles, n</text><rect class=\"fp\" x=\"20\" y=\"20\" width=\"140\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"90.0\" y=\"50.0\" text-anchor=\"middle\">mass, m (g)</text><rect class=\"fp\" x=\"380\" y=\"20\" width=\"140\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"450.0\" y=\"50.0\" text-anchor=\"middle\">particles, N</text><rect class=\"fp\" x=\"20\" y=\"200\" width=\"140\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"90.0\" y=\"230.0\" text-anchor=\"middle\">gas volume (SLC)</text><rect class=\"fp\" x=\"380\" y=\"200\" width=\"140\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"450.0\" y=\"230.0\" text-anchor=\"middle\">solution, c and V</text><line class=\"a\" x1=\"160\" y1=\"55\" x2=\"195.0\" y2=\"107.5\"/><polygon class=\"fa\" opacity=\"1\" points=\"200,115 199.2,104.7 190.8,110.3\"/><text class=\"t\" x=\"196.6410058867569\" y=\"78.90599607549541\" text-anchor=\"middle\">÷ M</text><line class=\"a\" x1=\"340\" y1=\"115\" x2=\"375.0\" y2=\"62.5\"/><polygon class=\"fa\" opacity=\"1\" points=\"380,55 370.8,59.7 379.2,65.3\"/><text class=\"t\" x=\"343.3589941132431\" y=\"78.90599607549541\" text-anchor=\"middle\">× Nₐ</text><line class=\"a\" x1=\"160\" y1=\"225\" x2=\"195.3\" y2=\"167.7\"/><polygon class=\"fa\" opacity=\"1\" points=\"200,160 191.0,165.0 199.5,170.3\"/><text class=\"t\" x=\"162.96683366590912\" y=\"187.01805148671332\" text-anchor=\"middle\">÷ 24.8</text><line class=\"a\" x1=\"340\" y1=\"160\" x2=\"374.7\" y2=\"207.7\"/><polygon class=\"fa\" opacity=\"1\" points=\"380,215 378.8,204.8 370.7,210.7\"/><text class=\"t\" x=\"376.1747216860638\" y=\"180.73656604649906\" text-anchor=\"middle\">÷ V</text>",
+         "vb": "0 0 540 270"
+        }
        ]
       },
       {
@@ -1108,6 +2059,46 @@
         "Rounding ratios such as 1.5 or 1.33 to a whole number: multiply all values by 2 or 3 instead. Using atomic number in place of molar mass. Forgetting that diatomic elements (H₂, N₂, O₂, F₂, Cl₂, Br₂, I₂) have a molar mass twice the atomic value. Giving too many or too few significant figures: match the data."
        ]
       }
+     ],
+     "map": [
+      [
+       "The mole",
+       [
+        "6.02 × 10²³ particles",
+        "mass in g = relative mass"
+       ]
+      ],
+      [
+       "Relationships",
+       [
+        "n = m ÷ M",
+        "n = N ÷ Nₐ",
+        "subscripts give ratios"
+       ]
+      ],
+      [
+       "Molar mass",
+       [
+        "add atomic masses",
+        "brackets multiply",
+        "include water of crystallisation"
+       ]
+      ],
+      [
+       "Formulas",
+       [
+        "percentage composition",
+        "empirical formula",
+        "molecular formula"
+       ]
+      ],
+      [
+       "Good practice",
+       [
+        "units at every step",
+        "significant figures"
+       ]
+      ]
      ]
     },
     {
@@ -1164,6 +2155,42 @@
        ],
        "a": 1,
        "e": "Both are C₄H₁₀."
+      },
+      {
+       "t": "m",
+       "q": "CH₃CH₂CH₂CH₃ is named…",
+       "o": [
+        "butane",
+        "propane",
+        "butene",
+        "pentane"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name CH₃CH=CHCH₃.",
+       "a": "But-2-ene",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which observation shows a compound is an alkene?",
+       "o": [
+        "It quickly decolourises bromine water",
+        "It burns",
+        "It dissolves in water",
+        "It turns litmus red"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the two structural isomers of C₃H₈O that are alcohols.",
+       "a": "Propan-1-ol and propan-2-ol",
+       "e": ""
       }
      ],
      "notes": [
@@ -1216,6 +2243,50 @@
          "What is the molecular formula of the alkane with six carbon atoms, and what is it called?",
          "CₙH₂ₙ₊₂ with n = 6 gives C₆H₁₄, hexane."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Homologous series in Units 1 and 2.",
+         "head": [
+          "Family",
+          "Functional group",
+          "Ending",
+          "Example"
+         ],
+         "rows": [
+          [
+           "Alkane",
+           "C–C only",
+           "-ane",
+           "propane CH₃CH₂CH₃"
+          ],
+          [
+           "Alkene",
+           "C=C",
+           "-ene",
+           "propene CH₂=CHCH₃"
+          ],
+          [
+           "Alcohol",
+           "–OH",
+           "-ol",
+           "ethanol CH₃CH₂OH"
+          ],
+          [
+           "Carboxylic acid",
+           "–COOH",
+           "-oic acid",
+           "ethanoic acid CH₃COOH"
+          ],
+          [
+           "Ester",
+           "–COO–",
+           "-yl -oate",
+           "ethyl ethanoate"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1230,6 +2301,14 @@
          "Name the two structural isomers of C₄H₁₀.",
          "Butane and 2-methylpropane."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The three structural isomers of C₅H₁₂, drawn as skeletal formulas: pentane, 2-methylbutane and 2,2-dimethylpropane.",
+         "svg": "<polyline class=\"a\" points=\"30,110 60,90 90,110 120,90 150,110\"/><text class=\"t\" x=\"90\" y=\"150\" text-anchor=\"middle\">pentane</text><polyline class=\"a\" points=\"210,110 240,90 270,110 300,90\"/><line class=\"a\" x1=\"240\" y1=\"90\" x2=\"240\" y2=\"55\"/><text class=\"t\" x=\"255\" y=\"150\" text-anchor=\"middle\">2-methylbutane</text><line class=\"a\" x1=\"420\" y1=\"100\" x2=\"380\" y2=\"100\"/><line class=\"a\" x1=\"420\" y1=\"100\" x2=\"460\" y2=\"100\"/><line class=\"a\" x1=\"420\" y1=\"100\" x2=\"420\" y2=\"60\"/><line class=\"a\" x1=\"420\" y1=\"100\" x2=\"420\" y2=\"140\"/><text class=\"t\" x=\"420\" y=\"170\" text-anchor=\"middle\">2,2-dimethylpropane</text>",
+         "vb": "0 0 540 190"
+        }
        ]
       },
       {
@@ -1251,6 +2330,46 @@
         "Not choosing the longest chain. Numbering from the wrong end. Drawing carbon with five bonds or leaving it with three. Calling the chain length by counting branches."
        ]
       }
+     ],
+     "map": [
+      [
+       "Carbon",
+       [
+        "four bonds",
+        "chains, branches, rings"
+       ]
+      ],
+      [
+       "Families",
+       [
+        "alkanes: single bonds",
+        "alkenes: C=C",
+        "alcohols, acids, esters"
+       ]
+      ],
+      [
+       "Naming",
+       [
+        "longest chain",
+        "lowest numbers",
+        "prefix + suffix"
+       ]
+      ],
+      [
+       "Isomers",
+       [
+        "same formula",
+        "different structure"
+       ]
+      ],
+      [
+       "Reactions",
+       [
+        "combustion",
+        "substitution",
+        "addition"
+       ]
+      ]
      ]
     },
     {
@@ -1307,6 +2426,42 @@
        ],
        "a": 2,
        "e": "Cross-links stop chains moving apart."
+      },
+      {
+       "t": "m",
+       "q": "The monomer of polypropene is…",
+       "o": [
+        "propene",
+        "propane",
+        "ethene",
+        "propanol"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between a thermoplastic and a thermosetting polymer?",
+       "a": "Thermoplastics have no cross-links and soften on heating, so they can be remoulded. Thermosetting polymers have covalent cross-links and char instead of melting.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "When a condensation polymer forms, a small molecule is released. It is usually…",
+       "o": [
+        "water",
+        "oxygen",
+        "carbon dioxide",
+        "hydrogen"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is low-density polyethene softer than high-density polyethene?",
+       "a": "Its chains have many branches, so they cannot pack closely; the total dispersion forces between chains are weaker.",
+       "e": ""
       }
      ],
      "notes": [
@@ -1321,6 +2476,14 @@
        "h": "How polymers form",
        "p": [
         "A polymer is a very large molecule made of many small repeating units called monomers. In addition polymerisation the double bond of each monomer opens and the monomers join end to end; nothing else is produced, so the polymer has the same empirical formula as the monomer. In condensation polymerisation each monomer has two functional groups; they join by forming ester or amide links and release a small molecule, usually water."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Addition polymerisation: the C=C double bond in each ethene molecule opens and the monomers join end to end into polyethene.",
+         "svg": "<text class=\"t\" x=\"20\" y=\"60\">CH₂=CH₂  +  CH₂=CH₂  +  CH₂=CH₂  + …</text><line class=\"a\" x1=\"270\" y1=\"80\" x2=\"270.0\" y2=\"131.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"270,140 275.0,131.0 265.0,131.0\"/><text class=\"t\" x=\"20\" y=\"180\">… –CH₂–CH₂–CH₂–CH₂–CH₂–CH₂– …</text><text class=\"t\" x=\"20\" y=\"230\">repeating unit:  –[ CH₂–CH₂ ]ₙ–</text>",
+         "vb": "0 0 540 250"
+        }
        ]
       },
       {
@@ -1340,6 +2503,14 @@
          "Why is HDPE more rigid than LDPE?",
          "HDPE chains have few branches, so they pack closely and the total dispersion forces between chains are stronger."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Branched chains (LDPE, left) cannot pack closely, so dispersion forces are weaker and the plastic is soft. Unbranched chains (HDPE, right) pack tightly.",
+         "svg": "<polyline class=\"a\" points=\"20,40 80,30 140,50 200,35\"/><line class=\"a\" x1=\"80\" y1=\"30\" x2=\"70\" y2=\"50\"/><polyline class=\"a\" points=\"26,78 80,68 140,88 200,73\"/><line class=\"a\" x1=\"80\" y1=\"68\" x2=\"80\" y2=\"88\"/><polyline class=\"a\" points=\"32,116 80,106 140,126 200,111\"/><line class=\"a\" x1=\"80\" y1=\"106\" x2=\"70\" y2=\"126\"/><polyline class=\"a\" points=\"38,154 80,144 140,164 200,149\"/><line class=\"a\" x1=\"80\" y1=\"144\" x2=\"80\" y2=\"164\"/><polyline class=\"a\" points=\"44,192 80,182 140,202 200,187\"/><line class=\"a\" x1=\"80\" y1=\"182\" x2=\"70\" y2=\"202\"/><line class=\"a\" x1=\"300\" y1=\"40\" x2=\"520\" y2=\"40\"/><line class=\"a\" x1=\"300\" y1=\"62\" x2=\"520\" y2=\"62\"/><line class=\"a\" x1=\"300\" y1=\"84\" x2=\"520\" y2=\"84\"/><line class=\"a\" x1=\"300\" y1=\"106\" x2=\"520\" y2=\"106\"/><line class=\"a\" x1=\"300\" y1=\"128\" x2=\"520\" y2=\"128\"/><line class=\"a\" x1=\"300\" y1=\"150\" x2=\"520\" y2=\"150\"/><line class=\"a\" x1=\"300\" y1=\"172\" x2=\"520\" y2=\"172\"/><line class=\"a\" x1=\"300\" y1=\"194\" x2=\"520\" y2=\"194\"/><line class=\"a\" x1=\"300\" y1=\"216\" x2=\"520\" y2=\"216\"/><text class=\"t\" x=\"110\" y=\"260\" text-anchor=\"middle\">LDPE: branched</text><text class=\"t\" x=\"410\" y=\"260\" text-anchor=\"middle\">HDPE: unbranched</text>",
+         "vb": "0 0 540 280"
+        }
        ]
       },
       {
@@ -1391,6 +2562,48 @@
         "Leaving a double bond in the repeating unit of an addition polymer. Forgetting the bonds that extend through the brackets. Saying thermosetting plastics have “stronger intermolecular forces”: their cross-links are covalent bonds."
        ]
       }
+     ],
+     "map": [
+      [
+       "Addition",
+       [
+        "C=C opens",
+        "no by-product",
+        "polyethene, PVC"
+       ]
+      ],
+      [
+       "Condensation",
+       [
+        "two functional groups",
+        "releases water",
+        "polyesters, polyamides"
+       ]
+      ],
+      [
+       "Structure",
+       [
+        "chain length",
+        "branching",
+        "crystalline vs amorphous"
+       ]
+      ],
+      [
+       "Thermal behaviour",
+       [
+        "thermoplastics remould",
+        "thermosets char",
+        "elastomers stretch"
+       ]
+      ],
+      [
+       "Sustainability",
+       [
+        "recycling codes",
+        "bioplastics",
+        "chemical recycling"
+       ]
+      ]
      ]
     },
     {
@@ -1423,6 +2636,30 @@
          "Give one difference between a linear and a circular economy.",
          "A linear economy disposes of products after use; a circular economy keeps materials in use by reusing, repairing and recycling them."
         ]
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "A linear economy ends in waste.",
+         "steps": [
+          "Extract",
+          "Make",
+          "Use",
+          "Dispose"
+         ]
+        },
+        {
+         "t": "flow",
+         "cap": "A circular economy loops materials back into production.",
+         "steps": [
+          "Design to last",
+          "Make",
+          "Use",
+          "Repair, reuse",
+          "Recycle",
+          "Back into production"
+         ]
+        }
        ]
       },
       {
@@ -1506,7 +2743,78 @@
        ],
        "a": 2,
        "e": "Peer review means other experts have checked the methods and conclusions."
+      },
+      {
+       "t": "m",
+       "q": "Which type of reaction has an atom economy of 100%?",
+       "o": [
+        "Addition",
+        "Substitution",
+        "Condensation",
+        "Combustion"
+       ],
+       "a": 0,
+       "e": "All reactant atoms end up in the single product."
+      },
+      {
+       "t": "c",
+       "q": "Give one disadvantage of bioplastics.",
+       "a": "For example: growing the feedstock uses farmland and water; many need industrial composting to break down.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which is a renewable feedstock?",
+       "o": [
+        "Starch from corn",
+        "Crude oil",
+        "Natural gas",
+        "Coal"
+       ],
+       "a": 0,
+       "e": ""
       }
+     ],
+     "map": [
+      [
+       "Economies",
+       [
+        "linear: take, make, dispose",
+        "circular: keep materials in use"
+       ]
+      ],
+      [
+       "Green chemistry",
+       [
+        "prevent waste",
+        "atom economy",
+        "safer chemicals and solvents",
+        "renewable feedstocks",
+        "catalysts"
+       ]
+      ],
+      [
+       "Life cycle",
+       [
+        "raw materials",
+        "manufacture, transport",
+        "use, end of life"
+       ]
+      ],
+      [
+       "Evaluating",
+       [
+        "benefits and limits",
+        "trade-offs"
+       ]
+      ],
+      [
+       "Research",
+       [
+        "reliable sources",
+        "acknowledge them"
+       ]
+      ]
      ]
     }
    ]
@@ -1561,6 +2869,44 @@
        ],
        "a": 1,
        "e": "Energy goes into breaking hydrogen bonds, not raising temperature."
+      },
+      {
+       "t": "c",
+       "q": "How much energy is needed to heat 150 g of water from 20 °C to 45 °C?",
+       "a": "15.7 kJ",
+       "e": "",
+       "s": [
+        "\\(q = mc\\Delta T = 150 \\times 4.18 \\times 25\\).",
+        "= 15 675 J ≈ 15.7 kJ."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Ice floats on water because…",
+       "o": [
+        "hydrogen bonding holds ice molecules in an open structure, making it less dense",
+        "ice contains air",
+        "ice is a different substance",
+        "water is less dense than ice"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Explain how water’s high specific heat capacity moderates the climate near the coast.",
+       "a": "Oceans absorb and release large amounts of energy with only small temperature changes, so nearby land has smaller temperature swings.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How much energy is needed to vaporise 36 g of water at 100 °C? (Latent heat 40.7 kJ mol⁻¹)",
+       "a": "81.4 kJ",
+       "e": "",
+       "s": [
+        "n = 36 ÷ 18.0 = 2.0 mol.",
+        "q = 2.0 × 40.7 = 81.4 kJ."
+       ]
       }
      ],
      "notes": [
@@ -1613,6 +2959,70 @@
          "Why does the temperature stay at 100 °C while water boils, even though it is still being heated?",
          "The energy is being used to overcome the hydrogen bonds between water molecules, not to increase their kinetic energy, so the temperature does not rise until all the water has become steam."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Heating ice steadily: temperature rises on the slopes; it stays constant while melting (0 °C) and boiling (100 °C), when the energy goes into breaking hydrogen bonds.",
+         "x": [
+          0,
+          16
+         ],
+         "y": [
+          -30,
+          130
+         ],
+         "xstep": 2,
+         "ystep": 20,
+         "lines": [
+          {
+           "pts": [
+            [
+             0,
+             -20
+            ],
+            [
+             1,
+             0
+            ],
+            [
+             3,
+             0
+            ],
+            [
+             6,
+             100
+            ],
+            [
+             13,
+             100
+            ],
+            [
+             14.5,
+             120
+            ]
+           ]
+          }
+         ],
+         "pts": [
+          [
+           2,
+           0,
+           "melting",
+           -10,
+           -10
+          ],
+          [
+           9.5,
+           100,
+           "boiling",
+           -10,
+           -10
+          ]
+         ],
+         "xl": "time",
+         "yl": "°C"
+        }
        ]
       },
       {
@@ -1633,6 +3043,74 @@
        "h": "Comparing water with similar molecules",
        "p": [
         "The hydrides of group 16 are H₂O, H₂S, H₂Se and H₂Te. Boiling points rise from H₂S (−60 °C) to H₂Te (−2 °C) as dispersion forces increase with the number of electrons. If water followed the trend it would boil at about −80 °C. It boils at 100 °C because only water forms hydrogen bonds."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Boiling points of the group 16 hydrides. H₂S, H₂Se and H₂Te rise with size; water is far above the trend because of hydrogen bonding.",
+         "x": [
+          1.5,
+          5.5
+         ],
+         "y": [
+          -100,
+          120
+         ],
+         "xstep": 1,
+         "ystep": 50,
+         "lines": [
+          {
+           "pts": [
+            [
+             2,
+             100
+            ],
+            [
+             3,
+             -60
+            ],
+            [
+             4,
+             -41
+            ],
+            [
+             5,
+             -2
+            ]
+           ]
+          }
+         ],
+         "pts": [
+          [
+           2,
+           100,
+           "H₂O 100 °C"
+          ],
+          [
+           3,
+           -60,
+           "H₂S",
+           8,
+           18
+          ],
+          [
+           4,
+           -41,
+           "H₂Se",
+           8,
+           18
+          ],
+          [
+           5,
+           -2,
+           "H₂Te",
+           -40,
+           -10
+          ]
+         ],
+         "xl": "period",
+         "yl": "°C"
+        }
        ]
       },
       {
@@ -1641,6 +3119,45 @@
         "Mixing joules and kilojoules. Using a temperature in place of a temperature change. Saying hydrogen bonds are the O–H bonds inside the molecule; they are the attractions between molecules."
        ]
       }
+     ],
+     "map": [
+      [
+       "Structure",
+       [
+        "polar, bent molecule",
+        "hydrogen bonding"
+       ]
+      ],
+      [
+       "Heat capacity",
+       [
+        "4.18 J g⁻¹ °C⁻¹",
+        "q = mcΔT",
+        "moderates climate"
+       ]
+      ],
+      [
+       "Latent heat",
+       [
+        "change of state",
+        "constant temperature",
+        "q = nL"
+       ]
+      ],
+      [
+       "Ice",
+       [
+        "open hexagonal lattice",
+        "less dense, floats"
+       ]
+      ],
+      [
+       "Other properties",
+       [
+        "cohesion, surface tension",
+        "high boiling point for its size"
+       ]
+      ]
      ]
     },
     {
@@ -1703,6 +3220,48 @@
        ],
        "a": 1,
        "e": "It can donate (→ CO₃²⁻) or accept (→ H₂CO₃) a proton."
+      },
+      {
+       "t": "c",
+       "q": "What is the pH of 0.001 M HCl?",
+       "a": "3",
+       "e": "\\(-\\log_{10}(0.001) = 3\\)."
+      },
+      {
+       "t": "c",
+       "q": "What is the conjugate base of H₂PO₄⁻?",
+       "a": "HPO₄²⁻",
+       "e": "Remove one H⁺."
+      },
+      {
+       "t": "c",
+       "q": "Find [H₃O⁺] in a solution with pH 4.5.",
+       "a": "\\(3.2 \\times 10^{-5}\\) M",
+       "e": "\\(10^{-4.5}\\)."
+      },
+      {
+       "t": "n",
+       "q": "Find the pH of a solution with \\([\\text{H}_3\\text{O}^+] = [[c]]\\) M, to 2 decimal places.",
+       "vars": {
+        "c": {
+         "pick": [
+          0.1,
+          0.05,
+          0.02,
+          0.01,
+          0.005,
+          0.002,
+          0.001,
+          0.0004
+         ]
+        }
+       },
+       "ans": "-log(c)/log(10)",
+       "dp": 2,
+       "s": [
+        "\\(\\text{pH} = -\\log_{10}[\\text{H}_3\\text{O}^+] = -\\log_{10}([[c]])\\)",
+        "= [[=-log(c)/log(10)|2]]"
+       ]
       }
      ],
      "notes": [
@@ -1738,6 +3297,14 @@
         "\\(\\mathrm{pH} = -\\log_{10}[\\mathrm{H_3O^+}]\\) and \\([\\mathrm{H_3O^+}] = 10^{-\\mathrm{pH}}\\). At 25 °C, \\([\\mathrm{H_3O^+}][\\mathrm{OH^-}] = 1.0 \\times 10^{-14}\\).",
         "Example 1: 0.020 M HCl. It is a strong monoprotic acid, so \\([\\mathrm{H_3O^+}] = 0.020\\) and \\(\\mathrm{pH} = -\\log(0.020) = 1.70\\).",
         "Example 2: 0.010 M NaOH. \\([\\mathrm{OH^-}] = 0.010\\), so \\([\\mathrm{H_3O^+}] = \\dfrac{1.0 \\times 10^{-14}}{0.010} = 1.0 \\times 10^{-12}\\) and \\(\\mathrm{pH} = 12.0\\)."
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The pH scale. Each step is a tenfold change in hydronium ion concentration.",
+         "svg": "<rect x=\"20\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.57\"/><text class=\"t\" x=\"37\" y=\"135\" text-anchor=\"middle\">0</text><rect x=\"55\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.51\"/><text class=\"t\" x=\"72\" y=\"135\" text-anchor=\"middle\">1</text><rect x=\"90\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.44999999999999996\"/><text class=\"t\" x=\"107\" y=\"135\" text-anchor=\"middle\">2</text><rect x=\"125\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.39\"/><text class=\"t\" x=\"142\" y=\"135\" text-anchor=\"middle\">3</text><rect x=\"160\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.32999999999999996\"/><text class=\"t\" x=\"177\" y=\"135\" text-anchor=\"middle\">4</text><rect x=\"195\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.27\"/><text class=\"t\" x=\"212\" y=\"135\" text-anchor=\"middle\">5</text><rect x=\"230\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.21\"/><text class=\"t\" x=\"247\" y=\"135\" text-anchor=\"middle\">6</text><rect x=\"265\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.15\"/><text class=\"t\" x=\"282\" y=\"135\" text-anchor=\"middle\">7</text><rect x=\"300\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.21\"/><text class=\"t\" x=\"317\" y=\"135\" text-anchor=\"middle\">8</text><rect x=\"335\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.27\"/><text class=\"t\" x=\"352\" y=\"135\" text-anchor=\"middle\">9</text><rect x=\"370\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.32999999999999996\"/><text class=\"t\" x=\"387\" y=\"135\" text-anchor=\"middle\">10</text><rect x=\"405\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.39\"/><text class=\"t\" x=\"422\" y=\"135\" text-anchor=\"middle\">11</text><rect x=\"440\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.44999999999999996\"/><text class=\"t\" x=\"457\" y=\"135\" text-anchor=\"middle\">12</text><rect x=\"475\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.51\"/><text class=\"t\" x=\"492\" y=\"135\" text-anchor=\"middle\">13</text><rect x=\"510\" y=\"60\" width=\"35\" height=\"50\" class=\"fa\" opacity=\"0.57\"/><text class=\"t\" x=\"527\" y=\"135\" text-anchor=\"middle\">14</text><rect class=\"s\" x=\"20\" y=\"60\" width=\"525\" height=\"50\" fill=\"none\"/><text class=\"t\" x=\"20\" y=\"45\">acidic</text><text class=\"t\" x=\"282\" y=\"45\" text-anchor=\"middle\">neutral</text><text class=\"t\" x=\"545\" y=\"45\" text-anchor=\"end\">basic</text><text class=\"t\" x=\"55\" y=\"180\">stomach acid ~1–2</text><text class=\"t\" x=\"265\" y=\"180\">water 7</text><text class=\"t\" x=\"400\" y=\"180\">bleach ~13</text>",
+         "vb": "0 0 560 200"
+        }
        ]
       },
       {
@@ -1769,6 +3336,14 @@
          "What is the conjugate base of HCO₃⁻, and what is its conjugate acid?",
          "Conjugate base: CO₃²⁻ (remove H⁺). Conjugate acid: H₂CO₃ (add H⁺). HCO₃⁻ is amphiprotic."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "In NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, water donates a proton (acid) and ammonia accepts it (base). Each pair differs by one H⁺.",
+         "svg": "<text class=\"t\" x=\"270\" y=\"90\" text-anchor=\"middle\">NH₃  +  H₂O  ⇌  NH₄⁺  +  OH⁻</text><path class=\"a\" d=\"M200,100 C200,150 330,150 330,100\"/><path class=\"s\" d=\"M245,75 C245,30 385,30 385,75\" stroke-dasharray=\"5 4\"/><text class=\"t\" x=\"265\" y=\"165\" text-anchor=\"middle\">base / conjugate acid</text><text class=\"t\" x=\"315\" y=\"25\" text-anchor=\"middle\">acid / conjugate base</text>",
+         "vb": "0 0 540 190"
+        }
        ]
       },
       {
@@ -1798,6 +3373,45 @@
         "Calling a weak acid “dilute”. Forgetting that 0.1 M H₂SO₄ gives more than 0.1 M H₃O⁺. Diluting an acid 10 times and saying the pH falls by 1: it rises by 1, and never past 7."
        ]
       }
+     ],
+     "map": [
+      [
+       "Brønsted–Lowry",
+       [
+        "acid donates H⁺",
+        "base accepts H⁺",
+        "conjugate pairs"
+       ]
+      ],
+      [
+       "Strength vs concentration",
+       [
+        "strong: ionises fully",
+        "concentrated: much solute"
+       ]
+      ],
+      [
+       "pH",
+       [
+        "−log[H₃O⁺]",
+        "Kw = 10⁻¹⁴ at 25 °C",
+        "1 unit = 10× change"
+       ]
+      ],
+      [
+       "Reactions",
+       [
+        "metal → salt + H₂",
+        "base → salt + water",
+        "carbonate → + CO₂"
+       ]
+      ],
+      [
+       "Environment",
+       [
+        "ocean acidification"
+       ]
+      ]
      ]
     },
     {
@@ -1854,6 +3468,48 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The oxidation number of sulfur in SO₄²⁻ is…",
+       "o": [
+        "+6",
+        "+4",
+        "−2",
+        "+2"
+       ],
+       "a": 0,
+       "e": "4 × (−2) + S = −2."
+      },
+      {
+       "t": "c",
+       "q": "Write the half-equation for the reduction of Fe³⁺ to Fe²⁺.",
+       "a": "Fe³⁺(aq) + e⁻ → Fe²⁺(aq)",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s), the reducing agent is…",
+       "o": [
+        "Zn",
+        "Cu²⁺",
+        "Zn²⁺",
+        "Cu"
+       ],
+       "a": 0,
+       "e": "Zinc is oxidised, so it is the reducing agent."
+      },
+      {
+       "t": "c",
+       "q": "Balance the half-equation for Cr₂O₇²⁻ → Cr³⁺ in acidic solution.",
+       "a": "Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O",
+       "e": "",
+       "s": [
+        "Balance Cr: 2Cr³⁺.",
+        "Balance O with water: 7H₂O on the right.",
+        "Balance H with H⁺: 14H⁺ on the left.",
+        "Charge: left +12, right +6, so add 6e⁻ to the left."
+       ]
       }
      ],
      "notes": [
@@ -1935,6 +3591,14 @@
          "In a magnesium–silver cell, which metal is the anode?",
          "Magnesium. It is more reactive, so it is oxidised, and oxidation occurs at the anode."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "A zinc–copper galvanic cell. Zinc is oxidised at the anode (−); electrons flow through the wire to copper, where Cu²⁺ is reduced at the cathode (+).",
+         "svg": "<rect class=\"fp\" x=\"40\" y=\"80\" width=\"170\" height=\"150\" rx=\"6\"/><rect class=\"fp\" x=\"330\" y=\"80\" width=\"170\" height=\"150\" rx=\"6\"/><rect class=\"fa\" x=\"40\" y=\"130\" width=\"170\" height=\"100\"/><rect class=\"fa\" x=\"330\" y=\"130\" width=\"170\" height=\"100\"/><line class=\"s\" x1=\"100\" y1=\"40\" x2=\"100\" y2=\"200\" stroke-width=\"6\"/><line class=\"s\" x1=\"440\" y1=\"40\" x2=\"440\" y2=\"200\" stroke-width=\"6\"/><path class=\"a\" d=\"M100,40 H440\"/><path class=\"s\" d=\"M170,130 v-28 h200 v28\"/><text class=\"t\" x=\"270\" y=\"96\" text-anchor=\"middle\">salt bridge</text><text class=\"t\" x=\"270\" y=\"32\" text-anchor=\"middle\">e⁻ →</text><text class=\"t\" x=\"100\" y=\"252\" text-anchor=\"middle\">Zn anode (−)</text><text class=\"t\" x=\"440\" y=\"252\" text-anchor=\"middle\">Cu cathode (+)</text><text class=\"t\" x=\"125\" y=\"180\" text-anchor=\"middle\">ZnSO₄(aq)</text><text class=\"t\" x=\"415\" y=\"180\" text-anchor=\"middle\">CuSO₄(aq)</text>",
+         "vb": "0 0 540 270"
+        }
        ]
       },
       {
@@ -1943,6 +3607,46 @@
         "Calling the oxidised species the oxidising agent. Putting electrons on the wrong side: they are a product in oxidation and a reactant in reduction. Saying electrons flow through the salt bridge."
        ]
       }
+     ],
+     "map": [
+      [
+       "Definitions",
+       [
+        "oxidation: loss of e⁻",
+        "reduction: gain of e⁻",
+        "always together"
+       ]
+      ],
+      [
+       "Agents",
+       [
+        "oxidising agent is reduced",
+        "reducing agent is oxidised"
+       ]
+      ],
+      [
+       "Oxidation numbers",
+       [
+        "elements 0",
+        "O −2, H +1",
+        "sum to the charge"
+       ]
+      ],
+      [
+       "Half-equations",
+       [
+        "KOHES in acid",
+        "match electrons, add"
+       ]
+      ],
+      [
+       "Applications",
+       [
+        "displacement",
+        "galvanic cells",
+        "corrosion"
+       ]
+      ]
      ]
     }
    ]
@@ -1985,6 +3689,108 @@
        "q": "How many moles of NaCl are in \\(250\\ \\mathrm{mL}\\) of \\(0.40\\ \\mathrm{M}\\) solution?",
        "a": "\\(n = cV = 0.40 \\times 0.250 = 0.10\\ \\mathrm{mol}\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "0.20 mol of solute is dissolved to make 500 mL of solution. Find the concentration.",
+       "a": "0.40 M",
+       "e": "0.20 ÷ 0.500 = 0.40 M."
+      },
+      {
+       "t": "c",
+       "q": "What mass of NaCl (M = 58.5) is needed for 250 mL of 0.20 M solution?",
+       "a": "2.93 g",
+       "e": "",
+       "s": [
+        "n = cV = 0.20 × 0.250 = 0.050 mol.",
+        "m = nM = 0.050 × 58.5 = 2.93 g."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "50 mL of 2.0 M acid is diluted to 0.50 M. What is the final volume?",
+       "a": "200 mL",
+       "e": "",
+       "s": [
+        "\\(c_1V_1 = c_2V_2\\).",
+        "\\(V_2 = \\dfrac{2.0 \\times 50}{0.50} = 200\\) mL."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "3 mg of lead is found in 2 L of water. Its concentration is…",
+       "o": [
+        "1.5 ppm",
+        "6 ppm",
+        "3 ppm",
+        "0.67 ppm"
+       ],
+       "a": 0,
+       "e": "3 mg ÷ 2 L = 1.5 mg L⁻¹."
+      },
+      {
+       "t": "c",
+       "q": "What is the concentration of chloride ions in 0.30 M AlCl₃?",
+       "a": "0.90 M",
+       "e": "Each AlCl₃ gives three Cl⁻."
+      },
+      {
+       "t": "n",
+       "q": "[[m]] g of NaCl (M = 58.5 g mol⁻¹) is dissolved to make [[V]] mL of solution. Find the concentration, to 3 decimal places.",
+       "vars": {
+        "m": [
+         1,
+         20,
+         0.5
+        ],
+        "V": [
+         100,
+         500,
+         50
+        ]
+       },
+       "ans": "m/58.5/(V/1000)",
+       "dp": 3,
+       "unit": "M",
+       "s": [
+        "\\(n = \\dfrac{[[m]]}{58.5} = [[=m/58.5|4]]\\) mol",
+        "\\(V = [[V]] \\text{ mL} = [[=V/1000|3]]\\) L",
+        "\\(c = \\dfrac{n}{V} = [[=m/58.5/(V/1000)|3]]\\) M"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "What volume of [[c1]] M stock solution is needed to make [[V2]] mL of [[c2]] M solution? Give 1 decimal place.",
+       "vars": {
+        "c1": {
+         "pick": [
+          1.0,
+          2.0,
+          2.5,
+          5.0
+         ]
+        },
+        "V2": [
+         100,
+         500,
+         50
+        ],
+        "c2": {
+         "pick": [
+          0.1,
+          0.2,
+          0.25,
+          0.5
+         ]
+        }
+       },
+       "ans": "c2*V2/c1",
+       "dp": 1,
+       "unit": "mL",
+       "s": [
+        "\\(c_1V_1 = c_2V_2\\), so \\(V_1 = \\dfrac{c_2V_2}{c_1} = \\dfrac{[[c2]] \\times [[V2]]}{[[c1]]}\\)",
+        "= [[=c2*V2/c1|1]] mL"
+       ]
       }
      ],
      "notes": [
@@ -2005,6 +3811,92 @@
        "h": "Using a solubility curve",
        "p": [
         "Example: the solubility of KNO₃ is 110 g per 100 g of water at 60 °C and 32 g per 100 g at 20 °C. A saturated solution in 50 g of water at 60 °C holds 55 g. Cooled to 20 °C it can hold only 16 g, so 55 − 16 = 39 g crystallises."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Solubility curves (g per 100 g of water). Cooling a saturated KNO₃ solution from 60 °C to 20 °C crystallises 110 − 32 = 78 g per 100 g; NaCl barely changes.",
+         "x": [
+          0,
+          85
+         ],
+         "y": [
+          0,
+          180
+         ],
+         "xstep": 10,
+         "ystep": 20,
+         "lines": [
+          {
+           "pts": [
+            [
+             0,
+             13
+            ],
+            [
+             20,
+             32
+            ],
+            [
+             40,
+             64
+            ],
+            [
+             60,
+             110
+            ],
+            [
+             80,
+             169
+            ]
+           ],
+           "label": "KNO₃"
+          },
+          {
+           "pts": [
+            [
+             0,
+             35.7
+            ],
+            [
+             20,
+             36
+            ],
+            [
+             40,
+             36.6
+            ],
+            [
+             60,
+             37.3
+            ],
+            [
+             80,
+             38.4
+            ]
+           ],
+           "label": "NaCl"
+          }
+         ],
+         "pts": [
+          [
+           60,
+           110,
+           "(60, 110)",
+           -60,
+           -6
+          ],
+          [
+           20,
+           32,
+           "(20, 32)",
+           8,
+           -8
+          ]
+         ],
+         "xl": "°C",
+         "yl": "g / 100 g"
+        }
        ]
       },
       {
@@ -2078,6 +3970,44 @@
         "Leaving volume in mL when using c = n ÷ V. Adding 500 mL of water to 25 mL instead of making the total up to 500 mL. Forgetting that ions from a salt may be at a multiple of the salt’s concentration."
        ]
       }
+     ],
+     "map": [
+      [
+       "Solutions",
+       [
+        "unsaturated, saturated",
+        "supersaturated",
+        "solubility curves"
+       ]
+      ],
+      [
+       "Units",
+       [
+        "mol L⁻¹ = n ÷ V",
+        "g L⁻¹, ppm, %"
+       ]
+      ],
+      [
+       "Making solutions",
+       [
+        "weigh, dissolve",
+        "volumetric flask"
+       ]
+      ],
+      [
+       "Dilution",
+       [
+        "c₁V₁ = c₂V₂",
+        "amount unchanged",
+        "serial dilution"
+       ]
+      ],
+      [
+       "Ions",
+       [
+        "use the dissociation ratio"
+       ]
+      ]
      ]
     },
     {
@@ -2128,6 +4058,78 @@
        ],
        "a": 1,
        "e": "0.25 mol CH₄ needs 0.50 mol O₂ but only 0.3125 mol is present."
+      },
+      {
+       "t": "c",
+       "q": "A 20.00 mL aliquot of HCl needs a titre of 22.40 mL of 0.100 M NaOH. Find the HCl concentration.",
+       "a": "0.112 M",
+       "e": "",
+       "s": [
+        "n(NaOH) = 0.100 × 0.02240 = 2.240 × 10⁻³ mol.",
+        "HCl + NaOH: 1 : 1, so n(HCl) = 2.240 × 10⁻³ mol.",
+        "c(HCl) = 2.240 × 10⁻³ ÷ 0.02000 = 0.112 M."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Concordant titres agree within…",
+       "o": [
+        "0.10 mL",
+        "1 mL",
+        "0.5 mL",
+        "2 mL"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A burette is rinsed with water before being filled with standard NaOH. How does this affect the calculated concentration of the acid in the flask?",
+       "a": "It is too high: the NaOH is diluted, so a larger titre is needed, which suggests more acid than is really present.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "2 mol of H₂ reacts with 2 mol of O₂ (2H₂ + O₂ → 2H₂O). Which reactant is limiting?",
+       "a": "H₂",
+       "e": "",
+       "s": [
+        "2 mol of H₂ needs only 1 mol of O₂.",
+        "2 mol of O₂ is available, so O₂ is in excess and H₂ is limiting."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "[[V1]] mL of [[c1]] M NaOH exactly neutralises [[V2]] mL of HCl. Find the concentration of the HCl, to 3 decimal places.",
+       "vars": {
+        "V1": [
+         15,
+         30,
+         0.5
+        ],
+        "c1": {
+         "pick": [
+          0.1,
+          0.12,
+          0.15,
+          0.2
+         ]
+        },
+        "V2": {
+         "pick": [
+          20,
+          25
+         ]
+        }
+       },
+       "ans": "c1*V1/V2",
+       "dp": 3,
+       "unit": "M",
+       "s": [
+        "\\(n(\\text{NaOH}) = cV = [[c1]] \\times [[=V1/1000|4]] = [[=c1*V1/1000|5]]\\) mol",
+        "1 : 1 ratio, so \\(n(\\text{HCl}) = [[=c1*V1/1000|5]]\\) mol",
+        "\\(c(\\text{HCl}) = \\dfrac{[[=c1*V1/1000|5]]}{[[=V2/1000|3]]} = [[=c1*V1/V2|3]]\\) M"
+       ]
       }
      ],
      "notes": [
@@ -2156,6 +4158,43 @@
         "A 20.00 mL aliquot of H₂SO₄ is titrated with 0.100 M NaOH. The average titre is 24.60 mL. Find the concentration of the acid.",
         "Equation: H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l).",
         "\\(n(\\mathrm{NaOH}) = 0.100 \\times 0.02460 = 2.460 \\times 10^{-3}\\ \\mathrm{mol}\\). \\(n(\\mathrm{H_2SO_4}) = \\tfrac{1}{2} \\times 2.460 \\times 10^{-3} = 1.230 \\times 10^{-3}\\ \\mathrm{mol}\\). \\(c = \\dfrac{1.230 \\times 10^{-3}}{0.02000} = 0.0615\\ \\mathrm{M}\\)."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "pH during the titration of an acid with NaOH: a steep rise at the equivalence point (here 24.6 mL). The indicator should change colour within the steep section.",
+         "x": [
+          0,
+          40
+         ],
+         "y": [
+          0,
+          14
+         ],
+         "xstep": 5,
+         "ystep": 2,
+         "fns": [
+          {
+           "f": "1+12/(1+exp(-1.2*(x-24.6)))"
+          }
+         ],
+         "dash": [
+          {
+           "x": 24.6
+          }
+         ],
+         "pts": [
+          [
+           24.6,
+           7,
+           "equivalence point",
+           8,
+           4
+          ]
+         ],
+         "xl": "volume NaOH (mL)",
+         "yl": "pH"
+        }
        ]
       },
       {
@@ -2197,6 +4236,14 @@
          "Why is the conical flask rinsed with water and not with the solution it will hold?",
          "Water does not change the amount (moles) of reagent delivered by the pipette. Rinsing with the solution would leave extra reagent in the flask and make the titre too large."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Titration apparatus: the burette delivers the titre into a measured aliquot in the conical flask, swirled until the indicator changes colour.",
+         "svg": "<rect class=\"fp\" x=\"250\" y=\"10\" width=\"26\" height=\"170\"/><rect class=\"fa\" x=\"250\" y=\"40\" width=\"26\" height=\"140\"/><path class=\"s\" d=\"M258,180 v22 h10 v-22\"/><line class=\"s\" x1=\"263\" y1=\"202\" x2=\"263\" y2=\"214\"/><line class=\"s\" x1=\"250\" y1=\"30\" x2=\"260\" y2=\"30\"/><line class=\"s\" x1=\"250\" y1=\"45\" x2=\"260\" y2=\"45\"/><line class=\"s\" x1=\"250\" y1=\"60\" x2=\"260\" y2=\"60\"/><line class=\"s\" x1=\"250\" y1=\"75\" x2=\"260\" y2=\"75\"/><line class=\"s\" x1=\"250\" y1=\"90\" x2=\"260\" y2=\"90\"/><line class=\"s\" x1=\"250\" y1=\"105\" x2=\"260\" y2=\"105\"/><line class=\"s\" x1=\"250\" y1=\"120\" x2=\"260\" y2=\"120\"/><line class=\"s\" x1=\"250\" y1=\"135\" x2=\"260\" y2=\"135\"/><line class=\"s\" x1=\"250\" y1=\"150\" x2=\"260\" y2=\"150\"/><line class=\"s\" x1=\"250\" y1=\"165\" x2=\"260\" y2=\"165\"/><path class=\"fp\" d=\"M240,220 L286,220 L320,290 L206,290 Z\"/><path class=\"fa\" opacity=\"1\" d=\"M225,262 L301,262 L320,290 L206,290 Z\"/><text class=\"t\" x=\"300\" y=\"60\">burette (titre)</text><text class=\"t\" x=\"330\" y=\"270\">conical flask (aliquot + indicator)</text><text class=\"t\" x=\"300\" y=\"130\">read to 0.05 mL</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -2218,6 +4265,47 @@
         "Ignoring the mole ratio. Averaging all titres including the rough one. Recording burette readings to one decimal place; record to two."
        ]
       }
+     ],
+     "map": [
+      [
+       "Stoichiometry",
+       [
+        "balanced equation",
+        "mole ratio",
+        "limiting reagent"
+       ]
+      ],
+      [
+       "Equipment",
+       [
+        "volumetric flask",
+        "pipette: aliquot",
+        "burette: titre"
+       ]
+      ],
+      [
+       "Procedure",
+       [
+        "rinse correctly",
+        "indicator",
+        "concordant titres"
+       ]
+      ],
+      [
+       "Calculation",
+       [
+        "n of known",
+        "ratio",
+        "c of unknown"
+       ]
+      ],
+      [
+       "Errors",
+       [
+        "rinsing mistakes",
+        "systematic vs random"
+       ]
+      ]
      ]
     },
     {
@@ -2268,6 +4356,87 @@
        "q": "Use \\(pV = nRT\\) to find \\(V\\) for \\(0.100\\ \\mathrm{mol}\\) at \\(25\\,{}^\\circ\\mathrm{C}\\) and \\(100\\ \\mathrm{kPa}\\).",
        "a": "\\(V = \\dfrac{nRT}{p} = \\dfrac{0.100 \\times 8.31 \\times 298}{100} = 2.48\\ \\mathrm{L}\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What volume does 0.50 mol of gas occupy at SLC?",
+       "a": "12.4 L",
+       "e": "0.50 × 24.8."
+      },
+      {
+       "t": "c",
+       "q": "Convert 25 °C to kelvin.",
+       "a": "298 K",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the volume of 2.0 mol of gas at 300 K and 200 kPa.",
+       "a": "24.9 L",
+       "e": "",
+       "s": [
+        "\\(V = \\dfrac{nRT}{p} = \\dfrac{2.0 \\times 8.31 \\times 300}{200}\\).",
+        "≈ 24.9 L."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Which is a greenhouse gas?",
+       "o": [
+        "Methane, CH₄",
+        "Nitrogen, N₂",
+        "Oxygen, O₂",
+        "Argon, Ar"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Find the amount of gas in [[V]] L at SLC (molar volume 24.8 L mol⁻¹), to 3 decimal places.",
+       "vars": {
+        "V": [
+         1,
+         50,
+         0.5
+        ]
+       },
+       "ans": "V/24.8",
+       "dp": 3,
+       "unit": "mol",
+       "s": [
+        "\\(n = \\dfrac{V}{V_m} = \\dfrac{[[V]]}{24.8}\\)",
+        "= [[=V/24.8|3]] mol"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the volume of [[n]] mol of gas at [[T]] °C and [[P]] kPa, using \\(PV = nRT\\) with R = 8.31. Give 2 decimal places.",
+       "vars": {
+        "n": [
+         0.1,
+         3,
+         0.1
+        ],
+        "T": [
+         0,
+         80,
+         5
+        ],
+        "P": [
+         90,
+         200,
+         5
+        ]
+       },
+       "ans": "n*8.31*(T+273)/P",
+       "dp": 2,
+       "unit": "L",
+       "s": [
+        "Convert to kelvin: T = [[T]] + 273 = [[=T+273]] K",
+        "\\(V = \\dfrac{nRT}{P} = \\dfrac{[[n]] \\times 8.31 \\times [[=T+273]]}{[[P]]}\\)",
+        "= [[=n*8.31*(T+273)/P|2]] L (kPa with R = 8.31 gives litres)"
+       ]
       }
      ],
      "notes": [
@@ -2288,6 +4457,45 @@
        "h": "Explaining the gas laws",
        "p": [
         "Smaller volume at constant temperature: particles hit the walls more often, so pressure rises. Higher temperature at constant volume: particles move faster and hit the walls harder and more often, so pressure rises. Higher temperature at constant pressure: the gas expands."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Boyle’s law: at constant temperature, halving the volume doubles the pressure (pV = 100 here).",
+         "x": [
+          0,
+          10
+         ],
+         "y": [
+          0,
+          120
+         ],
+         "xstep": 1,
+         "ystep": 20,
+         "fns": [
+          {
+           "f": "100/x",
+           "dom": [
+            0.85,
+            10
+           ]
+          }
+         ],
+         "pts": [
+          [
+           2,
+           50,
+           "(2 L, 50 kPa)"
+          ],
+          [
+           4,
+           25,
+           "(4 L, 25 kPa)"
+          ]
+         ],
+         "xl": "V (L)",
+         "yl": "p (kPa)"
+        }
        ]
       },
       {
@@ -2361,6 +4569,46 @@
         "Using °C in gas calculations. Using 24.8 L mol⁻¹ when the gas is not at SLC. Using it for liquids or solids."
        ]
       }
+     ],
+     "map": [
+      [
+       "Kinetic theory",
+       [
+        "random motion",
+        "mostly empty space",
+        "pressure from collisions"
+       ]
+      ],
+      [
+       "Gas laws",
+       [
+        "Boyle: pV constant",
+        "Charles: V ∝ T (K)",
+        "combined"
+       ]
+      ],
+      [
+       "Ideal gas equation",
+       [
+        "pV = nRT",
+        "kPa, L, K",
+        "R = 8.31"
+       ]
+      ],
+      [
+       "Molar volume",
+       [
+        "24.8 L at SLC",
+        "volume ratios = mole ratios"
+       ]
+      ],
+      [
+       "Atmosphere",
+       [
+        "greenhouse effect",
+        "CO₂, CH₄, N₂O"
+       ]
+      ]
      ]
     },
     {
@@ -2404,6 +4652,53 @@
        ],
        "a": 0,
        "e": "The extra mass is water."
+      },
+      {
+       "t": "c",
+       "q": "A 1.000 g sample gives 1.435 g of AgCl (M = 143.4) when excess AgNO₃ is added. Find the percentage of chloride (35.45 g mol⁻¹) in the sample.",
+       "a": "35.5%",
+       "e": "",
+       "s": [
+        "n(AgCl) = 1.435 ÷ 143.4 = 0.01001 mol = n(Cl⁻).",
+        "m(Cl⁻) = 0.01001 × 35.45 = 0.3547 g.",
+        "Percentage = 0.3547 ÷ 1.000 × 100 ≈ 35.5%."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "If a precipitate is not dried completely, the calculated result is…",
+       "o": [
+        "too high",
+        "too low",
+        "unaffected",
+        "zero"
+       ],
+       "a": 0,
+       "e": "Water adds to the mass."
+      },
+      {
+       "t": "c",
+       "q": "What does electrical conductivity tell you about a water sample, and what does it not tell you?",
+       "a": "It estimates the total concentration of dissolved ions, but it does not identify which ions are present.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A sample’s absorbance is higher than the most concentrated standard. You should…",
+       "o": [
+        "dilute the sample and measure again",
+        "extend the calibration line by eye",
+        "report the highest standard",
+        "ignore it"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why is a blank used in colorimetry?",
+       "a": "To set the instrument to zero with the solvent alone, so that only the absorbance of the substance being measured is recorded.",
+       "e": ""
       }
      ],
      "notes": [
@@ -2424,6 +4719,34 @@
        "h": "Gravimetric analysis",
        "p": [
         "Find the mass of a substance by converting it into a precipitate of known formula and weighing it. Steps: weigh the sample and dissolve it; add an excess of a reagent that precipitates the ion; filter; wash the precipitate with water to remove soluble impurities; dry and weigh it; repeat drying until the mass is constant."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "The steps of a gravimetric analysis.",
+         "steps": [
+          [
+           "Weigh",
+           "the sample"
+          ],
+          [
+           "Dissolve",
+           "in water"
+          ],
+          [
+           "Precipitate",
+           "add excess reagent"
+          ],
+          [
+           "Filter and wash",
+           "remove soluble ions"
+          ],
+          [
+           "Dry to constant mass",
+           "then weigh"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -2483,6 +4806,70 @@
          "A calibration line has a gradient of 2.0 absorbance units per mol L⁻¹. What is the concentration of a sample with absorbance 0.50?",
          "0.50 ÷ 2.0 = 0.25 M."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "A calibration curve for copper(II) sulfate. A sample with absorbance 0.36 has concentration 0.24 M.",
+         "x": [
+          0,
+          0.45
+         ],
+         "y": [
+          0,
+          0.7
+         ],
+         "xstep": 0.1,
+         "ystep": 0.1,
+         "fns": [
+          {
+           "f": "1.5*x"
+          }
+         ],
+         "dots": [
+          [
+           0.1,
+           0.15
+          ],
+          [
+           0.2,
+           0.3
+          ],
+          [
+           0.3,
+           0.45
+          ],
+          [
+           0.4,
+           0.6
+          ]
+         ],
+         "segs": [
+          [
+           0,
+           0.36,
+           0.24,
+           0.36
+          ],
+          [
+           0.24,
+           0.36,
+           0.24,
+           0
+          ]
+         ],
+         "pts": [
+          [
+           0.24,
+           0.36,
+           "sample",
+           -64,
+           -8
+          ]
+         ],
+         "xl": "c (M)",
+         "yl": "absorbance"
+        }
        ]
       },
       {
@@ -2491,6 +4878,47 @@
         "Reading the calibration curve beyond the highest standard. Forgetting the dilution factor. Choosing light the same colour as the solution: a solution absorbs its complementary colour."
        ]
       }
+     ],
+     "map": [
+      [
+       "Water quality",
+       [
+        "salts from rocks and industry",
+        "heavy metals",
+        "conductivity: total ions"
+       ]
+      ],
+      [
+       "Gravimetric",
+       [
+        "precipitate in excess",
+        "filter, wash, dry",
+        "constant mass"
+       ]
+      ],
+      [
+       "Calculation",
+       [
+        "n(precipitate)",
+        "ratio to the ion",
+        "% by mass"
+       ]
+      ],
+      [
+       "Colorimetry and UV-vis",
+       [
+        "absorbance ∝ concentration",
+        "standards → calibration curve",
+        "blank sets zero"
+       ]
+      ],
+      [
+       "Errors",
+       [
+        "wet precipitate: high",
+        "lost precipitate: low"
+       ]
+      ]
      ]
     },
     {
@@ -2536,6 +4964,14 @@
          "Three titres of 21.50, 21.52 and 21.48 mL are obtained, but the true value is 20.00 mL. Describe the results.",
          "They are precise (close together) but not accurate. A systematic error is likely, such as a wrongly labelled concentration."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Accuracy and precision on a target: close together means precise; centred on the bullseye means accurate.",
+         "svg": "<circle class=\"s\" cx=\"70\" cy=\"110\" r=\"55\" opacity=\".5\"/><circle class=\"s\" cx=\"70\" cy=\"110\" r=\"35\" opacity=\".5\"/><circle class=\"s\" cx=\"70\" cy=\"110\" r=\"15\" opacity=\".5\"/><circle class=\"s\" cx=\"200\" cy=\"110\" r=\"55\" opacity=\".5\"/><circle class=\"s\" cx=\"200\" cy=\"110\" r=\"35\" opacity=\".5\"/><circle class=\"s\" cx=\"200\" cy=\"110\" r=\"15\" opacity=\".5\"/><circle class=\"s\" cx=\"330\" cy=\"110\" r=\"55\" opacity=\".5\"/><circle class=\"s\" cx=\"330\" cy=\"110\" r=\"35\" opacity=\".5\"/><circle class=\"s\" cx=\"330\" cy=\"110\" r=\"15\" opacity=\".5\"/><circle class=\"s\" cx=\"460\" cy=\"110\" r=\"55\" opacity=\".5\"/><circle class=\"s\" cx=\"460\" cy=\"110\" r=\"35\" opacity=\".5\"/><circle class=\"s\" cx=\"460\" cy=\"110\" r=\"15\" opacity=\".5\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"67\" cy=\"112\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"72\" cy=\"107\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"73\" cy=\"113\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"68\" cy=\"109\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"228\" cy=\"85\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"232\" cy=\"88\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"226\" cy=\"82\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"230\" cy=\"90\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"295\" cy=\"130\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"360\" cy=\"80\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"350\" cy=\"145\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"305\" cy=\"80\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"420\" cy=\"100\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"495\" cy=\"130\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"450\" cy=\"150\" r=\"4\"/><circle class=\"pt\" fill=\"currentColor\" cx=\"505\" cy=\"80\" r=\"4\"/><text class=\"t\" x=\"70\" y=\"190\" text-anchor=\"middle\">accurate, precise</text><text class=\"t\" x=\"200\" y=\"190\" text-anchor=\"middle\">precise only</text><text class=\"t\" x=\"330\" y=\"190\" text-anchor=\"middle\">accurate only</text><text class=\"t\" x=\"460\" y=\"190\" text-anchor=\"middle\">neither</text>",
+         "vb": "0 0 540 210"
+        }
        ]
       },
       {
@@ -2625,7 +5061,68 @@
        ],
        "a": 1,
        "e": "12.3 has three significant figures, the fewest in the data."
+      },
+      {
+       "t": "m",
+       "q": "Which is a well-written hypothesis?",
+       "o": [
+        "If the temperature increases, then the reaction rate will increase because more collisions will have enough energy",
+        "Temperature is interesting",
+        "Reactions happen",
+        "I will heat the acid"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A student’s titres are 18.20, 18.22 and 18.21 mL, but the true value is 20.00 mL. Describe the results.",
+       "a": "Precise (close together) but not accurate. A systematic error is likely.",
+       "e": ""
       }
+     ],
+     "map": [
+      [
+       "Planning",
+       [
+        "question and hypothesis",
+        "variables",
+        "method and safety"
+       ]
+      ],
+      [
+       "Data quality",
+       [
+        "accuracy",
+        "precision",
+        "repeatability, reproducibility",
+        "validity"
+       ]
+      ],
+      [
+       "Errors",
+       [
+        "systematic: same direction",
+        "random: scatter",
+        "mistakes: repeat"
+       ]
+      ],
+      [
+       "Presenting",
+       [
+        "tables with units",
+        "graphs with best fit",
+        "significant figures"
+       ]
+      ],
+      [
+       "Concluding",
+       [
+        "answer the aim",
+        "evidence supports or not",
+        "improvements"
+       ]
+      ]
      ]
     }
    ]

@@ -51,6 +51,42 @@
        "q": "Why might a writer use “sooo” instead of “so” in a text message?",
        "a": "Reduplicating letters imitates stress or lengthening in speech, adding emphasis or emotion that writing usually lacks.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Coming tonight?” shows…",
+       "o": [
+        "ellipsis",
+        "nominalisation",
+        "passive voice",
+        "clefting"
+       ],
+       "a": 0,
+       "e": "The words “Are you” are left out."
+      },
+      {
+       "t": "c",
+       "q": "Give one informal feature from each of lexis, syntax and discourse.",
+       "a": "For example: slang (lexis); a sentence fragment (syntax); discourse particles such as “like” (discourse).",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“um” and “er” are…",
+       "o": [
+        "filled pauses (non-fluency features)",
+        "discourse particles only",
+        "minimal responses",
+        "adjacency pairs"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What does an emoji often do in a written message?",
+       "a": "It stands in for facial expression and tone of voice, clarifying the writer’s attitude.",
+       "e": ""
       }
      ],
      "notes": [
@@ -131,6 +167,14 @@
          "In the chat, what does the emoji contribute?",
          "It replaces the facial expression and tone of voice missing from written text, showing the writer’s distress in an exaggerated, humorous way."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The worked group chat with features labelled.",
+         "svg": "<rect class=\"fp\" x=\"20\" y=\"20\" width=\"270\" height=\"32\" rx=\"14\"/><text class=\"t\" x=\"32\" y=\"41\">omg did u see the maths sac 😭</text><text class=\"t\" x=\"300\" y=\"41\">← initialisms, jargon, emoji</text><rect class=\"fa\" x=\"250\" y=\"66\" width=\"160\" height=\"32\" rx=\"14\"/><text class=\"t\" x=\"262\" y=\"87\">bro dont. cooked</text><text class=\"t\" x=\"20\" y=\"87\">vocative, slang, fragment →</text><rect class=\"fp\" x=\"20\" y=\"112\" width=\"320\" height=\"32\" rx=\"14\"/><text class=\"t\" x=\"32\" y=\"133\">same lol. maccas after to recover??</text><text class=\"t\" x=\"350\" y=\"133\">← shortening, ??</text><rect class=\"fa\" x=\"330\" y=\"158\" width=\"110\" height=\"32\" rx=\"14\"/><text class=\"t\" x=\"342\" y=\"179\">say less</text><text class=\"t\" x=\"20\" y=\"179\">youth slang: agreement →</text>",
+         "vb": "0 0 540 200"
+        }
        ]
       },
       {
@@ -139,6 +183,45 @@
         "Listing features without saying what each one does in this text. Treating non-fluency as poor speaking. Ignoring the transcript key. Calling everything “slang” when the better term is colloquialism, diminutive or idiom."
        ]
       }
+     ],
+     "map": [
+      [
+       "Context",
+       [
+        "close tenor",
+        "relaxed setting",
+        "spontaneous mode"
+       ]
+      ],
+      [
+       "Lexis",
+       [
+        "slang, colloquialisms",
+        "diminutives, swearing"
+       ]
+      ],
+      [
+       "Syntax",
+       [
+        "ellipsis, fragments",
+        "tag questions"
+       ]
+      ],
+      [
+       "Spoken discourse",
+       [
+        "non-fluency features",
+        "discourse particles",
+        "overlaps, backchannels"
+       ]
+      ],
+      [
+       "Online",
+       [
+        "emoji, initialisms",
+        "non-standard spelling"
+       ]
+      ]
      ]
     },
     {
@@ -228,6 +311,56 @@
          "In the transcript, is Mel’s overlap in line 3 cooperative or competitive? How can you tell?",
          "Cooperative. It prompts Jo to say more, and Jo continues the same point without struggling to keep the floor."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The worked transcript with features labelled.",
+         "head": [
+          "Line",
+          "Speaker",
+          "Utterance",
+          "Feature"
+         ],
+         "rows": [
+          [
+           "1",
+           "Mel",
+           "so how was the INTERVIEW",
+           "discourse marker opens topic; stress"
+          ],
+          [
+           "2",
+           "Jo",
+           "um (.) yeah it was (.) it was okay I think [they asked]",
+           "filler, pauses, repetition, hedge"
+          ],
+          [
+           "3",
+           "Mel",
+           "[just okay]",
+           "cooperative overlap"
+          ],
+          [
+           "4",
+           "Jo",
+           "they asked heaps about teamwork and I kind of (.) blanked",
+           "colloquial lexis, hedge"
+          ],
+          [
+           "5",
+           "Mel",
+           "oh no",
+           "minimal response, sympathy"
+          ],
+          [
+           "7",
+           "Mel",
+           "nice SAVE",
+           "evaluation closes the sequence"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -297,7 +430,62 @@
        ],
        "a": 1,
        "e": "Check the key, but transcripts normally use it for rising intonation."
+      },
+      {
+       "t": "m",
+       "q": "“mm”, “yeah” and “right” said while another person talks are…",
+       "o": [
+        "minimal responses (backchannels)",
+        "interruptions",
+        "repairs",
+        "fillers"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What three things should you look at to judge who controls a conversation?",
+       "a": "Who takes the most turns and holds the floor, who asks the questions, and who starts and changes topics.",
+       "e": ""
       }
+     ],
+     "map": [
+      [
+       "Conventions",
+       [
+        "read the key first",
+        "pauses, overlaps, stress"
+       ]
+      ],
+      [
+       "Turn-taking",
+       [
+        "hold, take, pass the floor",
+        "adjacency pairs"
+       ]
+      ],
+      [
+       "Feedback",
+       [
+        "minimal responses",
+        "cooperative overlap"
+       ]
+      ],
+      [
+       "Non-fluency",
+       [
+        "fillers, false starts",
+        "repairs"
+       ]
+      ],
+      [
+       "Control",
+       [
+        "who talks most",
+        "who asks, who changes topic"
+       ]
+      ]
      ]
     },
     {
@@ -335,6 +523,54 @@
        "q": "What is covert prestige?",
        "a": "Hidden status given to non-standard language within a group, because it signals belonging or toughness, even if wider society judges it negatively.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A compliment mainly attends to the listener’s…",
+       "o": [
+        "positive face",
+        "negative face",
+        "overt prestige",
+        "register"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How does shared slang both include and exclude?",
+       "a": "It builds solidarity among those who know it and marks outsiders who do not.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Non-standard forms valued within a group have…",
+       "o": [
+        "covert prestige",
+        "overt prestige",
+        "no prestige",
+        "negative face"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why might friends insult each other affectionately?",
+       "a": "Mock insults show closeness: only people in a secure relationship can joke this way without causing offence.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Any chance you could…” is a request using…",
+       "o": [
+        "negative politeness",
+        "a dysphemism",
+        "doublespeak",
+        "jargon"
+       ],
+       "a": 0,
+       "e": "It is indirect and hedged, limiting the imposition."
       }
      ],
      "notes": [
@@ -362,6 +598,14 @@
          "A friend says, “I love your jacket, where’d you get it?” Which face need does this address?",
          "Positive face: it shows approval and interest in the other person."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Two kinds of face, and the politeness strategies that protect each.",
+         "svg": "<rect class=\"fa\" x=\"20\" y=\"30\" width=\"230\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"135.0\" y=\"60.0\" text-anchor=\"middle\">Positive face</text><text class=\"t\" x=\"30\" y=\"110\">need to be liked and included</text><text class=\"t\" x=\"30\" y=\"140\">strategies: compliments,</text><text class=\"t\" x=\"30\" y=\"162\">nicknames, shared slang, jokes</text><rect class=\"fa\" x=\"290\" y=\"30\" width=\"230\" height=\"50\" rx=\"8\"/><text class=\"t\" x=\"405.0\" y=\"60.0\" text-anchor=\"middle\">Negative face</text><text class=\"t\" x=\"300\" y=\"110\">need not to be imposed on</text><text class=\"t\" x=\"300\" y=\"140\">strategies: hedges, apologies,</text><text class=\"t\" x=\"300\" y=\"162\">indirect requests, options</text>",
+         "vb": "0 0 540 190"
+        }
        ]
       },
       {
@@ -423,6 +667,44 @@
         "Mixing up the two kinds of face. Check: is the threat to being liked (positive) or to being left alone (negative)? Saying informal language “creates a casual tone” and stopping there; name the social purpose and who benefits."
        ]
       }
+     ],
+     "map": [
+      [
+       "Social purposes",
+       [
+        "intimacy, solidarity",
+        "in-groups",
+        "rapport"
+       ]
+      ],
+      [
+       "Face",
+       [
+        "positive: be liked",
+        "negative: not imposed on"
+       ]
+      ],
+      [
+       "Politeness",
+       [
+        "positive strategies",
+        "negative strategies"
+       ]
+      ],
+      [
+       "Prestige",
+       [
+        "covert prestige",
+        "overt prestige"
+       ]
+      ],
+      [
+       "Play",
+       [
+        "innovation",
+        "banter"
+       ]
+      ]
      ]
     }
    ]
@@ -471,6 +753,54 @@
        "q": "What is jargon?",
        "a": "Specialised vocabulary of a profession or field, understood by insiders.",
        "e": "It can show expertise or exclude outsiders."
+      },
+      {
+       "t": "m",
+       "q": "“The decision was made” contains…",
+       "o": [
+        "nominalisation and an agentless passive",
+        "a contraction",
+        "slang",
+        "ellipsis"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Rewrite “We fixed the problem” formally, using nominalisation.",
+       "a": "For example: “The resolution of the problem has been achieved.”",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“We will listen, we will learn, we will act” uses…",
+       "o": [
+        "parallelism",
+        "clefting",
+        "a tag question",
+        "elision"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the effect of a cleft sentence such as “It was the council that approved the plan”?",
+       "a": "It highlights one element (the council) by placing it in focus.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Latinate words such as “commence” and “terminate” usually…",
+       "o": [
+        "raise the register",
+        "lower the register",
+        "mark an ethnolect",
+        "show non-fluency"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -535,6 +865,39 @@
          "Rewrite “We reckon the rules are unfair” in a formal register and name one change you made.",
          "For example, “It is our view that the regulations are inequitable.” Changes: the colloquial verb “reckon” is replaced and Latinate lexis (“regulations”, “inequitable”) is used."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The same message in two registers, and what changed.",
+         "head": [
+          "Informal",
+          "Formal",
+          "Change"
+         ],
+         "rows": [
+          [
+           "we stuffed up",
+           "the error",
+           "colloquial verb → nominalisation"
+          ],
+          [
+           "We’ll fix it",
+           "will be resolved",
+           "active → agentless passive"
+          ],
+          [
+           "ASAP",
+           "as soon as possible",
+           "initialism written in full"
+          ],
+          [
+           "Sorry",
+           "We apologise",
+           "fragment → full declarative"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -563,6 +926,46 @@
         "Equating formal with “long words”. Calling every “was” a passive. Spotting nominalisation without saying what it does (condenses, depersonalises, sounds authoritative). Forgetting that formal texts are also spoken, and missing prosodic and rhetorical features in speeches."
        ]
       }
+     ],
+     "map": [
+      [
+       "Context",
+       [
+        "social distance",
+        "public audience",
+        "planned"
+       ]
+      ],
+      [
+       "Lexis",
+       [
+        "Latinate words",
+        "jargon",
+        "nominalisation"
+       ]
+      ],
+      [
+       "Syntax",
+       [
+        "complex sentences",
+        "agentless passive",
+        "parallelism, antithesis"
+       ]
+      ],
+      [
+       "Information flow",
+       [
+        "front and end focus",
+        "clefting"
+       ]
+      ],
+      [
+       "Discourse",
+       [
+        "tight cohesion",
+        "conventions, formatting"
+       ]
+      ]
      ]
     },
     {
@@ -600,6 +1003,54 @@
        "q": "How can formal language promote social harmony?",
        "a": "Polite, neutral, inclusive wording avoids offence and shows respect, helping people with different views cooperate.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Collateral damage” for civilian deaths is an example of…",
+       "o": [
+        "doublespeak",
+        "slang",
+        "a dysphemism",
+        "a minimal response"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Give one way formal language can exclude people.",
+       "a": "Dense jargon or complex legal language can leave people unable to understand their rights or obligations.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "“Passed away” is a…",
+       "o": [
+        "euphemism",
+        "dysphemism",
+        "doublespeak",
+        "jargon term"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the plain English movement trying to achieve?",
+       "a": "Public documents that their audience can understand on first reading: familiar words, short sentences, active voice and clear structure.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Inclusive language such as “chairperson” mainly reflects…",
+       "o": [
+        "changing social values about gender",
+        "laziness",
+        "covert prestige",
+        "phonological change"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -632,6 +1083,14 @@
          "Is “pre-owned vehicle” for “used car” a euphemism or doublespeak?",
          "A euphemism: it softens the idea with a more positive expression but does not hide the meaning."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "From clear to concealing: formal language can sit anywhere on this scale.",
+         "svg": "<line class=\"a\" x1=\"30\" y1=\"110\" x2=\"510\" y2=\"110\" stroke-width=\"4\"/><text class=\"t\" x=\"30\" y=\"140\">clarifies</text><text class=\"t\" x=\"510\" y=\"140\" text-anchor=\"end\">conceals</text><circle class=\"pt\" fill=\"currentColor\" cx=\"70\" cy=\"110\" r=\"7\"/><text class=\"t\" x=\"70\" y=\"85\" text-anchor=\"middle\">plain English</text><text class=\"t\" x=\"70\" y=\"175\" text-anchor=\"middle\">“You must pay by 30 June”</text><circle class=\"pt\" fill=\"currentColor\" cx=\"270\" cy=\"110\" r=\"7\"/><text class=\"t\" x=\"270\" y=\"85\" text-anchor=\"middle\">euphemism</text><text class=\"t\" x=\"270\" y=\"175\" text-anchor=\"middle\">“passed away”</text><circle class=\"pt\" fill=\"currentColor\" cx=\"470\" cy=\"110\" r=\"7\"/><text class=\"t\" x=\"470\" y=\"85\" text-anchor=\"middle\">doublespeak</text><text class=\"t\" x=\"470\" y=\"175\" text-anchor=\"middle\">“negative growth”</text>",
+         "vb": "0 0 540 200"
+        }
        ]
       },
       {
@@ -693,6 +1152,44 @@
         "Assuming formal language is always used to deceive, or always to be clear. Confusing euphemism (softening) with doublespeak (deliberately misleading). Describing jargon only as exclusionary and forgetting its efficiency for insiders. Discussing purpose without quoting evidence."
        ]
       }
+     ],
+     "map": [
+      [
+       "Authority",
+       [
+        "jargon, titles",
+        "impersonal style"
+       ]
+      ],
+      [
+       "Clarify or obscure",
+       [
+        "precision",
+        "euphemism",
+        "doublespeak"
+       ]
+      ],
+      [
+       "Taboo and harmony",
+       [
+        "euphemism protects face",
+        "inclusive language"
+       ]
+      ],
+      [
+       "Politeness",
+       [
+        "negative politeness",
+        "indirect requests"
+       ]
+      ],
+      [
+       "The standard",
+       [
+        "overt prestige",
+        "plain English"
+       ]
+      ]
      ]
     }
    ]
@@ -741,6 +1238,54 @@
        ],
        "a": 1,
        "e": "The r after a vowel is not pronounced (car)."
+      },
+      {
+       "t": "m",
+       "q": "“Arvo” and “servo” show which feature of Australian English?",
+       "o": [
+        "Shortening with the -o suffix",
+        "Borrowing from French",
+        "The high rising terminal",
+        "Nominalisation"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What was the cultural cringe?",
+       "a": "The belief that Australian English was inferior to British English.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which accent type is most common in Australia today?",
+       "o": [
+        "General",
+        "Broad",
+        "Cultivated",
+        "Received Pronunciation"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Name the dictionary that codifies Australian English.",
+       "a": "The Macquarie Dictionary.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Rising intonation at the end of a statement is called…",
+       "o": [
+        "the high rising terminal",
+        "a tag question",
+        "assimilation",
+        "end focus"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -768,12 +1313,44 @@
          "Is the Broad–General–Cultivated continuum mainly regional or social?",
          "Mainly social: it relates to factors such as background, education and identity more than to where a speaker lives."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "The Australian accent continuum. Most speakers today use General, and both ends have moved towards it.",
+         "svg": "<rect class=\"fa\" x=\"40\" y=\"80\" width=\"120\" height=\"50\" opacity=\".3\"/><rect class=\"fa\" x=\"160\" y=\"80\" width=\"260\" height=\"50\" opacity=\".6\"/><rect class=\"fa\" x=\"420\" y=\"80\" width=\"80\" height=\"50\" opacity=\".3\"/><text class=\"t\" x=\"100\" y=\"112\" text-anchor=\"middle\">Broad</text><text class=\"t\" x=\"290\" y=\"112\" text-anchor=\"middle\">General</text><text class=\"t\" x=\"460\" y=\"112\" text-anchor=\"middle\">Cultivated</text><line class=\"a\" x1=\"100\" y1=\"160\" x2=\"191.0\" y2=\"160.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"200,160 191.0,155.0 191.0,165.0\"/><line class=\"a\" x1=\"460\" y1=\"160\" x2=\"389.0\" y2=\"160.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"380,160 389.0,165.0 389.0,155.0\"/><text class=\"t\" x=\"270\" y=\"195\" text-anchor=\"middle\">movement towards General</text>",
+         "vb": "0 0 540 210"
+        }
        ]
       },
       {
        "h": "Lexis and morphology",
        "p": [
         "Shortening with a suffix is the best-known feature: -ie or -y (“barbie”, “tradie”, “brekky”), -o (“arvo”, “servo”, “ambo”), -a or -za (“Macca’s”, “Gazza”). These diminutives signal friendliness and reduce social distance. Borrowings from Aboriginal languages name animals, plants and places (“kangaroo”, “koala”, “Wagga Wagga”). Idioms and slang include “no worries”, “flat out”, “she’ll be right”. American influence adds words through media (“cookie”, “guys”), which some people resent."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Australian shortenings by suffix.",
+         "head": [
+          "Suffix",
+          "Examples"
+         ],
+         "rows": [
+          [
+           "-ie / -y",
+           "barbie, tradie, brekky"
+          ],
+          [
+           "-o",
+           "arvo, servo, ambo"
+          ],
+          [
+           "-a / -za",
+           "Macca’s, Gazza"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -839,6 +1416,46 @@
         "Treating stereotypes (“G’day mate”) as how all Australians speak. Describing Broad, General and Cultivated as regional accents: the variation is mainly social. Calling ethnolects or Aboriginal Englishes “incorrect”. Using only old examples; look for current ones in advertising, sport, politics and social media."
        ]
       }
+     ],
+     "map": [
+      [
+       "Origins",
+       [
+        "levelling of settler dialects",
+        "Aboriginal borrowings",
+        "migration, media"
+       ]
+      ],
+      [
+       "Accent",
+       [
+        "Broad, General, Cultivated",
+        "non-rhotic",
+        "high rising terminal"
+       ]
+      ],
+      [
+       "Lexis",
+       [
+        "-ie, -o, -za suffixes",
+        "Australianisms",
+        "Americanisms"
+       ]
+      ],
+      [
+       "Variation",
+       [
+        "Aboriginal Englishes",
+        "ethnolects"
+       ]
+      ],
+      [
+       "Values and attitudes",
+       [
+        "egalitarianism, humour",
+        "cultural cringe → pride"
+       ]
+      ]
      ]
     }
    ]
@@ -881,6 +1498,54 @@
        "q": "How can slang exclude people?",
        "a": "Only in-group members understand it, so outsiders are marked as not belonging.",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Speaking more like the person you are talking to is called…",
+       "o": [
+        "convergence",
+        "divergence",
+        "code-switching",
+        "fossilisation"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is the difference between an idiolect and a sociolect?",
+       "a": "An idiolect is one person’s individual way of speaking; a sociolect is shared by a social group.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "An ethnolect is shaped by…",
+       "o": [
+        "a community’s heritage language and culture",
+        "a profession",
+        "a person’s age only",
+        "a dictionary"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Why might a teenager avoid the standard variety with friends?",
+       "a": "Covert prestige: non-standard forms signal group loyalty and authenticity, while sounding “posh” could cost status.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Judging a speaker as less intelligent because of their accent is…",
+       "o": [
+        "linguistic prejudice",
+        "descriptivism",
+        "style-shifting",
+        "convergence"
+       ],
+       "a": 0,
+       "e": ""
       }
      ],
      "notes": [
@@ -914,6 +1579,14 @@
          "A shop assistant starts using a customer’s slang and speech rhythm. What is this called, and why might they do it?",
          "Convergence: reducing social distance to build rapport and gain approval."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Communication accommodation: speakers converge to build rapport and diverge to assert difference.",
+         "svg": "<circle class=\"fp\" cx=\"80\" cy=\"70\" r=\"30\"/><circle class=\"fp\" cx=\"460\" cy=\"70\" r=\"30\"/><text class=\"t\" x=\"80\" y=\"75\" text-anchor=\"middle\">A</text><text class=\"t\" x=\"460\" y=\"75\" text-anchor=\"middle\">B</text><line class=\"a\" x1=\"115\" y1=\"70\" x2=\"241.0\" y2=\"70.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"250,70 241.0,65.0 241.0,75.0\"/><line class=\"a\" x1=\"425\" y1=\"70\" x2=\"299.0\" y2=\"70.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"290,70 299.0,75.0 299.0,65.0\"/><text class=\"t\" x=\"270\" y=\"40\" text-anchor=\"middle\">convergence: styles move closer</text><circle class=\"fp\" cx=\"180\" cy=\"180\" r=\"30\"/><circle class=\"fp\" cx=\"360\" cy=\"180\" r=\"30\"/><text class=\"t\" x=\"180\" y=\"185\" text-anchor=\"middle\">A</text><text class=\"t\" x=\"360\" y=\"185\" text-anchor=\"middle\">B</text><line class=\"a\" x1=\"150\" y1=\"180\" x2=\"49.0\" y2=\"180.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"40,180 49.0,185.0 49.0,175.0\"/><line class=\"a\" x1=\"390\" y1=\"180\" x2=\"491.0\" y2=\"180.0\"/><polygon class=\"fa\" opacity=\"1\" points=\"500,180 491.0,175.0 491.0,185.0\"/><text class=\"t\" x=\"270\" y=\"230\" text-anchor=\"middle\">divergence: styles move apart</text>",
+         "vb": "0 0 540 250"
+        }
        ]
       },
       {
@@ -983,6 +1656,46 @@
         "Writing as though each person has one fixed identity. Confusing idiolect (individual) with sociolect (group). Explaining a feature as “to be informal” when the question is about identity: say what identity it projects and to whom. Presenting prejudice against a variety as a fact about the variety."
        ]
       }
+     ],
+     "map": [
+      [
+       "Layers",
+       [
+        "idiolect",
+        "sociolect, ethnolect",
+        "national variety"
+       ]
+      ],
+      [
+       "Social variables",
+       [
+        "age, gender",
+        "occupation, interests",
+        "education, class"
+       ]
+      ],
+      [
+       "Accommodation",
+       [
+        "convergence",
+        "divergence"
+       ]
+      ],
+      [
+       "Shifting",
+       [
+        "style-shifting",
+        "code-switching"
+       ]
+      ],
+      [
+       "Attitudes",
+       [
+        "overt and covert prestige",
+        "linguistic prejudice",
+        "reclaimed words"
+       ]
+      ]
      ]
     },
     {
@@ -1020,6 +1733,48 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What should the introduction of an analytical commentary cover?",
+       "a": "Context (mode, field, setting, participants and their relationship), register, function and social purpose.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In the essay, the best evidence is…",
+       "o": [
+        "contemporary Australian language examples analysed with metalanguage",
+        "a dictionary definition",
+        "a linguist’s quote alone",
+        "a personal opinion"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What five details should you record for each essay example?",
+       "a": "The exact wording, the speaker or writer and source, the date, the relevant metalanguage, and the idea it supports.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A two-mark short answer usually needs…",
+       "o": [
+        "a named feature with a quoted example and one explanation",
+        "a full paragraph with three features",
+        "only the feature name",
+        "a definition"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "What is “feature-spotting”, and why does it lose marks?",
+       "a": "Listing features without explaining what each does in the text; the marks are for explaining effect and purpose.",
+       "e": ""
       }
      ],
      "notes": [
@@ -1034,6 +1789,34 @@
        "h": "How the exam is built",
        "p": [
         "The exam has three sections: short-answer questions on a text (Section A), an analytical commentary on a text (Section B), and an essay (Section C). Check the current exam specifications on the VCAA website for marks and timing. In all three, marks come from accurate metalanguage, relevant evidence and explanation of how language relates to context and purpose."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "The three sections and what earns marks (check the current specifications for marks and timing).",
+         "head": [
+          "Section",
+          "Task",
+          "What earns marks"
+         ],
+         "rows": [
+          [
+           "A",
+           "short-answer questions on a text",
+           "named feature, quote with line number, explanation"
+          ],
+          [
+           "B",
+           "analytical commentary",
+           "context, range of subsystems, purpose"
+          ],
+          [
+           "C",
+           "essay",
+           "contention, analysed contemporary examples"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1100,6 +1883,34 @@
        "p": [
         "1. Underline the key terms of the prompt and decide what it is really asking. 2. Read the stimulus material and choose at least one item to refer to. 3. Write a contention that takes a position, usually a qualified one (“largely”, “in some contexts”). 4. Choose three ideas that support or complicate the contention; give each one or two examples from your bank. 5. Order them so that the essay builds.",
         "Paragraph shape: topic sentence that states the idea; example with exact wording; analysis using metalanguage; link to the contention. A short conclusion restates the position in light of the evidence."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "Five-minute essay plan.",
+         "steps": [
+          [
+           "Unpack the prompt",
+           "key terms"
+          ],
+          [
+           "Use the stimulus",
+           "pick an item"
+          ],
+          [
+           "Contention",
+           "a qualified position"
+          ],
+          [
+           "Three ideas",
+           "1–2 examples each"
+          ],
+          [
+           "Order",
+           "build the argument"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1108,6 +1919,46 @@
         "Feature-spotting: naming ten features and explaining none. Retelling what the text says. Using invented or decades-old examples in the essay. Leaving out line numbers. Writing a memorised essay that does not answer the prompt."
        ]
       }
+     ],
+     "map": [
+      [
+       "Section A",
+       [
+        "short answers",
+        "feature + quote + explanation"
+       ]
+      ],
+      [
+       "Section B",
+       [
+        "analytical commentary",
+        "context intro",
+        "organise by purpose"
+       ]
+      ],
+      [
+       "Section C",
+       [
+        "essay",
+        "contention",
+        "contemporary examples"
+       ]
+      ],
+      [
+       "Examples bank",
+       [
+        "exact wording, source, date",
+        "metalanguage, idea"
+       ]
+      ],
+      [
+       "Avoid",
+       [
+        "feature-spotting",
+        "retelling",
+        "missing line numbers"
+       ]
+      ]
      ]
     },
     {
@@ -1162,6 +2013,30 @@
        "h": "The plan",
        "p": [
         "Introduction: context and the two-sided purpose. Paragraph 1: informal features that reduce social distance and build rapport. Paragraph 2: formal features that give clear information and assert authority. Paragraph 3: discourse features that make the text coherent and promote community. Organising by purpose keeps the analysis from turning into a list."
+       ],
+       "fig": [
+        {
+         "t": "flow",
+         "cap": "From reading to writing the commentary on the council notice.",
+         "steps": [
+          [
+           "First reading",
+           "context and purpose"
+          ],
+          [
+           "Second reading",
+           "mark features by subsystem"
+          ],
+          [
+           "Plan",
+           "rapport · authority · coherence"
+          ],
+          [
+           "Write",
+           "intro, 3 body paragraphs"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1256,7 +2131,75 @@
        ],
        "a": 1,
        "e": "The interrogative fragment mimics conversation and leads to the solution."
+      },
+      {
+       "t": "m",
+       "q": "An analytical commentary is best organised…",
+       "o": [
+        "by social purpose or by subsystem",
+        "line by line",
+        "by length of quote",
+        "alphabetically"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Rewrite this weak sentence as analysis: “The text uses informal language.”",
+       "a": "For example: “The colloquial idiom ‘give us a buzz’ (line 6) invites contact in a friendly, neighbourly way, reducing the social distance between the council and residents.”",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Every analytical point should include…",
+       "o": [
+        "metalanguage, a quote with a line number, the effect and a link to purpose",
+        "a definition from a dictionary",
+        "a personal reaction",
+        "a summary of the text"
+       ],
+       "a": 0,
+       "e": ""
       }
+     ],
+     "map": [
+      [
+       "Read twice",
+       [
+        "context first",
+        "then features"
+       ]
+      ],
+      [
+       "Plan",
+       [
+        "by purpose or subsystem",
+        "3–4 paragraphs"
+       ]
+      ],
+      [
+       "Introduction",
+       [
+        "mode, field, participants",
+        "register, function, purpose"
+       ]
+      ],
+      [
+       "Body",
+       [
+        "metalanguage + quote + line",
+        "effect + link"
+       ]
+      ],
+      [
+       "Check",
+       [
+        "range of subsystems",
+        "discourse covered",
+        "no retelling"
+       ]
+      ]
      ]
     }
    ]

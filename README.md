@@ -57,8 +57,21 @@ Each subject and unit has its own file in `content/`, for example `chem12.json` 
 
 - `"t": "m"` is multiple choice. `a` is the index of the correct option, counting from 0.
 - `"t": "c"` is a flashcard the student marks themselves.
+- `"t": "n"` is a typed-number question with fresh numbers on every attempt:
+  ```json
+  {"t": "n", "q": "Solve \\([[a]]x = [[c]]\\).", "vars": {"a": [2, 9, 1], "c": {"pick": [10, 20]}}, "ans": "c/a", "dp": 2, "unit": "", "s": ["\\(x = [[=c/a|2]]\\)"]}
+  ```
+  `vars` gives each variable a `[min, max, step]` range or a `pick` list. `ans` is a JavaScript expression over the variables (Math names such as `sqrt`, `exp`, `log` and `PI` work). In `q`, `e` and `s`, `[[a]]` inserts a variable and `[[=expr|2]]` a calculated value to 2 decimal places (`|,0` adds thousands separators). Answers within half a unit of `dp` decimal places, or within 0.1%, are marked right. Run `node tests/check.mjs` after adding some: it tries every typed question 200 times.
+- `"s": ["Step 1", "Step 2", …]` is optional on any question: a worked solution the student reveals one step at a time after answering.
 - Add new questions **at the end** of a topic's `qs` list, and don't change topic `id`s. Progress is tracked by topic id and question position, so reordering would mix up saved progress.
 - `notes` is optional: each entry is a heading and its paragraphs, shown under "Lesson". `check` is optional: quick questions with hidden answers shown after that section.
+- `map` is optional: a mind map as a list of `["Branch", ["leaf", "leaf"]]`, shown under the key points (as an outline on phones).
+- `fig` is optional on any `notes` section: a list of figures drawn by `figs.js`, each with a `cap` (caption) and a type `t`:
+  - `plot`: graphs of functions written in JavaScript (`"fns": [{"f": "x*x - 4"}]`, using `**` for powers and brackets around negative powers), with `x` and `y` ranges, plus optional `shade`, `bars`, `lines`, `dots`, `pts` (labelled points), `dash` and `segs`.
+  - `table` (`head`, `rows`), `flow` (`steps`), `graph` (networks: `nodes`, `edges`, `hl`, `dir`) and `svg` (hand-drawn SVG markup).
+  - `sheet`: an accounting worksheet. Like `table` (`title`, `head`, `rows`), but a cell written as `{"a": 3000}` (or `{"a": 26.875, "dp": 1}`) becomes a box the student types into and checks.
+  - `explore`: the interactive graph explorer (sliders for y = a·f(n(x − h)) + k). Optional `f` picks the starting function (`"x²"`, `"eˣ"`, `"sin x"`, `"1/x"` and so on) and `x`, `y` set the ranges. It is also its own page at `#explore`.
+  - Text inside `plot`, `graph`, `svg` and mind maps must be plain Unicode (x², π): KaTeX cannot typeset inside SVG.
 - Topics are taught in the order they appear in the file. New topics can be inserted anywhere; give each a new `id`.
 
 ### Glossary
@@ -70,4 +83,9 @@ Each subject and unit has its own file in `content/`, for example `chem12.json` 
 ```
 
 - `s` is the subject key: `chem`, `eng`, `acc`, `meth` or `gen`.
+- In lessons, the first mention of each of the subject's terms becomes a dotted link that opens its definition (terms inside maths are skipped).
 - `src` is optional. Add it only when `d` is copied word for word from a VCAA document, and name the document. Entries without `src` are shown as "Study-note wording".
+
+## Report a problem
+
+Every lesson and every answered question has a "Report a problem" link. It opens a new GitHub issue on this repo, pre-filled with the page and the question, so reporters need a free GitHub account. To send reports somewhere else, change `reportUrl` in `config.js` (the link adds GitHub's `?title=…&body=…` parameters, so a Google Form or `mailto:` link needs a small change in `app.js`).

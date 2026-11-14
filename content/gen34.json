@@ -33,6 +33,108 @@
        ],
        "a": 1,
        "e": "\\(186 = \\bar{x} + 2s\\), so about \\(\\dfrac{5\\%}{2} = 2.5\\%\\)."
+      },
+      {
+       "t": "c",
+       "q": "A score of 82 comes from a distribution with mean 70 and standard deviation 6. Find its z-score.",
+       "a": "2",
+       "e": "\\(z = \\dfrac{82 - 70}{6} = 2\\)."
+      },
+      {
+       "t": "m",
+       "q": "For a bell-shaped distribution, the percentage of values within two standard deviations of the mean is about…",
+       "o": [
+        "95%",
+        "68%",
+        "99.7%",
+        "50%"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "For a bell-shaped distribution, what percentage of values lie more than one standard deviation below the mean?",
+       "a": "16%",
+       "e": "",
+       "s": [
+        "68% lie within one standard deviation, so 32% lie outside.",
+        "Half of that is below: 16%."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Sam scores 75 in Maths (mean 60, sd 10) and 80 in English (mean 72, sd 4). In which subject did Sam do better relative to the class?",
+       "a": "English (z = 2 compared with z = 1.5)",
+       "e": "",
+       "s": [
+        "Maths: \\(z = \\dfrac{75 - 60}{10} = 1.5\\).",
+        "English: \\(z = \\dfrac{80 - 72}{4} = 2\\).",
+        "The higher z-score is in English."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A distribution has mean 50 and standard deviation 12. What value has a z-score of −0.5?",
+       "a": "44",
+       "e": "50 − 0.5 × 12 = 44."
+      },
+      {
+       "t": "m",
+       "q": "For a bell-shaped distribution, the percentage of values between one standard deviation below and two above the mean is about…",
+       "o": [
+        "81.5%",
+        "95%",
+        "68%",
+        "83.85%"
+       ],
+       "a": 0,
+       "e": "34 + 34 + 13.5."
+      },
+      {
+       "t": "c",
+       "q": "For a bell-shaped distribution, what percentage of values lie more than three standard deviations above the mean?",
+       "a": "0.15%",
+       "e": "99.7% lie within three standard deviations; half of the remaining 0.3% is above."
+      },
+      {
+       "t": "m",
+       "q": "A negative z-score means the value is…",
+       "o": [
+        "below the mean",
+        "above the mean",
+        "an outlier",
+        "an error"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "Scores have mean [[m]] and standard deviation [[s]]. Find the standardised score (z) of a score of [[x]].",
+       "vars": {
+        "m": [
+         50,
+         70,
+         1
+        ],
+        "s": [
+         4,
+         12,
+         1
+        ],
+        "x": [
+         35,
+         90,
+         1
+        ]
+       },
+       "ans": "(x-m)/s",
+       "dp": 2,
+       "s": [
+        "\\(z = \\dfrac{x - \\bar{x}}{s} = \\dfrac{[[x]] - [[m]]}{[[s]]}\\)",
+        "\\(= [[=(x-m)/s|2]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -59,6 +161,84 @@
          "What percentage of values lie between one standard deviation below the mean and two above?",
          "34 + 34 + 13.5 = 81.5%."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Percentages in each band of a bell-shaped distribution: 34%, 13.5%, 2.35% and 0.15% on each side of the mean.",
+         "x": [
+          -3.6,
+          3.6
+         ],
+         "y": [
+          0,
+          0.45
+         ],
+         "xstep": 1,
+         "ystep": 0.1,
+         "fns": [
+          {
+           "f": "exp(-x*x/2)/sqrt(2*PI)"
+          }
+         ],
+         "shade": [
+          {
+           "f": 0,
+           "from": -1,
+           "to": 1
+          },
+          {
+           "f": 0,
+           "from": -2,
+           "to": 2
+          }
+         ],
+         "pts": [
+          [
+           -0.5,
+           0.2,
+           "34%",
+           -14,
+           0
+          ],
+          [
+           0.5,
+           0.2,
+           "34%",
+           -10,
+           0
+          ],
+          [
+           -1.5,
+           0.06,
+           "13.5%",
+           -22,
+           0
+          ],
+          [
+           1.5,
+           0.06,
+           "13.5%",
+           -16,
+           0
+          ],
+          [
+           -2.5,
+           0.012,
+           "2.35%",
+           -24,
+           -6
+          ],
+          [
+           2.5,
+           0.012,
+           "2.35%",
+           -16,
+           -6
+          ]
+         ],
+         "xl": "standard deviations from the mean"
+        }
        ]
       },
       {
@@ -113,6 +293,38 @@
         "Applying the 68–95–99.7% rule to a skewed distribution. Subtracting in the wrong order in a \\(z\\)-score. Forgetting to halve the percentage outside the interval when one tail is needed. Reading a log scale as if it were linear."
        ]
       }
+     ],
+     "map": [
+      [
+       "Summary statistics",
+       [
+        "mean and sd: symmetric data",
+        "median and IQR: skewed data"
+       ]
+      ],
+      [
+       "68–95–99.7% rule",
+       [
+        "68% within 1 sd",
+        "95% within 2 sd",
+        "99.7% within 3 sd"
+       ]
+      ],
+      [
+       "z-scores",
+       [
+        "z = (x − x̄) ÷ s",
+        "x = x̄ + zs",
+        "compare across scales"
+       ]
+      ],
+      [
+       "Reports",
+       [
+        "shape, centre, spread, outliers",
+        "values with units"
+       ]
+      ]
      ]
     },
     {
@@ -145,6 +357,34 @@
          "Which display suits the relationship between type of school (government, independent) and weekly homework hours?",
          "Parallel boxplots: homework hours is numerical and school type is categorical."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Choose the display from the types of the two variables.",
+         "head": [
+          "Explanatory",
+          "Response",
+          "Display"
+         ],
+         "rows": [
+          [
+           "Categorical",
+           "Categorical",
+           "Two-way table, segmented bar chart"
+          ],
+          [
+           "Categorical",
+           "Numerical",
+           "Parallel boxplots, back-to-back stem plot"
+          ],
+          [
+           "Numerical",
+           "Numerical",
+           "Scatterplot"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -172,6 +412,70 @@
          "A scatterplot shows a clear curved pattern but \\(r = 0.3\\). Does this mean the association is weak?",
          "Not necessarily. \\(r\\) only measures linear association, so it understates a strong non-linear relationship."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Two patterns: a strong positive linear association (r ≈ 0.95) and a clear curve, where r would understate a strong relationship.",
+         "x": [
+          0,
+          10
+         ],
+         "y": [
+          0,
+          12
+         ],
+         "xstep": 1,
+         "ystep": 2,
+         "dots": [
+          [
+           1,
+           1.5
+          ],
+          [
+           2,
+           2.2
+          ],
+          [
+           3,
+           3.4
+          ],
+          [
+           4,
+           3.9
+          ],
+          [
+           5,
+           5.3
+          ],
+          [
+           6,
+           6.1
+          ],
+          [
+           7,
+           6.8
+          ],
+          [
+           8,
+           8.2
+          ],
+          [
+           9,
+           9.1
+          ]
+         ],
+         "fns": [
+          {
+           "f": "0.12*(x-5)**2+8",
+           "label": "curved",
+           "dom": [
+            1,
+            9
+           ]
+          }
+         ]
+        }
        ]
       },
       {
@@ -236,7 +540,118 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Which display suits the association between type of school (government, independent) and exam mark?",
+       "o": [
+        "Parallel boxplots",
+        "Scatterplot",
+        "Two-way table",
+        "Time series plot"
+       ],
+       "a": 0,
+       "e": "Mark is numerical; school type is categorical."
+      },
+      {
+       "t": "c",
+       "q": "18 of 60 students who are driven to school, and 24 of 40 who walk, eat breakfast daily. Is breakfast associated with travel mode?",
+       "a": "Yes: 30% compared with 60%",
+       "e": "",
+       "s": [
+        "Driven: 18 ÷ 60 = 30%.",
+        "Walk: 24 ÷ 40 = 60%.",
+        "The percentages differ noticeably, so there is an association."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A scatterplot shows a clear curve. Quoting \\(r\\) for it is…",
+       "o": [
+        "misleading, because r measures only linear association",
+        "the best summary",
+        "required",
+        "only wrong if r is negative"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Children’s shoe size and reading score are strongly associated. Suggest a non-causal explanation.",
+       "a": "Common response to age: older children have bigger feet and read better.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "On a scatterplot the explanatory variable goes on the…",
+       "o": [
+        "horizontal axis",
+        "vertical axis",
+        "either axis",
+        "key"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "The correlation coefficient is \\(r = [[r]]\\). Find the coefficient of determination as a percentage, to 1 decimal place.",
+       "vars": {
+        "r": [
+         -0.95,
+         0.95,
+         0.05
+        ]
+       },
+       "ans": "r*r*100",
+       "dp": 1,
+       "unit": "%",
+       "e": "Interpretation: that percentage of the variation in the response variable is explained by the variation in the explanatory variable.",
+       "s": [
+        "\\(r^2 = ([[r]])^2 = [[=r*r|4]]\\)",
+        "As a percentage: [[=r*r*100|1]]%"
+       ]
       }
+     ],
+     "map": [
+      [
+       "Displays",
+       [
+        "two categorical: two-way table",
+        "numerical + categorical: boxplots",
+        "two numerical: scatterplot"
+       ]
+      ],
+      [
+       "Two-way tables",
+       [
+        "percentages within the explanatory variable",
+        "compare across columns"
+       ]
+      ],
+      [
+       "Boxplots",
+       [
+        "compare medians",
+        "then spread and shape"
+       ]
+      ],
+      [
+       "Scatterplots",
+       [
+        "direction, form, strength, outliers",
+        "Pearson’s r: linear only"
+       ]
+      ],
+      [
+       "Causation",
+       [
+        "confounding",
+        "common response",
+        "coincidence"
+       ]
+      ]
      ]
     },
     {
@@ -274,6 +689,133 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the least squares line given \\(r = 0.8\\), \\(s_x = 4\\), \\(s_y = 10\\), \\(\\bar{x} = 20\\) and \\(\\bar{y} = 50\\).",
+       "a": "\\(y = 10 + 2x\\)",
+       "e": "",
+       "s": [
+        "Slope \\(b = r\\dfrac{s_y}{s_x} = 0.8 \\times \\dfrac{10}{4} = 2\\).",
+        "Intercept \\(a = \\bar{y} - b\\bar{x} = 50 - 2 \\times 20 = 10\\).",
+        "\\(y = 10 + 2x\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Using \\(y = 10 + 2x\\), find the residual for the data point \\((12, 37)\\).",
+       "a": "3",
+       "e": "",
+       "s": [
+        "Predicted \\(y = 10 + 24 = 34\\).",
+        "Residual = actual − predicted = 37 − 34 = 3."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "If \\(r^2 = 0.81\\) and the association is negative, then \\(r =\\)",
+       "o": [
+        "−0.9",
+        "0.9",
+        "−0.81",
+        "0.6561"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "The least squares line is price = 10 + 2 × weight. Interpret the intercept.",
+       "a": "When the weight is 0, the predicted price is 10. It may not be meaningful if a weight of 0 is outside the data.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A residual plot shows a clear curved pattern. This suggests…",
+       "o": [
+        "a linear model is not appropriate",
+        "the model is very good",
+        "there are no outliers",
+        "r is exactly 1"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A model is weight = 2 + 3 × log₁₀(age). Predict the weight when age is 1000.",
+       "a": "11",
+       "e": "",
+       "s": [
+        "\\(\\log_{10} 1000 = 3\\).",
+        "weight = 2 + 3 × 3 = 11."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Predicting within the range of the data is called…",
+       "o": [
+        "interpolation",
+        "extrapolation",
+        "regression to the mean",
+        "smoothing"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(r = [[r]]\\), \\(s_x = [[sx]]\\) and \\(s_y = [[sy]]\\). Find the slope \\(b\\) of the least squares line, to 3 decimal places.",
+       "vars": {
+        "r": [
+         0.3,
+         0.95,
+         0.05
+        ],
+        "sx": [
+         2,
+         10,
+         1
+        ],
+        "sy": [
+         3,
+         20,
+         1
+        ]
+       },
+       "ans": "r*sy/sx",
+       "dp": 3,
+       "s": [
+        "\\(b = r\\dfrac{s_y}{s_x} = [[r]] \\times \\dfrac{[[sy]]}{[[sx]]}\\)",
+        "\\(= [[=r*sy/sx|3]]\\)"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "The slope is \\(b = [[b]]\\), \\(\\bar{x} = [[mx]]\\) and \\(\\bar{y} = [[my]]\\). Find the intercept \\(a\\), to 2 decimal places.",
+       "vars": {
+        "b": [
+         0.5,
+         3,
+         0.25
+        ],
+        "mx": [
+         5,
+         20,
+         1
+        ],
+        "my": [
+         30,
+         80,
+         1
+        ]
+       },
+       "ans": "my-b*mx",
+       "dp": 2,
+       "s": [
+        "\\(a = \\bar{y} - b\\bar{x} = [[my]] - [[b]] \\times [[mx]]\\)",
+        "\\(= [[=my-b*mx|2]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -334,6 +876,90 @@
          "For the line y = 0.8 + 2x, what is the residual for the point (4, 7)?",
          "Predicted 8.8, so the residual is 7 − 8.8 = −1.8."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Data points, the least squares line y = 0.8 + 2x, and residuals (dashed): 0.2, 0.2, −0.8, 0.2, 0.2. They add to zero.",
+         "x": [
+          0,
+          6
+         ],
+         "y": [
+          0,
+          13
+         ],
+         "xstep": 1,
+         "ystep": 2,
+         "fns": [
+          {
+           "f": "0.8+2*x"
+          }
+         ],
+         "dots": [
+          [
+           1,
+           3
+          ],
+          [
+           2,
+           5
+          ],
+          [
+           3,
+           6
+          ],
+          [
+           4,
+           9
+          ],
+          [
+           5,
+           11
+          ]
+         ],
+         "segs": [
+          [
+           1,
+           3,
+           1,
+           2.8
+          ],
+          [
+           2,
+           5,
+           2,
+           4.8
+          ],
+          [
+           3,
+           6,
+           3,
+           6.8
+          ],
+          [
+           4,
+           9,
+           4,
+           8.8
+          ],
+          [
+           5,
+           11,
+           5,
+           10.8
+          ]
+         ],
+         "pts": [
+          [
+           3,
+           6,
+           "residual −0.8",
+           8,
+           16
+          ]
+         ]
+        }
        ]
       },
       {
@@ -355,6 +981,46 @@
         "Writing the equation with \\(x\\) and \\(y\\) when the question names the variables. Interpreting \\(r\\) as a percentage. Calculating the residual as predicted minus actual. Forgetting to back-transform a prediction."
        ]
       }
+     ],
+     "map": [
+      [
+       "Least squares line",
+       [
+        "b = r sy ÷ sx",
+        "a = ȳ − b x̄",
+        "passes through (x̄, ȳ)"
+       ]
+      ],
+      [
+       "Interpret",
+       [
+        "slope in context",
+        "intercept if meaningful",
+        "r² as a percentage"
+       ]
+      ],
+      [
+       "Residuals",
+       [
+        "actual − predicted",
+        "sum to zero",
+        "random plot: linear OK"
+       ]
+      ],
+      [
+       "Predictions",
+       [
+        "interpolation reliable",
+        "extrapolation risky"
+       ]
+      ],
+      [
+       "Transformations",
+       [
+        "x², log x, 1/x",
+        "back-transform answers"
+       ]
+      ]
      ]
     },
     {
@@ -386,6 +1052,103 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Seasonality in a time series is…",
+       "o": [
+        "a pattern that repeats over a fixed period of a year or less",
+        "a long-term increase",
+        "random variation",
+        "a sudden change in level"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Find the three-point moving mean centred on the middle value of 12, 15, 21.",
+       "a": "16",
+       "e": "(12 + 15 + 21) ÷ 3 = 16."
+      },
+      {
+       "t": "c",
+       "q": "The seasonal index for a quarter is 1.2 and the actual value is 84. Find the deseasonalised value.",
+       "a": "70",
+       "e": "84 ÷ 1.2 = 70."
+      },
+      {
+       "t": "c",
+       "q": "A trend line predicts a deseasonalised value of 50 for a quarter with seasonal index 0.9. Forecast the actual value.",
+       "a": "45",
+       "e": "50 × 0.9 = 45."
+      },
+      {
+       "t": "m",
+       "q": "Seasonal indices for monthly data add up to…",
+       "o": [
+        "12",
+        "1",
+        "4",
+        "100"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "One year of quarterly sales is 15, 25, 35, 25. Find the seasonal indices.",
+       "a": "0.6, 1.0, 1.4, 1.0",
+       "e": "",
+       "s": [
+        "Mean of the four quarters = 100 ÷ 4 = 25.",
+        "Divide each by 25: 0.6, 1.0, 1.4, 1.0.",
+        "Check: they add to 4."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A seasonal index is 0.8. By what percentage must the actual value be changed to deseasonalise it?",
+       "a": "Increased by 25%",
+       "e": "",
+       "s": [
+        "Deseasonalise by dividing by 0.8.",
+        "1 ÷ 0.8 = 1.25, an increase of 25%."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A sudden, lasting change in the level or trend of a time series is called…",
+       "o": [
+        "a structural change",
+        "seasonality",
+        "an irregular fluctuation",
+        "a cycle"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "The seasonal index for summer is [[si]]. Summer sales were [[a]]. Find the deseasonalised sales, to 1 decimal place.",
+       "vars": {
+        "si": [
+         0.7,
+         1.4,
+         0.05
+        ],
+        "a": [
+         200,
+         900,
+         10
+        ]
+       },
+       "ans": "a/si",
+       "dp": 1,
+       "s": [
+        "\\(\\text{deseasonalised} = \\dfrac{\\text{actual}}{\\text{seasonal index}} = \\dfrac{[[a]]}{[[si]]}\\)",
+        "= [[=a/si|1]]"
+       ]
       }
      ],
      "notes": [
@@ -400,6 +1163,84 @@
        "h": "Describing a time series plot",
        "p": [
         "Trend: a long-term increase or decrease. Seasonality: a pattern that repeats over a fixed period of a year or less, linked to the calendar. Cycles: rises and falls over periods longer than a year, without fixed length. Irregular fluctuations: random variation. Also note structural change (a sudden change in level or trend) and outliers."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Three years of quarterly sales: an upward trend (dashed line) with seasonality peaking every third quarter.",
+         "x": [
+          0.5,
+          12.5
+         ],
+         "y": [
+          10,
+          45
+         ],
+         "xstep": 1,
+         "ystep": 5,
+         "lines": [
+          {
+           "pts": [
+            [
+             1,
+             17.5
+            ],
+            [
+             2,
+             25
+            ],
+            [
+             3,
+             30.5
+            ],
+            [
+             4,
+             22
+            ],
+            [
+             5,
+             23.5
+            ],
+            [
+             6,
+             31
+            ],
+            [
+             7,
+             36.5
+            ],
+            [
+             8,
+             28
+            ],
+            [
+             9,
+             29.5
+            ],
+            [
+             10,
+             37
+            ],
+            [
+             11,
+             42.5
+            ],
+            [
+             12,
+             34
+            ]
+           ],
+           "label": "sales"
+          }
+         ],
+         "fns": [
+          {
+           "f": "20+1.5*x",
+           "label": "trend"
+          }
+         ],
+         "xl": "quarter"
+        }
        ]
       },
       {
@@ -462,6 +1303,46 @@
         "Calling any up-and-down pattern seasonal. Forgetting to centre an even-point moving mean. Multiplying when you should divide by the index. Using the wrong numbering for time periods in the trend line."
        ]
       }
+     ],
+     "map": [
+      [
+       "Features",
+       [
+        "trend",
+        "seasonality",
+        "cycles",
+        "irregular variation",
+        "structural change"
+       ]
+      ],
+      [
+       "Smoothing",
+       [
+        "moving means",
+        "centre even-point means",
+        "median smoothing"
+       ]
+      ],
+      [
+       "Seasonal indices",
+       [
+        "value ÷ seasonal average",
+        "sum to number of seasons"
+       ]
+      ],
+      [
+       "Deseasonalise",
+       [
+        "divide by the index"
+       ]
+      ],
+      [
+       "Forecast",
+       [
+        "trend line on deseasonalised data",
+        "multiply back by the index"
+       ]
+      ]
      ]
     }
    ]
@@ -498,6 +1379,126 @@
        "q": "Find the effective annual rate for 6% p.a. compounding monthly.",
        "a": "\\(\\left[\\left(1 + \\dfrac{6}{1200}\\right)^{12} - 1\\right] \\times 100\\% = (1.005^{12} - 1) \\times 100\\% \\approx 6.17\\%\\)",
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A $20,000 asset depreciates at a flat rate of 15% of its purchase price per year. Find its value after 4 years.",
+       "a": "$8000",
+       "e": "",
+       "s": [
+        "Annual depreciation = 15% × 20,000 = $3000.",
+        "After 4 years: 20,000 − 4 × 3000 = $8000."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A $20,000 asset depreciates by 20% per year (reducing balance). Find its value after 2 years.",
+       "a": "$12,800",
+       "e": "",
+       "s": [
+        "\\(R = 0.8\\).",
+        "\\(V_2 = 20\\,000 \\times 0.8^2 = 12\\,800\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "For 5% per annum compounding quarterly, the multiplier R per quarter is…",
+       "o": [
+        "1.0125",
+        "1.05",
+        "1.25",
+        "0.95"
+       ],
+       "a": 0,
+       "e": "\\(1 + \\dfrac{5}{4 \\times 100}\\)."
+      },
+      {
+       "t": "c",
+       "q": "Write a recurrence relation for $10,000 invested at 6% per annum compounding monthly.",
+       "a": "\\(V_0 = 10\\,000,\\ V_{n+1} = 1.005V_n\\)",
+       "e": "6 ÷ 12 = 0.5% per month."
+      },
+      {
+       "t": "c",
+       "q": "Find the effective annual interest rate for 4.8% per annum compounding monthly.",
+       "a": "About 4.91%",
+       "e": "",
+       "s": [
+        "Monthly multiplier \\(1.004\\).",
+        "\\((1.004^{12} - 1) \\times 100 \\approx 4.91\\%\\)."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "A vehicle depreciates by $0.12 per kilometre and travels 15,000 km a year. Find the annual depreciation.",
+       "a": "$1800",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "The rule for \\(V_0 = 5000,\\ V_{n+1} = 0.9V_n\\) is…",
+       "o": [
+        "\\(V_n = 5000 \\times 0.9^n\\)",
+        "\\(V_n = 5000 - 0.9n\\)",
+        "\\(V_n = 0.9 \\times 5000n\\)",
+        "\\(V_n = 5000 + 0.9^n\\)"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "A machine bought for $[[=P|,0]] depreciates by [[r]]% per year (reducing balance). Find its value after [[n]] years, to the nearest cent.",
+       "vars": {
+        "P": [
+         5000,
+         40000,
+         1000
+        ],
+        "r": [
+         8,
+         25,
+         1
+        ],
+        "n": [
+         2,
+         6,
+         1
+        ]
+       },
+       "ans": "P*(1-r/100)**n",
+       "dp": 2,
+       "s": [
+        "\\(V_n = (1 - \\tfrac{r}{100})^n V_0 = [[=1-r/100|2]]^{[[n]]} \\times [[=P|,0]]\\)",
+        "= $[[=P*(1-r/100)**n|,2]]"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "A car bought for $[[=P|,0]] depreciates by $[[D]] per year (flat rate). Find its value after [[n]] years.",
+       "vars": {
+        "P": [
+         20000,
+         40000,
+         1000
+        ],
+        "D": [
+         1500,
+         3000,
+         100
+        ],
+        "n": [
+         2,
+         6,
+         1
+        ]
+       },
+       "ans": "P-n*D",
+       "dp": 0,
+       "s": [
+        "\\(V_n = V_0 - nD = [[=P|,0]] - [[n]] \\times [[D]]\\)",
+        "= $[[=P-n*D|,0]]"
+       ]
       }
      ],
      "notes": [
@@ -519,6 +1520,108 @@
        "p": [
         "Flat rate: the same amount is lost each year, a fixed percentage of the purchase price. Rule: \\(V_n = V_0 - nD\\). Unit cost: the value falls by a fixed amount per unit of use (per kilometre, per page). Reducing balance: a fixed percentage of the current value is lost each year. Rule: \\(V_n = R^n V_0\\) with \\(R = 1 - \\dfrac{r}{100}\\).",
         "Example: a $30 000 car. Flat rate at 12% p.a. loses $3600 a year: after 5 years it is worth $12 000. Reducing balance at 18% p.a.: \\(V_5 = 0.82^5 \\times 30\\,000 = \\$11\\,122\\). Reducing balance loses most in the first years and never reaches zero."
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "A $30,000 car: flat-rate depreciation at 12% falls in a straight line; reducing balance at 18% falls steeply at first, then slows, never reaching zero.",
+         "x": [
+          0,
+          8.5
+         ],
+         "y": [
+          0,
+          32000
+         ],
+         "xstep": 1,
+         "ystep": 5000,
+         "fns": [
+          {
+           "f": "30000-3600*x",
+           "label": "flat rate"
+          },
+          {
+           "f": "30000*0.82**x",
+           "label": "reducing balance"
+          }
+         ],
+         "dots": [
+          [
+           0,
+           30000.0
+          ],
+          [
+           1,
+           24600.0
+          ],
+          [
+           2,
+           20171.999999999996
+          ],
+          [
+           3,
+           16541.039999999997
+          ],
+          [
+           4,
+           13563.652799999996
+          ],
+          [
+           5,
+           11122.195295999996
+          ],
+          [
+           6,
+           9120.200142719998
+          ],
+          [
+           7,
+           7478.564117030396
+          ],
+          [
+           8,
+           6132.422575964925
+          ],
+          [
+           0,
+           30000
+          ],
+          [
+           1,
+           26400
+          ],
+          [
+           2,
+           22800
+          ],
+          [
+           3,
+           19200
+          ],
+          [
+           4,
+           15600
+          ],
+          [
+           5,
+           12000
+          ],
+          [
+           6,
+           8400
+          ],
+          [
+           7,
+           4800
+          ],
+          [
+           8,
+           1200
+          ]
+         ],
+         "xl": "years",
+         "yl": "value ($)"
+        }
        ]
       },
       {
@@ -584,6 +1687,44 @@
         "Using the annual rate as the per-period rate. Giving \\(R\\) as the percentage instead of the multiplier. Rounding the number of periods down when a target must be reached. Getting the signs of PV and FV the same."
        ]
       }
+     ],
+     "map": [
+      [
+       "Recurrence",
+       [
+        "Vₙ₊₁ = RVₙ ± d",
+        "one period = one step"
+       ]
+      ],
+      [
+       "Depreciation",
+       [
+        "flat rate: −D each year",
+        "unit cost: per use",
+        "reducing balance: × R"
+       ]
+      ],
+      [
+       "Interest",
+       [
+        "R = 1 + r ÷ (100 × periods)",
+        "effective vs nominal"
+       ]
+      ],
+      [
+       "Rules",
+       [
+        "Vₙ = V₀ ± nd",
+        "Vₙ = RⁿV₀"
+       ]
+      ],
+      [
+       "Finance solver",
+       [
+        "N, I%, PV, PMT, FV",
+        "signs: out −, in +"
+       ]
+      ]
      ]
     },
     {
@@ -615,6 +1756,119 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A $10,000 loan has interest of 1% per month and repayments of $500 at the end of each month. Find the balance after the first payment, and how much of the payment reduced the principal.",
+       "a": "$9600; $400",
+       "e": "",
+       "s": [
+        "Interest for the month = 1% × 10,000 = $100.",
+        "Principal reduction = 500 − 100 = $400.",
+        "Balance = 10,000 + 100 − 500 = $9600."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "In a perpetuity, the regular payment…",
+       "o": [
+        "equals the interest earned each period",
+        "is larger than the interest",
+        "is zero",
+        "doubles each period"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "$200,000 is invested at 3.6% per annum compounding monthly. What monthly payment makes it a perpetuity?",
+       "a": "$600",
+       "e": "3.6 ÷ 12 = 0.3% per month; 0.003 × 200,000 = $600."
+      },
+      {
+       "t": "c",
+       "q": "Write a recurrence relation for an account that starts with $5000, earns 3% per annum compounding monthly, and receives $100 at the end of each month.",
+       "a": "\\(V_0 = 5000,\\ V_{n+1} = 1.0025V_n + 100\\)",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A $16,000 car loan is repaid with 60 monthly payments of $350. Find the total interest.",
+       "a": "$5000",
+       "e": "",
+       "s": [
+        "Total repaid = 60 × 350 = $21,000.",
+        "Interest = 21,000 − 16,000 = $5000."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "When entering a loan into a finance solver, the amount borrowed (PV) is…",
+       "o": [
+        "positive, because the borrower receives it",
+        "negative",
+        "zero",
+        "the same as PMT"
+       ],
+       "a": 0,
+       "e": "Money received is positive; payments made are negative."
+      },
+      {
+       "t": "c",
+       "q": "Find the monthly payment on a $300,000 interest-only loan at 6% per annum compounding monthly.",
+       "a": "$1500",
+       "e": "0.5% × 300,000 = $1500."
+      },
+      {
+       "t": "c",
+       "q": "A loan balance after the second-last payment is $120. Interest is 1% per month. What is the final payment?",
+       "a": "$121.20",
+       "e": "",
+       "s": [
+        "Interest for the last month = 1% × 120 = $1.20.",
+        "Final payment = 120 + 1.20 = $121.20."
+       ]
+      },
+      {
+       "t": "n",
+       "q": "Find the effective annual interest rate for [[r]]% per annum compounding monthly, to 2 decimal places.",
+       "vars": {
+        "r": [
+         3,
+         9,
+         0.5
+        ]
+       },
+       "ans": "((1+r/1200)**12-1)*100",
+       "dp": 2,
+       "unit": "%",
+       "s": [
+        "\\(r_{\\text{eff}} = \\left[\\left(1 + \\dfrac{[[r]]}{1200}\\right)^{12} - 1\\right] \\times 100\\%\\)",
+        "= [[=((1+r/1200)**12-1)*100|2]]%"
+       ]
+      },
+      {
+       "t": "n",
+       "q": "A perpetuity of $[[=P|,0]] earns [[r]]% per annum, compounding monthly. Find the monthly payment it can make forever, to the nearest cent.",
+       "vars": {
+        "P": [
+         100000,
+         800000,
+         50000
+        ],
+        "r": [
+         3,
+         6,
+         0.25
+        ]
+       },
+       "ans": "P*r/1200",
+       "dp": 2,
+       "s": [
+        "Monthly interest rate: [[r]] ÷ 12 = [[=r/12|4]]%",
+        "Payment = [[=P|,0]] × [[=r/1200|6]] = $[[=P*r/1200|,2]]"
+       ]
       }
      ],
      "notes": [
@@ -629,6 +1883,39 @@
        "h": "One recurrence relation, four products",
        "p": [
         "\\(V_{n+1} = RV_n \\pm d\\) with \\(R = 1 + \\dfrac{r}{100p}\\) covers them all. Reducing-balance loan: interest is added, a payment is subtracted, and the balance falls to zero. Annuity: an invested sum earns interest while regular payments are withdrawn until it runs out. Perpetuity: the payment equals the interest, so the balance stays constant for ever. Annuity investment: regular deposits are added to a growing balance."
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Four products, one recurrence relation.",
+         "head": [
+          "Product",
+          "Recurrence relation",
+          "Balance over time"
+         ],
+         "rows": [
+          [
+           "Reducing-balance loan",
+           "Vₙ₊₁ = RVₙ − d",
+           "falls to zero"
+          ],
+          [
+           "Annuity",
+           "Vₙ₊₁ = RVₙ − d",
+           "falls to zero"
+          ],
+          [
+           "Perpetuity",
+           "Vₙ₊₁ = RVₙ − d, with d = interest",
+           "stays constant"
+          ],
+          [
+           "Annuity investment",
+           "Vₙ₊₁ = RVₙ + d",
+           "grows"
+          ]
+         ]
+        }
        ]
       },
       {
@@ -642,6 +1929,33 @@
          "A loan balance is $10,000 at 1% interest per month and the payment is $500. How much of the payment reduces the principal?",
          "Interest is $100, so $400 reduces the principal."
         ]
+       ],
+       "fig": [
+        {
+         "t": "plot",
+         "cap": "Balance of a $20,000 loan at 6% p.a. (monthly) with $400 payments: it falls slowly at first, while most of each payment is interest, then faster. It is repaid after about 58 months.",
+         "x": [
+          0,
+          60
+         ],
+         "y": [
+          0,
+          21000
+         ],
+         "xstep": 6,
+         "ystep": 5000,
+         "fns": [
+          {
+           "f": "80000-60000*1.005**x",
+           "dom": [
+            0,
+            57.7
+           ]
+          }
+         ],
+         "xl": "months",
+         "yl": "balance ($)"
+        }
        ]
       },
       {
@@ -694,6 +2008,48 @@
         "Mismatching P/Y and C/Y with the payment frequency. Leaving N as years. Forgetting that paying only the interest never reduces the loan. Reporting total interest as the total repaid."
        ]
       }
+     ],
+     "map": [
+      [
+       "One relation",
+       [
+        "Vₙ₊₁ = RVₙ ± d"
+       ]
+      ],
+      [
+       "Loans",
+       [
+        "interest first, then principal",
+        "balance falls to zero",
+        "final payment adjusts"
+       ]
+      ],
+      [
+       "Annuities",
+       [
+        "withdrawals run it down"
+       ]
+      ],
+      [
+       "Perpetuities",
+       [
+        "payment = interest",
+        "balance never changes"
+       ]
+      ],
+      [
+       "Investments",
+       [
+        "regular deposits added"
+       ]
+      ],
+      [
+       "Solver signs",
+       [
+        "loan: PV +, PMT −",
+        "annuity: PV −, PMT +"
+       ]
+      ]
      ]
     }
    ]
@@ -730,6 +2086,122 @@
        "q": "Write the rule linking state matrices with transition matrix \\(T\\).",
        "a": "\\(S_{n+1} = TS_n\\), so \\(S_n = T^n S_0\\)",
        "e": ""
+      },
+      {
+       "t": "m",
+       "q": "In a transition matrix with “from” columns, each column adds to…",
+       "o": [
+        "1",
+        "0",
+        "the number of states",
+        "100"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "\\(T = \\begin{bmatrix} 0.9 & 0.2 \\\\ 0.1 & 0.8 \\end{bmatrix}\\) and \\(S_0 = \\begin{bmatrix} 100 \\\\ 200 \\end{bmatrix}\\). Find \\(S_1\\).",
+       "a": "\\(\\begin{bmatrix} 130 \\\\ 170 \\end{bmatrix}\\)",
+       "e": "",
+       "s": [
+        "Row 1: 0.9 × 100 + 0.2 × 200 = 130.",
+        "Row 2: 0.1 × 100 + 0.8 × 200 = 170."
+       ]
+      },
+      {
+       "t": "c",
+       "q": "For the same \\(T\\) with a total of 300, find the steady state.",
+       "a": "\\(\\begin{bmatrix} 200 \\\\ 100 \\end{bmatrix}\\)",
+       "e": "",
+       "s": [
+        "At steady state, x = 0.9x + 0.2y, so 0.1x = 0.2y and x = 2y.",
+        "x + y = 300, so 3y = 300, y = 100 and x = 200."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "A permutation matrix…",
+       "o": [
+        "has exactly one 1 in each row and column",
+        "has all entries equal to 1",
+        "has columns adding to 1",
+        "is always symmetric"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "In a communication matrix \\(C\\), what does an entry of \\(C^2\\) represent?",
+       "a": "The number of two-step communication links between the two people.",
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A dominance matrix (row beats column) is \\(\\begin{bmatrix} 0 & 1 & 1 \\\\ 0 & 0 & 1 \\\\ 0 & 0 & 0 \\end{bmatrix}\\) for players A, B, C. Rank the players by one-step dominance.",
+       "a": "A (2), B (1), C (0)",
+       "e": "Add each row."
+      },
+      {
+       "t": "c",
+       "q": "Using \\(T\\) and \\(S_0\\) above, find \\(S_1\\) for \\(S_{n+1} = TS_n + B\\) with \\(B = \\begin{bmatrix} 10 \\\\ 0 \\end{bmatrix}\\).",
+       "a": "\\(\\begin{bmatrix} 140 \\\\ 170 \\end{bmatrix}\\)",
+       "e": "",
+       "s": [
+        "\\(TS_0 = \\begin{bmatrix} 130 \\\\ 170 \\end{bmatrix}\\).",
+        "Add \\(B\\): \\(\\begin{bmatrix} 140 \\\\ 170 \\end{bmatrix}\\)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "In a Leslie matrix, the first row contains…",
+       "o": [
+        "birth rates",
+        "survival rates",
+        "population numbers",
+        "death rates"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "n",
+       "q": "\\(T = \\begin{bmatrix} [[a]] & [[=1-b|2]] \\\\ [[=1-a|2]] & [[b]] \\end{bmatrix}\\) and \\(S_0 = \\begin{bmatrix} [[N]] \\\\ [[M]] \\end{bmatrix}\\). Find the top entry of \\(S_1 = TS_0\\).",
+       "vars": {
+        "a": {
+         "pick": [
+          0.6,
+          0.7,
+          0.8,
+          0.9
+         ]
+        },
+        "b": {
+         "pick": [
+          0.6,
+          0.7,
+          0.8,
+          0.9
+         ]
+        },
+        "N": [
+         100,
+         900,
+         100
+        ],
+        "M": [
+         100,
+         900,
+         100
+        ]
+       },
+       "ans": "a*N+(1-b)*M",
+       "dp": 0,
+       "s": [
+        "Top row of \\(T\\) times \\(S_0\\): \\([[a]] \\times [[N]] + [[=1-b|2]] \\times [[M]]\\)",
+        "\\(= [[=a*N]] + [[=(1-b)*M]] = [[=a*N+(1-b)*M]]\\)"
+       ]
       }
      ],
      "notes": [
@@ -788,6 +2260,57 @@
          "Why is two-step dominance used?",
          "To separate ties in one-step dominance, by giving credit for beating players who themselves beat others."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Dominance in a round robin: an arrow from X to Y means X beat Y. A beat B and C; B beat C and D; C beat D; D beat A.",
+         "nodes": {
+          "A": [
+           10,
+           10
+          ],
+          "B": [
+           90,
+           10
+          ],
+          "C": [
+           90,
+           90
+          ],
+          "D": [
+           10,
+           90
+          ]
+         },
+         "edges": [
+          [
+           "A",
+           "B"
+          ],
+          [
+           "A",
+           "C"
+          ],
+          [
+           "B",
+           "C"
+          ],
+          [
+           "B",
+           "D"
+          ],
+          [
+           "C",
+           "D"
+          ],
+          [
+           "D",
+           "A"
+          ]
+         ],
+         "dir": true
+        }
        ]
       },
       {
@@ -801,6 +2324,14 @@
          "In a transition matrix, what must each column add to?",
          "1."
         ]
+       ],
+       "fig": [
+        {
+         "t": "svg",
+         "cap": "Transition diagram for commuters each week: 70% of drivers keep driving, 30% switch to the train; 80% of train users stay, 20% switch to driving.",
+         "svg": "<circle class=\"fp\" cx=\"140\" cy=\"150\" r=\"48\"/><circle class=\"fp\" cx=\"400\" cy=\"150\" r=\"48\"/><text class=\"t\" x=\"120\" y=\"155\">Drive</text><text class=\"t\" x=\"382\" y=\"155\">Train</text><path class=\"a\" d=\"M182,128 C240,80 300,80 358,128\"/><path class=\"a\" d=\"M358,172 C300,220 240,220 182,172\"/><path class=\"s\" d=\"M352,128 l8,1 l-4,7\"/><path class=\"s\" d=\"M188,172 l-8,-1 l4,-7\"/><text class=\"t\" x=\"250\" y=\"82\">0.3</text><text class=\"t\" x=\"250\" y=\"232\">0.2</text><path class=\"a\" d=\"M110,110 C70,40 210,40 170,110\"/><path class=\"a\" d=\"M370,110 C330,40 470,40 430,110\"/><text class=\"t\" x=\"128\" y=\"48\">0.7</text><text class=\"t\" x=\"388\" y=\"48\">0.8</text>",
+         "vb": "0 0 540 300"
+        }
        ]
       },
       {
@@ -809,6 +2340,38 @@
         "Writing the transition matrix with rows adding to 1 instead of columns. Multiplying \\(S_0T\\) in the wrong order. Using \\(T^nS_0\\) for a model with an added matrix \\(B\\). Reading a transition diagram’s arrows backwards."
        ]
       }
+     ],
+     "map": [
+      [
+       "Relationships",
+       [
+        "binary and permutation",
+        "communication: C²",
+        "dominance: D + D²"
+       ]
+      ],
+      [
+       "Transition matrices",
+       [
+        "columns ‘from’, rows ‘to’",
+        "columns sum to 1",
+        "Sₙ = TⁿS₀"
+       ]
+      ],
+      [
+       "Steady state",
+       [
+        "stops changing",
+        "large powers of T"
+       ]
+      ],
+      [
+       "Extensions",
+       [
+        "Sₙ₊₁ = TSₙ + B",
+        "Leslie matrices"
+       ]
+      ]
      ]
     },
     {
@@ -852,6 +2415,77 @@
        ],
        "a": 1,
        "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Activities: A (4 days) and B (3) start the project; C (5) follows A; D (2) follows B; E (4) follows C and D. Find the minimum completion time, the critical path and the float of D.",
+       "a": "13 days; A–C–E; float of D is 4 days",
+       "e": "",
+       "s": [
+        "EST: C = 4, D = 3, E = max(4 + 5, 3 + 2) = 9. Finish = 9 + 4 = 13.",
+        "Backward: LST of E = 9, C = 4, D = 9 − 2 = 7, A = 0, B = 7 − 3 = 4.",
+        "Zero float: A, C, E, so the critical path is A–C–E.",
+        "Float of D = LST − EST = 7 − 3 = 4."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "Crashing a non-critical activity…",
+       "o": [
+        "does not reduce the project time",
+        "always reduces the project time",
+        "removes the activity",
+        "changes the critical path to it"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Directed edges: S→A 4, S→B 6, A→T 5, B→T 3. Find the minimum cut and the maximum flow.",
+       "a": "7",
+       "e": "",
+       "s": [
+        "Cut around {S}: 4 + 6 = 10. Around {S, A}: S→B + A→T = 6 + 5 = 11.",
+        "Around {S, B}: S→A + B→T = 4 + 3 = 7. Around {S, A, B}: 5 + 3 = 8.",
+        "Minimum cut = 7, so maximum flow = 7 (4 through A and 3 through B)."
+       ]
+      },
+      {
+       "t": "m",
+       "q": "The Hungarian algorithm is used to…",
+       "o": [
+        "allocate tasks to minimise total cost or time",
+        "find a shortest path",
+        "find a maximum flow",
+        "find a critical path"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Two workers and two tasks. Worker 1 takes 4 hours on task 1 and 7 on task 2; worker 2 takes 6 and 5. Find the allocation with the least total time.",
+       "a": "Worker 1 to task 1, worker 2 to task 2: 9 hours",
+       "e": "The other allocation takes 7 + 6 = 13 hours."
+      },
+      {
+       "t": "m",
+       "q": "Dijkstra’s algorithm finds…",
+       "o": [
+        "the shortest path from one vertex to the others",
+        "a minimum spanning tree",
+        "a maximum flow",
+        "an Eulerian circuit"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "How is the float of an activity calculated?",
+       "a": "Latest start time minus earliest start time.",
+       "e": ""
       }
      ],
      "notes": [
@@ -891,6 +2525,67 @@
          "What is the float of an activity on the critical path?",
          "Zero."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Activity network: A (4) and B (3) start; C (5) follows A; D (2) follows B; E (4) follows C and D. The critical path A–C–E (highlighted) takes 13 days.",
+         "nodes": {
+          "S": [
+           0,
+           50
+          ],
+          "1": [
+           33,
+           15
+          ],
+          "2": [
+           33,
+           85
+          ],
+          "3": [
+           66,
+           50
+          ],
+          "F": [
+           100,
+           50
+          ]
+         },
+         "edges": [
+          [
+           "S",
+           "1",
+           "A 4"
+          ],
+          [
+           "S",
+           "2",
+           "B 3"
+          ],
+          [
+           "1",
+           "3",
+           "C 5"
+          ],
+          [
+           "2",
+           "3",
+           "D 2"
+          ],
+          [
+           "3",
+           "F",
+           "E 4"
+          ]
+         ],
+         "hl": [
+          "S1",
+          "13",
+          "3F"
+         ],
+         "dir": true
+        }
        ]
       },
       {
@@ -930,6 +2625,58 @@
          "A cut crosses an edge of capacity 6 that runs from the sink side to the source side. How much does it add to the cut’s capacity?",
          "Nothing: only edges from the source side to the sink side count."
         ]
+       ],
+       "fig": [
+        {
+         "t": "graph",
+         "cap": "Capacities on a directed network. The minimum cut (12) gives the maximum flow from S to T.",
+         "nodes": {
+          "S": [
+           0,
+           50
+          ],
+          "A": [
+           50,
+           10
+          ],
+          "B": [
+           50,
+           90
+          ],
+          "T": [
+           100,
+           50
+          ]
+         },
+         "edges": [
+          [
+           "S",
+           "A",
+           7
+          ],
+          [
+           "S",
+           "B",
+           5
+          ],
+          [
+           "A",
+           "B",
+           3
+          ],
+          [
+           "A",
+           "T",
+           4
+          ],
+          [
+           "B",
+           "T",
+           8
+          ]
+         ],
+         "dir": true
+        }
        ]
       },
       {
@@ -938,6 +2685,45 @@
         "Counting an edge that crosses a cut from the sink side to the source side. Taking the smallest value in the forward scan. Forgetting that reducing a non-critical activity saves no time. Stopping the Hungarian algorithm before the minimum number of covering lines equals the number of rows."
        ]
       }
+     ],
+     "map": [
+      [
+       "Shortest path",
+       [
+        "Dijkstra’s algorithm",
+        "update smaller labels"
+       ]
+      ],
+      [
+       "Spanning trees",
+       [
+        "Prim’s algorithm",
+        "n − 1 edges"
+       ]
+      ],
+      [
+       "Flow",
+       [
+        "cut: separate source from sink",
+        "count forward edges only",
+        "max flow = min cut"
+       ]
+      ],
+      [
+       "Allocation",
+       [
+        "Hungarian algorithm",
+        "bipartite graphs"
+       ]
+      ],
+      [
+       "Projects",
+       [
+        "EST forward, LST backward",
+        "float = LST − EST",
+        "critical path, crashing"
+       ]
+      ]
      ]
     },
     {
@@ -977,6 +2763,38 @@
          "A seasonal index for summer is 0.85. Interpret it.",
          "Summer values are typically 15% below the seasonal average."
         ]
+       ],
+       "fig": [
+        {
+         "t": "table",
+         "cap": "Sentence patterns that earn interpretation marks.",
+         "head": [
+          "Quantity",
+          "Model sentence"
+         ],
+         "rows": [
+          [
+           "Slope",
+           "On average, [response] increases by [b] for each one-unit increase in [explanatory]."
+          ],
+          [
+           "Intercept",
+           "When [explanatory] is 0, the predicted [response] is [a]."
+          ],
+          [
+           "r²",
+           "[r² as %] of the variation in [response] is explained by the variation in [explanatory]."
+          ],
+          [
+           "Seasonal index",
+           "[Season] values are typically [x]% above/below the seasonal average."
+          ],
+          [
+           "Residual",
+           "The model over/under-estimates the actual value by [amount]."
+          ]
+         ]
+        }
        ]
       },
       {
@@ -1059,7 +2877,87 @@
        ],
        "a": 1,
        "e": "Residual = actual − predicted, so the prediction was 3 too high."
+      },
+      {
+       "t": "m",
+       "q": "Which is the best interpretation of a slope of 2.5 for cost ($) against distance (km)?",
+       "o": [
+        "On average, cost increases by $2.50 for each additional kilometre",
+        "Cost is $2.50",
+        "Distance increases by 2.5 km per dollar",
+        "The cost doubles"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "Interpret a seasonal index of 1.25 for winter.",
+       "a": "Winter values are typically 25% above the seasonal average.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "Unless told otherwise, money should be given to…",
+       "o": [
+        "the nearest cent",
+        "the nearest dollar",
+        "one decimal place",
+        "three significant figures"
+       ],
+       "a": 0,
+       "e": ""
+      },
+      {
+       "t": "c",
+       "q": "A finance solver gives N = 59.2 payments to repay a loan. How many payments are made?",
+       "a": "60, with a smaller final payment.",
+       "e": ""
+      },
+      {
+       "t": "m",
+       "q": "A residual of +4 means the model…",
+       "o": [
+        "under-estimated the actual value by 4",
+        "over-estimated by 4",
+        "is exact",
+        "has r = 4"
+       ],
+       "a": 0,
+       "e": "Residual = actual − predicted."
       }
+     ],
+     "map": [
+      [
+       "Examinations",
+       [
+        "technology and bound reference",
+        "multiple choice + extended answer"
+       ]
+      ],
+      [
+       "Interpretations",
+       [
+        "slope, intercept, r²",
+        "seasonal index, residual"
+       ]
+      ],
+      [
+       "Setting out",
+       [
+        "recurrence with V₀",
+        "solver inputs with signs",
+        "matrix product written"
+       ]
+      ],
+      [
+       "Accuracy",
+       [
+        "round at the end",
+        "money to the cent",
+        "whole periods: round up"
+       ]
+      ]
      ]
     }
    ]
